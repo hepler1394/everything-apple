@@ -16,10 +16,27 @@ const IMGS = {
   iphone17: "/manus-storage/iphone-17_5b16b84b.png",
   iphone17Pro: "/manus-storage/iphone-17-pro_8a9ea682.png",
   iphoneAir: "/manus-storage/iphone-air_ac6cb200.jpg",
+  // Official Apple CDN transparent PNGs
+  iphone16Plus: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-plus-pink-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone16: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-black-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone15ProMax: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-black-titanium-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone15Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-natural-titanium-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone15Plus: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pink-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone15: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-blue-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone14ProMax: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-max-deep-purple-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone14Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-deep-purple-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone14Plus: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-plus-blue-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone14: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-blue-select-202209?wid=940&hei=1112&fmt=png-alpha",
+  iphone13ProMax: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-alpine-green-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone13Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-sierra-blue-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone13: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-blue-select-2021?wid=940&hei=1112&fmt=png-alpha",
+  iphone12ProMax: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-max-pacific-blue-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone12Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-pacific-blue-select?wid=940&hei=1112&fmt=png-alpha",
+  iphone12: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=940&hei=1112&fmt=png-alpha",
+  iphone11Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-pro-midnight-green-select-2019?wid=940&hei=1112&fmt=png-alpha",
 };
 
-// Unsplash fallbacks for models without dedicated images
-const FALLBACK = "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=600&q=85&auto=format&fit=crop";
+const FALLBACK = IMGS.iphone16; // safe fallback to a real image
 
 const iphones = [
   {
@@ -116,7 +133,7 @@ const iphones = [
       },
       {
         name: "iPhone 16 Plus",
-        img: FALLBACK,
+        img: IMGS.iphone16Plus,
         chip: "A18",
         display: "6.7\" Super Retina XDR OLED",
         camera: "48MP Fusion + 12MP Ultra Wide",
@@ -129,7 +146,7 @@ const iphones = [
       },
       {
         name: "iPhone 16",
-        img: FALLBACK,
+        img: IMGS.iphone16,
         chip: "A18",
         display: "6.1\" Super Retina XDR OLED",
         camera: "48MP Fusion + 12MP Ultra Wide",
@@ -150,7 +167,7 @@ const iphones = [
     models: [
       {
         name: "iPhone 15 Pro Max",
-        img: IMGS.proLineup,
+        img: IMGS.iphone15ProMax,
         chip: "A17 Pro",
         display: "6.7\" Super Retina XDR OLED",
         camera: "48MP Main + 12MP Ultra Wide + 12MP 5x Telephoto",
@@ -163,7 +180,7 @@ const iphones = [
       },
       {
         name: "iPhone 15 Pro",
-        img: IMGS.proLineup,
+        img: IMGS.iphone15Pro,
         chip: "A17 Pro",
         display: "6.1\" Super Retina XDR OLED",
         camera: "48MP Main + 12MP Ultra Wide + 12MP 3x Telephoto",
@@ -176,7 +193,7 @@ const iphones = [
       },
       {
         name: "iPhone 15 Plus",
-        img: FALLBACK,
+        img: IMGS.iphone15Plus,
         chip: "A16 Bionic",
         display: "6.7\" Super Retina XDR OLED",
         camera: "48MP Main + 12MP Ultra Wide",
@@ -189,7 +206,7 @@ const iphones = [
       },
       {
         name: "iPhone 15",
-        img: FALLBACK,
+        img: IMGS.iphone15,
         chip: "A16 Bionic",
         display: "6.1\" Super Retina XDR OLED",
         camera: "48MP Main + 12MP Ultra Wide",
@@ -210,7 +227,7 @@ const iphones = [
     models: [
       {
         name: "iPhone 14 Pro Max",
-        img: IMGS.proLineup,
+        img: IMGS.iphone14ProMax,
         chip: "A16 Bionic",
         display: "6.7\" Super Retina XDR OLED",
         camera: "48MP Main + 12MP Ultra Wide + 12MP 3x Telephoto",
@@ -223,7 +240,7 @@ const iphones = [
       },
       {
         name: "iPhone 14 Pro",
-        img: IMGS.proLineup,
+        img: IMGS.iphone14Pro,
         chip: "A16 Bionic",
         display: "6.1\" Super Retina XDR OLED",
         camera: "48MP Main + 12MP Ultra Wide + 12MP 3x Telephoto",
@@ -236,7 +253,7 @@ const iphones = [
       },
       {
         name: "iPhone 14 Plus",
-        img: FALLBACK,
+        img: IMGS.iphone14Plus,
         chip: "A15 Bionic",
         display: "6.7\" Super Retina XDR OLED",
         camera: "12MP Main + 12MP Ultra Wide",
@@ -249,7 +266,7 @@ const iphones = [
       },
       {
         name: "iPhone 14",
-        img: FALLBACK,
+        img: IMGS.iphone14,
         chip: "A15 Bionic",
         display: "6.1\" Super Retina XDR OLED",
         camera: "12MP Main + 12MP Ultra Wide",
@@ -270,7 +287,7 @@ const iphones = [
     models: [
       {
         name: "iPhone 13 Pro Max",
-        img: IMGS.iphone11,
+        img: IMGS.iphone13ProMax,
         chip: "A15 Bionic",
         display: "6.7\" Super Retina XDR OLED",
         camera: "12MP Main + 12MP Ultra Wide + 12MP 3x Telephoto",
@@ -283,7 +300,7 @@ const iphones = [
       },
       {
         name: "iPhone 13 Pro",
-        img: IMGS.iphone11,
+        img: IMGS.iphone13Pro,
         chip: "A15 Bionic",
         display: "6.1\" Super Retina XDR OLED",
         camera: "12MP Main + 12MP Ultra Wide + 12MP 3x Telephoto",
@@ -296,7 +313,7 @@ const iphones = [
       },
       {
         name: "iPhone 13",
-        img: IMGS.iphone11,
+        img: IMGS.iphone13,
         chip: "A15 Bionic",
         display: "6.1\" Super Retina XDR OLED",
         camera: "12MP Main + 12MP Ultra Wide",
@@ -317,7 +334,7 @@ const iphones = [
     models: [
       {
         name: "iPhone 12 Pro Max",
-        img: IMGS.iphone11,
+        img: IMGS.iphone12ProMax,
         chip: "A14 Bionic",
         display: "6.7\" Super Retina XDR OLED",
         camera: "12MP Main + 12MP Ultra Wide + 12MP 2.5x Telephoto",
@@ -330,7 +347,7 @@ const iphones = [
       },
       {
         name: "iPhone 12",
-        img: IMGS.iphone11,
+        img: IMGS.iphone12,
         chip: "A14 Bionic",
         display: "6.1\" Super Retina XDR OLED",
         camera: "12MP Main + 12MP Ultra Wide",
@@ -351,7 +368,7 @@ const iphones = [
     models: [
       {
         name: "iPhone 11 Pro Max",
-        img: IMGS.iphone11,
+        img: IMGS.iphone11Pro,
         chip: "A13 Bionic",
         display: "6.5\" Super Retina XDR OLED",
         camera: "12MP Main + 12MP Ultra Wide + 12MP 2x Telephoto",

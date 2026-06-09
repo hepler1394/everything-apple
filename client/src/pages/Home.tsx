@@ -42,8 +42,8 @@ function Hero() {
         }}
       >
         <img
-          src={IMGS.wwdc.stage1}
-          alt="WWDC 2026 — Tim Cook on stage"
+          src="/manus-storage/golden-gate-hero_23506d3b.webp"
+          alt="Golden Gate Bridge at dusk — Everything Apple"
           style={{
             width: "100%",
             height: "115%",

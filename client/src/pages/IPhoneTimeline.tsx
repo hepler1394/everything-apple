@@ -218,7 +218,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 19",
     maxIOS: "iOS 19+",
     highlight: "ProMotion comes to the standard model. Thinner design with aluminum band.",
-    image: "https://images.macrumors.com/t/IKqJGDCDGECiWDNJjJJHLNHFJUo=/1600x/article-new/2025/01/iphone-17-mockup.jpg",
+    image: "/manus-storage/iphone-17-official-product-photo-apple-2-1_1026c7a7.jpg",
     isNew: true,
   },
   {
@@ -234,7 +234,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 19",
     maxIOS: "iOS 19+",
     highlight: "Slimmest Pro ever. Larger display. Advanced Apple Intelligence features.",
-    image: "https://images.macrumors.com/t/IKqJGDCDGECiWDNJjJJHLNHFJUo=/1600x/article-new/2025/01/iphone-17-pro-mockup.jpg",
+    image: "/manus-storage/iphone-17-official-product-photo-apple-2-4_9c93f7da.png",
     isNew: true,
   },
 ];
@@ -275,7 +275,7 @@ export default function IPhoneTimeline() {
     <div style={{ background: "#000", minHeight: "100vh" }}>
 
       {/* ── Hero ── */}
-      <section style={{ background: "linear-gradient(180deg, #1d1d1f 0%, #000 100%)", padding: "140px 22px 80px", textAlign: "center" }}>
+      <section style={{ background: "linear-gradient(180deg, #1d1d1f 0%, #000 100%)", padding: "80px 22px 80px", textAlign: "center" }}>
         <FadeIn>
           <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: "16px" }}>
             iPhone History

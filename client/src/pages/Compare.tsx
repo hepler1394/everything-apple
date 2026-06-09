@@ -31,7 +31,7 @@ const PHONES: Phone[] = [
     brand: "Apple",
     name: "iPhone 17 Pro",
     tagline: "Titanium. Intelligence. Pro.",
-    image: "/manus-storage/iphone-17-pro_22d71d29.jpg",
+    image: "/manus-storage/iphone-17-pro-transparent_80fcfd2a.png",
     color: "#2997ff",
     price: "$999",
     priceNote: "Starting",
@@ -93,7 +93,7 @@ const PHONES: Phone[] = [
     brand: "Google",
     name: "Pixel 9 Pro",
     tagline: "Google AI. In your pocket.",
-    image: "/manus-storage/pixel-9-pro_b87d92c8.png",
+    image: "/manus-storage/pixel-9-pro-official_0393f2f2.png",
     color: "#4285f4",
     price: "$999",
     priceNote: "Starting",
@@ -124,7 +124,7 @@ const PHONES: Phone[] = [
     brand: "Nothing",
     name: "Nothing Phone (3)",
     tagline: "Transparent. Distinctive.",
-    image: "/manus-storage/nothing-phone-3_d37fbe37.jpg",
+    image: "/manus-storage/nothing-phone-3-official_042782d9.png",
     color: "#e8e8e8",
     price: "$799",
     priceNote: "Est.",
@@ -186,7 +186,7 @@ const PHONES: Phone[] = [
     brand: "OnePlus",
     name: "OnePlus 13",
     tagline: "Hasselblad. Never Settle.",
-    image: "/manus-storage/oneplus-13_6b042efb.webp",
+    image: "/manus-storage/oneplus-13-official_d07c01c4.png",
     color: "#eb0029",
     price: "$899",
     priceNote: "Starting",
@@ -364,6 +364,7 @@ function Phone3DCard({ phone, isSelected, onSelect }: {
             objectFit: "contain",
             pointerEvents: "none",
             transition: "filter 0.3s ease",
+            mixBlendMode: "screen" as const,
           }}
           draggable={false}
         />
@@ -556,10 +557,17 @@ function ComparisonTable({ phones }: { phones: Phone[] }) {
   );
 }
 
+// Parse price string to number for sorting
+function parsePrice(price: string): number {
+  return parseInt(price.replace(/[^0-9]/g, "")) || 0;
+}
+
 // ── Main Page ──────────────────────────────────────────────────────────────
 export default function Compare() {
   useScrollReveal();
   const [selectedIds, setSelectedIds] = useState<string[]>(["iphone-17-pro", "samsung-s25-ultra"]);
+  const [sortBy, setSortBy] = useState<"default" | "price-asc" | "price-desc" | "weight">("default");
+  const [filterBrand, setFilterBrand] = useState<string>("all");
 
   const togglePhone = (id: string) => {
     setSelectedIds(prev => {
@@ -567,12 +575,21 @@ export default function Compare() {
         return prev.filter(p => p !== id);
       }
       if (prev.length >= 4) {
-        // Replace oldest selection
         return [...prev.slice(1), id];
       }
       return [...prev, id];
     });
   };
+
+  // Filter + sort phones for carousel
+  const displayedPhones = PHONES
+    .filter(p => filterBrand === "all" || p.brand === filterBrand)
+    .sort((a, b) => {
+      if (sortBy === "price-asc") return parsePrice(a.price) - parsePrice(b.price);
+      if (sortBy === "price-desc") return parsePrice(b.price) - parsePrice(a.price);
+      if (sortBy === "weight") return parseFloat(a.specs.weight) - parseFloat(b.specs.weight);
+      return 0;
+    });
 
   const selectedPhones = PHONES.filter(p => selectedIds.includes(p.id));
 
@@ -622,6 +639,62 @@ export default function Compare() {
         </div>
       </section>
 
+      {/* Filter & Sort Controls */}
+      <section style={{ background: "#000", padding: "0 24px 32px" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto", display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center", justifyContent: "center" }}>
+          {/* Brand filter pills */}
+          <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", justifyContent: "center" }}>
+            {["all", ...Array.from(new Set(PHONES.map(p => p.brand)))].map(brand => (
+              <button
+                key={brand}
+                onClick={() => setFilterBrand(brand)}
+                style={{
+                  padding: "6px 14px",
+                  borderRadius: "980px",
+                  border: `1.5px solid ${filterBrand === brand ? "#0071e3" : "rgba(255,255,255,0.15)"}`,
+                  background: filterBrand === brand ? "#0071e3" : "transparent",
+                  color: filterBrand === brand ? "#fff" : "rgba(245,245,247,0.6)",
+                  fontSize: "12px",
+                  fontWeight: 500,
+                  cursor: "pointer",
+                  transition: "all 0.18s ease",
+                  letterSpacing: "0.02em",
+                  textTransform: brand === "all" ? "uppercase" : "none",
+                }}
+              >
+                {brand === "all" ? "All Brands" : brand}
+              </button>
+            ))}
+          </div>
+          {/* Sort selector */}
+          <select
+            value={sortBy}
+            onChange={e => setSortBy(e.target.value as typeof sortBy)}
+            style={{
+              padding: "6px 14px",
+              borderRadius: "980px",
+              border: "1.5px solid rgba(255,255,255,0.15)",
+              background: "transparent",
+              color: "rgba(245,245,247,0.7)",
+              fontSize: "12px",
+              cursor: "pointer",
+              outline: "none",
+              appearance: "none",
+              WebkitAppearance: "none",
+              paddingRight: "28px",
+              backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='rgba(245,245,247,0.4)'/%3E%3C/svg%3E")`,
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "right 10px center",
+            }}
+          >
+            <option value="default" style={{ background: "#1d1d1f" }}>Sort: Default</option>
+            <option value="price-asc" style={{ background: "#1d1d1f" }}>Price: Low to High</option>
+            <option value="price-desc" style={{ background: "#1d1d1f" }}>Price: High to Low</option>
+            <option value="weight" style={{ background: "#1d1d1f" }}>Weight: Lightest First</option>
+          </select>
+        </div>
+      </section>
+
       {/* 3D Phone Carousel */}
       <section style={{
         background: "#000",
@@ -637,7 +710,7 @@ export default function Compare() {
           margin: "0 auto",
           justifyContent: "center",
         }}>
-          {PHONES.map(phone => (
+          {displayedPhones.map(phone => (
             <Phone3DCard
               key={phone.id}
               phone={phone}

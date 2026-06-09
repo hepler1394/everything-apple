@@ -18,13 +18,13 @@ interface CompatEntry {
 
 const compatibilityData: Record<string, CompatEntry[]> = {
   "iOS 18": [
-    { ios: "iOS 18.0 – 18.3.2", status: "jailbreakable", tool: "palera1n", toolUrl: "https://palera.in", notes: "A8–A11 chip iPhones only (iPhone X and older). Semi-tethered." },
-    { ios: "iOS 18.4 – 18.5", status: "partial", tool: "palera1n (beta)", toolUrl: "https://palera.in", notes: "Limited device support. Check palera1n compatibility list." },
-    { ios: "iOS 18.6+", status: "not-jailbreakable", notes: "No public jailbreak available yet." },
+    { ios: "iOS 18.0 – 18.7.1 (A8–A11)", status: "jailbreakable", tool: "palera1n", toolUrl: "https://palera.in", notes: "iPhone X and older. Semi-tethered. Requires macOS or Linux to boot." },
+    { ios: "iOS 18.0 – 18.7.1 (A12+)", status: "partial", notes: "No rootless jailbreak for A12+ on iOS 18 yet. TrollStore available on select builds." },
+    { ios: "iOS 18.8+", status: "not-jailbreakable", notes: "No public jailbreak. Do not update if you want to jailbreak." },
   ],
   "iOS 17": [
-    { ios: "iOS 17.0 – 17.6.1", status: "jailbreakable", tool: "palera1n", toolUrl: "https://palera.in", notes: "A8–A11 chip iPhones. Semi-tethered. Requires macOS or Linux." },
-    { ios: "iOS 17.7+", status: "partial", notes: "Limited support. Check latest palera1n releases." },
+    { ios: "iOS 17.0 – 17.7.10 (A8–A11)", status: "jailbreakable", tool: "palera1n", toolUrl: "https://palera.in", notes: "A8–A11 chip iPhones. Semi-tethered. Requires macOS or Linux." },
+    { ios: "iOS 17.0 – 17.7.10 (A12+)", status: "partial", notes: "No rootless jailbreak for A12+ on iOS 17. TrollStore available on some builds." },
   ],
   "iOS 16": [
     { ios: "iOS 16.0 – 16.7.x", status: "jailbreakable", tool: "palera1n", toolUrl: "https://palera.in", notes: "A8–A11 chip iPhones. Semi-tethered jailbreak." },
@@ -183,7 +183,7 @@ export default function Jailbreak() {
       <section
         style={{
           background: "#000",
-          padding: "140px 22px 80px",
+          padding: "60px 22px 80px",
           textAlign: "center",
         }}
       >
@@ -791,6 +791,73 @@ export default function Jailbreak() {
               >
                 Everything Apple does not endorse or encourage jailbreaking. This information is provided for educational purposes only. Always research your specific device and iOS version before proceeding.
               </p>
+            </div>
+          </FadeSection>
+        </div>
+      </section>
+
+      {/* ── Popular Tweaks ── */}
+      <section style={{ background: "#000", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: "16px", textAlign: "center" }}>Most Recommended</div>
+            <h2 className="apple-headline-section" style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "16px" }}>Popular tweaks from r/jailbreak.</h2>
+            <p style={{ fontSize: "17px", color: "rgba(255,255,255,0.55)", textAlign: "center", maxWidth: "600px", margin: "0 auto 60px", letterSpacing: "-0.022em", lineHeight: 1.5 }}>The most upvoted and recommended tweaks from the jailbreak community. Requires a jailbroken device with Sileo or Zebra.</p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2px", background: "rgba(255,255,255,0.08)", borderRadius: "18px", overflow: "hidden" }} className="sideload-grid-responsive">
+              {[
+                { name: "Dopamine", category: "Jailbreak", desc: "The rootless jailbreak for A12+ on iOS 15–16. Stable, actively maintained, and compatible with most tweaks.", repo: "ellekit.space", stars: "9.8k" },
+                { name: "Crane", category: "UI", desc: "Liquid Glass-style blur effects for the home screen and app switcher. One of the most-downloaded tweaks of 2025.", repo: "havoc.app", stars: "4.2k" },
+                { name: "Notchification", category: "Notifications", desc: "Turns the Dynamic Island into a notification hub. Animated alerts, custom colors, and per-app rules.", repo: "chariz.com", stars: "3.1k" },
+                { name: "Filza", category: "File Manager", desc: "Full filesystem access. Browse, edit, and manage every file on your device. Essential for power users.", repo: "tigisoftware.com", stars: "8.7k" },
+                { name: "NewTerm 3", category: "Terminal", desc: "A full SSH-capable terminal emulator for iOS. Tab support, custom themes, and hardware keyboard support.", repo: "chariz.com", stars: "5.3k" },
+                { name: "Palert", category: "Alerts", desc: "Replaces the default iOS alert style with a cleaner, more modern design. Highly customizable.", repo: "havoc.app", stars: "2.8k" },
+                { name: "BatteryBuddy", category: "Battery", desc: "Adds a cute animated character to your status bar that reacts to your battery level. Fan favorite.", repo: "chariz.com", stars: "6.1k" },
+                { name: "Prysm", category: "Control Center", desc: "Completely redesigns Control Center with a floating panel, custom modules, and gesture controls.", repo: "havoc.app", stars: "3.9k" },
+                { name: "TrollStore", category: "Sideloading", desc: "Permanent IPA installer for supported iOS versions. No re-signing, no expiry. The gold standard.", repo: "github.com/opa334", stars: "15.2k" },
+              ].map((tweak) => (
+                <div key={tweak.name} style={{ background: "#000", padding: "32px 28px" }}>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "8px" }}>
+                    <h3 style={{ fontSize: "20px", fontWeight: 700, letterSpacing: "-0.025em", color: "#f5f5f7", margin: 0 }}>{tweak.name}</h3>
+                    <span style={{ fontSize: "11px", color: "#0071e3", padding: "3px 8px", border: "1px solid rgba(0,113,227,0.3)", borderRadius: "980px", whiteSpace: "nowrap", marginLeft: "8px" }}>{tweak.category}</span>
+                  </div>
+                  <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: 1.5, letterSpacing: "-0.01em", marginBottom: "16px" }}>{tweak.desc}</p>
+                  <div style={{ fontSize: "12px", color: "rgba(255,255,255,0.3)", letterSpacing: "-0.01em" }}>{tweak.repo} &bull; {tweak.stars} stars</div>
+                </div>
+              ))}
+            </div>
+          </FadeSection>
+        </div>
+      </section>
+
+      {/* ── TrollStore Support Table ── */}
+      <section style={{ background: "#1d1d1f", padding: "100px 0" }}>
+        <div style={{ maxWidth: "780px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: "16px", textAlign: "center" }}>TrollStore</div>
+            <h2 className="apple-headline-section" style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "16px" }}>Permanent sideloading without jailbreak.</h2>
+            <p style={{ fontSize: "17px", color: "rgba(255,255,255,0.55)", textAlign: "center", maxWidth: "600px", margin: "0 auto 40px", letterSpacing: "-0.022em", lineHeight: 1.5 }}>TrollStore installs IPAs permanently using a CoreTrust bug. Apps never expire. Check if your device is supported below.</p>
+            <div style={{ border: "1px solid rgba(255,255,255,0.1)", borderRadius: "18px", overflow: "hidden" }}>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr auto", gap: "16px", padding: "12px 24px", background: "rgba(255,255,255,0.04)", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+                <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>iOS Version</span>
+                <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Devices</span>
+                <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Status</span>
+              </div>
+              {[
+                { version: "iOS 14.0 – 16.6.1", devices: "All devices", status: "Supported", color: "#30d158" },
+                { version: "iOS 16.7 – 17.0", devices: "A12+ (iPhone XS+)", status: "Supported", color: "#30d158" },
+                { version: "iOS 17.0.1 – 17.4", devices: "A12+ (iPhone XS+)", status: "Partial", color: "#ff9f0a" },
+                { version: "iOS 17.4.1+", devices: "All devices", status: "Not Supported", color: "rgba(255,255,255,0.3)" },
+                { version: "iOS 18.x", devices: "All devices", status: "Not Supported", color: "rgba(255,255,255,0.3)" },
+              ].map((row, i, arr) => (
+                <div key={i} style={{ display: "grid", gridTemplateColumns: "1fr 1fr auto", gap: "16px", padding: "20px 24px", borderBottom: i < arr.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none", alignItems: "center" }}>
+                  <div style={{ fontSize: "15px", fontWeight: 500, color: "#f5f5f7", letterSpacing: "-0.022em" }}>{row.version}</div>
+                  <div style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", letterSpacing: "-0.01em" }}>{row.devices}</div>
+                  <div style={{ fontSize: "12px", fontWeight: 600, color: row.color, whiteSpace: "nowrap" }}>{row.status}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{ marginTop: "24px", textAlign: "center" }}>
+              <a href="https://github.com/opa334/TrollStore" target="_blank" rel="noopener noreferrer" style={{ fontSize: "15px", color: "#0071e3", textDecoration: "none", fontWeight: 400, letterSpacing: "-0.022em" }}>TrollStore on GitHub &rsaquo;</a>
             </div>
           </FadeSection>
         </div>
