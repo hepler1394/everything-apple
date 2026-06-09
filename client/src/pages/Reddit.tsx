@@ -1,463 +1,296 @@
-/* =============================================================
-   Community Page — Apple.com design language
-   Reddit threads, subreddits, community links — no emojis
-   Built by Cory Hepler
-   ============================================================= */
-
-import { useEffect, useRef } from "react";
+/*
+  Community Page — Everything Apple
+  Design: Apple.com aesthetic
+  - Live Reddit JSON feed from r/apple, r/jailbreak, r/ios
+  - Pure black/white sections
+  - Scroll-triggered reveal animations
+  Built by Cory Hepler
+*/
+import { useState, useEffect } from "react";
+import { Link } from "wouter";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import useScrollReveal from "../hooks/useScrollReveal";
 
-const subreddits = [
-  { name: "r/apple", desc: "The largest Apple community on Reddit. News, discussions, and everything Apple.", members: "3.2M", url: "https://reddit.com/r/apple" },
-  { name: "r/ios", desc: "iOS tips, tricks, questions, and news. The go-to place for iPhone software.", members: "1.1M", url: "https://reddit.com/r/ios" },
-  { name: "r/iphone", desc: "Everything iPhone. Hardware, software, accessories, and comparisons.", members: "1.8M", url: "https://reddit.com/r/iphone" },
-  { name: "r/jailbreak", desc: "The official jailbreak community. Releases, tweaks, repos, and support.", members: "680K", url: "https://reddit.com/r/jailbreak" },
-  { name: "r/AppleWatch", desc: "Apple Watch news, reviews, bands, and watchOS tips.", members: "520K", url: "https://reddit.com/r/AppleWatch" },
-  { name: "r/MacOS", desc: "macOS news, tips, and discussions. Now covering macOS Golden Gate.", members: "290K", url: "https://reddit.com/r/MacOS" },
-  { name: "r/AppleSilicon", desc: "M-series chip performance, benchmarks, and developer discussions.", members: "180K", url: "https://reddit.com/r/AppleSilicon" },
-  { name: "r/sideloaded", desc: "Sideloading apps on iOS without jailbreak. AltStore, Sideloadly, TrollStore.", members: "95K", url: "https://reddit.com/r/sideloaded" },
-];
-
-const hotThreads = [
-  { sub: "r/apple", title: "WWDC 2026 Megathread — All Announcements, Reactions and Discussion", votes: "48.2K", comments: "12,400", url: "https://reddit.com/r/apple", flair: "WWDC 2026", time: "Today" },
-  { sub: "r/apple", title: "Siri AI is actually incredible — tested it for 2 hours and here are my thoughts", votes: "32.1K", comments: "4,200", url: "https://reddit.com/r/apple", flair: "Discussion", time: "Today" },
-  { sub: "r/ios", title: "iOS 27 features megathread — everything new, screenshots and first impressions", votes: "28.7K", comments: "3,800", url: "https://reddit.com/r/ios", flair: "iOS 27", time: "Today" },
-  { sub: "r/apple", title: "The new Parental Controls are genuinely the best thing Apple announced today", votes: "21.4K", comments: "2,900", url: "https://reddit.com/r/apple", flair: "Discussion", time: "Today" },
-  { sub: "r/iphone", title: "macOS Golden Gate looks stunning — comparison screenshots vs Sequoia", votes: "18.9K", comments: "1,600", url: "https://reddit.com/r/iphone", flair: "macOS", time: "Today" },
-  { sub: "r/jailbreak", title: "iOS 27 beta is out — what are the chances of a jailbreak? Discussion thread", votes: "15.3K", comments: "2,100", url: "https://reddit.com/r/jailbreak", flair: "Discussion", time: "Today" },
-  { sub: "r/apple", title: "Tim Cook retirement confirmed — who do you think takes over as CEO?", votes: "41.8K", comments: "8,700", url: "https://reddit.com/r/apple", flair: "Apple", time: "Today" },
-  { sub: "r/ios", title: "Siri AI waitlist is now live — how to sign up and what to expect", votes: "12.6K", comments: "980", url: "https://reddit.com/r/ios", flair: "Siri AI", time: "Today" },
-  { sub: "r/jailbreak", title: "palera1n 2.0 update — iOS 18.3.2 support confirmed, download and changelog", votes: "9.4K", comments: "1,240", url: "https://reddit.com/r/jailbreak", flair: "Release", time: "2 hours ago" },
-  { sub: "r/apple", title: "Apple Watch For Your Kids hands-on — first look at the new experience", votes: "7.2K", comments: "640", url: "https://reddit.com/r/apple", flair: "Apple Watch", time: "Today" },
-];
-
-const newsOutlets = [
-  { name: "9to5Mac", desc: "Breaking Apple news and rumors", url: "https://9to5mac.com" },
-  { name: "MacRumors", desc: "Apple news, rumors, and forums", url: "https://macrumors.com" },
-  { name: "The Verge", desc: "Tech news with strong Apple coverage", url: "https://theverge.com/apple" },
-  { name: "Daring Fireball", desc: "John Gruber's Apple analysis", url: "https://daringfireball.net" },
-  { name: "Macworld", desc: "Apple product reviews and how-tos", url: "https://macworld.com" },
-  { name: "AppleInsider", desc: "Apple news, analysis, and price guides", url: "https://appleinsider.com" },
-];
-
-function FadeSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => el.classList.add("visible"), delay);
-          obs.unobserve(el);
-        }
-      },
-      { threshold: 0.05 }
-    );
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, [delay]);
-  return <div ref={ref} className="fade-in-up">{children}</div>;
+interface RedditPost {
+  id: string;
+  title: string;
+  author: string;
+  score: number;
+  num_comments: number;
+  url: string;
+  permalink: string;
+  created_utc: number;
+  subreddit: string;
+  thumbnail: string;
+  selftext: string;
 }
 
-export default function Reddit() {
+function timeAgo(utc: number): string {
+  const diff = Date.now() / 1000 - utc;
+  if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
+  if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
+  return `${Math.floor(diff / 86400)}d ago`;
+}
+
+function formatScore(n: number): string {
+  if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
+  return String(n);
+}
+
+const SUBREDDITS = [
+  { id: "apple", label: "r/apple", description: "Apple news, rumors, and discussion" },
+  { id: "jailbreak", label: "r/jailbreak", description: "iOS jailbreaking tools and guides" },
+  { id: "ios", label: "r/ios", description: "iOS tips, tricks, and updates" },
+  { id: "iphone", label: "r/iphone", description: "iPhone news and community" },
+];
+
+function useRedditFeed(subreddit: string) {
+  const [posts, setPosts] = useState<RedditPost[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setError(false);
+    fetch(`https://www.reddit.com/r/${subreddit}/hot.json?limit=10`)
+      .then(r => r.json())
+      .then(data => {
+        const items = data?.data?.children?.map((c: { data: RedditPost }) => c.data) ?? [];
+        setPosts(items);
+        setLoading(false);
+      })
+      .catch(() => {
+        setError(true);
+        setLoading(false);
+      });
+  }, [subreddit]);
+
+  return { posts, loading, error };
+}
+
+function PostCard({ post }: { post: RedditPost }) {
   return (
-    <div style={{ background: "#000", minHeight: "100vh" }}>
-
-      {/* ── Hero ── */}
-      <section
+    <a
+      href={`https://reddit.com${post.permalink}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ display: "block", textDecoration: "none" }}
+    >
+      <div
         style={{
-          background: "#000",
-          padding: "140px 22px 80px",
-          textAlign: "center",
+          padding: "20px 0",
+          borderBottom: "1px solid rgba(0,0,0,0.08)",
+          transition: "background 0.15s ease",
+          cursor: "pointer",
         }}
+        onMouseEnter={e => (e.currentTarget.style.background = "rgba(0,0,0,0.02)")}
+        onMouseLeave={e => (e.currentTarget.style.background = "transparent")}
       >
-        <div
-          style={{
-            fontSize: "12px",
-            fontWeight: 600,
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
-            color: "rgba(255,255,255,0.4)",
-            marginBottom: "16px",
-          }}
-        >
-          Community
-        </div>
-        <h1
-          className="apple-headline-hero"
-          style={{ color: "#f5f5f7", marginBottom: "20px" }}
-        >
-          The Apple Community.
-        </h1>
-        <p
-          className="apple-body-large"
-          style={{ color: "rgba(255,255,255,0.65)", maxWidth: "600px", margin: "0 auto" }}
-        >
-          The best Apple discussions happening right now. Hot threads from today's WWDC, jailbreak releases, and the communities you should be following.
-        </p>
-      </section>
-
-      {/* ── Hot Threads ── */}
-      <section style={{ background: "#1d1d1f", padding: "80px 0" }}>
-        <div style={{ maxWidth: "780px", margin: "0 auto", padding: "0 22px" }}>
-          <FadeSection>
-            <div
-              style={{
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                color: "rgba(255,255,255,0.4)",
-                marginBottom: "16px",
-              }}
-            >
-              Hot Today
-            </div>
-            <h2
-              className="apple-headline-section"
-              style={{ color: "#f5f5f7", marginBottom: "40px" }}
-            >
-              What everyone is talking about.
-            </h2>
-            <div
-              style={{
-                border: "1px solid rgba(255,255,255,0.1)",
-                borderRadius: "18px",
-                overflow: "hidden",
-              }}
-            >
-              {hotThreads.map((thread, i) => (
-                <a
-                  key={i}
-                  href={thread.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "block",
-                    padding: "20px 24px",
-                    borderBottom: i < hotThreads.length - 1 ? "1px solid rgba(255,255,255,0.07)" : "none",
-                    textDecoration: "none",
-                    transition: "background 0.2s ease",
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(255,255,255,0.03)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "8px",
-                      marginBottom: "6px",
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontSize: "11px",
-                        fontWeight: 600,
-                        color: "#0071e3",
-                        letterSpacing: "-0.01em",
-                      }}
-                    >
-                      {thread.sub}
-                    </span>
-                    <span
-                      style={{
-                        fontSize: "11px",
-                        color: "rgba(255,255,255,0.3)",
-                        padding: "2px 8px",
-                        border: "1px solid rgba(255,255,255,0.1)",
-                        borderRadius: "980px",
-                      }}
-                    >
-                      {thread.flair}
-                    </span>
-                    <span style={{ fontSize: "11px", color: "rgba(255,255,255,0.25)", marginLeft: "auto" }}>
-                      {thread.time}
-                    </span>
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "15px",
-                      fontWeight: 400,
-                      letterSpacing: "-0.022em",
-                      color: "#f5f5f7",
-                      lineHeight: 1.4,
-                      marginBottom: "8px",
-                    }}
-                  >
-                    {thread.title}
-                  </div>
-                  <div
-                    style={{
-                      display: "flex",
-                      gap: "16px",
-                    }}
-                  >
-                    <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.35)" }}>
-                      {thread.votes} upvotes
-                    </span>
-                    <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.35)" }}>
-                      {thread.comments} comments
-                    </span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </FadeSection>
-        </div>
-      </section>
-
-      {/* ── Subreddits ── */}
-      <section style={{ background: "#000", padding: "100px 0" }}>
-        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
-          <FadeSection>
-            <div
-              style={{
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                color: "rgba(255,255,255,0.4)",
-                marginBottom: "16px",
-                textAlign: "center",
-              }}
-            >
-              Communities to Follow
-            </div>
-            <h2
-              className="apple-headline-section"
-              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "60px" }}
-            >
-              The best Apple subreddits.
-            </h2>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(2, 1fr)",
-                gap: "2px",
-                background: "rgba(255,255,255,0.08)",
-                borderRadius: "18px",
-                overflow: "hidden",
-              }}
-              className="subreddits-grid-responsive"
-            >
-              {subreddits.map((sub) => (
-                <a
-                  key={sub.name}
-                  href={sub.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    background: "#000",
-                    padding: "28px 28px",
-                    textDecoration: "none",
-                    display: "block",
-                    transition: "background 0.2s ease",
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = "#111"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = "#000"; }}
-                >
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "flex-start",
-                      marginBottom: "8px",
-                    }}
-                  >
-                    <h3
-                      style={{
-                        fontSize: "18px",
-                        fontWeight: 600,
-                        letterSpacing: "-0.022em",
-                        color: "#f5f5f7",
-                        margin: 0,
-                      }}
-                    >
-                      {sub.name}
-                    </h3>
-                    <span
-                      style={{
-                        fontSize: "12px",
-                        color: "rgba(255,255,255,0.4)",
-                        whiteSpace: "nowrap",
-                        marginLeft: "12px",
-                      }}
-                    >
-                      {sub.members} members
-                    </span>
-                  </div>
-                  <p
-                    style={{
-                      fontSize: "14px",
-                      color: "rgba(255,255,255,0.5)",
-                      lineHeight: 1.5,
-                      letterSpacing: "-0.01em",
-                      margin: "0 0 12px 0",
-                    }}
-                  >
-                    {sub.desc}
-                  </p>
-                  <span
-                    style={{
-                      fontSize: "13px",
-                      color: "#0071e3",
-                      fontWeight: 400,
-                    }}
-                  >
-                    Join community &rsaquo;
-                  </span>
-                </a>
-              ))}
-            </div>
-          </FadeSection>
-        </div>
-      </section>
-
-      {/* ── News Outlets ── */}
-      <section style={{ background: "#1d1d1f", padding: "100px 0" }}>
-        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
-          <FadeSection>
-            <div
-              style={{
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                color: "rgba(255,255,255,0.4)",
-                marginBottom: "16px",
-                textAlign: "center",
-              }}
-            >
-              Apple News Sources
-            </div>
-            <h2
-              className="apple-headline-section"
-              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "60px" }}
-            >
-              Where the Apple world gets its news.
-            </h2>
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(3, 1fr)",
-                gap: "2px",
-                background: "rgba(255,255,255,0.08)",
-                borderRadius: "18px",
-                overflow: "hidden",
-              }}
-              className="outlets-grid-responsive"
-            >
-              {newsOutlets.map((outlet) => (
-                <a
-                  key={outlet.name}
-                  href={outlet.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    background: "#1d1d1f",
-                    padding: "28px 24px",
-                    textDecoration: "none",
-                    display: "block",
-                    transition: "background 0.2s ease",
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = "#222"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = "#1d1d1f"; }}
-                >
-                  <h3
-                    style={{
-                      fontSize: "17px",
-                      fontWeight: 600,
-                      letterSpacing: "-0.022em",
-                      color: "#f5f5f7",
-                      marginBottom: "6px",
-                    }}
-                  >
-                    {outlet.name}
-                  </h3>
-                  <p
-                    style={{
-                      fontSize: "13px",
-                      color: "rgba(255,255,255,0.45)",
-                      lineHeight: 1.4,
-                      letterSpacing: "-0.01em",
-                      margin: "0 0 12px 0",
-                    }}
-                  >
-                    {outlet.desc}
-                  </p>
-                  <span style={{ fontSize: "13px", color: "#0071e3" }}>
-                    Visit &rsaquo;
-                  </span>
-                </a>
-              ))}
-            </div>
-          </FadeSection>
-        </div>
-      </section>
-
-      {/* ── About Everything Apple ── */}
-      <section style={{ background: "#000", padding: "100px 0" }}>
-        <FadeSection>
-          <div
-            style={{
-              maxWidth: "680px",
-              margin: "0 auto",
-              padding: "0 22px",
-              textAlign: "center",
-            }}
-          >
-            <div
-              style={{
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                color: "rgba(255,255,255,0.4)",
-                marginBottom: "16px",
-              }}
-            >
-              About This Site
-            </div>
-            <h2
-              className="apple-headline-section"
-              style={{ color: "#f5f5f7", marginBottom: "20px" }}
-            >
-              Built by Cory Hepler.
-            </h2>
-            <p
-              className="apple-body-large"
-              style={{ color: "rgba(255,255,255,0.65)", marginBottom: "16px" }}
-            >
-              Everything Apple is an independent fan site dedicated to covering Apple news, products, and the community with the depth and care it deserves.
-            </p>
-            <p
-              style={{
-                fontSize: "15px",
-                color: "rgba(255,255,255,0.4)",
-                lineHeight: 1.6,
-                letterSpacing: "-0.022em",
-              }}
-            >
-              This site is not affiliated with Apple Inc. All product names, logos, and brands are property of their respective owners.
-            </p>
+        <div style={{ display: "flex", gap: "16px", alignItems: "flex-start" }}>
+          {/* Score */}
+          <div style={{ minWidth: "48px", textAlign: "center", paddingTop: "2px" }}>
+            <p style={{ fontSize: "17px", fontWeight: 600, color: "#1d1d1f", letterSpacing: "-0.022em" }}>{formatScore(post.score)}</p>
+            <p style={{ fontSize: "11px", color: "#6e6e73", letterSpacing: "0.02em" }}>points</p>
           </div>
-        </FadeSection>
-      </section>
+          {/* Content */}
+          <div style={{ flex: 1 }}>
+            <p style={{ fontSize: "17px", fontWeight: 500, color: "#1d1d1f", letterSpacing: "-0.022em", lineHeight: 1.4, marginBottom: "8px" }}>
+              {post.title}
+            </p>
+            <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+              <span style={{ fontSize: "12px", color: "#6e6e73" }}>by u/{post.author}</span>
+              <span style={{ fontSize: "12px", color: "#6e6e73" }}>{post.num_comments} comments</span>
+              <span style={{ fontSize: "12px", color: "#6e6e73" }}>{timeAgo(post.created_utc)}</span>
+            </div>
+          </div>
+          {/* Arrow */}
+          <div style={{ paddingTop: "4px", color: "#0071e3", fontSize: "17px" }}>→</div>
+        </div>
+      </div>
+    </a>
+  );
+}
 
+function LiveFeed() {
+  const [activeTab, setActiveTab] = useState("apple");
+  const { posts, loading, error } = useRedditFeed(activeTab);
+  const ref = useScrollReveal({ threshold: 0.06 });
+
+  return (
+    <section className="apple-section section-white" ref={ref as React.RefObject<HTMLElement>}>
+      <div className="apple-content-wide">
+        <div style={{ marginBottom: "40px" }}>
+          <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Live Feed</p>
+          <h2 className="apple-headline reveal reveal-delay-1" style={{ color: "#1d1d1f", marginBottom: "8px" }}>
+            What Reddit is saying.
+          </h2>
+          <p className="apple-lead reveal reveal-delay-2" style={{ color: "#6e6e73" }}>
+            Live posts from the Apple community on Reddit.
+          </p>
+        </div>
+
+        {/* Subreddit tabs */}
+        <div className="reveal reveal-delay-3" style={{ display: "flex", gap: "0", borderBottom: "1px solid rgba(0,0,0,0.1)", marginBottom: "40px", overflowX: "auto" }}>
+          {SUBREDDITS.map(sub => (
+            <button
+              key={sub.id}
+              onClick={() => setActiveTab(sub.id)}
+              style={{
+                background: "none",
+                border: "none",
+                borderBottom: activeTab === sub.id ? "2px solid #0071e3" : "2px solid transparent",
+                padding: "14px 20px",
+                fontSize: "15px",
+                fontWeight: activeTab === sub.id ? 600 : 400,
+                color: activeTab === sub.id ? "#0071e3" : "#6e6e73",
+                cursor: "pointer",
+                letterSpacing: "-0.022em",
+                whiteSpace: "nowrap",
+                transition: "color 0.2s ease, border-color 0.2s ease",
+                fontFamily: "inherit",
+                marginBottom: "-1px",
+              }}
+            >
+              {sub.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Posts */}
+        {loading && (
+          <div style={{ padding: "60px 0", textAlign: "center" }}>
+            <p style={{ fontSize: "17px", color: "#6e6e73" }}>Loading posts from {activeTab}...</p>
+          </div>
+        )}
+        {error && (
+          <div style={{ padding: "60px 0", textAlign: "center" }}>
+            <p style={{ fontSize: "17px", color: "#6e6e73" }}>Unable to load Reddit posts. Reddit may be temporarily unavailable.</p>
+            <a href={`https://reddit.com/r/${activeTab}`} target="_blank" rel="noopener noreferrer" style={{ color: "#0071e3", fontSize: "15px", marginTop: "12px", display: "inline-block" }}>
+              Visit r/{activeTab} directly
+            </a>
+          </div>
+        )}
+        {!loading && !error && posts.length > 0 && (
+          <div>
+            {posts.map(post => (
+              <PostCard key={post.id} post={post} />
+            ))}
+            <div style={{ paddingTop: "32px", textAlign: "center" }}>
+              <a
+                href={`https://reddit.com/r/${activeTab}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="apple-btn apple-btn-blue"
+              >
+                View all on Reddit
+              </a>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
+function Hero() {
+  return (
+    <section style={{ background: "#000", paddingTop: "140px", paddingBottom: "100px" }}>
+      <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px", textAlign: "center" }}>
+        <p className="animate-fade-in" style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#2997ff", marginBottom: "16px" }}>Community</p>
+        <h1 className="apple-headline animate-fade-in delay-200" style={{ color: "#f5f5f7", marginBottom: "20px" }}>
+          The Apple community,<br />all in one place.
+        </h1>
+        <p className="animate-fade-in delay-300" style={{ fontSize: "clamp(17px, 2.2vw, 21px)", color: "rgba(245,245,247,0.7)", lineHeight: 1.5, maxWidth: "560px", margin: "0 auto 40px", letterSpacing: "-0.022em" }}>
+          Live posts from r/apple, r/jailbreak, r/ios, and r/iphone — the most active Apple communities on Reddit.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function SubredditGrid() {
+  const ref = useScrollReveal({ threshold: 0.08 });
+  return (
+    <section className="apple-section-sm section-offwhite" ref={ref as React.RefObject<HTMLElement>}>
+      <div className="apple-content-wide">
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "2px", background: "rgba(0,0,0,0.06)" }}>
+          {[
+            { sub: "apple", members: "3.2M", desc: "Apple news, rumors, and community discussion" },
+            { sub: "jailbreak", members: "890K", desc: "iOS jailbreaking tools, tweaks, and guides" },
+            { sub: "ios", members: "1.4M", desc: "iOS tips, tricks, and software discussion" },
+            { sub: "iphone", members: "2.1M", desc: "iPhone hardware, cases, and accessories" },
+          ].map((item, i) => (
+            <a
+              key={i}
+              href={`https://reddit.com/r/${item.sub}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="reveal"
+              style={{ display: "block", background: "#fff", padding: "32px 24px", transitionDelay: `${i * 0.08}s`, textDecoration: "none" }}
+              onMouseEnter={e => (e.currentTarget.style.background = "#f5f5f7")}
+              onMouseLeave={e => (e.currentTarget.style.background = "#fff")}
+            >
+              <p style={{ fontSize: "19px", fontWeight: 600, color: "#1d1d1f", letterSpacing: "-0.002em", marginBottom: "4px" }}>r/{item.sub}</p>
+              <p style={{ fontSize: "12px", color: "#0071e3", marginBottom: "12px" }}>{item.members} members</p>
+              <p style={{ fontSize: "14px", color: "#6e6e73", lineHeight: 1.5 }}>{item.desc}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function NewsOutlets() {
+  const ref = useScrollReveal({ threshold: 0.08 });
+  const outlets = [
+    { name: "9to5Mac", url: "https://9to5mac.com", desc: "Breaking Apple news and reviews" },
+    { name: "MacRumors", url: "https://macrumors.com", desc: "Apple rumors and community forums" },
+    { name: "The Verge", url: "https://theverge.com/apple", desc: "Apple coverage from The Verge" },
+    { name: "AppleInsider", url: "https://appleinsider.com", desc: "In-depth Apple analysis" },
+    { name: "Daring Fireball", url: "https://daringfireball.net", desc: "John Gruber's Apple commentary" },
+    { name: "MacStories", url: "https://macstories.net", desc: "Apple app reviews and workflows" },
+  ];
+  return (
+    <section className="apple-section section-black" ref={ref as React.RefObject<HTMLElement>}>
+      <div className="apple-content-wide">
+        <div style={{ marginBottom: "48px", textAlign: "center" }}>
+          <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Apple Media</p>
+          <h2 className="apple-subheadline reveal reveal-delay-1" style={{ color: "#f5f5f7" }}>Where to follow Apple news.</h2>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(255,255,255,0.08)" }}>
+          {outlets.map((outlet, i) => (
+            <a
+              key={i}
+              href={outlet.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="reveal"
+              style={{ display: "block", background: "#000", padding: "36px 28px", transitionDelay: `${(i % 3) * 0.08}s`, textDecoration: "none" }}
+              onMouseEnter={e => (e.currentTarget.style.background = "#111")}
+              onMouseLeave={e => (e.currentTarget.style.background = "#000")}
+            >
+              <p style={{ fontSize: "19px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.002em", marginBottom: "8px" }}>{outlet.name}</p>
+              <p style={{ fontSize: "14px", color: "rgba(245,245,247,0.5)", lineHeight: 1.5 }}>{outlet.desc}</p>
+              <p style={{ fontSize: "14px", color: "#2997ff", marginTop: "12px" }}>Visit site</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function Community() {
+  return (
+    <div style={{ background: "#000" }}>
+      <Navbar />
+      <Hero />
+      <SubredditGrid />
+      <LiveFeed />
+      <NewsOutlets />
       <Footer />
-
-      <style>{`
-        @media (max-width: 768px) {
-          .subreddits-grid-responsive {
-            grid-template-columns: 1fr !important;
-          }
-          .outlets-grid-responsive {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      `}</style>
     </div>
   );
 }
