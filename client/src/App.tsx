@@ -25,6 +25,7 @@ import AppleSilicon from "./pages/AppleSilicon";
 import Gallery from "./pages/Gallery";
 import IPhoneTimeline from "./pages/IPhoneTimeline";
 import Compare from "./pages/Compare";
+import BackToTop from "./components/BackToTop";
 
 // Global search context so any page can open the search overlay
 export const SearchContext = createContext<{ openSearch: () => void }>({ openSearch: () => {} });
@@ -80,6 +81,7 @@ function AppInner() {
         <Footer />
       </div>
       <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
+      <BackToTop />
     </SearchContext.Provider>
   );
 }
