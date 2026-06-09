@@ -92,14 +92,14 @@ function FeatureSections() {
         return (
           <RevealSection key={i} className={`apple-section ${feature.dark ? "section-black" : "section-white"}`}>
             <div className="apple-content-wide">
-              <div className="apple-feature-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
-                <div style={{ order: imageLeft ? 1 : 0 }}>
+              <div className="apple-feature-row" style={{ gap: "clamp(32px, 6vw, 80px)" }}>
+                <div className="feature-text" style={{ order: imageLeft ? 1 : 0 }}>
                   <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>{feature.label}</p>
-                  <h2 className="apple-headline reveal reveal-delay-1" style={{ color: feature.dark ? "#f5f5f7" : "#1d1d1f", marginBottom: "20px" }}>{feature.title}</h2>
+                  <h2 className={`apple-headline ${imageLeft ? 'reveal-right' : 'reveal-left'} reveal-delay-1`} style={{ color: feature.dark ? "#f5f5f7" : "#1d1d1f", marginBottom: "20px" }}>{feature.title}</h2>
                   <p className="apple-lead reveal reveal-delay-2" style={{ color: feature.dark ? "rgba(245,245,247,0.7)" : "#6e6e73", maxWidth: "480px" }}>{feature.body}</p>
                 </div>
-                <div className="reveal-scale" style={{ order: imageLeft ? 0 : 1, display: "flex", justifyContent: "center" }}>
-                  <img src={feature.img} alt={feature.title} style={{ width: "100%", maxWidth: "420px", display: "block" }} />
+                <div className={`feature-image ${imageLeft ? 'reveal-left' : 'reveal-right'}`} style={{ order: imageLeft ? 0 : 1, display: "flex", justifyContent: "center" }}>
+                  <img src={feature.img} alt={feature.title} className="animate-float" style={{ width: "100%", maxWidth: "360px", display: "block", filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.25))" }} />
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ function CapabilitiesGrid() {
           <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Capabilities</p>
           <h2 className="apple-headline reveal reveal-delay-1" style={{ color: "#1d1d1f" }}>Everything Siri can do.</h2>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(0,0,0,0.06)" }}>
+        <div className="mobile-two-col" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(0,0,0,0.06)" }}>
           {CAPABILITIES.map((cap, i) => (
             <div key={i} className="reveal" style={{ background: "#fff", padding: "40px 32px", transitionDelay: `${(i % 3) * 0.08}s` }}>
               <h3 style={{ fontSize: "19px", fontWeight: 600, color: "#1d1d1f", letterSpacing: "-0.002em", marginBottom: "12px" }}>{cap.title}</h3>
@@ -152,7 +152,7 @@ function ScreenshotsGallery() {
         <div style={{ textAlign: "center", marginBottom: "48px" }}>
           <h2 className="apple-subheadline reveal" style={{ color: "#1d1d1f" }}>See Siri AI in action.</h2>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: "12px" }}>
+        <div className="mobile-two-col" style={{ display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: "12px" }}>
           {[IMGS.siri.screen1, IMGS.siri.screen2, IMGS.siri.screen3, IMGS.siri.screen4, IMGS.siri.screen5].map((src, i) => (
             <div key={i} className="reveal" style={{ transitionDelay: `${i * 0.08}s` }}>
               <img src={src} alt={`Siri AI screenshot ${i + 1}`} style={{ width: "100%", aspectRatio: "9/16", objectFit: "cover", display: "block", borderRadius: "8px" }} />

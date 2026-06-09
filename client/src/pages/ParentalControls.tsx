@@ -120,8 +120,8 @@ function InteractiveTabs() {
         </div>
 
         {/* Tab content */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="apple-feature-row">
-          <div>
+        <div className="apple-feature-row" style={{ gap: "clamp(32px, 6vw, 80px)" }}>
+          <div className="feature-text">
             <h3 style={{ fontSize: "clamp(28px, 3.5vw, 40px)", fontWeight: 700, color: "#1d1d1f", letterSpacing: "-0.003em", lineHeight: 1.1, marginBottom: "20px" }}>
               {TABS[active].title}
             </h3>
@@ -129,12 +129,13 @@ function InteractiveTabs() {
               {TABS[active].body}
             </p>
           </div>
-          <div style={{ display: "flex", justifyContent: "center" }}>
+          <div className="feature-image" style={{ display: "flex", justifyContent: "center" }}>
             <img
               key={active}
               src={TABS[active].img}
               alt={TABS[active].title}
-              style={{ width: "100%", maxWidth: "420px", display: "block", animation: "fadeIn 0.4s ease" }}
+              className="animate-float-slow"
+              style={{ width: "100%", maxWidth: "360px", display: "block", animation: "fadeIn 0.4s ease", filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.15))" }}
             />
           </div>
         </div>
@@ -182,14 +183,14 @@ function FeatureSections() {
         return (
           <RevealSection key={i} className={`apple-section ${feature.dark ? "section-black" : "section-white"}`}>
             <div className="apple-content-wide">
-              <div className="apple-feature-row" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }}>
-                <div style={{ order: imageLeft ? 1 : 0 }}>
+              <div className="apple-feature-row" style={{ gap: "clamp(32px, 6vw, 80px)" }}>
+                <div className="feature-text" style={{ order: imageLeft ? 1 : 0 }}>
                   <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>{feature.label}</p>
-                  <h2 className="apple-headline reveal reveal-delay-1" style={{ color: feature.dark ? "#f5f5f7" : "#1d1d1f", marginBottom: "20px" }}>{feature.title}</h2>
+                  <h2 className={`apple-headline ${imageLeft ? 'reveal-right' : 'reveal-left'} reveal-delay-1`} style={{ color: feature.dark ? "#f5f5f7" : "#1d1d1f", marginBottom: "20px" }}>{feature.title}</h2>
                   <p className="apple-lead reveal reveal-delay-2" style={{ color: feature.dark ? "rgba(245,245,247,0.7)" : "#6e6e73", maxWidth: "480px" }}>{feature.body}</p>
                 </div>
-                <div className="reveal-scale" style={{ order: imageLeft ? 0 : 1, display: "flex", justifyContent: "center" }}>
-                  <img src={feature.img} alt={feature.title} style={{ width: "100%", maxWidth: "420px", display: "block" }} />
+                <div className={`feature-image ${imageLeft ? 'reveal-left' : 'reveal-right'}`} style={{ order: imageLeft ? 0 : 1, display: "flex", justifyContent: "center" }}>
+                  <img src={feature.img} alt={feature.title} className="animate-float-slow" style={{ width: "100%", maxWidth: "360px", display: "block", filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.2))" }} />
                 </div>
               </div>
             </div>
@@ -218,7 +219,7 @@ function AppleWatchKids() {
             <img key={i} src={src} alt={`Apple Watch for kids ${i + 1}`} style={{ width: "100%", aspectRatio: "1/1", objectFit: "cover", display: "block" }} />
           ))}
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(0,0,0,0.06)", marginTop: "2px" }}>
+        <div className="mobile-single-col" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(0,0,0,0.06)", marginTop: "2px" }}>
           {[
             { title: "Location sharing", body: "Parents always know where their child is, in real time." },
             { title: "Communication limits", body: "Set approved contacts — kids can only call and message approved people." },
@@ -254,7 +255,7 @@ function FullFeatureList() {
           <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Complete feature list</p>
           <h2 className="apple-headline reveal reveal-delay-1" style={{ color: "#f5f5f7" }}>Everything in one place.</h2>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(255,255,255,0.08)" }}>
+        <div className="mobile-two-col" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1px", background: "rgba(255,255,255,0.08)" }}>
           {ALL_FEATURES.map((group, i) => (
             <div key={i} className="reveal" style={{ background: "#000", padding: "40px 32px", transitionDelay: `${(i % 3) * 0.08}s` }}>
               <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "#2997ff", marginBottom: "20px" }}>{group.cat}</p>

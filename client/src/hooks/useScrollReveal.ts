@@ -38,7 +38,7 @@ export function useScrollReveal(options: UseScrollRevealOptions = {}) {
     const container = containerRef.current;
     if (!container) return;
 
-    const selectors = [".reveal", ".reveal-scale", ".reveal-fade", ".fade-in-up"];
+    const selectors = [".reveal", ".reveal-scale", ".reveal-fade", ".fade-in-up", ".reveal-left", ".reveal-right", ".reveal-zoom"];
     const elements = container.querySelectorAll<HTMLElement>(selectors.join(", "));
 
     if (elements.length === 0) return;

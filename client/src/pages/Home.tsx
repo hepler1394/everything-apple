@@ -4,30 +4,23 @@
   - Pure black/white alternating sections, no gradients, no card borders
   - Massive SF Pro typography with tight letter-spacing
   - Scroll-triggered reveal animations via useScrollReveal
-  - Floating product images, no shadows, no containers
-  - Mobile-first, iPhone-optimized
+  - Directional reveals: text from left, images from right
+  - Floating product image animation on hero sections
+  - Mobile-first: image ABOVE text on mobile (Apple.com pattern)
+  - Single-column cards on mobile
   Built by Cory Hepler
 */
-import { useEffect, useRef } from "react";
 import { Link } from "wouter";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 import LatestNews from "../components/LatestNews";
 import useScrollReveal from "../hooks/useScrollReveal";
-
-// ── Scroll reveal wrapper ──────────────────────────────────────
-function RevealSection({ children, className = "" }: { children: React.ReactNode; className?: string }) {
-  const ref = useScrollReveal({ threshold: 0.08 });
-  return (
-    <div ref={ref as React.RefObject<HTMLDivElement>} className={className}>
-      {children}
-    </div>
-  );
-}
+import useParallax from "../hooks/useParallax";
 
 // ── Hero — full-bleed black, cinematic WWDC photo ──────────────
 function Hero() {
+  const parallaxRef = useParallax(0.3);
   return (
     <section style={{
       position: "relative",
@@ -38,15 +31,17 @@ function Hero() {
       background: "#000",
     }}>
       <img
+        ref={parallaxRef as React.RefObject<HTMLImageElement>}
         src="/manus-storage/tim-cook-wwdc26-portrait_7485b05e.jpg"
         alt="Tim Cook at WWDC 2026 keynote"
         style={{
           position: "absolute",
-          inset: 0,
+          inset: "-15% 0",
           width: "100%",
-          height: "100%",
+          height: "130%",
           objectFit: "cover",
           objectPosition: "50% 18%",
+          willChange: "transform",
         }}
         onError={(e) => {
           (e.target as HTMLImageElement).src = IMGS.wwdc.keynote1;
@@ -136,22 +131,15 @@ function Hero() {
 
 // ── Featured spotlight — Siri AI (black section) ──────────────
 function SiriSpotlight() {
-  const ref = useScrollReveal({ threshold: 0.08 });
+  const ref = useScrollReveal({ threshold: 0.06 });
   return (
     <section className="apple-section section-black" ref={ref as React.RefObject<HTMLElement>}>
       <div className="apple-content-wide">
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "80px",
-          alignItems: "center",
-        }}
-          className="apple-feature-row"
-        >
-          {/* Text */}
-          <div>
+        <div className="apple-feature-row" style={{ gap: "clamp(32px, 6vw, 80px)" }}>
+          {/* Text — slides in from left */}
+          <div className="feature-text">
             <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Siri AI</p>
-            <h2 className="apple-headline reveal reveal-delay-1" style={{ color: "#f5f5f7", marginBottom: "20px" }}>
+            <h2 className="apple-headline reveal-left reveal-delay-1" style={{ color: "#f5f5f7", marginBottom: "20px" }}>
               The new Siri.<br />Truly intelligent.
             </h2>
             <p className="apple-lead reveal reveal-delay-2" style={{ color: "rgba(245,245,247,0.7)", marginBottom: "32px", maxWidth: "480px" }}>
@@ -166,16 +154,17 @@ function SiriSpotlight() {
               </Link>
             </div>
           </div>
-          {/* Image */}
-          <div className="reveal-scale" style={{ display: "flex", justifyContent: "center" }}>
+          {/* Image — slides in from right + floats */}
+          <div className="feature-image reveal-right" style={{ display: "flex", justifyContent: "center" }}>
             <img
               src={IMGS.siri.screen1}
               alt="New Siri AI interface on iPhone"
+              className="animate-float"
               style={{
                 width: "100%",
-                maxWidth: "420px",
-                borderRadius: "0",
+                maxWidth: "360px",
                 display: "block",
+                filter: "drop-shadow(0 40px 60px rgba(0,0,0,0.6))",
               }}
             />
           </div>
@@ -187,35 +176,29 @@ function SiriSpotlight() {
 
 // ── Parental Controls spotlight (white section) ────────────────
 function ParentalSpotlight() {
-  const ref = useScrollReveal({ threshold: 0.08 });
+  const ref = useScrollReveal({ threshold: 0.06 });
   return (
     <section className="apple-section section-white" ref={ref as React.RefObject<HTMLElement>}>
       <div className="apple-content-wide">
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "80px",
-          alignItems: "center",
-        }}
-          className="apple-feature-row"
-        >
-          {/* Image — left on desktop */}
-          <div className="reveal-scale" style={{ display: "flex", justifyContent: "center", order: 0 }}>
+        <div className="apple-feature-row" style={{ gap: "clamp(32px, 6vw, 80px)" }}>
+          {/* Image — left on desktop, top on mobile */}
+          <div className="feature-image reveal-left" style={{ display: "flex", justifyContent: "center" }}>
             <img
               src={IMGS.parental.screenTime}
               alt="Parental Controls Screen Time on iPhone"
+              className="animate-float-slow"
               style={{
                 width: "100%",
-                maxWidth: "420px",
-                borderRadius: "0",
+                maxWidth: "360px",
                 display: "block",
+                filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.18))",
               }}
             />
           </div>
-          {/* Text — right on desktop */}
-          <div style={{ order: 1 }}>
+          {/* Text — right on desktop, bottom on mobile */}
+          <div className="feature-text">
             <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Parental Controls</p>
-            <h2 className="apple-headline reveal reveal-delay-1" style={{ color: "#1d1d1f", marginBottom: "20px" }}>
+            <h2 className="apple-headline reveal-right reveal-delay-1" style={{ color: "#1d1d1f", marginBottom: "20px" }}>
               Parents, you're<br />finally in control.
             </h2>
             <p className="apple-lead reveal reveal-delay-2" style={{ color: "#6e6e73", marginBottom: "32px", maxWidth: "480px" }}>
@@ -235,7 +218,7 @@ function ParentalSpotlight() {
 
 // ── iOS 27 spotlight (off-white section) ──────────────────────
 function IOS27Spotlight() {
-  const ref = useScrollReveal({ threshold: 0.08 });
+  const ref = useScrollReveal({ threshold: 0.06 });
   return (
     <section className="apple-section section-offwhite" ref={ref as React.RefObject<HTMLElement>}>
       <div className="apple-content" style={{ textAlign: "center" }}>
@@ -246,14 +229,22 @@ function IOS27Spotlight() {
         <p className="apple-lead reveal reveal-delay-2" style={{ color: "#6e6e73", marginBottom: "48px", maxWidth: "580px", margin: "0 auto 48px" }}>
           Apple's most dramatic visual overhaul in over a decade. Every surface, every animation, every interaction — reimagined.
         </p>
-        <div className="reveal-scale reveal-delay-3" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2px", maxWidth: "900px", margin: "0 auto 40px" }}>
+        {/* Three iPhones — staggered zoom reveal */}
+        <div className="reveal-delay-3" style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)",
+          gap: "2px",
+          maxWidth: "900px",
+          margin: "0 auto 40px",
+        }}>
           {[IMGS.ios27.homeScreen1, IMGS.ios27.homeScreen2, IMGS.ios27.homeScreen3].map((src, i) => (
-            <img
-              key={i}
-              src={src}
-              alt={`iOS 27 home screen design ${i + 1}`}
-              style={{ width: "100%", aspectRatio: "9/16", objectFit: "cover", display: "block" }}
-            />
+            <div key={i} className="reveal-zoom" style={{ transitionDelay: `${0.1 + i * 0.12}s` }}>
+              <img
+                src={src}
+                alt={`iOS 27 home screen design ${i + 1}`}
+                style={{ width: "100%", aspectRatio: "9/16", objectFit: "cover", display: "block" }}
+              />
+            </div>
           ))}
         </div>
         <div className="reveal reveal-delay-4">
@@ -268,7 +259,7 @@ function IOS27Spotlight() {
 
 // ── iPhone lineup (black section) ─────────────────────────────
 function IPhoneLineup() {
-  const ref = useScrollReveal({ threshold: 0.08 });
+  const ref = useScrollReveal({ threshold: 0.06 });
   return (
     <section className="apple-section section-black" ref={ref as React.RefObject<HTMLElement>}>
       <div className="apple-content" style={{ textAlign: "center" }}>
@@ -279,16 +270,21 @@ function IPhoneLineup() {
         <p className="apple-lead reveal reveal-delay-2" style={{ color: "rgba(245,245,247,0.7)", marginBottom: "48px", maxWidth: "520px", margin: "0 auto 48px" }}>
           Thinner. Faster. Smarter. The iPhone 17 lineup redefines what a smartphone can be.
         </p>
-        <div className="reveal-scale reveal-delay-3" style={{ marginBottom: "40px" }}>
+        <div className="reveal-zoom reveal-delay-3" style={{ marginBottom: "40px" }}>
           <img
             src={IMGS.iphone17.pro1}
             alt="iPhone 17 Pro lineup"
-            style={{ width: "100%", maxWidth: "800px", margin: "0 auto", display: "block" }}
+            style={{
+              width: "100%",
+              maxWidth: "900px",
+              margin: "0 auto",
+              display: "block",
+            }}
           />
         </div>
-        <div className="reveal reveal-delay-4" style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
+        <div className="reveal reveal-delay-4" style={{ display: "flex", gap: "16px", flexWrap: "wrap", justifyContent: "center" }}>
           <Link href="/iphones">
-            <span className="apple-btn apple-btn-white">Explore all iPhones</span>
+            <span className="apple-btn apple-btn-blue">Explore all iPhones</span>
           </Link>
           <Link href="/iphone-timeline">
             <span className="apple-btn apple-btn-outline-white">iPhone history</span>
@@ -301,7 +297,13 @@ function IPhoneLineup() {
 
 // ── WWDC 2026 recap (white section) ───────────────────────────
 function WWDCRecap() {
-  const ref = useScrollReveal({ threshold: 0.08 });
+  const ref = useScrollReveal({ threshold: 0.06 });
+  const items = [
+    { label: "iOS 27", title: "Liquid Glass redesign", img: IMGS.ios27.hero, href: "/ios-27" },
+    { label: "macOS Golden Gate", title: "The Mac, reimagined", img: IMGS.macos.hero, href: "/macos-golden-gate" },
+    { label: "Apple Intelligence", title: "AI that works for you", img: IMGS.intelligence.overview, href: "/apple-intelligence" },
+    { label: "watchOS 12", title: "Health, elevated", img: IMGS.watchKids.screen1, href: "/watchos-12" },
+  ];
   return (
     <section className="apple-section section-white" ref={ref as React.RefObject<HTMLElement>}>
       <div className="apple-content-wide">
@@ -314,26 +316,21 @@ function WWDCRecap() {
             From iOS 27 to macOS Golden Gate, watchOS 12 to Apple Silicon — we covered it all live from Apple Park.
           </p>
         </div>
-
-        {/* 2x2 grid of announcements */}
-        <div style={{
+        {/* 2x2 grid — single col on mobile */}
+        <div className="mobile-single-col" style={{
           display: "grid",
           gridTemplateColumns: "repeat(2, 1fr)",
           gap: "2px",
           background: "rgba(0,0,0,0.06)",
         }}>
-          {[
-            { label: "iOS 27", title: "Liquid Glass redesign", img: IMGS.ios27.hero, href: "/ios-27" },
-            { label: "macOS Golden Gate", title: "The Mac, reimagined", img: IMGS.macos.hero, href: "/macos-golden-gate" },
-            { label: "Apple Intelligence", title: "AI that works for you", img: IMGS.intelligence.overview, href: "/apple-intelligence" },
-            { label: "watchOS 12", title: "Health, elevated", img: IMGS.watchKids.screen1, href: "/watchos-12" },
-          ].map((item, i) => (
+          {items.map((item, i) => (
             <Link key={i} href={item.href}>
               <div className="reveal" style={{
                 position: "relative",
                 overflow: "hidden",
                 background: "#fff",
                 cursor: "pointer",
+                transitionDelay: `${i * 0.08}s`,
               }}
                 onMouseEnter={e => {
                   const img = e.currentTarget.querySelector("img");
@@ -363,7 +360,6 @@ function WWDCRecap() {
             </Link>
           ))}
         </div>
-
         <div className="reveal" style={{ textAlign: "center", marginTop: "48px" }}>
           <Link href="/wwdc-2026">
             <span className="apple-btn apple-btn-blue">See full WWDC 2026 coverage</span>
@@ -376,21 +372,14 @@ function WWDCRecap() {
 
 // ── Apple Intelligence (black section) ────────────────────────
 function IntelligenceSection() {
-  const ref = useScrollReveal({ threshold: 0.08 });
+  const ref = useScrollReveal({ threshold: 0.06 });
   return (
     <section className="apple-section section-black" ref={ref as React.RefObject<HTMLElement>}>
       <div className="apple-content-wide">
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "80px",
-          alignItems: "center",
-        }}
-          className="apple-feature-row"
-        >
-          <div>
+        <div className="apple-feature-row" style={{ gap: "clamp(32px, 6vw, 80px)" }}>
+          <div className="feature-text">
             <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Apple Intelligence</p>
-            <h2 className="apple-headline reveal reveal-delay-1" style={{ color: "#f5f5f7", marginBottom: "20px" }}>
+            <h2 className="apple-headline reveal-left reveal-delay-1" style={{ color: "#f5f5f7", marginBottom: "20px" }}>
               AI that's built<br />for privacy.
             </h2>
             <p className="apple-lead reveal reveal-delay-2" style={{ color: "rgba(245,245,247,0.7)", marginBottom: "32px", maxWidth: "480px" }}>
@@ -400,7 +389,7 @@ function IntelligenceSection() {
               <span className="apple-btn apple-btn-blue reveal reveal-delay-3">Explore Apple Intelligence</span>
             </Link>
           </div>
-          <div className="reveal-scale">
+          <div className="feature-image reveal-right">
             <img
               src={IMGS.intelligence.features1}
               alt="Apple Intelligence features"
@@ -415,37 +404,40 @@ function IntelligenceSection() {
 
 // ── Jailbreak & Sideload teaser (off-white section) ────────────
 function JailbreakTeaser() {
-  const ref = useScrollReveal({ threshold: 0.08 });
+  const ref = useScrollReveal({ threshold: 0.06 });
+  const items = [
+    {
+      label: "Jailbreak",
+      title: "iOS 27 jailbreak status",
+      sub: "Dopamine, Palera1n, and every tool — updated daily.",
+      href: "/jailbreak",
+      img: IMGS.jailbreak.dopamine2,
+    },
+    {
+      label: "Sideloading",
+      title: "Install any app without the App Store",
+      sub: "AltStore, Sideloadly, TrollStore — complete guides.",
+      href: "/jailbreak",
+      img: IMGS.sideload.altstore2,
+    },
+  ];
   return (
     <section className="apple-section-sm section-offwhite" ref={ref as React.RefObject<HTMLElement>}>
       <div className="apple-content">
-        <div style={{
+        {/* Single col on mobile, 2-col on desktop */}
+        <div className="mobile-single-col" style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
           gap: "2px",
           background: "rgba(0,0,0,0.06)",
         }}>
-          {[
-            {
-              label: "Jailbreak",
-              title: "iOS 27 jailbreak status",
-              sub: "Dopamine, Palera1n, and every tool — updated daily.",
-              href: "/jailbreak",
-              img: IMGS.jailbreak.dopamine1,
-            },
-            {
-              label: "Sideloading",
-              title: "Install any app without the App Store",
-              sub: "AltStore, Sideloadly, TrollStore — complete guides.",
-              href: "/jailbreak",
-              img: IMGS.sideload.altstore1,
-            },
-          ].map((item, i) => (
+          {items.map((item, i) => (
             <Link key={i} href={item.href}>
               <div className="reveal" style={{
                 background: "#fff",
                 overflow: "hidden",
                 cursor: "pointer",
+                transitionDelay: `${i * 0.1}s`,
               }}
                 onMouseEnter={e => {
                   const img = e.currentTarget.querySelector("img");
@@ -483,7 +475,7 @@ function JailbreakTeaser() {
 
 // ── Latest News (white section) ────────────────────────────────
 function NewsSection() {
-  const ref = useScrollReveal({ threshold: 0.06 });
+  const ref = useScrollReveal({ threshold: 0.04 });
   return (
     <section className="apple-section section-white" ref={ref as React.RefObject<HTMLElement>}>
       <div className="apple-content-wide">
@@ -501,9 +493,9 @@ function NewsSection() {
   );
 }
 
-// ── More pages teaser (black section) ─────────────────────────
+// ── More pages teaser (off-white section) ─────────────────────
 function MorePages() {
-  const ref = useScrollReveal({ threshold: 0.08 });
+  const ref = useScrollReveal({ threshold: 0.06 });
   const pages = [
     { label: "macOS Golden Gate", href: "/macos-golden-gate", img: IMGS.macos.screen1 },
     { label: "Apple Silicon", href: "/apple-silicon", img: IMGS.silicon.m4chip1 },
@@ -518,21 +510,20 @@ function MorePages() {
         <div style={{ marginBottom: "48px", textAlign: "center" }}>
           <h2 className="apple-subheadline reveal" style={{ color: "#1d1d1f" }}>Explore everything.</h2>
         </div>
-        <div style={{
+        <div className="mobile-two-col" style={{
           display: "grid",
           gridTemplateColumns: "repeat(3, 1fr)",
           gap: "2px",
           background: "rgba(0,0,0,0.06)",
-        }}
-          className="reveal reveal-delay-1"
-        >
+        }}>
           {pages.map((page, i) => (
             <Link key={i} href={page.href}>
-              <div style={{
+              <div className="reveal" style={{
                 position: "relative",
                 overflow: "hidden",
                 background: "#fff",
                 cursor: "pointer",
+                transitionDelay: `${i * 0.07}s`,
               }}
                 onMouseEnter={e => {
                   const img = e.currentTarget.querySelector("img");
