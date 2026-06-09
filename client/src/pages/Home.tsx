@@ -10,6 +10,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 import { useSearch } from "../App";
+import LatestNews from "../components/LatestNews";
 
 // ── Intersection-observer fade-in ──────────────────────────────
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -24,65 +25,17 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
 }
 
 // ── Breaking news ticker ───────────────────────────────────────
-const TICKER_ITEMS = [
-  "WWDC 2026 — Siri AI announced with dedicated app and conversational intelligence",
-  "WWDC 2026 — iOS 27 introduces Liquid Glass design language across all platforms",
-  "WWDC 2026 — macOS Golden Gate revealed with new Siri integration",
-  "WWDC 2026 — Parental Controls overhaul gives parents full control",
-  "WWDC 2026 — Apple Intelligence expands to 50+ countries",
-  "WWDC 2026 — Tim Cook delivers final WWDC keynote as CEO",
-  "WWDC 2026 — watchOS 12 brings Apple Watch for Kids mode",
-  "WWDC 2026 — visionOS 3 adds spatial computing for education",
-  "iOS 27 — Liquid Glass UI redesign is the biggest visual change since iOS 7",
-  "Siri AI — Now understands context, memory, and multi-step tasks",
-  "iPhone 17 — Available now starting at $799",
-  "iPhone Air — The thinnest iPhone ever at 5.5mm",
-];
-
-function BreakingTicker() {
-  const [offset, setOffset] = useState(0);
-  const tickerRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    let frame: number;
-    let pos = 0;
-    const speed = 0.5;
-    const animate = () => {
-      pos -= speed;
-      const el = tickerRef.current;
-      if (el) {
-        const halfWidth = el.scrollWidth / 2;
-        if (Math.abs(pos) >= halfWidth) pos = 0;
-        el.style.transform = `translateX(${pos}px)`;
-      }
-      frame = requestAnimationFrame(animate);
-    };
-    frame = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(frame);
-  }, []);
-  const doubled = [...TICKER_ITEMS, ...TICKER_ITEMS];
-  return (
-    <div style={{ background: "#000", overflow: "hidden", height: "36px", display: "flex", alignItems: "center", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-      <div ref={tickerRef} style={{ display: "flex", alignItems: "center", whiteSpace: "nowrap", willChange: "transform" }}>
-        {doubled.map((item, i) => (
-          <span key={i} style={{ display: "inline-flex", alignItems: "center", fontSize: "12px", color: "rgba(255,255,255,0.75)", letterSpacing: "0.01em", paddingRight: "60px" }}>
-            <span style={{ color: "#0071e3", fontWeight: 600, marginRight: "10px", fontSize: "11px", letterSpacing: "0.08em", textTransform: "uppercase" }}>WWDC 2026</span>
-            {item.replace(/^WWDC 2026 — /, "").replace(/^iOS 27 — /, "").replace(/^Siri AI — /, "").replace(/^iPhone [0-9A-Za-z ]+ — /, "")}
-          </span>
-        ))}
-      </div>
-    </div>
-  );
-}
+// Ticker removed per user request
 
 // ── Hero section ───────────────────────────────────────────────
 function Hero() {
   return (
     <section style={{ position: "relative", height: "100svh", minHeight: "600px", maxHeight: "1000px", overflow: "hidden", background: "#000" }}>
-      {/* Real WWDC 2026 Apple Park outdoor stage photo */}
+      {/* Real WWDC 2026 Tim Cook keynote photo — object-position keeps face centered on all screen sizes */}
       <img
         src="/manus-storage/tim-cook-wwdc26-portrait_7485b05e.jpg"
         alt="Tim Cook at WWDC 2026 keynote — his final keynote as Apple CEO"
-        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 25%", opacity: 1 }}
+        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 15%" }}
         onError={(e) => { (e.target as HTMLImageElement).src = "/manus-storage/wwdc26-stage-rainbow_f01dcbe1.png"; }}
       />
       {/* Gradient overlay */}
@@ -501,11 +454,11 @@ export default function Home() {
   return (
     <div style={{ background: "var(--background)" }}>
       <Navbar onSearchOpen={openSearch} />
-      <BreakingTicker />
       <Hero />
       <FeaturedGrid />
       <SiriSpotlight />
       <ParentalSpotlight />
+      <LatestNews />
       <IPhoneStrip />
       <AppleIntelligenceSection />
       <WWDCGallery />

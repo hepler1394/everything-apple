@@ -66,7 +66,7 @@ export default function MacOSGoldenGate() {
 
       {/* Hero */}
       <section style={{ position: "relative", minHeight: "80svh", overflow: "hidden", background: "#000", display: "flex", alignItems: "flex-end" }}>
-        <img src={IMGS.macos.hero} alt="macOS Golden Gate" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.5 }} />
+        <img src={IMGS.macos.hero} alt="macOS Golden Gate" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top", opacity: 1 }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%)" }} />
         <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "0 22px 100px", width: "100%" }}>
           <FadeIn>

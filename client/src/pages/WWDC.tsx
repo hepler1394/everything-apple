@@ -82,7 +82,7 @@ export default function WWDC() {
 
       {/* Hero */}
       <section style={{ position: "relative", height: "90svh", minHeight: "560px", overflow: "hidden", background: "#000" }}>
-        <img src={IMGS.wwdc.appleParkStage} alt="WWDC 2026 Apple Park stage" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 25%", opacity: 0.5 }} />
+        <img src={IMGS.wwdc.appleParkStage} alt="WWDC 2026 Apple Park stage" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", opacity: 1 }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.85) 100%)" }} />
         <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 22px 80px", maxWidth: "1200px", margin: "0 auto" }}>
           <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>June 9, 2026 — Apple Park, Cupertino</p>

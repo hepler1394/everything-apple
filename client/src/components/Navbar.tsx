@@ -20,6 +20,7 @@ const navLinks = [
   { href: "/apple-intelligence", label: "Intelligence" },
   { href: "/watchos-12", label: "watchOS 12" },
   { href: "/iphones", label: "iPhones" },
+  { href: "/iphone-timeline", label: "iPhone History" },
   { href: "/apple-silicon", label: "Apple Silicon" },
   { href: "/jailbreak", label: "Jailbreak" },
   { href: "/community", label: "Community" },

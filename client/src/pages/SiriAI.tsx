@@ -102,8 +102,8 @@ export default function SiriAI() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "center",
-            opacity: 0.5,
+            objectPosition: "center top",
+            opacity: 1,
           }}
         />
         <div

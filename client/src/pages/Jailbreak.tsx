@@ -158,8 +158,24 @@ const statusConfig = {
 
 export default function Jailbreak() {
   const [selectedVersion, setSelectedVersion] = useState<string>("iOS 18");
+  const [toolTypeFilter, setToolTypeFilter] = useState<string>("All");
+  const [toolStatusFilter, setToolStatusFilter] = useState<string>("All");
+  const [sideloadPlatformFilter, setSideloadPlatformFilter] = useState<string>("All");
+  const [sideloadDifficultyFilter, setSideloadDifficultyFilter] = useState<string>("All");
 
   const entries = compatibilityData[selectedVersion] || [];
+
+  const filteredJailbreakTools = jailbreakTools.filter((t) => {
+    const typeMatch = toolTypeFilter === "All" || t.type === toolTypeFilter;
+    const statusMatch = toolStatusFilter === "All" || t.status === toolStatusFilter;
+    return typeMatch && statusMatch;
+  });
+
+  const filteredSideloadTools = sideloadTools.filter((t) => {
+    const platformMatch = sideloadPlatformFilter === "All" || t.platforms.includes(sideloadPlatformFilter);
+    const difficultyMatch = sideloadDifficultyFilter === "All" || t.difficulty === sideloadDifficultyFilter;
+    return platformMatch && difficultyMatch;
+  });
 
   return (
     <div style={{ background: "#000", minHeight: "100vh" }}>
@@ -381,10 +397,42 @@ export default function Jailbreak() {
             </div>
             <h2
               className="apple-headline-section"
-              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "60px" }}
+              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "40px" }}
             >
               The tools that make it possible.
             </h2>
+            {/* Filter dropdowns */}
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center", marginBottom: "40px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                <label style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Type</label>
+                <select
+                  value={toolTypeFilter}
+                  onChange={(e) => setToolTypeFilter(e.target.value)}
+                  style={{ background: "#1d1d1f", color: "#f5f5f7", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "8px", padding: "8px 14px", fontSize: "14px", cursor: "pointer", outline: "none" }}
+                >
+                  <option value="All">All Types</option>
+                  <option value="Semi-tethered">Semi-tethered</option>
+                  <option value="Rootless">Rootless</option>
+                  <option value="Untethered">Untethered</option>
+                </select>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                <label style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Status</label>
+                <select
+                  value={toolStatusFilter}
+                  onChange={(e) => setToolStatusFilter(e.target.value)}
+                  style={{ background: "#1d1d1f", color: "#f5f5f7", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "8px", padding: "8px 14px", fontSize: "14px", cursor: "pointer", outline: "none" }}
+                >
+                  <option value="All">All Status</option>
+                  <option value="Active">Active</option>
+                  <option value="Maintained">Maintained</option>
+                  <option value="Legacy">Legacy</option>
+                </select>
+              </div>
+            </div>
+            {filteredJailbreakTools.length === 0 && (
+              <p style={{ textAlign: "center", color: "rgba(255,255,255,0.4)", fontSize: "15px", padding: "40px 0" }}>No tools match the selected filters.</p>
+            )}
             <div
               style={{
                 display: "grid",
@@ -396,7 +444,7 @@ export default function Jailbreak() {
               }}
               className="tools-grid-responsive"
             >
-              {jailbreakTools.map((tool) => (
+              {filteredJailbreakTools.map((tool) => (
                 <div
                   key={tool.name}
                   style={{
@@ -507,6 +555,37 @@ export default function Jailbreak() {
             >
               Sideloading lets you install apps that are not in the App Store without jailbreaking your device. These tools work on any iOS version.
             </p>
+            {/* Sideload filter dropdowns */}
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center", marginBottom: "40px" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                <label style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Platform</label>
+                <select
+                  value={sideloadPlatformFilter}
+                  onChange={(e) => setSideloadPlatformFilter(e.target.value)}
+                  style={{ background: "#000", color: "#f5f5f7", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "8px", padding: "8px 14px", fontSize: "14px", cursor: "pointer", outline: "none" }}
+                >
+                  <option value="All">All Platforms</option>
+                  <option value="Windows">Windows</option>
+                  <option value="macOS">macOS</option>
+                  <option value="On-device">On-device</option>
+                </select>
+              </div>
+              <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                <label style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Difficulty</label>
+                <select
+                  value={sideloadDifficultyFilter}
+                  onChange={(e) => setSideloadDifficultyFilter(e.target.value)}
+                  style={{ background: "#000", color: "#f5f5f7", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "8px", padding: "8px 14px", fontSize: "14px", cursor: "pointer", outline: "none" }}
+                >
+                  <option value="All">All Levels</option>
+                  <option value="Easy">Easy</option>
+                  <option value="Medium">Medium</option>
+                </select>
+              </div>
+            </div>
+            {filteredSideloadTools.length === 0 && (
+              <p style={{ textAlign: "center", color: "rgba(255,255,255,0.4)", fontSize: "15px", padding: "40px 0" }}>No tools match the selected filters.</p>
+            )}
             <div
               style={{
                 display: "grid",
@@ -518,7 +597,7 @@ export default function Jailbreak() {
               }}
               className="sideload-grid-responsive"
             >
-              {sideloadTools.map((tool) => (
+              {filteredSideloadTools.map((tool) => (
                 <div
                   key={tool.name}
                   style={{
