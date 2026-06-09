@@ -7,6 +7,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import Navbar from "../components/Navbar";
+import { useSearch } from "../App";
 import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 
@@ -63,10 +64,11 @@ const COMPATIBILITY = [
 ];
 
 export default function IOS27() {
+  const { openSearch } = useSearch();
   const [filter, setFilter] = useState<"all" | "compatible">("all");
   return (
     <div>
-      <Navbar />
+      <Navbar onSearchOpen={openSearch} />
 
       {/* Hero */}
       <section style={{ background: "#000", padding: "120px 0 100px", textAlign: "center" }}>

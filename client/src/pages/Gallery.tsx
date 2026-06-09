@@ -8,6 +8,7 @@
 
 import { useState, useCallback } from "react";
 import Navbar from "@/components/Navbar";
+import { useSearch } from "../App";
 import Footer from "@/components/Footer";
 import IMGS from "@/lib/imageManifest";
 
@@ -171,6 +172,7 @@ const CATEGORIES = [
 ];
 
 export default function Gallery() {
+  const { openSearch } = useSearch();
   const [activeCategory, setActiveCategory] = useState("All");
   const [lightboxImg, setLightboxImg] = useState<{ src: string; title: string } | null>(null);
 
@@ -189,8 +191,8 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div style={{ background: "#000", minHeight: "100vh" }}>
-      <Navbar />
+    <div style={{ background: "var(--background)", minHeight: "100vh" }}>
+      <Navbar onSearchOpen={openSearch} />
 
       {/* ── Hero ── */}
       <section style={{ paddingTop: "120px", paddingBottom: "60px", textAlign: "center" }}>
@@ -291,11 +293,11 @@ export default function Gallery() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-            gap: "3px",
+            gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+            gap: "12px",
           }}
         >
-          {filtered.map((img) => (
+          {filtered.map((img, i) => (
             <div
               key={img.id}
               onClick={() => openLightbox(img.src, img.title)}
@@ -304,64 +306,115 @@ export default function Gallery() {
                 aspectRatio: "4/3",
                 overflow: "hidden",
                 cursor: "pointer",
-                background: "#1d1d1f",
+                background: "var(--glass-bg)",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
+                borderRadius: "14px",
+                border: "1px solid var(--glass-border-subtle)",
+                boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
+                animation: `fadeInUp 0.4s cubic-bezier(0.23, 1, 0.32, 1) ${Math.min(i * 0.03, 0.5)}s both`,
+                transition: "box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.23, 1, 0.32, 1)",
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLElement;
+                el.style.boxShadow = "0 12px 40px rgba(0,0,0,0.4)";
+                el.style.transform = "translateY(-4px) scale(1.01)";
+                const img = el.querySelector("img") as HTMLImageElement;
+                if (img) img.style.transform = "scale(1.06)";
+                const overlay = el.querySelector(".gallery-overlay") as HTMLElement;
+                if (overlay) overlay.style.opacity = "1";
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLElement;
+                el.style.boxShadow = "0 4px 20px rgba(0,0,0,0.2)";
+                el.style.transform = "translateY(0) scale(1)";
+                const img = el.querySelector("img") as HTMLImageElement;
+                if (img) img.style.transform = "scale(1)";
+                const overlay = el.querySelector(".gallery-overlay") as HTMLElement;
+                if (overlay) overlay.style.opacity = "0";
               }}
             >
+              {/* Skeleton loader */}
+              <div
+                className="skeleton"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  zIndex: 0,
+                  borderRadius: "14px",
+                }}
+              />
               <img
                 src={img.src}
                 alt={img.title}
                 loading="lazy"
                 style={{
+                  position: "relative",
+                  zIndex: 1,
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  transition: "transform 0.4s cubic-bezier(0.23, 1, 0.32, 1)",
+                  transition: "transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.3s ease",
                   display: "block",
+                  opacity: 0,
                 }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.transform = "scale(1.05)";
+                onLoad={(e) => {
+                  const el = e.currentTarget as HTMLImageElement;
+                  el.style.opacity = "1";
+                  const skeleton = el.previousElementSibling as HTMLElement;
+                  if (skeleton) skeleton.style.display = "none";
                 }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLImageElement).style.transform = "scale(1)";
+                onError={(e) => {
+                  const el = e.currentTarget as HTMLImageElement;
+                  el.style.opacity = "0.3";
                 }}
               />
+              {/* Glassmorphism hover overlay */}
               <div
+                className="gallery-overlay"
                 style={{
                   position: "absolute",
                   inset: 0,
-                  background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%)",
+                  zIndex: 2,
+                  background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 60%, transparent 100%)",
                   opacity: 0,
-                  transition: "opacity 0.2s ease",
+                  transition: "opacity 0.25s ease",
                   display: "flex",
                   alignItems: "flex-end",
                   padding: "16px",
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.opacity = "1";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.opacity = "0";
+                  borderRadius: "14px",
                 }}
               >
-                <div>
+                <div
+                  style={{
+                    background: "rgba(255,255,255,0.08)",
+                    backdropFilter: "blur(12px)",
+                    WebkitBackdropFilter: "blur(12px)",
+                    border: "1px solid rgba(255,255,255,0.15)",
+                    borderRadius: "10px",
+                    padding: "8px 12px",
+                    width: "100%",
+                  }}
+                >
                   <div
                     style={{
-                      fontSize: "11px",
+                      fontSize: "10px",
                       fontWeight: 600,
-                      letterSpacing: "0.06em",
+                      letterSpacing: "0.08em",
                       textTransform: "uppercase",
-                      color: "rgba(255,255,255,0.5)",
-                      marginBottom: "4px",
+                      color: "rgba(255,255,255,0.55)",
+                      marginBottom: "3px",
                     }}
                   >
                     {img.cat}
                   </div>
                   <div
                     style={{
-                      fontSize: "14px",
+                      fontSize: "13px",
                       fontWeight: 600,
                       color: "#f5f5f7",
                       letterSpacing: "-0.015em",
+                      lineHeight: 1.3,
                     }}
                   >
                     {img.title}

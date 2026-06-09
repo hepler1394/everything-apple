@@ -7,6 +7,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "wouter";
 import Navbar from "../components/Navbar";
+import { useSearch } from "../App";
 import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 
@@ -68,9 +69,10 @@ const CATEGORIES = [
 ];
 
 export default function AppleIntelligence() {
+  const { openSearch } = useSearch();
   return (
     <div>
-      <Navbar />
+      <Navbar onSearchOpen={openSearch} />
 
       {/* Hero */}
       <section style={{ background: "#000", padding: "120px 0 100px", textAlign: "center" }}>

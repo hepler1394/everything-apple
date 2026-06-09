@@ -7,6 +7,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "wouter";
 import Navbar from "../components/Navbar";
+import { useSearch } from "../App";
 import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 
@@ -74,9 +75,10 @@ const ANNOUNCEMENTS = [
 ];
 
 export default function WWDC() {
+  const { openSearch } = useSearch();
   return (
     <div>
-      <Navbar />
+      <Navbar onSearchOpen={openSearch} />
 
       {/* Hero */}
       <section style={{ position: "relative", height: "90svh", minHeight: "560px", overflow: "hidden", background: "#000" }}>

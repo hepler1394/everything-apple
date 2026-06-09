@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
+import { useSearch } from "../App";
 
 // ── Intersection-observer fade-in ──────────────────────────────
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -79,13 +80,13 @@ function Hero() {
     <section style={{ position: "relative", height: "100svh", minHeight: "600px", maxHeight: "1000px", overflow: "hidden", background: "#000" }}>
       {/* Real WWDC 2026 Apple Park outdoor stage photo */}
       <img
-        src={IMGS.wwdc.timCookCnet}
-        alt="Tim Cook at WWDC 2026 keynote"
-        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 30%", opacity: 0.55 }}
-        onError={(e) => { (e.target as HTMLImageElement).src = IMGS.wwdc.stageInterior; }}
+        src="/manus-storage/tim-cook-wwdc26-portrait_7485b05e.jpg"
+        alt="Tim Cook at WWDC 2026 keynote — his final keynote as Apple CEO"
+        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 25%", opacity: 1 }}
+        onError={(e) => { (e.target as HTMLImageElement).src = "/manus-storage/wwdc26-stage-rainbow_f01dcbe1.png"; }}
       />
       {/* Gradient overlay */}
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.85) 100%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.25) 40%, rgba(0,0,0,0.88) 100%)" }} />
       {/* Content */}
       <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", justifyContent: "flex-end", paddingBottom: "80px", paddingLeft: "max(22px, env(safe-area-inset-left))", paddingRight: "max(22px, env(safe-area-inset-right))", maxWidth: "1200px", margin: "0 auto" }}>
         <div style={{ maxWidth: "700px" }}>
@@ -496,9 +497,10 @@ function AppleParkFeature() {
 
 // ── Main export ────────────────────────────────────────────────
 export default function Home() {
+  const { openSearch } = useSearch();
   return (
-    <div style={{ background: "#fff" }}>
-      <Navbar />
+    <div style={{ background: "var(--background)" }}>
+      <Navbar onSearchOpen={openSearch} />
       <BreakingTicker />
       <Hero />
       <FeaturedGrid />

@@ -4,6 +4,8 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import SearchOverlay from "./components/SearchOverlay";
+import { useState, useEffect, createContext, useContext } from "react";
 import Home from "./pages/Home";
 import IPhones from "./pages/IPhones";
 import Jailbreak from "./pages/Jailbreak";
@@ -17,6 +19,10 @@ import AppleIntelligence from "./pages/AppleIntelligence";
 import WatchOS12 from "./pages/WatchOS12";
 import AppleSilicon from "./pages/AppleSilicon";
 import Gallery from "./pages/Gallery";
+
+// Global search context so any page can open the search overlay
+export const SearchContext = createContext<{ openSearch: () => void }>({ openSearch: () => {} });
+export const useSearch = () => useContext(SearchContext);
 
 function Router() {
   return (
@@ -40,13 +46,36 @@ function Router() {
   );
 }
 
+function AppInner() {
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  // Cmd+K / Ctrl+K shortcut
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, []);
+
+  return (
+    <SearchContext.Provider value={{ openSearch: () => setSearchOpen(true) }}>
+      <Router />
+      <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
+    </SearchContext.Provider>
+  );
+}
+
 function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <AppInner />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
