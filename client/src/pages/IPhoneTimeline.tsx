@@ -219,7 +219,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 19",
     maxIOS: "iOS 19+",
     highlight: "ProMotion comes to the standard model. Thinner design with aluminum band.",
-    image: "/manus-storage/iphone-17-official-product-photo-apple-2-1_1026c7a7.jpg",
+    image: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/iphone-17-official-product-photo-apple-2-1_1026c7a7.jpg",
     isNew: true,
   },
   {
@@ -235,7 +235,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 19",
     maxIOS: "iOS 19+",
     highlight: "Slimmest Pro ever. Larger display. Advanced Apple Intelligence features.",
-    image: "/manus-storage/iphone-17-official-product-photo-apple-2-4_9c93f7da.png",
+    image: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/iphone-17-official-product-photo-apple-2-4_9c93f7da.png",
     isNew: true,
   },
 ];

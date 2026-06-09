@@ -20,16 +20,16 @@ const ALL_IMAGES = [
   { id: 6, src: IMGS.wwdc.stage1, cat: "WWDC 2026", title: "WWDC 2026 Stage" },
 
   // Siri AI
-  { id: 10, src: "/manus-storage/Apple-Siri-AI-hero-260608_587455d3.jpg", cat: "Siri AI", title: "Siri AI Hero" },
-  { id: 11, src: "/manus-storage/Apple-Siri-app-chat-260608_0ba17d39.jpg", cat: "Siri AI", title: "Siri AI Chat Interface" },
-  { id: 12, src: "/manus-storage/Apple-Siri-AI-Spotlight-integration-260608_34a24073.jpg", cat: "Siri AI", title: "Siri AI Spotlight" },
-  { id: 13, src: "/manus-storage/Apple-Siri-AI-Visual-Intelligence-on-Mac-260608_efcc3546.jpg", cat: "Siri AI", title: "Siri AI Visual Intelligence on Mac" },
-  { id: 14, src: "/manus-storage/Apple-Siri-AI-Visual-Intelligence-on-iPad-260608_f89a1f5d.jpg", cat: "Siri AI", title: "Siri AI Visual Intelligence on iPad" },
-  { id: 15, src: "/manus-storage/Apple-Siri-AI-ask-about-images-260608_8d690c64.jpg", cat: "Siri AI", title: "Siri AI Ask About Images" },
-  { id: 16, src: "/manus-storage/Apple-Siri-AI-world-knowledge-260608_7a563c8b.jpg", cat: "Siri AI", title: "Siri AI World Knowledge" },
-  { id: 17, src: "/manus-storage/Apple-Siri-AI-personal-context-and-suggestions-260608_13d511dd.jpg", cat: "Siri AI", title: "Siri AI Personal Context" },
-  { id: 18, src: "/manus-storage/Apple-Siri-AI-helpful-tips-and-suggestions-260608_34a7ffea.jpg", cat: "Siri AI", title: "Siri AI Helpful Tips" },
-  { id: 19, src: "/manus-storage/Apple-Siri-AI-on-Apple-Vision-Pro-260608_2ff44e7d.jpg", cat: "Siri AI", title: "Siri AI on Vision Pro" },
+  { id: 10, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-AI-hero-260608_587455d3.jpg", cat: "Siri AI", title: "Siri AI Hero" },
+  { id: 11, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-app-chat-260608_0ba17d39.jpg", cat: "Siri AI", title: "Siri AI Chat Interface" },
+  { id: 12, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-AI-Spotlight-integration-260608_34a24073.jpg", cat: "Siri AI", title: "Siri AI Spotlight" },
+  { id: 13, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-AI-Visual-Intelligence-on-Mac-260608_efcc3546.jpg", cat: "Siri AI", title: "Siri AI Visual Intelligence on Mac" },
+  { id: 14, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-AI-Visual-Intelligence-on-iPad-260608_f89a1f5d.jpg", cat: "Siri AI", title: "Siri AI Visual Intelligence on iPad" },
+  { id: 15, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-AI-ask-about-images-260608_8d690c64.jpg", cat: "Siri AI", title: "Siri AI Ask About Images" },
+  { id: 16, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-AI-world-knowledge-260608_7a563c8b.jpg", cat: "Siri AI", title: "Siri AI World Knowledge" },
+  { id: 17, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-AI-personal-context-and-suggestions-260608_13d511dd.jpg", cat: "Siri AI", title: "Siri AI Personal Context" },
+  { id: 18, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-AI-helpful-tips-and-suggestions-260608_34a7ffea.jpg", cat: "Siri AI", title: "Siri AI Helpful Tips" },
+  { id: 19, src: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/Apple-Siri-AI-on-Apple-Vision-Pro-260608_2ff44e7d.jpg", cat: "Siri AI", title: "Siri AI on Vision Pro" },
 
   // Apple Intelligence
   { id: 20, src: IMGS.intelligence.overview, cat: "Apple Intelligence", title: "Apple Intelligence Overview" },
