@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://everythingapple.vercel.app/sitemap.xml
+
+# Everything Apple — Built by Cory Hepler
+# Your #1 source for WWDC 2026, iOS 27, Siri AI, iPhone news, jailbreak tools and more

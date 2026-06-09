@@ -1,19 +1,59 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Everything Apple — Your #1 Source for Apple News, WWDC 2026, iPhones & More</title>    
-    <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    <title>Everything Apple — WWDC 2026, iOS 27, Siri AI, iPhone News & More</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your #1 source for everything Apple. WWDC 2026 coverage, iOS 27 features, new Siri AI, macOS Golden Gate, every iPhone from iPhone 11 to iPhone 17, jailbreak tools, and more. Built by Cory Hepler." />
+    <meta name="keywords" content="WWDC 2026, iOS 27, Siri AI, Apple Intelligence, macOS Golden Gate, iPhone 17, iPhone 16 Pro, new Siri, Apple parental controls, jailbreak iOS, sideload iPhone, AltStore, Sideloadly, palera1n, Apple news, WWDC announcements, Tim Cook, Craig Federighi" />
+    <meta name="author" content="Cory Hepler" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://everythingapple.vercel.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Everything Apple — WWDC 2026, iOS 27, Siri AI & More" />
+    <meta property="og:description" content="The biggest Apple fan site on the web. Full WWDC 2026 coverage, Siri AI deep dive, parental controls, every iPhone ever, jailbreak tools, and Reddit community." />
+    <meta property="og:image" content="/manus-storage/wwdc-keynote-stage_eaa33eea.jpg" />
+    <meta property="og:url" content="https://everythingapple.vercel.app/" />
+    <meta property="og:site_name" content="Everything Apple" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Everything Apple — WWDC 2026, iOS 27, Siri AI" />
+    <meta name="twitter:description" content="Your #1 source for Apple news. WWDC 2026 full coverage, new Siri AI, iOS 27, iPhone lineup, jailbreak tools and more." />
+    <meta name="twitter:image" content="/manus-storage/wwdc-keynote-stage_eaa33eea.jpg" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Everything Apple",
+      "url": "https://everythingapple.vercel.app/",
+      "description": "The #1 Apple fan site covering WWDC 2026, iOS 27, Siri AI, iPhone news, jailbreak tools and more.",
+      "author": {
+        "@type": "Person",
+        "name": "Cory Hepler"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://everythingapple.vercel.app/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    THIS IS THE END OF A COMMENT BLOCK, BLOCK TO BE DELETED -->
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>" />
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
@@ -22,5 +62,4 @@
       src="%VITE_ANALYTICS_ENDPOINT%/umami"
       data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
   </body>
-
 </html>
