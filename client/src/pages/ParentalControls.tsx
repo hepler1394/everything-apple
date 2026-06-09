@@ -525,6 +525,51 @@ export default function ParentalControls() {
         </div>
       </section>
 
+      {/* Official WWDC 2026 Videos */}
+      <section style={{ background: "#000", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div style={{ textAlign: "center", marginBottom: "60px" }}>
+              <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "#0071e3", marginBottom: "16px" }}>Official Video</div>
+              <h2 className="apple-headline-section" style={{ color: "#f5f5f7", marginBottom: "20px" }}>Watch the WWDC 2026 Keynote</h2>
+              <p style={{ fontSize: "17px", color: "rgba(245,245,247,0.65)", maxWidth: "600px", margin: "0 auto", lineHeight: 1.6 }}>See every Parental Controls and Screen Time announcement directly from Apple.</p>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "24px" }}>
+              <div style={{ borderRadius: "18px", overflow: "hidden", background: "#1d1d1f" }}>
+                <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+                  <iframe src="https://www.youtube.com/embed/hF8swzNR1-o" title="WWDC 2026 Keynote" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }} />
+                </div>
+                <div style={{ padding: "20px 24px" }}>
+                  <div style={{ fontSize: "12px", color: "#0071e3", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px" }}>Apple</div>
+                  <div style={{ fontSize: "17px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.022em" }}>WWDC 2026 Keynote</div>
+                  <div style={{ fontSize: "13px", color: "rgba(245,245,247,0.5)", marginTop: "6px" }}>Introducing Siri AI, Parental Controls, iOS 27 and more</div>
+                </div>
+              </div>
+              <div style={{ borderRadius: "18px", overflow: "hidden", background: "#1d1d1f" }}>
+                <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+                  <iframe src="https://www.youtube.com/embed/Uhc2-a_y9x4" title="WWDC 2026 in 13 Minutes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }} />
+                </div>
+                <div style={{ padding: "20px 24px" }}>
+                  <div style={{ fontSize: "12px", color: "#0071e3", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px" }}>Recap</div>
+                  <div style={{ fontSize: "17px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.022em" }}>WWDC 2026 in 13 Minutes</div>
+                  <div style={{ fontSize: "13px", color: "rgba(245,245,247,0.5)", marginTop: "6px" }}>Every announcement including Parental Controls and Screen Time</div>
+                </div>
+              </div>
+              <div style={{ borderRadius: "18px", overflow: "hidden", background: "#1d1d1f" }}>
+                <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+                  <iframe src="https://www.youtube.com/embed/yl2jsIoMfDU" title="WWDC26 Platforms State of the Union" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }} />
+                </div>
+                <div style={{ padding: "20px 24px" }}>
+                  <div style={{ fontSize: "12px", color: "#0071e3", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px" }}>Developer</div>
+                  <div style={{ fontSize: "17px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.022em" }}>Platforms State of the Union</div>
+                  <div style={{ fontSize: "13px", color: "rgba(245,245,247,0.5)", marginTop: "6px" }}>Deep dive into Screen Time API and Family Controls</div>
+                </div>
+              </div>
+            </div>
+          </FadeSection>
+        </div>
+      </section>
+
       <Footer />
 
       <style>{`

@@ -16,6 +16,7 @@ import MacOSGoldenGate from "./pages/MacOSGoldenGate";
 import AppleIntelligence from "./pages/AppleIntelligence";
 import WatchOS12 from "./pages/WatchOS12";
 import AppleSilicon from "./pages/AppleSilicon";
+import Gallery from "./pages/Gallery";
 
 function Router() {
   return (
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/apple-intelligence" component={AppleIntelligence} />
       <Route path="/watchos-12" component={WatchOS12} />
       <Route path="/apple-silicon" component={AppleSilicon} />
+      <Route path="/gallery" component={Gallery} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

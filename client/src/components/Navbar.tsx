@@ -22,6 +22,7 @@ const navLinks = [
   { href: "/apple-silicon", label: "Apple Silicon" },
   { href: "/jailbreak", label: "Jailbreak" },
   { href: "/community", label: "Community" },
+  { href: "/gallery", label: "Gallery" },
 ];
 
 export default function Navbar() {

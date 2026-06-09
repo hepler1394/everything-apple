@@ -718,6 +718,61 @@ export default function Jailbreak() {
         </div>
       </section>
 
+      {/* ── Reddit Community ── */}
+      <section style={{ background: "#1d1d1f", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: "16px", marginBottom: "40px" }}>
+              <div>
+                <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: "12px" }}>Community</div>
+                <h2 className="apple-headline-section" style={{ color: "#f5f5f7" }}>From r/jailbreak.</h2>
+              </div>
+              <a href="https://www.reddit.com/r/jailbreak/" target="_blank" rel="noopener noreferrer" style={{ color: "#0071e3", fontSize: "15px", fontWeight: 500, textDecoration: "none", letterSpacing: "-0.022em" }}>Visit r/jailbreak</a>
+            </div>
+            <div style={{ display: "grid", gap: "1px", background: "rgba(255,255,255,0.08)", borderRadius: "18px", overflow: "hidden" }}>
+              {[
+                { sub: "r/jailbreak", title: "iOS 18.4.1 jailbreak status — Dopamine working on A15 and below", url: "https://www.reddit.com/r/jailbreak/", upvotes: "2.4k", comments: "312", time: "6 hours ago" },
+                { sub: "r/jailbreak", title: "Weekly thread: What are you using? Share your setup", url: "https://www.reddit.com/r/jailbreak/", upvotes: "1.8k", comments: "847", time: "2 days ago" },
+                { sub: "r/jailbreak", title: "palera1n 2.0 released — major update for A9–A11 devices", url: "https://www.reddit.com/r/jailbreak/", upvotes: "5.1k", comments: "623", time: "1 week ago" },
+                { sub: "r/jailbreak", title: "TrollStore 2 — everything you need to know", url: "https://www.reddit.com/r/jailbreak/", upvotes: "9.2k", comments: "1.1k", time: "2 weeks ago" },
+                { sub: "r/sideloaded", title: "AltStore PAL now available in the EU — no 7-day limit", url: "https://www.reddit.com/r/sideloaded/", upvotes: "3.7k", comments: "289", time: "1 month ago" },
+                { sub: "r/sideloaded", title: "Best apps to sideload in 2026 — the definitive list", url: "https://www.reddit.com/r/sideloaded/", upvotes: "6.3k", comments: "742", time: "3 weeks ago" },
+                { sub: "r/jailbreak", title: "iOS 27 jailbreak — what we know so far", url: "https://www.reddit.com/r/jailbreak/", upvotes: "4.5k", comments: "531", time: "1 day ago" },
+                { sub: "r/jailbreak", title: "Beginner guide: How to jailbreak your iPhone in 2026", url: "https://www.reddit.com/r/jailbreak/", upvotes: "12.4k", comments: "2.1k", time: "1 month ago" },
+              ].map((thread, i) => (
+                <a key={i} href={thread.url} target="_blank" rel="noopener noreferrer"
+                  style={{ display: "block", background: "#1d1d1f", padding: "24px 28px", textDecoration: "none", transition: "background 0.15s ease" }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#2c2c2e"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#1d1d1f"; }}
+                >
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "16px" }}>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ fontSize: "12px", fontWeight: 600, color: "#0071e3", letterSpacing: "0.04em", marginBottom: "6px" }}>{thread.sub}</div>
+                      <div style={{ fontSize: "16px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.022em", lineHeight: 1.4, marginBottom: "8px" }}>{thread.title}</div>
+                      <div style={{ display: "flex", gap: "16px", fontSize: "12px", color: "rgba(255,255,255,0.4)" }}>
+                        <span>{thread.upvotes} upvotes</span>
+                        <span>{thread.comments} comments</span>
+                        <span>{thread.time}</span>
+                      </div>
+                    </div>
+                    <div style={{ color: "rgba(255,255,255,0.3)", fontSize: "18px", flexShrink: 0 }}>&#8250;</div>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <div style={{ marginTop: "32px", display: "flex", gap: "12px", flexWrap: "wrap" }}>
+              {["r/jailbreak", "r/sideloaded", "r/TrollStore", "r/iPhone", "r/apple"].map(sub => (
+                <a key={sub} href={`https://www.reddit.com/${sub}/`} target="_blank" rel="noopener noreferrer"
+                  style={{ display: "inline-block", background: "#2c2c2e", color: "rgba(255,255,255,0.7)", padding: "10px 18px", borderRadius: "980px", fontSize: "13px", fontWeight: 500, textDecoration: "none", letterSpacing: "-0.01em", border: "1px solid rgba(255,255,255,0.1)", transition: "all 0.2s ease" }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.borderColor = "#0071e3"; (e.currentTarget as HTMLElement).style.color = "#0071e3"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.1)"; (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.7)"; }}
+                >{sub}</a>
+              ))}
+            </div>
+          </FadeSection>
+        </div>
+      </section>
+
       <Footer />
 
       <style>{`
