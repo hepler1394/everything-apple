@@ -14,7 +14,12 @@ const navLinks = [
   { href: "/wwdc-2026", label: "WWDC 2026" },
   { href: "/siri-ai", label: "Siri AI" },
   { href: "/parental-controls", label: "Parental Controls" },
+  { href: "/ios-27", label: "iOS 27" },
+  { href: "/macos-golden-gate", label: "macOS" },
+  { href: "/apple-intelligence", label: "Intelligence" },
+  { href: "/watchos-12", label: "watchOS 12" },
   { href: "/iphones", label: "iPhones" },
+  { href: "/apple-silicon", label: "Apple Silicon" },
   { href: "/jailbreak", label: "Jailbreak" },
   { href: "/community", label: "Community" },
 ];

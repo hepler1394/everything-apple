@@ -11,30 +11,37 @@ import WWDC from "./pages/WWDC";
 import SiriAI from "./pages/SiriAI";
 import ParentalControls from "./pages/ParentalControls";
 import Reddit from "./pages/Reddit";
-import Navbar from "./components/Navbar";
+import IOS27 from "./pages/IOS27";
+import MacOSGoldenGate from "./pages/MacOSGoldenGate";
+import AppleIntelligence from "./pages/AppleIntelligence";
+import WatchOS12 from "./pages/WatchOS12";
+import AppleSilicon from "./pages/AppleSilicon";
+
 function Router() {
   return (
-    <>
-      <Navbar />
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/wwdc-2026" component={WWDC} />
-        <Route path="/siri-ai" component={SiriAI} />
-        <Route path="/parental-controls" component={ParentalControls} />
-        <Route path="/iphones" component={IPhones} />
-        <Route path="/jailbreak" component={Jailbreak} />
-        <Route path="/community" component={Reddit} />
-        <Route path="/404" component={NotFound} />
-        <Route component={NotFound} />
-      </Switch>
-    </>
+    <Switch>
+      <Route path="/" component={Home} />
+      <Route path="/wwdc-2026" component={WWDC} />
+      <Route path="/siri-ai" component={SiriAI} />
+      <Route path="/parental-controls" component={ParentalControls} />
+      <Route path="/iphones" component={IPhones} />
+      <Route path="/jailbreak" component={Jailbreak} />
+      <Route path="/community" component={Reddit} />
+      <Route path="/ios-27" component={IOS27} />
+      <Route path="/macos-golden-gate" component={MacOSGoldenGate} />
+      <Route path="/apple-intelligence" component={AppleIntelligence} />
+      <Route path="/watchos-12" component={WatchOS12} />
+      <Route path="/apple-silicon" component={AppleSilicon} />
+      <Route path="/404" component={NotFound} />
+      <Route component={NotFound} />
+    </Switch>
   );
 }
 
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark">
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
           <Router />
