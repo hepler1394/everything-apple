@@ -12,13 +12,14 @@ import { Search, Menu, X, Sun, Moon } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/wwdc-2026", label: "WWDC 2026" },
-  { href: "/siri-ai", label: "Siri AI" },
+  { href: "/wwdc-2026", label: "WWDC 2026", isNew: true },
+  { href: "/siri-ai", label: "Siri AI", isNew: true },
   { href: "/parental-controls", label: "Parental Controls" },
-  { href: "/ios-27", label: "iOS 27" },
+  { href: "/ios-27", label: "iOS 27", isNew: true },
   { href: "/macos-golden-gate", label: "macOS" },
   { href: "/apple-intelligence", label: "Intelligence" },
   { href: "/watchos-12", label: "watchOS 12" },
+  { href: "/compare", label: "Compare", isNew: true },
   { href: "/iphones", label: "iPhones" },
   { href: "/iphone-timeline", label: "iPhone History" },
   { href: "/apple-silicon", label: "Apple Silicon" },
@@ -155,7 +156,10 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                       whiteSpace: "nowrap",
                       textDecoration: "none",
                       transition: "color 0.2s ease, background 0.2s ease",
-                      display: "block",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "5px",
+                      position: "relative",
                     }}
                     onMouseEnter={(e) => {
                       (e.currentTarget as HTMLElement).style.color = textColor;
@@ -167,6 +171,17 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                     }}
                   >
                     {link.label}
+                    {link.isNew && !active && (
+                      <span style={{
+                        width: "5px",
+                        height: "5px",
+                        borderRadius: "50%",
+                        background: "#2997ff",
+                        display: "inline-block",
+                        flexShrink: 0,
+                        marginBottom: "6px",
+                      }} />
+                    )}
                   </span>
                 </Link>
               );
@@ -277,11 +292,25 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                       letterSpacing: "-0.022em",
                       color: active ? "var(--apple-blue)" : "var(--foreground)",
                       textDecoration: "none",
-                      display: "block",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
                       animation: `fadeInUp 0.3s cubic-bezier(0.23, 1, 0.32, 1) ${i * 0.03}s both`,
                     }}
                   >
                     {link.label}
+                    {link.isNew && !active && (
+                      <span style={{
+                        fontSize: "10px",
+                        fontWeight: 700,
+                        letterSpacing: "0.06em",
+                        textTransform: "uppercase",
+                        color: "#2997ff",
+                        background: "rgba(41,151,255,0.1)",
+                        padding: "3px 8px",
+                        borderRadius: "4px",
+                      }}>New</span>
+                    )}
                   </div>
                 </Link>
               );

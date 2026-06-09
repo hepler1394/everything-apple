@@ -17,6 +17,7 @@ import { IMGS } from "../lib/imageManifest";
 import LatestNews from "../components/LatestNews";
 import useScrollReveal from "../hooks/useScrollReveal";
 import useParallax from "../hooks/useParallax";
+import ShareButton from "../components/ShareButton";
 
 // ── Hero — full-bleed black, cinematic WWDC photo ──────────────
 function Hero() {
@@ -97,7 +98,7 @@ function Hero() {
           }}>
             Siri AI. Parental Controls. iOS 27. macOS Golden Gate. The biggest Apple event of the year, covered in full.
           </p>
-          <div className="animate-fade-in delay-400" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+          <div className="animate-fade-in delay-400" style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
             <Link href="/wwdc-2026">
               <span className="apple-btn apple-btn-blue" style={{ fontSize: "17px" }}>
                 See all announcements
@@ -122,6 +123,7 @@ function Hero() {
                 Siri AI deep dive
               </span>
             </Link>
+            <ShareButton title="Everything Apple — WWDC 2026 Coverage" text="All the Apple announcements from WWDC 2026" dark={true} />
           </div>
         </div>
       </div>
@@ -503,6 +505,7 @@ function MorePages() {
     { label: "Gallery", href: "/gallery", img: IMGS.places.applePark1 },
     { label: "Community", href: "/community", img: IMGS.places.appleStore2 },
     { label: "iPhone Timeline", href: "/iphone-timeline", img: IMGS.iphone16.proMax1 },
+    { label: "Phone Comparison", href: "/compare", img: IMGS.iphone17.pro1 },
   ];
   return (
     <section className="apple-section section-offwhite" ref={ref as React.RefObject<HTMLElement>}>
