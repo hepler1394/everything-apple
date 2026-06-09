@@ -6,34 +6,41 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
+import { IMGS as CDN } from "../lib/imageManifest";
 
 const IMGS = {
   lineup: "/manus-storage/iphone-lineup-11-17_b4dd07e0.jpg",
   proLineup: "/manus-storage/iphone-pro-lineup_3fdcde73.jpeg",
-  iphone11: "/manus-storage/iphone-11_f2cc236a.jpg",
-  iphone16Pro: "/manus-storage/iphone-16-pro_2bdde138.jpg",
-  iphone16ProMax: "/manus-storage/iphone-16-pro-max_27a4a742.jpg",
-  iphone17: "/manus-storage/iphone-17_5b16b84b.png",
-  iphone17Pro: "/manus-storage/iphone-17-pro_8a9ea682.png",
-  iphoneAir: "/manus-storage/iphone-air_ac6cb200.jpg",
-  // Official Apple CDN transparent PNGs
-  iphone16Plus: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-plus-pink-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone16: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-black-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone15ProMax: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-max-black-titanium-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone15Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-natural-titanium-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone15Plus: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pink-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone15: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-blue-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone14ProMax: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-max-deep-purple-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone14Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-deep-purple-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone14Plus: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-plus-blue-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone14: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-blue-select-202209?wid=940&hei=1112&fmt=png-alpha",
-  iphone13ProMax: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-max-alpine-green-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone13Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-sierra-blue-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone13: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-blue-select-2021?wid=940&hei=1112&fmt=png-alpha",
-  iphone12ProMax: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-max-pacific-blue-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone12Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-pacific-blue-select?wid=940&hei=1112&fmt=png-alpha",
-  iphone12: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=940&hei=1112&fmt=png-alpha",
-  iphone11Pro: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-pro-midnight-green-select-2019?wid=940&hei=1112&fmt=png-alpha",
+  // iPhone 17 Series
+  iphone17Pro: CDN.iphone17.pro1,
+  iphone17: CDN.iphone17.standard,
+  iphoneAir: CDN.iphone17.air,
+  // iPhone 16 Series
+  iphone16ProMax: CDN.iphone16.proMax1,
+  iphone16Pro: CDN.iphone16.pro1,
+  iphone16Plus: CDN.iphone16.standard1,
+  iphone16: CDN.iphone16.standard2,
+  // iPhone 15 Series
+  iphone15ProMax: CDN.iphone15.proMax1,
+  iphone15Pro: CDN.iphone15.pro1,
+  iphone15Plus: CDN.iphone15.pro2,
+  iphone15: CDN.iphone15.pro3,
+  // iPhone 14 Series
+  iphone14ProMax: CDN.iphone14.proMax1,
+  iphone14Pro: CDN.iphone14.pro1,
+  iphone14Plus: CDN.iphone14.standard1,
+  iphone14: CDN.iphone14.standard2,
+  // iPhone 13 Series
+  iphone13ProMax: CDN.iphone13.proMax1,
+  iphone13Pro: CDN.iphone13.pro1,
+  iphone13: CDN.iphone13.pro2,
+  // iPhone 12 Series
+  iphone12ProMax: CDN.iphone12.proMax1,
+  iphone12Pro: CDN.iphone12.proMax1,
+  iphone12: CDN.iphone12.standard1,
+  // iPhone 11 Series
+  iphone11Pro: CDN.iphone11.proMax1,
+  iphone11: CDN.iphone11.main,
 };
 
 const FALLBACK = IMGS.iphone16; // safe fallback to a real image
@@ -568,7 +575,7 @@ export default function IPhones() {
           <section
             key={series.id}
             id={series.id}
-            style={{ padding: "80px 0 0" }}
+            style={{ padding: "56px 0 0" }}
           >
             <FadeSection>
               <div

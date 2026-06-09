@@ -6,6 +6,7 @@
    ============================================================= */
 
 import { useState, useRef, useEffect } from "react";
+import { IMGS as CDN } from "../lib/imageManifest";
 
 interface PhoneModel {
   id: string;
@@ -38,7 +39,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 13",
     maxIOS: "iOS 18",
     highlight: "Introduced Night Mode and Ultra Wide camera to the mainstream lineup.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-black-select-2019?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone11.main,
   },
   {
     id: "iphone-11-pro",
@@ -53,7 +54,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 13",
     maxIOS: "iOS 18",
     highlight: "First iPhone with a triple-camera system and ProMotion-class display.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-pro-midnight-green-select-2019?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone11.proMax1,
   },
   {
     id: "iphone-12",
@@ -68,7 +69,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 14",
     maxIOS: "iOS 18",
     highlight: "First iPhone with 5G and the return of flat-edge design with Ceramic Shield.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-blue-select-2020?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone12.standard1,
   },
   {
     id: "iphone-12-pro",
@@ -83,7 +84,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 14",
     maxIOS: "iOS 18",
     highlight: "Introduced LiDAR Scanner for AR and ProRAW photography.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-pro-pacific-blue-select?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone12.proMax1,
   },
   {
     id: "iphone-13",
@@ -98,7 +99,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 15",
     maxIOS: "iOS 18",
     highlight: "Cinematic mode, smaller notch, and massive battery life improvements.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-blue-select-2021?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone13.pro2,
   },
   {
     id: "iphone-13-pro",
@@ -113,7 +114,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 15",
     maxIOS: "iOS 18",
     highlight: "First iPhone with ProMotion 120Hz adaptive display and macro photography.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-sierra-blue-select?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone13.pro1,
   },
   {
     id: "iphone-14",
@@ -128,7 +129,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 16",
     maxIOS: "iOS 18",
     highlight: "Emergency SOS via satellite, Crash Detection, and Action mode video.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-blue-select-202209?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone14.standard2,
   },
   {
     id: "iphone-14-pro",
@@ -143,7 +144,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 16",
     maxIOS: "iOS 18",
     highlight: "Dynamic Island replaces the notch. First 48MP camera. Always-On display.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-deep-purple-select?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone14.pro1,
   },
   {
     id: "iphone-15",
@@ -158,7 +159,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 17",
     maxIOS: "iOS 18",
     highlight: "Dynamic Island comes to the standard model. USB-C replaces Lightning.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-blue-select?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone15.pro3,
   },
   {
     id: "iphone-15-pro",
@@ -173,7 +174,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 17",
     maxIOS: "iOS 18",
     highlight: "Titanium frame, Action Button, USB 3 speeds, and A17 Pro chip.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-natural-titanium-select?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone15.pro1,
   },
   {
     id: "iphone-16",
@@ -188,7 +189,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 18",
     maxIOS: "iOS 18+",
     highlight: "Camera Control button, Apple Intelligence, and A18 chip.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-black-select?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone16.standard2,
   },
   {
     id: "iphone-16-pro",
@@ -203,7 +204,7 @@ const iPhoneModels: PhoneModel[] = [
     ios: "iOS 18",
     maxIOS: "iOS 18+",
     highlight: "Largest Pro display ever, 4K 120fps video, and Camera Control.",
-    image: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-desert-titanium-select?wid=940&hei=1112&fmt=png-alpha",
+    image: CDN.iphone16.pro1,
   },
   {
     id: "iphone-17",
@@ -275,7 +276,7 @@ export default function IPhoneTimeline() {
     <div style={{ background: "#000", minHeight: "100vh" }}>
 
       {/* ── Hero ── */}
-      <section style={{ background: "linear-gradient(180deg, #1d1d1f 0%, #000 100%)", padding: "80px 22px 80px", textAlign: "center" }}>
+      <section style={{ background: "linear-gradient(180deg, #1d1d1f 0%, #000 100%)", padding: "56px 22px 48px", textAlign: "center" }}>
         <FadeIn>
           <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: "16px" }}>
             iPhone History
@@ -290,7 +291,7 @@ export default function IPhoneTimeline() {
       </section>
 
       {/* ── Year filter ── */}
-      <section style={{ background: "#000", padding: "0 22px 60px" }}>
+      <section style={{ background: "#000", padding: "0 22px 32px" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", justifyContent: "center", marginBottom: "16px" }}>
             {years.map((year) => (
@@ -317,7 +318,7 @@ export default function IPhoneTimeline() {
       </section>
 
       {/* ── Timeline horizontal scroll ── */}
-      <section style={{ background: "#000", paddingBottom: "80px" }}>
+      <section style={{ background: "#000", paddingBottom: "48px" }}>
         <div
           ref={scrollRef}
           style={{

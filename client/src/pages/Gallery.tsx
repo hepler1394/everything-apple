@@ -20,11 +20,16 @@ const ALL_IMAGES = [
   { id: 6, src: IMGS.wwdc.stage1, cat: "WWDC 2026", title: "WWDC 2026 Stage" },
 
   // Siri AI
-  { id: 10, src: IMGS.siri.screen1, cat: "Siri AI", title: "Siri AI Interface" },
-  { id: 11, src: IMGS.siri.screen2, cat: "Siri AI", title: "Siri AI Conversation" },
-  { id: 12, src: IMGS.siri.screen3, cat: "Siri AI", title: "Siri AI Features" },
-  { id: 13, src: IMGS.siri.screen4, cat: "Siri AI", title: "Siri AI App" },
-  { id: 14, src: IMGS.siri.screen5, cat: "Siri AI", title: "Siri AI on iPhone" },
+  { id: 10, src: "/manus-storage/Apple-Siri-AI-hero-260608_587455d3.jpg", cat: "Siri AI", title: "Siri AI Hero" },
+  { id: 11, src: "/manus-storage/Apple-Siri-app-chat-260608_0ba17d39.jpg", cat: "Siri AI", title: "Siri AI Chat Interface" },
+  { id: 12, src: "/manus-storage/Apple-Siri-AI-Spotlight-integration-260608_34a24073.jpg", cat: "Siri AI", title: "Siri AI Spotlight" },
+  { id: 13, src: "/manus-storage/Apple-Siri-AI-Visual-Intelligence-on-Mac-260608_efcc3546.jpg", cat: "Siri AI", title: "Siri AI Visual Intelligence on Mac" },
+  { id: 14, src: "/manus-storage/Apple-Siri-AI-Visual-Intelligence-on-iPad-260608_f89a1f5d.jpg", cat: "Siri AI", title: "Siri AI Visual Intelligence on iPad" },
+  { id: 15, src: "/manus-storage/Apple-Siri-AI-ask-about-images-260608_8d690c64.jpg", cat: "Siri AI", title: "Siri AI Ask About Images" },
+  { id: 16, src: "/manus-storage/Apple-Siri-AI-world-knowledge-260608_7a563c8b.jpg", cat: "Siri AI", title: "Siri AI World Knowledge" },
+  { id: 17, src: "/manus-storage/Apple-Siri-AI-personal-context-and-suggestions-260608_13d511dd.jpg", cat: "Siri AI", title: "Siri AI Personal Context" },
+  { id: 18, src: "/manus-storage/Apple-Siri-AI-helpful-tips-and-suggestions-260608_34a7ffea.jpg", cat: "Siri AI", title: "Siri AI Helpful Tips" },
+  { id: 19, src: "/manus-storage/Apple-Siri-AI-on-Apple-Vision-Pro-260608_2ff44e7d.jpg", cat: "Siri AI", title: "Siri AI on Vision Pro" },
 
   // Apple Intelligence
   { id: 20, src: IMGS.intelligence.overview, cat: "Apple Intelligence", title: "Apple Intelligence Overview" },
@@ -187,10 +192,10 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div style={{ background: "var(--background)", minHeight: "100vh" }}>
+    <div style={{ background: "#000000", minHeight: "100vh", color: "#f5f5f7" }}>
 
       {/* ── Hero ── */}
-      <section style={{ paddingTop: "120px", paddingBottom: "60px", textAlign: "center" }}>
+      <section style={{ paddingTop: "60px", paddingBottom: "48px", textAlign: "center" }}>
         <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
           <div
             style={{
@@ -284,7 +289,7 @@ export default function Gallery() {
       </div>
 
       {/* ── Gallery Grid ── */}
-      <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "40px 22px 100px" }}>
+      <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "32px 22px 64px" }}>
         <div
           style={{
             display: "grid",
@@ -301,11 +306,11 @@ export default function Gallery() {
                 aspectRatio: "4/3",
                 overflow: "hidden",
                 cursor: "pointer",
-                background: "var(--glass-bg)",
+                background: "rgba(29,29,31,0.85)",
                 backdropFilter: "blur(12px)",
                 WebkitBackdropFilter: "blur(12px)",
                 borderRadius: "14px",
-                border: "1px solid var(--glass-border-subtle)",
+                border: "1px solid rgba(255,255,255,0.08)",
                 boxShadow: "0 4px 20px rgba(0,0,0,0.2)",
                 animation: `fadeInUp 0.4s cubic-bezier(0.23, 1, 0.32, 1) ${Math.min(i * 0.03, 0.5)}s both`,
                 transition: "box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.23, 1, 0.32, 1)",

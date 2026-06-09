@@ -162,6 +162,11 @@
   --banner-height: 0px;
   --nav-height: 44px;
   --subnav-height: 0px;
+  /* Glass variables for gallery and dark cards */
+  --glass-bg: rgba(255,255,255,0.85);
+  --glass-border-subtle: rgba(0,0,0,0.08);
+  --glass-bg-dark: rgba(29,29,31,0.85);
+  --glass-border-dark: rgba(255,255,255,0.08);
 }
 
 /* ══════════════════════════════════════════
@@ -188,6 +193,9 @@
   --border: #333333;
   --input: #333333;
   --ring: #0071e3;
+  /* Glass variables for dark mode */
+  --glass-bg: rgba(29,29,31,0.85);
+  --glass-border-subtle: rgba(255,255,255,0.08);
 }
 
 /* ══════════════════════════════════════════

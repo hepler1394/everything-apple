@@ -67,7 +67,7 @@ export default function IOS27() {
     <div>
 
       {/* Hero */}
-      <section style={{ background: "#000", padding: "120px 0 100px", textAlign: "center" }}>
+      <section style={{ background: "#000", padding: "80px 0 60px", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
             <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "16px" }}>iOS 27</p>
@@ -82,7 +82,7 @@ export default function IOS27() {
           </FadeIn>
         </div>
         <FadeIn delay={200}>
-          <div style={{ maxWidth: "1000px", margin: "80px auto 0", padding: "0 22px", display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: "8px" }}>
+          <div style={{ maxWidth: "1000px", margin: "48px auto 0", padding: "0 22px", display: "grid", gridTemplateColumns: "repeat(5, 1fr)", gap: "8px" }}>
             {[IMGS.ios27.homeScreen1, IMGS.ios27.homeScreen2, IMGS.ios27.homeScreen3, IMGS.ios27.homeScreen4, IMGS.ios27.homeScreen5].map((src, i) => (
               <div key={i} style={{ borderRadius: "16px", overflow: "hidden", aspectRatio: "9/19.5", boxShadow: "0 20px 60px rgba(0,0,0,0.5)" }}>
                 <img src={src} alt={`iOS 27 screenshot ${i + 1}`} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -93,7 +93,7 @@ export default function IOS27() {
       </section>
 
       {/* What is Liquid Glass */}
-      <section style={{ background: "#fff", padding: "120px 0" }}>
+      <section style={{ background: "#fff", padding: "72px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="feature-grid-responsive">
             <FadeIn>
@@ -119,7 +119,7 @@ export default function IOS27() {
       </section>
 
       {/* Features grid */}
-      <section id="features" style={{ background: "#f5f5f7", padding: "100px 0" }}>
+      <section id="features" style={{ background: "#f5f5f7", padding: "72px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
             <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Features</p>
@@ -132,7 +132,7 @@ export default function IOS27() {
       </section>
 
       {/* Performance numbers */}
-      <section style={{ background: "#000", padding: "100px 0" }}>
+      <section style={{ background: "#000", padding: "72px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
             <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Performance</p>
@@ -159,7 +159,7 @@ export default function IOS27() {
       </section>
 
       {/* Compatibility table */}
-      <section id="compatibility" style={{ background: "#fff", padding: "100px 0" }}>
+      <section id="compatibility" style={{ background: "#fff", padding: "72px 0" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
             <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Compatibility</p>
@@ -186,7 +186,7 @@ export default function IOS27() {
       </section>
 
       {/* Related */}
-      <section style={{ background: "#f5f5f7", padding: "80px 0" }}>
+      <section style={{ background: "#f5f5f7", padding: "56px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
             <h2 style={{ fontSize: "28px", fontWeight: 700, color: "#1d1d1f", marginBottom: "32px" }}>Also from WWDC 2026</h2>

@@ -106,7 +106,7 @@ export default function WWDC() {
       </div>
 
       {/* Tim Cook intro */}
-      <section style={{ background: "#1d1d1f", padding: "100px 0" }}>
+      <section style={{ background: "#1d1d1f", padding: "72px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="feature-grid-responsive">
             <FadeIn>
@@ -132,7 +132,7 @@ export default function WWDC() {
       {/* Announcements */}
       <div id="announcements">
         {ANNOUNCEMENTS.map((ann, idx) => (
-          <section key={ann.id} id={ann.id} style={{ background: ann.dark ? "#000" : "#fff", padding: "100px 0" }}>
+          <section key={ann.id} id={ann.id} style={{ background: ann.dark ? "#000" : "#fff", padding: "72px 0" }}>
             <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="feature-grid-responsive">
                 <div style={{ order: idx % 2 === 0 ? 0 : 1 }}>
@@ -169,7 +169,7 @@ export default function WWDC() {
       </div>
 
       {/* Gallery */}
-      <section id="gallery" style={{ background: "#f5f5f7", padding: "100px 0" }}>
+      <section id="gallery" style={{ background: "#f5f5f7", padding: "72px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
             <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Event Gallery</p>
