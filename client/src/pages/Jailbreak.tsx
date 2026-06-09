@@ -1,7 +1,13 @@
-import { useState, useEffect } from "react";
-import { ExternalLink, Terminal, AlertTriangle, CheckCircle, XCircle, Info, Download, Shield } from "lucide-react";
+/* =============================================================
+   Jailbreak Page — Apple.com design language
+   Compatibility checker, tools, sideloading — no emojis
+   Built by Cory Hepler
+   ============================================================= */
 
-type JailbreakStatus = "jailbreakable" | "partial" | "not-jailbreakable" | "unknown";
+import { useState, useEffect, useRef } from "react";
+import Footer from "../components/Footer";
+
+type JailbreakStatus = "jailbreakable" | "partial" | "not-jailbreakable";
 
 interface CompatEntry {
   ios: string;
@@ -12,364 +18,718 @@ interface CompatEntry {
 }
 
 const compatibilityData: Record<string, CompatEntry[]> = {
-  "iOS 18 / iOS 18.x": [
+  "iOS 18": [
     { ios: "iOS 18.0 – 18.3.2", status: "jailbreakable", tool: "palera1n", toolUrl: "https://palera.in", notes: "A8–A11 chip iPhones only (iPhone X and older). Semi-tethered." },
     { ios: "iOS 18.4 – 18.5", status: "partial", tool: "palera1n (beta)", toolUrl: "https://palera.in", notes: "Limited device support. Check palera1n compatibility list." },
     { ios: "iOS 18.6+", status: "not-jailbreakable", notes: "No public jailbreak available yet." },
   ],
-  "iOS 17 / iOS 17.x": [
+  "iOS 17": [
     { ios: "iOS 17.0 – 17.6.1", status: "jailbreakable", tool: "palera1n", toolUrl: "https://palera.in", notes: "A8–A11 chip iPhones. Semi-tethered. Requires macOS or Linux." },
     { ios: "iOS 17.7+", status: "partial", notes: "Limited support. Check latest palera1n releases." },
   ],
-  "iOS 16 / iOS 16.x": [
+  "iOS 16": [
     { ios: "iOS 16.0 – 16.7.x", status: "jailbreakable", tool: "palera1n", toolUrl: "https://palera.in", notes: "A8–A11 chip iPhones. Semi-tethered jailbreak." },
     { ios: "iOS 16.0 – 16.6.1 (A12+)", status: "jailbreakable", tool: "Dopamine", toolUrl: "https://github.com/opa334/Dopamine", notes: "A12+ chip iPhones. Rootless jailbreak. Very stable." },
   ],
-  "iOS 15 / iOS 15.x": [
+  "iOS 15": [
     { ios: "iOS 15.0 – 15.8.x", status: "jailbreakable", tool: "palera1n", toolUrl: "https://palera.in", notes: "A8–A11 chip iPhones." },
     { ios: "iOS 15.0 – 15.4.1 (A12+)", status: "jailbreakable", tool: "Dopamine", toolUrl: "https://github.com/opa334/Dopamine", notes: "A12+ iPhones. Rootless." },
   ],
-  "iOS 14 / iOS 14.x": [
+  "iOS 14": [
     { ios: "iOS 14.0 – 14.8.1", status: "jailbreakable", tool: "checkra1n", toolUrl: "https://checkra.in", notes: "A8–A11 chip iPhones only. Semi-tethered." },
     { ios: "iOS 14.0 – 14.5 (A12+)", status: "jailbreakable", tool: "unc0ver", toolUrl: "https://unc0ver.dev", notes: "A12+ iPhones. Untethered. Very stable." },
   ],
-  "iOS 13 / iOS 13.x": [
+  "iOS 13": [
     { ios: "iOS 13.0 – 13.7", status: "jailbreakable", tool: "checkra1n / unc0ver", toolUrl: "https://checkra.in", notes: "Wide device support. Both checkra1n and unc0ver work." },
   ],
 };
 
-const sideloadTools = [
-  {
-    name: "AltStore",
-    desc: "The most popular sideloading tool. Install apps via your Apple ID without a computer after initial setup. Free with 3-app limit, AltStore PAL available in EU.",
-    url: "https://altstore.io",
-    platforms: ["Windows", "macOS"],
-    free: true,
-    difficulty: "Easy",
-    color: "border-blue-500/30 bg-blue-500/5",
-    tagColor: "text-blue-400",
-  },
-  {
-    name: "Sideloadly",
-    desc: "Feature-rich sideloading tool supporting both Windows and macOS. Supports tweaked apps, game emulators, and custom IPAs. Requires re-signing every 7 days with free Apple ID.",
-    url: "https://sideloadly.io",
-    platforms: ["Windows", "macOS"],
-    free: true,
-    difficulty: "Easy",
-    color: "border-purple-500/30 bg-purple-500/5",
-    tagColor: "text-purple-400",
-  },
-  {
-    name: "SideStore",
-    desc: "Open-source AltStore alternative that runs entirely on-device after initial setup. No computer needed for refreshing apps. Uses WireGuard VPN trick.",
-    url: "https://sidestore.io",
-    platforms: ["On-device"],
-    free: true,
-    difficulty: "Medium",
-    color: "border-green-500/30 bg-green-500/5",
-    tagColor: "text-green-400",
-  },
-  {
-    name: "TrollStore",
-    desc: "Permanent sideloading for supported iOS versions. Apps never expire and do not need refreshing. Works on specific iOS versions only — check compatibility.",
-    url: "https://github.com/opa334/TrollStore",
-    platforms: ["On-device"],
-    free: true,
-    difficulty: "Medium",
-    color: "border-yellow-500/30 bg-yellow-500/5",
-    tagColor: "text-yellow-400",
-  },
-  {
-    name: "Esign",
-    desc: "On-device IPA signer and installer. Sign and install apps directly on your iPhone without a computer. Requires a certificate.",
-    url: "https://esign.yyyue.xyz",
-    platforms: ["On-device"],
-    free: false,
-    difficulty: "Medium",
-    color: "border-orange-500/30 bg-orange-500/5",
-    tagColor: "text-orange-400",
-  },
-  {
-    name: "Feather",
-    desc: "Modern on-device sideloading app with a clean interface. Sign and install IPAs directly from your iPhone. Free with certificate.",
-    url: "https://github.com/khcrysalis/Feather",
-    platforms: ["On-device"],
-    free: true,
-    difficulty: "Medium",
-    color: "border-cyan-500/30 bg-cyan-500/5",
-    tagColor: "text-cyan-400",
-  },
-];
-
 const jailbreakTools = [
   {
     name: "palera1n",
-    desc: "The most actively maintained jailbreak. Supports A8–A11 chip iPhones on iOS 15–18. Semi-tethered. Requires macOS or Linux.",
+    desc: "The most actively maintained jailbreak tool. Supports A8–A11 devices on iOS 15–18. Semi-tethered. Requires a computer to boot.",
     url: "https://palera.in",
-    devices: "iPhone 6s – iPhone X",
-    ios: "iOS 15 – 18.x",
+    supports: "iOS 15 – 18.3.2 (A8–A11)",
     type: "Semi-tethered",
-    active: true,
+    status: "Active",
   },
   {
     name: "Dopamine",
-    desc: "Rootless jailbreak for A12+ iPhones on iOS 15–16. Very stable and widely used. Made by opa334.",
+    desc: "Rootless jailbreak for A12+ devices. Extremely stable. Does not modify the root filesystem, making it safer and more compatible with apps.",
     url: "https://github.com/opa334/Dopamine",
-    devices: "iPhone XS and newer",
-    ios: "iOS 15.0 – 16.6.1",
+    supports: "iOS 15.0 – 16.6.1 (A12+)",
     type: "Rootless",
-    active: true,
+    status: "Active",
   },
   {
     name: "checkra1n",
-    desc: "Hardware-based (bootrom) jailbreak for A8–A11 chips. Extremely stable. No longer actively updated but still works.",
+    desc: "Hardware-based jailbreak exploiting the checkm8 bootrom vulnerability. Permanent and very reliable for supported devices.",
     url: "https://checkra.in",
-    devices: "iPhone 6s – iPhone X",
-    ios: "iOS 12 – 14.8.1",
+    supports: "iOS 12 – 14.8.1 (A8–A11)",
     type: "Semi-tethered",
-    active: false,
+    status: "Maintained",
   },
   {
     name: "unc0ver",
-    desc: "Classic untethered jailbreak for A12+ iPhones. No longer updated but still works on older iOS versions.",
+    desc: "Classic untethered jailbreak. Supports a wide range of iOS versions and devices. Stable and well-tested.",
     url: "https://unc0ver.dev",
-    devices: "iPhone XS and newer",
-    ios: "iOS 11 – 14.8",
+    supports: "iOS 11 – 14.8 (A12+)",
     type: "Untethered",
-    active: false,
+    status: "Legacy",
   },
 ];
 
-const deviceChips: Record<string, string> = {
-  "iPhone 17 Pro Max / Pro / Air / 17": "A19 / A18 (not jailbreakable)",
-  "iPhone 16 Pro Max / Pro / Plus / 16": "A18 Pro / A18 (not jailbreakable)",
-  "iPhone 15 Pro Max / Pro / Plus / 15": "A17 Pro / A16 (not jailbreakable)",
-  "iPhone 14 Pro Max / Pro / Plus / 14": "A16 / A15 (not jailbreakable)",
-  "iPhone 13 Pro Max / Pro / mini / 13": "A15 Bionic (not jailbreakable on latest iOS)",
-  "iPhone 12 Pro Max / Pro / mini / 12": "A14 Bionic (Dopamine on iOS 15–16)",
-  "iPhone 11 Pro Max / Pro / 11": "A13 Bionic (Dopamine on iOS 15–16)",
-  "iPhone XS Max / XS / XR": "A12 Bionic (Dopamine on iOS 15–16)",
-  "iPhone X": "A11 Bionic (palera1n)",
-  "iPhone 8 Plus / 8": "A11 Bionic (palera1n)",
-  "iPhone 7 Plus / 7": "A10 Fusion (palera1n)",
-  "iPhone 6s Plus / 6s / SE (1st gen)": "A9 (palera1n)",
+const sideloadTools = [
+  {
+    name: "AltStore",
+    desc: "The most popular sideloading tool. Install apps via your Apple ID without a computer after initial setup. Free with 3-app limit.",
+    url: "https://altstore.io",
+    platforms: "Windows, macOS",
+    difficulty: "Easy",
+    free: true,
+  },
+  {
+    name: "Sideloadly",
+    desc: "Feature-rich sideloading tool. Supports tweaked apps, game emulators, and custom IPAs. Requires re-signing every 7 days with a free Apple ID.",
+    url: "https://sideloadly.io",
+    platforms: "Windows, macOS",
+    difficulty: "Easy",
+    free: true,
+  },
+  {
+    name: "SideStore",
+    desc: "Open-source AltStore alternative that runs entirely on-device after initial setup. No computer needed for refreshing apps.",
+    url: "https://sidestore.io",
+    platforms: "On-device",
+    difficulty: "Medium",
+    free: true,
+  },
+  {
+    name: "TrollStore",
+    desc: "Permanent sideloading for supported iOS versions. Apps never expire and do not need refreshing. Works on specific iOS versions only.",
+    url: "https://github.com/opa334/TrollStore",
+    platforms: "On-device",
+    difficulty: "Medium",
+    free: true,
+  },
+  {
+    name: "Scarlet",
+    desc: "On-device app installer with a large library of tweaked apps and games. No computer required. Certificate-based signing.",
+    url: "https://usescarlet.com",
+    platforms: "On-device",
+    difficulty: "Easy",
+    free: true,
+  },
+  {
+    name: "ESign",
+    desc: "On-device IPA installer and signer. Import your own certificates or use the built-in signing service. Supports custom repos.",
+    url: "https://esign.yyyue.xyz",
+    platforms: "On-device",
+    difficulty: "Medium",
+    free: true,
+  },
+];
+
+function FadeSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add("visible"), delay);
+          obs.unobserve(el);
+        }
+      },
+      { threshold: 0.05 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [delay]);
+  return <div ref={ref} className="fade-in-up">{children}</div>;
+}
+
+const statusConfig = {
+  jailbreakable: { label: "Jailbreakable", color: "#30d158" },
+  partial: { label: "Partial", color: "#ff9f0a" },
+  "not-jailbreakable": { label: "Not Available", color: "rgba(255,255,255,0.3)" },
 };
 
 export default function Jailbreak() {
-  const [selectedIOS, setSelectedIOS] = useState<string>("iOS 18 / iOS 18.x");
+  const [selectedVersion, setSelectedVersion] = useState<string>("iOS 18");
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => e.isIntersecting && e.target.classList.add("visible")),
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
-  const getStatusBadge = (status: JailbreakStatus) => {
-    switch (status) {
-      case "jailbreakable":
-        return <span className="badge-jailbreakable flex items-center gap-1"><CheckCircle className="w-3 h-3" /> Jailbreakable</span>;
-      case "partial":
-        return <span className="badge-partial flex items-center gap-1"><Info className="w-3 h-3" /> Partial</span>;
-      case "not-jailbreakable":
-        return <span className="badge-not-jailbreakable flex items-center gap-1"><XCircle className="w-3 h-3" /> No JB</span>;
-      default:
-        return <span className="badge-partial">Unknown</span>;
-    }
-  };
+  const entries = compatibilityData[selectedVersion] || [];
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Hero */}
-      <section className="relative py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-950/30 via-black to-amber-950/20" />
-        <div className="absolute top-1/2 right-0 w-96 h-96 rounded-full bg-orange-500/10 blur-3xl animate-pulse-glow" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="section-label text-orange-400 mb-3">Tools, Guides & Compatibility</div>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-none mb-4">
-            <span className="text-white">Jailbreak</span>
-            <br />
-            <span className="text-gradient-gold">& Sideload</span>
-          </h1>
-          <p className="text-white/70 text-base md:text-lg max-w-2xl mb-6 leading-relaxed">
-            Check if your iPhone can be jailbroken. Download the latest tools. 
-            Learn how to sideload apps without jailbreaking. Everything you need in one place.
+    <div style={{ background: "#000", minHeight: "100vh" }}>
+
+      {/* ── Hero ── */}
+      <section
+        style={{
+          background: "#000",
+          padding: "140px 22px 80px",
+          textAlign: "center",
+        }}
+      >
+        <div
+          style={{
+            fontSize: "12px",
+            fontWeight: 600,
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            color: "rgba(255,255,255,0.4)",
+            marginBottom: "16px",
+          }}
+        >
+          Jailbreak and Sideloading
+        </div>
+        <h1
+          className="apple-headline-hero"
+          style={{ color: "#f5f5f7", marginBottom: "20px" }}
+        >
+          Jailbreak Guide.
+        </h1>
+        <p
+          className="apple-body-large"
+          style={{ color: "rgba(255,255,255,0.65)", maxWidth: "600px", margin: "0 auto 40px" }}
+        >
+          Check if your iOS version can be jailbroken. Find the right tools, download links, and sideloading apps — all in one place.
+        </p>
+        <div
+          style={{
+            display: "inline-block",
+            padding: "12px 20px",
+            border: "1px solid rgba(255,153,10,0.4)",
+            borderRadius: "12px",
+            background: "rgba(255,153,10,0.06)",
+            maxWidth: "600px",
+          }}
+        >
+          <p
+            style={{
+              fontSize: "13px",
+              color: "rgba(255,255,255,0.55)",
+              lineHeight: 1.5,
+              margin: 0,
+              letterSpacing: "-0.01em",
+            }}
+          >
+            Jailbreaking voids your warranty and may expose your device to security risks. Proceed only if you understand the implications. Always back up your device before attempting.
           </p>
-          <div className="glass-card p-4 border border-yellow-500/20 bg-yellow-500/5 max-w-2xl">
-            <div className="flex items-start gap-3">
-              <AlertTriangle className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
-              <div>
-                <div className="text-yellow-400 font-semibold text-sm mb-1">Disclaimer</div>
-                <div className="text-white/60 text-xs leading-relaxed">
-                  Jailbreaking voids your Apple warranty and may expose your device to security risks. 
-                  Always back up your iPhone before attempting to jailbreak. Proceed at your own risk. 
-                  This site provides information only and does not host any jailbreak tools.
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* Compatibility Checker */}
-      <section id="checker" className="py-12 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="section-label text-orange-400 mb-2 fade-up">Jailbreak Compatibility</div>
-          <h2 className="text-3xl font-black mb-6 fade-up">Is Your iOS Jailbreakable?</h2>
+      {/* ── Compatibility Checker ── */}
+      <section style={{ background: "#1d1d1f", padding: "80px 0" }}>
+        <div style={{ maxWidth: "780px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+            >
+              Compatibility Checker
+            </div>
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "40px" }}
+            >
+              Select your iOS version.
+            </h2>
 
-          {/* iOS Version Selector */}
-          <div className="flex flex-wrap gap-2 mb-8 fade-up">
-            {Object.keys(compatibilityData).map(version => (
-              <button
-                key={version}
-                onClick={() => setSelectedIOS(version)}
-                className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
-                  selectedIOS === version
-                    ? "bg-orange-500/20 border border-orange-500/40 text-orange-300"
-                    : "border border-white/15 text-white/60 hover:text-white hover:border-white/30"
-                }`}
+            {/* Version selector */}
+            <div
+              style={{
+                display: "flex",
+                gap: "8px",
+                flexWrap: "wrap",
+                justifyContent: "center",
+                marginBottom: "40px",
+              }}
+            >
+              {Object.keys(compatibilityData).map((version) => (
+                <button
+                  key={version}
+                  onClick={() => setSelectedVersion(version)}
+                  style={{
+                    padding: "10px 20px",
+                    borderRadius: "980px",
+                    border: selectedVersion === version ? "1px solid #0071e3" : "1px solid rgba(255,255,255,0.15)",
+                    background: selectedVersion === version ? "rgba(0,113,227,0.15)" : "transparent",
+                    color: selectedVersion === version ? "#0071e3" : "rgba(255,255,255,0.6)",
+                    fontSize: "14px",
+                    fontWeight: selectedVersion === version ? 600 : 400,
+                    cursor: "pointer",
+                    transition: "all 0.2s ease",
+                    letterSpacing: "-0.01em",
+                  }}
+                >
+                  {version}
+                </button>
+              ))}
+            </div>
+
+            {/* Results table */}
+            <div
+              style={{
+                border: "1px solid rgba(255,255,255,0.1)",
+                borderRadius: "18px",
+                overflow: "hidden",
+              }}
+            >
+              {/* Header */}
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr auto auto",
+                  gap: "16px",
+                  padding: "12px 24px",
+                  background: "rgba(255,255,255,0.04)",
+                  borderBottom: "1px solid rgba(255,255,255,0.1)",
+                }}
               >
-                {version}
-              </button>
-            ))}
-          </div>
-
-          {/* Compatibility Table */}
-          <div className="space-y-3 fade-up">
-            {compatibilityData[selectedIOS]?.map((entry, i) => (
-              <div key={i} className="glass-card p-4 border border-white/10 flex flex-col sm:flex-row sm:items-center gap-3">
-                <div className="flex-1">
-                  <div className="text-white font-semibold text-sm font-mono-tech">{entry.ios}</div>
-                  <div className="text-white/50 text-xs mt-1">{entry.notes}</div>
-                </div>
-                <div className="flex items-center gap-3 flex-shrink-0">
-                  {getStatusBadge(entry.status)}
-                  {entry.tool && entry.toolUrl && (
-                    <a href={entry.toolUrl} target="_blank" rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-orange-400 hover:text-orange-300 text-xs font-semibold font-mono-tech transition-colors">
-                      <Download className="w-3 h-3" /> {entry.tool}
-                    </a>
-                  )}
-                </div>
+                <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Version</span>
+                <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Status</span>
+                <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Tool</span>
               </div>
-            ))}
-          </div>
 
-          {/* Device Chip Reference */}
-          <div className="mt-8 fade-up">
-            <h3 className="text-white font-bold text-base mb-4">Device Chip Reference</h3>
-            <div className="grid sm:grid-cols-2 gap-2">
-              {Object.entries(deviceChips).map(([device, chip]) => (
-                <div key={device} className="glass-card p-3 border border-white/10 flex items-center justify-between gap-2">
-                  <span className="text-white/70 text-xs">{device}</span>
-                  <span className={`text-xs font-semibold font-mono-tech flex-shrink-0 ${chip.includes("not jailbreakable") ? "text-red-400" : chip.includes("palera1n") ? "text-green-400" : "text-yellow-400"}`}>
-                    {chip.split("(")[1]?.replace(")", "") || chip}
-                  </span>
+              {entries.map((entry, i) => {
+                const cfg = statusConfig[entry.status];
+                return (
+                  <div key={i}>
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "1fr auto auto",
+                        gap: "16px",
+                        padding: "20px 24px",
+                        borderBottom: i < entries.length - 1 ? "1px solid rgba(255,255,255,0.06)" : "none",
+                        alignItems: "start",
+                      }}
+                    >
+                      <div>
+                        <div style={{ fontSize: "15px", fontWeight: 500, color: "#f5f5f7", letterSpacing: "-0.022em", marginBottom: "4px" }}>
+                          {entry.ios}
+                        </div>
+                        <div style={{ fontSize: "13px", color: "rgba(255,255,255,0.45)", lineHeight: 1.4, letterSpacing: "-0.01em" }}>
+                          {entry.notes}
+                        </div>
+                      </div>
+                      <div
+                        style={{
+                          fontSize: "12px",
+                          fontWeight: 600,
+                          color: cfg.color,
+                          whiteSpace: "nowrap",
+                          paddingTop: "2px",
+                        }}
+                      >
+                        {cfg.label}
+                      </div>
+                      <div style={{ paddingTop: "2px" }}>
+                        {entry.tool && entry.toolUrl ? (
+                          <a
+                            href={entry.toolUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              fontSize: "12px",
+                              color: "#0071e3",
+                              textDecoration: "none",
+                              whiteSpace: "nowrap",
+                              fontWeight: 400,
+                            }}
+                          >
+                            {entry.tool} &rsaquo;
+                          </a>
+                        ) : (
+                          <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.2)" }}>—</span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </FadeSection>
+        </div>
+      </section>
+
+      {/* ── Jailbreak Tools ── */}
+      <section style={{ background: "#000", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+            >
+              Jailbreak Tools
+            </div>
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "60px" }}
+            >
+              The tools that make it possible.
+            </h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(2, 1fr)",
+                gap: "2px",
+                background: "rgba(255,255,255,0.08)",
+                borderRadius: "18px",
+                overflow: "hidden",
+              }}
+              className="tools-grid-responsive"
+            >
+              {jailbreakTools.map((tool) => (
+                <div
+                  key={tool.name}
+                  style={{
+                    background: "#000",
+                    padding: "36px 32px",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "flex-start",
+                      marginBottom: "12px",
+                    }}
+                  >
+                    <h3
+                      style={{
+                        fontSize: "22px",
+                        fontWeight: 700,
+                        letterSpacing: "-0.025em",
+                        color: "#f5f5f7",
+                        margin: 0,
+                      }}
+                    >
+                      {tool.name}
+                    </h3>
+                    <span
+                      style={{
+                        fontSize: "11px",
+                        fontWeight: 600,
+                        letterSpacing: "0.04em",
+                        color: tool.status === "Active" ? "#30d158" : tool.status === "Maintained" ? "#0071e3" : "rgba(255,255,255,0.35)",
+                        padding: "3px 8px",
+                        border: `1px solid ${tool.status === "Active" ? "rgba(48,209,88,0.3)" : tool.status === "Maintained" ? "rgba(0,113,227,0.3)" : "rgba(255,255,255,0.1)"}`,
+                        borderRadius: "980px",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {tool.status}
+                    </span>
+                  </div>
+                  <p
+                    style={{
+                      fontSize: "15px",
+                      color: "rgba(255,255,255,0.6)",
+                      lineHeight: 1.5,
+                      letterSpacing: "-0.022em",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {tool.desc}
+                  </p>
+                  <div style={{ marginBottom: "8px" }}>
+                    <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Supports</span>
+                    <div style={{ fontSize: "13px", color: "rgba(255,255,255,0.7)", marginTop: "2px" }}>{tool.supports}</div>
+                  </div>
+                  <div style={{ marginBottom: "20px" }}>
+                    <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Type</span>
+                    <div style={{ fontSize: "13px", color: "rgba(255,255,255,0.7)", marginTop: "2px" }}>{tool.type}</div>
+                  </div>
+                  <a
+                    href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      fontSize: "14px",
+                      color: "#0071e3",
+                      textDecoration: "none",
+                      fontWeight: 400,
+                      letterSpacing: "-0.01em",
+                    }}
+                  >
+                    Download {tool.name} &rsaquo;
+                  </a>
                 </div>
               ))}
             </div>
-          </div>
+          </FadeSection>
         </div>
       </section>
 
-      {/* Jailbreak Tools */}
-      <section className="py-12 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="section-label text-orange-400 mb-2 fade-up">Download Links</div>
-          <h2 className="text-3xl font-black mb-6 fade-up">Jailbreak Tools</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {jailbreakTools.map((tool, i) => (
-              <div key={i} className="glass-card p-5 border border-white/10 fade-up" style={{ transitionDelay: `${i * 60}ms` }}>
-                <div className="flex items-start justify-between mb-3">
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <h3 className="text-white font-bold text-base font-mono-tech">{tool.name}</h3>
-                      {tool.active ? (
-                        <span className="text-xs bg-green-500/10 border border-green-500/30 text-green-400 px-2 py-0.5 rounded-full">Active</span>
-                      ) : (
-                        <span className="text-xs bg-gray-500/10 border border-gray-500/30 text-gray-400 px-2 py-0.5 rounded-full">Legacy</span>
-                      )}
-                    </div>
-                    <div className="text-orange-400 text-xs font-semibold">{tool.type}</div>
-                  </div>
-                  <a href={tool.url} target="_blank" rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 hover:bg-orange-500/20 text-xs font-semibold transition-all">
-                    <Download className="w-3 h-3" /> Download
-                  </a>
-                </div>
-                <p className="text-white/60 text-sm leading-relaxed mb-3">{tool.desc}</p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-white/5 border border-white/10 text-white/50 px-2 py-0.5 rounded">{tool.devices}</span>
-                  <span className="text-xs bg-white/5 border border-white/10 text-white/50 px-2 py-0.5 rounded">{tool.ios}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Sideload Tools */}
-      <section id="sideload" className="py-12 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="section-label text-cyan-400 mb-2 fade-up">No Jailbreak Required</div>
-          <h2 className="text-3xl font-black mb-2 fade-up">Sideloading Tools</h2>
-          <p className="text-white/60 text-sm mb-6 fade-up">Install apps that are not on the App Store — no jailbreak needed.</p>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {sideloadTools.map((tool, i) => (
-              <div key={i} className={`glass-card p-5 border ${tool.color} fade-up`} style={{ transitionDelay: `${i * 60}ms` }}>
-                <div className="flex items-start justify-between mb-3">
-                  <div>
-                    <h3 className={`font-bold text-base font-mono-tech ${tool.tagColor}`}>{tool.name}</h3>
-                    <div className="flex items-center gap-2 mt-1">
-                      <span className={`text-xs font-semibold ${tool.free ? "text-green-400" : "text-yellow-400"}`}>
-                        {tool.free ? "Free" : "Paid"}
-                      </span>
-                      <span className="text-white/30 text-xs">•</span>
-                      <span className="text-white/50 text-xs">{tool.difficulty}</span>
-                    </div>
-                  </div>
-                  <a href={tool.url} target="_blank" rel="noopener noreferrer"
-                    className="flex items-center gap-1 text-white/40 hover:text-white/80 transition-colors">
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </div>
-                <p className="text-white/60 text-xs leading-relaxed mb-3">{tool.desc}</p>
-                <div className="flex flex-wrap gap-1">
-                  {tool.platforms.map(p => (
-                    <span key={p} className="text-xs bg-white/5 border border-white/10 text-white/50 px-2 py-0.5 rounded">{p}</span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Safety Note */}
-      <section className="py-8 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="glass-card p-6 border border-blue-500/20 bg-blue-500/5">
-            <div className="flex items-start gap-4">
-              <Shield className="w-6 h-6 text-blue-400 flex-shrink-0 mt-0.5" />
-              <div>
-                <h3 className="text-white font-bold text-base mb-2">Stay Safe</h3>
-                <p className="text-white/60 text-sm leading-relaxed">
-                  Always download jailbreak tools from official sources only. Never trust random links 
-                  claiming to offer jailbreaks for the latest iOS — these are almost always scams or malware. 
-                  The links on this page point to official GitHub repositories and developer websites. 
-                  Join the r/jailbreak community on Reddit for the latest legitimate releases and support.
-                </p>
-                <a href="https://reddit.com/r/jailbreak" target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 mt-3 text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
-                  r/jailbreak on Reddit <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </div>
+      {/* ── Sideload Tools ── */}
+      <section style={{ background: "#1d1d1f", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+            >
+              Sideloading
             </div>
-          </div>
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "20px" }}
+            >
+              Install apps without jailbreaking.
+            </h2>
+            <p
+              className="apple-body-large"
+              style={{ color: "rgba(255,255,255,0.6)", textAlign: "center", marginBottom: "60px" }}
+            >
+              Sideloading lets you install apps that are not in the App Store without jailbreaking your device. These tools work on any iOS version.
+            </p>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                gap: "2px",
+                background: "rgba(255,255,255,0.08)",
+                borderRadius: "18px",
+                overflow: "hidden",
+              }}
+              className="sideload-grid-responsive"
+            >
+              {sideloadTools.map((tool) => (
+                <div
+                  key={tool.name}
+                  style={{
+                    background: "#1d1d1f",
+                    padding: "32px 28px",
+                  }}
+                >
+                  <h3
+                    style={{
+                      fontSize: "20px",
+                      fontWeight: 700,
+                      letterSpacing: "-0.025em",
+                      color: "#f5f5f7",
+                      marginBottom: "8px",
+                    }}
+                  >
+                    {tool.name}
+                  </h3>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      color: "rgba(255,255,255,0.55)",
+                      lineHeight: 1.5,
+                      letterSpacing: "-0.01em",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {tool.desc}
+                  </p>
+                  <div style={{ display: "flex", gap: "8px", marginBottom: "20px", flexWrap: "wrap" }}>
+                    <span
+                      style={{
+                        fontSize: "11px",
+                        color: "rgba(255,255,255,0.5)",
+                        padding: "3px 8px",
+                        border: "1px solid rgba(255,255,255,0.12)",
+                        borderRadius: "980px",
+                      }}
+                    >
+                      {tool.platforms}
+                    </span>
+                    <span
+                      style={{
+                        fontSize: "11px",
+                        color: "rgba(255,255,255,0.5)",
+                        padding: "3px 8px",
+                        border: "1px solid rgba(255,255,255,0.12)",
+                        borderRadius: "980px",
+                      }}
+                    >
+                      {tool.difficulty}
+                    </span>
+                    {tool.free && (
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          color: "#30d158",
+                          padding: "3px 8px",
+                          border: "1px solid rgba(48,209,88,0.25)",
+                          borderRadius: "980px",
+                        }}
+                      >
+                        Free
+                      </span>
+                    )}
+                  </div>
+                  <a
+                    href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      fontSize: "14px",
+                      color: "#0071e3",
+                      textDecoration: "none",
+                      fontWeight: 400,
+                      letterSpacing: "-0.01em",
+                    }}
+                  >
+                    Get {tool.name} &rsaquo;
+                  </a>
+                </div>
+              ))}
+            </div>
+          </FadeSection>
         </div>
       </section>
+
+      {/* ── What is Jailbreaking ── */}
+      <section style={{ background: "#000", padding: "100px 0" }}>
+        <div style={{ maxWidth: "780px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+            >
+              What is Jailbreaking
+            </div>
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "40px" }}
+            >
+              Understand before you start.
+            </h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "2px",
+                background: "rgba(255,255,255,0.08)",
+                borderRadius: "18px",
+                overflow: "hidden",
+                marginBottom: "32px",
+              }}
+              className="tools-grid-responsive"
+            >
+              {[
+                {
+                  title: "What it does",
+                  items: [
+                    "Removes Apple's software restrictions",
+                    "Allows installing apps outside the App Store",
+                    "Enables system-level customization",
+                    "Unlocks features Apple does not allow",
+                  ],
+                },
+                {
+                  title: "What to know",
+                  items: [
+                    "Voids your Apple warranty",
+                    "May cause instability or crashes",
+                    "Security risks from untrusted packages",
+                    "Some banking apps may stop working",
+                  ],
+                },
+              ].map((col) => (
+                <div key={col.title} style={{ background: "#000", padding: "32px 28px" }}>
+                  <div
+                    style={{
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      letterSpacing: "0.06em",
+                      textTransform: "uppercase",
+                      color: "#0071e3",
+                      marginBottom: "16px",
+                    }}
+                  >
+                    {col.title}
+                  </div>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    {col.items.map((item) => (
+                      <li
+                        key={item}
+                        style={{
+                          fontSize: "14px",
+                          color: "rgba(255,255,255,0.65)",
+                          padding: "8px 0",
+                          borderBottom: "1px solid rgba(255,255,255,0.07)",
+                          letterSpacing: "-0.01em",
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <div
+              style={{
+                padding: "20px 24px",
+                border: "1px solid rgba(255,255,255,0.1)",
+                borderRadius: "12px",
+                background: "rgba(255,255,255,0.03)",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "13px",
+                  color: "rgba(255,255,255,0.45)",
+                  lineHeight: 1.6,
+                  margin: 0,
+                  letterSpacing: "-0.01em",
+                }}
+              >
+                Everything Apple does not endorse or encourage jailbreaking. This information is provided for educational purposes only. Always research your specific device and iOS version before proceeding.
+              </p>
+            </div>
+          </FadeSection>
+        </div>
+      </section>
+
+      <Footer />
+
+      <style>{`
+        @media (max-width: 768px) {
+          .tools-grid-responsive {
+            grid-template-columns: 1fr !important;
+          }
+          .sideload-grid-responsive {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

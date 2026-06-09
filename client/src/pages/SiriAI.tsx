@@ -1,6 +1,12 @@
-import { useEffect } from "react";
+/* =============================================================
+   Siri AI Page — Apple.com design language
+   Full-bleed sections, alternating black/white, no emojis
+   Built by Cory Hepler
+   ============================================================= */
+
+import { useEffect, useRef } from "react";
 import { Link } from "wouter";
-import { ArrowRight, ExternalLink, Mic, Eye, MessageSquare, Globe, Lock, Zap } from "lucide-react";
+import Footer from "../components/Footer";
 
 const IMGS = {
   hero: "/manus-storage/ios27-siri-ai-macrumors_9c505084.jpg",
@@ -9,265 +15,584 @@ const IMGS = {
   ios27: "/manus-storage/ios27-features_b971ec0e.jpg",
 };
 
-const features = [
+function FadeSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add("visible"), delay);
+          obs.unobserve(el);
+        }
+      },
+      { threshold: 0.08 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [delay]);
+  return <div ref={ref} className="fade-in-up">{children}</div>;
+}
+
+const featureSections = [
   {
-    icon: MessageSquare,
-    color: "text-cyan-400",
-    bg: "bg-cyan-500/10 border-cyan-500/20",
-    title: "Natural Conversation",
-    desc: "Ask follow-up questions, go back and forth, and get detailed engaging answers. Siri AI remembers context within a conversation and can help you brainstorm, plan, and create.",
+    label: "Conversations",
+    title: "Natural conversations. Back and forth.",
+    body: "Ask follow-up questions, change your mind mid-conversation, and get answers that build on what you said before. Siri AI remembers the context of your conversation so you never have to repeat yourself.",
+    img: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=900&q=85&auto=format&fit=crop",
+    dark: true,
   },
   {
-    icon: Eye,
-    color: "text-blue-400",
-    bg: "bg-blue-500/10 border-blue-500/20",
-    title: "Onscreen Awareness",
-    desc: "Siri AI can see and understand what is on your screen. Ask about an image in Safari, get context on a document you are reading, or have Siri take action on visible content.",
+    label: "Personal Context",
+    title: "Siri knows your world.",
+    body: "Siri AI can search across your messages, emails, photos, notes, and calendar to find exactly what you are looking for. Describe a photo from three years ago and Siri will find it. Ask about a restaurant someone mentioned in a text and Siri will surface it.",
+    img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=900&q=85&auto=format&fit=crop",
+    dark: false,
   },
   {
-    icon: Globe,
-    color: "text-purple-400",
-    bg: "bg-purple-500/10 border-purple-500/20",
-    title: "Broad World Knowledge",
-    desc: "Siri AI goes out to the web to get up-to-date information on virtually any topic. Ask about upcoming concerts, sports scores, news, or anything you are curious about.",
+    label: "Visual Intelligence",
+    title: "Point. Ask. Act.",
+    body: "Point your camera at anything in the real world and Siri AI will tell you what it is, give you more information, and let you take action. Available on iPhone, iPad, Mac, and Apple Vision Pro.",
+    img: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=900&q=85&auto=format&fit=crop",
+    dark: true,
   },
   {
-    icon: Lock,
-    color: "text-green-400",
-    bg: "bg-green-500/10 border-green-500/20",
-    title: "Personal Context Understanding",
-    desc: "Siri searches across your messages, emails, photos, and apps to find exactly what you need. Find that restaurant recommendation from a friend, or a hotel confirmation from months ago.",
-  },
-  {
-    icon: Mic,
-    color: "text-yellow-400",
-    bg: "bg-yellow-500/10 border-yellow-500/20",
-    title: "Expressive New Voices",
-    desc: "Siri AI features new, more expressive voices. Customize the pace and expressiveness to match your preferences. Dictation is more accurate than ever with automatic punctuation.",
-  },
-  {
-    icon: Zap,
-    color: "text-orange-400",
-    bg: "bg-orange-500/10 border-orange-500/20",
-    title: "Systemwide App Actions",
-    desc: "Siri can draft emails from scratch, edit and share photos, create reminders from conversations, and take action across apps. More systemwide actions than ever before.",
+    label: "Writing Tools",
+    title: "Write with Siri. Anywhere.",
+    body: "Siri AI can write, rewrite, proofread, and summarize text in any app. Match the tone and style of what you have already written. Compose emails, messages, documents, and more with just a few words.",
+    img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&q=85&auto=format&fit=crop",
+    dark: false,
   },
 ];
 
 const platforms = [
-  { name: "iPhone", desc: "Swipe down from Dynamic Island. Side button. Hey Siri. New Siri mode in Camera app.", emoji: "📱" },
-  { name: "iPad", desc: "Integrated into Spotlight. Visual Intelligence via screenshot. Siri app available.", emoji: "📲" },
-  { name: "Mac", desc: "Spotlight integration. Keyboard shortcut for Visual Intelligence. Context menus.", emoji: "💻" },
-  { name: "Apple Watch", desc: "Conversation from the wrist. Smart Stack suggestions to continue conversations.", emoji: "⌚" },
-  { name: "Apple Vision Pro", desc: "3D Siri visualization you can place anywhere. Invoke by looking and speaking.", emoji: "🥽" },
-  { name: "CarPlay", desc: "Siri AI available while driving. Hands-free conversation on the road.", emoji: "🚗" },
+  { name: "iPhone", detail: "Available on iPhone 15 Pro and later with Apple Intelligence." },
+  { name: "iPad", detail: "Available on iPad Pro M1 and later, and iPad Air M1 and later." },
+  { name: "Mac", detail: "Available on all Apple Silicon Macs." },
+  { name: "Apple Watch", detail: "Available on Apple Watch Series 9 and later." },
+  { name: "Apple TV", detail: "Available on Apple TV 4K (3rd generation) and later." },
+  { name: "Apple Vision Pro", detail: "Available on all Apple Vision Pro models." },
 ];
 
 export default function SiriAI() {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => e.isIntersecting && e.target.classList.add("visible")),
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-end overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={IMGS.hero} alt="Siri AI on iPhone 17 Pro" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-cyan-950/40 to-transparent" />
-        </div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-cyan-500/10 blur-3xl animate-pulse-glow pointer-events-none" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pb-12 w-full">
-          <div className="section-label text-cyan-400 mb-3">WWDC 2026 — Biggest Announcement</div>
-          <h1 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tight leading-none mb-4">
-            <span className="text-gradient-siri">Siri AI</span>
+    <div style={{ background: "#000", minHeight: "100vh" }}>
+
+      {/* ── Hero ── */}
+      <section
+        style={{
+          position: "relative",
+          width: "100%",
+          minHeight: "100svh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-end",
+          overflow: "hidden",
+          paddingBottom: "80px",
+        }}
+      >
+        <img
+          src={IMGS.hero}
+          alt="Siri AI"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+            opacity: 0.5,
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.92) 100%)",
+          }}
+        />
+        <div
+          style={{
+            position: "relative",
+            zIndex: 2,
+            textAlign: "center",
+            padding: "0 22px",
+            maxWidth: "780px",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "12px",
+              fontWeight: 600,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.5)",
+              marginBottom: "16px",
+            }}
+          >
+            WWDC 2026
+          </div>
+          <h1
+            className="apple-headline-hero"
+            style={{ color: "#f5f5f7", marginBottom: "20px" }}
+          >
+            Siri AI.
           </h1>
-          <p className="text-white/70 text-lg md:text-xl max-w-2xl mb-6 leading-relaxed">
-            Apple has completely rebuilt Siri from the ground up. Powered by the next generation 
-            of Apple Intelligence, Siri AI is the most capable, conversational, and personal 
-            assistant Apple has ever created.
+          <p
+            className="apple-body-large"
+            style={{ color: "rgba(255,255,255,0.7)", marginBottom: "36px" }}
+          >
+            Your AI assistant. More personal. More powerful. More natural than ever before.
           </p>
-          <div className="flex flex-wrap gap-3">
-            <a href="https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/" 
-              target="_blank" rel="noopener noreferrer" className="btn-apple bg-gradient-to-r from-cyan-600 to-blue-600">
-              Apple Newsroom <ExternalLink className="w-4 h-4" />
+          <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
+            <a
+              href="https://www.apple.com/siri/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="apple-btn-primary"
+            >
+              Apple.com Siri page
             </a>
-            <Link href="/wwdc-2026" className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-white/20 text-white/80 hover:text-white text-sm font-medium transition-all">
-              Back to WWDC 2026 <ArrowRight className="w-3.5 h-3.5" />
+            <Link href="/wwdc-2026">
+              <span className="apple-btn-secondary-dark" style={{ cursor: "pointer" }}>
+                Back to WWDC 2026
+              </span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Key Stats */}
-      <section className="py-8 border-b border-white/10 bg-gradient-to-r from-cyan-950/20 via-black to-blue-950/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { num: "100%", label: "Rebuilt from scratch" },
-              { num: "6", label: "Platforms supported" },
-              { num: "Private", label: "Cloud Compute privacy" },
-              { num: "Fall 2026", label: "Public release" },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-2xl md:text-3xl font-black text-gradient-siri">{stat.num}</div>
-                <div className="text-white/50 text-xs mt-1">{stat.label}</div>
-              </div>
-            ))}
+      {/* ── Intro ── */}
+      <section style={{ background: "#000", padding: "100px 0" }}>
+        <FadeSection>
+          <div
+            style={{
+              maxWidth: "680px",
+              margin: "0 auto",
+              padding: "0 22px",
+              textAlign: "center",
+            }}
+          >
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", marginBottom: "20px" }}
+            >
+              A completely new Siri.
+            </h2>
+            <p
+              className="apple-body-large"
+              style={{ color: "rgba(255,255,255,0.65)" }}
+            >
+              Siri AI is powered by Apple Intelligence — Apple's personal intelligence system built into iPhone, iPad, and Mac. It understands you, your apps, and your world. And it does so with the privacy and security that only Apple can deliver.
+            </p>
           </div>
-        </div>
+        </FadeSection>
       </section>
 
-      {/* Features Grid */}
-      <section className="py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="section-label text-cyan-400 mb-2 fade-up">What Siri AI Can Do</div>
-          <h2 className="text-3xl md:text-4xl font-black mb-8 fade-up">Six Ways Siri AI Changes Everything</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {features.map((feat, i) => (
-              <div key={i} className={`glass-card p-5 border ${feat.bg} fade-up`} style={{ transitionDelay: `${i * 80}ms` }}>
-                <div className={`w-10 h-10 rounded-xl ${feat.bg} flex items-center justify-center mb-3`}>
-                  <feat.icon className={`w-5 h-5 ${feat.color}`} />
+      {/* ── Feature Sections ── */}
+      {featureSections.map((feature, idx) => (
+        <section
+          key={idx}
+          style={{
+            background: feature.dark ? "#000" : "#ffffff",
+            padding: "100px 0",
+          }}
+        >
+          <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+            <FadeSection>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  gap: "60px",
+                  alignItems: "center",
+                }}
+                className="feature-grid-responsive"
+              >
+                <div style={{ order: idx % 2 === 0 ? 0 : 1 }}>
+                  <div
+                    style={{
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: "#0071e3",
+                      marginBottom: "16px",
+                    }}
+                  >
+                    {feature.label}
+                  </div>
+                  <h2
+                    className="apple-headline-section"
+                    style={{
+                      color: feature.dark ? "#f5f5f7" : "#1d1d1f",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {feature.title}
+                  </h2>
+                  <p
+                    className="apple-body-large"
+                    style={{
+                      color: feature.dark ? "rgba(255,255,255,0.65)" : "#6e6e73",
+                    }}
+                  >
+                    {feature.body}
+                  </p>
                 </div>
-                <h3 className="text-white font-bold text-base mb-2">{feat.title}</h3>
-                <p className="text-white/60 text-sm leading-relaxed">{feat.desc}</p>
+                <div
+                  style={{
+                    order: idx % 2 === 0 ? 1 : 0,
+                    borderRadius: "18px",
+                    overflow: "hidden",
+                    aspectRatio: "4/5",
+                  }}
+                >
+                  <img
+                    src={feature.img}
+                    alt={feature.label}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  />
+                </div>
               </div>
-            ))}
+            </FadeSection>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
-      {/* Dedicated Siri App */}
-      <section className="py-12 md:py-16 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="fade-up">
-              <div className="section-label text-cyan-400 mb-3">New in iOS 27</div>
-              <h2 className="text-3xl md:text-4xl font-black mb-4">A Dedicated Siri App</h2>
-              <p className="text-white/70 text-base leading-relaxed mb-4">
-                For the first time, Siri has its own dedicated app. Open it to revisit past 
-                conversations, continue where you left off, or start a new one. Conversation 
-                history syncs privately across all your Apple devices via iCloud.
-              </p>
-              <p className="text-white/70 text-base leading-relaxed mb-6">
-                Start a conversation on your Mac, continue it on your iPhone, and finish 
-                on your Apple Watch. Everything stays in sync, privately.
-              </p>
-              <div className="glass-card p-4 border border-cyan-500/20 bg-cyan-500/5">
-                <div className="text-cyan-400 font-semibold text-sm mb-1">Available on</div>
-                <div className="text-white/70 text-sm">iPhone, iPad, Mac, Apple Watch, Apple Vision Pro</div>
+      {/* ── Dedicated Siri App ── */}
+      <section style={{ background: "#1d1d1f", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "60px",
+                alignItems: "center",
+              }}
+              className="feature-grid-responsive"
+            >
+              <div>
+                <div
+                  style={{
+                    fontSize: "12px",
+                    fontWeight: 600,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    color: "#0071e3",
+                    marginBottom: "16px",
+                  }}
+                >
+                  New in iOS 27
+                </div>
+                <h2
+                  className="apple-headline-section"
+                  style={{ color: "#f5f5f7", marginBottom: "20px" }}
+                >
+                  A dedicated Siri app.
+                </h2>
+                <p
+                  className="apple-body-large"
+                  style={{ color: "rgba(255,255,255,0.65)", marginBottom: "24px" }}
+                >
+                  For the first time, Siri has its own dedicated app. Open it to revisit past conversations, continue where you left off, or start a new one. Conversation history syncs privately across all your Apple devices via iCloud.
+                </p>
+                <p
+                  style={{
+                    fontSize: "17px",
+                    color: "rgba(255,255,255,0.5)",
+                    letterSpacing: "-0.022em",
+                    lineHeight: 1.5,
+                  }}
+                >
+                  Start a conversation on your Mac, continue it on your iPhone, and finish on your Apple Watch. Everything stays in sync, privately.
+                </p>
+              </div>
+              <div
+                style={{
+                  borderRadius: "18px",
+                  overflow: "hidden",
+                  aspectRatio: "4/5",
+                }}
+              >
+                <img
+                  src={IMGS.siriWaitlist}
+                  alt="Siri AI app"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
               </div>
             </div>
-            <div className="fade-up">
-              <img src={IMGS.siriWaitlist} alt="Siri AI app interface" className="rounded-2xl border border-white/10 w-full shadow-2xl" />
-            </div>
-          </div>
+          </FadeSection>
         </div>
       </section>
 
-      {/* Visual Intelligence */}
-      <section className="py-12 md:py-16 border-t border-white/10 bg-gradient-to-br from-blue-950/20 via-black to-purple-950/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="order-2 md:order-1 fade-up">
-              <img src={IMGS.appleIntel} alt="Apple Intelligence overview" className="rounded-2xl border border-white/10 w-full shadow-2xl" />
+      {/* ── All Features ── */}
+      <section style={{ background: "#000", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+            >
+              Everything Siri AI can do
             </div>
-            <div className="order-1 md:order-2 fade-up">
-              <div className="section-label text-blue-400 mb-3">Expanded Feature</div>
-              <h2 className="text-3xl md:text-4xl font-black mb-4">Visual Intelligence Everywhere</h2>
-              <p className="text-white/70 text-base leading-relaxed mb-4">
-                Visual Intelligence with Siri now comes to iPad and Mac for the first time. 
-                On iPhone, the Camera app gets a dedicated Siri mode — tap the shutter button 
-                to let Siri see what you see.
-              </p>
-              <ul className="space-y-3 mb-6">
-                {[
-                  { platform: "iPhone Camera", desc: "New Siri mode — tap shutter to analyze what is in front of you. Split bills, get nutrition info, identify objects." },
-                  { platform: "iPad", desc: "Visual Intelligence integrated into the screenshot experience." },
-                  { platform: "Mac", desc: "Keyboard shortcut to select anything on screen and ask Siri about it." },
-                  { platform: "Apple Vision Pro", desc: "Ask Siri about physical objects around you just by looking at them." },
-                ].map((item) => (
-                  <li key={item.platform} className="glass-card p-3 border border-white/10">
-                    <div className="text-blue-400 font-semibold text-xs mb-1">{item.platform}</div>
-                    <div className="text-white/60 text-xs leading-relaxed">{item.desc}</div>
-                  </li>
-                ))}
-              </ul>
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "60px" }}
+            >
+              Built for every moment of your day.
+            </h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(2, 1fr)",
+                gap: "1px",
+                background: "rgba(255,255,255,0.1)",
+                borderRadius: "18px",
+                overflow: "hidden",
+              }}
+              className="features-list-responsive"
+            >
+              {[
+                { cat: "Conversations", items: ["Natural back-and-forth dialogue", "Context memory across sessions", "Follow-up questions", "Change your mind mid-conversation"] },
+                { cat: "Personal Context", items: ["Search messages and emails", "Find photos by description", "Surface calendar events", "Locate notes and documents"] },
+                { cat: "App Actions", items: ["Send messages and emails", "Set reminders and alarms", "Play music and podcasts", "Control smart home devices"] },
+                { cat: "Writing Tools", items: ["Draft emails and messages", "Rewrite in different tones", "Proofread and summarize", "Match your writing style"] },
+                { cat: "Visual Intelligence", items: ["Identify objects in camera", "Search what you see", "Take action on screen content", "Available on iPhone, iPad, Mac"] },
+                { cat: "Privacy", items: ["On-device processing first", "Private Cloud Compute", "Data never stored by Apple", "No advertising profile built"] },
+              ].map((group) => (
+                <div
+                  key={group.cat}
+                  style={{
+                    background: "#000",
+                    padding: "36px 32px",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: "#0071e3",
+                      marginBottom: "16px",
+                    }}
+                  >
+                    {group.cat}
+                  </div>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    {group.items.map((item) => (
+                      <li
+                        key={item}
+                        style={{
+                          fontSize: "15px",
+                          color: "rgba(255,255,255,0.7)",
+                          padding: "8px 0",
+                          borderBottom: "1px solid rgba(255,255,255,0.08)",
+                          letterSpacing: "-0.022em",
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-          </div>
+          </FadeSection>
         </div>
       </section>
 
-      {/* Platforms */}
-      <section className="py-12 md:py-16 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="section-label text-cyan-400 mb-2 fade-up">Availability</div>
-          <h2 className="text-3xl font-black mb-8 fade-up">Siri AI Across All Your Devices</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {platforms.map((p, i) => (
-              <div key={i} className="glass-card p-5 border border-white/10 fade-up" style={{ transitionDelay: `${i * 60}ms` }}>
-                <div className="text-3xl mb-3">{p.emoji}</div>
-                <h3 className="text-white font-bold text-base mb-2">{p.name}</h3>
-                <p className="text-white/60 text-sm leading-relaxed">{p.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-6 glass-card p-4 border border-yellow-500/20 bg-yellow-500/5">
-            <div className="text-yellow-400 font-semibold text-sm mb-1">Important Note</div>
-            <div className="text-white/60 text-sm">
-              Siri AI will NOT be available in Europe or China at launch due to regulatory requirements. 
-              Developer beta is available now. Public release is expected in Fall 2026 alongside new iPhone hardware.
+      {/* ── Availability ── */}
+      <section style={{ background: "#1d1d1f", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+            >
+              Availability
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Privacy */}
-      <section className="py-12 md:py-16 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="w-16 h-16 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center mx-auto mb-4">
-              <Lock className="w-8 h-8 text-green-400" />
-            </div>
-            <div className="section-label text-green-400 mb-3 text-center">Privacy First</div>
-            <h2 className="text-3xl font-black mb-4">Built with Privacy at Its Core</h2>
-            <p className="text-white/70 text-base leading-relaxed mb-4">
-              Siri AI uses a bold new architecture designed specifically to protect your privacy. 
-              When Private Cloud Compute handles your requests, your personal data is never stored 
-              or made accessible to Apple or anyone else. Outside experts can verify this promise at any time.
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "20px" }}
+            >
+              Available on every Apple platform.
+            </h2>
+            <p
+              className="apple-body-large"
+              style={{ color: "rgba(255,255,255,0.6)", textAlign: "center", marginBottom: "60px" }}
+            >
+              Siri AI requires Apple Intelligence, available on devices with A17 Pro, M1, or later chips. Available in English first, with more languages coming in 2026.
             </p>
-            <p className="text-white/60 text-sm">
-              Apple calls Siri AI "the world's most private digital assistant."
-            </p>
-          </div>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(3, 1fr)",
+                gap: "1px",
+                background: "rgba(255,255,255,0.1)",
+                borderRadius: "18px",
+                overflow: "hidden",
+              }}
+              className="platforms-grid-responsive"
+            >
+              {platforms.map((p) => (
+                <div
+                  key={p.name}
+                  style={{
+                    background: "#1d1d1f",
+                    padding: "36px 28px",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: "20px",
+                      fontWeight: 700,
+                      letterSpacing: "-0.02em",
+                      color: "#f5f5f7",
+                      marginBottom: "8px",
+                    }}
+                  >
+                    {p.name}
+                  </div>
+                  <div
+                    style={{
+                      fontSize: "13px",
+                      color: "rgba(255,255,255,0.5)",
+                      lineHeight: 1.5,
+                      letterSpacing: "-0.01em",
+                    }}
+                  >
+                    {p.detail}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div
+              style={{
+                marginTop: "24px",
+                padding: "20px 24px",
+                border: "1px solid rgba(255,255,255,0.1)",
+                borderRadius: "12px",
+                background: "rgba(255,255,255,0.03)",
+              }}
+            >
+              <div
+                style={{
+                  fontSize: "12px",
+                  fontWeight: 600,
+                  color: "rgba(255,255,255,0.5)",
+                  marginBottom: "6px",
+                  letterSpacing: "0.02em",
+                }}
+              >
+                Note
+              </div>
+              <p
+                style={{
+                  fontSize: "14px",
+                  color: "rgba(255,255,255,0.5)",
+                  lineHeight: 1.5,
+                  letterSpacing: "-0.01em",
+                  margin: 0,
+                }}
+              >
+                Siri AI will not be available in Europe or China at launch due to regulatory requirements. Developer beta is available now. Public release is expected in Fall 2026 alongside new iPhone hardware.
+              </p>
+            </div>
+          </FadeSection>
         </div>
       </section>
 
-      {/* Sources */}
-      <section className="py-8 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="section-label mb-3">Official Sources</div>
-          <div className="flex flex-wrap gap-3">
-            {[
-              { label: "Apple: Introducing Siri AI", href: "https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/" },
-              { label: "Apple Intelligence Overview", href: "https://www.apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/" },
-              { label: "CNBC WWDC Live", href: "https://www.cnbc.com/2026/06/08/apple-wwdc-2026-live-updates.html" },
-              { label: "The Guardian", href: "https://www.theguardian.com/technology/2026/jun/08/apple-debuts-siri-ai-child-safety-features-wwdc" },
-            ].map(s => (
-              <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/15 text-white/60 hover:text-white text-xs font-medium transition-all">
-                {s.label} <ExternalLink className="w-3 h-3" />
-              </a>
-            ))}
+      {/* ── Privacy ── */}
+      <section style={{ background: "#000", padding: "100px 0" }}>
+        <FadeSection>
+          <div
+            style={{
+              maxWidth: "680px",
+              margin: "0 auto",
+              padding: "0 22px",
+              textAlign: "center",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+              }}
+            >
+              Privacy
+            </div>
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", marginBottom: "20px" }}
+            >
+              AI that protects your privacy.
+            </h2>
+            <p
+              className="apple-body-large"
+              style={{ color: "rgba(255,255,255,0.65)", marginBottom: "32px" }}
+            >
+              Siri AI processes requests on-device whenever possible. When server processing is required, Apple uses Private Cloud Compute — a system that ensures your data is never stored, logged, or used to train models. Apple cannot see your requests.
+            </p>
+            <a
+              href="https://www.apple.com/privacy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="apple-btn-primary"
+            >
+              Apple Privacy
+            </a>
           </div>
-        </div>
+        </FadeSection>
       </section>
+
+      <Footer />
+
+      <style>{`
+        @media (max-width: 768px) {
+          .feature-grid-responsive {
+            grid-template-columns: 1fr !important;
+            gap: 32px !important;
+          }
+          .feature-grid-responsive > div {
+            order: unset !important;
+          }
+          .features-list-responsive {
+            grid-template-columns: 1fr !important;
+          }
+          .platforms-grid-responsive {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .platforms-grid-responsive {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

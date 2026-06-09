@@ -12,8 +12,6 @@ import SiriAI from "./pages/SiriAI";
 import ParentalControls from "./pages/ParentalControls";
 import Reddit from "./pages/Reddit";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-
 function Router() {
   return (
     <>
@@ -29,7 +27,6 @@ function Router() {
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
-      <Footer />
     </>
   );
 }

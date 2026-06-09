@@ -1,6 +1,12 @@
-import { useEffect, useState } from "react";
+/* =============================================================
+   iPhones Page — Apple.com design language
+   Every iPhone from 11 to 17, clean grid, no emojis
+   Built by Cory Hepler
+   ============================================================= */
+
+import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
-import { ExternalLink, ChevronRight } from "lucide-react";
+import Footer from "../components/Footer";
 
 const IMGS = {
   lineup: "/manus-storage/iphone-lineup-11-17_b4dd07e0.jpg",
@@ -13,13 +19,15 @@ const IMGS = {
   iphoneAir: "/manus-storage/iphone-air_ac6cb200.jpg",
 };
 
+// Unsplash fallbacks for models without dedicated images
+const FALLBACK = "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=600&q=85&auto=format&fit=crop";
+
 const iphones = [
   {
     id: "iphone17",
     series: "iPhone 17 Series",
     year: "2025",
-    badge: "Latest",
-    badgeColor: "bg-blue-500",
+    tag: "Current",
     models: [
       {
         name: "iPhone 17 Pro Max",
@@ -31,7 +39,7 @@ const iphones = [
         storage: "256GB – 1TB",
         colors: ["Black Titanium", "White Titanium", "Natural Titanium", "Desert Titanium"],
         price: "From $1,199",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        ios: "iOS 26 / iOS 27",
         highlights: ["Camera Control button", "ProMotion 1–120Hz", "Action Button", "USB-C 3 (40Gb/s)", "Apple Intelligence"],
       },
       {
@@ -44,21 +52,8 @@ const iphones = [
         storage: "128GB – 1TB",
         colors: ["Black Titanium", "White Titanium", "Natural Titanium", "Desert Titanium"],
         price: "From $999",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        ios: "iOS 26 / iOS 27",
         highlights: ["Camera Control button", "ProMotion 1–120Hz", "Action Button", "USB-C 3", "Apple Intelligence"],
-      },
-      {
-        name: "iPhone 17",
-        img: IMGS.iphone17,
-        chip: "A18",
-        display: "6.1\" Super Retina XDR OLED",
-        camera: "48MP Fusion + 12MP Ultra Wide",
-        battery: "Up to 22 hrs video",
-        storage: "128GB – 512GB",
-        colors: ["Black", "White", "Pink", "Teal", "Ultramarine"],
-        price: "From $799",
-        ios: "iOS 26 (upgradeable to iOS 27)",
-        highlights: ["Camera Control button", "Action Button", "USB-C", "Apple Intelligence", "Dynamic Island"],
       },
       {
         name: "iPhone 17 Air",
@@ -70,8 +65,21 @@ const iphones = [
         storage: "128GB – 512GB",
         colors: ["Black", "White", "Pink", "Teal", "Ultramarine"],
         price: "From $899",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        ios: "iOS 26 / iOS 27",
         highlights: ["Thinnest iPhone ever (5.5mm)", "Camera Control button", "Action Button", "USB-C", "Apple Intelligence"],
+      },
+      {
+        name: "iPhone 17",
+        img: IMGS.iphone17,
+        chip: "A18",
+        display: "6.1\" Super Retina XDR OLED",
+        camera: "48MP Fusion + 12MP Ultra Wide",
+        battery: "Up to 22 hrs video",
+        storage: "128GB – 512GB",
+        colors: ["Black", "White", "Pink", "Teal", "Ultramarine"],
+        price: "From $799",
+        ios: "iOS 26 / iOS 27",
+        highlights: ["Camera Control button", "Action Button", "USB-C", "Apple Intelligence", "Dynamic Island"],
       },
     ],
   },
@@ -79,8 +87,7 @@ const iphones = [
     id: "iphone16",
     series: "iPhone 16 Series",
     year: "2024",
-    badge: "Previous Gen",
-    badgeColor: "bg-gray-600",
+    tag: "2024",
     models: [
       {
         name: "iPhone 16 Pro Max",
@@ -92,7 +99,7 @@ const iphones = [
         storage: "256GB – 1TB",
         colors: ["Black Titanium", "White Titanium", "Natural Titanium", "Desert Titanium"],
         price: "From $1,099",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        ios: "iOS 18 – iOS 27",
         highlights: ["Camera Control button", "ProMotion 1–120Hz", "Action Button", "USB-C 3", "Apple Intelligence"],
       },
       {
@@ -105,8 +112,34 @@ const iphones = [
         storage: "128GB – 1TB",
         colors: ["Black Titanium", "White Titanium", "Natural Titanium", "Desert Titanium"],
         price: "From $999",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        ios: "iOS 18 – iOS 27",
         highlights: ["Camera Control button", "ProMotion 1–120Hz", "Action Button", "USB-C 3", "Apple Intelligence"],
+      },
+      {
+        name: "iPhone 16 Plus",
+        img: FALLBACK,
+        chip: "A18",
+        display: "6.7\" Super Retina XDR OLED",
+        camera: "48MP Fusion + 12MP Ultra Wide",
+        battery: "Up to 27 hrs video",
+        storage: "128GB – 512GB",
+        colors: ["Black", "White", "Pink", "Teal", "Ultramarine"],
+        price: "From $899",
+        ios: "iOS 18 – iOS 27",
+        highlights: ["Camera Control button", "Action Button", "USB-C", "Apple Intelligence", "Dynamic Island"],
+      },
+      {
+        name: "iPhone 16",
+        img: FALLBACK,
+        chip: "A18",
+        display: "6.1\" Super Retina XDR OLED",
+        camera: "48MP Fusion + 12MP Ultra Wide",
+        battery: "Up to 22 hrs video",
+        storage: "128GB – 512GB",
+        colors: ["Black", "White", "Pink", "Teal", "Ultramarine"],
+        price: "From $799",
+        ios: "iOS 18 – iOS 27",
+        highlights: ["Camera Control button", "Action Button", "USB-C", "Apple Intelligence", "Dynamic Island"],
       },
     ],
   },
@@ -114,8 +147,7 @@ const iphones = [
     id: "iphone15",
     series: "iPhone 15 Series",
     year: "2023",
-    badge: "2023",
-    badgeColor: "bg-gray-700",
+    tag: "2023",
     models: [
       {
         name: "iPhone 15 Pro Max",
@@ -127,8 +159,8 @@ const iphones = [
         storage: "256GB – 1TB",
         colors: ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
         price: "From $899 (refurb)",
-        ios: "iOS 26 (upgradeable to iOS 27)",
-        highlights: ["First titanium iPhone", "Action Button", "USB-C 3", "ProMotion 120Hz"],
+        ios: "iOS 17 – iOS 27",
+        highlights: ["First titanium iPhone", "Action Button", "USB-C 3", "ProMotion 120Hz", "Apple Intelligence"],
       },
       {
         name: "iPhone 15 Pro",
@@ -140,8 +172,34 @@ const iphones = [
         storage: "128GB – 1TB",
         colors: ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
         price: "From $799 (refurb)",
-        ios: "iOS 26 (upgradeable to iOS 27)",
-        highlights: ["First titanium iPhone", "Action Button", "USB-C 3", "ProMotion 120Hz"],
+        ios: "iOS 17 – iOS 27",
+        highlights: ["First titanium iPhone", "Action Button", "USB-C 3", "ProMotion 120Hz", "Apple Intelligence"],
+      },
+      {
+        name: "iPhone 15 Plus",
+        img: FALLBACK,
+        chip: "A16 Bionic",
+        display: "6.7\" Super Retina XDR OLED",
+        camera: "48MP Main + 12MP Ultra Wide",
+        battery: "Up to 26 hrs video",
+        storage: "128GB – 512GB",
+        colors: ["Black", "Blue", "Green", "Yellow", "Pink"],
+        price: "From $699 (refurb)",
+        ios: "iOS 17 – iOS 27",
+        highlights: ["Dynamic Island", "USB-C", "48MP main camera", "Roadside Assistance via Satellite"],
+      },
+      {
+        name: "iPhone 15",
+        img: FALLBACK,
+        chip: "A16 Bionic",
+        display: "6.1\" Super Retina XDR OLED",
+        camera: "48MP Main + 12MP Ultra Wide",
+        battery: "Up to 20 hrs video",
+        storage: "128GB – 512GB",
+        colors: ["Black", "Blue", "Green", "Yellow", "Pink"],
+        price: "From $599 (refurb)",
+        ios: "iOS 17 – iOS 27",
+        highlights: ["Dynamic Island", "USB-C", "48MP main camera", "Roadside Assistance via Satellite"],
       },
     ],
   },
@@ -149,8 +207,7 @@ const iphones = [
     id: "iphone14",
     series: "iPhone 14 Series",
     year: "2022",
-    badge: "2022",
-    badgeColor: "bg-gray-700",
+    tag: "2022",
     models: [
       {
         name: "iPhone 14 Pro Max",
@@ -162,7 +219,7 @@ const iphones = [
         storage: "128GB – 1TB",
         colors: ["Deep Purple", "Gold", "Silver", "Space Black"],
         price: "From $699 (refurb)",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        ios: "iOS 16 – iOS 27",
         highlights: ["Dynamic Island introduced", "Always-On Display", "Crash Detection", "Emergency SOS via Satellite"],
       },
       {
@@ -175,17 +232,42 @@ const iphones = [
         storage: "128GB – 1TB",
         colors: ["Deep Purple", "Gold", "Silver", "Space Black"],
         price: "From $599 (refurb)",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        ios: "iOS 16 – iOS 27",
         highlights: ["Dynamic Island introduced", "Always-On Display", "Crash Detection"],
+      },
+      {
+        name: "iPhone 14 Plus",
+        img: FALLBACK,
+        chip: "A15 Bionic",
+        display: "6.7\" Super Retina XDR OLED",
+        camera: "12MP Main + 12MP Ultra Wide",
+        battery: "Up to 26 hrs video",
+        storage: "128GB – 512GB",
+        colors: ["Midnight", "Starlight", "Blue", "Purple", "Red"],
+        price: "From $499 (refurb)",
+        ios: "iOS 16 – iOS 27",
+        highlights: ["Emergency SOS via Satellite", "Crash Detection", "Action Mode video"],
+      },
+      {
+        name: "iPhone 14",
+        img: FALLBACK,
+        chip: "A15 Bionic",
+        display: "6.1\" Super Retina XDR OLED",
+        camera: "12MP Main + 12MP Ultra Wide",
+        battery: "Up to 20 hrs video",
+        storage: "128GB – 512GB",
+        colors: ["Midnight", "Starlight", "Blue", "Purple", "Red"],
+        price: "From $399 (refurb)",
+        ios: "iOS 16 – iOS 27",
+        highlights: ["Emergency SOS via Satellite", "Crash Detection", "Action Mode video"],
       },
     ],
   },
   {
-    id: "older",
-    series: "iPhone 11 – 13 Series",
-    year: "2019–2021",
-    badge: "Older",
-    badgeColor: "bg-gray-800",
+    id: "iphone13",
+    series: "iPhone 13 Series",
+    year: "2021",
+    tag: "2021",
     models: [
       {
         name: "iPhone 13 Pro Max",
@@ -197,8 +279,55 @@ const iphones = [
         storage: "128GB – 1TB",
         colors: ["Alpine Green", "Sierra Blue", "Gold", "Silver", "Graphite"],
         price: "From $399 (refurb)",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        ios: "iOS 15 – iOS 27",
+        highlights: ["ProMotion 120Hz", "Macro photography", "Cinematic mode video", "ProRes video"],
+      },
+      {
+        name: "iPhone 13 Pro",
+        img: IMGS.iphone11,
+        chip: "A15 Bionic",
+        display: "6.1\" Super Retina XDR OLED",
+        camera: "12MP Main + 12MP Ultra Wide + 12MP 3x Telephoto",
+        battery: "Up to 22 hrs video",
+        storage: "128GB – 1TB",
+        colors: ["Alpine Green", "Sierra Blue", "Gold", "Silver", "Graphite"],
+        price: "From $349 (refurb)",
+        ios: "iOS 15 – iOS 27",
         highlights: ["ProMotion 120Hz", "Macro photography", "Cinematic mode video"],
+      },
+      {
+        name: "iPhone 13",
+        img: IMGS.iphone11,
+        chip: "A15 Bionic",
+        display: "6.1\" Super Retina XDR OLED",
+        camera: "12MP Main + 12MP Ultra Wide",
+        battery: "Up to 19 hrs video",
+        storage: "128GB – 512GB",
+        colors: ["Midnight", "Starlight", "Blue", "Pink", "Red", "Green"],
+        price: "From $249 (refurb)",
+        ios: "iOS 15 – iOS 27",
+        highlights: ["Cinematic mode video", "Improved Night Mode", "Smaller notch"],
+      },
+    ],
+  },
+  {
+    id: "iphone12",
+    series: "iPhone 12 Series",
+    year: "2020",
+    tag: "2020",
+    models: [
+      {
+        name: "iPhone 12 Pro Max",
+        img: IMGS.iphone11,
+        chip: "A14 Bionic",
+        display: "6.7\" Super Retina XDR OLED",
+        camera: "12MP Main + 12MP Ultra Wide + 12MP 2.5x Telephoto",
+        battery: "Up to 20 hrs video",
+        storage: "128GB – 512GB",
+        colors: ["Pacific Blue", "Gold", "Silver", "Graphite"],
+        price: "From $199 (refurb)",
+        ios: "iOS 14 – iOS 27",
+        highlights: ["5G support", "Ceramic Shield", "MagSafe charging", "OLED display", "LiDAR Scanner"],
       },
       {
         name: "iPhone 12",
@@ -209,9 +338,30 @@ const iphones = [
         battery: "Up to 17 hrs video",
         storage: "64GB – 256GB",
         colors: ["Black", "White", "Red", "Green", "Blue", "Purple"],
-        price: "From $249 (refurb)",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        price: "From $149 (refurb)",
+        ios: "iOS 14 – iOS 27",
         highlights: ["5G support", "Ceramic Shield", "MagSafe charging", "OLED display"],
+      },
+    ],
+  },
+  {
+    id: "iphone11",
+    series: "iPhone 11 Series",
+    year: "2019",
+    tag: "2019",
+    models: [
+      {
+        name: "iPhone 11 Pro Max",
+        img: IMGS.iphone11,
+        chip: "A13 Bionic",
+        display: "6.5\" Super Retina XDR OLED",
+        camera: "12MP Main + 12MP Ultra Wide + 12MP 2x Telephoto",
+        battery: "Up to 20 hrs video",
+        storage: "64GB – 512GB",
+        colors: ["Space Gray", "Silver", "Gold", "Midnight Green"],
+        price: "From $99 (refurb)",
+        ios: "iOS 13 – iOS 27",
+        highlights: ["Triple camera system", "Night Mode", "4K 60fps video", "Face ID"],
       },
       {
         name: "iPhone 11",
@@ -222,194 +372,529 @@ const iphones = [
         battery: "Up to 17 hrs video",
         storage: "64GB – 256GB",
         colors: ["Black", "White", "Red", "Yellow", "Purple", "Green"],
-        price: "From $149 (refurb)",
-        ios: "iOS 26 (upgradeable to iOS 27)",
+        price: "From $79 (refurb)",
+        ios: "iOS 13 – iOS 27",
         highlights: ["Night Mode photography", "4K 60fps video", "Slofie front camera", "Face ID"],
       },
     ],
   },
 ];
 
-const iphoneCompatibility: Record<string, string> = {
-  "iPhone 17 Pro Max": "iOS 26 / iOS 27",
-  "iPhone 17 Pro": "iOS 26 / iOS 27",
-  "iPhone 17": "iOS 26 / iOS 27",
-  "iPhone 17 Air": "iOS 26 / iOS 27",
-  "iPhone 16 Pro Max": "iOS 18 – iOS 27",
-  "iPhone 16 Pro": "iOS 18 – iOS 27",
-  "iPhone 15 Pro Max": "iOS 17 – iOS 27",
-  "iPhone 15 Pro": "iOS 17 – iOS 27",
-  "iPhone 14 Pro Max": "iOS 16 – iOS 27",
-  "iPhone 14 Pro": "iOS 16 – iOS 27",
-  "iPhone 13 Pro Max": "iOS 15 – iOS 27",
-  "iPhone 12": "iOS 14 – iOS 27",
-  "iPhone 11": "iOS 13 – iOS 27",
-};
+function FadeSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add("visible"), delay);
+          obs.unobserve(el);
+        }
+      },
+      { threshold: 0.05 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [delay]);
+  return <div ref={ref} className="fade-in-up">{children}</div>;
+}
 
 export default function IPhones() {
   const [selectedSeries, setSelectedSeries] = useState<string | null>(null);
   const [expandedModel, setExpandedModel] = useState<string | null>(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => e.isIntersecting && e.target.classList.add("visible")),
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
   const displayedSeries = selectedSeries
-    ? iphones.filter(s => s.id === selectedSeries)
+    ? iphones.filter((s) => s.id === selectedSeries)
     : iphones;
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Hero */}
-      <section className="relative h-[50vh] min-h-[350px] flex items-end overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={IMGS.lineup} alt="iPhone lineup" className="w-full h-full object-cover object-center" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pb-10 w-full">
-          <div className="section-label mb-2">Complete iPhone Encyclopedia</div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight mb-3">
-            <span className="text-white">Every iPhone</span>
-            <br />
-            <span className="text-gradient-blue">iPhone 11 to iPhone 17</span>
+    <div style={{ background: "#000", minHeight: "100vh" }}>
+
+      {/* ── Hero ── */}
+      <section
+        style={{
+          position: "relative",
+          width: "100%",
+          minHeight: "70vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-end",
+          overflow: "hidden",
+          paddingBottom: "80px",
+        }}
+      >
+        <img
+          src={IMGS.lineup}
+          alt="iPhone lineup"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+            opacity: 0.5,
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.92) 100%)",
+          }}
+        />
+        <div
+          style={{
+            position: "relative",
+            zIndex: 2,
+            textAlign: "center",
+            padding: "0 22px",
+            maxWidth: "780px",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "12px",
+              fontWeight: 600,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.5)",
+              marginBottom: "16px",
+            }}
+          >
+            Complete iPhone Encyclopedia
+          </div>
+          <h1
+            className="apple-headline-hero"
+            style={{ color: "#f5f5f7", marginBottom: "20px" }}
+          >
+            Every iPhone.
           </h1>
-          <p className="text-white/70 text-base max-w-xl">
-            Specs, photos, pricing, and iOS compatibility for every iPhone released since 2019.
+          <p
+            className="apple-body-large"
+            style={{ color: "rgba(255,255,255,0.7)" }}
+          >
+            Real specs, real photos, and iOS compatibility for every iPhone from iPhone 11 to iPhone 17 Pro Max.
           </p>
         </div>
       </section>
 
-      {/* Series Filter */}
-      <div className="sticky top-14 md:top-16 z-40 bg-black/90 backdrop-blur-xl border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="flex gap-2 overflow-x-auto py-3 scroll-x">
+      {/* ── Series Filter ── */}
+      <section
+        style={{
+          position: "sticky",
+          top: "44px",
+          zIndex: 40,
+          background: "rgba(0,0,0,0.9)",
+          backdropFilter: "blur(20px)",
+          WebkitBackdropFilter: "blur(20px)",
+          borderBottom: "1px solid rgba(255,255,255,0.1)",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "980px",
+            margin: "0 auto",
+            padding: "0 22px",
+            display: "flex",
+            overflowX: "auto",
+            scrollbarWidth: "none",
+            gap: "4px",
+          }}
+        >
+          <button
+            onClick={() => setSelectedSeries(null)}
+            style={{
+              padding: "14px 16px",
+              fontSize: "12px",
+              fontWeight: selectedSeries === null ? 600 : 400,
+              color: selectedSeries === null ? "#f5f5f7" : "rgba(255,255,255,0.5)",
+              background: "none",
+              border: "none",
+              borderBottom: selectedSeries === null ? "2px solid #0071e3" : "2px solid transparent",
+              cursor: "pointer",
+              whiteSpace: "nowrap",
+              transition: "color 0.2s ease",
+              letterSpacing: "-0.01em",
+            }}
+          >
+            All Models
+          </button>
+          {iphones.map((s) => (
             <button
-              onClick={() => setSelectedSeries(null)}
-              className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
-                selectedSeries === null ? "bg-white/15 text-white" : "text-white/60 hover:text-white hover:bg-white/10"
-              }`}
+              key={s.id}
+              onClick={() => setSelectedSeries(s.id === selectedSeries ? null : s.id)}
+              style={{
+                padding: "14px 16px",
+                fontSize: "12px",
+                fontWeight: selectedSeries === s.id ? 600 : 400,
+                color: selectedSeries === s.id ? "#f5f5f7" : "rgba(255,255,255,0.5)",
+                background: "none",
+                border: "none",
+                borderBottom: selectedSeries === s.id ? "2px solid #0071e3" : "2px solid transparent",
+                cursor: "pointer",
+                whiteSpace: "nowrap",
+                transition: "color 0.2s ease",
+                letterSpacing: "-0.01em",
+              }}
             >
-              All Models
+              {s.year}
             </button>
-            {iphones.map(s => (
-              <button
-                key={s.id}
-                onClick={() => setSelectedSeries(s.id === selectedSeries ? null : s.id)}
-                className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
-                  selectedSeries === s.id ? "bg-white/15 text-white" : "text-white/60 hover:text-white hover:bg-white/10"
-                }`}
-              >
-                {s.series}
-              </button>
-            ))}
-          </div>
+          ))}
         </div>
-      </div>
+      </section>
 
-      {/* iPhone Series */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 space-y-16">
+      {/* ── iPhone Series ── */}
+      <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
         {displayedSeries.map((series) => (
-          <section key={series.id} id={series.id} className="scroll-mt-28">
-            <div className="flex items-center gap-3 mb-6 fade-up">
-              <h2 className="text-2xl md:text-3xl font-black">{series.series}</h2>
-              <span className={`${series.badgeColor} text-white text-xs font-bold px-2.5 py-1 rounded-full`}>
-                {series.badge}
-              </span>
-              <span className="text-white/40 text-sm">{series.year}</span>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {series.models.map((model, i) => (
-                <div
-                  key={model.name}
-                  className="news-card glass-card overflow-hidden border border-white/10 cursor-pointer fade-up"
-                  style={{ transitionDelay: `${i * 60}ms` }}
-                  onClick={() => setExpandedModel(expandedModel === model.name ? null : model.name)}
+          <section
+            key={series.id}
+            id={series.id}
+            style={{ padding: "80px 0 0" }}
+          >
+            <FadeSection>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: "16px",
+                  marginBottom: "40px",
+                  flexWrap: "wrap",
+                }}
+              >
+                <h2
+                  style={{
+                    fontSize: "clamp(24px, 4vw, 40px)",
+                    fontWeight: 700,
+                    letterSpacing: "-0.03em",
+                    color: "#f5f5f7",
+                    margin: 0,
+                  }}
                 >
-                  <div className="aspect-square overflow-hidden bg-gradient-to-br from-gray-900 to-black">
-                    <img
-                      src={model.img}
-                      alt={model.name}
-                      className="w-full h-full object-contain p-4 hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="text-white font-bold text-sm mb-1">{model.name}</h3>
-                    <div className="text-blue-400 text-xs font-semibold mb-2">{model.chip}</div>
-                    <div className="text-white/50 text-xs mb-2">{model.display}</div>
-                    <div className="text-green-400 font-semibold text-xs">{model.price}</div>
+                  {series.series}
+                </h2>
+                <span
+                  style={{
+                    fontSize: "12px",
+                    fontWeight: 600,
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                    color: series.tag === "Current" ? "#0071e3" : "rgba(255,255,255,0.4)",
+                    padding: "4px 10px",
+                    border: `1px solid ${series.tag === "Current" ? "rgba(0,113,227,0.4)" : "rgba(255,255,255,0.15)"}`,
+                    borderRadius: "980px",
+                  }}
+                >
+                  {series.tag}
+                </span>
+              </div>
 
-                    {expandedModel === model.name && (
-                      <div className="mt-4 space-y-2 border-t border-white/10 pt-4">
-                        <div>
-                          <div className="text-white/40 text-xs mb-0.5">Camera</div>
-                          <div className="text-white/80 text-xs">{model.camera}</div>
-                        </div>
-                        <div>
-                          <div className="text-white/40 text-xs mb-0.5">Battery</div>
-                          <div className="text-white/80 text-xs">{model.battery}</div>
-                        </div>
-                        <div>
-                          <div className="text-white/40 text-xs mb-0.5">Storage</div>
-                          <div className="text-white/80 text-xs">{model.storage}</div>
-                        </div>
-                        <div>
-                          <div className="text-white/40 text-xs mb-0.5">Colors</div>
-                          <div className="text-white/80 text-xs">{model.colors.join(", ")}</div>
-                        </div>
-                        <div>
-                          <div className="text-white/40 text-xs mb-0.5">iOS Support</div>
-                          <div className="text-white/80 text-xs">{iphoneCompatibility[model.name] || model.ios}</div>
-                        </div>
-                        <div>
-                          <div className="text-white/40 text-xs mb-1">Key Features</div>
-                          <div className="flex flex-wrap gap-1">
-                            {model.highlights.map(h => (
-                              <span key={h} className="text-xs bg-white/5 border border-white/10 text-white/60 px-2 py-0.5 rounded">
-                                {h}
-                              </span>
-                            ))}
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+                  gap: "2px",
+                  background: "rgba(255,255,255,0.08)",
+                  borderRadius: "18px",
+                  overflow: "hidden",
+                }}
+              >
+                {series.models.map((model) => (
+                  <div
+                    key={model.name}
+                    onClick={() => setExpandedModel(expandedModel === model.name ? null : model.name)}
+                    style={{
+                      background: "#000",
+                      cursor: "pointer",
+                      transition: "background 0.2s ease",
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = "#111"; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = "#000"; }}
+                  >
+                    {/* Image */}
+                    <div
+                      style={{
+                        aspectRatio: "1/1",
+                        background: "#111",
+                        overflow: "hidden",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <img
+                        src={model.img}
+                        alt={model.name}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "contain",
+                          padding: "16px",
+                          transition: "transform 0.5s cubic-bezier(0.23,1,0.32,1)",
+                        }}
+                        onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.05)"; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.transform = "scale(1)"; }}
+                      />
+                    </div>
+
+                    {/* Info */}
+                    <div style={{ padding: "20px" }}>
+                      <h3
+                        style={{
+                          fontSize: "15px",
+                          fontWeight: 600,
+                          letterSpacing: "-0.022em",
+                          color: "#f5f5f7",
+                          margin: "0 0 4px 0",
+                        }}
+                      >
+                        {model.name}
+                      </h3>
+                      <div
+                        style={{
+                          fontSize: "12px",
+                          color: "#0071e3",
+                          fontWeight: 500,
+                          marginBottom: "4px",
+                        }}
+                      >
+                        {model.chip}
+                      </div>
+                      <div
+                        style={{
+                          fontSize: "12px",
+                          color: "rgba(255,255,255,0.5)",
+                          marginBottom: "8px",
+                        }}
+                      >
+                        {model.display}
+                      </div>
+                      <div
+                        style={{
+                          fontSize: "14px",
+                          fontWeight: 600,
+                          color: "#f5f5f7",
+                          marginBottom: "12px",
+                        }}
+                      >
+                        {model.price}
+                      </div>
+
+                      {/* Expanded specs */}
+                      {expandedModel === model.name && (
+                        <div
+                          style={{
+                            borderTop: "1px solid rgba(255,255,255,0.1)",
+                            paddingTop: "16px",
+                            marginTop: "4px",
+                          }}
+                        >
+                          {[
+                            { label: "Camera", value: model.camera },
+                            { label: "Battery", value: model.battery },
+                            { label: "Storage", value: model.storage },
+                            { label: "Colors", value: model.colors.join(", ") },
+                            { label: "iOS Support", value: model.ios },
+                          ].map((spec) => (
+                            <div key={spec.label} style={{ marginBottom: "10px" }}>
+                              <div
+                                style={{
+                                  fontSize: "11px",
+                                  fontWeight: 600,
+                                  letterSpacing: "0.06em",
+                                  textTransform: "uppercase",
+                                  color: "rgba(255,255,255,0.35)",
+                                  marginBottom: "2px",
+                                }}
+                              >
+                                {spec.label}
+                              </div>
+                              <div
+                                style={{
+                                  fontSize: "13px",
+                                  color: "rgba(255,255,255,0.7)",
+                                  lineHeight: 1.4,
+                                  letterSpacing: "-0.01em",
+                                }}
+                              >
+                                {spec.value}
+                              </div>
+                            </div>
+                          ))}
+                          <div style={{ marginTop: "12px" }}>
+                            <div
+                              style={{
+                                fontSize: "11px",
+                                fontWeight: 600,
+                                letterSpacing: "0.06em",
+                                textTransform: "uppercase",
+                                color: "rgba(255,255,255,0.35)",
+                                marginBottom: "8px",
+                              }}
+                            >
+                              Key Features
+                            </div>
+                            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                              {model.highlights.map((h) => (
+                                <span
+                                  key={h}
+                                  style={{
+                                    fontSize: "11px",
+                                    color: "rgba(255,255,255,0.6)",
+                                    padding: "3px 8px",
+                                    border: "1px solid rgba(255,255,255,0.15)",
+                                    borderRadius: "980px",
+                                  }}
+                                >
+                                  {h}
+                                </span>
+                              ))}
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    )}
+                      )}
 
-                    <div className="mt-3 flex items-center gap-1 text-blue-400 text-xs font-medium">
-                      {expandedModel === model.name ? "Show less" : "Show specs"} <ChevronRight className={`w-3 h-3 transition-transform ${expandedModel === model.name ? "rotate-90" : ""}`} />
+                      <div
+                        style={{
+                          marginTop: "12px",
+                          fontSize: "12px",
+                          color: "#0071e3",
+                          fontWeight: 400,
+                          letterSpacing: "-0.01em",
+                        }}
+                      >
+                        {expandedModel === model.name ? "Show less" : "Show specs"} &rsaquo;
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </FadeSection>
           </section>
         ))}
       </div>
 
-      {/* iOS 27 Compatibility Note */}
-      <section className="py-8 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="glass-card p-6 border border-blue-500/20 bg-blue-500/5">
-            <h3 className="text-white font-bold text-base mb-2">iOS 27 Compatibility</h3>
-            <p className="text-white/60 text-sm leading-relaxed mb-3">
-              iOS 27 is compatible with iPhone 11 and later. All iPhones listed above can run iOS 27. 
-              Apple Intelligence features require iPhone 15 Pro or later (or any iPhone 16 or 17 model).
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <a href="https://www.apple.com/ios/ios-27-preview/" target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-blue-400 hover:text-blue-300 text-xs font-medium transition-colors">
-                iOS 27 Preview <ExternalLink className="w-3 h-3" />
-              </a>
-              <Link href="/jailbreak" className="flex items-center gap-1.5 text-orange-400 hover:text-orange-300 text-xs font-medium transition-colors">
-                Check Jailbreak Compatibility <ChevronRight className="w-3 h-3" />
-              </Link>
+      {/* ── iOS 27 Compatibility ── */}
+      <section style={{ background: "#000", padding: "100px 0 80px" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div style={{ height: "1px", background: "rgba(255,255,255,0.1)", marginBottom: "60px" }} />
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "60px",
+                alignItems: "start",
+              }}
+              className="feature-grid-responsive"
+            >
+              <div>
+                <div
+                  style={{
+                    fontSize: "12px",
+                    fontWeight: 600,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    color: "#0071e3",
+                    marginBottom: "16px",
+                  }}
+                >
+                  iOS 27
+                </div>
+                <h2
+                  className="apple-headline-section"
+                  style={{ color: "#f5f5f7", marginBottom: "20px" }}
+                >
+                  iOS 27 compatibility.
+                </h2>
+                <p
+                  className="apple-body-large"
+                  style={{ color: "rgba(255,255,255,0.65)", marginBottom: "32px" }}
+                >
+                  iOS 27 is compatible with iPhone 11 and later. All iPhones listed on this page can run iOS 27. Apple Intelligence features require iPhone 15 Pro or later, or any iPhone 16 or 17 model.
+                </p>
+                <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+                  <a
+                    href="https://www.apple.com/ios/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="apple-btn-primary"
+                  >
+                    iOS 27 preview
+                  </a>
+                  <Link href="/jailbreak">
+                    <span className="apple-btn-secondary-dark" style={{ cursor: "pointer" }}>
+                      Jailbreak checker
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <div>
+                <div
+                  style={{
+                    border: "1px solid rgba(255,255,255,0.1)",
+                    borderRadius: "18px",
+                    overflow: "hidden",
+                  }}
+                >
+                  {[
+                    { model: "iPhone 17 series", ios: "iOS 26 / iOS 27", ai: "Yes" },
+                    { model: "iPhone 16 series", ios: "iOS 18 – iOS 27", ai: "Yes" },
+                    { model: "iPhone 15 Pro / Pro Max", ios: "iOS 17 – iOS 27", ai: "Yes" },
+                    { model: "iPhone 15 / Plus", ios: "iOS 17 – iOS 27", ai: "No" },
+                    { model: "iPhone 14 series", ios: "iOS 16 – iOS 27", ai: "No" },
+                    { model: "iPhone 13 series", ios: "iOS 15 – iOS 27", ai: "No" },
+                    { model: "iPhone 12 series", ios: "iOS 14 – iOS 27", ai: "No" },
+                    { model: "iPhone 11 series", ios: "iOS 13 – iOS 27", ai: "No" },
+                  ].map((row, i) => (
+                    <div
+                      key={row.model}
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "1fr auto auto",
+                        gap: "16px",
+                        padding: "14px 20px",
+                        borderBottom: i < 7 ? "1px solid rgba(255,255,255,0.08)" : "none",
+                        alignItems: "center",
+                      }}
+                    >
+                      <span style={{ fontSize: "13px", color: "rgba(255,255,255,0.8)", letterSpacing: "-0.01em" }}>
+                        {row.model}
+                      </span>
+                      <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.4)", whiteSpace: "nowrap" }}>
+                        {row.ios}
+                      </span>
+                      <span
+                        style={{
+                          fontSize: "11px",
+                          fontWeight: 600,
+                          color: row.ai === "Yes" ? "#0071e3" : "rgba(255,255,255,0.25)",
+                          letterSpacing: "0.04em",
+                        }}
+                      >
+                        {row.ai === "Yes" ? "AI" : "—"}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
+          </FadeSection>
         </div>
       </section>
+
+      <Footer />
+
+      <style>{`
+        @media (max-width: 768px) {
+          .feature-grid-responsive {
+            grid-template-columns: 1fr !important;
+            gap: 32px !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

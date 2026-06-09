@@ -1,6 +1,12 @@
-import { useEffect } from "react";
+/* =============================================================
+   Parental Controls Page — Apple.com design language
+   Full-bleed sections, alternating black/white, no emojis
+   Built by Cory Hepler
+   ============================================================= */
+
+import { useEffect, useRef } from "react";
 import { Link } from "wouter";
-import { ArrowRight, ExternalLink, Shield, Clock, Eye, Users, Lock, AlertTriangle } from "lucide-react";
+import Footer from "../components/Footer";
 
 const IMGS = {
   hero: "/manus-storage/parental-controls-3_4cb3aaed.jpg",
@@ -11,227 +17,538 @@ const IMGS = {
   overview: "/manus-storage/parental-controls-4_58011541.png",
 };
 
-const features = [
+function FadeSection({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => el.classList.add("visible"), delay);
+          obs.unobserve(el);
+        }
+      },
+      { threshold: 0.08 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [delay]);
+  return <div ref={ref} className="fade-in-up">{children}</div>;
+}
+
+const featureSections = [
   {
-    icon: Users,
-    color: "text-green-400",
-    bg: "bg-green-500/10 border-green-500/20",
-    title: "Child Accounts",
-    desc: "Set up a child account and instantly enable age-appropriate protections across iPhone, iPad, and Mac. One setup, everything protected.",
+    label: "Child Accounts",
+    title: "One setup. Everything protected.",
+    body: "Set up a Child Account and instantly enable age-appropriate protections across iPhone, iPad, and Mac. The new Setup Assistant walks you through choosing exactly which apps your child can access from day one, with parental approval required for anything new.",
+    img: IMGS.setup,
+    dark: true,
   },
   {
-    icon: Shield,
-    color: "text-blue-400",
-    bg: "bg-blue-500/10 border-blue-500/20",
-    title: "Setup Assistant",
-    desc: "Choose exactly which apps your child can access from the start. Stay in control of what gets added over time with parental approval required.",
+    label: "Screen Time Schedules",
+    title: "The right amount of time. At the right time.",
+    body: "Create custom Screen Time schedules for school days, weekends, and homework time. Set different rules for different times of day — apps that are available during free time can be automatically restricted during school hours and bedtime.",
+    img: IMGS.schedule,
+    dark: false,
   },
   {
-    icon: Eye,
-    color: "text-purple-400",
-    bg: "bg-purple-500/10 border-purple-500/20",
-    title: "Ask to Browse",
-    desc: "Kids need parental approval before accessing any new website in Safari. Works seamlessly across iPhone, iPad, and Mac.",
+    label: "Time Allowances",
+    title: "Expert-guided recommendations built in.",
+    body: "New Time Allowances let you set daily limits for Entertainment, Games, and Social Media separately. Apple has partnered with child development experts to build recommended daily time limits directly into the setup flow — so you always have a trusted starting point.",
+    img: IMGS.timeAllowance,
+    dark: true,
   },
   {
-    icon: AlertTriangle,
-    color: "text-red-400",
-    bg: "bg-red-500/10 border-red-500/20",
-    title: "Communication Safety",
-    desc: "Automatically blurs nudity in Messages and FaceTime. Now also blocks gore and violent content in shared images and videos.",
-  },
-  {
-    icon: Clock,
-    color: "text-yellow-400",
-    bg: "bg-yellow-500/10 border-yellow-500/20",
-    title: "Time Allowances",
-    desc: "Set daily time limits for Entertainment, Games, and Social Media. Expert-backed recommendations from child development specialists built in.",
-  },
-  {
-    icon: Lock,
-    color: "text-cyan-400",
-    bg: "bg-cyan-500/10 border-cyan-500/20",
-    title: "Daily Schedules",
-    desc: "Control which apps your child can access at different times of day. School hours, bedtime, weekends — all customizable.",
+    label: "Communication Safety",
+    title: "Protection from harmful content.",
+    body: "Communication Safety now detects nudity, gore, and violent content in Messages, FaceTime, AirDrop, and third-party apps. When sensitive content is detected, it is automatically blurred and children are given resources to talk to a trusted adult.",
+    img: IMGS.childSafety,
+    dark: false,
   },
 ];
 
-const steps = [
-  { num: "01", title: "Create a Child Account", desc: "Go to Settings > Family Sharing > Add Member. Set up a child account with your child's age and Apple ID." },
-  { num: "02", title: "Run Setup Assistant", desc: "Choose which pre-installed apps your child can use. You stay in control of what gets added over time." },
-  { num: "03", title: "Set Time Allowances", desc: "Configure daily limits for Entertainment, Games, and Social Media categories. Use Apple's expert recommendations as a starting point." },
-  { num: "04", title: "Create Schedules", desc: "Set when apps are available. School mode, bedtime mode, weekend mode — all fully customizable." },
-  { num: "05", title: "Enable Communication Safety", desc: "Turn on automatic content filtering for Messages, FaceTime, and shared media. On by default for users under 18." },
-  { num: "06", title: "Monitor from Your iPhone", desc: "Use the redesigned Screen Time dashboard to see your child's usage at a glance, top apps, and set adjustments." },
+const allFeatures = [
+  {
+    cat: "Setup",
+    items: [
+      "Child Accounts with one-tap age-appropriate protections",
+      "Setup Assistant for choosing allowed apps",
+      "Ask to Browse — parental approval for new websites",
+      "Parental approval required for new app downloads",
+    ],
+  },
+  {
+    cat: "Screen Time",
+    items: [
+      "Custom schedules for school days and weekends",
+      "Homework time mode with limited app access",
+      "Bedtime mode with automatic restrictions",
+      "Pause device use instantly from your iPhone",
+    ],
+  },
+  {
+    cat: "Time Allowances",
+    items: [
+      "Separate limits for Entertainment, Games, Social Media",
+      "Expert-backed daily time recommendations by age",
+      "Carry-over unused time to the next day",
+      "Bonus time requests from child to parent",
+    ],
+  },
+  {
+    cat: "Communication Safety",
+    items: [
+      "Detects nudity in photos and videos",
+      "Detects gore and violent content",
+      "Works in Messages, FaceTime, and AirDrop",
+      "Resources provided to talk to a trusted adult",
+    ],
+  },
+  {
+    cat: "Location",
+    items: [
+      "Find My location sharing with family",
+      "Arrival and departure alerts",
+      "Apple Watch For Your Kids — independence without an iPhone",
+      "Location history for the past 24 hours",
+    ],
+  },
+  {
+    cat: "App Controls",
+    items: [
+      "Age-based app filtering by App Store rating",
+      "Block specific apps or app categories",
+      "Restrict in-app purchases",
+      "Content restrictions for music, TV, and web",
+    ],
+  },
 ];
 
 export default function ParentalControls() {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach(e => e.isIntersecting && e.target.classList.add("visible")),
-      { threshold: 0.1 }
-    );
-    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Hero */}
-      <section className="relative min-h-[65vh] flex items-end overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={IMGS.hero} alt="New Parental Controls iOS 27" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-950/40 to-transparent" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pb-12 w-full">
-          <div className="section-label text-green-400 mb-3">New in iOS 27 — WWDC 2026</div>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight leading-none mb-4">
-            <span className="text-white">Parental</span>
-            <br />
-            <span className="text-gradient-blue">Controls</span>
-            <br />
-            <span className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">Completely Rebuilt</span>
+    <div style={{ background: "#000", minHeight: "100vh" }}>
+
+      {/* ── Hero ── */}
+      <section
+        style={{
+          position: "relative",
+          width: "100%",
+          minHeight: "100svh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-end",
+          overflow: "hidden",
+          paddingBottom: "80px",
+        }}
+      >
+        <img
+          src={IMGS.hero}
+          alt="Parental Controls"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+            opacity: 0.45,
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background: "linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.92) 100%)",
+          }}
+        />
+        <div
+          style={{
+            position: "relative",
+            zIndex: 2,
+            textAlign: "center",
+            padding: "0 22px",
+            maxWidth: "780px",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "12px",
+              fontWeight: 600,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.5)",
+              marginBottom: "16px",
+            }}
+          >
+            WWDC 2026 — Child Safety
+          </div>
+          <h1
+            className="apple-headline-hero"
+            style={{ color: "#f5f5f7", marginBottom: "20px" }}
+          >
+            Parental Controls.
           </h1>
-          <p className="text-white/70 text-base md:text-lg max-w-2xl mb-6 leading-relaxed">
-            Apple has overhauled Screen Time with the most powerful parental controls ever. 
-            Manage what your kids see, who they talk to, and when they have access to apps.
+          <p
+            className="apple-body-large"
+            style={{ color: "rgba(255,255,255,0.7)", marginBottom: "36px" }}
+          >
+            Features that are easy and intuitive to use. The most powerful parental tools Apple has ever built.
           </p>
-          <div className="flex flex-wrap gap-3">
-            <a href="https://www.apple.com/child-safety/" target="_blank" rel="noopener noreferrer"
-              className="btn-apple bg-gradient-to-r from-green-600 to-emerald-600">
-              Apple Child Safety Site <ExternalLink className="w-4 h-4" />
+          <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
+            <a
+              href="https://www.apple.com/child-safety/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="apple-btn-primary"
+            >
+              Apple Child Safety page
             </a>
-            <Link href="/wwdc-2026" className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-white/20 text-white/80 hover:text-white text-sm font-medium transition-all">
-              Back to WWDC 2026 <ArrowRight className="w-3.5 h-3.5" />
+            <Link href="/wwdc-2026">
+              <span className="apple-btn-secondary-dark" style={{ cursor: "pointer" }}>
+                Back to WWDC 2026
+              </span>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Quote from Craig Federighi */}
-      <section className="py-8 bg-gradient-to-r from-green-950/20 via-black to-emerald-950/20 border-b border-white/10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <blockquote className="text-xl md:text-2xl font-serif-display text-white/80 italic leading-relaxed">
-            "We are giving parents powerful, easy to use tools to help manage what kids can see, 
-            who they can talk to, and when they have access."
-          </blockquote>
-          <cite className="text-white/40 text-sm mt-3 block">
-            Craig Federighi, Apple SVP of Software Engineering — WWDC 2026
-          </cite>
-        </div>
+      {/* ── Intro ── */}
+      <section style={{ background: "#000", padding: "100px 0" }}>
+        <FadeSection>
+          <div
+            style={{
+              maxWidth: "680px",
+              margin: "0 auto",
+              padding: "0 22px",
+              textAlign: "center",
+            }}
+          >
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", marginBottom: "20px" }}
+            >
+              The biggest Screen Time overhaul ever.
+            </h2>
+            <p
+              className="apple-body-large"
+              style={{ color: "rgba(255,255,255,0.65)" }}
+            >
+              Apple has completely redesigned parental controls from the ground up. New Child Accounts, Screen Time schedules, expert-guided time allowances, and Communication Safety that now detects gore and violence — all in one place, easy to set up in minutes.
+            </p>
+          </div>
+        </FadeSection>
       </section>
 
-      {/* Features Grid */}
-      <section className="py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="section-label text-green-400 mb-2 fade-up">All New Features</div>
-          <h2 className="text-3xl md:text-4xl font-black mb-8 fade-up">Six Powerful New Tools for Parents</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {features.map((feat, i) => (
-              <div key={i} className={`glass-card p-5 border ${feat.bg} fade-up`} style={{ transitionDelay: `${i * 80}ms` }}>
-                <div className={`w-10 h-10 rounded-xl ${feat.bg} flex items-center justify-center mb-3`}>
-                  <feat.icon className={`w-5 h-5 ${feat.color}`} />
+      {/* ── Feature Sections ── */}
+      {featureSections.map((feature, idx) => (
+        <section
+          key={idx}
+          style={{
+            background: feature.dark ? "#000" : "#ffffff",
+            padding: "100px 0",
+          }}
+        >
+          <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+            <FadeSection>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "1fr 1fr",
+                  gap: "60px",
+                  alignItems: "center",
+                }}
+                className="feature-grid-responsive"
+              >
+                <div style={{ order: idx % 2 === 0 ? 0 : 1 }}>
+                  <div
+                    style={{
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: "#0071e3",
+                      marginBottom: "16px",
+                    }}
+                  >
+                    {feature.label}
+                  </div>
+                  <h2
+                    className="apple-headline-section"
+                    style={{
+                      color: feature.dark ? "#f5f5f7" : "#1d1d1f",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    {feature.title}
+                  </h2>
+                  <p
+                    className="apple-body-large"
+                    style={{
+                      color: feature.dark ? "rgba(255,255,255,0.65)" : "#6e6e73",
+                    }}
+                  >
+                    {feature.body}
+                  </p>
                 </div>
-                <h3 className="text-white font-bold text-base mb-2">{feat.title}</h3>
-                <p className="text-white/60 text-sm leading-relaxed">{feat.desc}</p>
+                <div
+                  style={{
+                    order: idx % 2 === 0 ? 1 : 0,
+                    borderRadius: "18px",
+                    overflow: "hidden",
+                    aspectRatio: "4/5",
+                  }}
+                >
+                  <img
+                    src={feature.img}
+                    alt={feature.label}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  />
+                </div>
               </div>
-            ))}
+            </FadeSection>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
-      {/* Setup Guide */}
-      <section className="py-12 md:py-16 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div>
-              <div className="section-label text-green-400 mb-2 fade-up">Step by Step</div>
-              <h2 className="text-3xl font-black mb-6 fade-up">How to Set Up Parental Controls in iOS 27</h2>
-              <div className="space-y-4">
-                {steps.map((step, i) => (
-                  <div key={i} className="flex gap-4 fade-up" style={{ transitionDelay: `${i * 80}ms` }}>
-                    <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center">
-                      <span className="text-green-400 font-black text-xs font-mono-tech">{step.num}</span>
-                    </div>
-                    <div>
-                      <h3 className="text-white font-semibold text-sm mb-1">{step.title}</h3>
-                      <p className="text-white/60 text-xs leading-relaxed">{step.desc}</p>
-                    </div>
+      {/* ── All Features ── */}
+      <section style={{ background: "#1d1d1f", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+            >
+              Complete Feature List
+            </div>
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "60px" }}
+            >
+              Everything parents need.
+            </h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(2, 1fr)",
+                gap: "1px",
+                background: "rgba(255,255,255,0.1)",
+                borderRadius: "18px",
+                overflow: "hidden",
+              }}
+              className="features-list-responsive"
+            >
+              {allFeatures.map((group) => (
+                <div
+                  key={group.cat}
+                  style={{
+                    background: "#1d1d1f",
+                    padding: "36px 32px",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: "#0071e3",
+                      marginBottom: "16px",
+                    }}
+                  >
+                    {group.cat}
                   </div>
-                ))}
-              </div>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    {group.items.map((item) => (
+                      <li
+                        key={item}
+                        style={{
+                          fontSize: "15px",
+                          color: "rgba(255,255,255,0.7)",
+                          padding: "8px 0",
+                          borderBottom: "1px solid rgba(255,255,255,0.08)",
+                          letterSpacing: "-0.022em",
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
-            <div className="space-y-4">
-              <div className="fade-up">
-                <img src={IMGS.setup} alt="Child Account Setup" className="rounded-2xl border border-white/10 w-full shadow-xl" />
-              </div>
-              <div className="grid grid-cols-2 gap-4 fade-up">
-                <img src={IMGS.schedule} alt="Screen Time Schedule" className="rounded-xl border border-white/10 w-full shadow-xl" />
-                <img src={IMGS.timeAllowance} alt="Time Allowances" className="rounded-xl border border-white/10 w-full shadow-xl" />
-              </div>
-            </div>
-          </div>
+          </FadeSection>
         </div>
       </section>
 
-      {/* Communication Safety */}
-      <section className="py-12 md:py-16 border-t border-white/10 bg-gradient-to-br from-red-950/20 via-black to-orange-950/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="fade-up">
-              <div className="section-label text-red-400 mb-3">Enhanced Protection</div>
-              <h2 className="text-3xl font-black mb-4">Communication Safety</h2>
-              <p className="text-white/70 text-base leading-relaxed mb-4">
-                Communication Safety already blurs nudity in Messages and FaceTime calls, 
-                and is turned on by default for users under 18. In iOS 27, it gets even stronger.
-              </p>
-              <div className="space-y-3 mb-6">
-                {[
-                  { title: "Nudity Blurring", desc: "Already live — automatically blurs explicit images in Messages and FaceTime.", status: "Available Now", color: "text-green-400" },
-                  { title: "Gore & Violence Blocking", desc: "New in iOS 27 — automatically intervenes when violent or graphic content is shared.", status: "New in iOS 27", color: "text-blue-400" },
-                  { title: "Contact Approval", desc: "Parents can require approval for each new contact their child connects with.", status: "New in iOS 27", color: "text-blue-400" },
-                ].map((item) => (
-                  <div key={item.title} className="glass-card p-4 border border-white/10">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-white font-semibold text-sm">{item.title}</span>
-                      <span className={`text-xs font-semibold ${item.color}`}>{item.status}</span>
-                    </div>
-                    <p className="text-white/50 text-xs leading-relaxed">{item.desc}</p>
+      {/* ── Apple Watch For Kids ── */}
+      <section style={{ background: "#000", padding: "100px 0" }}>
+        <FadeSection>
+          <div
+            style={{
+              maxWidth: "680px",
+              margin: "0 auto",
+              padding: "0 22px",
+              textAlign: "center",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+              }}
+            >
+              New Product
+            </div>
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", marginBottom: "20px" }}
+            >
+              Apple Watch For Your Kids.
+            </h2>
+            <p
+              className="apple-body-large"
+              style={{ color: "rgba(255,255,255,0.65)", marginBottom: "32px" }}
+            >
+              A new Apple Watch experience designed specifically for children. Kids get independence — they can make calls, send messages, and share their location with family — without needing an iPhone. Parents stay in control of who they can contact.
+            </p>
+            <a
+              href="https://www.apple.com/apple-watch/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="apple-btn-primary"
+            >
+              Learn about Apple Watch
+            </a>
+          </div>
+        </FadeSection>
+      </section>
+
+      {/* ── How to Set Up ── */}
+      <section style={{ background: "#1d1d1f", padding: "100px 0" }}>
+        <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
+          <FadeSection>
+            <div
+              style={{
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.4)",
+                marginBottom: "16px",
+                textAlign: "center",
+              }}
+            >
+              Getting Started
+            </div>
+            <h2
+              className="apple-headline-section"
+              style={{ color: "#f5f5f7", textAlign: "center", marginBottom: "60px" }}
+            >
+              Set up in minutes.
+            </h2>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(4, 1fr)",
+                gap: "1px",
+                background: "rgba(255,255,255,0.1)",
+                borderRadius: "18px",
+                overflow: "hidden",
+              }}
+              className="steps-grid-responsive"
+            >
+              {[
+                { step: "1", title: "Open Settings", body: "Go to Settings on your iPhone and tap Screen Time." },
+                { step: "2", title: "Add Child", body: "Tap Set Up Screen Time for Family and add your child's Apple Account." },
+                { step: "3", title: "Choose Apps", body: "The Setup Assistant walks you through which apps to allow." },
+                { step: "4", title: "Set Schedules", body: "Create schedules for school, bedtime, and free time." },
+              ].map((s) => (
+                <div
+                  key={s.step}
+                  style={{
+                    background: "#1d1d1f",
+                    padding: "36px 24px",
+                    textAlign: "center",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: "40px",
+                      fontWeight: 800,
+                      letterSpacing: "-0.04em",
+                      color: "rgba(255,255,255,0.15)",
+                      marginBottom: "12px",
+                      lineHeight: 1,
+                    }}
+                  >
+                    {s.step}
                   </div>
-                ))}
-              </div>
+                  <div
+                    style={{
+                      fontSize: "17px",
+                      fontWeight: 600,
+                      letterSpacing: "-0.022em",
+                      color: "#f5f5f7",
+                      marginBottom: "8px",
+                    }}
+                  >
+                    {s.title}
+                  </div>
+                  <div
+                    style={{
+                      fontSize: "13px",
+                      color: "rgba(255,255,255,0.5)",
+                      lineHeight: 1.5,
+                      letterSpacing: "-0.01em",
+                    }}
+                  >
+                    {s.body}
+                  </div>
+                </div>
+              ))}
             </div>
-            <div className="fade-up">
-              <img src={IMGS.childSafety} alt="Communication Safety features" className="rounded-2xl border border-white/10 w-full shadow-2xl" />
-            </div>
-          </div>
+          </FadeSection>
         </div>
       </section>
 
-      {/* Availability */}
-      <section className="py-8 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="glass-card p-6 border border-green-500/20 bg-green-500/5">
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-xl bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                <Shield className="w-5 h-5 text-green-400" />
-              </div>
-              <div>
-                <h3 className="text-white font-bold text-base mb-1">Availability</h3>
-                <p className="text-white/60 text-sm leading-relaxed">
-                  All new parental controls features are part of iOS 27, iPadOS 27, and macOS Golden Gate. 
-                  Developer beta is available now. Public release is expected in Fall 2026. 
-                  Apple has also launched a dedicated child safety website at{" "}
-                  <a href="https://www.apple.com/child-safety/" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300">
-                    apple.com/child-safety
-                  </a>.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
+
+      <style>{`
+        @media (max-width: 768px) {
+          .feature-grid-responsive {
+            grid-template-columns: 1fr !important;
+            gap: 32px !important;
+          }
+          .feature-grid-responsive > div {
+            order: unset !important;
+          }
+          .features-list-responsive {
+            grid-template-columns: 1fr !important;
+          }
+          .steps-grid-responsive {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .steps-grid-responsive {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
