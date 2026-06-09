@@ -8,8 +8,6 @@
 */
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import useScrollReveal from "../hooks/useScrollReveal";
 
 interface RedditPost {
@@ -285,12 +283,10 @@ function NewsOutlets() {
 export default function Community() {
   return (
     <div style={{ background: "#000" }}>
-      <Navbar />
       <Hero />
       <SubredditGrid />
       <LiveFeed />
       <NewsOutlets />
-      <Footer />
     </div>
   );
 }

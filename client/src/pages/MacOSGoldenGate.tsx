@@ -6,9 +6,6 @@
    ============================================================= */
 import { useEffect, useRef } from "react";
 import { Link } from "wouter";
-import Navbar from "../components/Navbar";
-import { useSearch } from "../App";
-import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
@@ -59,10 +56,8 @@ const COMPATIBILITY = [
 ];
 
 export default function MacOSGoldenGate() {
-  const { openSearch } = useSearch();
   return (
     <div>
-      <Navbar onSearchOpen={openSearch} />
 
       {/* Hero */}
       <section style={{ position: "relative", minHeight: "80svh", overflow: "hidden", background: "#000", display: "flex", alignItems: "flex-end" }}>
@@ -194,7 +189,6 @@ export default function MacOSGoldenGate() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

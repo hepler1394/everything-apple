@@ -6,9 +6,6 @@
    ============================================================= */
 
 import { useState, useRef, useEffect } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { useSearch } from "../App";
 
 interface PhoneModel {
   id: string;
@@ -267,7 +264,6 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
 }
 
 export default function IPhoneTimeline() {
-  const { openSearch } = useSearch();
   const [selectedPhone, setSelectedPhone] = useState<PhoneModel>(iPhoneModels[iPhoneModels.length - 1]);
   const [yearFilter, setYearFilter] = useState<string>("All");
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -277,7 +273,6 @@ export default function IPhoneTimeline() {
 
   return (
     <div style={{ background: "#000", minHeight: "100vh" }}>
-      <Navbar onSearchOpen={openSearch} />
 
       {/* ── Hero ── */}
       <section style={{ background: "linear-gradient(180deg, #1d1d1f 0%, #000 100%)", padding: "140px 22px 80px", textAlign: "center" }}>
@@ -518,7 +513,6 @@ export default function IPhoneTimeline() {
         div::-webkit-scrollbar { display: none; }
       `}</style>
 
-      <Footer />
     </div>
   );
 }

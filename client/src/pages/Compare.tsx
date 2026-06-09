@@ -9,8 +9,6 @@
   Built by Cory Hepler
 */
 import { useState, useRef, useEffect, useCallback } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import ShareButton from "../components/ShareButton";
 import useScrollReveal from "../hooks/useScrollReveal";
 
@@ -580,11 +578,10 @@ export default function Compare() {
 
   return (
     <div style={{ background: "#000", minHeight: "100vh" }}>
-      <Navbar />
 
       {/* Hero */}
       <section style={{
-        paddingTop: "calc(var(--banner-height, 0px) + 52px + 80px)",
+        paddingTop: "40px",
         paddingBottom: "60px",
         textAlign: "center",
         background: "#000",
@@ -595,10 +592,10 @@ export default function Compare() {
             fontWeight: 700,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#2997ff",
+            color: "#0071e3",
             marginBottom: "16px",
           }}>
-            Flagship Comparison 2025
+            Flagship Comparison 2026
           </div>
           <h1 className="reveal delay-100" style={{
             fontSize: "clamp(40px, 7vw, 80px)",
@@ -632,7 +629,7 @@ export default function Compare() {
         overflowX: "auto",
         WebkitOverflowScrolling: "touch",
       }}>
-        <div style={{
+        <div className="compare-phone-carousel" style={{
           display: "flex",
           gap: "40px",
           padding: "40px 60px",
@@ -784,7 +781,6 @@ export default function Compare() {
         </section>
       )}
 
-      <Footer />
     </div>
   );
 }

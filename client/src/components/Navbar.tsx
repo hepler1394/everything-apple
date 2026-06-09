@@ -1,9 +1,9 @@
 /*
  * Navbar — Everything Apple
- * Design: iOS 27 Glassmorphism + Apple.com 44px nav
- * Features: Light/Dark toggle, Search trigger, Mobile hamburger
- * No emojis, no colored badges
- * Built by Cory Hepler
+ * DESIGN.md spec: 44px height, fog (#f5f5f7) bg, 12px SF Pro Text nav links
+ * Azure (#0071e3) Buy CTA — sole permission-to-act color
+ * Transitions to semi-opaque white on scroll
+ * Mobile: hamburger opens full-screen overlay
  */
 
 import { useState, useEffect } from "react";
@@ -11,7 +11,6 @@ import { Link, useLocation } from "wouter";
 import { Search, Menu, X, Sun, Moon } from "lucide-react";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/wwdc-2026", label: "WWDC 2026", isNew: true },
   { href: "/siri-ai", label: "Siri AI", isNew: true },
   { href: "/parental-controls", label: "Parental Controls" },
@@ -25,7 +24,6 @@ const navLinks = [
   { href: "/apple-silicon", label: "Apple Silicon" },
   { href: "/jailbreak", label: "Jailbreak" },
   { href: "/community", label: "Community" },
-  { href: "/gallery", label: "Gallery" },
 ];
 
 interface NavbarProps {
@@ -65,22 +63,21 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location]);
+  useEffect(() => { setMenuOpen(false); }, [location]);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
-  const navBg = scrolled
-    ? "var(--nav-bg)"
-    : "rgba(0,0,0,0)";
+  // DESIGN.md: fog bg, transitions to semi-opaque on scroll
+  const navBg = isDark
+    ? (scrolled ? "rgba(0,0,0,0.92)" : "rgba(0,0,0,0.72)")
+    : (scrolled ? "rgba(245,245,247,0.92)" : "rgba(245,245,247,0.82)");
 
-  const navBorderColor = scrolled ? "var(--nav-border)" : "transparent";
-  const textColor = scrolled ? "var(--nav-text)" : "#f5f5f7";
-  const textMuted = scrolled ? "var(--nav-text-muted)" : "rgba(255,255,255,0.75)";
+  const textColor = isDark ? "rgba(245,245,247,0.9)" : "#1d1d1f";
+  const textMuted = isDark ? "rgba(245,245,247,0.6)" : "rgba(29,29,31,0.6)";
+  const borderColor = isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)";
 
   return (
     <>
@@ -91,17 +88,17 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
           left: 0,
           right: 0,
           zIndex: 9999,
-          height: "52px",
+          height: "44px",
           background: navBg,
-          backdropFilter: scrolled ? "blur(24px) saturate(180%)" : "none",
-          WebkitBackdropFilter: scrolled ? "blur(24px) saturate(180%)" : "none",
-          borderBottom: `1px solid ${navBorderColor}`,
-          transition: "top 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), background 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease",
+          backdropFilter: "blur(20px) saturate(180%)",
+          WebkitBackdropFilter: "blur(20px) saturate(180%)",
+          borderBottom: `1px solid ${borderColor}`,
+          transition: "top 0.3s ease, background 0.344s ease, border-color 0.344s ease",
         }}
       >
         <div
           style={{
-            maxWidth: "1400px",
+            maxWidth: "1200px",
             margin: "0 auto",
             padding: "0 22px",
             height: "100%",
@@ -111,63 +108,62 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
             gap: "8px",
           }}
         >
-          {/* Logo */}
+          {/* Logo — SF Pro Display 17px 700 */}
           <Link href="/">
             <span
               style={{
                 fontSize: "17px",
                 fontWeight: 700,
-                letterSpacing: "-0.03em",
+                letterSpacing: "-0.022em",
                 color: textColor,
                 whiteSpace: "nowrap",
                 flexShrink: 0,
-                transition: "color 0.3s ease",
+                transition: "color 0.344s ease",
                 textDecoration: "none",
+                fontFamily: "var(--font-sf-pro-display, system-ui)",
               }}
             >
               Everything Apple
             </span>
           </Link>
 
-          {/* Desktop nav links */}
+          {/* Desktop nav links — 12px SF Pro Text */}
           <div
+            className="nav-desktop-links"
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "2px",
+              gap: "0px",
               overflow: "hidden",
               flex: 1,
               justifyContent: "center",
             }}
-            className="hidden-mobile"
           >
             {navLinks.map((link) => {
               const active = location === link.href;
               return (
                 <Link key={link.href} href={link.href}>
                   <span
+                    className="nav-item-link"
                     style={{
                       fontSize: "12px",
                       fontWeight: active ? 600 : 400,
                       letterSpacing: "-0.01em",
                       color: active ? textColor : textMuted,
-                      padding: "6px 8px",
-                      borderRadius: "6px",
+                      padding: "4px 8px",
                       whiteSpace: "nowrap",
                       textDecoration: "none",
-                      transition: "color 0.2s ease, background 0.2s ease",
+                      transition: "color 0.1s ease",
                       display: "inline-flex",
                       alignItems: "center",
-                      gap: "5px",
-                      position: "relative",
+                      gap: "4px",
+                      fontFamily: "var(--font-sf-pro-text, system-ui)",
                     }}
                     onMouseEnter={(e) => {
                       (e.currentTarget as HTMLElement).style.color = textColor;
-                      if (scrolled) (e.currentTarget as HTMLElement).style.background = "var(--glass-border-subtle)";
                     }}
                     onMouseLeave={(e) => {
                       (e.currentTarget as HTMLElement).style.color = active ? textColor : textMuted;
-                      (e.currentTarget as HTMLElement).style.background = "transparent";
                     }}
                   >
                     {link.label}
@@ -176,10 +172,10 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                         width: "5px",
                         height: "5px",
                         borderRadius: "50%",
-                        background: "#2997ff",
+                        background: "#0071e3",
                         display: "inline-block",
                         flexShrink: 0,
-                        marginBottom: "6px",
+                        marginBottom: "5px",
                       }} />
                     )}
                   </span>
@@ -188,9 +184,9 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
             })}
           </div>
 
-          {/* Right icons */}
+          {/* Right side: Search, Theme, Buy CTA */}
           <div style={{ display: "flex", alignItems: "center", gap: "4px", flexShrink: 0 }}>
-            {/* Search */}
+            {/* Search icon */}
             <button
               onClick={onSearchOpen}
               aria-label="Search"
@@ -198,64 +194,86 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                 background: "none",
                 border: "none",
                 color: textColor,
-                padding: "8px",
-                borderRadius: "8px",
+                padding: "6px",
+                borderRadius: "6px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                transition: "background 0.2s ease, color 0.2s ease",
                 cursor: "pointer",
+                transition: "opacity 0.1s ease",
+                opacity: 0.7,
               }}
-              onMouseEnter={(e) => {
-                if (scrolled) (e.currentTarget as HTMLElement).style.background = "var(--glass-border-subtle)";
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.background = "transparent";
-              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.opacity = "1"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.opacity = "0.7"; }}
             >
-              <Search size={16} />
+              <Search size={15} />
             </button>
 
             {/* Theme toggle */}
             <button
               onClick={toggleTheme}
-              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              aria-label={isDark ? "Light mode" : "Dark mode"}
               style={{
-                background: scrolled ? "var(--glass-bg)" : "rgba(255,255,255,0.12)",
-                backdropFilter: "blur(12px)",
-                WebkitBackdropFilter: "blur(12px)",
-                border: `1px solid ${scrolled ? "var(--glass-border-subtle)" : "rgba(255,255,255,0.2)"}`,
+                background: "none",
+                border: "none",
                 color: textColor,
                 padding: "6px",
-                borderRadius: "8px",
+                borderRadius: "6px",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                transition: "all 0.2s ease",
                 cursor: "pointer",
-                width: "32px",
-                height: "32px",
+                transition: "opacity 0.1s ease",
+                opacity: 0.7,
               }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.opacity = "1"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.opacity = "0.7"; }}
             >
-              {isDark ? <Sun size={14} /> : <Moon size={14} />}
+              {isDark ? <Sun size={15} /> : <Moon size={15} />}
             </button>
+
+            {/* Buy CTA — Azure, sole CTA color per DESIGN.md */}
+            <Link href="/iphones">
+              <span
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  background: "#0071e3",
+                  color: "#ffffff",
+                  borderRadius: "999px",
+                  padding: "5px 14px",
+                  fontSize: "12px",
+                  fontWeight: 400,
+                  letterSpacing: "-0.01em",
+                  fontFamily: "var(--font-sf-pro-text, system-ui)",
+                  textDecoration: "none",
+                  transition: "background-color 0.1s ease",
+                  whiteSpace: "nowrap",
+                  flexShrink: 0,
+                }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "#0077ed"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "#0071e3"; }}
+              >
+                Buy
+              </span>
+            </Link>
 
             {/* Mobile hamburger */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Menu"
+              className="nav-hamburger"
               style={{
                 background: "none",
                 border: "none",
                 color: textColor,
-                padding: "8px",
-                borderRadius: "8px",
+                padding: "6px",
+                borderRadius: "6px",
                 display: "none",
                 alignItems: "center",
                 justifyContent: "center",
                 cursor: "pointer",
               }}
-              className="show-mobile"
             >
               {menuOpen ? <X size={18} /> : <Menu size={18} />}
             </button>
@@ -263,22 +281,40 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
         </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile full-screen menu */}
       {menuOpen && (
         <div
           style={{
             position: "fixed",
             inset: 0,
             zIndex: 9998,
-            background: "var(--glass-bg-strong)",
+            background: isDark ? "rgba(0,0,0,0.97)" : "rgba(245,245,247,0.97)",
             backdropFilter: "blur(40px) saturate(200%)",
             WebkitBackdropFilter: "blur(40px) saturate(200%)",
-            paddingTop: "60px",
+            paddingTop: "calc(var(--banner-height, 0px) + 52px)",
             overflowY: "auto",
-            animation: "scaleIn 0.2s cubic-bezier(0.23, 1, 0.32, 1) both",
+            animation: "fadeIn 0.2s ease both",
           }}
         >
-          <div style={{ padding: "20px 22px 40px" }}>
+          <div style={{ padding: "12px 22px 60px" }}>
+            {/* Logo row */}
+            <div style={{
+              padding: "12px 0 20px",
+              borderBottom: `1px solid ${isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.08)"}`,
+              marginBottom: "8px",
+            }}>
+              <Link href="/">
+                <span style={{
+                  fontSize: "17px",
+                  fontWeight: 700,
+                  letterSpacing: "-0.022em",
+                  color: textColor,
+                  fontFamily: "var(--font-sf-pro-display, system-ui)",
+                }}>Everything Apple</span>
+              </Link>
+            </div>
+
+            {/* All nav links */}
             {navLinks.map((link, i) => {
               const active = location === link.href;
               return (
@@ -286,29 +322,27 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                   <div
                     style={{
                       padding: "14px 0",
-                      borderBottom: "1px solid var(--glass-border-subtle)",
+                      borderBottom: `1px solid ${isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.06)"}`,
                       fontSize: "19px",
                       fontWeight: active ? 600 : 400,
                       letterSpacing: "-0.022em",
-                      color: active ? "var(--apple-blue)" : "var(--foreground)",
+                      color: active ? "#0071e3" : textColor,
                       textDecoration: "none",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "space-between",
-                      animation: `fadeInUp 0.3s cubic-bezier(0.23, 1, 0.32, 1) ${i * 0.03}s both`,
+                      fontFamily: "var(--font-sf-pro-display, system-ui)",
+                      animation: `fadeInUp 0.3s ease ${i * 0.025}s both`,
                     }}
                   >
                     {link.label}
                     {link.isNew && !active && (
                       <span style={{
                         fontSize: "10px",
-                        fontWeight: 700,
+                        fontWeight: 600,
                         letterSpacing: "0.06em",
                         textTransform: "uppercase",
-                        color: "#2997ff",
-                        background: "rgba(41,151,255,0.1)",
-                        padding: "3px 8px",
-                        borderRadius: "4px",
+                        color: "#0071e3",
                       }}>New</span>
                     )}
                   </div>
@@ -316,7 +350,20 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
               );
             })}
 
-            {/* Theme toggle in mobile menu */}
+            {/* Home link */}
+            <Link href="/">
+              <div style={{
+                padding: "14px 0",
+                borderBottom: `1px solid ${isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.06)"}`,
+                fontSize: "19px",
+                fontWeight: location === "/" ? 600 : 400,
+                letterSpacing: "-0.022em",
+                color: location === "/" ? "#0071e3" : textColor,
+                fontFamily: "var(--font-sf-pro-display, system-ui)",
+              }}>Home</div>
+            </Link>
+
+            {/* Theme toggle */}
             <button
               onClick={toggleTheme}
               style={{
@@ -329,15 +376,15 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                 border: "none",
                 fontSize: "17px",
                 fontWeight: 400,
-                color: "var(--foreground)",
+                color: textColor,
                 cursor: "pointer",
-                fontFamily: "inherit",
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
                 width: "100%",
                 letterSpacing: "-0.022em",
               }}
             >
               {isDark ? <Sun size={18} /> : <Moon size={18} />}
-              {isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+              {isDark ? "Light Mode" : "Dark Mode"}
             </button>
           </div>
         </div>
@@ -345,11 +392,15 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
 
       <style>{`
         @media (max-width: 900px) {
-          .hidden-mobile { display: none !important; }
-          .show-mobile { display: flex !important; }
+          .nav-desktop-links { display: none !important; }
+          .nav-hamburger { display: flex !important; }
         }
         @media (min-width: 901px) {
-          .show-mobile { display: none !important; }
+          .nav-hamburger { display: none !important; }
+        }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
     </>

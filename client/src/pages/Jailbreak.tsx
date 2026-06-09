@@ -5,7 +5,6 @@
    ============================================================= */
 
 import { useState, useEffect, useRef } from "react";
-import Footer from "../components/Footer";
 
 type JailbreakStatus = "jailbreakable" | "partial" | "not-jailbreakable";
 
@@ -852,7 +851,6 @@ export default function Jailbreak() {
         </div>
       </section>
 
-      <Footer />
 
       <style>{`
         @media (max-width: 768px) {

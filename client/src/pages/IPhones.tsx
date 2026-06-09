@@ -6,7 +6,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Link } from "wouter";
-import Footer from "../components/Footer";
 
 const IMGS = {
   lineup: "/manus-storage/iphone-lineup-11-17_b4dd07e0.jpg",
@@ -885,7 +884,6 @@ export default function IPhones() {
         </div>
       </section>
 
-      <Footer />
 
       <style>{`
         @media (max-width: 768px) {

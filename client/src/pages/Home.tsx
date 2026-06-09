@@ -1,172 +1,249 @@
 /*
-  Home Page — Everything Apple
-  Design: Apple.com exact aesthetic
-  - Pure black/white alternating sections, no gradients, no card borders
-  - Massive SF Pro typography with tight letter-spacing
-  - Scroll-triggered reveal animations via useScrollReveal
-  - Directional reveals: text from left, images from right
-  - Floating product image animation on hero sections
-  - Mobile-first: image ABOVE text on mobile (Apple.com pattern)
-  - Single-column cards on mobile
-  Built by Cory Hepler
-*/
-import { Link } from "wouter";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import { IMGS } from "../lib/imageManifest";
-import LatestNews from "../components/LatestNews";
-import useScrollReveal from "../hooks/useScrollReveal";
-import useParallax from "../hooks/useParallax";
-import ShareButton from "../components/ShareButton";
+ * Home — Everything Apple
+ * DESIGN.md: Fog (#f5f5f7) canvas, white cards 28px radius, no box-shadows
+ * Typography: SF Pro Display 700 at 80-96px display, negative tracking
+ * CTA: Azure (#0071e3) exclusively — sole permission-to-act color
+ * Sections: fog/white alternating bands, no explicit dividers
+ * Motion: 0.344s ease reveals, float animations on product images
+ */
 
-// ── Hero — full-bleed black, cinematic WWDC photo ──────────────
+import { useRef } from "react";
+import { Link } from "wouter";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { useParallax } from "@/hooks/useParallax";
+import { IMGS } from "@/lib/imageManifest";
+import ShareButton from "@/components/ShareButton";
+
+// ─── Hero ────────────────────────────────────────────────────────────────────
 function Hero() {
-  const parallaxRef = useParallax(0.3);
+  const parallaxRef = useParallax(0.35);
+
   return (
-    <section style={{
-      position: "relative",
-      height: "100svh",
-      minHeight: "600px",
-      maxHeight: "1100px",
-      overflow: "hidden",
-      background: "#000",
-    }}>
-      <img
-        ref={parallaxRef as React.RefObject<HTMLImageElement>}
-        src="/manus-storage/tim-cook-wwdc26-portrait_7485b05e.jpg"
-        alt="Tim Cook at WWDC 2026 keynote"
-        style={{
-          position: "absolute",
-          inset: "-15% 0",
-          width: "100%",
-          height: "130%",
-          objectFit: "cover",
-          objectPosition: "50% 18%",
-          willChange: "transform",
-        }}
-        onError={(e) => {
-          (e.target as HTMLImageElement).src = IMGS.wwdc.keynote1;
-        }}
-      />
-      {/* Gradient: transparent top → heavy black bottom */}
-      <div style={{
-        position: "absolute",
-        inset: 0,
-        background: "linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0.82) 80%, rgba(0,0,0,0.96) 100%)",
-      }} />
-      {/* Content — bottom-anchored */}
-      <div style={{
+    <section
+      style={{
         position: "relative",
-        zIndex: 2,
-        height: "100%",
+        background: "#f5f5f7",
+        overflow: "hidden",
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
+        alignItems: "center",
         justifyContent: "flex-end",
-        paddingBottom: "max(80px, env(safe-area-inset-bottom))",
-        paddingLeft: "max(22px, env(safe-area-inset-left))",
-        paddingRight: "max(22px, env(safe-area-inset-right))",
-        maxWidth: "1200px",
-        margin: "0 auto",
-        width: "100%",
-      }}>
-        <div style={{ maxWidth: "680px" }}>
-          <p className="animate-fade-in" style={{
-            fontSize: "12px",
-            fontWeight: 600,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            color: "#2997ff",
-            marginBottom: "16px",
-            animationDelay: "0.1s",
-          }}>
-            June 9, 2026 — WWDC 2026
-          </p>
-          <h1 className="apple-headline-hero animate-fade-in delay-200" style={{
-            color: "#f5f5f7",
-            marginBottom: "20px",
+        paddingTop: "0",
+      }}
+    >
+      {/* Full-bleed hero image with parallax */}
+      <div
+        ref={parallaxRef as React.RefObject<HTMLDivElement>}
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: 0,
+        }}
+      >
+        <img
+          src={IMGS.wwdc.stage1}
+          alt="WWDC 2026 — Tim Cook on stage"
+          style={{
+            width: "100%",
+            height: "115%",
+            objectFit: "cover",
+            objectPosition: "center top",
+            display: "block",
+          }}
+        />
+        {/* Gradient overlay — bottom-up so text is readable */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          background: "linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 100%)",
+        }} />
+      </div>
+
+      {/* Hero text — bottom-aligned like Apple.com product hero */}
+      <div
+        style={{
+          position: "relative",
+          zIndex: 2,
+          width: "100%",
+          maxWidth: "1200px",
+          padding: "0 22px 80px",
+          margin: "0 auto",
+        }}
+      >
+        {/* Eyebrow */}
+        <p style={{
+          fontFamily: "var(--font-sf-pro-text, system-ui)",
+          fontSize: "12px",
+          fontWeight: 600,
+          letterSpacing: "0.08em",
+          textTransform: "uppercase",
+          color: "rgba(255,255,255,0.7)",
+          marginBottom: "16px",
+          animation: "fadeInUp 0.6s ease 0.1s both",
+        }}>
+          June 9, 2026 — WWDC 2026
+        </p>
+
+        {/* Display headline — 96px, weight 700, tracking -2.11px */}
+        <h1
+          style={{
+            fontFamily: "var(--font-sf-pro-display, system-ui)",
+            fontSize: "clamp(48px, 7.5vw, 88px)",
+            fontWeight: 700,
+            letterSpacing: "-2.11px",
             lineHeight: 1.04,
-          }}>
-            Everything Apple<br />announced.
-          </h1>
-          <p className="animate-fade-in delay-300" style={{
-            fontSize: "clamp(17px, 2.2vw, 21px)",
-            color: "rgba(245,245,247,0.75)",
-            lineHeight: 1.5,
-            marginBottom: "36px",
-            maxWidth: "520px",
-            letterSpacing: "-0.022em",
-          }}>
-            Siri AI. Parental Controls. iOS 27. macOS Golden Gate. The biggest Apple event of the year, covered in full.
-          </p>
-          <div className="animate-fade-in delay-400" style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
-            <Link href="/wwdc-2026">
-              <span className="apple-btn apple-btn-blue" style={{ fontSize: "17px" }}>
-                See all announcements
-              </span>
-            </Link>
-            <Link href="/siri-ai">
-              <span style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "6px",
-                color: "#f5f5f7",
-                fontSize: "17px",
-                letterSpacing: "-0.022em",
-                paddingTop: "12px",
-                paddingBottom: "12px",
-                borderBottom: "1px solid rgba(245,245,247,0.35)",
-                transition: "border-color 0.2s ease",
+            color: "#ffffff",
+            marginBottom: "20px",
+            maxWidth: "700px",
+            animation: "fadeInUp 0.6s ease 0.2s both",
+          }}
+        >
+          Everything Apple<br />announced.
+        </h1>
+
+        {/* Subheading — 20px, weight 300 */}
+        <p style={{
+          fontFamily: "var(--font-sf-pro-text, system-ui)",
+          fontSize: "clamp(17px, 2vw, 20px)",
+          fontWeight: 300,
+          letterSpacing: "-0.2px",
+          lineHeight: 1.4,
+          color: "rgba(255,255,255,0.8)",
+          marginBottom: "32px",
+          maxWidth: "520px",
+          animation: "fadeInUp 0.6s ease 0.3s both",
+        }}>
+          Siri AI. Parental Controls. iOS 27. macOS Golden Gate.<br />
+          The biggest Apple event of the year, covered in full.
+        </p>
+
+        {/* CTAs */}
+        <div style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "12px",
+          alignItems: "center",
+          animation: "fadeInUp 0.6s ease 0.4s both",
+        }}>
+          <Link href="/wwdc-2026">
+            <span className="btn-primary" style={{ fontSize: "17px", padding: "12px 22px" }}>
+              See all announcements
+            </span>
+          </Link>
+          <Link href="/siri-ai">
+            <span style={{
+              fontFamily: "var(--font-sf-pro-text, system-ui)",
+              fontSize: "17px",
+              fontWeight: 400,
+              letterSpacing: "-0.1px",
+              color: "rgba(255,255,255,0.85)",
+              paddingBottom: "2px",
+              borderBottom: "1px solid rgba(255,255,255,0.4)",
+              textDecoration: "none",
+              transition: "border-color 0.1s ease, color 0.1s ease",
+            }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.color = "#fff";
+                (e.currentTarget as HTMLElement).style.borderBottomColor = "rgba(255,255,255,0.8)";
               }}
-                onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(245,245,247,0.7)")}
-                onMouseLeave={e => (e.currentTarget.style.borderColor = "rgba(245,245,247,0.35)")}
-              >
-                Siri AI deep dive
-              </span>
-            </Link>
-            <ShareButton title="Everything Apple — WWDC 2026 Coverage" text="All the Apple announcements from WWDC 2026" dark={true} />
-          </div>
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.85)";
+                (e.currentTarget as HTMLElement).style.borderBottomColor = "rgba(255,255,255,0.4)";
+              }}
+            >
+              Siri AI deep dive
+            </span>
+          </Link>
+          <ShareButton
+            title="Everything Apple — WWDC 2026"
+            text="Every Apple announcement from WWDC 2026 — iOS 27, Siri AI, macOS Golden Gate & more."
+          />
         </div>
       </div>
     </section>
   );
 }
 
-// ── Featured spotlight — Siri AI (black section) ──────────────
+// ─── Siri Spotlight — dark stage section ─────────────────────────────────────
 function SiriSpotlight() {
-  const ref = useScrollReveal({ threshold: 0.06 });
+  const ref = useScrollReveal({ threshold: 0.1 });
   return (
-    <section className="apple-section section-black" ref={ref as React.RefObject<HTMLElement>}>
-      <div className="apple-content-wide">
-        <div className="apple-feature-row" style={{ gap: "clamp(32px, 6vw, 80px)" }}>
-          {/* Text — slides in from left */}
+    <section
+      className="section-dark section-pad-lg"
+      ref={ref as React.RefObject<HTMLElement>}
+    >
+      <div className="page-container">
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "2fr 3fr",
+            gap: "60px",
+            alignItems: "center",
+          }}
+          className="feature-row-responsive"
+        >
+          {/* Text — left */}
           <div className="feature-text">
-            <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Siri AI</p>
-            <h2 className="apple-headline reveal-left reveal-delay-1" style={{ color: "#f5f5f7", marginBottom: "20px" }}>
+            <p className="t-eyebrow reveal" style={{ marginBottom: "16px" }}>Siri AI</p>
+            <h2
+              className="reveal reveal-delay-1"
+              style={{
+                fontFamily: "var(--font-sf-pro-display, system-ui)",
+                fontSize: "clamp(40px, 5.5vw, 64px)",
+                fontWeight: 700,
+                letterSpacing: "-0.9px",
+                lineHeight: 1.07,
+                color: "#f5f5f7",
+                marginBottom: "20px",
+              }}
+            >
               The new Siri.<br />Truly intelligent.
             </h2>
-            <p className="apple-lead reveal reveal-delay-2" style={{ color: "rgba(245,245,247,0.7)", marginBottom: "32px", maxWidth: "480px" }}>
+            <p
+              className="reveal reveal-delay-2"
+              style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "17px",
+                fontWeight: 300,
+                letterSpacing: "-0.1px",
+                lineHeight: 1.47,
+                color: "rgba(245,245,247,0.7)",
+                marginBottom: "32px",
+                maxWidth: "400px",
+              }}
+            >
               Powered by Apple Intelligence, the new Siri understands context, remembers your preferences, and can take action across every app on your iPhone.
             </p>
-            <div className="reveal reveal-delay-3" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+            <div className="reveal reveal-delay-3" style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
               <Link href="/siri-ai">
-                <span className="apple-btn apple-btn-blue">Learn more</span>
+                <span className="btn-primary" style={{ fontSize: "17px", padding: "12px 22px" }}>
+                  Learn more
+                </span>
               </Link>
               <Link href="/apple-intelligence">
-                <span className="apple-btn apple-btn-outline-white">Apple Intelligence</span>
+                <span className="btn-dark" style={{ fontSize: "17px", padding: "12px 22px", border: "1px solid rgba(255,255,255,0.2)" }}>
+                  Apple Intelligence
+                </span>
               </Link>
             </div>
           </div>
-          {/* Image — slides in from right + floats */}
-          <div className="feature-image reveal-right" style={{ display: "flex", justifyContent: "center" }}>
+
+          {/* Image — right, floating */}
+          <div
+            className="feature-img reveal-right"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             <img
               src={IMGS.siri.screen1}
-              alt="New Siri AI interface on iPhone"
+              alt="Siri AI interface on iPhone"
               className="animate-float"
               style={{
                 width: "100%",
-                maxWidth: "360px",
+                maxWidth: "380px",
+                height: "auto",
+                borderRadius: "28px",
                 display: "block",
-                filter: "drop-shadow(0 40px 60px rgba(0,0,0,0.6))",
               }}
             />
           </div>
@@ -176,39 +253,195 @@ function SiriSpotlight() {
   );
 }
 
-// ── Parental Controls spotlight (white section) ────────────────
-function ParentalSpotlight() {
-  const ref = useScrollReveal({ threshold: 0.06 });
+// ─── iOS 27 — fog section with white cards ────────────────────────────────────
+function IOS27Section() {
+  const ref = useScrollReveal({ threshold: 0.08 });
+  const features = [
+    { title: "Liquid Glass", body: "A new material that dynamically adapts to any background, bringing depth and translucency to every surface." },
+    { title: "Dynamic Island 2.0", body: "Expanded to show more at a glance — Live Activities, notifications, and controls in a single gesture." },
+    { title: "AI Photo Editing", body: "Clean Up, Generative Fill, and intelligent scene understanding built directly into Photos." },
+    { title: "Smarter Widgets", body: "Widgets that update in real-time and respond to your context — location, time, and habits." },
+  ];
+
   return (
-    <section className="apple-section section-white" ref={ref as React.RefObject<HTMLElement>}>
-      <div className="apple-content-wide">
-        <div className="apple-feature-row" style={{ gap: "clamp(32px, 6vw, 80px)" }}>
-          {/* Image — left on desktop, top on mobile */}
-          <div className="feature-image reveal-left" style={{ display: "flex", justifyContent: "center" }}>
+    <section
+      className="section-fog section-pad-lg"
+      ref={ref as React.RefObject<HTMLElement>}
+    >
+      <div className="page-container">
+        {/* Section header */}
+        <div style={{ textAlign: "center", marginBottom: "64px" }}>
+          <p className="t-eyebrow reveal" style={{ marginBottom: "12px" }}>iOS 27</p>
+          <h2
+            className="reveal reveal-delay-1"
+            style={{
+              fontFamily: "var(--font-sf-pro-display, system-ui)",
+              fontSize: "clamp(36px, 5vw, 56px)",
+              fontWeight: 700,
+              letterSpacing: "-0.9px",
+              lineHeight: 1.07,
+              color: "#1d1d1f",
+              marginBottom: "16px",
+            }}
+          >
+            Liquid Glass.<br />Redesigned from the ground up.
+          </h2>
+          <p
+            className="reveal reveal-delay-2"
+            style={{
+              fontFamily: "var(--font-sf-pro-text, system-ui)",
+              fontSize: "20px",
+              fontWeight: 300,
+              letterSpacing: "-0.2px",
+              lineHeight: 1.4,
+              color: "#707070",
+              maxWidth: "560px",
+              margin: "0 auto",
+            }}
+          >
+            The most significant redesign in iPhone history. Available this fall.
+          </p>
+        </div>
+
+        {/* 2-col feature layout */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "3fr 2fr",
+            gap: "10px",
+            alignItems: "start",
+          }}
+          className="feature-row-responsive"
+        >
+          {/* Left: hero image */}
+          <div className="reveal-zoom">
             <img
-              src={IMGS.parental.screenTime}
-              alt="Parental Controls Screen Time on iPhone"
-              className="animate-float-slow"
+              src={IMGS.ios27.homeScreen1}
+              alt="iOS 27 Liquid Glass home screen"
               style={{
                 width: "100%",
-                maxWidth: "360px",
+                height: "auto",
+                borderRadius: "28px",
                 display: "block",
-                filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.18))",
               }}
             />
           </div>
-          {/* Text — right on desktop, bottom on mobile */}
+
+          {/* Right: feature cards stack */}
+          <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            {features.map((f, i) => (
+              <div
+                key={f.title}
+                className={`card reveal reveal-delay-${i + 1}`}
+                style={{ padding: "28px" }}
+              >
+                <h3 style={{
+                  fontFamily: "var(--font-sf-pro-display, system-ui)",
+                  fontSize: "24px",
+                  fontWeight: 600,
+                  letterSpacing: "-0.36px",
+                  lineHeight: 1.29,
+                  color: "#1d1d1f",
+                  marginBottom: "8px",
+                }}>{f.title}</h3>
+                <p style={{
+                  fontFamily: "var(--font-sf-pro-text, system-ui)",
+                  fontSize: "17px",
+                  fontWeight: 400,
+                  letterSpacing: "-0.1px",
+                  lineHeight: 1.47,
+                  color: "#707070",
+                  margin: 0,
+                }}>{f.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* CTA row */}
+        <div className="reveal" style={{ textAlign: "center", marginTop: "48px" }}>
+          <Link href="/ios-27">
+            <span className="btn-primary" style={{ fontSize: "17px", padding: "12px 22px" }}>
+              Explore iOS 27
+            </span>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── Parental Controls — white section ────────────────────────────────────────
+function ParentalSection() {
+  const ref = useScrollReveal({ threshold: 0.08 });
+  return (
+    <section
+      className="section-snow section-pad-lg"
+      ref={ref as React.RefObject<HTMLElement>}
+    >
+      <div className="page-container">
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "3fr 2fr",
+            gap: "60px",
+            alignItems: "center",
+          }}
+          className="feature-row-responsive"
+        >
+          {/* Image — left */}
+          <div className="feature-img reveal-left" style={{ display: "flex", justifyContent: "center" }}>
+            <img
+              src={IMGS.parental.screenTime}
+              alt="Screen Time parental controls"
+              className="animate-float-slow"
+              style={{
+                width: "100%",
+                maxWidth: "420px",
+                height: "auto",
+                borderRadius: "28px",
+                display: "block",
+              }}
+            />
+          </div>
+
+          {/* Text — right */}
           <div className="feature-text">
-            <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Parental Controls</p>
-            <h2 className="apple-headline reveal-right reveal-delay-1" style={{ color: "#1d1d1f", marginBottom: "20px" }}>
-              Parents, you're<br />finally in control.
+            <p className="t-eyebrow reveal" style={{ marginBottom: "16px" }}>Parental Controls</p>
+            <h2
+              className="reveal reveal-delay-1"
+              style={{
+                fontFamily: "var(--font-sf-pro-display, system-ui)",
+                fontSize: "clamp(36px, 5vw, 56px)",
+                fontWeight: 700,
+                letterSpacing: "-0.9px",
+                lineHeight: 1.07,
+                color: "#1d1d1f",
+                marginBottom: "20px",
+              }}
+            >
+              Your family.<br />Your rules.
             </h2>
-            <p className="apple-lead reveal reveal-delay-2" style={{ color: "#6e6e73", marginBottom: "32px", maxWidth: "480px" }}>
-              iOS 27 gives parents unprecedented tools to manage screen time, content filters, communication limits, and Apple Watch supervision — all from one place.
+            <p
+              className="reveal reveal-delay-2"
+              style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "17px",
+                fontWeight: 400,
+                letterSpacing: "-0.1px",
+                lineHeight: 1.47,
+                color: "#707070",
+                marginBottom: "32px",
+                maxWidth: "400px",
+              }}
+            >
+              iOS 27 brings the most powerful parental controls ever — Screen Time scheduling, app limits, communication safety, and location sharing all in one place.
             </p>
-            <div className="reveal reveal-delay-3" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
+            <div className="reveal reveal-delay-3" style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
               <Link href="/parental-controls">
-                <span className="apple-btn apple-btn-blue">Explore features</span>
+                <span className="btn-primary" style={{ fontSize: "17px", padding: "12px 22px" }}>
+                  Learn more
+                </span>
               </Link>
             </div>
           </div>
@@ -218,78 +451,109 @@ function ParentalSpotlight() {
   );
 }
 
-// ── iOS 27 spotlight (off-white section) ──────────────────────
-function IOS27Spotlight() {
-  const ref = useScrollReveal({ threshold: 0.06 });
+// ─── iPhone 17 — dark stage with product finish gradients ────────────────────
+function IPhone17Stage() {
+  const ref = useScrollReveal({ threshold: 0.08 });
   return (
-    <section className="apple-section section-offwhite" ref={ref as React.RefObject<HTMLElement>}>
-      <div className="apple-content" style={{ textAlign: "center" }}>
-        <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>iOS 27</p>
-        <h2 className="apple-headline reveal reveal-delay-1" style={{ color: "#1d1d1f", marginBottom: "20px" }}>
-          Liquid Glass.<br />The biggest redesign since iOS 7.
+    <section
+      ref={ref as React.RefObject<HTMLElement>}
+      style={{
+        background: "linear-gradient(184deg, rgb(29,29,31) 0%, rgb(50,50,55) 40%, rgb(29,29,31) 100%)",
+        padding: "120px 0",
+        textAlign: "center",
+        overflow: "hidden",
+      }}
+    >
+      <div className="page-container">
+        <p className="t-eyebrow reveal" style={{ marginBottom: "12px", color: "rgba(245,245,247,0.6)" }}>iPhone 17</p>
+        <h2
+          className="reveal reveal-delay-1"
+          style={{
+            fontFamily: "var(--font-sf-pro-display, system-ui)",
+            fontSize: "clamp(40px, 6vw, 72px)",
+            fontWeight: 700,
+            letterSpacing: "-0.9px",
+            lineHeight: 1.07,
+            color: "#f5f5f7",
+            marginBottom: "16px",
+          }}
+        >
+          The thinnest iPhone ever.
         </h2>
-        <p className="apple-lead reveal reveal-delay-2" style={{ color: "#6e6e73", marginBottom: "48px", maxWidth: "580px", margin: "0 auto 48px" }}>
-          Apple's most dramatic visual overhaul in over a decade. Every surface, every animation, every interaction — reimagined.
+        <p
+          className="reveal reveal-delay-2"
+          style={{
+            fontFamily: "var(--font-sf-pro-text, system-ui)",
+            fontSize: "20px",
+            fontWeight: 300,
+            letterSpacing: "-0.2px",
+            lineHeight: 1.4,
+            color: "rgba(245,245,247,0.7)",
+            marginBottom: "48px",
+          }}
+        >
+          5.5mm. A19 Pro chip. Camera Control. Starting at $799.
         </p>
-        {/* Three iPhones — staggered zoom reveal */}
-        <div className="reveal-delay-3" style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: "2px",
-          maxWidth: "900px",
-          margin: "0 auto 40px",
-        }}>
-          {[IMGS.ios27.homeScreen1, IMGS.ios27.homeScreen2, IMGS.ios27.homeScreen3].map((src, i) => (
-            <div key={i} className="reveal-zoom" style={{ transitionDelay: `${0.1 + i * 0.12}s` }}>
-              <img
-                src={src}
-                alt={`iOS 27 home screen design ${i + 1}`}
-                style={{ width: "100%", aspectRatio: "9/16", objectFit: "cover", display: "block" }}
-              />
-            </div>
-          ))}
-        </div>
-        <div className="reveal reveal-delay-4">
-          <Link href="/ios-27">
-            <span className="apple-btn apple-btn-blue">Explore iOS 27</span>
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
 
-// ── iPhone lineup (black section) ─────────────────────────────
-function IPhoneLineup() {
-  const ref = useScrollReveal({ threshold: 0.06 });
-  return (
-    <section className="apple-section section-black" ref={ref as React.RefObject<HTMLElement>}>
-      <div className="apple-content" style={{ textAlign: "center" }}>
-        <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>iPhone</p>
-        <h2 className="apple-headline reveal reveal-delay-1" style={{ color: "#f5f5f7", marginBottom: "16px" }}>
-          iPhone 17 is here.
-        </h2>
-        <p className="apple-lead reveal reveal-delay-2" style={{ color: "rgba(245,245,247,0.7)", marginBottom: "48px", maxWidth: "520px", margin: "0 auto 48px" }}>
-          Thinner. Faster. Smarter. The iPhone 17 lineup redefines what a smartphone can be.
-        </p>
-        <div className="reveal-zoom reveal-delay-3" style={{ marginBottom: "40px" }}>
+        {/* Product image — full bleed, floating */}
+        <div className="reveal-zoom" style={{ marginBottom: "48px" }}>
           <img
             src={IMGS.iphone17.pro1}
-            alt="iPhone 17 Pro lineup"
+            alt="iPhone 17 Pro"
+            className="animate-float"
             style={{
               width: "100%",
-              maxWidth: "900px",
-              margin: "0 auto",
+              maxWidth: "600px",
+              height: "auto",
               display: "block",
+              margin: "0 auto",
+              borderRadius: "28px",
             }}
           />
         </div>
-        <div className="reveal reveal-delay-4" style={{ display: "flex", gap: "16px", flexWrap: "wrap", justifyContent: "center" }}>
+
+        {/* Color swatches */}
+        <div className="reveal reveal-delay-3" style={{ display: "flex", gap: "8px", justifyContent: "center", marginBottom: "40px" }}>
+          {[
+            { color: "#e3e4e5", label: "Silver" },
+            { color: "#e8d0d0", label: "Blush" },
+            { color: "#dddc8c", label: "Citrus" },
+            { color: "#596680", label: "Indigo" },
+          ].map((s) => (
+            <div
+              key={s.label}
+              title={s.label}
+              style={{
+                width: "28px",
+                height: "28px",
+                borderRadius: "999px",
+                background: s.color,
+                border: "2px solid rgba(255,255,255,0.3)",
+                cursor: "pointer",
+                transition: "transform 0.1s ease, border-color 0.1s ease",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.transform = "scale(1.15)";
+                (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.8)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.transform = "scale(1)";
+                (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.3)";
+              }}
+            />
+          ))}
+        </div>
+
+        <div className="reveal reveal-delay-4" style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
           <Link href="/iphones">
-            <span className="apple-btn apple-btn-blue">Explore all iPhones</span>
+            <span className="btn-primary" style={{ fontSize: "17px", padding: "12px 22px" }}>
+              Buy iPhone 17
+            </span>
           </Link>
-          <Link href="/iphone-timeline">
-            <span className="apple-btn apple-btn-outline-white">iPhone history</span>
+          <Link href="/iphones">
+            <span className="btn-dark" style={{ fontSize: "17px", padding: "12px 22px", border: "1px solid rgba(255,255,255,0.2)" }}>
+              Learn more
+            </span>
           </Link>
         </div>
       </div>
@@ -297,74 +561,252 @@ function IPhoneLineup() {
   );
 }
 
-// ── WWDC 2026 recap (white section) ───────────────────────────
-function WWDCRecap() {
+// ─── WWDC Highlights — fog section with white cards ───────────────────────────
+function WWDCHighlights() {
   const ref = useScrollReveal({ threshold: 0.06 });
-  const items = [
-    { label: "iOS 27", title: "Liquid Glass redesign", img: IMGS.ios27.hero, href: "/ios-27" },
-    { label: "macOS Golden Gate", title: "The Mac, reimagined", img: IMGS.macos.hero, href: "/macos-golden-gate" },
-    { label: "Apple Intelligence", title: "AI that works for you", img: IMGS.intelligence.overview, href: "/apple-intelligence" },
-    { label: "watchOS 12", title: "Health, elevated", img: IMGS.watchKids.screen1, href: "/watchos-12" },
+  const highlights = [
+    {
+      label: "WWDC 2026",
+      title: "Every announcement, in one place.",
+      body: "iOS 27, macOS Golden Gate, watchOS 12, visionOS 3, and the new Siri — everything from the keynote.",
+      href: "/wwdc-2026",
+      img: IMGS.wwdc.appleParkStage,
+    },
+    {
+      label: "macOS Golden Gate",
+      title: "Mac gets Liquid Glass.",
+      body: "macOS Golden Gate brings the iOS 27 design language to the Mac, with a completely redesigned menu bar and system UI.",
+      href: "/macos-golden-gate",
+      img: IMGS.macos.screen1,
+    },
+    {
+      label: "Apple Intelligence",
+      title: "AI that knows you.",
+      body: "Writing tools, image generation, priority notifications, and a smarter Siri — all on-device, all private.",
+      href: "/apple-intelligence",
+      img: IMGS.intelligence.overview,
+    },
   ];
+
   return (
-    <section className="apple-section section-white" ref={ref as React.RefObject<HTMLElement>}>
-      <div className="apple-content-wide">
-        <div style={{ marginBottom: "60px", textAlign: "center" }}>
-          <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>WWDC 2026</p>
-          <h2 className="apple-headline reveal reveal-delay-1" style={{ color: "#1d1d1f", marginBottom: "20px" }}>
-            Every announcement,<br />in one place.
+    <section
+      className="section-fog section-pad-lg"
+      ref={ref as React.RefObject<HTMLElement>}
+    >
+      <div className="page-container">
+        <div style={{ marginBottom: "48px" }}>
+          <p className="t-eyebrow reveal" style={{ marginBottom: "12px" }}>WWDC 2026</p>
+          <h2
+            className="reveal reveal-delay-1"
+            style={{
+              fontFamily: "var(--font-sf-pro-display, system-ui)",
+              fontSize: "clamp(32px, 4.5vw, 48px)",
+              fontWeight: 700,
+              letterSpacing: "-0.6px",
+              lineHeight: 1.1,
+              color: "#1d1d1f",
+            }}
+          >
+            The biggest Apple event of the year.
           </h2>
-          <p className="apple-lead reveal reveal-delay-2" style={{ color: "#6e6e73", maxWidth: "560px", margin: "0 auto" }}>
-            From iOS 27 to macOS Golden Gate, watchOS 12 to Apple Silicon — we covered it all live from Apple Park.
-          </p>
         </div>
-        {/* 2x2 grid — single col on mobile */}
-        <div className="mobile-single-col" style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)",
-          gap: "2px",
-          background: "rgba(0,0,0,0.06)",
-        }}>
-          {items.map((item, i) => (
-            <Link key={i} href={item.href}>
-              <div className="reveal" style={{
-                position: "relative",
-                overflow: "hidden",
-                background: "#fff",
-                cursor: "pointer",
-                transitionDelay: `${i * 0.08}s`,
-              }}
-                onMouseEnter={e => {
-                  const img = e.currentTarget.querySelector("img");
-                  if (img) img.style.transform = "scale(1.04)";
+
+        {/* 3-col card grid */}
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: "10px",
+          }}
+          className="mobile-single-col"
+        >
+          {highlights.map((h, i) => (
+            <Link key={h.href} href={h.href}>
+              <div
+                className={`card reveal reveal-delay-${i + 1}`}
+                style={{
+                  padding: 0,
+                  overflow: "hidden",
+                  cursor: "pointer",
+                  transition: "transform 0.344s ease",
                 }}
-                onMouseLeave={e => {
-                  const img = e.currentTarget.querySelector("img");
-                  if (img) img.style.transform = "scale(1)";
-                }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
               >
                 <img
-                  src={item.img}
-                  alt={item.title}
-                  style={{
-                    width: "100%",
-                    aspectRatio: "16/9",
-                    objectFit: "cover",
-                    display: "block",
-                    transition: "transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-                  }}
+                  src={h.img}
+                  alt={h.title}
+                  style={{ width: "100%", height: "200px", objectFit: "cover", display: "block" }}
                 />
-                <div style={{ padding: "24px 28px" }}>
-                  <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>{item.label}</p>
-                  <p style={{ fontSize: "21px", fontWeight: 600, color: "#1d1d1f", letterSpacing: "-0.002em" }}>{item.title}</p>
+                <div style={{ padding: "24px" }}>
+                  <p style={{
+                    fontFamily: "var(--font-sf-pro-text, system-ui)",
+                    fontSize: "12px",
+                    fontWeight: 600,
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    color: "#0071e3",
+                    marginBottom: "8px",
+                  }}>{h.label}</p>
+                  <h3 style={{
+                    fontFamily: "var(--font-sf-pro-display, system-ui)",
+                    fontSize: "24px",
+                    fontWeight: 600,
+                    letterSpacing: "-0.36px",
+                    lineHeight: 1.29,
+                    color: "#1d1d1f",
+                    marginBottom: "8px",
+                  }}>{h.title}</h3>
+                  <p style={{
+                    fontFamily: "var(--font-sf-pro-text, system-ui)",
+                    fontSize: "17px",
+                    fontWeight: 400,
+                    letterSpacing: "-0.1px",
+                    lineHeight: 1.47,
+                    color: "#707070",
+                    margin: 0,
+                  }}>{h.body}</p>
                 </div>
               </div>
             </Link>
           ))}
         </div>
-        <div className="reveal" style={{ textAlign: "center", marginTop: "48px" }}>
-          <Link href="/wwdc-2026">
-            <span className="apple-btn apple-btn-blue">See full WWDC 2026 coverage</span>
+      </div>
+    </section>
+  );
+}
+
+// ─── Jailbreak + Sideload — white section, 2-col cards ───────────────────────
+function JailbreakTeaser() {
+  const ref = useScrollReveal({ threshold: 0.06 });
+  return (
+    <section
+      className="section-snow section-pad"
+      ref={ref as React.RefObject<HTMLElement>}
+    >
+      <div className="page-container">
+        <div style={{ marginBottom: "48px" }}>
+          <h2
+            className="reveal"
+            style={{
+              fontFamily: "var(--font-sf-pro-display, system-ui)",
+              fontSize: "clamp(32px, 4.5vw, 48px)",
+              fontWeight: 700,
+              letterSpacing: "-0.6px",
+              lineHeight: 1.1,
+              color: "#1d1d1f",
+            }}
+          >
+            Beyond the App Store.
+          </h2>
+        </div>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(2, 1fr)",
+            gap: "10px",
+          }}
+          className="mobile-single-col"
+        >
+          {/* Jailbreak card */}
+          <Link href="/jailbreak">
+            <div
+              className="card-fog reveal"
+              style={{
+                padding: "40px 32px",
+                cursor: "pointer",
+                transition: "transform 0.344s ease",
+                height: "100%",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+            >
+              <p style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "#0071e3",
+                marginBottom: "12px",
+              }}>Jailbreak</p>
+              <h3 style={{
+                fontFamily: "var(--font-sf-pro-display, system-ui)",
+                fontSize: "clamp(28px, 3.5vw, 40px)",
+                fontWeight: 700,
+                letterSpacing: "-0.6px",
+                lineHeight: 1.1,
+                color: "#1d1d1f",
+                marginBottom: "12px",
+              }}>iOS 27<br />jailbreak status</h3>
+              <p style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "17px",
+                fontWeight: 400,
+                letterSpacing: "-0.1px",
+                lineHeight: 1.47,
+                color: "#707070",
+                marginBottom: "24px",
+              }}>Dopamine, Palera1n, and every tool — updated daily.</p>
+              <span style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "17px",
+                fontWeight: 400,
+                color: "#0066cc",
+                letterSpacing: "-0.1px",
+              }}>Check status ›</span>
+            </div>
+          </Link>
+
+          {/* Sideloading card */}
+          <Link href="/jailbreak">
+            <div
+              className="card-dark reveal reveal-delay-1"
+              style={{
+                padding: "40px 32px",
+                cursor: "pointer",
+                transition: "transform 0.344s ease",
+                height: "100%",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(-2px)"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+            >
+              <p style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "rgba(245,245,247,0.5)",
+                marginBottom: "12px",
+              }}>Sideloading</p>
+              <h3 style={{
+                fontFamily: "var(--font-sf-pro-display, system-ui)",
+                fontSize: "clamp(28px, 3.5vw, 40px)",
+                fontWeight: 700,
+                letterSpacing: "-0.6px",
+                lineHeight: 1.1,
+                color: "#f5f5f7",
+                marginBottom: "12px",
+              }}>Install any app without the App Store</h3>
+              <p style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "17px",
+                fontWeight: 400,
+                letterSpacing: "-0.1px",
+                lineHeight: 1.47,
+                color: "rgba(245,245,247,0.6)",
+                marginBottom: "24px",
+              }}>AltStore, Sideloadly, TrollStore — complete guides.</p>
+              <span style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "17px",
+                fontWeight: 400,
+                color: "rgba(245,245,247,0.7)",
+                letterSpacing: "-0.1px",
+              }}>Read guide ›</span>
+            </div>
           </Link>
         </div>
       </div>
@@ -372,30 +814,89 @@ function WWDCRecap() {
   );
 }
 
-// ── Apple Intelligence (black section) ────────────────────────
-function IntelligenceSection() {
-  const ref = useScrollReveal({ threshold: 0.06 });
+// ─── Compare Phones — fog section ────────────────────────────────────────────
+function CompareTeaser() {
+  const ref = useScrollReveal({ threshold: 0.08 });
   return (
-    <section className="apple-section section-black" ref={ref as React.RefObject<HTMLElement>}>
-      <div className="apple-content-wide">
-        <div className="apple-feature-row" style={{ gap: "clamp(32px, 6vw, 80px)" }}>
+    <section
+      className="section-fog section-pad"
+      ref={ref as React.RefObject<HTMLElement>}
+    >
+      <div className="page-container">
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "2fr 3fr",
+            gap: "60px",
+            alignItems: "center",
+          }}
+          className="feature-row-responsive"
+        >
+          {/* Text */}
           <div className="feature-text">
-            <p className="apple-eyebrow reveal" style={{ marginBottom: "16px" }}>Apple Intelligence</p>
-            <h2 className="apple-headline reveal-left reveal-delay-1" style={{ color: "#f5f5f7", marginBottom: "20px" }}>
-              AI that's built<br />for privacy.
+            <p className="t-eyebrow reveal" style={{ marginBottom: "16px" }}>Compare</p>
+            <h2
+              className="reveal reveal-delay-1"
+              style={{
+                fontFamily: "var(--font-sf-pro-display, system-ui)",
+                fontSize: "clamp(36px, 5vw, 56px)",
+                fontWeight: 700,
+                letterSpacing: "-0.9px",
+                lineHeight: 1.07,
+                color: "#1d1d1f",
+                marginBottom: "20px",
+              }}
+            >
+              iPhone vs.<br />the world.
             </h2>
-            <p className="apple-lead reveal reveal-delay-2" style={{ color: "rgba(245,245,247,0.7)", marginBottom: "32px", maxWidth: "480px" }}>
-              Apple Intelligence runs on-device, keeping your data private. Writing tools, image generation, priority notifications — all powered by the world's most personal AI.
+            <p
+              className="reveal reveal-delay-2"
+              style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "17px",
+                fontWeight: 400,
+                letterSpacing: "-0.1px",
+                lineHeight: 1.47,
+                color: "#707070",
+                marginBottom: "32px",
+                maxWidth: "380px",
+              }}
+            >
+              Compare iPhone 17 Pro against Samsung, Google, Nothing, OPPO, and OnePlus — specs, price, and camera in one interactive table.
             </p>
-            <Link href="/apple-intelligence">
-              <span className="apple-btn apple-btn-blue reveal reveal-delay-3">Explore Apple Intelligence</span>
-            </Link>
+            <div className="reveal reveal-delay-3">
+              <Link href="/compare">
+                <span className="btn-primary" style={{ fontSize: "17px", padding: "12px 22px" }}>
+                  Compare phones
+                </span>
+              </Link>
+            </div>
           </div>
-          <div className="feature-image reveal-right">
+
+          {/* Stacked phone images */}
+          <div
+            className="feature-img reveal-right"
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: "10px",
+              alignItems: "end",
+            }}
+          >
             <img
-              src={IMGS.intelligence.features1}
-              alt="Apple Intelligence features"
-              style={{ width: "100%", display: "block" }}
+              src={IMGS.iphone17.pro1}
+              alt="iPhone 17 Pro"
+              style={{ width: "100%", height: "auto", borderRadius: "20px", display: "block" }}
+            />
+            <img
+              src={IMGS.iphone17.pro2}
+              alt="iPhone 17 Pro"
+              style={{ width: "100%", height: "auto", borderRadius: "20px", display: "block", transform: "translateY(-20px)" }}
+            />
+            <img
+              src={IMGS.iphone17.pro3}
+              alt="iPhone 17 Pro"
+              style={{ width: "100%", height: "auto", borderRadius: "20px", display: "block" }}
             />
           </div>
         </div>
@@ -404,159 +905,77 @@ function IntelligenceSection() {
   );
 }
 
-// ── Jailbreak & Sideload teaser (off-white section) ────────────
-function JailbreakTeaser() {
-  const ref = useScrollReveal({ threshold: 0.06 });
-  const items = [
-    {
-      label: "Jailbreak",
-      title: "iOS 27 jailbreak status",
-      sub: "Dopamine, Palera1n, and every tool — updated daily.",
-      href: "/jailbreak",
-      img: IMGS.jailbreak.dopamine2,
-    },
-    {
-      label: "Sideloading",
-      title: "Install any app without the App Store",
-      sub: "AltStore, Sideloadly, TrollStore — complete guides.",
-      href: "/jailbreak",
-      img: IMGS.sideload.altstore2,
-    },
-  ];
-  return (
-    <section className="apple-section-sm section-offwhite" ref={ref as React.RefObject<HTMLElement>}>
-      <div className="apple-content">
-        {/* Single col on mobile, 2-col on desktop */}
-        <div className="mobile-single-col" style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "2px",
-          background: "rgba(0,0,0,0.06)",
-        }}>
-          {items.map((item, i) => (
-            <Link key={i} href={item.href}>
-              <div className="reveal" style={{
-                background: "#fff",
-                overflow: "hidden",
-                cursor: "pointer",
-                transitionDelay: `${i * 0.1}s`,
-              }}
-                onMouseEnter={e => {
-                  const img = e.currentTarget.querySelector("img");
-                  if (img) img.style.transform = "scale(1.04)";
-                }}
-                onMouseLeave={e => {
-                  const img = e.currentTarget.querySelector("img");
-                  if (img) img.style.transform = "scale(1)";
-                }}
-              >
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  style={{
-                    width: "100%",
-                    aspectRatio: "16/9",
-                    objectFit: "cover",
-                    display: "block",
-                    transition: "transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-                  }}
-                />
-                <div style={{ padding: "28px 32px" }}>
-                  <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>{item.label}</p>
-                  <h3 style={{ fontSize: "21px", fontWeight: 600, color: "#1d1d1f", letterSpacing: "-0.002em", marginBottom: "8px" }}>{item.title}</h3>
-                  <p style={{ fontSize: "14px", color: "#6e6e73", lineHeight: 1.5 }}>{item.sub}</p>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ── Latest News (white section) ────────────────────────────────
-function NewsSection() {
-  const ref = useScrollReveal({ threshold: 0.04 });
-  return (
-    <section className="apple-section section-white" ref={ref as React.RefObject<HTMLElement>}>
-      <div className="apple-content-wide">
-        <div style={{ marginBottom: "48px" }}>
-          <p className="apple-eyebrow reveal" style={{ marginBottom: "12px" }}>Latest News</p>
-          <h2 className="apple-subheadline reveal reveal-delay-1" style={{ color: "#1d1d1f" }}>
-            From 9to5Mac &amp; MacRumors
-          </h2>
-        </div>
-        <div className="reveal reveal-delay-2">
-          <LatestNews />
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ── More pages teaser (off-white section) ─────────────────────
-function MorePages() {
+// ─── Explore More — white section, 4-col grid ────────────────────────────────
+function ExploreGrid() {
   const ref = useScrollReveal({ threshold: 0.06 });
   const pages = [
     { label: "macOS Golden Gate", href: "/macos-golden-gate", img: IMGS.macos.screen1 },
     { label: "Apple Silicon", href: "/apple-silicon", img: IMGS.silicon.m4chip1 },
     { label: "watchOS 12", href: "/watchos-12", img: IMGS.watchKids.screen2 },
     { label: "Gallery", href: "/gallery", img: IMGS.places.applePark1 },
-    { label: "Community", href: "/community", img: IMGS.places.appleStore2 },
-    { label: "iPhone Timeline", href: "/iphone-timeline", img: IMGS.iphone16.proMax1 },
+    { label: "Community", href: "/community", img: IMGS.places.appleStore1 },
+    { label: "iPhone History", href: "/iphone-timeline", img: IMGS.iphone16.proMax1 },
     { label: "Phone Comparison", href: "/compare", img: IMGS.iphone17.pro1 },
+    { label: "Jailbreak", href: "/jailbreak", img: IMGS.ios27.homeScreen2 },
   ];
+
   return (
-    <section className="apple-section section-offwhite" ref={ref as React.RefObject<HTMLElement>}>
-      <div className="apple-content-wide">
+    <section
+      className="section-snow section-pad-lg"
+      ref={ref as React.RefObject<HTMLElement>}
+    >
+      <div className="page-container">
         <div style={{ marginBottom: "48px", textAlign: "center" }}>
-          <h2 className="apple-subheadline reveal" style={{ color: "#1d1d1f" }}>Explore everything.</h2>
+          <h2
+            className="reveal"
+            style={{
+              fontFamily: "var(--font-sf-pro-display, system-ui)",
+              fontSize: "clamp(28px, 4vw, 40px)",
+              fontWeight: 700,
+              letterSpacing: "-0.6px",
+              lineHeight: 1.17,
+              color: "#1d1d1f",
+            }}
+          >
+            Explore everything.
+          </h2>
         </div>
-        <div className="mobile-two-col" style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          gap: "2px",
-          background: "rgba(0,0,0,0.06)",
-        }}>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(4, 1fr)",
+            gap: "10px",
+          }}
+          className="mobile-two-col"
+        >
           {pages.map((page, i) => (
-            <Link key={i} href={page.href}>
-              <div className="reveal" style={{
-                position: "relative",
-                overflow: "hidden",
-                background: "#fff",
-                cursor: "pointer",
-                transitionDelay: `${i * 0.07}s`,
-              }}
-                onMouseEnter={e => {
-                  const img = e.currentTarget.querySelector("img");
-                  if (img) img.style.transform = "scale(1.06)";
+            <Link key={page.href} href={page.href}>
+              <div
+                className={`card-fog reveal reveal-delay-${(i % 4) + 1}`}
+                style={{
+                  padding: 0,
+                  overflow: "hidden",
+                  cursor: "pointer",
+                  transition: "transform 0.344s ease",
                 }}
-                onMouseLeave={e => {
-                  const img = e.currentTarget.querySelector("img");
-                  if (img) img.style.transform = "scale(1)";
-                }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(-3px)"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
               >
                 <img
                   src={page.img}
                   alt={page.label}
-                  style={{
-                    width: "100%",
-                    aspectRatio: "4/3",
-                    objectFit: "cover",
-                    display: "block",
-                    transition: "transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-                  }}
+                  style={{ width: "100%", height: "160px", objectFit: "cover", display: "block" }}
                 />
-                <div style={{
-                  position: "absolute",
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  padding: "40px 20px 20px",
-                  background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)",
-                }}>
-                  <p style={{ color: "#f5f5f7", fontSize: "17px", fontWeight: 600, letterSpacing: "-0.022em" }}>{page.label}</p>
+                <div style={{ padding: "16px 20px 20px" }}>
+                  <p style={{
+                    fontFamily: "var(--font-sf-pro-display, system-ui)",
+                    fontSize: "17px",
+                    fontWeight: 600,
+                    letterSpacing: "-0.1px",
+                    color: "#1d1d1f",
+                    margin: 0,
+                  }}>{page.label}</p>
                 </div>
               </div>
             </Link>
@@ -567,36 +986,123 @@ function MorePages() {
   );
 }
 
-// ── Credit bar ─────────────────────────────────────────────────
-function CreditBar() {
+// ─── Footer ───────────────────────────────────────────────────────────────────
+function Footer() {
   return (
-    <section style={{ background: "#f5f5f7", padding: "40px 22px", textAlign: "center" }}>
-      <p style={{ fontSize: "12px", color: "#6e6e73", letterSpacing: "-0.01em" }}>
-        Everything Apple is an independent fan site. Built by{" "}
-        <span style={{ color: "#1d1d1f", fontWeight: 500 }}>Cory Hepler</span>.
-        Not affiliated with Apple Inc.
-      </p>
-    </section>
+    <footer
+      style={{
+        background: "#f5f5f7",
+        borderTop: "1px solid #e8e8ed",
+        padding: "40px 0 32px",
+      }}
+    >
+      <div className="page-container">
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(4, 1fr)",
+            gap: "32px",
+            marginBottom: "32px",
+          }}
+          className="mobile-two-col"
+        >
+          {[
+            {
+              title: "WWDC 2026",
+              links: [
+                { label: "iOS 27", href: "/ios-27" },
+                { label: "macOS Golden Gate", href: "/macos-golden-gate" },
+                { label: "Siri AI", href: "/siri-ai" },
+                { label: "Apple Intelligence", href: "/apple-intelligence" },
+              ],
+            },
+            {
+              title: "iPhones",
+              links: [
+                { label: "iPhone 17 Pro", href: "/iphones" },
+                { label: "iPhone History", href: "/iphone-timeline" },
+                { label: "Compare Phones", href: "/compare" },
+                { label: "Apple Silicon", href: "/apple-silicon" },
+              ],
+            },
+            {
+              title: "More",
+              links: [
+                { label: "Parental Controls", href: "/parental-controls" },
+                { label: "watchOS 12", href: "/watchos-12" },
+                { label: "Jailbreak", href: "/jailbreak" },
+                { label: "Gallery", href: "/gallery" },
+              ],
+            },
+            {
+              title: "Community",
+              links: [
+                { label: "Reddit", href: "/community" },
+                { label: "WWDC 2026", href: "/wwdc-2026" },
+                { label: "Home", href: "/" },
+              ],
+            },
+          ].map((col) => (
+            <div key={col.title}>
+              <p style={{
+                fontFamily: "var(--font-sf-pro-text, system-ui)",
+                fontSize: "12px",
+                fontWeight: 600,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "#707070",
+                marginBottom: "12px",
+              }}>{col.title}</p>
+              {col.links.map((l) => (
+                <Link key={l.href} href={l.href}>
+                  <p style={{
+                    fontFamily: "var(--font-sf-pro-text, system-ui)",
+                    fontSize: "14px",
+                    fontWeight: 400,
+                    letterSpacing: "-0.04px",
+                    color: "#1d1d1f",
+                    marginBottom: "8px",
+                    cursor: "pointer",
+                    transition: "color 0.1s ease",
+                  }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#0066cc"; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#1d1d1f"; }}
+                  >{l.label}</p>
+                </Link>
+              ))}
+            </div>
+          ))}
+        </div>
+
+        <div style={{ borderTop: "1px solid #e8e8ed", paddingTop: "20px" }}>
+          <p style={{
+            fontFamily: "var(--font-sf-pro-text, system-ui)",
+            fontSize: "12px",
+            fontWeight: 400,
+            letterSpacing: "-0.26px",
+            color: "#707070",
+          }}>
+            Copyright &copy; 2026 Everything Apple. Not affiliated with Apple Inc.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 }
 
-// ── Main export ────────────────────────────────────────────────
+// ─── Page ─────────────────────────────────────────────────────────────────────
 export default function Home() {
   return (
-    <div style={{ background: "#fff" }}>
-      <Navbar />
+    <>
       <Hero />
       <SiriSpotlight />
-      <ParentalSpotlight />
-      <IOS27Spotlight />
-      <IPhoneLineup />
-      <WWDCRecap />
-      <IntelligenceSection />
+      <IOS27Section />
+      <ParentalSection />
+      <IPhone17Stage />
+      <WWDCHighlights />
       <JailbreakTeaser />
-      <NewsSection />
-      <MorePages />
-      <CreditBar />
-      <Footer />
-    </div>
+      <CompareTeaser />
+      <ExploreGrid />
+    </>
   );
 }

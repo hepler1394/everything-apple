@@ -9,8 +9,6 @@
   Built by Cory Hepler
 */
 import { Link } from "wouter";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 import useScrollReveal from "../hooks/useScrollReveal";
 
@@ -218,7 +216,6 @@ function RelatedPages() {
 export default function SiriAI() {
   return (
     <div style={{ background: "#000" }}>
-      <Navbar />
       <Hero />
       <TheaterVideo />
       <FeatureSections />
@@ -226,7 +223,6 @@ export default function SiriAI() {
       <ScreenshotsGallery />
       <Availability />
       <RelatedPages />
-      <Footer />
     </div>
   );
 }

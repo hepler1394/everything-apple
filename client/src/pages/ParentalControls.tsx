@@ -9,8 +9,6 @@
 */
 import { useState } from "react";
 import { Link } from "wouter";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 import useScrollReveal from "../hooks/useScrollReveal";
 
@@ -292,14 +290,12 @@ function Setup() {
 export default function ParentalControls() {
   return (
     <div style={{ background: "#000" }}>
-      <Navbar />
       <Hero />
       <InteractiveTabs />
       <FeatureSections />
       <AppleWatchKids />
       <FullFeatureList />
       <Setup />
-      <Footer />
     </div>
   );
 }

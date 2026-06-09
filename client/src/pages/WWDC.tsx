@@ -6,9 +6,6 @@
    ============================================================= */
 import { useEffect, useRef } from "react";
 import { Link } from "wouter";
-import Navbar from "../components/Navbar";
-import { useSearch } from "../App";
-import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
@@ -75,10 +72,8 @@ const ANNOUNCEMENTS = [
 ];
 
 export default function WWDC() {
-  const { openSearch } = useSearch();
   return (
     <div>
-      <Navbar onSearchOpen={openSearch} />
 
       {/* Hero */}
       <section style={{ position: "relative", height: "90svh", minHeight: "560px", overflow: "hidden", background: "#000" }}>
@@ -206,7 +201,6 @@ export default function WWDC() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

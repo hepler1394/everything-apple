@@ -7,9 +7,6 @@
  */
 
 import { useState, useCallback } from "react";
-import Navbar from "@/components/Navbar";
-import { useSearch } from "../App";
-import Footer from "@/components/Footer";
 import IMGS from "@/lib/imageManifest";
 
 // ── All gallery images organized by category ──
@@ -172,7 +169,6 @@ const CATEGORIES = [
 ];
 
 export default function Gallery() {
-  const { openSearch } = useSearch();
   const [activeCategory, setActiveCategory] = useState("All");
   const [lightboxImg, setLightboxImg] = useState<{ src: string; title: string } | null>(null);
 
@@ -192,7 +188,6 @@ export default function Gallery() {
 
   return (
     <div style={{ background: "var(--background)", minHeight: "100vh" }}>
-      <Navbar onSearchOpen={openSearch} />
 
       {/* ── Hero ── */}
       <section style={{ paddingTop: "120px", paddingBottom: "60px", textAlign: "center" }}>
@@ -514,7 +509,6 @@ export default function Gallery() {
         </div>
       )}
 
-      <Footer />
 
       <style>{`
         @media (max-width: 600px) {

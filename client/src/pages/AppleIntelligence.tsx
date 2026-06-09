@@ -6,9 +6,6 @@
    ============================================================= */
 import { useEffect, useRef } from "react";
 import { Link } from "wouter";
-import Navbar from "../components/Navbar";
-import { useSearch } from "../App";
-import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
@@ -69,10 +66,8 @@ const CATEGORIES = [
 ];
 
 export default function AppleIntelligence() {
-  const { openSearch } = useSearch();
   return (
     <div>
-      <Navbar onSearchOpen={openSearch} />
 
       {/* Hero */}
       <section style={{ background: "#000", padding: "120px 0 100px", textAlign: "center" }}>
@@ -274,7 +269,6 @@ export default function AppleIntelligence() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

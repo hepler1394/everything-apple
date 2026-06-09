@@ -8,6 +8,8 @@ import SearchOverlay from "./components/SearchOverlay";
 import WWDCBanner from "./components/WWDCBanner";
 import PageTransition from "./components/PageTransition";
 import { useState, useEffect, createContext, useContext } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import IPhones from "./pages/IPhones";
 import Jailbreak from "./pages/Jailbreak";
@@ -70,9 +72,13 @@ function AppInner() {
   return (
     <SearchContext.Provider value={{ openSearch: () => setSearchOpen(true) }}>
       <WWDCBanner />
-      <PageTransition>
-        <Router />
-      </PageTransition>
+      <Navbar onSearchOpen={() => setSearchOpen(true)} />
+      <div style={{ paddingTop: "calc(44px + var(--banner-height, 0px))" }}>
+        <PageTransition>
+          <Router />
+        </PageTransition>
+        <Footer />
+      </div>
       <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </SearchContext.Provider>
   );
