@@ -10,6 +10,7 @@ import Navbar from "../components/Navbar";
 import { useSearch } from "../App";
 import Footer from "../components/Footer";
 import { IMGS } from "../lib/imageManifest";
+import IOS27FeaturePills from "../components/IOS27FeaturePills";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -127,25 +128,11 @@ export default function IOS27() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
             <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Features</p>
-            <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "60px" }}>Everything that is new in iOS 27.</h2>
+            <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "48px" }}>Everything that is new in iOS 27.</h2>
           </FadeIn>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: "20px" }}>
-            {FEATURES.map((f, i) => (
-              <FadeIn key={f.title} delay={i * 60}>
-                <div style={{ background: "#fff", borderRadius: "20px", overflow: "hidden", boxShadow: "0 2px 20px rgba(0,0,0,0.06)" }}>
-                  <div style={{ aspectRatio: "16/9", overflow: "hidden" }}>
-                    <img src={f.img} alt={f.title} style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.4s ease" }}
-                      onMouseEnter={e => (e.currentTarget.style.transform = "scale(1.04)")}
-                      onMouseLeave={e => (e.currentTarget.style.transform = "scale(1)")} />
-                  </div>
-                  <div style={{ padding: "28px" }}>
-                    <h3 style={{ fontSize: "20px", fontWeight: 700, color: "#1d1d1f", marginBottom: "10px", letterSpacing: "-0.02em" }}>{f.title}</h3>
-                    <p style={{ fontSize: "15px", color: "#6e6e73", lineHeight: 1.6 }}>{f.desc}</p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
+          <FadeIn delay={100}>
+            <IOS27FeaturePills />
+          </FadeIn>
         </div>
       </section>
 

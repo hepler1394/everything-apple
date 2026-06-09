@@ -86,7 +86,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
       <nav
         style={{
           position: "fixed",
-          top: 0,
+          top: "var(--banner-height, 0px)",
           left: 0,
           right: 0,
           zIndex: 9999,
@@ -95,7 +95,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
           backdropFilter: scrolled ? "blur(24px) saturate(180%)" : "none",
           WebkitBackdropFilter: scrolled ? "blur(24px) saturate(180%)" : "none",
           borderBottom: `1px solid ${navBorderColor}`,
-          transition: "background 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease",
+          transition: "top 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94), background 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease",
         }}
       >
         <div

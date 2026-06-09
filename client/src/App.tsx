@@ -5,6 +5,8 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import SearchOverlay from "./components/SearchOverlay";
+import WWDCBanner from "./components/WWDCBanner";
+import PageTransition from "./components/PageTransition";
 import { useState, useEffect, createContext, useContext } from "react";
 import Home from "./pages/Home";
 import IPhones from "./pages/IPhones";
@@ -65,7 +67,10 @@ function AppInner() {
 
   return (
     <SearchContext.Provider value={{ openSearch: () => setSearchOpen(true) }}>
-      <Router />
+      <WWDCBanner />
+      <PageTransition>
+        <Router />
+      </PageTransition>
       <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </SearchContext.Provider>
   );
