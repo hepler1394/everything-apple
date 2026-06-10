@@ -9,8 +9,8 @@ import { Link } from "wouter";
 import { IMGS as CDN } from "../lib/imageManifest";
 
 const IMGS = {
-  lineup: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/iphone-lineup-11-17_b4dd07e0.jpg",
-  proLineup: "https://d36hbw14aib5lz.cloudfront.net/94533962/FyAKEpegmAANgtBEbXoqma/iphone-pro-lineup_3fdcde73.jpeg",
+  lineup: "https://files.manuscdn.com/user_upload_by_module/session_file/94533962/uIqqhxWPhShCnjzW.jpg",
+  proLineup: "https://files.manuscdn.com/user_upload_by_module/session_file/94533962/bkfhbpnjjMVPLpaz.jpeg",
   // iPhone 17 Series
   iphone17Pro: CDN.iphone17.pro1,
   iphone17: CDN.iphone17.standard,
