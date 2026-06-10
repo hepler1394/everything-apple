@@ -115,8 +115,8 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
               Everything{" "}
               <span className="rainbow-border-word" style={{
                 position: "relative",
-                padding: "2px 6px",
-                borderRadius: "6px",
+                padding: "1px 8px",
+                borderRadius: "980px",
               }}>
                 <span className="rainbow-border-inner" />
                 Apple
@@ -305,7 +305,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                   fontFamily: "var(--font-sf-pro-display, system-ui)",
                   display: "inline-flex",
                   alignItems: "center",
-                }}>Everything{" "}<span className="rainbow-border-word" style={{ position: "relative", padding: "2px 6px", borderRadius: "6px" }}><span className="rainbow-border-inner" />Apple</span></span>
+                }}>Everything{" "}<span className="rainbow-border-word" style={{ position: "relative", padding: "1px 8px", borderRadius: "980px" }}><span className="rainbow-border-inner" />Apple</span></span>
               </Link>
             </div>
 
@@ -402,8 +402,8 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
         }
         .rainbow-border-inner {
           position: absolute;
-          inset: -3px;
-          border-radius: 8px;
+          inset: -2px;
+          border-radius: 980px;
           pointer-events: none;
           z-index: -1;
         }
@@ -411,7 +411,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
           content: '';
           position: absolute;
           inset: 0;
-          border-radius: 8px;
+          border-radius: 980px;
           padding: 1.5px;
           background: conic-gradient(
             from var(--ring-angle, 0deg),
@@ -426,14 +426,14 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
         .rainbow-border-inner::after {
           content: '';
           position: absolute;
-          inset: -4px;
-          border-radius: 12px;
+          inset: -3px;
+          border-radius: 980px;
           background: conic-gradient(
             from var(--ring-angle, 0deg),
             #ff2d55, #ff9500, #ffcc00, #34c759, #00d4ff, #5856d6, #af52de, #ff2d55
           );
-          filter: blur(8px);
-          opacity: 0.5;
+          filter: blur(6px);
+          opacity: 0.35;
           animation: ringRotate 3s linear infinite;
           z-index: -2;
         }

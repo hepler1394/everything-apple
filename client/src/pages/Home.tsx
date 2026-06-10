@@ -42,7 +42,7 @@ function Hero() {
         }}
       >
         <img
-          src="https://files.manuscdn.com/user_upload_by_module/session_file/94533962/IrcmaAvABxPZOHvd.webp"
+          src="https://files.manuscdn.com/user_upload_by_module/session_file/94533962/xxbxLQCMPqvjnffo.jpeg"
           alt="Golden Gate Bridge at dusk — Everything Apple"
           style={{
             width: "100%",
