@@ -27,6 +27,35 @@ import IPhoneTimeline from "./pages/IPhoneTimeline";
 import Compare from "./pages/Compare";
 import Sideloading from "./pages/Sideloading";
 import BackToTop from "./components/BackToTop";
+import ReadingProgress from "./components/ReadingProgress";
+import AppleHistory from "./pages/AppleHistory";
+import TipsAndTricks from "./pages/TipsAndTricks";
+import Accessories from "./pages/Accessories";
+import MacOSDeepDive from "./pages/MacOSDeepDive";
+import EcosystemGuide from "./pages/EcosystemGuide";
+import PrivacySecurity from "./pages/PrivacySecurity";
+import Shortcuts from "./pages/Shortcuts";
+import DeveloperTools from "./pages/DeveloperTools";
+import HiddenFeatures from "./pages/HiddenFeatures";
+import Troubleshooting from "./pages/Troubleshooting";
+import AppleServices from "./pages/AppleServices";
+import KeyboardShortcuts from "./pages/KeyboardShortcuts";
+import Rumors from "./pages/Rumors";
+import AppleVsAndroid from "./pages/AppleVsAndroid";
+import BestApps from "./pages/BestApps";
+import IPadOS from "./pages/IPadOS";
+import VisionPro from "./pages/VisionPro";
+import BuyingGuide from "./pages/BuyingGuide";
+import Benchmarks from "./pages/Benchmarks";
+import MusicPodcasts from "./pages/MusicPodcasts";
+import MapsCarPlay from "./pages/MapsCarPlay";
+import Photography from "./pages/Photography";
+import HealthFitness from "./pages/HealthFitness";
+import Gaming from "./pages/Gaming";
+import Education from "./pages/Education";
+import SmartHome from "./pages/SmartHome";
+import RepairDIY from "./pages/RepairDIY";
+import Accessibility from "./pages/Accessibility";
 
 // Global search context so any page can open the search overlay
 export const SearchContext = createContext<{ openSearch: () => void }>({ openSearch: () => {} });
@@ -51,6 +80,34 @@ function Router() {
       <Route path="/gallery" component={Gallery} />
       <Route path="/iphone-timeline" component={IPhoneTimeline} />
       <Route path="/compare" component={Compare} />
+      <Route path="/apple-history" component={AppleHistory} />
+      <Route path="/tips-and-tricks" component={TipsAndTricks} />
+      <Route path="/accessories" component={Accessories} />
+      <Route path="/macos-deep-dive" component={MacOSDeepDive} />
+      <Route path="/ecosystem-guide" component={EcosystemGuide} />
+      <Route path="/privacy-security" component={PrivacySecurity} />
+      <Route path="/shortcuts" component={Shortcuts} />
+      <Route path="/developer-tools" component={DeveloperTools} />
+      <Route path="/hidden-features" component={HiddenFeatures} />
+      <Route path="/troubleshooting" component={Troubleshooting} />
+      <Route path="/apple-services" component={AppleServices} />
+      <Route path="/keyboard-shortcuts" component={KeyboardShortcuts} />
+      <Route path="/rumors" component={Rumors} />
+      <Route path="/apple-vs-android" component={AppleVsAndroid} />
+      <Route path="/best-apps" component={BestApps} />
+      <Route path="/ipados" component={IPadOS} />
+      <Route path="/vision-pro" component={VisionPro} />
+      <Route path="/buying-guide" component={BuyingGuide} />
+      <Route path="/benchmarks" component={Benchmarks} />
+      <Route path="/music-podcasts" component={MusicPodcasts} />
+      <Route path="/maps-carplay" component={MapsCarPlay} />
+      <Route path="/photography" component={Photography} />
+      <Route path="/health-fitness" component={HealthFitness} />
+      <Route path="/gaming" component={Gaming} />
+      <Route path="/education" component={Education} />
+      <Route path="/smart-home" component={SmartHome} />
+      <Route path="/repair-diy" component={RepairDIY} />
+      <Route path="/accessibility" component={Accessibility} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
@@ -84,6 +141,7 @@ function AppInner() {
       </div>
       <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
       <BackToTop />
+      <ReadingProgress />
     </SearchContext.Provider>
   );
 }
