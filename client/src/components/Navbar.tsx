@@ -1,14 +1,15 @@
 /*
  * Navbar — Everything Apple
- * DESIGN.md spec: 44px height, fog (#f5f5f7) bg, 12px SF Pro Text nav links
- * Azure (#0071e3) Buy CTA — sole permission-to-act color
- * Transitions to semi-opaque white on scroll
- * Mobile: hamburger opens full-screen overlay
+ * Uses ThemeContext for multi-theme support (light/dark/siri/red)
+ * ThemePicker dropdown replaces simple toggle
+ * Active underline indicator, bigger "new" dots with glow
  */
 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Search, Menu, X, Sun, Moon } from "lucide-react";
+import { Search, Menu, X } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
+import ThemePicker from "./ThemePicker";
 
 const navLinks = [
   { href: "/wwdc-2026", label: "WWDC 2026", isNew: true },
@@ -22,6 +23,8 @@ const navLinks = [
   { href: "/iphones", label: "iPhones" },
   { href: "/iphone-timeline", label: "iPhone History" },
   { href: "/apple-silicon", label: "Apple Silicon" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/sideloading", label: "Sideloading", isNew: true },
   { href: "/jailbreak", label: "Jailbreak" },
   { href: "/community", label: "Community" },
 ];
@@ -33,29 +36,10 @@ interface NavbarProps {
 export default function Navbar({ onSearchOpen }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
   const [location] = useLocation();
+  const { theme } = useTheme();
 
-  // Persist theme
-  useEffect(() => {
-    const saved = localStorage.getItem("ea-theme");
-    if (saved === "dark") {
-      setIsDark(true);
-      document.documentElement.classList.add("dark");
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    const next = !isDark;
-    setIsDark(next);
-    if (next) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("ea-theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("ea-theme", "light");
-    }
-  };
+  const isDark = theme === "dark" || theme === "siri" || theme === "red";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -70,7 +54,6 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
-  // DESIGN.md: fog bg, transitions to semi-opaque on scroll
   const navBg = isDark
     ? (scrolled ? "rgba(0,0,0,0.92)" : "rgba(0,0,0,0.72)")
     : (scrolled ? "rgba(245,245,247,0.92)" : "rgba(245,245,247,0.82)");
@@ -78,6 +61,9 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
   const textColor = isDark ? "rgba(245,245,247,0.9)" : "#1d1d1f";
   const textMuted = isDark ? "rgba(245,245,247,0.6)" : "rgba(29,29,31,0.6)";
   const borderColor = isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)";
+
+  // Accent color based on theme
+  const accentColor = theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "#0071e3";
 
   return (
     <>
@@ -108,7 +94,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
             gap: "8px",
           }}
         >
-          {/* Logo — SF Pro Display 17px 700 */}
+          {/* Logo */}
           <Link href="/">
             <span
               style={{
@@ -121,13 +107,24 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                 transition: "color 0.344s ease",
                 textDecoration: "none",
                 fontFamily: "var(--font-sf-pro-display, system-ui)",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0px",
               }}
             >
-              Everything Apple
+              Everything{" "}
+              <span className="rainbow-border-word" style={{
+                position: "relative",
+                padding: "2px 6px",
+                borderRadius: "6px",
+              }}>
+                <span className="rainbow-border-inner" />
+                Apple
+              </span>
             </span>
           </Link>
 
-          {/* Desktop nav links — 12px SF Pro Text */}
+          {/* Desktop nav links */}
           <div
             className="nav-desktop-links"
             style={{
@@ -149,33 +146,49 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                       fontSize: "12px",
                       fontWeight: active ? 600 : 400,
                       letterSpacing: "-0.01em",
-                      color: active ? textColor : textMuted,
+                      color: active ? accentColor : textMuted,
                       padding: "4px 8px",
                       whiteSpace: "nowrap",
                       textDecoration: "none",
-                      transition: "color 0.1s ease",
+                      transition: "color 0.15s ease",
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "4px",
                       fontFamily: "var(--font-sf-pro-text, system-ui)",
+                      position: "relative",
                     }}
                     onMouseEnter={(e) => {
                       (e.currentTarget as HTMLElement).style.color = textColor;
                     }}
                     onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.color = active ? textColor : textMuted;
+                      (e.currentTarget as HTMLElement).style.color = active ? accentColor : textMuted;
                     }}
                   >
                     {link.label}
                     {link.isNew && !active && (
                       <span style={{
-                        width: "5px",
-                        height: "5px",
+                        width: "7px",
+                        height: "7px",
                         borderRadius: "50%",
-                        background: "#0071e3",
+                        background: accentColor,
                         display: "inline-block",
                         flexShrink: 0,
                         marginBottom: "5px",
+                        boxShadow: `0 0 6px ${accentColor}`,
+                        animation: "dotPulse 2s ease-in-out infinite",
+                      }} />
+                    )}
+                    {/* Active underline */}
+                    {active && (
+                      <span style={{
+                        position: "absolute",
+                        bottom: "-2px",
+                        left: "8px",
+                        right: "8px",
+                        height: "2px",
+                        borderRadius: "1px",
+                        background: accentColor,
+                        boxShadow: `0 0 4px ${accentColor}`,
                       }} />
                     )}
                   </span>
@@ -184,7 +197,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
             })}
           </div>
 
-          {/* Right side: Search, Theme, Buy CTA */}
+          {/* Right side: Search, ThemePicker, Buy CTA */}
           <div style={{ display: "flex", alignItems: "center", gap: "4px", flexShrink: 0 }}>
             {/* Search icon */}
             <button
@@ -209,36 +222,16 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
               <Search size={15} />
             </button>
 
-            {/* Theme toggle */}
-            <button
-              onClick={toggleTheme}
-              aria-label={isDark ? "Light mode" : "Dark mode"}
-              style={{
-                background: "none",
-                border: "none",
-                color: textColor,
-                padding: "6px",
-                borderRadius: "6px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                cursor: "pointer",
-                transition: "opacity 0.1s ease",
-                opacity: 0.7,
-              }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.opacity = "1"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.opacity = "0.7"; }}
-            >
-              {isDark ? <Sun size={15} /> : <Moon size={15} />}
-            </button>
+            {/* Theme picker */}
+            <ThemePicker />
 
-            {/* Buy CTA — Azure, sole CTA color per DESIGN.md */}
+            {/* Buy CTA */}
             <Link href="/iphones">
               <span
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
-                  background: "#0071e3",
+                  background: accentColor,
                   color: "#ffffff",
                   borderRadius: "999px",
                   padding: "5px 14px",
@@ -247,12 +240,12 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                   letterSpacing: "-0.01em",
                   fontFamily: "var(--font-sf-pro-text, system-ui)",
                   textDecoration: "none",
-                  transition: "background-color 0.1s ease",
+                  transition: "background-color 0.1s ease, transform 0.1s ease",
                   whiteSpace: "nowrap",
                   flexShrink: 0,
                 }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "#0077ed"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.backgroundColor = "#0071e3"; }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.filter = "brightness(1.1)"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.filter = "brightness(1)"; }}
               >
                 Buy
               </span>
@@ -310,7 +303,9 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                   letterSpacing: "-0.022em",
                   color: textColor,
                   fontFamily: "var(--font-sf-pro-display, system-ui)",
-                }}>Everything Apple</span>
+                  display: "inline-flex",
+                  alignItems: "center",
+                }}>Everything{" "}<span className="rainbow-border-word" style={{ position: "relative", padding: "2px 6px", borderRadius: "6px" }}><span className="rainbow-border-inner" />Apple</span></span>
               </Link>
             </div>
 
@@ -326,7 +321,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                       fontSize: "19px",
                       fontWeight: active ? 600 : 400,
                       letterSpacing: "-0.022em",
-                      color: active ? "#0071e3" : textColor,
+                      color: active ? accentColor : textColor,
                       textDecoration: "none",
                       display: "flex",
                       alignItems: "center",
@@ -341,8 +336,8 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                         fontSize: "10px",
                         fontWeight: 600,
                         letterSpacing: "0.06em",
-                        textTransform: "uppercase",
-                        color: "#0071e3",
+                        textTransform: "uppercase" as const,
+                        color: accentColor,
                       }}>New</span>
                     )}
                   </div>
@@ -358,34 +353,16 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                 fontSize: "19px",
                 fontWeight: location === "/" ? 600 : 400,
                 letterSpacing: "-0.022em",
-                color: location === "/" ? "#0071e3" : textColor,
+                color: location === "/" ? accentColor : textColor,
                 fontFamily: "var(--font-sf-pro-display, system-ui)",
               }}>Home</div>
             </Link>
 
-            {/* Theme toggle */}
-            <button
-              onClick={toggleTheme}
-              style={{
-                marginTop: "24px",
-                display: "flex",
-                alignItems: "center",
-                gap: "12px",
-                padding: "14px 0",
-                background: "none",
-                border: "none",
-                fontSize: "17px",
-                fontWeight: 400,
-                color: textColor,
-                cursor: "pointer",
-                fontFamily: "var(--font-sf-pro-text, system-ui)",
-                width: "100%",
-                letterSpacing: "-0.022em",
-              }}
-            >
-              {isDark ? <Sun size={18} /> : <Moon size={18} />}
-              {isDark ? "Light Mode" : "Dark Mode"}
-            </button>
+            {/* Theme picker in mobile menu */}
+            <div style={{ marginTop: "24px", paddingTop: "16px", borderTop: `1px solid ${isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)"}` }}>
+              <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase" as const, color: textMuted, marginBottom: "12px" }}>Theme</div>
+              <ThemePicker />
+            </div>
           </div>
         </div>
       )}
@@ -398,9 +375,80 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
         @media (min-width: 901px) {
           .nav-hamburger { display: none !important; }
         }
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(10px); }
           to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes dotPulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.6; transform: scale(0.8); }
+        }
+
+        /* Neon glow ring + rainbow text for "Apple" */
+        .rainbow-border-word {
+          position: relative;
+          z-index: 0;
+          isolation: isolate;
+          background: linear-gradient(90deg, #ff2d55, #ff9500, #ffcc00, #34c759, #00d4ff, #5856d6, #af52de, #ff2d55);
+          background-size: 200% 100%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: rainbowTextShift 4s linear infinite;
+        }
+        .rainbow-border-inner {
+          position: absolute;
+          inset: -3px;
+          border-radius: 8px;
+          pointer-events: none;
+          z-index: -1;
+        }
+        .rainbow-border-inner::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          border-radius: 8px;
+          padding: 1.5px;
+          background: conic-gradient(
+            from var(--ring-angle, 0deg),
+            #ff2d55, #ff9500, #ffcc00, #34c759, #00d4ff, #5856d6, #af52de, #ff2d55
+          );
+          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          -webkit-mask-composite: xor;
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask-composite: exclude;
+          animation: ringRotate 3s linear infinite;
+        }
+        .rainbow-border-inner::after {
+          content: '';
+          position: absolute;
+          inset: -4px;
+          border-radius: 12px;
+          background: conic-gradient(
+            from var(--ring-angle, 0deg),
+            #ff2d55, #ff9500, #ffcc00, #34c759, #00d4ff, #5856d6, #af52de, #ff2d55
+          );
+          filter: blur(8px);
+          opacity: 0.5;
+          animation: ringRotate 3s linear infinite;
+          z-index: -2;
+        }
+        @keyframes ringRotate {
+          from { --ring-angle: 0deg; }
+          to { --ring-angle: 360deg; }
+        }
+        @keyframes rainbowTextShift {
+          0% { background-position: 0% 50%; }
+          100% { background-position: 200% 50%; }
+        }
+        @property --ring-angle {
+          syntax: "<angle>";
+          initial-value: 0deg;
+          inherits: false;
         }
       `}</style>
     </>

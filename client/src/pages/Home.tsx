@@ -760,7 +760,7 @@ function JailbreakTeaser() {
           </Link>
 
           {/* Sideloading card */}
-          <Link href="/jailbreak">
+          <Link href="/sideloading">
             <div
               className="card-dark reveal reveal-delay-1"
               style={{
@@ -917,6 +917,7 @@ function ExploreGrid() {
     { label: "iPhone History", href: "/iphone-timeline", img: IMGS.iphone16.proMax1 },
     { label: "Phone Comparison", href: "/compare", img: IMGS.iphone17.pro1 },
     { label: "Jailbreak", href: "/jailbreak", img: IMGS.ios27.homeScreen2 },
+    { label: "Sideloading", href: "/sideloading", img: IMGS.iphone17.pro2 },
   ];
 
   return (
@@ -986,109 +987,7 @@ function ExploreGrid() {
   );
 }
 
-// ─── Footer ───────────────────────────────────────────────────────────────────
-function Footer() {
-  return (
-    <footer
-      style={{
-        background: "#f5f5f7",
-        borderTop: "1px solid #e8e8ed",
-        padding: "40px 0 32px",
-      }}
-    >
-      <div className="page-container">
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(4, 1fr)",
-            gap: "32px",
-            marginBottom: "32px",
-          }}
-          className="mobile-two-col"
-        >
-          {[
-            {
-              title: "WWDC 2026",
-              links: [
-                { label: "iOS 27", href: "/ios-27" },
-                { label: "macOS Golden Gate", href: "/macos-golden-gate" },
-                { label: "Siri AI", href: "/siri-ai" },
-                { label: "Apple Intelligence", href: "/apple-intelligence" },
-              ],
-            },
-            {
-              title: "iPhones",
-              links: [
-                { label: "iPhone 17 Pro", href: "/iphones" },
-                { label: "iPhone History", href: "/iphone-timeline" },
-                { label: "Compare Phones", href: "/compare" },
-                { label: "Apple Silicon", href: "/apple-silicon" },
-              ],
-            },
-            {
-              title: "More",
-              links: [
-                { label: "Parental Controls", href: "/parental-controls" },
-                { label: "watchOS 12", href: "/watchos-12" },
-                { label: "Jailbreak", href: "/jailbreak" },
-                { label: "Gallery", href: "/gallery" },
-              ],
-            },
-            {
-              title: "Community",
-              links: [
-                { label: "Reddit", href: "/community" },
-                { label: "WWDC 2026", href: "/wwdc-2026" },
-                { label: "Home", href: "/" },
-              ],
-            },
-          ].map((col) => (
-            <div key={col.title}>
-              <p style={{
-                fontFamily: "var(--font-sf-pro-text, system-ui)",
-                fontSize: "12px",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                textTransform: "uppercase",
-                color: "#707070",
-                marginBottom: "12px",
-              }}>{col.title}</p>
-              {col.links.map((l) => (
-                <Link key={l.href} href={l.href}>
-                  <p style={{
-                    fontFamily: "var(--font-sf-pro-text, system-ui)",
-                    fontSize: "14px",
-                    fontWeight: 400,
-                    letterSpacing: "-0.04px",
-                    color: "#1d1d1f",
-                    marginBottom: "8px",
-                    cursor: "pointer",
-                    transition: "color 0.1s ease",
-                  }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = "#0066cc"; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = "#1d1d1f"; }}
-                  >{l.label}</p>
-                </Link>
-              ))}
-            </div>
-          ))}
-        </div>
-
-        <div style={{ borderTop: "1px solid #e8e8ed", paddingTop: "20px" }}>
-          <p style={{
-            fontFamily: "var(--font-sf-pro-text, system-ui)",
-            fontSize: "12px",
-            fontWeight: 400,
-            letterSpacing: "-0.26px",
-            color: "#707070",
-          }}>
-            Copyright &copy; 2026 Everything Apple. Not affiliated with Apple Inc.
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-}
+// Home page footer removed — using global Footer component from App.tsx
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 export default function Home() {

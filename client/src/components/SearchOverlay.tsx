@@ -56,9 +56,10 @@ const SEARCH_INDEX = [
   { title: "Jailbreak iOS 17 — Dopamine", desc: "Dopamine supports iOS 15.0–16.7 on A12+ devices", href: "/jailbreak", category: "Jailbreak", keywords: ["dopamine", "jailbreak ios 17", "ios 17 jailbreak", "a12"] },
   { title: "Jailbreak iOS 16 — checkra1n", desc: "checkra1n supports iOS 12–14.8.1 on A7–A11 devices", href: "/jailbreak", category: "Jailbreak", keywords: ["checkra1n", "jailbreak ios 16", "a11", "bootrom"] },
   { title: "Jailbreak iOS 15 — unc0ver", desc: "unc0ver supports iOS 11–14.8 on all devices", href: "/jailbreak", category: "Jailbreak", keywords: ["unc0ver", "jailbreak ios 15", "ios 15 jailbreak"] },
-  { title: "Sideload Apps — AltStore", desc: "AltStore lets you sideload apps without jailbreak on any iPhone", href: "/jailbreak", category: "Sideload", keywords: ["altstore", "sideload", "sideloading", "alt store"] },
-  { title: "Sideload Apps — Sideloadly", desc: "Sideloadly is a free tool to install IPA files on iPhone and iPad", href: "/jailbreak", category: "Sideload", keywords: ["sideloadly", "ipa", "sideload", "install ipa"] },
+  { title: "Sideload Apps — AltStore", desc: "AltStore lets you sideload apps without jailbreak on any iPhone", href: "/sideloading", category: "Sideload", keywords: ["altstore", "sideload", "sideloading", "alt store"] },
+  { title: "Sideload Apps — Sideloadly", desc: "Sideloadly is a free tool to install IPA files on iPhone and iPad", href: "/sideloading", category: "Sideload", keywords: ["sideloadly", "ipa", "sideload", "install ipa"] },
   { title: "iOS Compatibility Checker", desc: "Check if your iPhone and iOS version can be jailbroken", href: "/jailbreak", category: "Jailbreak", keywords: ["jailbreak check", "can i jailbreak", "compatible", "jailbreak checker"] },
+  { title: "Sideloading Guide — Complete", desc: "Everything you need to know about sideloading apps on iOS in 2026", href: "/sideloading", category: "Sideload", keywords: ["sideloading guide", "sideload ios", "trollstore", "sidestore"] },
 
   // Community
   { title: "r/apple — Apple Community", desc: "The largest Apple community on Reddit with 3.2M members", href: "/community", category: "Community", keywords: ["reddit", "r/apple", "apple community", "apple reddit"] },

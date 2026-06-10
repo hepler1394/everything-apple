@@ -124,10 +124,10 @@ const ALL_IMAGES = [
   { id: 142, src: IMGS.jailbreak.dopamine3, cat: "Jailbreak", title: "Jailbreak Tweaks" },
   { id: 143, src: IMGS.jailbreak.dopamine4, cat: "Jailbreak", title: "Sileo Package Manager" },
   { id: 144, src: IMGS.jailbreak.dopamine5, cat: "Jailbreak", title: "Jailbreak Setup" },
-  { id: 145, src: IMGS.sideload.altstore1, cat: "Jailbreak", title: "AltStore Sideloading" },
-  { id: 146, src: IMGS.sideload.altstore2, cat: "Jailbreak", title: "AltStore Interface" },
-  { id: 147, src: IMGS.sideload.altstore4, cat: "Jailbreak", title: "Sideload Apps" },
-  { id: 148, src: IMGS.sideload.altstore5, cat: "Jailbreak", title: "TrollStore" },
+  { id: 145, src: IMGS.sideload.altstore1, cat: "Sideloading", title: "AltStore Sideloading" },
+  { id: 146, src: IMGS.sideload.altstore2, cat: "Sideloading", title: "AltStore Interface" },
+  { id: 147, src: IMGS.sideload.altstore4, cat: "Sideloading", title: "Sideload Apps" },
+  { id: 148, src: IMGS.sideload.altstore5, cat: "Sideloading", title: "TrollStore" },
 
   // Apple Silicon
   { id: 150, src: IMGS.silicon.m4chip1, cat: "Apple Silicon", title: "M4 Chip" },
@@ -168,6 +168,7 @@ const CATEGORIES = [
   "iPhone 12",
   "iPhone 11",
   "Jailbreak",
+  "Sideloading",
   "Apple Silicon",
   "watchOS 12",
   "Apple",

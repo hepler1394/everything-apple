@@ -10,6 +10,7 @@
 */
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const BANNER_KEY = "wwdc-banner-dismissed-v3";
 const BANNER_HEIGHT = 44;
@@ -17,6 +18,8 @@ const BANNER_HEIGHT = 44;
 export default function WWDCBanner() {
   const [visible, setVisible] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const { theme } = useTheme();
+  const accent = theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "#2997ff";
 
   useEffect(() => {
     const dismissed = sessionStorage.getItem(BANNER_KEY);
@@ -106,7 +109,7 @@ export default function WWDCBanner() {
             gap: "4px",
             fontSize: "13px",
             fontWeight: 500,
-            color: "#2997ff",
+            color: accent,
             letterSpacing: "-0.01em",
             flexShrink: 0,
             cursor: "pointer",

@@ -25,6 +25,7 @@ import AppleSilicon from "./pages/AppleSilicon";
 import Gallery from "./pages/Gallery";
 import IPhoneTimeline from "./pages/IPhoneTimeline";
 import Compare from "./pages/Compare";
+import Sideloading from "./pages/Sideloading";
 import BackToTop from "./components/BackToTop";
 
 // Global search context so any page can open the search overlay
@@ -40,6 +41,7 @@ function Router() {
       <Route path="/parental-controls" component={ParentalControls} />
       <Route path="/iphones" component={IPhones} />
       <Route path="/jailbreak" component={Jailbreak} />
+      <Route path="/sideloading" component={Sideloading} />
       <Route path="/community" component={Reddit} />
       <Route path="/ios-27" component={IOS27} />
       <Route path="/macos-golden-gate" component={MacOSGoldenGate} />
@@ -89,7 +91,7 @@ function AppInner() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
+      <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
           <AppInner />

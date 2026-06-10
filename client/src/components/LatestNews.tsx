@@ -5,6 +5,7 @@
    ============================================================= */
 
 import { useEffect, useState } from "react";
+import { useTheme } from "@/contexts/ThemeContext";
 
 interface NewsItem {
   title: string;
@@ -79,6 +80,18 @@ export default function LatestNews() {
   const [loading, setLoading] = useState(true);
   const [activeSource, setActiveSource] = useState<string>("All");
   const [error, setError] = useState(false);
+  const { theme } = useTheme();
+  const isDark = theme === "dark" || theme === "siri" || theme === "red";
+  const sectionBg = isDark ? "#1d1d1f" : "#f5f5f7";
+  const cardBg = isDark ? "#2c2c2e" : "#fff";
+  const textPrimary = isDark ? "#f5f5f7" : "#1d1d1f";
+  const textSecondary = isDark ? "rgba(245,245,247,0.6)" : "#6e6e73";
+  const skeletonBg = isDark ? "#3a3a3c" : "#e0e0e5";
+  const tabBg = isDark ? "#3a3a3c" : "#e0e0e5";
+  const tabActiveBg = isDark ? "#f5f5f7" : "#1d1d1f";
+  const tabActiveColor = isDark ? "#1d1d1f" : "#fff";
+  const tabColor = isDark ? "#f5f5f7" : "#1d1d1f";
+  const cardBorder = isDark ? "1px solid rgba(255,255,255,0.06)" : "none";
 
   useEffect(() => {
     let cancelled = false;
@@ -109,15 +122,15 @@ export default function LatestNews() {
   const filtered = activeSource === "All" ? items : items.filter((i) => i.source === activeSource);
 
   return (
-    <section style={{ background: "#f5f5f7", padding: "100px 0" }}>
+    <section style={{ background: sectionBg, padding: "80px 0" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
         {/* Header */}
         <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: "48px", flexWrap: "wrap", gap: "24px" }}>
           <div>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "#0071e3", marginBottom: "10px" }}>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "#0071e3", marginBottom: "10px" }}>
               Live Feed
             </p>
-            <h2 style={{ fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, letterSpacing: "-0.03em", color: "#1d1d1f", lineHeight: 1.1, margin: 0 }}>
+            <h2 style={{ fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, letterSpacing: "-0.03em", color: textPrimary, lineHeight: 1.1, margin: 0 }}>
               Latest Apple News
             </h2>
           </div>
@@ -136,8 +149,8 @@ export default function LatestNews() {
                   letterSpacing: "-0.01em",
                   cursor: "pointer",
                   transition: "all 0.2s ease",
-                  background: activeSource === src ? "#1d1d1f" : "#e0e0e5",
-                  color: activeSource === src ? "#fff" : "#1d1d1f",
+                  background: activeSource === src ? tabActiveBg : tabBg,
+                  color: activeSource === src ? tabActiveColor : tabColor,
                 }}
               >
                 {src}
@@ -150,12 +163,12 @@ export default function LatestNews() {
         {loading && (
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "20px" }}>
             {Array.from({ length: 6 }).map((_, i) => (
-              <div key={i} style={{ background: "#fff", borderRadius: "18px", overflow: "hidden", height: "320px", animation: "pulse 1.5s ease-in-out infinite" }}>
-                <div style={{ height: "180px", background: "#e0e0e5" }} />
+              <div key={i} style={{ background: cardBg, borderRadius: "18px", overflow: "hidden", height: "320px", animation: "pulse 1.5s ease-in-out infinite", border: cardBorder }}>
+                <div style={{ height: "180px", background: skeletonBg }} />
                 <div style={{ padding: "20px" }}>
-                  <div style={{ height: "12px", background: "#e0e0e5", borderRadius: "6px", marginBottom: "10px", width: "40%" }} />
-                  <div style={{ height: "16px", background: "#e0e0e5", borderRadius: "6px", marginBottom: "8px" }} />
-                  <div style={{ height: "16px", background: "#e0e0e5", borderRadius: "6px", width: "80%" }} />
+                  <div style={{ height: "12px", background: skeletonBg, borderRadius: "6px", marginBottom: "10px", width: "40%" }} />
+                  <div style={{ height: "16px", background: skeletonBg, borderRadius: "6px", marginBottom: "8px" }} />
+                  <div style={{ height: "16px", background: skeletonBg, borderRadius: "6px", width: "80%" }} />
                 </div>
               </div>
             ))}
@@ -165,15 +178,15 @@ export default function LatestNews() {
         {/* Error state */}
         {error && !loading && (
           <div style={{ textAlign: "center", padding: "80px 0" }}>
-            <p style={{ fontSize: "17px", color: "#6e6e73" }}>
+            <p style={{ fontSize: "17px", color: textSecondary }}>
               Unable to load live news feed. Check back shortly.
             </p>
             <div style={{ marginTop: "40px", display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "16px" }}>
               {FEEDS.map((f) => (
                 <a key={f.source} href={f.url.replace("/feed/", "").replace("/rss/", "").replace("feeds.", "www.")} target="_blank" rel="noopener noreferrer"
-                  style={{ display: "block", background: "#fff", borderRadius: "14px", padding: "24px", textDecoration: "none", border: "1px solid #e0e0e5" }}>
+                  style={{ display: "block", background: cardBg, borderRadius: "14px", padding: "24px", textDecoration: "none", border: cardBorder || "1px solid " + skeletonBg }}>
                   <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: f.color, marginBottom: "8px" }}>{f.source}</div>
-                  <div style={{ fontSize: "15px", color: "#1d1d1f", fontWeight: 500 }}>Visit {f.source} directly</div>
+                  <div style={{ fontSize: "15px", color: textPrimary, fontWeight: 500 }}>Visit {f.source} directly</div>
                 </a>
               ))}
             </div>
@@ -193,14 +206,15 @@ export default function LatestNews() {
               >
                 <article
                   style={{
-                    background: "#fff",
+                    background: cardBg,
                     borderRadius: "18px",
                     overflow: "hidden",
                     height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     transition: "transform 0.3s cubic-bezier(0.23,1,0.32,1), box-shadow 0.3s ease",
-                    boxShadow: "0 2px 12px rgba(0,0,0,0.06)",
+                    boxShadow: isDark ? "0 2px 12px rgba(0,0,0,0.3)" : "0 2px 12px rgba(0,0,0,0.06)",
+                    border: cardBorder,
                   }}
                   onMouseEnter={(e) => {
                     (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)";
@@ -212,7 +226,7 @@ export default function LatestNews() {
                   }}
                 >
                   {/* Thumbnail */}
-                  <div style={{ height: "180px", background: "#e0e0e5", overflow: "hidden", flexShrink: 0 }}>
+                  <div style={{ height: "180px", background: skeletonBg, overflow: "hidden", flexShrink: 0 }}>
                     {item.thumbnail ? (
                       <img
                         src={item.thumbnail}
@@ -238,11 +252,11 @@ export default function LatestNews() {
                         {timeAgo(item.pubDate)}
                       </span>
                     </div>
-                    <h3 style={{ fontSize: "17px", fontWeight: 600, letterSpacing: "-0.022em", lineHeight: 1.35, color: "#1d1d1f", margin: "0 0 10px", flex: 1 }}>
+                    <h3 style={{ fontSize: "17px", fontWeight: 600, letterSpacing: "-0.022em", lineHeight: 1.35, color: textPrimary, margin: "0 0 10px", flex: 1 }}>
                       {item.title}
                     </h3>
                     {item.description && (
-                      <p style={{ fontSize: "13px", color: "#6e6e73", lineHeight: 1.5, margin: 0, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                      <p style={{ fontSize: "13px", color: textSecondary, lineHeight: 1.5, margin: 0, display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
                         {item.description}
                       </p>
                     )}

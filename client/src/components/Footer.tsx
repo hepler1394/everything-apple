@@ -1,10 +1,10 @@
 /* =============================================================
-   Footer — Apple.com footer design
-   Light gray (#f5f5f7) | 12px links | Multi-column grid
-   No emojis, no icons, no colored elements
+   Footer — Everything Apple
+   Theme-aware (dark/light/siri/red), updated links for sideloading split
    ============================================================= */
 
 import { Link } from "wouter";
+import { useTheme } from "@/contexts/ThemeContext";
 
 const footerColumns = [
   {
@@ -12,50 +12,59 @@ const footerColumns = [
     links: [
       { label: "All Announcements", href: "/wwdc-2026", external: false as const },
       { label: "Siri AI", href: "/siri-ai", external: false as const },
-      { label: "Parental Controls", href: "/parental-controls", external: false as const },
-      { label: "iOS 27", href: "/wwdc-2026#ios27", external: false as const },
-      { label: "macOS Golden Gate", href: "/wwdc-2026#macos", external: false as const },
-      { label: "Apple Intelligence", href: "/wwdc-2026#ai", external: false as const },
+      { label: "iOS 27", href: "/ios-27", external: false as const },
+      { label: "macOS Golden Gate", href: "/macos-golden-gate", external: false as const },
+      { label: "watchOS 12", href: "/watchos-12", external: false as const },
+      { label: "Apple Intelligence", href: "/apple-intelligence", external: false as const },
     ],
   },
   {
     heading: "iPhones",
     links: [
-      { label: "iPhone 17 Series", href: "/iphones#iphone17", external: false as const },
-      { label: "iPhone 16 Series", href: "/iphones#iphone16", external: false as const },
-      { label: "iPhone 15 Series", href: "/iphones#iphone15", external: false as const },
-      { label: "iPhone 14 Series", href: "/iphones#iphone14", external: false as const },
-      { label: "iPhone 11 to 13", href: "/iphones#older", external: false as const },
-      { label: "Compare Models", href: "/iphones", external: false as const },
+      { label: "All iPhones", href: "/iphones", external: false as const },
+      { label: "iPhone History", href: "/iphone-timeline", external: false as const },
+      { label: "Compare Models", href: "/compare", external: false as const },
+      { label: "Apple Silicon", href: "/apple-silicon", external: false as const },
+      { label: "Gallery", href: "/gallery", external: false as const },
     ],
   },
   {
-    heading: "Tools",
+    heading: "Tools & Guides",
     links: [
+      { label: "Sideloading Guide", href: "/sideloading", external: false as const },
       { label: "Jailbreak Guide", href: "/jailbreak", external: false as const },
-      { label: "Sideload Tools", href: "/jailbreak#sideload", external: false as const },
-      { label: "iOS Compatibility", href: "/jailbreak#checker", external: false as const },
+      { label: "Parental Controls", href: "/parental-controls", external: false as const },
       { label: "Reddit Community", href: "/community", external: false as const },
-      { label: "Apple Newsroom", href: "https://www.apple.com/newsroom/", external: true },
       { label: "r/jailbreak", href: "https://reddit.com/r/jailbreak", external: true },
+      { label: "r/sideloaded", href: "https://reddit.com/r/sideloaded", external: true },
     ],
   },
   {
-    heading: "Everything Apple",
+    heading: "Resources",
     links: [
-      { label: "Home", href: "/", external: false as const },
-      { label: "WWDC 2026", href: "/wwdc-2026", external: false as const },
-      { label: "Siri AI Deep Dive", href: "/siri-ai", external: false as const },
-      { label: "Parental Controls", href: "/parental-controls", external: false as const },
-      { label: "Community Hub", href: "/community", external: false as const },
+      { label: "Apple Newsroom", href: "https://www.apple.com/newsroom/", external: true },
+      { label: "9to5Mac", href: "https://9to5mac.com", external: true },
+      { label: "MacRumors", href: "https://macrumors.com", external: true },
+      { label: "Apple Developer", href: "https://developer.apple.com", external: true },
+      { label: "AltStore", href: "https://altstore.io", external: true },
     ],
   },
 ];
 
 export default function Footer() {
+  const { theme } = useTheme();
+  const isDark = theme === "dark" || theme === "siri" || theme === "red";
+
+  const bg = isDark ? "#1d1d1f" : "#f5f5f7";
+  const divider = isDark ? "rgba(255,255,255,0.08)" : "#d2d2d7";
+  const headingColor = isDark ? "rgba(255,255,255,0.85)" : "#1d1d1f";
+  const linkColor = isDark ? "rgba(255,255,255,0.45)" : "#6e6e73";
+  const linkHover = isDark ? "rgba(255,255,255,0.85)" : "#1d1d1f";
+  const accentHover = theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "#0071e3";
+
   return (
-    <footer style={{ background: "#f5f5f7" }}>
-      <div style={{ height: "1px", background: "#d2d2d7" }} />
+    <footer style={{ background: bg }}>
+      <div style={{ height: "1px", background: divider }} />
 
       <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
         {/* Columns */}
@@ -75,7 +84,7 @@ export default function Footer() {
                   fontWeight: 600,
                   letterSpacing: "0.06em",
                   textTransform: "uppercase",
-                  color: "#1d1d1f",
+                  color: headingColor,
                   marginBottom: "12px",
                 }}
               >
@@ -91,13 +100,13 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         style={{
                           fontSize: "12px",
-                          color: "#6e6e73",
+                          color: linkColor,
                           textDecoration: "none",
                           lineHeight: 1.5,
                           transition: "color 0.15s ease",
                         }}
-                        onMouseEnter={(e) => (e.currentTarget.style.color = "#1d1d1f")}
-                        onMouseLeave={(e) => (e.currentTarget.style.color = "#6e6e73")}
+                        onMouseEnter={(e) => (e.currentTarget.style.color = accentHover)}
+                        onMouseLeave={(e) => (e.currentTarget.style.color = linkColor)}
                       >
                         {link.label}
                       </a>
@@ -106,14 +115,14 @@ export default function Footer() {
                         <span
                           style={{
                             fontSize: "12px",
-                            color: "#6e6e73",
+                            color: linkColor,
                             textDecoration: "none",
                             lineHeight: 1.5,
                             cursor: "pointer",
                             transition: "color 0.15s ease",
                           }}
-                          onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#1d1d1f")}
-                          onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "#6e6e73")}
+                          onMouseEnter={(e) => ((e.target as HTMLElement).style.color = linkHover)}
+                          onMouseLeave={(e) => ((e.target as HTMLElement).style.color = linkColor)}
                         >
                           {link.label}
                         </span>
@@ -126,20 +135,20 @@ export default function Footer() {
           ))}
         </div>
 
-        <div style={{ height: "1px", background: "#d2d2d7" }} />
+        <div style={{ height: "1px", background: divider }} />
 
         {/* Bottom */}
         <div style={{ padding: "16px 0 24px" }}>
           <p
             style={{
               fontSize: "12px",
-              color: "#6e6e73",
+              color: linkColor,
               margin: "0 0 8px 0",
               lineHeight: 1.5,
             }}
           >
             Copyright &copy; {new Date().getFullYear()} Everything Apple. Built by{" "}
-            <strong style={{ color: "#1d1d1f", fontWeight: 600 }}>Cory Hepler</strong>.
+            <strong style={{ color: headingColor, fontWeight: 600 }}>Cory Hepler</strong>.
             Not affiliated with Apple Inc. All product names, logos, and brands are property of their respective owners.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
@@ -157,12 +166,12 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 style={{
                   fontSize: "12px",
-                  color: "#6e6e73",
+                  color: linkColor,
                   textDecoration: "none",
                   transition: "color 0.15s ease",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#0071e3")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#6e6e73")}
+                onMouseEnter={(e) => (e.currentTarget.style.color = accentHover)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = linkColor)}
               >
                 {item.label}
               </a>
