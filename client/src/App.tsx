@@ -7,59 +7,68 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import SearchOverlay from "./components/SearchOverlay";
 import WWDCBanner from "./components/WWDCBanner";
 import PageTransition from "./components/PageTransition";
-import { useState, useEffect, createContext, useContext } from "react";
+import { useState, useEffect, createContext, useContext, lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import IPhones from "./pages/IPhones";
-import Jailbreak from "./pages/Jailbreak";
-import WWDC from "./pages/WWDC";
-import SiriAI from "./pages/SiriAI";
-import ParentalControls from "./pages/ParentalControls";
-import Reddit from "./pages/Reddit";
-import IOS27 from "./pages/IOS27";
-import MacOSGoldenGate from "./pages/MacOSGoldenGate";
-import AppleIntelligence from "./pages/AppleIntelligence";
-import WatchOS12 from "./pages/WatchOS12";
-import AppleSilicon from "./pages/AppleSilicon";
-import Gallery from "./pages/Gallery";
-import IPhoneTimeline from "./pages/IPhoneTimeline";
-import Compare from "./pages/Compare";
-import Sideloading from "./pages/Sideloading";
 import BackToTop from "./components/BackToTop";
 import ReadingProgress from "./components/ReadingProgress";
-import AppleHistory from "./pages/AppleHistory";
-import TipsAndTricks from "./pages/TipsAndTricks";
-import Accessories from "./pages/Accessories";
-import MacOSDeepDive from "./pages/MacOSDeepDive";
-import EcosystemGuide from "./pages/EcosystemGuide";
-import PrivacySecurity from "./pages/PrivacySecurity";
-import Shortcuts from "./pages/Shortcuts";
-import DeveloperTools from "./pages/DeveloperTools";
-import HiddenFeatures from "./pages/HiddenFeatures";
-import Troubleshooting from "./pages/Troubleshooting";
-import AppleServices from "./pages/AppleServices";
-import KeyboardShortcuts from "./pages/KeyboardShortcuts";
-import Rumors from "./pages/Rumors";
-import AppleVsAndroid from "./pages/AppleVsAndroid";
-import BestApps from "./pages/BestApps";
-import IPadOS from "./pages/IPadOS";
-import VisionPro from "./pages/VisionPro";
-import BuyingGuide from "./pages/BuyingGuide";
-import Benchmarks from "./pages/Benchmarks";
-import MusicPodcasts from "./pages/MusicPodcasts";
-import MapsCarPlay from "./pages/MapsCarPlay";
-import Photography from "./pages/Photography";
-import HealthFitness from "./pages/HealthFitness";
-import Gaming from "./pages/Gaming";
-import Education from "./pages/Education";
-import SmartHome from "./pages/SmartHome";
-import RepairDIY from "./pages/RepairDIY";
-import Accessibility from "./pages/Accessibility";
+
+// Home stays eager so the landing page paints with no extra round-trip.
+import Home from "./pages/Home";
+
+// Every other route is code-split: its chunk only downloads when visited.
+const IPhones = lazy(() => import("./pages/IPhones"));
+const Jailbreak = lazy(() => import("./pages/Jailbreak"));
+const WWDC = lazy(() => import("./pages/WWDC"));
+const SiriAI = lazy(() => import("./pages/SiriAI"));
+const ParentalControls = lazy(() => import("./pages/ParentalControls"));
+const Reddit = lazy(() => import("./pages/Reddit"));
+const IOS27 = lazy(() => import("./pages/IOS27"));
+const MacOSGoldenGate = lazy(() => import("./pages/MacOSGoldenGate"));
+const AppleIntelligence = lazy(() => import("./pages/AppleIntelligence"));
+const WatchOS12 = lazy(() => import("./pages/WatchOS12"));
+const AppleSilicon = lazy(() => import("./pages/AppleSilicon"));
+const Gallery = lazy(() => import("./pages/Gallery"));
+const IPhoneTimeline = lazy(() => import("./pages/IPhoneTimeline"));
+const Compare = lazy(() => import("./pages/Compare"));
+const Sideloading = lazy(() => import("./pages/Sideloading"));
+const AppleHistory = lazy(() => import("./pages/AppleHistory"));
+const TipsAndTricks = lazy(() => import("./pages/TipsAndTricks"));
+const Accessories = lazy(() => import("./pages/Accessories"));
+const MacOSDeepDive = lazy(() => import("./pages/MacOSDeepDive"));
+const EcosystemGuide = lazy(() => import("./pages/EcosystemGuide"));
+const PrivacySecurity = lazy(() => import("./pages/PrivacySecurity"));
+const Shortcuts = lazy(() => import("./pages/Shortcuts"));
+const DeveloperTools = lazy(() => import("./pages/DeveloperTools"));
+const HiddenFeatures = lazy(() => import("./pages/HiddenFeatures"));
+const Troubleshooting = lazy(() => import("./pages/Troubleshooting"));
+const AppleServices = lazy(() => import("./pages/AppleServices"));
+const KeyboardShortcuts = lazy(() => import("./pages/KeyboardShortcuts"));
+const Rumors = lazy(() => import("./pages/Rumors"));
+const AppleVsAndroid = lazy(() => import("./pages/AppleVsAndroid"));
+const BestApps = lazy(() => import("./pages/BestApps"));
+const IPadOS = lazy(() => import("./pages/IPadOS"));
+const VisionPro = lazy(() => import("./pages/VisionPro"));
+const BuyingGuide = lazy(() => import("./pages/BuyingGuide"));
+const Benchmarks = lazy(() => import("./pages/Benchmarks"));
+const MusicPodcasts = lazy(() => import("./pages/MusicPodcasts"));
+const MapsCarPlay = lazy(() => import("./pages/MapsCarPlay"));
+const Photography = lazy(() => import("./pages/Photography"));
+const HealthFitness = lazy(() => import("./pages/HealthFitness"));
+const Gaming = lazy(() => import("./pages/Gaming"));
+const Education = lazy(() => import("./pages/Education"));
+const SmartHome = lazy(() => import("./pages/SmartHome"));
+const RepairDIY = lazy(() => import("./pages/RepairDIY"));
+const Accessibility = lazy(() => import("./pages/Accessibility"));
 
 // Global search context so any page can open the search overlay
 export const SearchContext = createContext<{ openSearch: () => void }>({ openSearch: () => {} });
 export const useSearch = () => useContext(SearchContext);
+
+// Reserves vertical space while a route chunk loads, so layout doesn't jump.
+function PageLoader() {
+  return <div style={{ minHeight: "70vh" }} aria-busy="true" aria-label="Loading" />;
+}
 
 function Router() {
   return (
@@ -135,7 +144,9 @@ function AppInner() {
       <Navbar onSearchOpen={() => setSearchOpen(true)} />
       <div style={{ paddingTop: "calc(44px + var(--banner-height, 0px))" }}>
         <PageTransition>
-          <Router />
+          <Suspense fallback={<PageLoader />}>
+            <Router />
+          </Suspense>
         </PageTransition>
         <Footer />
       </div>
