@@ -30,6 +30,8 @@ const WatchOS12 = lazy(() => import("./pages/WatchOS12"));
 const AppleSilicon = lazy(() => import("./pages/AppleSilicon"));
 const Gallery = lazy(() => import("./pages/Gallery"));
 const IPhoneTimeline = lazy(() => import("./pages/IPhoneTimeline"));
+const WatchHistory = lazy(() => import("./pages/WatchHistory"));
+const IPodHistory = lazy(() => import("./pages/IPodHistory"));
 const Compare = lazy(() => import("./pages/Compare"));
 const Sideloading = lazy(() => import("./pages/Sideloading"));
 const AppleHistory = lazy(() => import("./pages/AppleHistory"));
@@ -88,6 +90,8 @@ function Router() {
       <Route path="/apple-silicon" component={AppleSilicon} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/iphone-timeline" component={IPhoneTimeline} />
+      <Route path="/watch-history" component={WatchHistory} />
+      <Route path="/ipod-history" component={IPodHistory} />
       <Route path="/compare" component={Compare} />
       <Route path="/apple-history" component={AppleHistory} />
       <Route path="/tips-and-tricks" component={TipsAndTricks} />

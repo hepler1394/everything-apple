@@ -60,3 +60,51 @@ export const IPHONE_IMAGES: Record<string, string> = {
 export function iphoneImage(id: string): string | null {
   return IPHONE_IMAGES[id] ?? null;
 }
+
+const W = "/devices/apple_watches/";
+
+export const WATCH_IMAGES: Record<string, string> = {
+  "watch-series-0": W + "Apple_Watch_Series_0__Original_2015_.png",
+  "watch-series-1": W + "Apple_Watch_Series_1.png",
+  "watch-series-2": W + "Apple_Watch_Series_2.png",
+  "watch-series-3": W + "Apple_Watch_Series_3.png",
+  "watch-series-4": W + "Apple_Watch_Series_4.png",
+  "watch-series-5": W + "Apple_Watch_Series_5.png",
+  "watch-se-1": W + "Apple_Watch_SE__1st_generation_.png",
+  "watch-series-6": W + "Apple_Watch_Series_6.png",
+  "watch-series-7": W + "Apple_Watch_Series_7.png",
+  "watch-series-8": W + "Apple_Watch_Series_8.png",
+  "watch-se-2": W + "Apple_Watch_SE__2nd_generation_.png",
+  "watch-series-9": W + "Apple_Watch_Series_9.png",
+  "watch-series-10": W + "Apple_Watch_Series_10.png",
+  "watch-ultra": W + "Apple_Watch_Ultra.png",
+  "watch-ultra-2": W + "Apple_Watch_Ultra_2.png",
+};
+
+export function watchImage(id: string): string | null {
+  return WATCH_IMAGES[id] ?? null;
+}
+
+const P = "/devices/ipods/";
+
+export const IPOD_IMAGES: Record<string, string> = {
+  "ipod-classic-1": P + "iPod_Classic__1st_generation_.png",
+  "ipod-classic-2": P + "iPod_Classic__2nd_generation_.png",
+  "ipod-classic-3": P + "iPod_Classic__3rd_generation_.png",
+  "ipod-classic-4": P + "iPod_Classic__4th_generation_.png",
+  "ipod-classic-5": P + "iPod_Classic__5th_generation_.png",
+  "ipod-classic-6": P + "iPod_Classic__6th_generation_.png",
+  "ipod-mini": P + "iPod_Mini.png",
+  "ipod-nano-1": P + "iPod_Nano__1st_generation_.png",
+  "ipod-nano-3": P + "iPod_Nano__3rd_generation_.png",
+  "ipod-nano-7": P + "iPod_Nano__7th_generation_.png",
+  "ipod-shuffle-1": P + "iPod_Shuffle__1st_generation_.png",
+  "ipod-shuffle-4": P + "iPod_Shuffle__4th_generation_.png",
+  "ipod-touch-1": P + "iPod_Touch__1st_generation_.png",
+  "ipod-touch-4": P + "iPod_Touch__4th_generation_.png",
+  "ipod-touch-7": P + "iPod_Touch__7th_generation_.png",
+};
+
+export function ipodImage(id: string): string | null {
+  return IPOD_IMAGES[id] ?? null;
+}

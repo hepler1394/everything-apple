@@ -22,6 +22,8 @@ const navLinks = [
   { href: "/compare", label: "Compare", isNew: true },
   { href: "/iphones", label: "iPhones" },
   { href: "/iphone-timeline", label: "iPhone History" },
+  { href: "/watch-history", label: "Watch History" },
+  { href: "/ipod-history", label: "iPod History" },
   { href: "/apple-silicon", label: "Apple Silicon" },
   { href: "/gallery", label: "Gallery" },
   { href: "/sideloading", label: "Sideloading", isNew: true },

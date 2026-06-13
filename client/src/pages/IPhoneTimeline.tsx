@@ -7,6 +7,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import PhoneRender from "../components/PhoneRender";
+import DeviceSwitcher from "../components/DeviceSwitcher";
 import { iphoneImage } from "../lib/deviceImages";
 import { iPhoneModels, type PhoneModel } from "../data/iphoneHistory";
 
@@ -68,6 +69,7 @@ export default function IPhoneTimeline() {
       {/* ── Hero ── */}
       <section style={{ background: "linear-gradient(180deg, #1d1d1f 0%, #000 100%)", padding: "56px 22px 48px", textAlign: "center" }}>
         <FadeIn>
+          <DeviceSwitcher />
           <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)", marginBottom: "16px" }}>
             iPhone History
           </p>
