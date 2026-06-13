@@ -1,0 +1,57 @@
+{
+  "updated": "2026-06-13",
+  "nextUpdate": "2026-06-18",
+  "note": "Auto-refreshed every 5 days. Signing status is a snapshot — always verify before restoring.",
+  "signing": [
+    { "version": "iOS 26.5.1", "devices": "iPhone 17 series & iPhone Air", "signed": true },
+    { "version": "iOS 26.5", "devices": "iPhone 11 – iPhone 16e", "signed": true },
+    { "version": "iOS 26.4.1", "devices": "All supported", "signed": false },
+    { "version": "iOS 18.7.7", "devices": "Legacy / older devices", "signed": false }
+  ],
+  "redditReleases": [
+    {
+      "title": "LiveContainer v3.7.2 — run unlimited apps without the 3-app limit",
+      "sub": "r/sideloaded",
+      "date": "2026-06-10",
+      "summary": "Latest LiveContainer adds iOS 26 stability fixes and improved JIT-less app launching. Still the go-to for bypassing the free-certificate 3-app cap.",
+      "url": "https://github.com/khanhduytran0/LiveContainer/releases"
+    },
+    {
+      "title": "SideStore 0.6.4 released",
+      "sub": "r/sideloaded",
+      "date": "2026-05-26",
+      "summary": "Maintenance release for the no-computer AltStore fork — refresh reliability and iOS 26 pairing improvements.",
+      "url": "https://github.com/SideStore/SideStore/releases"
+    },
+    {
+      "title": "Feather signer gets full iOS 26 support",
+      "sub": "r/sideloadly",
+      "date": "2026-05-20",
+      "summary": "The open-source on-device signer adds certificate management tweaks and iOS 26 compatibility. A solid eSign replacement.",
+      "url": "https://github.com/khcrysalis/Feather/releases"
+    },
+    {
+      "title": "opa334 publishes DarkSword kernel exploit reimplementation",
+      "sub": "r/jailbreak",
+      "date": "2026-05-15",
+      "summary": "An Objective-C reimplementation targeting systems up to iOS 26.0.1. Not a complete jailbreak chain yet, but notable research progress.",
+      "url": "https://github.com/opa334"
+    },
+    {
+      "title": "palera1n remains the gold standard for checkm8 devices",
+      "sub": "r/jailbreak",
+      "date": "2026-05-08",
+      "summary": "For A8–A11 hardware, palera1n's unpatchable bootrom exploit continues to deliver a reliable semi-tethered jailbreak on iOS 15+.",
+      "url": "https://palera.in"
+    }
+  ],
+  "blog": [
+    {
+      "slug": "state-of-sideloading-june-2026",
+      "title": "The state of sideloading & jailbreaking — June 2026",
+      "date": "2026-06-13",
+      "summary": "iOS 26.5 is locked down with no jailbreak, but sideloading is healthier than ever thanks to LiveContainer, SideStore and AltStore PAL.",
+      "body": "Apple is currently signing iOS 26.5 and 26.5.1, and there is no public jailbreak for any version of iOS 26 — no exploit chain has been demonstrated on 26.5. Dopamine tops out at iOS 16.6.1, and palera1n still serves checkm8 devices (A8–A11) on iOS 15+.\n\nSideloading, on the other hand, is thriving. LiveContainer has become the most important tool of the era: it runs an unlimited number of apps inside one container, neatly dodging the 3-app limit on free Apple IDs. SideStore lets you refresh apps on-device with no always-on computer, and in the EU, AltStore PAL is a fully Apple-sanctioned marketplace with no 7-day refresh at all.\n\nTrollStore remains the dream for anyone still on iOS 14–17.0 — permanent, signing-free installs — but Apple patched the underlying CoreTrust bug in iOS 17.0.1, so newer devices can't use it. For everyone else, the modern stack is AltStore/SideStore for management, Feather for on-device signing, and LiveContainer to escape the app cap.\n\nThis page refreshes every five days with the newest releases and the latest Apple signing status."
+    }
+  ]
+}

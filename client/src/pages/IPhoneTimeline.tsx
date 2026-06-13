@@ -1,245 +1,14 @@
 /* =============================================================
-   iPhone History Timeline — Every model from iPhone 11 to 17
-   Interactive horizontal timeline with real photos and full specs
-   Apple.com design language — no emojis
-   Built by Cory Hepler
+   iPhone History Timeline — every iPhone from 2007 to today
+   Interactive horizontal timeline with real product photos + full specs.
+   Photos: /devices/iphones/*. Falls back to a vector render if a
+   model has no photo yet (e.g. newest models).
    ============================================================= */
 
 import { useState, useRef, useEffect } from "react";
-import { IMGS as CDN } from "../lib/imageManifest";
 import PhoneRender from "../components/PhoneRender";
-
-interface PhoneModel {
-  id: string;
-  name: string;
-  year: number;
-  chip: string;
-  display: string;
-  camera: string;
-  battery: string;
-  colors: string[];
-  startingPrice: string;
-  ios: string;
-  maxIOS: string;
-  highlight: string;
-  image: string;
-  isNew?: boolean;
-}
-
-const iPhoneModels: PhoneModel[] = [
-  {
-    id: "iphone-11",
-    name: "iPhone 11",
-    year: 2019,
-    chip: "A13 Bionic",
-    display: "6.1-inch Liquid Retina HD",
-    camera: "Dual 12MP (Wide + Ultra Wide)",
-    battery: "Up to 17 hours video",
-    colors: ["Black", "White", "Product Red", "Yellow", "Purple", "Green"],
-    startingPrice: "$499 (discontinued)",
-    ios: "iOS 13",
-    maxIOS: "iOS 18",
-    highlight: "Introduced Night Mode and Ultra Wide camera to the mainstream lineup.",
-    image: CDN.iphone11.main,
-  },
-  {
-    id: "iphone-11-pro",
-    name: "iPhone 11 Pro",
-    year: 2019,
-    chip: "A13 Bionic",
-    display: "5.8-inch Super Retina XDR",
-    camera: "Triple 12MP (Wide + Ultra Wide + Telephoto)",
-    battery: "Up to 18 hours video",
-    colors: ["Space Gray", "Silver", "Gold", "Midnight Green"],
-    startingPrice: "$999 (discontinued)",
-    ios: "iOS 13",
-    maxIOS: "iOS 18",
-    highlight: "First iPhone with a triple-camera system and ProMotion-class display.",
-    image: CDN.iphone11.proMax1,
-  },
-  {
-    id: "iphone-12",
-    name: "iPhone 12",
-    year: 2020,
-    chip: "A14 Bionic",
-    display: "6.1-inch Super Retina XDR",
-    camera: "Dual 12MP (Wide + Ultra Wide)",
-    battery: "Up to 17 hours video",
-    colors: ["Black", "White", "Product Red", "Blue", "Green", "Purple"],
-    startingPrice: "$599 (discontinued)",
-    ios: "iOS 14",
-    maxIOS: "iOS 18",
-    highlight: "First iPhone with 5G and the return of flat-edge design with Ceramic Shield.",
-    image: CDN.iphone12.standard1,
-  },
-  {
-    id: "iphone-12-pro",
-    name: "iPhone 12 Pro",
-    year: 2020,
-    chip: "A14 Bionic",
-    display: "6.1-inch Super Retina XDR",
-    camera: "Triple 12MP + LiDAR Scanner",
-    battery: "Up to 17 hours video",
-    colors: ["Graphite", "Silver", "Gold", "Pacific Blue"],
-    startingPrice: "$999 (discontinued)",
-    ios: "iOS 14",
-    maxIOS: "iOS 18",
-    highlight: "Introduced LiDAR Scanner for AR and ProRAW photography.",
-    image: CDN.iphone12.proMax1,
-  },
-  {
-    id: "iphone-13",
-    name: "iPhone 13",
-    year: 2021,
-    chip: "A15 Bionic",
-    display: "6.1-inch Super Retina XDR",
-    camera: "Dual 12MP with Cinematic mode",
-    battery: "Up to 19 hours video",
-    colors: ["Midnight", "Starlight", "Blue", "Pink", "Product Red", "Green"],
-    startingPrice: "$699",
-    ios: "iOS 15",
-    maxIOS: "iOS 18",
-    highlight: "Cinematic mode, smaller notch, and massive battery life improvements.",
-    image: CDN.iphone13.pro2,
-  },
-  {
-    id: "iphone-13-pro",
-    name: "iPhone 13 Pro",
-    year: 2021,
-    chip: "A15 Bionic",
-    display: "6.1-inch ProMotion 120Hz",
-    camera: "Triple 12MP with macro photography",
-    battery: "Up to 22 hours video",
-    colors: ["Graphite", "Gold", "Silver", "Sierra Blue", "Alpine Green"],
-    startingPrice: "$999",
-    ios: "iOS 15",
-    maxIOS: "iOS 18",
-    highlight: "First iPhone with ProMotion 120Hz adaptive display and macro photography.",
-    image: CDN.iphone13.pro1,
-  },
-  {
-    id: "iphone-14",
-    name: "iPhone 14",
-    year: 2022,
-    chip: "A15 Bionic",
-    display: "6.1-inch Super Retina XDR",
-    camera: "Dual 12MP with Action mode",
-    battery: "Up to 20 hours video",
-    colors: ["Midnight", "Starlight", "Blue", "Purple", "Product Red", "Yellow"],
-    startingPrice: "$699",
-    ios: "iOS 16",
-    maxIOS: "iOS 18",
-    highlight: "Emergency SOS via satellite, Crash Detection, and Action mode video.",
-    image: CDN.iphone14.standard2,
-  },
-  {
-    id: "iphone-14-pro",
-    name: "iPhone 14 Pro",
-    year: 2022,
-    chip: "A16 Bionic",
-    display: "6.1-inch Always-On ProMotion 120Hz",
-    camera: "48MP main + Triple system",
-    battery: "Up to 23 hours video",
-    colors: ["Space Black", "Silver", "Gold", "Deep Purple"],
-    startingPrice: "$999",
-    ios: "iOS 16",
-    maxIOS: "iOS 18",
-    highlight: "Dynamic Island replaces the notch. First 48MP camera. Always-On display.",
-    image: CDN.iphone14.pro1,
-  },
-  {
-    id: "iphone-15",
-    name: "iPhone 15",
-    year: 2023,
-    chip: "A16 Bionic",
-    display: "6.1-inch Super Retina XDR Dynamic Island",
-    camera: "48MP main + 12MP Ultra Wide",
-    battery: "Up to 20 hours video",
-    colors: ["Black", "Blue", "Green", "Yellow", "Pink"],
-    startingPrice: "$699",
-    ios: "iOS 17",
-    maxIOS: "iOS 18",
-    highlight: "Dynamic Island comes to the standard model. USB-C replaces Lightning.",
-    image: CDN.iphone15.pro3,
-  },
-  {
-    id: "iphone-15-pro",
-    name: "iPhone 15 Pro",
-    year: 2023,
-    chip: "A17 Pro",
-    display: "6.1-inch ProMotion Always-On",
-    camera: "48MP main + 12MP Ultra Wide + 12MP 3x Telephoto",
-    battery: "Up to 23 hours video",
-    colors: ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
-    startingPrice: "$999",
-    ios: "iOS 17",
-    maxIOS: "iOS 18",
-    highlight: "Titanium frame, Action Button, USB 3 speeds, and A17 Pro chip.",
-    image: CDN.iphone15.pro1,
-  },
-  {
-    id: "iphone-16",
-    name: "iPhone 16",
-    year: 2024,
-    chip: "A18",
-    display: "6.1-inch Super Retina XDR",
-    camera: "48MP Fusion + 12MP Ultra Wide",
-    battery: "Up to 22 hours video",
-    colors: ["Black", "White", "Pink", "Teal", "Ultramarine"],
-    startingPrice: "$799",
-    ios: "iOS 18",
-    maxIOS: "iOS 18+",
-    highlight: "Camera Control button, Apple Intelligence, and A18 chip.",
-    image: CDN.iphone16.standard2,
-  },
-  {
-    id: "iphone-16-pro",
-    name: "iPhone 16 Pro",
-    year: 2024,
-    chip: "A18 Pro",
-    display: "6.3-inch ProMotion Always-On",
-    camera: "48MP Fusion + 48MP Ultra Wide + 12MP 5x Telephoto",
-    battery: "Up to 27 hours video",
-    colors: ["Black Titanium", "White Titanium", "Natural Titanium", "Desert Titanium"],
-    startingPrice: "$999",
-    ios: "iOS 18",
-    maxIOS: "iOS 18+",
-    highlight: "Largest Pro display ever, 4K 120fps video, and Camera Control.",
-    image: CDN.iphone16.pro1,
-  },
-  {
-    id: "iphone-17",
-    name: "iPhone 17",
-    year: 2025,
-    chip: "A19",
-    display: "6.1-inch ProMotion 120Hz",
-    camera: "48MP Fusion + 12MP Ultra Wide",
-    battery: "Up to 24 hours video",
-    colors: ["Black", "White", "Sky Blue", "Rose", "Mint"],
-    startingPrice: "$799 (expected)",
-    ios: "iOS 19",
-    maxIOS: "iOS 19+",
-    highlight: "ProMotion comes to the standard model. Thinner design with aluminum band.",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/94533962/TkxnJFMuMyHLomNT.jpg",
-    isNew: true,
-  },
-  {
-    id: "iphone-17-pro",
-    name: "iPhone 17 Pro",
-    year: 2025,
-    chip: "A19 Pro",
-    display: "6.3-inch ProMotion Always-On",
-    camera: "48MP Fusion + 48MP Ultra Wide + 12MP 5x Telephoto",
-    battery: "Up to 30 hours video",
-    colors: ["Black Titanium", "White Titanium", "Natural Titanium", "Rose Titanium"],
-    startingPrice: "$1,099 (expected)",
-    ios: "iOS 19",
-    maxIOS: "iOS 19+",
-    highlight: "Slimmest Pro ever. Larger display. Advanced Apple Intelligence features.",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/94533962/VgavyBmZSGGThMfm.png",
-    isNew: true,
-  },
-];
+import { iphoneImage } from "../lib/deviceImages";
+import { iPhoneModels, type PhoneModel } from "../data/iphoneHistory";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -265,8 +34,28 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
   );
 }
 
+/** Real photo when available, otherwise a crisp vector render. */
+function PhoneVisual({ model, size }: { model: PhoneModel; size: number }) {
+  const img = iphoneImage(model.id);
+  if (img) {
+    return (
+      <img
+        src={img}
+        alt={model.name}
+        loading="lazy"
+        style={{ height: `${size}px`, width: "auto", maxWidth: "100%", objectFit: "contain" }}
+      />
+    );
+  }
+  return <PhoneRender modelId={model.id} size={size} />;
+}
+
+// Newest model that has a real photo — used as the default selection.
+const defaultModel =
+  [...iPhoneModels].reverse().find((m) => iphoneImage(m.id)) || iPhoneModels[iPhoneModels.length - 1];
+
 export default function IPhoneTimeline() {
-  const [selectedPhone, setSelectedPhone] = useState<PhoneModel>(iPhoneModels[iPhoneModels.length - 1]);
+  const [selectedPhone, setSelectedPhone] = useState<PhoneModel>(defaultModel);
   const [yearFilter, setYearFilter] = useState<string>("All");
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -283,10 +72,10 @@ export default function IPhoneTimeline() {
             iPhone History
           </p>
           <h1 className="apple-headline-hero" style={{ color: "#f5f5f7", marginBottom: "20px" }}>
-            Every iPhone.<br />iPhone 11 to 17.
+            Every iPhone.<br />2007 to today.
           </h1>
-          <p className="apple-body-large" style={{ color: "rgba(255,255,255,0.65)", maxWidth: "600px", margin: "0 auto" }}>
-            A complete visual encyclopedia of every iPhone released since 2019. Tap any model to see full specifications, colors, and iOS compatibility.
+          <p className="apple-body-large" style={{ color: "rgba(255,255,255,0.65)", maxWidth: "640px", margin: "0 auto" }}>
+            A complete visual encyclopedia of every iPhone ever made — {iPhoneModels.length} models across {new Set(iPhoneModels.map((m) => m.year)).size} years. Tap any model for full specs, colors, and iOS support.
           </p>
         </FadeIn>
       </section>
@@ -333,12 +122,13 @@ export default function IPhoneTimeline() {
           }}
         >
           {filteredModels.map((phone, i) => (
-            <FadeIn key={phone.id} delay={i * 40}>
+            <FadeIn key={phone.id} delay={i * 30}>
               <button
                 onClick={() => setSelectedPhone(phone)}
                 style={{
                   flexShrink: 0,
                   width: "160px",
+                  height: "100%",
                   background: selectedPhone.id === phone.id ? "rgba(255,255,255,0.1)" : "rgba(255,255,255,0.04)",
                   border: selectedPhone.id === phone.id ? "1px solid rgba(255,255,255,0.3)" : "1px solid rgba(255,255,255,0.08)",
                   borderRadius: "18px",
@@ -356,8 +146,8 @@ export default function IPhoneTimeline() {
                     NEW
                   </span>
                 )}
-                <div style={{ display: "flex", justifyContent: "center", marginBottom: "12px" }}>
-                  <PhoneRender modelId={phone.id} size={120} />
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-end", height: "120px", marginBottom: "12px" }}>
+                  <PhoneVisual model={phone} size={120} />
                 </div>
                 <div style={{ fontSize: "13px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.015em", marginBottom: "4px" }}>{phone.name}</div>
                 <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.4)" }}>{phone.year}</div>
@@ -374,8 +164,8 @@ export default function IPhoneTimeline() {
             <FadeIn>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="phone-detail-grid">
                 {/* Image */}
-                <div style={{ display: "flex", justifyContent: "center" }}>
-                  <PhoneRender modelId={selectedPhone.id} size={420} />
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "420px" }}>
+                  <PhoneVisual model={selectedPhone} size={420} />
                 </div>
                 {/* Specs */}
                 <div>
@@ -403,7 +193,7 @@ export default function IPhoneTimeline() {
                       { label: "Display", value: selectedPhone.display },
                       { label: "Camera", value: selectedPhone.camera },
                       { label: "Battery", value: selectedPhone.battery },
-                      { label: "Starting iOS", value: selectedPhone.ios },
+                      { label: "Launch OS", value: selectedPhone.ios },
                       { label: "Max iOS", value: selectedPhone.maxIOS },
                     ].map((spec) => (
                       <div key={spec.label} style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: "16px" }}>
@@ -427,7 +217,7 @@ export default function IPhoneTimeline() {
                   {/* Colors */}
                   <div>
                     <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)", marginBottom: "10px" }}>
-                      Available Colors
+                      Launch Colors
                     </div>
                     <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
                       {selectedPhone.colors.map((color) => (
@@ -465,32 +255,35 @@ export default function IPhoneTimeline() {
                 </tr>
               </thead>
               <tbody>
-                {[...iPhoneModels].reverse().map((phone, i) => (
-                  <tr
-                    key={phone.id}
-                    onClick={() => setSelectedPhone(phone)}
-                    style={{
-                      borderBottom: "1px solid rgba(255,255,255,0.06)",
-                      cursor: "pointer",
-                      background: selectedPhone.id === phone.id ? "rgba(255,255,255,0.04)" : "transparent",
-                      transition: "background 0.2s ease",
-                    }}
-                    onMouseEnter={(e) => { if (selectedPhone.id !== phone.id) (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.02)"; }}
-                    onMouseLeave={(e) => { if (selectedPhone.id !== phone.id) (e.currentTarget as HTMLElement).style.background = "transparent"; }}
-                  >
-                    <td style={{ padding: "16px", fontSize: "14px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.015em", whiteSpace: "nowrap" }}>
-                      {phone.isNew && <span style={{ fontSize: "9px", fontWeight: 700, color: "var(--brand)", marginRight: "6px", letterSpacing: "0.06em", textTransform: "uppercase" }}>NEW</span>}
-                      {phone.name}
-                    </td>
-                    <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.5)" }}>{phone.year}</td>
-                    <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.7)", whiteSpace: "nowrap" }}>{phone.chip}</td>
-                    <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.6)", maxWidth: "180px" }}>{phone.display}</td>
-                    <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.6)", maxWidth: "180px" }}>{phone.camera}</td>
-                    <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.6)", whiteSpace: "nowrap" }}>{phone.battery}</td>
-                    <td style={{ padding: "16px", fontSize: "13px", color: phone.maxIOS.includes("18") ? "#30d158" : "rgba(255,255,255,0.5)", fontWeight: 500 }}>{phone.maxIOS}</td>
-                    <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.7)", whiteSpace: "nowrap" }}>{phone.startingPrice}</td>
-                  </tr>
-                ))}
+                {[...iPhoneModels].reverse().map((phone) => {
+                  const current = phone.maxIOS.includes("26") || phone.maxIOS.includes("18+");
+                  return (
+                    <tr
+                      key={phone.id}
+                      onClick={() => setSelectedPhone(phone)}
+                      style={{
+                        borderBottom: "1px solid rgba(255,255,255,0.06)",
+                        cursor: "pointer",
+                        background: selectedPhone.id === phone.id ? "rgba(255,255,255,0.04)" : "transparent",
+                        transition: "background 0.2s ease",
+                      }}
+                      onMouseEnter={(e) => { if (selectedPhone.id !== phone.id) (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.02)"; }}
+                      onMouseLeave={(e) => { if (selectedPhone.id !== phone.id) (e.currentTarget as HTMLElement).style.background = "transparent"; }}
+                    >
+                      <td style={{ padding: "16px", fontSize: "14px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.015em", whiteSpace: "nowrap" }}>
+                        {phone.isNew && <span style={{ fontSize: "9px", fontWeight: 700, color: "var(--brand)", marginRight: "6px", letterSpacing: "0.06em", textTransform: "uppercase" }}>NEW</span>}
+                        {phone.name}
+                      </td>
+                      <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.5)" }}>{phone.year}</td>
+                      <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.7)", whiteSpace: "nowrap" }}>{phone.chip}</td>
+                      <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.6)", maxWidth: "180px" }}>{phone.display}</td>
+                      <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.6)", maxWidth: "180px" }}>{phone.camera}</td>
+                      <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.6)", whiteSpace: "nowrap" }}>{phone.battery}</td>
+                      <td style={{ padding: "16px", fontSize: "13px", color: current ? "#30d158" : "rgba(255,255,255,0.5)", fontWeight: 500 }}>{phone.maxIOS}</td>
+                      <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.7)", whiteSpace: "nowrap" }}>{phone.startingPrice}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </FadeIn>
