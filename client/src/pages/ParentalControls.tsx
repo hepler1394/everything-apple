@@ -99,11 +99,11 @@ function InteractiveTabs() {
               style={{
                 background: "none",
                 border: "none",
-                borderBottom: active === i ? "2px solid #0071e3" : "2px solid transparent",
+                borderBottom: active === i ? "2px solid var(--brand)" : "2px solid transparent",
                 padding: "16px 24px",
                 fontSize: "15px",
                 fontWeight: active === i ? 600 : 400,
-                color: active === i ? "#0071e3" : "#6e6e73",
+                color: active === i ? "var(--brand)" : "#6e6e73",
                 cursor: "pointer",
                 letterSpacing: "-0.022em",
                 whiteSpace: "nowrap",

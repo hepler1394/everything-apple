@@ -2,7 +2,7 @@
  * Home — Everything Apple
  * DESIGN.md: Fog (#f5f5f7) canvas, white cards 28px radius, no box-shadows
  * Typography: SF Pro Display 700 at 80-96px display, negative tracking
- * CTA: Azure (#0071e3) exclusively — sole permission-to-act color
+ * CTA: Azure (var(--brand)) exclusively — sole permission-to-act color
  * Sections: fog/white alternating bands, no explicit dividers
  * Motion: 0.344s ease reveals, float animations on product images
  */
@@ -645,7 +645,7 @@ function WWDCHighlights() {
                     fontWeight: 600,
                     letterSpacing: "0.08em",
                     textTransform: "uppercase",
-                    color: "#0071e3",
+                    color: "var(--brand)",
                     marginBottom: "8px",
                   }}>{h.label}</p>
                   <h3 style={{
@@ -728,7 +728,7 @@ function JailbreakTeaser() {
                 fontWeight: 600,
                 letterSpacing: "0.08em",
                 textTransform: "uppercase",
-                color: "#0071e3",
+                color: "var(--brand)",
                 marginBottom: "12px",
               }}>Jailbreak</p>
               <h3 style={{
@@ -753,7 +753,7 @@ function JailbreakTeaser() {
                 fontFamily: "var(--font-sf-pro-text, system-ui)",
                 fontSize: "17px",
                 fontWeight: 400,
-                color: "#0066cc",
+                color: "var(--brand-link)",
                 letterSpacing: "-0.1px",
               }}>Check status ›</span>
             </div>

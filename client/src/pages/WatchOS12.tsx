@@ -26,12 +26,12 @@ export default function WatchOS12() {
       <section style={{ background: "#000", padding: "120px 0 100px", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "16px" }}>watchOS 12</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "16px" }}>watchOS 12</p>
             <h1 className="apple-headline-hero" style={{ color: "#f5f5f7", marginBottom: "24px" }}>Apple Watch<br />for Kids.</h1>
             <p style={{ fontSize: "21px", color: "rgba(245,245,247,0.7)", lineHeight: 1.55, marginBottom: "40px" }}>
               watchOS 12 introduces a completely redesigned experience for children — giving them independence while giving parents full control. Plus Siri AI, new health features, and a redesigned Vitals app.
             </p>
-            <a href="#kids" style={{ display: "inline-block", background: "#0071e3", color: "#fff", padding: "14px 28px", borderRadius: "980px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>Apple Watch for Kids</a>
+            <a href="#kids" style={{ display: "inline-block", background: "var(--brand)", color: "#fff", padding: "14px 28px", borderRadius: "980px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>Apple Watch for Kids</a>
           </FadeIn>
         </div>
         <FadeIn delay={150}>
@@ -50,7 +50,7 @@ export default function WatchOS12() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="feature-grid-responsive">
             <FadeIn>
-              <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>Apple Watch for Kids</p>
+              <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "12px" }}>Apple Watch for Kids</p>
               <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "24px" }}>A watch designed for the way kids actually use it.</h2>
               <p style={{ fontSize: "17px", color: "#6e6e73", lineHeight: 1.7, marginBottom: "20px" }}>
                 Apple Watch for Kids is a new mode in watchOS 12 that transforms the Apple Watch into a device specifically designed for children. The interface is simplified, the watch faces are playful and animated, and parents control everything from their iPhone.
@@ -70,7 +70,7 @@ export default function WatchOS12() {
                   "Compatible with Apple Watch SE and Series 4 and later",
                 ].map(d => (
                   <li key={d} style={{ fontSize: "15px", color: "#6e6e73", padding: "8px 0", borderBottom: "1px solid #f0f0f0", display: "flex", gap: "10px" }}>
-                    <span style={{ color: "#0071e3", fontWeight: 700, flexShrink: 0 }}>—</span>{d}
+                    <span style={{ color: "var(--brand)", fontWeight: 700, flexShrink: 0 }}>—</span>{d}
                   </li>
                 ))}
               </ul>
@@ -92,7 +92,7 @@ export default function WatchOS12() {
       <section style={{ background: "#f5f5f7", padding: "100px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>All Features</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>All Features</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "60px" }}>Everything new in watchOS 12.</h2>
           </FadeIn>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
@@ -121,7 +121,7 @@ export default function WatchOS12() {
       <section style={{ background: "#000", padding: "100px 0" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Compatibility</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>Compatibility</p>
             <h2 className="apple-headline-section" style={{ color: "#f5f5f7", marginBottom: "16px" }}>watchOS 12 compatibility</h2>
             <p style={{ fontSize: "17px", color: "rgba(245,245,247,0.6)", marginBottom: "40px" }}>watchOS 12 is compatible with Apple Watch Series 4 and later, and Apple Watch SE (1st generation and later).</p>
           </FadeIn>
@@ -161,7 +161,7 @@ export default function WatchOS12() {
             {[{ label: "Siri AI", href: "/siri-ai" }, { label: "Parental Controls", href: "/parental-controls" }, { label: "iOS 27", href: "/ios-27" }, { label: "Apple Intelligence", href: "/apple-intelligence" }, { label: "Full WWDC 2026 Coverage", href: "/wwdc-2026" }].map(link => (
               <Link key={link.href} href={link.href}>
                 <span style={{ display: "inline-block", background: "#fff", color: "#1d1d1f", padding: "12px 20px", borderRadius: "980px", fontSize: "15px", fontWeight: 500, cursor: "pointer", border: "1px solid #d2d2d7", transition: "all 0.2s ease" }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#0071e3"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "#0071e3"; }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "var(--brand)"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "var(--brand)"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#fff"; (e.currentTarget as HTMLElement).style.color = "#1d1d1f"; (e.currentTarget as HTMLElement).style.borderColor = "#d2d2d7"; }}>
                   {link.label}
                 </span>

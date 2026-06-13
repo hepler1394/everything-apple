@@ -7,6 +7,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { IMGS as CDN } from "../lib/imageManifest";
+import PhoneRender from "../components/PhoneRender";
 
 interface PhoneModel {
   id: string;
@@ -351,16 +352,13 @@ export default function IPhoneTimeline() {
                 onMouseLeave={(e) => { if (selectedPhone.id !== phone.id) (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.04)"; }}
               >
                 {phone.isNew && (
-                  <span style={{ position: "absolute", top: "10px", right: "10px", fontSize: "9px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "#0071e3", background: "rgba(0,113,227,0.15)", padding: "2px 6px", borderRadius: "4px" }}>
+                  <span style={{ position: "absolute", top: "10px", right: "10px", fontSize: "9px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--brand)", background: "rgba(var(--brand-rgb),0.15)", padding: "2px 6px", borderRadius: "4px" }}>
                     NEW
                   </span>
                 )}
-                <img
-                  src={phone.image}
-                  alt={phone.name}
-                  style={{ width: "80px", height: "100px", objectFit: "contain", marginBottom: "12px" }}
-                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
-                />
+                <div style={{ display: "flex", justifyContent: "center", marginBottom: "12px" }}>
+                  <PhoneRender modelId={phone.id} size={120} />
+                </div>
                 <div style={{ fontSize: "13px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.015em", marginBottom: "4px" }}>{phone.name}</div>
                 <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.4)" }}>{phone.year}</div>
               </button>
@@ -376,16 +374,8 @@ export default function IPhoneTimeline() {
             <FadeIn>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="phone-detail-grid">
                 {/* Image */}
-                <div style={{ textAlign: "center" }}>
-                  <img
-                    src={selectedPhone.image}
-                    alt={selectedPhone.name}
-                    style={{ maxWidth: "300px", width: "100%", height: "400px", objectFit: "contain" }}
-                    onError={(e) => {
-                      const img = e.target as HTMLImageElement;
-                      img.src = `https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=600&q=80`;
-                    }}
-                  />
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                  <PhoneRender modelId={selectedPhone.id} size={420} />
                 </div>
                 {/* Specs */}
                 <div>
@@ -394,7 +384,7 @@ export default function IPhoneTimeline() {
                       {selectedPhone.year}
                     </p>
                     {selectedPhone.isNew && (
-                      <span style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "#0071e3", background: "rgba(0,113,227,0.15)", padding: "3px 8px", borderRadius: "6px" }}>
+                      <span style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--brand)", background: "rgba(var(--brand-rgb),0.15)", padding: "3px 8px", borderRadius: "6px" }}>
                         NEW
                       </span>
                     )}
@@ -489,7 +479,7 @@ export default function IPhoneTimeline() {
                     onMouseLeave={(e) => { if (selectedPhone.id !== phone.id) (e.currentTarget as HTMLElement).style.background = "transparent"; }}
                   >
                     <td style={{ padding: "16px", fontSize: "14px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.015em", whiteSpace: "nowrap" }}>
-                      {phone.isNew && <span style={{ fontSize: "9px", fontWeight: 700, color: "#0071e3", marginRight: "6px", letterSpacing: "0.06em", textTransform: "uppercase" }}>NEW</span>}
+                      {phone.isNew && <span style={{ fontSize: "9px", fontWeight: 700, color: "var(--brand)", marginRight: "6px", letterSpacing: "0.06em", textTransform: "uppercase" }}>NEW</span>}
                       {phone.name}
                     </td>
                     <td style={{ padding: "16px", fontSize: "13px", color: "rgba(255,255,255,0.5)" }}>{phone.year}</td>

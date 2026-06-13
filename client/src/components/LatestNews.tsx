@@ -21,7 +21,7 @@ const FEEDS = [
   {
     url: "https://9to5mac.com/feed/",
     source: "9to5Mac",
-    color: "#0071e3",
+    color: "var(--brand)",
   },
   {
     url: "https://feeds.macrumors.com/MacRumors-All",
@@ -127,7 +127,7 @@ export default function LatestNews() {
         {/* Header */}
         <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: "48px", flexWrap: "wrap", gap: "24px" }}>
           <div>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "#0071e3", marginBottom: "10px" }}>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "var(--brand)", marginBottom: "10px" }}>
               Live Feed
             </p>
             <h2 style={{ fontSize: "clamp(28px, 4vw, 48px)", fontWeight: 700, letterSpacing: "-0.03em", color: textPrimary, lineHeight: 1.1, margin: 0 }}>

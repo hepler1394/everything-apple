@@ -32,6 +32,18 @@ const themes: { id: ColorTheme; label: string; icon: React.ReactNode; desc: stri
     ),
   },
   {
+    id: "blue",
+    label: "Blue",
+    desc: "Classic Azure",
+    icon: (
+      <div style={{
+        width: 18, height: 18, borderRadius: "50%",
+        background: "#0071e3",
+        border: "2px solid #0a5bb5",
+      }} />
+    ),
+  },
+  {
     id: "siri",
     label: "Siri",
     desc: "AI Gradient",
@@ -52,6 +64,18 @@ const themes: { id: ColorTheme; label: string; icon: React.ReactNode; desc: stri
         width: 18, height: 18, borderRadius: "50%",
         background: "#e30b17",
         border: "2px solid #8b0000",
+      }} />
+    ),
+  },
+  {
+    id: "matcha",
+    label: "Matcha",
+    desc: "Lime on Green",
+    icon: (
+      <div style={{
+        width: 18, height: 18, borderRadius: "50%",
+        background: "linear-gradient(135deg, #9ae600 0%, #11201a 100%)",
+        border: "2px solid #1f3a2c",
       }} />
     ),
   },
@@ -161,7 +185,7 @@ export default function ThemePicker() {
                   </div>
                 </div>
                 {active && (
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0071e3" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: "auto" }}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ marginLeft: "auto" }}>
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                 )}

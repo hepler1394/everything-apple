@@ -386,9 +386,9 @@ export default function Jailbreak() {
                   style={{
                     padding: "9px 18px",
                     borderRadius: "980px",
-                    border: selectedVersion === version ? "1px solid #0071e3" : "1px solid rgba(255,255,255,0.12)",
-                    background: selectedVersion === version ? "rgba(0,113,227,0.12)" : "transparent",
-                    color: selectedVersion === version ? "#0071e3" : "rgba(255,255,255,0.55)",
+                    border: selectedVersion === version ? "1px solid var(--brand)" : "1px solid rgba(255,255,255,0.12)",
+                    background: selectedVersion === version ? "rgba(var(--brand-rgb),0.12)" : "transparent",
+                    color: selectedVersion === version ? "var(--brand)" : "rgba(255,255,255,0.55)",
                     fontSize: "13px",
                     fontWeight: selectedVersion === version ? 600 : 400,
                     cursor: "pointer",
@@ -420,7 +420,7 @@ export default function Jailbreak() {
                     <div style={{ fontSize: "12px", fontWeight: 600, color: cfg.color, whiteSpace: "nowrap" }}>{cfg.label}</div>
                     <div>
                       {entry.tool && entry.toolUrl ? (
-                        <a href={entry.toolUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: "12px", color: "#0071e3", textDecoration: "none", whiteSpace: "nowrap" }}>{entry.tool} &rsaquo;</a>
+                        <a href={entry.toolUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: "12px", color: "var(--brand)", textDecoration: "none", whiteSpace: "nowrap" }}>{entry.tool} &rsaquo;</a>
                       ) : (
                         <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.2)" }}>—</span>
                       )}
@@ -450,7 +450,7 @@ export default function Jailbreak() {
                     key={tool.name}
                     style={{ background: "#000", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "16px", padding: "24px 20px", cursor: "pointer", transition: "border-color 0.2s" }}
                     onClick={() => setExpandedTool(isExpanded ? null : tool.name)}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(0,113,227,0.4)"; }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(var(--brand-rgb),0.4)"; }}
                     onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.1)"; }}
                   >
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
@@ -469,10 +469,10 @@ export default function Jailbreak() {
                           <span style={{ fontSize: "11px", color: "rgba(255,255,255,0.35)" }}>Developer: {tool.developer} &bull; Exploit: {tool.exploit}</span>
                         </div>
                         <div style={{ marginBottom: "16px" }}>
-                          <div style={{ fontSize: "11px", fontWeight: 600, color: "#0071e3", marginBottom: "8px", textTransform: "uppercase", letterSpacing: "0.06em" }}>Steps</div>
+                          <div style={{ fontSize: "11px", fontWeight: 600, color: "var(--brand)", marginBottom: "8px", textTransform: "uppercase", letterSpacing: "0.06em" }}>Steps</div>
                           {tool.steps.map((step, i) => (
                             <div key={i} style={{ display: "flex", gap: "8px", marginBottom: "6px" }}>
-                              <span style={{ fontSize: "12px", fontWeight: 700, color: "#0071e3", minWidth: "16px" }}>{i + 1}.</span>
+                              <span style={{ fontSize: "12px", fontWeight: 700, color: "var(--brand)", minWidth: "16px" }}>{i + 1}.</span>
                               <span style={{ fontSize: "13px", color: "rgba(255,255,255,0.6)", lineHeight: 1.4 }}>{step}</span>
                             </div>
                           ))}
@@ -491,7 +491,7 @@ export default function Jailbreak() {
                             ))}
                           </div>
                         </div>
-                        <a href={tool.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ fontSize: "14px", color: "#0071e3", textDecoration: "none" }}>
+                        <a href={tool.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ fontSize: "14px", color: "var(--brand)", textDecoration: "none" }}>
                           Download {tool.name} &rsaquo;
                         </a>
                       </div>
@@ -528,9 +528,9 @@ export default function Jailbreak() {
                   onClick={() => setSelectedTweakCategory(cat)}
                   style={{
                     padding: "7px 14px", borderRadius: "980px",
-                    border: selectedTweakCategory === cat ? "1px solid #0071e3" : "1px solid rgba(255,255,255,0.12)",
-                    background: selectedTweakCategory === cat ? "rgba(0,113,227,0.12)" : "transparent",
-                    color: selectedTweakCategory === cat ? "#0071e3" : "rgba(255,255,255,0.5)",
+                    border: selectedTweakCategory === cat ? "1px solid var(--brand)" : "1px solid rgba(255,255,255,0.12)",
+                    background: selectedTweakCategory === cat ? "rgba(var(--brand-rgb),0.12)" : "transparent",
+                    color: selectedTweakCategory === cat ? "var(--brand)" : "rgba(255,255,255,0.5)",
                     fontSize: "12px", fontWeight: selectedTweakCategory === cat ? 600 : 400, cursor: "pointer", transition: "all 0.15s",
                   }}
                 >
@@ -542,7 +542,7 @@ export default function Jailbreak() {
             {/* Tweak grid by category */}
             {filteredTweakCategories.map((cat) => (
               <div key={cat.category} style={{ marginBottom: "24px" }}>
-                <div style={{ fontSize: "12px", fontWeight: 600, color: "#0071e3", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "12px", paddingLeft: "4px" }}>{cat.category}</div>
+                <div style={{ fontSize: "12px", fontWeight: 600, color: "var(--brand)", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "12px", paddingLeft: "4px" }}>{cat.category}</div>
                 <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "2px", background: "rgba(255,255,255,0.06)", borderRadius: "14px", overflow: "hidden" }}>
                   {cat.tweaks.map((tweak) => (
                     <div key={tweak.name} style={{ background: "#000", padding: "20px 18px" }}>
@@ -610,8 +610,8 @@ export default function Jailbreak() {
                 <div style={{ position: "absolute", left: "8px", top: 0, bottom: 0, width: "2px", background: "rgba(255,255,255,0.08)" }} />
                 {jailbreakHistory.map((item, i) => (
                   <div key={i} style={{ position: "relative", marginBottom: "20px", paddingLeft: "20px" }}>
-                    <div style={{ position: "absolute", left: "-4px", top: "6px", width: "10px", height: "10px", borderRadius: "50%", background: "#0071e3" }} />
-                    <div style={{ fontSize: "12px", fontWeight: 600, color: "#0071e3", marginBottom: "4px" }}>{item.year}</div>
+                    <div style={{ position: "absolute", left: "-4px", top: "6px", width: "10px", height: "10px", borderRadius: "50%", background: "var(--brand)" }} />
+                    <div style={{ fontSize: "12px", fontWeight: 600, color: "var(--brand)", marginBottom: "4px" }}>{item.year}</div>
                     <div style={{ fontSize: "14px", color: "rgba(255,255,255,0.65)", lineHeight: 1.4 }}>{item.event}</div>
                   </div>
                 ))}
@@ -639,7 +639,7 @@ export default function Jailbreak() {
               ].map((link) => (
                 <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer"
                   style={{ display: "inline-block", padding: "10px 16px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "980px", color: "rgba(255,255,255,0.7)", fontSize: "13px", fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "#0071e3"; (e.currentTarget as HTMLElement).style.color = "#0071e3"; }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "var(--brand)"; (e.currentTarget as HTMLElement).style.color = "var(--brand)"; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)"; (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.7)"; }}
                 >{link.name}</a>
               ))}

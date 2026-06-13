@@ -60,7 +60,7 @@ export default function Footer() {
   const headingColor = isDark ? "rgba(255,255,255,0.85)" : "#1d1d1f";
   const linkColor = isDark ? "rgba(255,255,255,0.45)" : "#6e6e73";
   const linkHover = isDark ? "rgba(255,255,255,0.85)" : "#1d1d1f";
-  const accentHover = theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "#0071e3";
+  const accentHover = theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "var(--brand)";
 
   return (
     <footer style={{ background: bg }}>

@@ -609,7 +609,7 @@ export default function Compare() {
             fontWeight: 700,
             letterSpacing: "0.1em",
             textTransform: "uppercase",
-            color: "#0071e3",
+            color: "var(--brand)",
             marginBottom: "16px",
           }}>
             Flagship Comparison 2026
@@ -651,8 +651,8 @@ export default function Compare() {
                 style={{
                   padding: "6px 14px",
                   borderRadius: "980px",
-                  border: `1.5px solid ${filterBrand === brand ? "#0071e3" : "rgba(255,255,255,0.15)"}`,
-                  background: filterBrand === brand ? "#0071e3" : "transparent",
+                  border: `1.5px solid ${filterBrand === brand ? "var(--brand)" : "rgba(255,255,255,0.15)"}`,
+                  background: filterBrand === brand ? "var(--brand)" : "transparent",
                   color: filterBrand === brand ? "#fff" : "rgba(245,245,247,0.6)",
                   fontSize: "12px",
                   fontWeight: 500,

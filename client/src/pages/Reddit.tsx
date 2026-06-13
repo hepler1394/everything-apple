@@ -103,7 +103,7 @@ function PostCard({ post }: { post: RedditPost }) {
             </div>
           </div>
           {/* Arrow */}
-          <div style={{ paddingTop: "4px", color: "#0071e3", fontSize: "17px" }}>→</div>
+          <div style={{ paddingTop: "4px", color: "var(--brand)", fontSize: "17px" }}>→</div>
         </div>
       </div>
     </a>
@@ -137,11 +137,11 @@ function LiveFeed() {
               style={{
                 background: "none",
                 border: "none",
-                borderBottom: activeTab === sub.id ? "2px solid #0071e3" : "2px solid transparent",
+                borderBottom: activeTab === sub.id ? "2px solid var(--brand)" : "2px solid transparent",
                 padding: "14px 20px",
                 fontSize: "15px",
                 fontWeight: activeTab === sub.id ? 600 : 400,
-                color: activeTab === sub.id ? "#0071e3" : "#6e6e73",
+                color: activeTab === sub.id ? "var(--brand)" : "#6e6e73",
                 cursor: "pointer",
                 letterSpacing: "-0.022em",
                 whiteSpace: "nowrap",
@@ -164,7 +164,7 @@ function LiveFeed() {
         {error && (
           <div style={{ padding: "60px 0", textAlign: "center" }}>
             <p style={{ fontSize: "17px", color: "#6e6e73" }}>Unable to load Reddit posts. Reddit may be temporarily unavailable.</p>
-            <a href={`https://reddit.com/r/${activeTab}`} target="_blank" rel="noopener noreferrer" style={{ color: "#0071e3", fontSize: "15px", marginTop: "12px", display: "inline-block" }}>
+            <a href={`https://reddit.com/r/${activeTab}`} target="_blank" rel="noopener noreferrer" style={{ color: "var(--brand)", fontSize: "15px", marginTop: "12px", display: "inline-block" }}>
               Visit r/{activeTab} directly
             </a>
           </div>
@@ -230,7 +230,7 @@ function SubredditGrid() {
               onMouseLeave={e => (e.currentTarget.style.background = "#fff")}
             >
               <p style={{ fontSize: "19px", fontWeight: 600, color: "#1d1d1f", letterSpacing: "-0.002em", marginBottom: "4px" }}>r/{item.sub}</p>
-              <p style={{ fontSize: "12px", color: "#0071e3", marginBottom: "12px" }}>{item.members} members</p>
+              <p style={{ fontSize: "12px", color: "var(--brand)", marginBottom: "12px" }}>{item.members} members</p>
               <p style={{ fontSize: "14px", color: "#6e6e73", lineHeight: 1.5 }}>{item.desc}</p>
             </a>
           ))}

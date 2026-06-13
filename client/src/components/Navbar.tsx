@@ -39,7 +39,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
   const [location] = useLocation();
   const { theme } = useTheme();
 
-  const isDark = theme === "dark" || theme === "siri" || theme === "red";
+  const isDark = theme !== "light" && theme !== "blue";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -62,8 +62,8 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
   const textMuted = isDark ? "rgba(245,245,247,0.6)" : "rgba(29,29,31,0.6)";
   const borderColor = isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)";
 
-  // Accent color based on theme
-  const accentColor = theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "#0071e3";
+  // Accent color is fully theme-driven via the --brand CSS variable
+  const accentColor = "var(--brand)";
 
   return (
     <>
@@ -115,8 +115,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
               Everything{" "}
               <span className="rainbow-border-word" style={{
                 position: "relative",
-                padding: "1px 8px",
-                borderRadius: "980px",
+                padding: "0 3px",
               }}>
                 <span className="rainbow-border-inner" />
                 Apple
@@ -130,10 +129,18 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "0px",
-              overflow: "hidden",
+              gap: "1px",
+              overflowX: "auto",
+              overflowY: "hidden",
               flex: 1,
-              justifyContent: "center",
+              justifyContent: "flex-start",
+              scrollbarWidth: "none",
+              msOverflowStyle: "none",
+              padding: "0 4px",
+              WebkitMaskImage:
+                "linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%)",
+              maskImage:
+                "linear-gradient(to right, transparent 0, #000 14px, #000 calc(100% - 14px), transparent 100%)",
             }}
           >
             {navLinks.map((link) => {
@@ -305,7 +312,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                   fontFamily: "var(--font-sf-pro-display, system-ui)",
                   display: "inline-flex",
                   alignItems: "center",
-                }}>Everything{" "}<span className="rainbow-border-word" style={{ position: "relative", padding: "1px 8px", borderRadius: "980px" }}><span className="rainbow-border-inner" />Apple</span></span>
+                }}>Everything{" "}<span className="rainbow-border-word" style={{ position: "relative", padding: "0 3px" }}><span className="rainbow-border-inner" />Apple</span></span>
               </Link>
             </div>
 
@@ -368,6 +375,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
       )}
 
       <style>{`
+        .nav-desktop-links::-webkit-scrollbar { display: none; }
         @media (max-width: 900px) {
           .nav-desktop-links { display: none !important; }
           .nav-hamburger { display: flex !important; }
@@ -388,67 +396,31 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
           50% { opacity: 0.6; transform: scale(0.8); }
         }
 
-        /* Neon glow ring + rainbow text for "Apple" */
+        /* Rainbow "Apple" — thin neon glow that hugs the letters (no pill border) */
         .rainbow-border-word {
           position: relative;
-          z-index: 0;
-          isolation: isolate;
           background: linear-gradient(90deg, #ff2d55, #ff9500, #ffcc00, #34c759, #00d4ff, #5856d6, #af52de, #ff2d55);
           background-size: 200% 100%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           animation: rainbowTextShift 4s linear infinite;
+          /* Thin multi-layer neon glow following the glyph edges */
+          filter:
+            drop-shadow(0 0 1px rgba(255,255,255,0.55))
+            drop-shadow(0 0 3px rgba(120,200,255,0.45))
+            drop-shadow(0 0 6px rgba(180,90,230,0.30));
         }
-        .rainbow-border-inner {
-          position: absolute;
-          inset: -2px;
-          border-radius: 980px;
-          pointer-events: none;
-          z-index: -1;
-        }
-        .rainbow-border-inner::before {
-          content: '';
-          position: absolute;
-          inset: 0;
-          border-radius: 980px;
-          padding: 1.5px;
-          background: conic-gradient(
-            from var(--ring-angle, 0deg),
-            #ff2d55, #ff9500, #ffcc00, #34c759, #00d4ff, #5856d6, #af52de, #ff2d55
-          );
-          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-          -webkit-mask-composite: xor;
-          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-          mask-composite: exclude;
-          animation: ringRotate 3s linear infinite;
-        }
+        /* Legacy ring element neutralized — glow now lives on the text itself */
+        .rainbow-border-inner,
+        .rainbow-border-inner::before,
         .rainbow-border-inner::after {
-          content: '';
-          position: absolute;
-          inset: -3px;
-          border-radius: 980px;
-          background: conic-gradient(
-            from var(--ring-angle, 0deg),
-            #ff2d55, #ff9500, #ffcc00, #34c759, #00d4ff, #5856d6, #af52de, #ff2d55
-          );
-          filter: blur(6px);
-          opacity: 0.35;
-          animation: ringRotate 3s linear infinite;
-          z-index: -2;
-        }
-        @keyframes ringRotate {
-          from { --ring-angle: 0deg; }
-          to { --ring-angle: 360deg; }
+          display: none !important;
+          content: none !important;
         }
         @keyframes rainbowTextShift {
           0% { background-position: 0% 50%; }
           100% { background-position: 200% 50%; }
-        }
-        @property --ring-angle {
-          syntax: "<angle>";
-          initial-value: 0deg;
-          inherits: false;
         }
       `}</style>
     </>

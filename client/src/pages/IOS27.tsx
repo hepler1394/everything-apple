@@ -70,13 +70,13 @@ export default function IOS27() {
       <section style={{ background: "#000", padding: "80px 0 60px", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "16px" }}>iOS 27</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "16px" }}>iOS 27</p>
             <h1 className="apple-headline-hero" style={{ color: "#f5f5f7", marginBottom: "24px" }}>Liquid Glass.<br />Redesigned from<br />the ground up.</h1>
             <p style={{ fontSize: "21px", color: "rgba(245,245,247,0.7)", lineHeight: 1.55, marginBottom: "40px" }}>
               iOS 27 is the most significant update to iPhone software since iOS 7 in 2013. The Liquid Glass design language transforms every surface, every animation, and every interaction on your iPhone.
             </p>
             <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-              <a href="#features" style={{ display: "inline-block", background: "#0071e3", color: "#fff", padding: "14px 28px", borderRadius: "980px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>Explore features</a>
+              <a href="#features" style={{ display: "inline-block", background: "var(--brand)", color: "#fff", padding: "14px 28px", borderRadius: "980px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>Explore features</a>
               <a href="#compatibility" style={{ display: "inline-block", color: "rgba(255,255,255,0.8)", padding: "14px 0", fontSize: "17px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)" }}>Check compatibility</a>
             </div>
           </FadeIn>
@@ -97,7 +97,7 @@ export default function IOS27() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="feature-grid-responsive">
             <FadeIn>
-              <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>Design Language</p>
+              <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "12px" }}>Design Language</p>
               <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "24px" }}>What is Liquid Glass?</h2>
               <p style={{ fontSize: "17px", color: "#6e6e73", lineHeight: 1.7, marginBottom: "20px" }}>
                 Liquid Glass is Apple's new visual design system that replaces the flat, opaque surfaces of iOS 16 through iOS 26. Every UI element — buttons, cards, menus, toolbars — now uses a translucent material that refracts and blurs the content behind it, creating a sense of physical depth.
@@ -122,7 +122,7 @@ export default function IOS27() {
       <section id="features" style={{ background: "#f5f5f7", padding: "72px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Features</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>Features</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "48px" }}>Everything that is new in iOS 27.</h2>
           </FadeIn>
           <FadeIn delay={100}>
@@ -135,7 +135,7 @@ export default function IOS27() {
       <section style={{ background: "#000", padding: "72px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Performance</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>Performance</p>
             <h2 className="apple-headline-section" style={{ color: "#f5f5f7", marginBottom: "60px" }}>iOS 27 is the fastest iOS ever.</h2>
           </FadeIn>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "2px" }}>
@@ -162,7 +162,7 @@ export default function IOS27() {
       <section id="compatibility" style={{ background: "#fff", padding: "72px 0" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Compatibility</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>Compatibility</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "16px" }}>Is your iPhone compatible?</h2>
             <p style={{ fontSize: "17px", color: "#6e6e73", marginBottom: "40px" }}>iOS 27 supports every iPhone from iPhone 11 onward. That is every device with an A13 Bionic chip or later.</p>
           </FadeIn>
@@ -202,7 +202,7 @@ export default function IOS27() {
             ].map(link => (
               <Link key={link.href} href={link.href}>
                 <span style={{ display: "inline-block", background: "#fff", color: "#1d1d1f", padding: "12px 20px", borderRadius: "980px", fontSize: "15px", fontWeight: 500, cursor: "pointer", border: "1px solid #d2d2d7", transition: "all 0.2s ease" }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#0071e3"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "#0071e3"; }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "var(--brand)"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "var(--brand)"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#fff"; (e.currentTarget as HTMLElement).style.color = "#1d1d1f"; (e.currentTarget as HTMLElement).style.borderColor = "#d2d2d7"; }}>
                   {link.label}
                 </span>

@@ -346,7 +346,7 @@ function RelatedPages() {
                 </div>
                 <div style={{ padding: "20px 24px" }}>
                   <p style={{ fontSize: "17px", fontWeight: 600, color: "#1d1d1f", letterSpacing: "-0.022em" }}>{item.label}</p>
-                  <p style={{ fontSize: "14px", color: "#0071e3", marginTop: "4px" }}>Learn more</p>
+                  <p style={{ fontSize: "14px", color: "var(--brand)", marginTop: "4px" }}>Learn more</p>
                 </div>
               </div>
             </Link>

@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-export type ColorTheme = "light" | "dark" | "siri" | "red";
+export type ColorTheme = "light" | "dark" | "blue" | "siri" | "red" | "matcha";
 
 interface ThemeContextType {
   theme: ColorTheme;
@@ -22,7 +22,7 @@ export function ThemeProvider({
 }: ThemeProviderProps) {
   const [theme, setThemeState] = useState<ColorTheme>(() => {
     const stored = localStorage.getItem(THEME_KEY);
-    if (stored && ["light", "dark", "siri", "red"].includes(stored)) {
+    if (stored && ["light", "dark", "blue", "siri", "red", "matcha"].includes(stored)) {
       return stored as ColorTheme;
     }
     return defaultTheme;
@@ -31,15 +31,19 @@ export function ThemeProvider({
   useEffect(() => {
     const root = document.documentElement;
     // Remove all theme classes
-    root.classList.remove("dark", "theme-siri", "theme-red");
+    root.classList.remove("dark", "theme-blue", "theme-siri", "theme-red", "theme-matcha");
 
     // Apply appropriate classes
     if (theme === "dark") {
       root.classList.add("dark");
+    } else if (theme === "blue") {
+      root.classList.add("theme-blue");
     } else if (theme === "siri") {
       root.classList.add("dark", "theme-siri");
     } else if (theme === "red") {
       root.classList.add("dark", "theme-red");
+    } else if (theme === "matcha") {
+      root.classList.add("dark", "theme-matcha");
     }
     // "light" = no extra class
 

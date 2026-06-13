@@ -65,13 +65,13 @@ export default function MacOSGoldenGate() {
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 100%)" }} />
         <div style={{ position: "relative", zIndex: 2, maxWidth: "1200px", margin: "0 auto", padding: "0 22px 100px", width: "100%" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>macOS Golden Gate</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "12px" }}>macOS Golden Gate</p>
             <h1 className="apple-headline-hero" style={{ color: "#fff", marginBottom: "20px" }}>The Mac.<br />Elevated by intelligence.</h1>
             <p style={{ fontSize: "clamp(17px, 2.2vw, 21px)", color: "rgba(255,255,255,0.75)", maxWidth: "600px", lineHeight: 1.55, marginBottom: "36px" }}>
               macOS Golden Gate brings the Liquid Glass design language, Siri AI, and Apple Intelligence to every Mac. Named after San Francisco's most iconic landmark, it represents a new era for the Mac.
             </p>
             <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-              <a href="#features" style={{ display: "inline-block", background: "#0071e3", color: "#fff", padding: "13px 26px", borderRadius: "980px", fontSize: "16px", fontWeight: 500, textDecoration: "none" }}>Explore features</a>
+              <a href="#features" style={{ display: "inline-block", background: "var(--brand)", color: "#fff", padding: "13px 26px", borderRadius: "980px", fontSize: "16px", fontWeight: 500, textDecoration: "none" }}>Explore features</a>
               <a href="#compatibility" style={{ display: "inline-block", color: "rgba(255,255,255,0.85)", padding: "13px 0", fontSize: "16px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)" }}>Check compatibility</a>
             </div>
           </FadeIn>
@@ -82,7 +82,7 @@ export default function MacOSGoldenGate() {
       <section style={{ background: "#fff", padding: "100px 0" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 22px", textAlign: "center" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>The Name</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "12px" }}>The Name</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "24px" }}>Why Golden Gate?</h2>
             <p style={{ fontSize: "19px", color: "#6e6e73", lineHeight: 1.65, marginBottom: "20px" }}>
               Apple has named macOS releases after California landmarks since macOS Big Sur in 2020. Golden Gate continues that tradition, honoring the iconic bridge that has defined San Francisco's skyline for nearly a century.
@@ -99,7 +99,7 @@ export default function MacOSGoldenGate() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="feature-grid-responsive">
             <FadeIn>
-              <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>Siri AI on Mac</p>
+              <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "12px" }}>Siri AI on Mac</p>
               <h2 className="apple-headline-section" style={{ color: "#f5f5f7", marginBottom: "24px" }}>See it. Ask it. Done.</h2>
               <p style={{ fontSize: "17px", color: "rgba(245,245,247,0.7)", lineHeight: 1.7, marginBottom: "20px" }}>
                 Siri AI on Mac can see your entire screen. Press the keyboard shortcut and ask Siri about anything visible — a document, a photo, a web page, a spreadsheet. Siri understands context and can take action.
@@ -110,7 +110,7 @@ export default function MacOSGoldenGate() {
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px" }}>
                 {["On-screen awareness via keyboard shortcut", "Multi-step task execution across apps", "Natural language file and photo search", "Dictation with real-time correction", "Context menus powered by Siri AI"].map(d => (
                   <li key={d} style={{ fontSize: "15px", color: "rgba(245,245,247,0.55)", padding: "8px 0", borderBottom: "1px solid rgba(255,255,255,0.06)", display: "flex", gap: "10px" }}>
-                    <span style={{ color: "#0071e3", fontWeight: 700 }}>—</span>{d}
+                    <span style={{ color: "var(--brand)", fontWeight: 700 }}>—</span>{d}
                   </li>
                 ))}
               </ul>
@@ -128,7 +128,7 @@ export default function MacOSGoldenGate() {
       <section id="features" style={{ background: "#f5f5f7", padding: "100px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Features</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>Features</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "60px" }}>Everything new in macOS Golden Gate.</h2>
           </FadeIn>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
@@ -148,7 +148,7 @@ export default function MacOSGoldenGate() {
       <section id="compatibility" style={{ background: "#fff", padding: "100px 0" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Compatibility</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>Compatibility</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "16px" }}>Is your Mac compatible?</h2>
             <p style={{ fontSize: "17px", color: "#6e6e73", marginBottom: "40px" }}>macOS Golden Gate supports all Apple Silicon Macs and Intel Macs from 2019 onward.</p>
           </FadeIn>
@@ -179,7 +179,7 @@ export default function MacOSGoldenGate() {
             {[{ label: "Siri AI", href: "/siri-ai" }, { label: "iOS 27", href: "/ios-27" }, { label: "Parental Controls", href: "/parental-controls" }, { label: "Apple Intelligence", href: "/apple-intelligence" }, { label: "Full WWDC 2026 Coverage", href: "/wwdc-2026" }].map(link => (
               <Link key={link.href} href={link.href}>
                 <span style={{ display: "inline-block", background: "#fff", color: "#1d1d1f", padding: "12px 20px", borderRadius: "980px", fontSize: "15px", fontWeight: 500, cursor: "pointer", border: "1px solid #d2d2d7", transition: "all 0.2s ease" }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#0071e3"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "#0071e3"; }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "var(--brand)"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "var(--brand)"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#fff"; (e.currentTarget as HTMLElement).style.color = "#1d1d1f"; (e.currentTarget as HTMLElement).style.borderColor = "#d2d2d7"; }}>
                   {link.label}
                 </span>

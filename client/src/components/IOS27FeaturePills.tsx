@@ -150,10 +150,10 @@ export default function IOS27FeaturePills() {
               fontWeight: 500,
               letterSpacing: "-0.022em",
               transition: "all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-              background: i === active ? "#0071e3" : "rgba(0,0,0,0.06)",
+              background: i === active ? "var(--brand)" : "rgba(0,0,0,0.06)",
               color: i === active ? "#fff" : "#1d1d1f",
               transform: i === active ? "scale(1)" : "scale(0.97)",
-              boxShadow: i === active ? "0 4px 16px rgba(0,113,227,0.35)" : "none",
+              boxShadow: i === active ? "0 4px 16px rgba(var(--brand-rgb),0.35)" : "none",
               whiteSpace: "nowrap",
             }}
           >
@@ -166,8 +166,8 @@ export default function IOS27FeaturePills() {
                 textTransform: "uppercase",
                 padding: "2px 6px",
                 borderRadius: "4px",
-                background: i === active ? "rgba(255,255,255,0.25)" : "rgba(0,113,227,0.12)",
-                color: i === active ? "#fff" : "#0071e3",
+                background: i === active ? "rgba(255,255,255,0.25)" : "rgba(var(--brand-rgb),0.12)",
+                color: i === active ? "#fff" : "var(--brand)",
               }}>
                 {f.tag}
               </span>

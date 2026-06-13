@@ -295,7 +295,7 @@ export default function Sideloading() {
         <div style={{
           position: "absolute",
           inset: 0,
-          background: "radial-gradient(ellipse at 20% 50%, rgba(0,113,227,0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 30%, rgba(48,209,88,0.1) 0%, transparent 50%), radial-gradient(ellipse at 50% 80%, rgba(175,82,222,0.08) 0%, transparent 50%)",
+          background: "radial-gradient(ellipse at 20% 50%, rgba(var(--brand-rgb),0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 30%, rgba(48,209,88,0.1) 0%, transparent 50%), radial-gradient(ellipse at 50% 80%, rgba(175,82,222,0.08) 0%, transparent 50%)",
           zIndex: 0,
         }} />
         <div style={{ position: "relative", zIndex: 1 }}>
@@ -359,9 +359,9 @@ export default function Sideloading() {
                   style={{
                     padding: "8px 16px",
                     borderRadius: "980px",
-                    border: categoryFilter === cat.id ? "1px solid #0071e3" : "1px solid rgba(255,255,255,0.15)",
-                    background: categoryFilter === cat.id ? "rgba(0,113,227,0.12)" : "transparent",
-                    color: categoryFilter === cat.id ? "#0071e3" : "rgba(255,255,255,0.6)",
+                    border: categoryFilter === cat.id ? "1px solid var(--brand)" : "1px solid rgba(255,255,255,0.15)",
+                    background: categoryFilter === cat.id ? "rgba(var(--brand-rgb),0.12)" : "transparent",
+                    color: categoryFilter === cat.id ? "var(--brand)" : "rgba(255,255,255,0.6)",
                     fontSize: "13px",
                     fontWeight: categoryFilter === cat.id ? 600 : 400,
                     cursor: "pointer",
@@ -389,7 +389,7 @@ export default function Sideloading() {
                       cursor: "pointer",
                     }}
                     onClick={() => setExpandedTool(isExpanded ? null : tool.name)}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(0,113,227,0.4)"; }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(var(--brand-rgb),0.4)"; }}
                     onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.1)"; }}
                   >
                     {/* Header */}
@@ -415,10 +415,10 @@ export default function Sideloading() {
                       <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "16px", marginTop: "8px", animation: "fadeInUp 0.2s ease both" }}>
                         {/* Steps */}
                         <div style={{ marginBottom: "16px" }}>
-                          <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "#0071e3", marginBottom: "10px" }}>How to install</div>
+                          <div style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "10px" }}>How to install</div>
                           {tool.steps.map((step, i) => (
                             <div key={i} style={{ display: "flex", gap: "10px", alignItems: "flex-start", marginBottom: "8px" }}>
-                              <span style={{ fontSize: "12px", fontWeight: 700, color: "#0071e3", minWidth: "18px" }}>{i + 1}.</span>
+                              <span style={{ fontSize: "12px", fontWeight: 700, color: "var(--brand)", minWidth: "18px" }}>{i + 1}.</span>
                               <span style={{ fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: 1.4 }}>{step}</span>
                             </div>
                           ))}
@@ -439,7 +439,7 @@ export default function Sideloading() {
                           </div>
                         </div>
                         {/* Link */}
-                        <a href={tool.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ display: "inline-block", marginTop: "16px", fontSize: "14px", color: "#0071e3", textDecoration: "none" }}>
+                        <a href={tool.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ display: "inline-block", marginTop: "16px", fontSize: "14px", color: "var(--brand)", textDecoration: "none" }}>
                           Get {tool.name} &rsaquo;
                         </a>
                       </div>
@@ -480,9 +480,9 @@ export default function Sideloading() {
                   style={{
                     padding: "8px 14px",
                     borderRadius: "980px",
-                    border: appCategoryFilter === cat ? "1px solid #0071e3" : "1px solid rgba(255,255,255,0.12)",
-                    background: appCategoryFilter === cat ? "rgba(0,113,227,0.12)" : "transparent",
-                    color: appCategoryFilter === cat ? "#0071e3" : "rgba(255,255,255,0.5)",
+                    border: appCategoryFilter === cat ? "1px solid var(--brand)" : "1px solid rgba(255,255,255,0.12)",
+                    background: appCategoryFilter === cat ? "rgba(var(--brand-rgb),0.12)" : "transparent",
+                    color: appCategoryFilter === cat ? "var(--brand)" : "rgba(255,255,255,0.5)",
                     fontSize: "12px",
                     fontWeight: appCategoryFilter === cat ? 600 : 400,
                     cursor: "pointer",
@@ -505,7 +505,7 @@ export default function Sideloading() {
                       <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#f5f5f7", margin: 0 }}>{app.name}</h4>
                       <span style={{ fontSize: "10px", fontWeight: 600, color: riskColors[app.risk as keyof typeof riskColors], textTransform: "uppercase", letterSpacing: "0.05em" }}>{app.risk} risk</span>
                     </div>
-                    <span style={{ fontSize: "11px", color: "#0071e3", fontWeight: 500 }}>{app.category}</span>
+                    <span style={{ fontSize: "11px", color: "var(--brand)", fontWeight: 500 }}>{app.category}</span>
                     <p style={{ fontSize: "13px", color: "rgba(255,255,255,0.5)", lineHeight: 1.4, marginTop: "8px", marginBottom: 0 }}>{app.desc}</p>
                   </div>
                 );
@@ -527,7 +527,7 @@ export default function Sideloading() {
                 <a key={store.name} href={store.url} target="_blank" rel="noopener noreferrer" style={{
                   display: "block", padding: "20px 24px", background: "#000", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "14px", textDecoration: "none", transition: "border-color 0.2s",
                 }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(0,113,227,0.4)"; }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(var(--brand-rgb),0.4)"; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.1)"; }}
                 >
                   <div style={{ fontSize: "16px", fontWeight: 600, color: "#f5f5f7", marginBottom: "4px" }}>{store.name}</div>
@@ -606,7 +606,7 @@ export default function Sideloading() {
               ].map((link) => (
                 <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer"
                   style={{ display: "inline-block", padding: "10px 18px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "980px", color: "rgba(255,255,255,0.7)", fontSize: "13px", fontWeight: 500, textDecoration: "none", transition: "all 0.2s" }}
-                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "#0071e3"; (e.currentTarget as HTMLElement).style.color = "#0071e3"; }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "var(--brand)"; (e.currentTarget as HTMLElement).style.color = "var(--brand)"; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.12)"; (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.7)"; }}
                 >{link.name}</a>
               ))}

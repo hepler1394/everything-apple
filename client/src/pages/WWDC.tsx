@@ -80,13 +80,13 @@ export default function WWDC() {
         <img src={IMGS.wwdc.appleParkStage} alt="WWDC 2026 Apple Park stage" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 20%", opacity: 1 }} />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.85) 100%)" }} />
         <div style={{ position: "relative", zIndex: 2, height: "100%", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 22px 80px", maxWidth: "1200px", margin: "0 auto" }}>
-          <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>June 9, 2026 — Apple Park, Cupertino</p>
+          <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "12px" }}>June 9, 2026 — Apple Park, Cupertino</p>
           <h1 className="apple-headline-hero" style={{ color: "#fff", marginBottom: "20px" }}>WWDC 2026.<br />All systems glow.</h1>
           <p style={{ fontSize: "clamp(17px, 2.2vw, 21px)", color: "rgba(255,255,255,0.75)", maxWidth: "600px", lineHeight: 1.55, marginBottom: "36px" }}>
             Tim Cook took the stage at Apple Park for the last time as CEO and delivered the most consequential WWDC in a decade. Siri AI. iOS 27. macOS Golden Gate. Parental Controls. Apple Intelligence for everyone.
           </p>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-            <a href="#announcements" style={{ display: "inline-block", background: "#0071e3", color: "#fff", padding: "13px 26px", borderRadius: "980px", fontSize: "16px", fontWeight: 500, textDecoration: "none" }}>All announcements</a>
+            <a href="#announcements" style={{ display: "inline-block", background: "var(--brand)", color: "#fff", padding: "13px 26px", borderRadius: "980px", fontSize: "16px", fontWeight: 500, textDecoration: "none" }}>All announcements</a>
             <a href="#gallery" style={{ display: "inline-block", color: "rgba(255,255,255,0.85)", padding: "13px 0", fontSize: "16px", fontWeight: 400, textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)" }}>Event gallery</a>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function WWDC() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px", display: "flex" }}>
           {ANNOUNCEMENTS.map(ann => (
             <a key={ann.id} href={`#${ann.id}`} style={{ display: "inline-block", padding: "14px 18px", fontSize: "12px", color: "rgba(255,255,255,0.6)", textDecoration: "none", whiteSpace: "nowrap", borderBottom: "2px solid transparent", transition: "all 0.2s ease" }}
-              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderBottomColor = "#0071e3"; }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderBottomColor = "var(--brand)"; }}
               onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "rgba(255,255,255,0.6)"; (e.currentTarget as HTMLElement).style.borderBottomColor = "transparent"; }}>
               {ann.label}
             </a>
@@ -110,7 +110,7 @@ export default function WWDC() {
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="feature-grid-responsive">
             <FadeIn>
-              <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>Tim Cook</p>
+              <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "12px" }}>Tim Cook</p>
               <h2 className="apple-headline-section" style={{ color: "#f5f5f7", marginBottom: "24px" }}>A farewell from the CEO who changed everything.</h2>
               <p style={{ fontSize: "17px", color: "rgba(245,245,247,0.7)", lineHeight: 1.7, marginBottom: "20px" }}>
                 Tim Cook opened WWDC 2026 with a message that surprised the entire tech world. After 15 years as Apple CEO, Cook announced he would be stepping down later this year, handing the reins to John Ternus. He called it "the right time to pass the torch."
@@ -138,7 +138,7 @@ export default function WWDC() {
                 <div style={{ order: idx % 2 === 0 ? 0 : 1 }}>
                   <FadeIn>
                     <div style={{ display: "flex", gap: "10px", marginBottom: "12px", flexWrap: "wrap" }}>
-                      <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3" }}>{ann.label}</span>
+                      <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)" }}>{ann.label}</span>
                       <span style={{ fontSize: "11px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: ann.dark ? "rgba(245,245,247,0.4)" : "#6e6e73", background: ann.dark ? "rgba(255,255,255,0.08)" : "#f5f5f7", padding: "2px 8px", borderRadius: "4px" }}>{ann.tag}</span>
                     </div>
                     <h2 className="apple-headline-feature" style={{ color: ann.dark ? "#f5f5f7" : "#1d1d1f", marginBottom: "20px" }}>{ann.title}</h2>
@@ -146,12 +146,12 @@ export default function WWDC() {
                     <ul style={{ listStyle: "none", padding: 0, margin: "0 0 32px" }}>
                       {ann.details.map((d) => (
                         <li key={d} style={{ fontSize: "15px", color: ann.dark ? "rgba(245,245,247,0.55)" : "#6e6e73", padding: "8px 0", borderBottom: `1px solid ${ann.dark ? "rgba(255,255,255,0.06)" : "#f0f0f0"}`, display: "flex", alignItems: "flex-start", gap: "10px" }}>
-                          <span style={{ color: "#0071e3", fontWeight: 700, flexShrink: 0 }}>—</span>{d}
+                          <span style={{ color: "var(--brand)", fontWeight: 700, flexShrink: 0 }}>—</span>{d}
                         </li>
                       ))}
                     </ul>
                     <Link href={ann.href}>
-                      <span style={{ display: "inline-block", color: "#0071e3", fontSize: "17px", fontWeight: 500, cursor: "pointer" }}>Deep dive into {ann.label}</span>
+                      <span style={{ display: "inline-block", color: "var(--brand)", fontSize: "17px", fontWeight: 500, cursor: "pointer" }}>Deep dive into {ann.label}</span>
                     </Link>
                   </FadeIn>
                 </div>
@@ -172,7 +172,7 @@ export default function WWDC() {
       <section id="gallery" style={{ background: "#f5f5f7", padding: "72px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Event Gallery</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>Event Gallery</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "48px" }}>Real photos from WWDC 2026.</h2>
           </FadeIn>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: "12px" }}>

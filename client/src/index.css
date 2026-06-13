@@ -2,7 +2,7 @@
  * Everything Apple — Design System v3
  * Source: DESIGN.md — Apple MacBook Neo product page reference
  * Canvas: #f5f5f7 (Fog) | Cards: #ffffff (Snow) | Text: #1d1d1f (Ink)
- * CTA: #0071e3 (Azure) — sole permission-to-act color
+ * CTA: var(--brand) (Azure) — sole permission-to-act color
  * Elevation: color-value-only, zero box-shadows
  * Typography: SF Pro Display (700 headlines) + SF Pro Text (400 body)
  * Cards: 28px border-radius, no shadow, white on fog / fog on white
@@ -52,8 +52,8 @@
   --color-snow: #ffffff;
   --color-obsidian: #000000;
   --color-silver-mist: #e8e8ed;
-  --color-azure: #0071e3;
-  --color-cobalt-link: #0066cc;
+  --color-azure: var(--brand);
+  --color-cobalt-link: var(--brand-link);
   --color-caution: #b64400;
 
   /* Finish swatches */
@@ -137,6 +137,15 @@
    ══════════════════════════════════════════ */
 :root {
   color-scheme: light;
+
+  /* ── BRAND ACCENT (default: Product RED) ──
+     Everything themeable points at these vars, so a theme class can
+     re-tint the whole site by overriding just these four. */
+  --brand: #e30b17;
+  --brand-hover: #ff2d2d;
+  --brand-link: #c20910;
+  --brand-rgb: 227, 11, 23;
+
   --radius: 10px;
   --background: #f5f5f7;
   --foreground: #1d1d1f;
@@ -144,7 +153,7 @@
   --card-foreground: #1d1d1f;
   --popover: #ffffff;
   --popover-foreground: #1d1d1f;
-  --primary: #0071e3;
+  --primary: var(--brand);
   --primary-foreground: #ffffff;
   --secondary: #f5f5f7;
   --secondary-foreground: #1d1d1f;
@@ -156,7 +165,7 @@
   --destructive-foreground: #ffffff;
   --border: #e8e8ed;
   --input: #e8e8ed;
-  --ring: #0071e3;
+  --ring: var(--brand);
 
   /* Banner height CSS var */
   --banner-height: 0px;
@@ -174,13 +183,18 @@
    ══════════════════════════════════════════ */
 .dark {
   color-scheme: dark;
+  /* Slightly brighter red for legibility on pure black */
+  --brand: #ff453a;
+  --brand-hover: #ff6961;
+  --brand-link: #ff7b73;
+  --brand-rgb: 255, 69, 58;
   --background: #000000;
   --foreground: #f5f5f7;
   --card: #1d1d1f;
   --card-foreground: #f5f5f7;
   --popover: #1d1d1f;
   --popover-foreground: #f5f5f7;
-  --primary: #0071e3;
+  --primary: var(--brand);
   --primary-foreground: #ffffff;
   --secondary: #1d1d1f;
   --secondary-foreground: #f5f5f7;
@@ -192,11 +206,70 @@
   --destructive-foreground: #ffffff;
   --border: #333333;
   --input: #333333;
-  --ring: #0071e3;
+  --ring: var(--brand);
   /* Glass variables for dark mode */
   --glass-bg: rgba(29,29,31,0.85);
   --glass-border-subtle: rgba(255,255,255,0.08);
 }
+
+/* ══════════════════════════════════════════
+   COLOR THEMES — re-tint by overriding brand vars
+   Applied via ThemeContext: .theme-blue (light),
+   .dark.theme-red / .theme-siri / .theme-matcha (dark)
+   ══════════════════════════════════════════ */
+
+/* Classic Apple Blue — the original look, kept as an option */
+.theme-blue {
+  --brand: #0071e3;
+  --brand-hover: #0077ed;
+  --brand-link: #0066cc;
+  --brand-rgb: 0, 113, 227;
+}
+
+/* Red — immersive dominant-red dark theme */
+.dark.theme-red {
+  --brand: #ff453a;
+  --brand-hover: #ff6961;
+  --brand-link: #ff7b73;
+  --brand-rgb: 255, 69, 58;
+  --background: #0d0202;
+}
+.dark.theme-red body { background-color: #0d0202; }
+.dark.theme-red .section-fog { background-color: #170505; }
+.dark.theme-red .section-snow { background-color: #1e0707; }
+
+/* Siri — AI purple gradient accent */
+.dark.theme-siri {
+  --brand: #bf5af2;
+  --brand-hover: #d07dff;
+  --brand-link: #d07dff;
+  --brand-rgb: 191, 90, 242;
+  --background: #08000f;
+}
+.dark.theme-siri body { background-color: #08000f; }
+.dark.theme-siri .section-fog { background-color: #110720; }
+.dark.theme-siri .section-snow { background-color: #170a29; }
+
+/* Matcha — soft dark green with lime accent */
+.dark.theme-matcha {
+  --brand: #9ae600;
+  --brand-hover: #b6f53d;
+  --brand-link: #b6f53d;
+  --brand-rgb: 154, 230, 0;
+  --background: #0b1410;
+  --foreground: #e8f5ee;
+  --card: #11201a;
+  --popover: #11201a;
+  --secondary: #11201a;
+  --muted: #11201a;
+  --border: #1f3a2c;
+  --input: #1f3a2c;
+  --primary-foreground: #0b1410;
+}
+.dark.theme-matcha body { background-color: #0b1410; color: #e8f5ee; }
+.dark.theme-matcha .section-fog { background-color: #10201a; }
+.dark.theme-matcha .section-snow { background-color: #15291f; }
+.dark.theme-matcha .card { background-color: #15291f; }
 
 /* ══════════════════════════════════════════
    BASE RESET
@@ -457,7 +530,7 @@ section {
 }
 
 .btn-primary:hover {
-  background-color: #0077ed;
+  background-color: var(--brand-hover);
 }
 
 .btn-primary:active {
@@ -1014,7 +1087,7 @@ section {
    TEXT SELECTION
    ══════════════════════════════════════════ */
 ::selection {
-  background: rgba(0,113,227,0.15);
+  background: rgba(var(--brand-rgb),0.15);
   color: var(--color-ink);
 }
 
@@ -1166,7 +1239,7 @@ section {
   white-space: nowrap;
 }
 
-.apple-btn:hover { background-color: #0077ed; }
+.apple-btn:hover { background-color: var(--brand-hover); }
 .apple-btn:active { transform: scale(0.97); }
 
 .apple-btn-dark {
@@ -1337,7 +1410,7 @@ section {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  background: rgba(0,113,227,0.1);
+  background: rgba(var(--brand-rgb),0.1);
   color: var(--color-azure);
   max-width: 100%;
   overflow: hidden;
@@ -1364,8 +1437,8 @@ section {
   align-items: center;
   justify-content: center;
   background: transparent;
-  color: #0071e3;
-  border: 1px solid #0071e3;
+  color: var(--brand);
+  border: 1px solid var(--brand);
   border-radius: 980px;
   font-family: var(--font-sf-pro-text, system-ui);
   font-size: 17px;
@@ -1378,7 +1451,7 @@ section {
   white-space: nowrap;
   transition: background-color 0.1s ease, color 0.1s ease;
 }
-.btn-secondary:hover { background: rgba(0,113,227,0.06); }
+.btn-secondary:hover { background: rgba(var(--brand-rgb),0.06); }
 .btn-secondary:active { transform: scale(0.97); }
 
 /* feature-row-responsive — 2-col on desktop, 1-col on mobile */
@@ -1528,7 +1601,7 @@ section {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #0071e3;
+  color: var(--brand);
 }
 
 /* Buttons */
@@ -1548,11 +1621,11 @@ section {
   white-space: nowrap;
 }
 .apple-btn-blue {
-  background: #0071e3;
+  background: var(--brand);
   color: #ffffff;
   border: none;
 }
-.apple-btn-blue:hover { background: #0077ed; }
+.apple-btn-blue:hover { background: var(--brand-hover); }
 .apple-btn-white {
   background: #ffffff;
   color: #1d1d1f;
@@ -1729,7 +1802,7 @@ html, body {
 
 /* Dark mode ghost button */
 .dark .btn-ghost {
-  color: #0071e3;
+  color: var(--brand);
 }
 
 /* Dark mode secondary button */

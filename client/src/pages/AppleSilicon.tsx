@@ -87,7 +87,7 @@ export default function AppleSilicon() {
       <section style={{ background: "#000", padding: "120px 0 100px", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "16px" }}>Apple Silicon</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "16px" }}>Apple Silicon</p>
             <h1 className="apple-headline-hero" style={{ color: "#f5f5f7", marginBottom: "24px" }}>The chips that<br />changed computing.</h1>
             <p style={{ fontSize: "21px", color: "rgba(245,245,247,0.7)", lineHeight: 1.55, marginBottom: "40px" }}>
               From M1 to M4 Ultra, from A13 to A19 Pro — Apple Silicon is the foundation of every Apple device. Here is everything you need to know about every chip Apple has ever made.
@@ -109,7 +109,7 @@ export default function AppleSilicon() {
       <section style={{ background: "#fff", padding: "100px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>M4 Family</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>M4 Family</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "60px" }}>The M4 chip family, explained.</h2>
           </FadeIn>
           <div style={{ display: "grid", gap: "20px" }}>
@@ -158,7 +158,7 @@ export default function AppleSilicon() {
       <section style={{ background: "#000", padding: "100px 0" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>History</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>History</p>
             <h2 className="apple-headline-section" style={{ color: "#f5f5f7", marginBottom: "60px" }}>Every Apple Silicon chip, ever.</h2>
           </FadeIn>
           <div style={{ position: "relative" }}>
@@ -166,7 +166,7 @@ export default function AppleSilicon() {
             {CHIP_HISTORY.map((chip, i) => (
               <FadeIn key={chip.name} delay={i * 50}>
                 <div style={{ display: "flex", gap: "32px", marginBottom: "32px", paddingLeft: "52px", position: "relative" }}>
-                  <div style={{ position: "absolute", left: "14px", top: "6px", width: "13px", height: "13px", borderRadius: "50%", background: "#0071e3", border: "2px solid #000" }} />
+                  <div style={{ position: "absolute", left: "14px", top: "6px", width: "13px", height: "13px", borderRadius: "50%", background: "var(--brand)", border: "2px solid #000" }} />
                   <div>
                     <div style={{ display: "flex", gap: "12px", alignItems: "baseline", marginBottom: "6px" }}>
                       <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#f5f5f7" }}>{chip.name}</h3>
@@ -185,7 +185,7 @@ export default function AppleSilicon() {
       <section style={{ background: "#f5f5f7", padding: "100px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Why It Matters</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>Why It Matters</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "60px" }}>What Apple Silicon means for you.</h2>
           </FadeIn>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
@@ -218,7 +218,7 @@ export default function AppleSilicon() {
             {[{ label: "iPhones", href: "/iphones" }, { label: "Apple Intelligence", href: "/apple-intelligence" }, { label: "WWDC 2026", href: "/wwdc-2026" }, { label: "macOS Golden Gate", href: "/macos-golden-gate" }].map(link => (
               <Link key={link.href} href={link.href}>
                 <span style={{ display: "inline-block", background: "#f5f5f7", color: "#1d1d1f", padding: "12px 20px", borderRadius: "980px", fontSize: "15px", fontWeight: 500, cursor: "pointer", border: "1px solid #d2d2d7", transition: "all 0.2s ease" }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#0071e3"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "#0071e3"; }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "var(--brand)"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "var(--brand)"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#f5f5f7"; (e.currentTarget as HTMLElement).style.color = "#1d1d1f"; (e.currentTarget as HTMLElement).style.borderColor = "#d2d2d7"; }}>
                   {link.label}
                 </span>

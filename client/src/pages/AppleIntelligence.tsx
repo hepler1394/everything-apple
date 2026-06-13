@@ -73,13 +73,13 @@ export default function AppleIntelligence() {
       <section style={{ background: "#000", padding: "120px 0 100px", textAlign: "center" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "16px" }}>Apple Intelligence</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "16px" }}>Apple Intelligence</p>
             <h1 className="apple-headline-hero" style={{ color: "#f5f5f7", marginBottom: "24px" }}>AI that is built<br />for you. Private<br />by design.</h1>
             <p style={{ fontSize: "21px", color: "rgba(245,245,247,0.7)", lineHeight: 1.55, marginBottom: "40px" }}>
               Apple Intelligence is the personal intelligence system that understands you. It uses on-device processing to keep your data private — and when it needs more power, Private Cloud Compute handles it without Apple ever seeing your data.
             </p>
             <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-              <a href="#features" style={{ display: "inline-block", background: "#0071e3", color: "#fff", padding: "14px 28px", borderRadius: "980px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>Explore features</a>
+              <a href="#features" style={{ display: "inline-block", background: "var(--brand)", color: "#fff", padding: "14px 28px", borderRadius: "980px", fontSize: "17px", fontWeight: 500, textDecoration: "none" }}>Explore features</a>
               <a href="#privacy" style={{ display: "inline-block", color: "rgba(255,255,255,0.8)", padding: "14px 0", fontSize: "17px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.3)" }}>Privacy architecture</a>
             </div>
           </FadeIn>
@@ -121,11 +121,11 @@ export default function AppleIntelligence() {
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="feature-grid-responsive">
                 <div style={{ order: idx % 2 === 0 ? 0 : 1 }}>
                   <FadeIn>
-                    <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>{cat.title}</p>
+                    <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "12px" }}>{cat.title}</p>
                     <h2 className="apple-headline-section" style={{ color: cat.dark ? "#f5f5f7" : "#1d1d1f", marginBottom: "32px" }}>{cat.title}</h2>
                     <div style={{ display: "grid", gap: "20px" }}>
                       {cat.features.map(f => (
-                        <div key={f.name} style={{ borderLeft: "2px solid #0071e3", paddingLeft: "16px" }}>
+                        <div key={f.name} style={{ borderLeft: "2px solid var(--brand)", paddingLeft: "16px" }}>
                           <h3 style={{ fontSize: "17px", fontWeight: 700, color: cat.dark ? "#f5f5f7" : "#1d1d1f", marginBottom: "6px" }}>{f.name}</h3>
                           <p style={{ fontSize: "15px", color: cat.dark ? "rgba(245,245,247,0.55)" : "#6e6e73", lineHeight: 1.6 }}>{f.desc}</p>
                         </div>
@@ -150,7 +150,7 @@ export default function AppleIntelligence() {
       <section id="privacy" style={{ background: "#1d1d1f", padding: "100px 0" }}>
         <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "12px" }}>Privacy</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "12px" }}>Privacy</p>
             <h2 className="apple-headline-section" style={{ color: "#f5f5f7", marginBottom: "16px" }}>Your data stays yours.</h2>
             <p style={{ fontSize: "19px", color: "rgba(245,245,247,0.65)", marginBottom: "60px", maxWidth: "700px" }}>
               Apple Intelligence is built on a foundation of privacy. Most processing happens on your device. When it needs the cloud, Private Cloud Compute ensures Apple cannot see your data.
@@ -178,7 +178,7 @@ export default function AppleIntelligence() {
       <section style={{ background: "#fff", padding: "100px 0" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto", padding: "0 22px" }}>
           <FadeIn>
-            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "#0071e3", marginBottom: "8px" }}>Device Support</p>
+            <p style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.1em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "8px" }}>Device Support</p>
             <h2 className="apple-headline-section" style={{ color: "#1d1d1f", marginBottom: "16px" }}>Which devices support Apple Intelligence?</h2>
             <p style={{ fontSize: "17px", color: "#6e6e73", marginBottom: "40px" }}>Apple Intelligence requires an A17 Pro chip or later on iPhone, any M-series chip on iPad and Mac.</p>
           </FadeIn>
@@ -216,7 +216,7 @@ export default function AppleIntelligence() {
             {[{ label: "Siri AI", href: "/siri-ai" }, { label: "iOS 27", href: "/ios-27" }, { label: "macOS Golden Gate", href: "/macos-golden-gate" }, { label: "Parental Controls", href: "/parental-controls" }, { label: "Full WWDC 2026 Coverage", href: "/wwdc-2026" }].map(link => (
               <Link key={link.href} href={link.href}>
                 <span style={{ display: "inline-block", background: "#fff", color: "#1d1d1f", padding: "12px 20px", borderRadius: "980px", fontSize: "15px", fontWeight: 500, cursor: "pointer", border: "1px solid #d2d2d7", transition: "all 0.2s ease" }}
-                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#0071e3"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "#0071e3"; }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "var(--brand)"; (e.currentTarget as HTMLElement).style.color = "#fff"; (e.currentTarget as HTMLElement).style.borderColor = "var(--brand)"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "#fff"; (e.currentTarget as HTMLElement).style.color = "#1d1d1f"; (e.currentTarget as HTMLElement).style.borderColor = "#d2d2d7"; }}>
                   {link.label}
                 </span>
@@ -230,7 +230,7 @@ export default function AppleIntelligence() {
       <section style={{ background: "#000", padding: "100px 0" }}>
         <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
           <div style={{ textAlign: "center", marginBottom: "60px" }}>
-            <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "#0071e3", marginBottom: "16px" }}>Official Video</div>
+            <div style={{ fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--brand)", marginBottom: "16px" }}>Official Video</div>
             <h2 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 700, letterSpacing: "-0.03em", color: "#f5f5f7", marginBottom: "20px", lineHeight: 1.05 }}>Watch the WWDC 2026 Keynote</h2>
             <p style={{ fontSize: "17px", color: "rgba(245,245,247,0.65)", maxWidth: "600px", margin: "0 auto", lineHeight: 1.6 }}>See every Apple Intelligence announcement directly from the source.</p>
           </div>
@@ -240,7 +240,7 @@ export default function AppleIntelligence() {
                 <iframe src="https://www.youtube.com/embed/hF8swzNR1-o" title="WWDC 2026 Keynote" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }} />
               </div>
               <div style={{ padding: "20px 24px" }}>
-                <div style={{ fontSize: "12px", color: "#0071e3", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px" }}>Apple</div>
+                <div style={{ fontSize: "12px", color: "var(--brand)", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px" }}>Apple</div>
                 <div style={{ fontSize: "17px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.022em" }}>WWDC 2026 Keynote</div>
                 <div style={{ fontSize: "13px", color: "rgba(245,245,247,0.5)", marginTop: "6px" }}>Introducing Siri AI and Apple Intelligence</div>
               </div>
@@ -250,7 +250,7 @@ export default function AppleIntelligence() {
                 <iframe src="https://www.youtube.com/embed/wpBgdV0hx0w" title="WWDC 2026 Everything Apple Announced" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }} />
               </div>
               <div style={{ padding: "20px 24px" }}>
-                <div style={{ fontSize: "12px", color: "#0071e3", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px" }}>Full Recap</div>
+                <div style={{ fontSize: "12px", color: "var(--brand)", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px" }}>Full Recap</div>
                 <div style={{ fontSize: "17px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.022em" }}>Everything Apple Announced</div>
                 <div style={{ fontSize: "13px", color: "rgba(245,245,247,0.5)", marginTop: "6px" }}>New Siri AI, Apple Intelligence, iOS 27 and more</div>
               </div>
@@ -260,7 +260,7 @@ export default function AppleIntelligence() {
                 <iframe src="https://www.youtube.com/embed/yl2jsIoMfDU" title="WWDC26 Platforms State of the Union" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }} />
               </div>
               <div style={{ padding: "20px 24px" }}>
-                <div style={{ fontSize: "12px", color: "#0071e3", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px" }}>Developer</div>
+                <div style={{ fontSize: "12px", color: "var(--brand)", fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "8px" }}>Developer</div>
                 <div style={{ fontSize: "17px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.022em" }}>Platforms State of the Union</div>
                 <div style={{ fontSize: "13px", color: "rgba(245,245,247,0.5)", marginTop: "6px" }}>Deep technical dive into Apple Intelligence APIs</div>
               </div>

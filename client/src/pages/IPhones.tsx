@@ -536,7 +536,7 @@ export default function IPhones() {
               color: selectedSeries === null ? "#f5f5f7" : "rgba(255,255,255,0.5)",
               background: "none",
               border: "none",
-              borderBottom: selectedSeries === null ? "2px solid #0071e3" : "2px solid transparent",
+              borderBottom: selectedSeries === null ? "2px solid var(--brand)" : "2px solid transparent",
               cursor: "pointer",
               whiteSpace: "nowrap",
               transition: "color 0.2s ease",
@@ -556,7 +556,7 @@ export default function IPhones() {
                 color: selectedSeries === s.id ? "#f5f5f7" : "rgba(255,255,255,0.5)",
                 background: "none",
                 border: "none",
-                borderBottom: selectedSeries === s.id ? "2px solid #0071e3" : "2px solid transparent",
+                borderBottom: selectedSeries === s.id ? "2px solid var(--brand)" : "2px solid transparent",
                 cursor: "pointer",
                 whiteSpace: "nowrap",
                 transition: "color 0.2s ease",
@@ -604,9 +604,9 @@ export default function IPhones() {
                     fontWeight: 600,
                     letterSpacing: "0.06em",
                     textTransform: "uppercase",
-                    color: series.tag === "Current" ? "#0071e3" : "rgba(255,255,255,0.4)",
+                    color: series.tag === "Current" ? "var(--brand)" : "rgba(255,255,255,0.4)",
                     padding: "4px 10px",
-                    border: `1px solid ${series.tag === "Current" ? "rgba(0,113,227,0.4)" : "rgba(255,255,255,0.15)"}`,
+                    border: `1px solid ${series.tag === "Current" ? "rgba(var(--brand-rgb),0.4)" : "rgba(255,255,255,0.15)"}`,
                     borderRadius: "980px",
                   }}
                 >
@@ -678,7 +678,7 @@ export default function IPhones() {
                       <div
                         style={{
                           fontSize: "12px",
-                          color: "#0071e3",
+                          color: "var(--brand)",
                           fontWeight: 500,
                           marginBottom: "4px",
                         }}
@@ -783,7 +783,7 @@ export default function IPhones() {
                         style={{
                           marginTop: "12px",
                           fontSize: "12px",
-                          color: "#0071e3",
+                          color: "var(--brand)",
                           fontWeight: 400,
                           letterSpacing: "-0.01em",
                         }}
@@ -820,7 +820,7 @@ export default function IPhones() {
                     fontWeight: 600,
                     letterSpacing: "0.08em",
                     textTransform: "uppercase",
-                    color: "#0071e3",
+                    color: "var(--brand)",
                     marginBottom: "16px",
                   }}
                 >
@@ -893,7 +893,7 @@ export default function IPhones() {
                         style={{
                           fontSize: "11px",
                           fontWeight: 600,
-                          color: row.ai === "Yes" ? "#0071e3" : "rgba(255,255,255,0.25)",
+                          color: row.ai === "Yes" ? "var(--brand)" : "rgba(255,255,255,0.25)",
                           letterSpacing: "0.04em",
                         }}
                       >

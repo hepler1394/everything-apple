@@ -219,6 +219,19 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    chunkSizeWarningLimit: 900,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("recharts") || id.includes("d3-")) return "charts";
+            if (id.includes("@radix-ui")) return "radix";
+            if (id.includes("lucide-react")) return "icons";
+            return "vendor";
+          }
+        },
+      },
+    },
   },
   server: {
     port: 3000,
