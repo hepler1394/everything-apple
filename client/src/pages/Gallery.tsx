@@ -8,9 +8,21 @@
 
 import { useState, useCallback } from "react";
 import IMGS from "@/lib/imageManifest";
+import { iPhoneModels } from "@/data/iphoneHistory";
+import { watchModels } from "@/data/watchHistory";
+import { ipodModels } from "@/data/ipodHistory";
+import { iphoneImage, watchImage, ipodImage } from "@/lib/deviceImages";
+
+interface GalleryImage {
+  id: number;
+  src: string;
+  cat: string;
+  title: string;
+  contain?: boolean; // transparent product shots → contain, not cover
+}
 
 // ── All gallery images organized by category ──
-const ALL_IMAGES = [
+const BASE_IMAGES: GalleryImage[] = [
   // WWDC 2026
   { id: 1, src: IMGS.wwdc.stageInterior, cat: "WWDC 2026", title: "WWDC 2026 Keynote Stage" },
   { id: 2, src: IMGS.wwdc.appleParkoOutdoor, cat: "WWDC 2026", title: "Apple Park Outdoor Stage" },
@@ -152,8 +164,34 @@ const ALL_IMAGES = [
   { id: 175, src: IMGS.places.appleStore4, cat: "Apple", title: "Apple Store Design" },
 ];
 
+// ── Device catalog photos (transparent product shots) from the history datasets ──
+function deviceEntries(
+  models: { id: string; name: string; year: number }[],
+  resolve: (id: string) => string | null,
+  cat: string,
+  startId: number,
+): GalleryImage[] {
+  return models
+    .map((m, i): GalleryImage | null => {
+      const src = resolve(m.id);
+      return src ? { id: startId + i, src, cat, title: `${m.name} (${m.year})`, contain: true } : null;
+    })
+    .filter((e): e is GalleryImage => e !== null);
+}
+
+const DEVICE_IMAGES: GalleryImage[] = [
+  ...deviceEntries(iPhoneModels, iphoneImage, "iPhone History", 1000),
+  ...deviceEntries(watchModels, watchImage, "Apple Watch", 1100),
+  ...deviceEntries(ipodModels, ipodImage, "iPod", 1200),
+];
+
+const ALL_IMAGES: GalleryImage[] = [...DEVICE_IMAGES, ...BASE_IMAGES];
+
 const CATEGORIES = [
   "All",
+  "iPhone History",
+  "Apple Watch",
+  "iPod",
   "WWDC 2026",
   "Siri AI",
   "Apple Intelligence",
@@ -235,7 +273,7 @@ export default function Gallery() {
               margin: "0 auto",
             }}
           >
-            {ALL_IMAGES.length} photos spanning WWDC 2026, every iPhone from 11 to 17, Siri AI, Apple Intelligence, Parental Controls, and more.
+            {ALL_IMAGES.length} photos — every iPhone, Apple Watch and iPod ever made, plus WWDC 2026, Siri AI, Apple Intelligence, and more.
           </p>
         </div>
       </section>
@@ -354,7 +392,8 @@ export default function Gallery() {
                   zIndex: 1,
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover",
+                  objectFit: img.contain ? "contain" : "cover",
+                  padding: img.contain ? "16px" : 0,
                   transition: "transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.3s ease",
                   display: "block",
                   opacity: 0,
