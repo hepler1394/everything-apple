@@ -92,8 +92,13 @@ export default function ThemePicker() {
         setOpen(false);
       }
     };
+    const handleKey = (e: KeyboardEvent) => { if (e.key === "Escape") setOpen(false); };
     document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
+    document.addEventListener("keydown", handleKey);
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+      document.removeEventListener("keydown", handleKey);
+    };
   }, []);
 
   const currentTheme = themes.find(t => t.id === theme) || themes[0];
@@ -103,6 +108,8 @@ export default function ThemePicker() {
       <button
         onClick={() => setOpen(!open)}
         aria-label="Change theme"
+        aria-haspopup="menu"
+        aria-expanded={open}
         style={{
           background: "none",
           border: "none",
@@ -124,6 +131,8 @@ export default function ThemePicker() {
 
       {open && (
         <div
+          role="menu"
+          aria-label="Theme"
           style={{
             position: "absolute",
             top: "calc(100% + 8px)",
@@ -145,6 +154,9 @@ export default function ThemePicker() {
             return (
               <button
                 key={t.id}
+                role="menuitemradio"
+                aria-checked={active}
+                aria-label={`${t.label} theme`}
                 onClick={() => { setTheme(t.id); setOpen(false); }}
                 style={{
                   display: "flex",

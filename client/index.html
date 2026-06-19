@@ -49,6 +49,8 @@
     <!-- Fonts: SF Pro system stack + fallback display font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://files.manuscdn.com" crossorigin />
+    <link rel="dns-prefetch" href="https://files.manuscdn.com" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
     <!-- Favicon -->
@@ -56,15 +58,26 @@
 
     <!-- PWA + mobile web app -->
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
     <meta name="theme-color" content="#e30b17" />
+    <meta property="og:image:alt" content="Everything Apple — your #1 source for Apple news, devices and guides" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Everything Apple" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="format-detection" content="telephone=no" />
+    <meta name="application-name" content="Everything Apple" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="color-scheme" content="dark light" />
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="max-width:640px;margin:80px auto;padding:0 22px;font-family:system-ui,sans-serif;text-align:center;color:#1d1d1f;">
+        <h1>Everything Apple</h1>
+        <p>This site needs JavaScript enabled to load. Please enable JavaScript and reload the page.</p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

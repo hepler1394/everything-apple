@@ -16,6 +16,11 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      el.style.opacity = "1";
+      el.style.transform = "none";
+      return;
+    }
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -91,6 +96,7 @@ export default function IPhoneTimeline() {
               <button
                 key={year}
                 onClick={() => setYearFilter(year)}
+                aria-pressed={yearFilter === year}
                 style={{
                   padding: "8px 18px",
                   borderRadius: "980px",

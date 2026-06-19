@@ -6,7 +6,7 @@
  * Built by Cory Hepler
  */
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import IMGS from "@/lib/imageManifest";
 import { iPhoneModels } from "@/data/iphoneHistory";
 import { watchModels } from "@/data/watchHistory";
@@ -212,23 +212,60 @@ const CATEGORIES = [
   "Apple",
 ];
 
+function navBtn(side: "left" | "right"): React.CSSProperties {
+  return {
+    position: "absolute",
+    top: "50%",
+    [side]: "20px",
+    transform: "translateY(-50%)",
+    background: "rgba(255,255,255,0.1)",
+    border: "none",
+    color: "#f5f5f7",
+    width: "48px",
+    height: "48px",
+    borderRadius: "50%",
+    fontSize: "28px",
+    cursor: "pointer",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    fontFamily: "inherit",
+    lineHeight: 1,
+    paddingBottom: "4px",
+  };
+}
+
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
-  const [lightboxImg, setLightboxImg] = useState<{ src: string; title: string } | null>(null);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const filtered = activeCategory === "All"
     ? ALL_IMAGES
     : ALL_IMAGES.filter((img) => img.cat === activeCategory);
 
-  const openLightbox = useCallback((src: string, title: string) => {
-    setLightboxImg({ src, title });
+  const openLightbox = useCallback((index: number) => {
+    setLightboxIndex(index);
     document.body.style.overflow = "hidden";
   }, []);
 
   const closeLightbox = useCallback(() => {
-    setLightboxImg(null);
+    setLightboxIndex(null);
     document.body.style.overflow = "";
   }, []);
+
+  const lightboxImg = lightboxIndex === null ? null : filtered[lightboxIndex] ?? null;
+
+  // Keyboard controls for the lightbox: Esc to close, arrows to navigate
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeLightbox();
+      else if (e.key === "ArrowRight") setLightboxIndex((i) => (i === null ? i : (i + 1) % filtered.length));
+      else if (e.key === "ArrowLeft") setLightboxIndex((i) => (i === null ? i : (i - 1 + filtered.length) % filtered.length));
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightboxIndex, filtered.length, closeLightbox]);
 
   return (
     <div style={{ background: "#000000", minHeight: "100vh", color: "#f5f5f7" }}>
@@ -306,6 +343,8 @@ export default function Gallery() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
+              aria-pressed={activeCategory === cat}
+              aria-label={cat === "All" ? "Show all photos" : `Filter by ${cat}`}
               style={{
                 flexShrink: 0,
                 padding: "7px 14px",
@@ -339,7 +378,11 @@ export default function Gallery() {
           {filtered.map((img, i) => (
             <div
               key={img.id}
-              onClick={() => openLightbox(img.src, img.title)}
+              onClick={() => openLightbox(i)}
+              role="button"
+              tabIndex={0}
+              aria-label={`View ${img.title}`}
+              onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openLightbox(i); } }}
               style={{
                 position: "relative",
                 aspectRatio: "4/3",
@@ -473,6 +516,7 @@ export default function Gallery() {
         )}
 
         <div
+          aria-live="polite"
           style={{
             marginTop: "40px",
             textAlign: "center",
@@ -488,6 +532,9 @@ export default function Gallery() {
       {/* ── Lightbox ── */}
       {lightboxImg && (
         <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={lightboxImg.title}
           onClick={closeLightbox}
           style={{
             position: "fixed",
@@ -503,27 +550,34 @@ export default function Gallery() {
         >
           <button
             onClick={closeLightbox}
+            aria-label="Close"
             style={{
-              position: "absolute",
-              top: "20px",
-              right: "20px",
-              background: "rgba(255,255,255,0.1)",
-              border: "none",
-              color: "#f5f5f7",
-              width: "44px",
-              height: "44px",
-              borderRadius: "50%",
-              fontSize: "20px",
-              cursor: "pointer",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontFamily: "inherit",
-              lineHeight: 1,
+              position: "absolute", top: "20px", right: "20px",
+              background: "rgba(255,255,255,0.1)", border: "none", color: "#f5f5f7",
+              width: "44px", height: "44px", borderRadius: "50%", fontSize: "20px",
+              cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
+              fontFamily: "inherit", lineHeight: 1,
             }}
           >
             &#x2715;
           </button>
+
+          {/* Prev / Next */}
+          {filtered.length > 1 && (
+            <>
+              <button
+                onClick={(e) => { e.stopPropagation(); setLightboxIndex((i) => (i === null ? i : (i - 1 + filtered.length) % filtered.length)); }}
+                aria-label="Previous image"
+                style={navBtn("left")}
+              >&#x2039;</button>
+              <button
+                onClick={(e) => { e.stopPropagation(); setLightboxIndex((i) => (i === null ? i : (i + 1) % filtered.length)); }}
+                aria-label="Next image"
+                style={navBtn("right")}
+              >&#x203A;</button>
+            </>
+          )}
+
           <div
             onClick={(e) => e.stopPropagation()}
             style={{ maxWidth: "90vw", maxHeight: "90vh", cursor: "default" }}
@@ -531,25 +585,15 @@ export default function Gallery() {
             <img
               src={lightboxImg.src}
               alt={lightboxImg.title}
-              style={{
-                maxWidth: "100%",
-                maxHeight: "80vh",
-                objectFit: "contain",
-                borderRadius: "8px",
-                display: "block",
-              }}
+              style={{ maxWidth: "100%", maxHeight: "80vh", objectFit: "contain", borderRadius: "8px", display: "block" }}
             />
-            <div
-              style={{
-                marginTop: "16px",
-                textAlign: "center",
-                fontSize: "15px",
-                fontWeight: 500,
-                color: "rgba(255,255,255,0.7)",
-                letterSpacing: "-0.015em",
-              }}
-            >
+            <div style={{ marginTop: "16px", textAlign: "center", fontSize: "15px", fontWeight: 500, color: "rgba(255,255,255,0.7)", letterSpacing: "-0.015em" }}>
               {lightboxImg.title}
+              {lightboxIndex !== null && (
+                <span style={{ color: "rgba(255,255,255,0.4)", marginLeft: "8px" }}>
+                  {lightboxIndex + 1} / {filtered.length}
+                </span>
+              )}
             </div>
           </div>
         </div>

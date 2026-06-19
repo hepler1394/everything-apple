@@ -78,6 +78,7 @@ export default function PhoneRender({ modelId, size = 360, style, className }: P
       aria-label={`${modelId} render`}
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>{modelId} vector render</title>
       <defs>
         <linearGradient id={`frame-${uid}`} x1="0" y1="0" x2="1" y2="0">
           <stop offset="0" stopColor={cfg.frame} stopOpacity="0.6" />

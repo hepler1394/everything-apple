@@ -71,6 +71,8 @@ export default function Footer() {
       <div style={{ maxWidth: "980px", margin: "0 auto", padding: "0 22px" }}>
         {/* Columns */}
         <div
+          role="navigation"
+          aria-label="Footer"
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
@@ -100,6 +102,7 @@ export default function Footer() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`${link.label} (opens in a new tab)`}
                         style={{
                           fontSize: "12px",
                           color: linkColor,

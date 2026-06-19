@@ -13,6 +13,11 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      el.style.opacity = "1";
+      el.style.transform = "none";
+      return;
+    }
     const obs = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -73,7 +78,7 @@ export default function DeviceTimeline({ eyebrow, lineTop, lineBottom, blurb, mo
         <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", justifyContent: "center", marginBottom: "16px" }}>
             {years.map((year) => (
-              <button key={year} onClick={() => setYearFilter(year)} style={{
+              <button key={year} onClick={() => setYearFilter(year)} aria-pressed={yearFilter === year} style={{
                 padding: "8px 18px", borderRadius: "980px", border: "none", fontSize: "13px", fontWeight: 500,
                 cursor: "pointer", transition: "all 0.2s ease",
                 background: yearFilter === year ? "#f5f5f7" : "rgba(255,255,255,0.08)",

@@ -15,7 +15,7 @@ export default function DeviceSwitcher() {
         const active = location === t.href;
         return (
           <Link key={t.href} href={t.href}>
-            <span style={{
+            <span aria-current={active ? "page" : undefined} style={{
               display: "inline-block",
               padding: "8px 20px",
               borderRadius: "980px",

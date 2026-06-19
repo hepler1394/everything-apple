@@ -173,9 +173,13 @@
   --subnav-height: 0px;
   /* Glass variables for gallery and dark cards */
   --glass-bg: rgba(255,255,255,0.85);
+  --glass-bg-strong: rgba(255,255,255,0.92);
+  --glass-border: rgba(0,0,0,0.10);
   --glass-border-subtle: rgba(0,0,0,0.08);
   --glass-bg-dark: rgba(29,29,31,0.85);
   --glass-border-dark: rgba(255,255,255,0.08);
+  /* Legacy alias → theme-driven brand accent */
+  --apple-blue: var(--brand);
 }
 
 /* ══════════════════════════════════════════
@@ -209,6 +213,8 @@
   --ring: var(--brand);
   /* Glass variables for dark mode */
   --glass-bg: rgba(29,29,31,0.85);
+  --glass-bg-strong: rgba(28,28,30,0.92);
+  --glass-border: rgba(255,255,255,0.12);
   --glass-border-subtle: rgba(255,255,255,0.08);
 }
 

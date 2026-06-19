@@ -230,7 +230,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
               onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.opacity = "1"; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.opacity = "0.7"; }}
             >
-              <Search size={15} />
+              <Search size={15} aria-hidden />
             </button>
 
             {/* Theme picker */}
@@ -239,6 +239,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
             {/* Buy CTA */}
             <Link href="/iphones">
               <span
+                aria-label="Buy — see iPhones"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
@@ -265,7 +266,8 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
             {/* Mobile hamburger */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              aria-label="Menu"
+              aria-label={menuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={menuOpen}
               className="nav-hamburger"
               style={{
                 background: "none",
@@ -279,7 +281,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                 cursor: "pointer",
               }}
             >
-              {menuOpen ? <X size={18} /> : <Menu size={18} />}
+              {menuOpen ? <X size={18} aria-hidden /> : <Menu size={18} aria-hidden />}
             </button>
           </div>
         </div>

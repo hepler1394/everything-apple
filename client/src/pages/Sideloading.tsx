@@ -99,6 +99,7 @@ export default function Sideloading() {
 
   const categories = ["All", ...Array.from(new Set(legitApps.map((a) => a.category)))];
   const apps = appFilter === "All" ? legitApps : legitApps.filter((a) => a.category === appFilter);
+  const signedCount = feed.signing.filter((s) => s.signed).length;
 
   return (
     <div style={{ background: "var(--background)", minHeight: "100vh" }}>
@@ -143,6 +144,9 @@ export default function Sideloading() {
           {feed.signing.length === 0 && <span style={{ color: "var(--muted-foreground)" }}>Loading signing status…</span>}
         </div>
         <p style={{ fontSize: "12px", color: "var(--muted-foreground)", marginTop: "14px" }}>
+          {feed.signing.length > 0 && (
+            <strong style={{ color: "var(--foreground)" }}>{signedCount} of {feed.signing.length} builds currently signed.</strong>
+          )}{" "}
           Last updated {feed.updated} · next refresh {feed.nextUpdate}. For real-time status, cross-check a dedicated signing tracker.
         </p>
       </Section>

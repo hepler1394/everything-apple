@@ -52,14 +52,27 @@ const SEARCH_INDEX = [
   { title: "iPhone 11", desc: "6.1-inch display, A13 chip, dual camera, Night mode", href: "/iphones", category: "iPhones", keywords: ["iphone 11", "a13", "dual camera"] },
 
   // Jailbreak
-  { title: "Jailbreak iOS 18.5 — palera1n", desc: "palera1n supports iOS 15.0–18.5 on A9–A11 devices", href: "/jailbreak", category: "Jailbreak", keywords: ["jailbreak", "palera1n", "ios 18", "jailbreak ios 18"] },
-  { title: "Jailbreak iOS 17 — Dopamine", desc: "Dopamine supports iOS 15.0–16.7 on A12+ devices", href: "/jailbreak", category: "Jailbreak", keywords: ["dopamine", "jailbreak ios 17", "ios 17 jailbreak", "a12"] },
+  { title: "palera1n — checkm8 Jailbreak", desc: "Semi-tethered checkm8 jailbreak for A8–A11 devices on iOS 15 and later", href: "/jailbreak", category: "Jailbreak", keywords: ["jailbreak", "palera1n", "checkm8", "a11", "semi-tethered"] },
+  { title: "Dopamine — Rootless Jailbreak", desc: "Rootless jailbreak by opa334 supporting up to iOS 16.6.1 (no iOS 17/18/26)", href: "/jailbreak", category: "Jailbreak", keywords: ["dopamine", "rootless", "ios 16", "opa334"] },
   { title: "Jailbreak iOS 16 — checkra1n", desc: "checkra1n supports iOS 12–14.8.1 on A7–A11 devices", href: "/jailbreak", category: "Jailbreak", keywords: ["checkra1n", "jailbreak ios 16", "a11", "bootrom"] },
   { title: "Jailbreak iOS 15 — unc0ver", desc: "unc0ver supports iOS 11–14.8 on all devices", href: "/jailbreak", category: "Jailbreak", keywords: ["unc0ver", "jailbreak ios 15", "ios 15 jailbreak"] },
   { title: "Sideload Apps — AltStore", desc: "AltStore lets you sideload apps without jailbreak on any iPhone", href: "/sideloading", category: "Sideload", keywords: ["altstore", "sideload", "sideloading", "alt store"] },
   { title: "Sideload Apps — Sideloadly", desc: "Sideloadly is a free tool to install IPA files on iPhone and iPad", href: "/sideloading", category: "Sideload", keywords: ["sideloadly", "ipa", "sideload", "install ipa"] },
   { title: "iOS Compatibility Checker", desc: "Check if your iPhone and iOS version can be jailbroken", href: "/jailbreak", category: "Jailbreak", keywords: ["jailbreak check", "can i jailbreak", "compatible", "jailbreak checker"] },
   { title: "Sideloading Guide — Complete", desc: "Everything you need to know about sideloading apps on iOS in 2026", href: "/sideloading", category: "Sideload", keywords: ["sideloading guide", "sideload ios", "trollstore", "sidestore"] },
+
+  // Device history
+  { title: "iPhone History — Every iPhone", desc: "Every iPhone ever made, from the 2007 original to today, with full specs", href: "/iphone-timeline", category: "History", keywords: ["iphone history", "every iphone", "timeline", "2007", "original iphone", "old iphones"] },
+  { title: "Apple Watch History", desc: "Every Apple Watch from the 2015 original to the latest Series and Ultra", href: "/watch-history", category: "History", keywords: ["apple watch history", "watch", "series", "ultra", "watch timeline", "watch se"] },
+  { title: "iPod History", desc: "Every iPod from the 2001 scroll-wheel original to the final iPod touch", href: "/ipod-history", category: "History", keywords: ["ipod", "ipod history", "classic", "nano", "shuffle", "ipod touch", "ipod timeline"] },
+
+  // Sideloading tools
+  { title: "LiveContainer — Unlimited Apps", desc: "Run unlimited sideloaded apps in one container, bypassing the 3-app limit", href: "/sideloading", category: "Sideload", keywords: ["livecontainer", "unlimited apps", "3 app limit", "container"] },
+  { title: "SideStore — No-Computer AltStore", desc: "Refresh sideloaded apps on-device with no always-on computer", href: "/sideloading", category: "Sideload", keywords: ["sidestore", "altstore fork", "no computer", "vpn refresh"] },
+  { title: "Feather — On-Device IPA Signer", desc: "Modern open-source IPA signer with iOS 26 support — an eSign replacement", href: "/sideloading", category: "Sideload", keywords: ["feather", "ipa signer", "esign", "ksign", "on-device signer"] },
+  { title: "Scarlet & FlekStore", desc: "On-device app stores that install IPAs without a computer", href: "/sideloading", category: "Sideload", keywords: ["scarlet", "flekstore", "on-device store", "ipa store"] },
+  { title: "TrollStore — Permanent Installs", desc: "Permanent, signing-free IPA installs on iOS 14.0 through 17.0", href: "/sideloading", category: "Sideload", keywords: ["trollstore", "permanent", "coretrust", "ios 17", "no refresh"] },
+  { title: "Apple Signing Status", desc: "Check which iOS versions Apple is currently signing before you restore", href: "/sideloading", category: "Sideload", keywords: ["signing status", "is ios signed", "downgrade", "restore", "ipsw", "blobs"] },
 
   // Community
   { title: "r/apple — Apple Community", desc: "The largest Apple community on Reddit with 3.2M members", href: "/community", category: "Community", keywords: ["reddit", "r/apple", "apple community", "apple reddit"] },
@@ -152,16 +165,19 @@ export default function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
   const QUICK_LINKS = [
     { label: "WWDC 2026", href: "/wwdc-2026" },
     { label: "Siri AI", href: "/siri-ai" },
-    { label: "iOS 27", href: "/ios-27" },
-    { label: "Parental Controls", href: "/parental-controls" },
+    { label: "Sideloading", href: "/sideloading" },
     { label: "Jailbreak", href: "/jailbreak" },
+    { label: "iPhone History", href: "/iphone-timeline" },
+    { label: "Watch History", href: "/watch-history" },
     { label: "iPhones", href: "/iphones" },
     { label: "Gallery", href: "/gallery" },
-    { label: "Community", href: "/community" },
   ];
 
   return (
     <div
+      role="dialog"
+      aria-modal="true"
+      aria-label="Search"
       style={{
         position: "fixed",
         inset: 0,
@@ -207,6 +223,12 @@ export default function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
           <input
             ref={inputRef}
             type="text"
+            aria-label="Search Everything Apple"
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
+            inputMode="search"
+            enterKeyHint="go"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search iPhones, WWDC topics, jailbreak tools..."

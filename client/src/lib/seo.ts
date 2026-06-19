@@ -36,6 +36,23 @@ const ROUTES: Record<string, Meta> = {
   "/jailbreak": { title: "Jailbreak Hub — What Works in 2026", description: "Current iOS jailbreak status and the tools that still work: palera1n, Dopamine, TrollStore, and how jailbreaking differs from sideloading." },
   "/parental-controls": { title: "Parental Controls Guide", description: "Set up Screen Time, Communication Safety, and family controls on iPhone and iPad." },
   "/community": { title: "Apple Reddit Community", description: "The best Apple, jailbreak and sideloading communities on Reddit, in one place." },
+  "/vision-pro": { title: "Apple Vision Pro", description: "Apple Vision Pro spatial computing: features, apps, and what visionOS can do." },
+  "/ipados": { title: "iPadOS", description: "What's new in iPadOS — multitasking, Apple Pencil, and supported iPads." },
+  "/best-apps": { title: "Best Apps 2026", description: "Curated picks for the best iPhone, iPad and Mac apps right now." },
+  "/rumors": { title: "Apple Rumors & Leaks", description: "Upcoming Apple products tracked from reliable sources and supply-chain leaks." },
+  "/apple-vs-android": { title: "Apple vs Android", description: "An honest, feature-by-feature comparison of iPhone and Android, with verdicts." },
+  "/buying-guide": { title: "iPhone Buying Guide", description: "Which iPhone should you buy? A clear guide by budget, size and needs." },
+  "/benchmarks": { title: "Apple Silicon Benchmarks", description: "Real-world performance benchmarks for Apple's A-series and M-series chips." },
+  "/photography": { title: "iPhone Photography", description: "Get pro results from iPhone cameras: modes, tips, and editing." },
+  "/health-fitness": { title: "Health & Fitness on Apple", description: "Apple Watch and iPhone health features, workouts, and Fitness+." },
+  "/gaming": { title: "Gaming on Apple", description: "Apple Arcade, console-class titles, controllers and emulation on iOS and Mac." },
+  "/smart-home": { title: "Apple Smart Home", description: "HomeKit, the Home app, Matter, and building an Apple-powered smart home." },
+  "/apple-services": { title: "Apple Services", description: "Apple Music, TV+, Arcade, Fitness+, iCloud+ and Apple One explained." },
+  "/apple-history": { title: "Apple History", description: "The complete history of Apple, from 1976 to today." },
+  "/tips-and-tricks": { title: "Apple Tips & Tricks", description: "Hidden features and power-user tips for iPhone, iPad and Mac." },
+  "/privacy-security": { title: "Apple Privacy & Security", description: "Protect your data and lock down your Apple devices." },
+  "/troubleshooting": { title: "Apple Troubleshooting", description: "Fix common iPhone, iPad and Mac problems fast." },
+  "/accessories": { title: "Best Apple Accessories", description: "Cases, chargers, MagSafe and must-have accessories for your Apple gear." },
 };
 
 function upsertMeta(selector: string, attr: "name" | "property", key: string, content: string) {
@@ -58,6 +75,17 @@ function upsertCanonical(href: string) {
   el.setAttribute("href", href);
 }
 
+function upsertJsonLd(id: string, data: unknown) {
+  let el = document.getElementById(id) as HTMLScriptElement | null;
+  if (!el) {
+    el = document.createElement("script");
+    el.type = "application/ld+json";
+    el.id = id;
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(data);
+}
+
 export function useSEO() {
   const [location] = useLocation();
   useEffect(() => {
@@ -72,6 +100,26 @@ export function useSEO() {
     upsertMeta('meta[name="twitter:title"]', "name", "twitter:title", fullTitle);
     upsertMeta('meta[name="twitter:description"]', "name", "twitter:description", meta.description);
     upsertCanonical(BASE + location);
+
+    // BreadcrumbList structured data (Home › Page)
+    const pageName = meta.title.split(" — ")[0];
+    const crumbs =
+      location === "/"
+        ? [{ name: "Home", item: BASE + "/" }]
+        : [
+            { name: "Home", item: BASE + "/" },
+            { name: pageName, item: BASE + location },
+          ];
+    upsertJsonLd("ld-breadcrumb", {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: crumbs.map((c, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: c.name,
+        item: c.item,
+      })),
+    });
 
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [location]);
