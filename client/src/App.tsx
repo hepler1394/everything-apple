@@ -8,6 +8,7 @@ import SearchOverlay from "./components/SearchOverlay";
 import WWDCBanner from "./components/WWDCBanner";
 import PageTransition from "./components/PageTransition";
 import { useState, useEffect, createContext, useContext, lazy, Suspense } from "react";
+import { useSEO } from "./lib/seo";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
@@ -129,6 +130,7 @@ function Router() {
 
 function AppInner() {
   const [searchOpen, setSearchOpen] = useState(false);
+  useSEO();
 
   // Cmd+K / Ctrl+K shortcut
   useEffect(() => {
@@ -144,16 +146,17 @@ function AppInner() {
 
   return (
     <SearchContext.Provider value={{ openSearch: () => setSearchOpen(true) }}>
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <WWDCBanner />
       <Navbar onSearchOpen={() => setSearchOpen(true)} />
-      <div style={{ paddingTop: "calc(44px + var(--banner-height, 0px))" }}>
+      <main id="main-content" style={{ paddingTop: "calc(44px + var(--banner-height, 0px))" }}>
         <PageTransition>
           <Suspense fallback={<PageLoader />}>
             <Router />
           </Suspense>
         </PageTransition>
         <Footer />
-      </div>
+      </main>
       <SearchOverlay isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
       <BackToTop />
       <ReadingProgress />

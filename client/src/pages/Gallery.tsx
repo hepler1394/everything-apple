@@ -387,6 +387,7 @@ export default function Gallery() {
                 src={img.src}
                 alt={img.title}
                 loading="lazy"
+                decoding="async"
                 style={{
                   position: "relative",
                   zIndex: 1,

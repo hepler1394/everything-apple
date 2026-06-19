@@ -105,7 +105,7 @@ export default function DeviceTimeline({ eyebrow, lineTop, lineBottom, blurb, mo
                     <span style={{ position: "absolute", top: "10px", right: "10px", fontSize: "9px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--brand)", background: "rgba(var(--brand-rgb),0.15)", padding: "2px 6px", borderRadius: "4px" }}>NEW</span>
                   )}
                   <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "120px", marginBottom: "12px" }}>
-                    {img && <img src={img} alt={m.name} loading="lazy" style={{ height: "118px", width: "auto", maxWidth: "100%", objectFit: "contain" }} />}
+                    {img && <img src={img} alt={`${m.name} — ${m.year}`} loading="lazy" decoding="async" style={{ height: "118px", width: "auto", maxWidth: "100%", objectFit: "contain" }} />}
                   </div>
                   <div style={{ fontSize: "13px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.015em", marginBottom: "4px" }}>{m.name}</div>
                   <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.4)" }}>{m.year}</div>
@@ -123,7 +123,7 @@ export default function DeviceTimeline({ eyebrow, lineTop, lineBottom, blurb, mo
             <FadeIn>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="device-detail-grid">
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "380px" }}>
-                  {imageFor(selected.id) && <img src={imageFor(selected.id) as string} alt={selected.name} style={{ height: "380px", width: "auto", maxWidth: "100%", objectFit: "contain" }} />}
+                  {imageFor(selected.id) && <img src={imageFor(selected.id) as string} alt={`${selected.name} — ${selected.year}`} loading="lazy" decoding="async" style={{ height: "380px", width: "auto", maxWidth: "100%", objectFit: "contain" }} />}
                 </div>
                 <div>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "8px" }}>

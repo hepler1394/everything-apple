@@ -42,8 +42,9 @@ function PhoneVisual({ model, size }: { model: PhoneModel; size: number }) {
     return (
       <img
         src={img}
-        alt={model.name}
+        alt={`${model.name} — ${model.year}`}
         loading="lazy"
+        decoding="async"
         style={{ height: `${size}px`, width: "auto", maxWidth: "100%", objectFit: "contain" }}
       />
     );

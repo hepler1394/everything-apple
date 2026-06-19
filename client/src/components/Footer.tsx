@@ -23,6 +23,8 @@ const footerColumns = [
     links: [
       { label: "All iPhones", href: "/iphones", external: false as const },
       { label: "iPhone History", href: "/iphone-timeline", external: false as const },
+      { label: "Apple Watch History", href: "/watch-history", external: false as const },
+      { label: "iPod History", href: "/ipod-history", external: false as const },
       { label: "Compare Models", href: "/compare", external: false as const },
       { label: "Apple Silicon", href: "/apple-silicon", external: false as const },
       { label: "Gallery", href: "/gallery", external: false as const },
@@ -53,14 +55,14 @@ const footerColumns = [
 
 export default function Footer() {
   const { theme } = useTheme();
-  const isDark = theme === "dark" || theme === "siri" || theme === "red";
+  const isDark = theme !== "light" && theme !== "blue";
 
   const bg = isDark ? "#1d1d1f" : "#f5f5f7";
   const divider = isDark ? "rgba(255,255,255,0.08)" : "#d2d2d7";
   const headingColor = isDark ? "rgba(255,255,255,0.85)" : "#1d1d1f";
   const linkColor = isDark ? "rgba(255,255,255,0.45)" : "#6e6e73";
   const linkHover = isDark ? "rgba(255,255,255,0.85)" : "#1d1d1f";
-  const accentHover = theme === "siri" ? "#bf5af2" : theme === "red" ? "#ff453a" : "var(--brand)";
+  const accentHover = "var(--brand)";
 
   return (
     <footer style={{ background: bg }}>

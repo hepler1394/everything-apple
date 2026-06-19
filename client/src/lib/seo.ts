@@ -1,0 +1,78 @@
+/* =============================================================
+   SEO engine — per-route <title>, meta description, canonical,
+   Open Graph + Twitter tags, and scroll-reset on navigation.
+   Driven by ROUTES; unknown paths fall back to DEFAULT.
+   ============================================================= */
+
+import { useEffect } from "react";
+import { useLocation } from "wouter";
+
+const SITE = "Everything Apple";
+const BASE = "https://everythingapple.vercel.app";
+
+interface Meta { title: string; description: string; }
+
+const DEFAULT: Meta = {
+  title: "Everything Apple — WWDC 2026, iOS 27, Siri AI, iPhones & More",
+  description: "Your #1 source for everything Apple: WWDC 2026, iOS 27, the new Siri AI, every iPhone, Apple Watch and iPod ever made, plus sideloading and jailbreak guides.",
+};
+
+const ROUTES: Record<string, Meta> = {
+  "/": DEFAULT,
+  "/wwdc-2026": { title: "WWDC 2026 — Full Coverage", description: "Everything announced at Apple's WWDC 2026 keynote: Siri AI, iOS 27, macOS Golden Gate, watchOS 12 and more." },
+  "/siri-ai": { title: "The New Siri AI", description: "A deep dive into Apple's all-new AI-powered Siri: capabilities, availability, privacy, and how it works across your devices." },
+  "/ios-27": { title: "iOS 27 — Features & Release", description: "Everything new in iOS 27: redesigned interface, features, supported devices, and the release timeline." },
+  "/macos-golden-gate": { title: "macOS Golden Gate", description: "A complete look at macOS Golden Gate — new features, design changes, and Mac compatibility." },
+  "/apple-intelligence": { title: "Apple Intelligence", description: "How Apple Intelligence brings on-device AI, Writing Tools, and Private Cloud Compute to iPhone, iPad and Mac." },
+  "/watchos-12": { title: "watchOS 12", description: "What's new in watchOS 12 — features, health tools, and supported Apple Watch models." },
+  "/iphones": { title: "iPhones — The Full Lineup", description: "Compare every current iPhone: specs, cameras, chips, displays, and prices." },
+  "/iphone-timeline": { title: "iPhone History — Every iPhone, 2007 to Today", description: "A complete visual encyclopedia of every iPhone ever made, from the 2007 original to the latest, with full specs." },
+  "/watch-history": { title: "Apple Watch History — Every Model", description: "Every Apple Watch from the 2015 original through the latest Series and Ultra, with specs and highlights." },
+  "/ipod-history": { title: "iPod History — Every iPod, 2001 to 2019", description: "The complete iPod story, from the original scroll-wheel iPod to the final iPod touch." },
+  "/compare": { title: "Compare iPhones", description: "Side-by-side iPhone comparisons across chips, cameras, displays, battery and price." },
+  "/apple-silicon": { title: "Apple Silicon — M-Series Chips", description: "Apple Silicon explained: the M-series chips powering Mac, iPad, and beyond." },
+  "/gallery": { title: "Photo Gallery", description: "Every iPhone, Apple Watch and iPod ever made, plus WWDC 2026, Siri AI and more — in one photo gallery." },
+  "/sideloading": { title: "Sideloading Hub — Tools, Apps & Signing Status", description: "The hub for everything sideloading on iOS: AltStore, SideStore, LiveContainer, legit app downloads, live Apple signing status, and the latest releases." },
+  "/jailbreak": { title: "Jailbreak Hub — What Works in 2026", description: "Current iOS jailbreak status and the tools that still work: palera1n, Dopamine, TrollStore, and how jailbreaking differs from sideloading." },
+  "/parental-controls": { title: "Parental Controls Guide", description: "Set up Screen Time, Communication Safety, and family controls on iPhone and iPad." },
+  "/community": { title: "Apple Reddit Community", description: "The best Apple, jailbreak and sideloading communities on Reddit, in one place." },
+};
+
+function upsertMeta(selector: string, attr: "name" | "property", key: string, content: string) {
+  let el = document.head.querySelector<HTMLMetaElement>(selector);
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attr, key);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
+function upsertCanonical(href: string) {
+  let el = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+  if (!el) {
+    el = document.createElement("link");
+    el.setAttribute("rel", "canonical");
+    document.head.appendChild(el);
+  }
+  el.setAttribute("href", href);
+}
+
+export function useSEO() {
+  const [location] = useLocation();
+  useEffect(() => {
+    const meta = ROUTES[location] ?? DEFAULT;
+    const fullTitle = meta.title.includes(SITE) ? meta.title : `${meta.title} — ${SITE}`;
+    document.title = fullTitle;
+
+    upsertMeta('meta[name="description"]', "name", "description", meta.description);
+    upsertMeta('meta[property="og:title"]', "property", "og:title", fullTitle);
+    upsertMeta('meta[property="og:description"]', "property", "og:description", meta.description);
+    upsertMeta('meta[property="og:url"]', "property", "og:url", BASE + location);
+    upsertMeta('meta[name="twitter:title"]', "name", "twitter:title", fullTitle);
+    upsertMeta('meta[name="twitter:description"]', "name", "twitter:description", meta.description);
+    upsertCanonical(BASE + location);
+
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [location]);
+}

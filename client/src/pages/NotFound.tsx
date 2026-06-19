@@ -1,49 +1,43 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle, Home } from "lucide-react";
-import { useLocation } from "wouter";
+import { Link } from "wouter";
+
+const quickLinks = [
+  { href: "/", label: "Home" },
+  { href: "/iphone-timeline", label: "iPhone History" },
+  { href: "/sideloading", label: "Sideloading Hub" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/wwdc-2026", label: "WWDC 2026" },
+];
 
 export default function NotFound() {
-  const [, setLocation] = useLocation();
-
-  const handleGoHome = () => {
-    setLocation("/");
-  };
-
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100">
-      <Card className="w-full max-w-lg mx-4 shadow-lg border-0 bg-white/80 backdrop-blur-sm">
-        <CardContent className="pt-8 pb-8 text-center">
-          <div className="flex justify-center mb-6">
-            <div className="relative">
-              <div className="absolute inset-0 bg-red-100 rounded-full animate-pulse" />
-              <AlertCircle className="relative h-16 w-16 text-red-500" />
-            </div>
-          </div>
-
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">404</h1>
-
-          <h2 className="text-xl font-semibold text-slate-700 mb-4">
-            Page Not Found
-          </h2>
-
-          <p className="text-slate-600 mb-8 leading-relaxed">
-            Sorry, the page you are looking for doesn't exist.
-            <br />
-            It may have been moved or deleted.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button
-              onClick={handleGoHome}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
-            >
-              <Home className="w-4 h-4 mr-2" />
-              Go Home
-            </Button>
-          </div>
-        </CardContent>
-      </Card>
+    <div style={{
+      minHeight: "70vh", display: "flex", flexDirection: "column",
+      alignItems: "center", justifyContent: "center", textAlign: "center",
+      padding: "60px 22px", background: "var(--background)", color: "var(--foreground)",
+    }}>
+      <div style={{
+        fontSize: "clamp(80px, 18vw, 160px)", fontWeight: 700, letterSpacing: "-0.05em",
+        lineHeight: 1, color: "var(--brand)",
+      }}>404</div>
+      <h1 style={{ fontSize: "clamp(24px, 4vw, 36px)", fontWeight: 700, letterSpacing: "-0.02em", margin: "12px 0 8px" }}>
+        This page took the day off.
+      </h1>
+      <p style={{ fontSize: "17px", color: "var(--muted-foreground)", maxWidth: "460px", lineHeight: 1.5, margin: "0 0 28px" }}>
+        We couldn't find what you were looking for. It may have moved — try one of these instead.
+      </p>
+      <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "center" }}>
+        {quickLinks.map((l, i) => (
+          <Link key={l.href} href={l.href}>
+            <span style={{
+              display: "inline-block", padding: "10px 20px", borderRadius: "980px",
+              fontSize: "14px", fontWeight: 600, cursor: "pointer", textDecoration: "none",
+              background: i === 0 ? "var(--brand)" : "transparent",
+              color: i === 0 ? "#fff" : "var(--foreground)",
+              border: i === 0 ? "none" : "1px solid var(--border)",
+            }}>{l.label}</span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

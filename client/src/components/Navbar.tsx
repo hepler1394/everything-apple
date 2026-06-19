@@ -70,6 +70,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
   return (
     <>
       <nav
+        aria-label="Primary"
         style={{
           position: "fixed",
           top: "var(--banner-height, 0px)",
@@ -151,6 +152,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
                 <Link key={link.href} href={link.href}>
                   <span
                     className="nav-item-link"
+                    aria-current={active ? "page" : undefined}
                     style={{
                       fontSize: "12px",
                       fontWeight: active ? 600 : 400,
