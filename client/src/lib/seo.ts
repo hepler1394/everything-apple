@@ -8,7 +8,7 @@ import { useEffect } from "react";
 import { useLocation } from "wouter";
 
 const SITE = "Everything Apple";
-const BASE = "https://everythingapple.vercel.app";
+const BASE = "https://everything-apple.vercel.app";
 
 interface Meta { title: string; description: string; }
 
