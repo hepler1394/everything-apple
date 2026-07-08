@@ -16,7 +16,9 @@ interface ThemeProviderProps {
   defaultTheme?: ColorTheme;
 }
 
-const THEME_KEY = "ea-color-theme";
+// Bumped to -v2 for the 2026 nostalgia relaunch so returning visitors, who may
+// have an older theme saved, get reset to the new "classic" default once.
+const THEME_KEY = "ea-color-theme-v2";
 
 export function ThemeProvider({
   children,

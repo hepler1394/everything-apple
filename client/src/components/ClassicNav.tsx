@@ -138,9 +138,10 @@ export default function ClassicNav({ onSearchOpen }: Props) {
             whiteSpace: "nowrap",
           }}
         >
-          {/* Wordmark — "Apple" in the thin, black early-2000s Apple Garamond lettering */}
-          <span style={{ display: "inline-flex", alignItems: "baseline", gap: "5px", flexShrink: 0 }}>
-            <span style={{ fontSize: "11px", fontWeight: 700, color: "#8a8b93", letterSpacing: "0.02em", textTransform: "uppercase" }}>
+          {/* Wordmark — rainbow "Everything" + thin black Apple-Garamond "Apple",
+              sliding in from the right on entry. */}
+          <span className="wordmark-slide" style={{ display: "inline-flex", alignItems: "baseline", gap: "6px", flexShrink: 0 }}>
+            <span className="rainbow-word" style={{ fontSize: "15px", fontWeight: 700, letterSpacing: "-0.01em" }}>
               Everything
             </span>
             <span

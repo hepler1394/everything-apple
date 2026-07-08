@@ -74,7 +74,7 @@ function Hero() {
             textShadow: classic ? "none" : "0 2px 30px rgba(0,0,0,0.5)",
           }}
         >
-          Everything <span className="apple-word">Apple</span>.
+          <span className="rainbow-word">Everything</span> <span className="apple-word">Apple</span><span className="blink-dot" aria-hidden>.</span>
         </h1>
 
         {/* The artifact — contained so it stays crisp, on a soft pedestal glow */}
@@ -102,24 +102,12 @@ function Hero() {
           A love letter to the company that started in a garage. Every device ever made, the ones they
           buried, and the tools to make iOS truly yours — sideloading and jailbreak.
         </p>
-        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" }}>
+        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center", alignItems: "center" }}>
           <Link href="/devices">
             <span className="btn-primary" style={{ fontSize: "16px", padding: "12px 24px" }}>Explore the archive</span>
           </Link>
           <Link href="/blog">
-            <span
-              className={classic ? "aqua-ghost" : undefined}
-              style={{
-                fontSize: "16px", fontWeight: 500, padding: "12px 20px",
-                borderRadius: "999px", textDecoration: "none", transition: "background 0.15s ease",
-                color: classic ? "#26324a" : "#fff",
-                border: classic ? "1px solid #b6becb" : "1px solid rgba(255,255,255,0.4)",
-              }}
-              onMouseEnter={(e) => { if (!classic) (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.12)"; }}
-              onMouseLeave={(e) => { if (!classic) (e.currentTarget as HTMLElement).style.background = "transparent"; }}
-            >
-              Latest Apple news
-            </span>
+            <span className="btn-primary" style={{ fontSize: "16px", padding: "12px 24px" }}>Latest Apple news</span>
           </Link>
         </div>
       </div>
