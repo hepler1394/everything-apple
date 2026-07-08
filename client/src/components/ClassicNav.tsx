@@ -138,8 +138,23 @@ export default function ClassicNav({ onSearchOpen }: Props) {
             whiteSpace: "nowrap",
           }}
         >
-          <span style={{ fontSize: "11px", fontWeight: 700, color: "#8a8b93", letterSpacing: "0.02em" }}>
-            Everything Apple
+          {/* Wordmark — "Apple" in the thin, black early-2000s Apple Garamond lettering */}
+          <span style={{ display: "inline-flex", alignItems: "baseline", gap: "5px", flexShrink: 0 }}>
+            <span style={{ fontSize: "11px", fontWeight: 700, color: "#8a8b93", letterSpacing: "0.02em", textTransform: "uppercase" }}>
+              Everything
+            </span>
+            <span
+              style={{
+                fontFamily: "var(--font-classic-serif, Garamond, 'Times New Roman', serif)",
+                fontSize: "19px",
+                fontWeight: 400,
+                color: "#000",
+                letterSpacing: "-0.02em",
+                lineHeight: 1,
+              }}
+            >
+              Apple
+            </span>
           </span>
           {secondaryNav.map((link) => (
             <Link key={link.href} href={link.href} aria-current={location === link.href ? "page" : undefined}>

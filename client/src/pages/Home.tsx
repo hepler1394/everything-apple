@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { iphoneImage, ipodImage, watchImage } from "@/lib/deviceImages";
 
-// The uploaded Apple-1 photograph, shown as a crisp centered museum piece
-// (the source is low-res, so it's a contained object on a stage, not full-bleed).
-const HERO_IMG = "/hero-apple1.jpg";
+// The uploaded Apple-1 photograph, background removed, shown as a crisp centered
+// museum piece floating on the stage (source is low-res, so it's contained).
+const HERO_IMG = "/hero-apple1.png";
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 function Hero() {
