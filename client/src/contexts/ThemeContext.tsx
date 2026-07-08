@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
-export type ColorTheme = "light" | "dark" | "blue" | "siri" | "red" | "matcha";
+export type ColorTheme = "classic" | "light" | "dark" | "blue" | "siri" | "red" | "matcha";
+
+const THEMES: ColorTheme[] = ["classic", "light", "dark", "blue", "siri", "red", "matcha"];
 
 interface ThemeContextType {
   theme: ColorTheme;
@@ -18,11 +20,11 @@ const THEME_KEY = "ea-color-theme";
 
 export function ThemeProvider({
   children,
-  defaultTheme = "dark",
+  defaultTheme = "classic",
 }: ThemeProviderProps) {
   const [theme, setThemeState] = useState<ColorTheme>(() => {
     const stored = localStorage.getItem(THEME_KEY);
-    if (stored && ["light", "dark", "blue", "siri", "red", "matcha"].includes(stored)) {
+    if (stored && THEMES.includes(stored as ColorTheme)) {
       return stored as ColorTheme;
     }
     return defaultTheme;
@@ -31,10 +33,12 @@ export function ThemeProvider({
   useEffect(() => {
     const root = document.documentElement;
     // Remove all theme classes
-    root.classList.remove("dark", "theme-blue", "theme-siri", "theme-red", "theme-matcha");
+    root.classList.remove("dark", "theme-classic", "theme-blue", "theme-siri", "theme-red", "theme-matcha");
 
     // Apply appropriate classes
-    if (theme === "dark") {
+    if (theme === "classic") {
+      root.classList.add("theme-classic");
+    } else if (theme === "dark") {
       root.classList.add("dark");
     } else if (theme === "blue") {
       root.classList.add("theme-blue");

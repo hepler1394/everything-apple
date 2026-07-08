@@ -10,26 +10,8 @@ import { Link, useLocation } from "wouter";
 import { Search, Menu, X } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 import ThemePicker from "./ThemePicker";
-
-const navLinks = [
-  { href: "/wwdc-2026", label: "WWDC 2026", isNew: true },
-  { href: "/siri-ai", label: "Siri AI", isNew: true },
-  { href: "/parental-controls", label: "Parental Controls" },
-  { href: "/ios-27", label: "iOS 27", isNew: true },
-  { href: "/macos-golden-gate", label: "macOS" },
-  { href: "/apple-intelligence", label: "Intelligence" },
-  { href: "/watchos-12", label: "watchOS 12" },
-  { href: "/compare", label: "Compare", isNew: true },
-  { href: "/iphones", label: "iPhones" },
-  { href: "/iphone-timeline", label: "iPhone History" },
-  { href: "/watch-history", label: "Watch History" },
-  { href: "/ipod-history", label: "iPod History" },
-  { href: "/apple-silicon", label: "Apple Silicon" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/sideloading", label: "Sideloading", isNew: true },
-  { href: "/jailbreak", label: "Jailbreak" },
-  { href: "/community", label: "Community" },
-];
+import ClassicNav from "./ClassicNav";
+import { allNav as navLinks } from "@/lib/navLinks";
 
 interface NavbarProps {
   onSearchOpen?: () => void;
@@ -41,7 +23,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
   const [location] = useLocation();
   const { theme } = useTheme();
 
-  const isDark = theme !== "light" && theme !== "blue";
+  const isDark = theme !== "light" && theme !== "blue" && theme !== "classic";
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -49,12 +31,23 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Publish the nav's height so <main> can offset itself for either variant.
+  useEffect(() => {
+    document.documentElement.style.setProperty("--nav-height", theme === "classic" ? "68px" : "44px");
+  }, [theme]);
+
   useEffect(() => { setMenuOpen(false); }, [location]);
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
+
+  // The classic (Aqua) theme uses its own brushed-metal tab bar.
+  // (Declared after all hooks so the Rules of Hooks are preserved.)
+  if (theme === "classic") {
+    return <ClassicNav onSearchOpen={onSearchOpen} />;
+  }
 
   const navBg = isDark
     ? (scrolled ? "rgba(0,0,0,0.92)" : "rgba(0,0,0,0.72)")
@@ -235,33 +228,6 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
 
             {/* Theme picker */}
             <ThemePicker />
-
-            {/* Buy CTA */}
-            <Link href="/iphones">
-              <span
-                aria-label="Buy — see iPhones"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  background: accentColor,
-                  color: "#ffffff",
-                  borderRadius: "999px",
-                  padding: "5px 14px",
-                  fontSize: "12px",
-                  fontWeight: 400,
-                  letterSpacing: "-0.01em",
-                  fontFamily: "var(--font-sf-pro-text, system-ui)",
-                  textDecoration: "none",
-                  transition: "background-color 0.1s ease, transform 0.1s ease",
-                  whiteSpace: "nowrap",
-                  flexShrink: 0,
-                }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.filter = "brightness(1.1)"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.filter = "brightness(1)"; }}
-              >
-                Buy
-              </span>
-            </Link>
 
             {/* Mobile hamburger */}
             <button

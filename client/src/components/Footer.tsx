@@ -8,37 +8,35 @@ import { useTheme } from "@/contexts/ThemeContext";
 
 const footerColumns = [
   {
-    heading: "WWDC 2026",
+    heading: "History & Archive",
     links: [
-      { label: "All Announcements", href: "/wwdc-2026", external: false as const },
-      { label: "Siri AI", href: "/siri-ai", external: false as const },
-      { label: "iOS 27", href: "/ios-27", external: false as const },
-      { label: "macOS Golden Gate", href: "/macos-golden-gate", external: false as const },
-      { label: "watchOS 12", href: "/watchos-12", external: false as const },
-      { label: "Apple Intelligence", href: "/apple-intelligence", external: false as const },
-    ],
-  },
-  {
-    heading: "iPhones",
-    links: [
-      { label: "All iPhones", href: "/iphones", external: false as const },
+      { label: "Apple History", href: "/apple-history", external: false as const },
+      { label: "The Device Archive", href: "/devices", external: false as const },
       { label: "iPhone History", href: "/iphone-timeline", external: false as const },
       { label: "Apple Watch History", href: "/watch-history", external: false as const },
       { label: "iPod History", href: "/ipod-history", external: false as const },
-      { label: "Compare Models", href: "/compare", external: false as const },
-      { label: "Apple Silicon", href: "/apple-silicon", external: false as const },
-      { label: "Gallery", href: "/gallery", external: false as const },
+      { label: "Photo Gallery", href: "/gallery", external: false as const },
     ],
   },
   {
-    heading: "Tools & Guides",
+    heading: "Sideload & Jailbreak",
     links: [
-      { label: "Sideloading Guide", href: "/sideloading", external: false as const },
-      { label: "Jailbreak Guide", href: "/jailbreak", external: false as const },
-      { label: "Parental Controls", href: "/parental-controls", external: false as const },
-      { label: "Reddit Community", href: "/community", external: false as const },
+      { label: "Sideloading Hub", href: "/sideloading", external: false as const },
+      { label: "Jailbreak Hub", href: "/jailbreak", external: false as const },
+      { label: "AltStore", href: "https://altstore.io", external: true },
+      { label: "SideStore", href: "https://sidestore.io", external: true },
       { label: "r/jailbreak", href: "https://reddit.com/r/jailbreak", external: true },
       { label: "r/sideloaded", href: "https://reddit.com/r/sideloaded", external: true },
+    ],
+  },
+  {
+    heading: "The Museum",
+    links: [
+      { label: "The Apple Graveyard", href: "/apple-graveyard", external: false as const },
+      { label: "News & Notes", href: "/blog", external: false as const },
+      { label: "Apple Silicon", href: "/apple-silicon", external: false as const },
+      { label: "Community", href: "/community", external: false as const },
+      { label: "Rumors", href: "/rumors", external: false as const },
     ],
   },
   {
@@ -48,14 +46,13 @@ const footerColumns = [
       { label: "9to5Mac", href: "https://9to5mac.com", external: true },
       { label: "MacRumors", href: "https://macrumors.com", external: true },
       { label: "Apple Developer", href: "https://developer.apple.com", external: true },
-      { label: "AltStore", href: "https://altstore.io", external: true },
     ],
   },
 ];
 
 export default function Footer() {
   const { theme } = useTheme();
-  const isDark = theme !== "light" && theme !== "blue";
+  const isDark = theme !== "light" && theme !== "blue" && theme !== "classic";
 
   const bg = isDark ? "#1d1d1f" : "#f5f5f7";
   const divider = isDark ? "rgba(255,255,255,0.08)" : "#d2d2d7";

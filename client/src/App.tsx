@@ -5,7 +5,6 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import SearchOverlay from "./components/SearchOverlay";
-import WWDCBanner from "./components/WWDCBanner";
 import PageTransition from "./components/PageTransition";
 import { useState, useEffect, createContext, useContext, lazy, Suspense } from "react";
 import { useSEO } from "./lib/seo";
@@ -63,6 +62,9 @@ const Education = lazy(() => import("./pages/Education"));
 const SmartHome = lazy(() => import("./pages/SmartHome"));
 const RepairDIY = lazy(() => import("./pages/RepairDIY"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
+const Blog = lazy(() => import("./pages/Blog"));
+const Devices = lazy(() => import("./pages/Devices"));
+const AppleGraveyard = lazy(() => import("./pages/AppleGraveyard"));
 
 // Global search context so any page can open the search overlay
 export const SearchContext = createContext<{ openSearch: () => void }>({ openSearch: () => {} });
@@ -77,6 +79,11 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/blog" component={Blog} />
+      <Route path="/news" component={Blog} />
+      <Route path="/devices" component={Devices} />
+      <Route path="/apple-graveyard" component={AppleGraveyard} />
+      <Route path="/graveyard" component={AppleGraveyard} />
       <Route path="/wwdc-2026" component={WWDC} />
       <Route path="/siri-ai" component={SiriAI} />
       <Route path="/parental-controls" component={ParentalControls} />
@@ -147,9 +154,8 @@ function AppInner() {
   return (
     <SearchContext.Provider value={{ openSearch: () => setSearchOpen(true) }}>
       <a href="#main-content" className="skip-link">Skip to content</a>
-      <WWDCBanner />
       <Navbar onSearchOpen={() => setSearchOpen(true)} />
-      <main id="main-content" style={{ paddingTop: "calc(44px + var(--banner-height, 0px))" }}>
+      <main id="main-content" style={{ paddingTop: "calc(var(--nav-height, 44px) + var(--banner-height, 0px))" }}>
         <PageTransition>
           <Suspense fallback={<PageLoader />}>
             <Router />
@@ -167,7 +173,7 @@ function AppInner() {
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark">
+      <ThemeProvider defaultTheme="classic">
         <TooltipProvider>
           <Toaster />
           <AppInner />

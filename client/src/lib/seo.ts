@@ -13,8 +13,8 @@ const BASE = "https://everything-apple.vercel.app";
 interface Meta { title: string; description: string; }
 
 const DEFAULT: Meta = {
-  title: "Everything Apple — WWDC 2026, iOS 27, Siri AI, iPhones & More",
-  description: "Your #1 source for everything Apple: WWDC 2026, iOS 27, the new Siri AI, every iPhone, Apple Watch and iPod ever made, plus sideloading and jailbreak guides.",
+  title: "Everything Apple — Apple History, the Device Archive, Sideloading & Jailbreak",
+  description: "Everything Apple in one place. The complete history of every Apple device, the Apple Graveyard of discontinued products, and the best iOS sideloading and jailbreak guides — for Apple nostalgia lovers.",
 };
 
 const ROUTES: Record<string, Meta> = {
@@ -48,7 +48,12 @@ const ROUTES: Record<string, Meta> = {
   "/gaming": { title: "Gaming on Apple", description: "Apple Arcade, console-class titles, controllers and emulation on iOS and Mac." },
   "/smart-home": { title: "Apple Smart Home", description: "HomeKit, the Home app, Matter, and building an Apple-powered smart home." },
   "/apple-services": { title: "Apple Services", description: "Apple Music, TV+, Arcade, Fitness+, iCloud+ and Apple One explained." },
-  "/apple-history": { title: "Apple History", description: "The complete history of Apple, from 1976 to today." },
+  "/apple-history": { title: "Apple History — 1976 to Today", description: "The complete history of Apple, from the garage-built Apple-1 in 1976 to today's lineup." },
+  "/blog": { title: "Apple News, Sideloading & Jailbreak", description: "The latest Apple news plus sideloading and jailbreak updates, refreshed daily — with deep dives on WWDC, the new Siri and iOS." },
+  "/news": { title: "Apple News, Sideloading & Jailbreak", description: "The latest Apple news plus sideloading and jailbreak updates, refreshed daily — with deep dives on WWDC, the new Siri and iOS." },
+  "/devices": { title: "The Apple Device Archive — Every Model Ever Made", description: "Browse every iPhone, iPod and Apple Watch ever made in one carousel — real photos, full specs, and the story of each generation." },
+  "/apple-graveyard": { title: "The Apple Graveyard — Every Discontinued Apple Product", description: "A memorial to every dead Apple product and feature: the Newton, iPod, Power Mac G4 Cube, 3D Touch, the headphone jack, and more." },
+  "/graveyard": { title: "The Apple Graveyard — Every Discontinued Apple Product", description: "A memorial to every dead Apple product and feature: the Newton, iPod, Power Mac G4 Cube, 3D Touch, the headphone jack, and more." },
   "/tips-and-tricks": { title: "Apple Tips & Tricks", description: "Hidden features and power-user tips for iPhone, iPad and Mac." },
   "/privacy-security": { title: "Apple Privacy & Security", description: "Protect your data and lock down your Apple devices." },
   "/troubleshooting": { title: "Apple Troubleshooting", description: "Fix common iPhone, iPad and Mac problems fast." },

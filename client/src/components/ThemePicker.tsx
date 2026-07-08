@@ -8,6 +8,18 @@ import { useTheme, type ColorTheme } from "@/contexts/ThemeContext";
 
 const themes: { id: ColorTheme; label: string; icon: React.ReactNode; desc: string }[] = [
   {
+    id: "classic",
+    label: "Classic",
+    desc: "Aqua · 2001",
+    icon: (
+      <div style={{
+        width: 18, height: 18, borderRadius: "50%",
+        background: "conic-gradient(#61bb46, #fdb827, #f5821f, #e03a3e, #963d97, #009ddc, #61bb46)",
+        border: "2px solid #d2d2d7",
+      }} />
+    ),
+  },
+  {
     id: "light",
     label: "Light",
     desc: "Apple Fog",
