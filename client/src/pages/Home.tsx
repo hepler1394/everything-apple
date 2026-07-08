@@ -9,8 +9,8 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { iphoneImage, ipodImage, watchImage } from "@/lib/deviceImages";
 
-// The uploaded Apple-1 photograph. Drop the file at client/public/hero-apple1.jpg.
-// Until it exists, a wood-toned fallback keeps the hero intentional.
+// The uploaded Apple-1 photograph, shown as a crisp centered museum piece
+// (the source is low-res, so it's a contained object on a stage, not full-bleed).
 const HERO_IMG = "/hero-apple1.jpg";
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
@@ -20,49 +20,67 @@ function Hero() {
     <section
       style={{
         position: "relative",
-        minHeight: "min(88vh, 760px)",
+        minHeight: "min(90vh, 820px)",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-end",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
         overflow: "hidden",
-        // Wood-toned fallback that evokes the Apple-1's hand-built case.
-        background: "radial-gradient(120% 120% at 50% 0%, #3a2416 0%, #24160d 55%, #140c07 100%)",
+        padding: "56px 22px 64px",
+        // Warm museum-stage backdrop that echoes the Apple-1's mahogany case.
+        background:
+          "radial-gradient(130% 100% at 50% 18%, #4a2f1c 0%, #2b1a10 48%, #140c07 100%)",
       }}
     >
-      {imgOk && (
-        <img
-          src={HERO_IMG}
-          alt="The Apple-1, hand-built in 1976 — where Everything Apple begins"
-          onError={() => setImgOk(false)}
-          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
-        />
-      )}
-      {/* Legibility gradient */}
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.35) 45%, rgba(0,0,0,0.15) 100%)" }} />
+      {/* Soft vignette + floor */}
+      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(80% 55% at 50% 42%, rgba(255,214,150,0.10) 0%, rgba(0,0,0,0) 60%)" }} />
 
-      <div style={{ position: "relative", zIndex: 2, width: "100%", maxWidth: "1120px", margin: "0 auto", padding: "0 22px 72px" }}>
-        <p style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(255,255,255,0.7)", marginBottom: "18px" }}>
+      <div style={{ position: "relative", zIndex: 2, width: "100%", maxWidth: "900px" }}>
+        <p style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(255,220,180,0.75)", marginBottom: "14px" }}>
           Est. 1976 · The Apple Museum
         </p>
         <h1
           style={{
             fontFamily: "var(--font-classic-serif, Georgia, serif)",
-            fontSize: "clamp(52px, 9vw, 108px)",
+            fontSize: "clamp(46px, 8vw, 96px)",
             fontWeight: 700,
             letterSpacing: "-0.02em",
             lineHeight: 0.98,
             color: "#fff",
-            margin: "0 0 20px",
+            margin: "0 0 28px",
             textShadow: "0 2px 30px rgba(0,0,0,0.5)",
           }}
         >
           Everything Apple.
         </h1>
-        <p style={{ fontSize: "clamp(17px, 2.2vw, 22px)", fontWeight: 400, lineHeight: 1.45, color: "rgba(255,255,255,0.85)", maxWidth: "620px", margin: "0 0 32px" }}>
+
+        {/* The artifact — contained so it stays crisp, on a soft pedestal glow */}
+        {imgOk && (
+          <div style={{ position: "relative", margin: "0 auto 30px", width: "fit-content" }}>
+            <img
+              src={HERO_IMG}
+              alt="The Apple-1, hand-built in 1976 — where Everything Apple begins"
+              onError={() => setImgOk(false)}
+              style={{
+                display: "block",
+                width: "min(440px, 82vw)",
+                height: "auto",
+                borderRadius: "8px",
+                filter: "drop-shadow(0 24px 48px rgba(0,0,0,0.6))",
+                imageRendering: "auto",
+              }}
+            />
+            {/* Reflection / pedestal */}
+            <div style={{ position: "absolute", left: "10%", right: "10%", bottom: "-26px", height: "40px", background: "radial-gradient(60% 100% at 50% 0%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 70%)", filter: "blur(4px)" }} />
+          </div>
+        )}
+
+        <p style={{ fontSize: "clamp(16px, 2vw, 21px)", fontWeight: 400, lineHeight: 1.45, color: "rgba(255,255,255,0.85)", maxWidth: "600px", margin: "0 auto 30px" }}>
           A love letter to the company that started in a garage. Every device ever made, the ones they
           buried, and the tools to make iOS truly yours — sideloading and jailbreak.
         </p>
-        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" }}>
           <Link href="/devices">
             <span className="btn-primary" style={{ fontSize: "16px", padding: "12px 24px" }}>Explore the archive</span>
           </Link>
