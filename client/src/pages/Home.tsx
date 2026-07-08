@@ -225,7 +225,7 @@ function ArchiveTeaser() {
               Every model, oldest to newest.
             </h2>
             <p style={{ fontSize: "17px", lineHeight: 1.5, color: "var(--muted-foreground, #707070)", margin: "0 0 22px" }}>
-              Scroll the full run of every iPhone, iPod and Apple Watch — real photography, real specs, the story of each generation.
+              Scroll the full run of every iPhone, iPad, Mac, Apple Watch and iPod — the story of each generation.
             </p>
             <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
               <Link href="/devices"><span className="btn-primary" style={{ padding: "11px 22px" }}>Browse the archive</span></Link>

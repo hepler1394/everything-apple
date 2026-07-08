@@ -42,7 +42,7 @@ export default function Jailbreak() {
   const jbNews = (feed?.redditReleases || []).filter((r) => r.sub.includes("jailbreak"));
 
   return (
-    <div style={{ background: "var(--background)", minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh" }}>
 
       {/* Hero */}
       <section style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--brand) 18%, var(--background)) 0%, var(--background) 100%)", padding: "80px 22px 56px", textAlign: "center" }}>
@@ -55,16 +55,19 @@ export default function Jailbreak() {
             What still works, what doesn't, and the tools that matter — kept current with the latest from r/jailbreak.
           </p>
           <div style={{ display: "flex", gap: "10px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="#tools" style={btnPrimary}>See the tools</a>
-            <Link href="/sideloading"><span style={btnGhost}>← Sideloading hub</span></Link>
+            <a href="#tools" className="btn-primary" style={btnPrimary}>See the tools</a>
+            <Link href="/sideloading"><span className="aqua-ghost" style={btnGhost}>← Sideloading hub</span></Link>
           </div>
         </div>
       </section>
 
       {/* Status banner */}
       <Section>
-        <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "22px", padding: "30px", display: "flex", gap: "20px", alignItems: "flex-start", flexWrap: "wrap" }}>
-          <div style={{ fontSize: "40px", lineHeight: 1 }} aria-hidden>🔒</div>
+        <div className="aqua-panel" style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "22px", padding: "30px", display: "flex", gap: "20px", alignItems: "flex-start", flexWrap: "wrap" }}>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ff453a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden style={{ flexShrink: 0 }}>
+            <rect x="4" y="11" width="16" height="10" rx="2" />
+            <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+          </svg>
           <div style={{ flex: 1, minWidth: "260px" }}>
             <div style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", color: "#ff453a", marginBottom: "8px" }}>iOS 26 — No jailbreak</div>
             <p style={{ fontSize: "16px", color: "var(--muted-foreground)", lineHeight: 1.6, margin: 0 }}>
@@ -127,7 +130,7 @@ export default function Jailbreak() {
 
       {/* TrollStore callout */}
       <Section bg="color-mix(in srgb, var(--brand) 6%, var(--background))">
-        <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "22px", padding: "30px" }}>
+        <div className="aqua-panel" style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "22px", padding: "30px" }}>
           <Eyebrow>The middle ground</Eyebrow>
           <h3 style={{ fontSize: "24px", fontWeight: 700, color: "var(--foreground)", margin: "0 0 10px" }}>TrollStore — permanent installs, no jailbreak</h3>
           <p style={{ fontSize: "16px", color: "var(--muted-foreground)", lineHeight: 1.6, margin: "0 0 14px" }}>
@@ -163,9 +166,10 @@ export default function Jailbreak() {
   );
 }
 
+// Base geometry only — .btn-primary supplies the fill (glossy Aqua in classic).
 const btnPrimary: React.CSSProperties = {
-  display: "inline-block", background: "var(--brand)", color: "#fff", borderRadius: "980px",
-  padding: "11px 22px", fontSize: "15px", fontWeight: 500, textDecoration: "none", border: "none", cursor: "pointer",
+  display: "inline-block", padding: "11px 22px", fontSize: "15px", fontWeight: 500,
+  textDecoration: "none", cursor: "pointer",
 };
 const btnGhost: React.CSSProperties = {
   display: "inline-block", background: "transparent", color: "var(--foreground)", border: "1px solid var(--border)",

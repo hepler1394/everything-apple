@@ -10,15 +10,28 @@ import DeviceCarousel, { type CarouselItem } from "@/components/DeviceCarousel";
 import { iPhoneModels } from "@/data/iphoneHistory";
 import { watchModels } from "@/data/watchHistory";
 import { ipodModels } from "@/data/ipodHistory";
+import { ipadModels } from "@/data/ipadHistory";
+import { macModels } from "@/data/macHistory";
 import { iphoneImage, watchImage, ipodImage } from "@/lib/deviceImages";
+import type { DeviceModel } from "@/data/deviceTypes";
 
-type FamilyId = "iphone" | "watch" | "ipod";
+type FamilyId = "iphone" | "ipad" | "mac" | "watch" | "ipod";
 
-const FAMILIES: { id: FamilyId; label: string; blurb: string; timeline: string }[] = [
+const FAMILIES: { id: FamilyId; label: string; blurb: string; timeline?: string }[] = [
   { id: "iphone", label: "iPhone", blurb: "Every iPhone from the 2007 original to today.", timeline: "/iphone-timeline" },
+  { id: "ipad", label: "iPad", blurb: "The tablet that stuck, 2010 to the M4 era." },
+  { id: "mac", label: "Mac", blurb: "From the 1984 Macintosh to Apple Silicon — the milestones." },
   { id: "watch", label: "Apple Watch", blurb: "The wrist, from Series 0 to the latest Ultra.", timeline: "/watch-history" },
   { id: "ipod", label: "iPod", blurb: "1,000 songs in your pocket — the whole run.", timeline: "/ipod-history" },
 ];
+
+// Families sharing the generic DeviceModel shape (specs array + priceLabel).
+const GENERIC: Record<Exclude<FamilyId, "iphone">, { models: DeviceModel[]; img: (id: string) => string | null }> = {
+  ipad: { models: ipadModels, img: () => null },
+  mac: { models: macModels, img: () => null },
+  watch: { models: watchModels, img: watchImage },
+  ipod: { models: ipodModels, img: ipodImage },
+};
 
 function buildItems(family: FamilyId): CarouselItem[] {
   if (family === "iphone") {
@@ -39,8 +52,7 @@ function buildItems(family: FamilyId): CarouselItem[] {
       ],
     }));
   }
-  const models = family === "watch" ? watchModels : ipodModels;
-  const img = family === "watch" ? watchImage : ipodImage;
+  const { models, img } = GENERIC[family];
   const last = models.length - 1;
   return models.map((m, i) => ({
     id: m.id,
@@ -126,13 +138,15 @@ export default function Devices() {
 
           <DeviceCarousel items={items} />
 
-          <div style={{ marginTop: "24px", textAlign: "center" }}>
-            <Link href={current.timeline}>
-              <span className="btn-primary" style={{ padding: "10px 22px" }}>
-                Open the full {current.label} timeline
-              </span>
-            </Link>
-          </div>
+          {current.timeline && (
+            <div style={{ marginTop: "24px", textAlign: "center" }}>
+              <Link href={current.timeline}>
+                <span className="btn-primary" style={{ padding: "10px 22px" }}>
+                  Open the full {current.label} timeline
+                </span>
+              </Link>
+            </div>
+          )}
         </div>
       </section>
 

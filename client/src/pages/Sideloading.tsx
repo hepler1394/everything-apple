@@ -102,7 +102,7 @@ export default function Sideloading() {
   const signedCount = feed.signing.filter((s) => s.signed).length;
 
   return (
-    <div style={{ background: "var(--background)", minHeight: "100vh" }}>
+    <div style={{ minHeight: "100vh" }}>
 
       {/* Hero */}
       <section style={{ background: "linear-gradient(180deg, color-mix(in srgb, var(--brand) 18%, var(--background)) 0%, var(--background) 100%)", padding: "80px 22px 56px", textAlign: "center" }}>
@@ -115,9 +115,9 @@ export default function Sideloading() {
             Every tool, every legit app, live Apple signing status, and the latest from r/sideloaded and r/jailbreak — updated every five days.
           </p>
           <div style={{ display: "flex", gap: "10px", justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="#tools" style={btnPrimary}>Browse tools</a>
-            <a href="#apps" style={btnGhost}>Download apps</a>
-            <Link href="/jailbreak"><span style={btnGhost}>Jailbreak hub →</span></Link>
+            <a href="#tools" className="btn-primary" style={btnPrimary}>Browse tools</a>
+            <a href="#apps" className="aqua-ghost" style={btnGhost}>Download apps</a>
+            <Link href="/jailbreak"><span className="aqua-ghost" style={btnGhost}>Jailbreak hub →</span></Link>
           </div>
         </div>
       </section>
@@ -191,7 +191,7 @@ export default function Sideloading() {
               </div>
               <span style={{ fontSize: "12px", color: "var(--muted-foreground)" }}>by {a.dev}</span>
               <span style={{ fontSize: "14px", color: "var(--muted-foreground)", lineHeight: 1.5, flex: 1 }}>{a.desc}</span>
-              <a href={a.url} target="_blank" rel="noopener noreferrer" style={{ ...btnPrimary, textAlign: "center", marginTop: "6px" }}>Get IPA</a>
+              <a href={a.url} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ ...btnPrimary, textAlign: "center", marginTop: "6px" }}>Get IPA</a>
             </div>
           ))}
         </div>
@@ -211,8 +211,8 @@ export default function Sideloading() {
               <span style={{ fontSize: "14px", color: "var(--muted-foreground)", lineHeight: 1.5, flex: 1 }}>{s.desc}</span>
               <code style={{ fontSize: "11px", color: "var(--muted-foreground)", wordBreak: "break-all", background: "rgba(127,127,127,0.1)", padding: "6px 8px", borderRadius: "8px" }}>{s.sourceUrl}</code>
               <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-                <a href={altstoreAddLink(s.sourceUrl)} style={{ ...btnPrimarySm }}>Add to AltStore</a>
-                <a href={sidestoreAddLink(s.sourceUrl)} style={{ ...btnGhostSm }}>SideStore</a>
+                <a href={altstoreAddLink(s.sourceUrl)} className="btn-primary" style={{ ...btnPrimarySm }}>Add to AltStore</a>
+                <a href={sidestoreAddLink(s.sourceUrl)} className="aqua-ghost" style={{ ...btnGhostSm }}>SideStore</a>
               </div>
             </div>
           ))}
@@ -267,7 +267,7 @@ export default function Sideloading() {
 
       {/* Disclaimer */}
       <Section>
-        <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "18px", padding: "24px 28px" }}>
+        <div className="aqua-panel" style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "18px", padding: "24px 28px" }}>
           <div style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", color: "var(--muted-foreground)", marginBottom: "10px" }}>A note on legality</div>
           <p style={{ fontSize: "14px", color: "var(--muted-foreground)", lineHeight: 1.6, margin: 0 }}>
             Everything Apple links only to official tools and open-source apps. We do not host or link to pirated, cracked, or tweaked copies of paid apps. Sideloading your own apps and open-source software is legitimate; redistributing or using cracked software is not. Some third-party stores (Scarlet, FlekStore) include tweaked apps in their own catalogs — use them responsibly and only with software you're licensed to run. Restoring or downgrading iOS is done at your own risk.
@@ -279,9 +279,10 @@ export default function Sideloading() {
   );
 }
 
+// Base geometry only — .btn-primary supplies the fill (glossy Aqua in classic).
 const btnPrimary: React.CSSProperties = {
-  display: "inline-block", background: "var(--brand)", color: "#fff", borderRadius: "980px",
-  padding: "11px 22px", fontSize: "15px", fontWeight: 500, textDecoration: "none", border: "none", cursor: "pointer",
+  display: "inline-block", padding: "11px 22px", fontSize: "15px", fontWeight: 500,
+  textDecoration: "none", cursor: "pointer",
 };
 const btnPrimarySm: React.CSSProperties = { ...btnPrimary, padding: "8px 16px", fontSize: "13px" };
 const btnGhost: React.CSSProperties = {
