@@ -8,6 +8,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { iphoneImage, ipodImage, watchImage } from "@/lib/deviceImages";
+import { useTheme } from "@/contexts/ThemeContext";
 
 // The uploaded Apple-1 photograph, background removed, shown as a crisp centered
 // museum piece floating on the stage (source is low-res, so it's contained).
@@ -15,7 +16,21 @@ const HERO_IMG = "/hero-apple1.png";
 
 // ─── Hero ─────────────────────────────────────────────────────────────────────
 function Hero() {
+  const { theme } = useTheme();
+  const classic = theme === "classic";
   const [imgOk, setImgOk] = useState(true);
+
+  // Classic = authentic light early-2000s Apple.com stage; other themes = dark museum.
+  const heroBg = classic
+    ? "linear-gradient(180deg, #fbfbf9 0%, #eceef1 100%)"
+    : "radial-gradient(130% 100% at 50% 18%, #4a2f1c 0%, #2b1a10 48%, #140c07 100%)";
+  const eyebrowColor = classic ? "#8a7a5c" : "rgba(255,220,180,0.75)";
+  const headColor = classic ? "#1d1d1f" : "#fff";
+  const subColor = classic ? "#5b5b62" : "rgba(255,255,255,0.85)";
+  const imgShadow = classic
+    ? "drop-shadow(0 16px 32px rgba(30,30,45,0.22))"
+    : "drop-shadow(0 24px 48px rgba(0,0,0,0.6))";
+
   return (
     <section
       style={{
@@ -28,16 +43,23 @@ function Hero() {
         textAlign: "center",
         overflow: "hidden",
         padding: "56px 22px 64px",
-        // Warm museum-stage backdrop that echoes the Apple-1's mahogany case.
-        background:
-          "radial-gradient(130% 100% at 50% 18%, #4a2f1c 0%, #2b1a10 48%, #140c07 100%)",
+        background: heroBg,
       }}
     >
-      {/* Soft vignette + floor */}
-      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(80% 55% at 50% 42%, rgba(255,214,150,0.10) 0%, rgba(0,0,0,0) 60%)" }} />
+      {/* Classic: fine pinstripe like the old apple.com. Dark themes: warm vignette. */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: classic
+            ? "repeating-linear-gradient(180deg, rgba(255,255,255,0.6) 0px, rgba(255,255,255,0.6) 1px, rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 3px)"
+            : "radial-gradient(80% 55% at 50% 42%, rgba(255,214,150,0.10) 0%, rgba(0,0,0,0) 60%)",
+          pointerEvents: "none",
+        }}
+      />
 
       <div style={{ position: "relative", zIndex: 2, width: "100%", maxWidth: "900px" }}>
-        <p style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(255,220,180,0.75)", marginBottom: "14px" }}>
+        <p style={{ fontSize: "12px", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: eyebrowColor, marginBottom: "14px" }}>
           Est. 1976 · The Apple Museum
         </p>
         <h1
@@ -47,12 +69,12 @@ function Hero() {
             fontWeight: 700,
             letterSpacing: "-0.02em",
             lineHeight: 0.98,
-            color: "#fff",
+            color: headColor,
             margin: "0 0 28px",
-            textShadow: "0 2px 30px rgba(0,0,0,0.5)",
+            textShadow: classic ? "none" : "0 2px 30px rgba(0,0,0,0.5)",
           }}
         >
-          Everything Apple.
+          Everything <span className="apple-word">Apple</span>.
         </h1>
 
         {/* The artifact — contained so it stays crisp, on a soft pedestal glow */}
@@ -67,16 +89,16 @@ function Hero() {
                 width: "min(440px, 82vw)",
                 height: "auto",
                 borderRadius: "8px",
-                filter: "drop-shadow(0 24px 48px rgba(0,0,0,0.6))",
+                filter: imgShadow,
                 imageRendering: "auto",
               }}
             />
             {/* Reflection / pedestal */}
-            <div style={{ position: "absolute", left: "10%", right: "10%", bottom: "-26px", height: "40px", background: "radial-gradient(60% 100% at 50% 0%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 70%)", filter: "blur(4px)" }} />
+            <div style={{ position: "absolute", left: "10%", right: "10%", bottom: "-26px", height: "40px", background: `radial-gradient(60% 100% at 50% 0%, rgba(0,0,0,${classic ? 0.22 : 0.55}) 0%, rgba(0,0,0,0) 70%)`, filter: "blur(4px)" }} />
           </div>
         )}
 
-        <p style={{ fontSize: "clamp(16px, 2vw, 21px)", fontWeight: 400, lineHeight: 1.45, color: "rgba(255,255,255,0.85)", maxWidth: "600px", margin: "0 auto 30px" }}>
+        <p style={{ fontSize: "clamp(16px, 2vw, 21px)", fontWeight: 400, lineHeight: 1.45, color: subColor, maxWidth: "600px", margin: "0 auto 30px" }}>
           A love letter to the company that started in a garage. Every device ever made, the ones they
           buried, and the tools to make iOS truly yours — sideloading and jailbreak.
         </p>
@@ -86,13 +108,15 @@ function Hero() {
           </Link>
           <Link href="/blog">
             <span
+              className={classic ? "aqua-ghost" : undefined}
               style={{
-                fontSize: "16px", fontWeight: 500, color: "#fff", padding: "12px 20px",
-                borderRadius: "999px", border: "1px solid rgba(255,255,255,0.4)", textDecoration: "none",
-                transition: "background 0.15s ease",
+                fontSize: "16px", fontWeight: 500, padding: "12px 20px",
+                borderRadius: "999px", textDecoration: "none", transition: "background 0.15s ease",
+                color: classic ? "#26324a" : "#fff",
+                border: classic ? "1px solid #b6becb" : "1px solid rgba(255,255,255,0.4)",
               }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.12)"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "transparent"; }}
+              onMouseEnter={(e) => { if (!classic) (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.12)"; }}
+              onMouseLeave={(e) => { if (!classic) (e.currentTarget as HTMLElement).style.background = "transparent"; }}
             >
               Latest Apple news
             </span>
@@ -260,7 +284,7 @@ function GraveyardTeaser() {
           Rest in peace
         </p>
         <h2 style={{ fontFamily: "var(--font-classic-serif, Georgia, serif)", fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 700, letterSpacing: "-0.01em", color: "#fff", margin: "0 0 16px" }}>
-          The Apple Graveyard
+          The <span className="apple-word">Apple</span> Graveyard
         </h2>
         <p style={{ fontSize: "18px", lineHeight: 1.5, color: "rgba(255,255,255,0.65)", maxWidth: "560px", margin: "0 auto 28px" }}>
           The Newton. The Cube. 3D Touch. The headphone jack. Every product and feature Cupertino quietly put in the ground.

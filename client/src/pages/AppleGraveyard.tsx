@@ -172,7 +172,7 @@ export default function AppleGraveyard() {
               color: INK,
             }}
           >
-            The Apple Graveyard
+            The <span className="apple-word">Apple</span> Graveyard
           </h1>
           <p
             style={{

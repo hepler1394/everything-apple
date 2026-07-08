@@ -89,7 +89,7 @@ export default function Devices() {
               margin: "0 0 16px",
             }}
           >
-            Every Apple device, in one place.
+            Every <span className="apple-word">Apple</span> device, in one place.
           </h1>
           <p style={{ fontSize: "18px", lineHeight: 1.5, color: "var(--muted-foreground, #707070)", maxWidth: "640px", margin: 0 }}>
             A living archive of the hardware that defined Apple. Pick a family and scroll through every model

@@ -111,7 +111,7 @@ export default function Blog() {
               margin: "0 0 16px",
             }}
           >
-            Apple news, sideloading &amp; jailbreak.
+            <span className="apple-word">Apple</span> news, sideloading &amp; jailbreak.
           </h1>
           <p style={{ fontSize: "18px", lineHeight: 1.5, color: "var(--muted-foreground, #707070)", maxWidth: "640px", margin: 0 }}>
             The headlines that matter for the Apple faithful — refreshed daily from 9to5Mac, MacRumors and the

@@ -412,6 +412,15 @@
 .aqua-subnav a:hover { text-decoration: underline; }
 .aqua-subnav a[aria-current="page"] { color: #14213d; font-weight: 700; }
 
+/* "Apple" wordmark — wherever the word Apple appears in big lettering, render it
+   in the thin early-2000s Apple Garamond style. Colour is inherited from the
+   heading (black on light sections, light on dark). No-op in other themes. */
+.theme-classic .apple-word {
+  font-family: var(--font-classic-serif, Garamond, "Times New Roman", serif) !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.015em;
+}
+
 /* Aqua glass panel — standout cards get the lickable OS X sheen in classic.
    In other themes it's a no-op (the element keeps its own card styling). */
 .theme-classic .aqua-panel {
