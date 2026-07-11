@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T13:15:09.817Z",
+  "updated": "2026-07-11T11:55:53.626Z",
   "sources": [
     "9to5Mac",
     "MacRumors",
@@ -9,6 +9,246 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "2099aa90",
+      "title": "WSJ: Apple avoided semiconductor tariffs last year thanks to Intel chip deal",
+      "link": "https://9to5mac.com/2026/07/10/wsj-apple-avoided-semiconductor-tariffs-last-year-thanks-to-intel-chip-deal/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-11T06:03:08.000Z",
+      "summary": "Intel in the U.S. is expected to make at least some upcoming Mac and iPhone chips for Apple. That recent development may have been the key to a major tariff exemption on…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/06/Sequoia-intel.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "56efcc6b",
+      "title": "Two Apple Stores in U.S. Are Moving Soon",
+      "link": "https://www.macrumors.com/2026/07/10/two-apple-stores-moving-soon/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-10T23:10:22.000Z",
+      "summary": "Two of Apple's retail stores in the U.S. will be relocating later this month, although they will only be a short distance from their existing locations. Apple Renaissance at…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Apple-Renaissance-at-Colony-Park-scaled.jpeg"
+    },
+    {
+      "id": "81f4d05f",
+      "title": "OpenAI responds to Apple’s trade secret theft lawsuit",
+      "link": "https://9to5mac.com/2026/07/10/openai-responds-to-apples-trade-secret-theft-lawsuit/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T22:56:45.000Z",
+      "summary": "OpenAI has issued a formal statement in response to Apple’s lawsuit accusing the company of trade secret theft. Read it below.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/chatgpt-app-icon-light.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "304de591",
+      "title": "Meta removes feature that let users generate AI images from public Instagram posts",
+      "link": "https://9to5mac.com/2026/07/10/meta-removes-feature-that-let-users-generate-ai-images-from-public-instagram-posts/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T22:37:05.000Z",
+      "summary": "Meta AI joined the image generation space this week . However, it did so with a controversial default setting that users found upsetting.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/meta-ai.webp?w=1600"
+    },
+    {
+      "id": "f55f1fc5",
+      "title": "iOS 27: What's New With the Mail App",
+      "link": "https://www.macrumors.com/guide/ios-27-mail/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-10T22:26:16.000Z",
+      "summary": "Apple's Mail app is getting some useful updates in iOS 27 , with Apple making big improvements to search and introducing new AI features. Search &zwnj;iOS 27&zwnj; has an…",
+      "image": "https://images.macrumors.com/article-new/2026/07/iOS-27-Mail-Feature.jpg"
+    },
+    {
+      "id": "3c2ea402",
+      "title": "Apple sues OpenAI for allegedly stealing hardware secrets",
+      "link": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets",
+      "source": "The Verge",
+      "category": "news",
+      "date": "2026-07-10T21:36:51.000Z",
+      "summary": "Apple has sued OpenAI, alleging that engineers stole Apple secrets to advance the AI startup's hardware plans. In its complaint, Apple says it uncovered \"a pattern of theft of…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK468_APPLE_ANTITRUST_CVIRGINIA_D.jpg?quality=90&strip=all&crop=0,0,100,100"
+    },
+    {
+      "id": "62db911c",
+      "title": "Apple sues OpenAI, accuses ex-employees of stealing trade secrets",
+      "link": "https://9to5mac.com/2026/07/10/apple-sues-openai-trade-secret-theft/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T20:29:43.000Z",
+      "summary": "Apple has filed a lawsuit against OpenAI today, accusing the company of trade secret theft. Specifically, Apple alleges that its former employees have stolen trade secrets “for…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/apple-openai.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "63a6e945",
+      "title": "9to5Mac Daily: July 10, 2026 – Mac shipments are growing, more",
+      "link": "https://9to5mac.com/2026/07/10/daily-july-10-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T20:25:50.000Z",
+      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "524d4a10",
+      "title": "Apple Sues OpenAI for Stealing Trade Secrets to Build AI Hardware",
+      "link": "https://www.macrumors.com/2026/07/10/apple-sues-openai/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-10T20:17:21.000Z",
+      "summary": "Apple today accused OpenAI of stealing Apple trade secrets and intellectual property in its effort to develop an AI hardware device . In a lawsuit filed with the Northern District…",
+      "image": "https://images.macrumors.com/article-new/2026/05/OpenAI-vs-Apple-Feature-scaled.jpg"
+    },
+    {
+      "id": "9d6d0e22",
+      "title": "US eases restrictions on Apple’s access to AI chips and data center equipment in the UAE",
+      "link": "https://9to5mac.com/2026/07/10/us-eases-restrictions-on-apples-access-to-ai-chips-and-data-center-equipment-in-the-uae/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T18:10:28.000Z",
+      "summary": "Apple is among eight U.S. companies now able to bring covered advanced-computing chips, servers, and other controlled technology into the UAE without applying for individual…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/Analysts-believe-Apple-taking-a-highly-unusual-step-to-double-Mac-user-base.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "bc065357",
+      "title": "HomeKit Weekly: The LNDU HK01W brings Apple Home Key and Wi-Fi to a budget-friendly lock",
+      "link": "https://9to5mac.com/2026/07/10/lndu-hk01w/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T18:07:00.000Z",
+      "summary": "My top feature for a smart lock for any Apple smart home person is Apple Home Key support. The ability to tap your iPhone or Apple Watch against your front door and walk right…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/bradley.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "9c622420",
+      "title": "Anthropic highlights Claude Code’s in-app browser on the desktop",
+      "link": "https://9to5mac.com/2026/07/10/anthropic-highlights-claude-codes-in-app-browser-on-the-desktop/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T17:54:21.000Z",
+      "summary": "Speaking of AI-powered browser capabilities on the Mac, Anthropic is highlighting Claude Code’s in-app browser on the desktop today.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/claude.webp?w=1600"
+    },
+    {
+      "id": "3a6644f4",
+      "title": "Spotify makes Release Radar more customizable with new listening filters",
+      "link": "https://9to5mac.com/2026/07/10/spotify-makes-release-radar-more-customizable-with-new-listening-filters/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T17:00:05.000Z",
+      "summary": "Spotify announced today a series of updates to Release Radar, giving listeners more control over the music recommendations they receive every Friday. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/spotify-release-radar.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "a5df8d7b",
+      "title": "Netflix among many companies showing interest in acquiring Letterboxd: report",
+      "link": "https://9to5mac.com/2026/07/10/netflix-among-many-companies-showing-interest-in-acquiring-letterboxd-report/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T16:34:40.000Z",
+      "summary": "Letterboxd, the popular hybrid movie tracking and social media app, is exploring a sale. A new report this week from Matt Belloni at Puck outlines the many companies that have…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/letterboxd-logo-v-neg-rgb-1000px.png?w=1600"
+    },
+    {
+      "id": "1f098ba3",
+      "title": "Apple Watch Accounts for 90% of AI Smartwatch Shipments",
+      "link": "https://www.macrumors.com/2026/07/10/apple-watch-accounts-for-most-ai-smartwatches/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-10T16:33:36.000Z",
+      "summary": "Apple accounted for roughly 90% of all Edge AI-capable smartwatch shipments in the first quarter of 2026, according to new data from Counterpoint Research . That dominance came as…",
+      "image": "https://images.macrumors.com/article-new/2025/09/series-11.jpg"
+    },
+    {
+      "id": "1aade808",
+      "title": "The MacRumors Show: Goodbye MacBook Pro? MacBook Ultra Is Coming",
+      "link": "https://www.macrumors.com/2026/07/10/the-macrumors-show-macbook-ultra-is-coming/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-10T16:12:24.000Z",
+      "summary": "On this week's episode of The MacRumors Show , we discuss the future of Apple's increasingly tangled high-end MacBook lineup, including the entry-level MacBook Pro and the rumored…",
+      "image": ""
+    },
+    {
+      "id": "2a2660c1",
+      "title": "Will you miss the Walkie-Talkie Apple Watch app when watchOS 27 drops push-to-talk?",
+      "link": "https://9to5mac.com/2026/07/10/will-you-miss-the-walkie-talkie-apple-watch-app-when-watchos-27-drops-push-to-talk/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T16:03:00.000Z",
+      "summary": "Apple Watch is losing its Walkie-Talkie app in this fall’s watchOS 27 software update. Will you miss the Apple Watch push-to-talk functionality?",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/walkie-talkie.webp?w=1600"
+    },
+    {
+      "id": "62e67c96",
+      "title": "Smart Home Diary: Sometimes the smart thing is to live with dumb switches",
+      "link": "https://9to5mac.com/2026/07/10/smart-home-diary-sometimes-the-smart-thing-is-to-live-with-dumb-switches/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T16:00:00.000Z",
+      "summary": "I think if we are honest with ourselves, most of us would admit that smart home tech falls into one of two categories. First, there is the genuinely useful. Second, there’s the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Doing-battle-with-Aqara-presence-sensors-and-HomeKit.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "461f0805",
+      "title": "Deals: AirPods, Apple Watch Ultra 3 $140 off, M5 MacBook Air, Bose speakers $150 off, Anker chargers, more",
+      "link": "https://9to5mac.com/2026/07/10/deals-airpods-apple-watch-ultra-3-m5-macbook-air/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T15:36:32.000Z",
+      "summary": "Joining the Amazon Anker summer sale loaded with MagSafe gear, chargers, and accessories from $8, as well as the ongoing AirPods 4 deal at nearly 25% off, we have some additional…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-MacBook-Air-speaker-AirPods.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d1c4cd44",
+      "title": "These are my favorite new Messages features in iOS 27 [Video]",
+      "link": "https://9to5mac.com/2026/07/10/these-are-my-favorite-new-messages-features-in-ios-27-video/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T15:28:17.000Z",
+      "summary": "If you were to just look at the Messages app in iOS 27, you might not think much has changed, but that is far from the truth. Under the hood, Apple has completely revamped the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/messages-27.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "c766893b",
+      "title": "iPhone 18 Pro Max Component Costs Could Rise Nearly $300",
+      "link": "https://www.macrumors.com/2026/07/10/iphone-18-pro-max-costs-could-rise/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-10T14:36:18.000Z",
+      "summary": "The bill of materials for the iPhone 18 Pro Max is expected to rise by nearly $300 compared to the iPhone 17 Pro Max, according to a new Counterpoint Research analysis. The…",
+      "image": "https://images.macrumors.com/article-new/2026/02/iPhone-18-Pro-Deep-Red-Feature.jpg"
+    },
+    {
+      "id": "363e1ceb",
+      "title": "With ChatGPT Atlas shutting down, here are the AI browsers people actually use",
+      "link": "https://9to5mac.com/2026/07/10/with-chatgpt-atlas-shutting-down-here-are-the-ai-browsers-people-actually-use/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T14:19:25.000Z",
+      "summary": "OpenAI is pulling the plug on its dedicated web browser, ChatGPT Atlas. Instead of investing in an AI browser with a small user base, the company is improving agentic web use…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/open-ai-browser.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "df18a14f",
+      "title": "$450 Off a MacBook Pro? The Best Apple Discounts You Can Grab Today",
+      "link": "https://www.macrumors.com/2026/07/10/best-apple-deals-of-the-week-7-10-26/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-10T14:10:04.000Z",
+      "summary": "There are a few solid low prices on Apple devices available this week, including $99 off the Apple Watch Ultra 3, $150 off the M5 MacBook Air, and $450 off the M5 Pro MacBook Pro.…",
+      "image": "https://images.macrumors.com/article-new/2025/03/Best-Apple-Deals-Feature-Shelf-Orange.jpg"
+    },
+    {
+      "id": "ea96b493",
+      "title": "iPhone Ultra battery details allegedly revealed in new leak",
+      "link": "https://9to5mac.com/2026/07/10/iphone-ultra-battery-details-allegedly-revealed-in-new-leak/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-10T13:23:34.000Z",
+      "summary": "As we approach the official announcement of Apple’s iPhone Ultra in September, more specs continue to leak. A new rumor today claims to reveal exactly how big the foldable…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iphone-ultra-concept-orange.jpg?quality=82&strip=all&w=1600"
+    },
     {
       "id": "fce7f785",
       "title": "Security Bite: Passkeys were supposed to have killed the password by now…",
@@ -60,254 +300,34 @@
       "image": "https://images.macrumors.com/article-new/2025/08/Apple-Foldable-Thumb.jpg"
     },
     {
-      "id": "9abe7d12",
-      "title": "Apple TV unveils August ‘Friday Night Baseball’ schedule",
-      "link": "https://9to5mac.com/2026/07/09/apple-tv-unveils-august-friday-night-baseball-schedule/",
+      "id": "6b08d716",
+      "title": "iOS 27 basically turns your iPhone and AirPods into an Apple Watch at the gym",
+      "link": "https://9to5mac.com/2026/07/10/ios-27-basically-turns-your-iphone-and-airpods-into-an-apple-watch-at-the-gym/",
       "source": "9to5Mac",
       "category": "news",
-      "date": "2026-07-10T00:36:58.000Z",
-      "summary": "Apple and Major League Baseball have announced the August schedule for Friday Night Baseball, with Apple TV set to stream another month of weekly doubleheaders featuring the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/03/friday-night-baseball-apple-tv-2026.jpg?quality=82&strip=all&w=1600"
+      "date": "2026-07-10T09:30:00.000Z",
+      "summary": "GymKit has been one of Apple Watch’s smartest fitness features since it launched in 2017. Tap your watch to compatible gym equipment, and Apple Watch shares your heart rate while…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/iOS-27-GymKit-iPhone.webp?w=1600"
     },
     {
-      "id": "535cd92a",
-      "title": "The best CarPlay tips and tricks",
-      "link": "https://9to5mac.com/2026/07/09/best-carplay-features-tips/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-10T00:03:44.000Z",
-      "summary": "For the majority of people, CarPlay is a must-have. Apple’s in-car experience provides a vastly superior infotainment experience than most options from carmakers. There’s quick…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2023/09/polestar-carplay-feature.jpeg?quality=82&strip=all&w=1600"
+      "id": "e033fa94",
+      "title": "Sideloadly not opening at startup",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1ut4w7a/sideloadly_not_opening_at_startup/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-11T00:16:40.000Z",
+      "summary": "Anyone know a fix for this? It used to launch at startup a long while ago- but doesn’t do it anymore. On Windows 11 btw. &#32; submitted by &#32; /u/Cl1ckk_ [link] &#32; [comments]",
+      "image": ""
     },
     {
-      "id": "0c929311",
-      "title": "Apple adds social media questions to App Store Connect age rating questionnaire",
-      "link": "https://9to5mac.com/2026/07/09/apple-adds-social-media-questions-to-app-store-connect-age-rating-questionnaire/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T23:42:01.000Z",
-      "summary": "Apple announced today that App Store Connect now includes new age rating questions for apps with social media features. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/05/apple-developer.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "4c6ef56c",
-      "title": "Netflix looking for engagement in live TV and bundles while Apple TV app integration is right there",
-      "link": "https://9to5mac.com/2026/07/09/netflix-looking-for-engagement-in-live-tv-and-bundles-while-apple-tv-app-integration-is-right-there/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T23:31:24.000Z",
-      "summary": "Netflix is reportedly struggling with a decline in engagement. Live TV and content bundles may be the solution, executives believe, according to a new report.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/netflix.webp?w=1600"
-    },
-    {
-      "id": "10f495ee",
-      "title": "iOS 27: 8+ New CarPlay Features",
-      "link": "https://www.macrumors.com/guide/ios-27-carplay/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-09T23:23:37.000Z",
-      "summary": "With iOS 27 , Apple is introducing several CarPlay features that will improve your in-car experience, both when you're driving and when you're idle in the car. From new video…",
-      "image": "https://images.macrumors.com/article-new/2026/07/8-CarPlay-Features-in-iOS-27-Feature.jpg"
-    },
-    {
-      "id": "643a57cd",
-      "title": "Apple TV Taking Over Comic-Con's Hall H for the First Time With Widow's Bay, Silo and More",
-      "link": "https://www.macrumors.com/2026/07/09/apple-tv-comic-con-2026/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-09T23:05:19.000Z",
-      "summary": "Apple TV is taking over Hall H at San Diego Comic-Con for the first time, according to Deadline . Apple is holding a two-hour panel on July 25 featuring stars from Widow's Bay,…",
-      "image": "https://images.macrumors.com/article-new/2026/04/New-Apple-TV-Logo.jpeg"
-    },
-    {
-      "id": "4ed0f938",
-      "title": "iOS 27 beta 3 changes, Siri AI on Apple Watch, macOS Golden Gate features",
-      "link": "https://9to5mac.com/2026/07/09/happy-hour-598/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T22:58:39.000Z",
-      "summary": "Benjamin and Chance talk about all the changes in iOS 27 beta 3, and Mayo’s first experience with Siri AI on Apple Watch. Also, we dive in to the details of what’s new in macOS…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/02/9to5mac-happy-hour-lead1.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "4648a79b",
-      "title": "iVANKY FusionDock Ultra: The Thunderbolt 5 dock built for Mac workflows",
-      "link": "https://9to5mac.com/2026/07/09/ivanky-fusiondock-ultra-thunderbolt-5-dock-built-for-mac-workflows/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T22:30:00.000Z",
-      "summary": "I have used plenty of docking stations over the years, and it seems the desktop dock market is as crowded as ever. I have tested smaller portable docks, to larger stationary docks…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/IVAnky-FI-1.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "7f4c8d19",
-      "title": "Anthropic Adds 'Reflect' Feature to Claude for Tracking Your Usage",
-      "link": "https://www.macrumors.com/2026/07/09/anthropic-reflect-claude-tracking/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-09T20:52:44.000Z",
-      "summary": "Anthropic is updating Claude with a new \"Reflect\" feature that's akin to Spotify Wrapped. Reflect lets you look back on how you've been using Claude, and for how long. Reflect…",
-      "image": "https://images.macrumors.com/article-new/2026/07/anthropic-claude-reflect.jpg"
-    },
-    {
-      "id": "d822d491",
-      "title": "Apple stops signing iOS versions for several older iPhones and iPads [U: Signing restored]",
-      "link": "https://9to5mac.com/2026/07/09/apple-stops-signing-ios-versions-for-several-older-iphones-and-ipads/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T19:34:12.000Z",
-      "summary": "Update July 9, 3:28 p.m. ET: As Aaron Perris noted on X , Apple has resumed signing the iOS versions listed in this article. As a result, owners of the affected legacy iPhone and…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2016/06/iphone-5c-colors.jpg?quality=82&strip=all&w=1344"
-    },
-    {
-      "id": "6fc810ec",
-      "title": "iPhone 18 Pro could bring three controversial design changes",
-      "link": "https://9to5mac.com/2026/07/09/iphone-18-pro-could-bring-three-controversial-design-changes/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T19:00:25.000Z",
-      "summary": "We’re just two months away from Apple announcing the iPhone 18 Pro. Rumors suggest Apple could have three design changes in store that could be unpopular among some iPhone 18 Pro…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/iphone-18-pro-mockup.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "5a8510c9",
-      "title": "OpenAI is discontinuing ChatGPT Atlas, its standalone desktop browser",
-      "link": "https://9to5mac.com/2026/07/09/openai-is-discontinuing-chatgpt-atlas-its-standalone-desktop-browser/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T18:56:07.000Z",
-      "summary": "ChatGPT Atlas, OpenAI’s standalone desktop browser, is being sunset in favor of the new ChatGPT desktop app.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/open-ai-browser.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "7d5499db",
-      "title": "Strava gets an Events tab with upcoming races, group runs, more",
-      "link": "https://9to5mac.com/2026/07/09/strava-gets-an-events-tab-with-upcoming-races-group-runs-more/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T18:35:46.000Z",
-      "summary": "Starting today, Strava users will have a new way to discover races, group runs, rides, and other local events directly in the app. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/strava-events.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "9a807c30",
-      "title": "OpenAI Debuts ChatGPT Work Agent and New GPT-5.6 Models",
-      "link": "https://www.macrumors.com/2026/07/09/openai-chatgpt-work/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-09T18:01:16.000Z",
-      "summary": "OpenAI today announced ChatGPT Work , a ChatGPT agent with built-in Codex that can complete tasks across web, mobile, and desktop using information from your apps. ChatGPT Work…",
-      "image": "https://images.macrumors.com/article-new/2026/07/openai-chatgpt-work.jpg"
-    },
-    {
-      "id": "228e50bb",
-      "title": "Last Call: M5 Pro MacBook Pro Remains at Pre-Hike Price But Not for Much Longer",
-      "link": "https://www.macrumors.com/2026/07/09/last-call-m5-macbook-pro/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-09T17:20:11.000Z",
-      "summary": "It's been a few weeks since Apple announced widespread price hikes across numerous product categories, including the 2026 MacBook Pro. These new prices are now reaching third…",
-      "image": "https://images.macrumors.com/article-new/2026/03/m5-pro-macbook-pro-launch-day.jpeg"
-    },
-    {
-      "id": "c0fe2433",
-      "title": "Apple TV sets major Comic-Con lineup with Silo, Dark Matter, Widow’s Bay, more",
-      "link": "https://9to5mac.com/2026/07/09/apple-tv-sets-major-comic-con-lineup-with-silo-dark-matter-widows-bay-more/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T17:06:26.000Z",
-      "summary": "Deadline reports that Apple TV will take over Hall H for the first time at this year’s San Diego Comic-Con International, with panels, screenings, and a Silo experience. Here are…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/apple-tv-intro-vibrant.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "5157251e",
-      "title": "Apple Exploring Ways to Run Much Larger AI Models Directly on iPhones",
-      "link": "https://www.macrumors.com/2026/07/09/apple-prismml-larger-on-device-ai-models/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-09T16:50:46.000Z",
-      "summary": "Apple has held meetings with PrismML about ways it could use the startup's technology to run much larger AI models directly on iPhones, according to The Information . The report…",
-      "image": "https://images.macrumors.com/article-new/2026/03/ios-27-siri-animation.jpg"
-    },
-    {
-      "id": "575966a0",
-      "title": "OpenAI unveils ChatGPT Work agent, GPT-5.6 models now available",
-      "link": "https://9to5mac.com/2026/07/09/openai-announcing-the-next-chapter-for-chatgpt-today-watch-here/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T16:45:22.000Z",
-      "summary": "OpenAI held its second livestream this week today at 10 am PT. The video teased that the company was “introducing the next chapter for ChatGPT” today. OpenAI has openly discussed…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/chatgpt-codex.webp?w=1600"
-    },
-    {
-      "id": "9fade6e0",
-      "title": "As TV Time prepares to shut down, JustWatch launches migration tool",
-      "link": "https://9to5mac.com/2026/07/09/as-tv-time-prepares-to-shut-down-justwatch-launches-migration-tool/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T16:38:59.000Z",
-      "summary": "TV Time users looking for a new movie and show-tracking app can now migrate their data to JustWatch ahead of next week’s shutdown. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/tvtime-justwatch.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "c4844c63",
-      "title": "Apple TV and MLB Release August Schedule for 'Friday Night Baseball'",
-      "link": "https://www.macrumors.com/2026/07/09/apple-tv-friday-night-baseball-august/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-09T16:13:48.000Z",
-      "summary": "Apple and MLB today released the August schedule for Apple TV's weekly Friday Night Baseball doubleheader. Friday Night Baseball games are included with an Apple TV streaming…",
-      "image": "https://images.macrumors.com/article-new/2026/06/Apple-Friday-Night-Baseball-2026.jpg"
-    },
-    {
-      "id": "c75f104d",
-      "title": "Apple's Manufacturing in India Gets Boost From New Tariff Exemptions",
-      "link": "https://www.macrumors.com/2026/07/09/apple-gets-boost-from-india-tariff-exemptions/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-09T16:06:08.000Z",
-      "summary": "Apple stands to gain from India's decision to eliminate import duties on a range of components used in smartphone manufacturing, in a move that could further lower costs for the…",
-      "image": "https://images.macrumors.com/article-new/2026/02/apple-education-hub-india-factory.jpg"
-    },
-    {
-      "id": "38a067e3",
-      "title": "iPhone 18 Pro Max component costs could jump by nearly $300, per report",
-      "link": "https://9to5mac.com/2026/07/09/iphone-18-pro-max-component-costs-could-jump-by-nearly-300-per-report/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T15:58:43.000Z",
-      "summary": "Counterpoint Research has published a new estimate of the iPhone 18 Pro Max’s bill of materials, suggesting that Apple’s next flagship could cost significantly more to build than…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/iphone-18-pro-colors-02.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "ad5cae9d",
-      "title": "9to5Mac Daily: July 9, 2026 – Apple’s DMA battle, Vision Pro rumors",
-      "link": "https://9to5mac.com/2026/07/09/daily-july-9-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T15:57:50.000Z",
-      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "5bcdb2a4",
-      "title": "Apple TV shares first trailer for ‘There’s No Place Like Home, Snoopy’",
-      "link": "https://9to5mac.com/2026/07/09/apple-tv-shares-first-trailer-for-theres-no-place-like-home-snoopy/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T15:17:27.000Z",
-      "summary": "Apple TV has published the first trailer of Snoopy’s next adventure , where he finds his doghouse after it is accidentally sold at a yard sale. Watch it below.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/snoopy-home.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "251785d8",
-      "title": "Deals: Apple Watch Ultra 3 $140 off, Apple TV 4K, iPhone 17 Pro/Max up to $449 off, charging gear, more",
-      "link": "https://9to5mac.com/2026/07/09/deals-apple-watch-ultra-3-apple-tv-iphone-17-pro/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-09T15:14:26.000Z",
-      "summary": "Alongside an ongoing deal on AirPods 4 and the rare discount on the black Apple Magic Mouse, today’s 9to5Toys Lunch Break is headlined by this Apple Watch Ultra 3 model dropping…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-iPhone-17-Pro-Apple-Watch-Ultra-3-Aple-TV-4K.jpg?quality=82&strip=all&w=1600"
+      "id": "81276cc1",
+      "title": "Why is this happening to my friend?",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1usvorp/why_is_this_happening_to_my_friend/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-10T18:19:19.000Z",
+      "summary": "Recently my friend has been trying to get a game (forsaken AR on gamejolt) by using sideloadly, and it keeps saying “&lt;no devices detected&gt;” even though it’s connected to his…",
+      "image": ""
     },
     {
       "id": "c178303e",
@@ -437,26 +457,6 @@
       "category": "sideloading",
       "date": "2026-07-03T16:20:46.000Z",
       "summary": "Hi! I’ll preface this by saying that this is my first time using sideloadly and this could very well be a dumb question, but maybe someone could help me I’ve moved it to the…",
-      "image": ""
-    },
-    {
-      "id": "a5ef0706",
-      "title": "Sideloading toji motion on khoivdn",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1ukx4ft/sideloading_toji_motion_on_khoivdn/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-01T20:30:04.000Z",
-      "summary": "Yall I sideloaded an apo called toji motion I granted access to all photos so I can edit Do they now have access to my photos??I deleted it obv but yeah &#32; submitted by &#32;…",
-      "image": ""
-    },
-    {
-      "id": "3106140d",
-      "title": "A tiny question (Apple Account)",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1ukvcvy/a_tiny_question_apple_account/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-01T19:24:29.000Z",
-      "summary": "Hello guys, I just wanted some help. Do you use a burner Apple account or your regular one ? Any help would be greatly appreciated. &#32; submitted by &#32; /u/harperant95 [link]…",
       "image": ""
     },
     {
