@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-11T11:55:53.626Z",
+  "updated": "2026-07-12T12:03:04.569Z",
   "sources": [
     "9to5Mac",
     "MacRumors",
@@ -9,6 +9,76 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "ecdb728f",
+      "title": "iPadOS 27 still needs simpler multitasking, here’s what I’d like to see",
+      "link": "https://9to5mac.com/2026/07/11/ipad-pro-needs-simpler-multitasking-with-ipados-27/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-11T21:05:01.000Z",
+      "summary": "Last year, Apple completely reinvented multitasking on the iPad, with the introduction of windowing in iPadOS 26. At first, this meant the removal of the simpler version of…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/ipad-pro-ipados-26-5-lock-screen.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "3b3354de",
+      "title": "Indie App Spotlight: ‘Route 25’ is an all-in-one social app for Pokémon collectors",
+      "link": "https://9to5mac.com/2026/07/11/indie-app-spotlight-route-25-is-an-all-in-one-social-app-for-pokemon-collectors/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-11T19:30:00.000Z",
+      "summary": "Welcome to Indie App Spotlight . This is a weekly 9to5Mac series where we showcase the latest apps in the indie app world. If you’re a developer and would like your app featured,…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Route25-app.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "508c2cf7",
+      "title": "SANDISK Phone Drive for iPhone is a great solution to low storage",
+      "link": "https://9to5mac.com/2026/07/11/sandisk-phone-drive-iphone-great-solution-to-low-storage/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-11T16:00:00.000Z",
+      "summary": "Each time we buy a phone, we have to decide which storage tier to go for, and that requires a judgment call – not just about how much storage we need today, but how much we are…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/SANDISK-Phone-Drive-for-iPhone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "71620681",
+      "title": "Score Summer-Ready Anker Accessories at Rare Low Prices This Weekend",
+      "link": "https://www.macrumors.com/2026/07/11/summer-anker-accessories-low-prices/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-11T14:54:45.000Z",
+      "summary": "Anker's Prime 3-in-1 Wireless Charging Station has dropped to $99.74 on Amazon, down from $149.99. This is one of Anker's newest accessories, and Amazon's sale today is a match of…",
+      "image": "https://images.macrumors.com/article-new/2026/07/anker-orange-summer.jpeg"
+    },
+    {
+      "id": "b8112dfc",
+      "title": "Apple weekend deals: AirPods, Apple Watch Series 11, MagSafe chargers, Magic Mouse, more",
+      "link": "https://9to5mac.com/2026/07/11/weekend-apple-deals-airpods/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-11T12:15:18.000Z",
+      "summary": "Updates 6/12: Amazon just dropped the price on Apple’s flagship AirPods Pro 3 down to the best we have tracked since Prime Day (just under $50 off ). Amazon is also now offering…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Weekend-Apple-deals.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "ee179057",
+      "title": "Apple @ Work: The M1 MacBook Air has the longest usable lifespan of any Apple laptop in history",
+      "link": "https://9to5mac.com/2026/07/11/the-m1-macbook-air-has-the-longest-usable-lifespan-of-any-apple-laptop-in-history/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-11T12:00:00.000Z",
+      "summary": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional-grade platform all the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/Tons-of-Apps-on-MacBook-Air.jpg.webp?w=1600"
+    },
+    {
+      "id": "2115f5ae",
+      "title": "OpenAI Responds After Being Sued by Apple",
+      "link": "https://www.macrumors.com/2026/07/11/openai-responds-after-apple-lawsuit/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-11T11:57:26.000Z",
+      "summary": "OpenAI has responded after being sued by Apple over alleged theft of the iPhone maker's trade secrets. \"We have no interest in other companies' trade secrets,\" said OpenAI…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Apple-OpenAI.jpg"
+    },
     {
       "id": "2099aa90",
       "title": "WSJ: Apple avoided semiconductor tariffs last year thanks to Intel chip deal",
@@ -98,6 +168,16 @@
       "date": "2026-07-10T20:17:21.000Z",
       "summary": "Apple today accused OpenAI of stealing Apple trade secrets and intellectual property in its effort to develop an AI hardware device . In a lawsuit filed with the Northern District…",
       "image": "https://images.macrumors.com/article-new/2026/05/OpenAI-vs-Apple-Feature-scaled.jpg"
+    },
+    {
+      "id": "70f63738",
+      "title": "Top Stories: 'iPhone Ultra' and Apple TV Rumors, iOS 27 Beta 3, and More",
+      "link": "https://www.macrumors.com/2026/07/11/top-stories-iphone-ultra-apple-tv-rumors/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-10T19:19:02.000Z",
+      "summary": "Apple's annual iPhone event is just two months away, but we're still not quite clear on when and in what quantities the new foldable \"iPhone Ultra\" will be available. It sounds…",
+      "image": "https://images.macrumors.com/article-new/2026/07/top-stories-2026-07-11.jpg"
     },
     {
       "id": "9d6d0e22",
@@ -230,84 +310,14 @@
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/open-ai-browser.jpg?quality=82&strip=all&w=1600"
     },
     {
-      "id": "df18a14f",
-      "title": "$450 Off a MacBook Pro? The Best Apple Discounts You Can Grab Today",
-      "link": "https://www.macrumors.com/2026/07/10/best-apple-deals-of-the-week-7-10-26/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-10T14:10:04.000Z",
-      "summary": "There are a few solid low prices on Apple devices available this week, including $99 off the Apple Watch Ultra 3, $150 off the M5 MacBook Air, and $450 off the M5 Pro MacBook Pro.…",
-      "image": "https://images.macrumors.com/article-new/2025/03/Best-Apple-Deals-Feature-Shelf-Orange.jpg"
-    },
-    {
-      "id": "ea96b493",
-      "title": "iPhone Ultra battery details allegedly revealed in new leak",
-      "link": "https://9to5mac.com/2026/07/10/iphone-ultra-battery-details-allegedly-revealed-in-new-leak/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-10T13:23:34.000Z",
-      "summary": "As we approach the official announcement of Apple’s iPhone Ultra in September, more specs continue to leak. A new rumor today claims to reveal exactly how big the foldable…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iphone-ultra-concept-orange.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "fce7f785",
-      "title": "Security Bite: Passkeys were supposed to have killed the password by now…",
-      "link": "https://9to5mac.com/2026/07/10/security-bite-passkeys-were-supposed-to-have-killed-the-password-by-now/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-10T12:31:16.000Z",
-      "summary": "9to5Mac Security Bite is exclusively brought to you by Mosyle, the only Apple Unified Platform . Making Apple devices work-ready and enterprise-safe is all we do. Our unique…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/sb-lg-27-dark.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "fc2891df",
-      "title": "EU: Facebook and Instagram's Infinite Scroll May Break Digital Rules",
-      "link": "https://www.macrumors.com/2026/07/10/eu-facebook-instagram-break-digital-rules/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-10T12:31:07.000Z",
-      "summary": "Meta has been warned by the European Commission that its endlessly scrolling Facebook and Instagram feeds may violate the EU's new Digital Services Act rules. In preliminary…",
-      "image": "https://images.macrumors.com/article-new/2026/01/meta-logo-new@2x.jpg"
-    },
-    {
-      "id": "182ac672",
-      "title": "OpenAI's ChatGPT Atlas Browser Is Shutting Down",
-      "link": "https://www.macrumors.com/2026/07/10/openais-chatgpt-atlas-browser-shutting-down/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-10T11:48:03.000Z",
-      "summary": "OpenAI says it is shuttering its ChatGPT Atlas browser. When it was released last October, the company said the agentic browser was designed around the question \"What if you could…",
-      "image": "https://images.macrumors.com/article-new/2025/10/chatgpt-atlas-browser.jpg"
-    },
-    {
-      "id": "f3fbb4d9",
-      "title": "Apple Reportedly Slashes iPhone 17 Demand Forecast Amid Rising Costs",
-      "link": "https://www.macrumors.com/2026/07/10/apple-slashes-iphone-17-demand-forecast/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-10T10:31:50.000Z",
-      "summary": "Apple has significantly lowered its demand expectations for the standard iPhone 17 because of rising hardware costs, a Chinese leaker claimed today. According to the account \"…",
-      "image": "https://images.macrumors.com/article-new/2025/09/iPhone-17-Review-Thumb-3.jpg"
-    },
-    {
-      "id": "0b6f48c6",
-      "title": "Foldable iPhone Ultra Battery Capacity Allegedly Registered by Supplier",
-      "link": "https://www.macrumors.com/2026/07/10/foldable-iphone-ultra-battery-capacity-revealed/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-10T09:42:27.000Z",
-      "summary": "Apple's battery supplier has registered two new battery cells believed to be destined for the company's rumored foldable iPhone, according to a prolific Chinese leaker. In a post…",
-      "image": "https://images.macrumors.com/article-new/2025/08/Apple-Foldable-Thumb.jpg"
-    },
-    {
-      "id": "6b08d716",
-      "title": "iOS 27 basically turns your iPhone and AirPods into an Apple Watch at the gym",
-      "link": "https://9to5mac.com/2026/07/10/ios-27-basically-turns-your-iphone-and-airpods-into-an-apple-watch-at-the-gym/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-10T09:30:00.000Z",
-      "summary": "GymKit has been one of Apple Watch’s smartest fitness features since it launched in 2017. Tap your watch to compatible gym equipment, and Apple Watch shares your heart rate while…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/iOS-27-GymKit-iPhone.webp?w=1600"
+      "id": "088e96f1",
+      "title": "Install failed Guru meditation",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1utk4pl/install_failed_guru_meditation/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-11T13:27:44.000Z",
+      "summary": "I keep getting the same pop up no matter what. Ive redownloaded the file on different browsers and then I&#39;m not getting further help outside of it. https://imgur.com/a/k4ufdLT…",
+      "image": ""
     },
     {
       "id": "e033fa94",
@@ -447,16 +457,6 @@
       "category": "sideloading",
       "date": "2026-07-04T02:46:07.000Z",
       "summary": "Every time, it&#39;s not a PC issue cuz my pc reads the USB, charges my phone, and gives me the option to look at phone files, yet Sideloadly can&#39;t detect my device after 3…",
-      "image": ""
-    },
-    {
-      "id": "b0efed36",
-      "title": "Unable to click start on iMac ?",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1umivyc/unable_to_click_start_on_imac/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-03T16:20:46.000Z",
-      "summary": "Hi! I’ll preface this by saying that this is my first time using sideloadly and this could very well be a dumb question, but maybe someone could help me I’ve moved it to the…",
       "image": ""
     },
     {
