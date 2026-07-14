@@ -16,7 +16,6 @@ export const primaryNav: NavLink[] = [
   { href: "/apple-graveyard", label: "Graveyard", isNew: true },
   { href: "/sideloading", label: "Sideloading" },
   { href: "/jailbreak", label: "Jailbreak" },
-  { href: "/gallery", label: "Gallery" },
 ];
 
 /** Secondary text links — the era-correct "Hot News · Hardware · …" sub-row. */

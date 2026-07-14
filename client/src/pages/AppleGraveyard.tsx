@@ -138,7 +138,7 @@ export default function AppleGraveyard() {
           <p className="t-eyebrow" style={{ marginBottom: 12 }}>Everything Apple</p>
           <h1>The <span className="apple-word">Apple</span> Graveyard</h1>
           <p className="graveyard-deck">
-            A visual memorial to the products, ports, features, and services Apple left behind—from the Newton MessagePad to Lightning. Select any artifact to open its story and archival gallery.
+            A visual memorial to the products, ports, features, and services Apple left behind—from the Newton MessagePad to Lightning. Select any artifact to open its story and archival images.
           </p>
           <p className="graveyard-stat">{graveyard.length} artifacts · {OLDEST_BIRTH}–{LATEST_DEATH} · Real archival imagery</p>
         </div>

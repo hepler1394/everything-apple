@@ -15,7 +15,6 @@ const footerColumns = [
       { label: "iPhone History", href: "/iphone-timeline", external: false as const },
       { label: "Apple Watch History", href: "/watch-history", external: false as const },
       { label: "iPod History", href: "/ipod-history", external: false as const },
-      { label: "Photo Gallery", href: "/gallery", external: false as const },
     ],
   },
   {

@@ -4,7 +4,6 @@ const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/iphone-timeline", label: "iPhone History" },
   { href: "/sideloading", label: "Sideloading Hub" },
-  { href: "/gallery", label: "Gallery" },
   { href: "/wwdc-2026", label: "WWDC 2026" },
 ];
 

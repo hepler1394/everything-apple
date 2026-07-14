@@ -51,7 +51,6 @@ export const SEARCH_INDEX: SearchEntry[] = [
   
   // Community
   { id: "community", title: "Community", description: "Apple community discussions and Reddit highlights", path: "/community", category: "Community", keywords: ["community", "reddit", "discussion", "forum", "talk"], priority: 5 },
-  { id: "gallery", title: "Gallery", description: "High-resolution Apple product images and wallpapers", path: "/gallery", category: "Media", keywords: ["gallery", "images", "photos", "wallpaper", "screenshot"], priority: 5 },
 ];
 
 // Search function with fuzzy matching and scoring

@@ -79,8 +79,6 @@ const SEARCH_INDEX = [
   { title: "r/jailbreak — Jailbreak Community", desc: "Jailbreak news, releases, and support — 600K members", href: "/community", category: "Community", keywords: ["reddit", "r/jailbreak", "jailbreak reddit", "jailbreak community"] },
   { title: "r/iphone — iPhone Community", desc: "iPhone tips, photos, and discussion — 1.8M members", href: "/community", category: "Community", keywords: ["reddit", "r/iphone", "iphone reddit", "iphone community"] },
 
-  // Gallery
-  { title: "Photo Gallery — WWDC 2026", desc: "170+ real photos from WWDC 2026, every iPhone, Siri AI, and more", href: "/gallery", category: "Gallery", keywords: ["gallery", "photos", "images", "wwdc photos", "iphone photos"] },
 ];
 
 type SearchResult = typeof SEARCH_INDEX[0];
@@ -170,7 +168,6 @@ export default function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
     { label: "iPhone History", href: "/iphone-timeline" },
     { label: "Watch History", href: "/watch-history" },
     { label: "iPhones", href: "/iphones" },
-    { label: "Gallery", href: "/gallery" },
   ];
 
   return (

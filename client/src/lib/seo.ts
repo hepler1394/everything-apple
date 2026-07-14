@@ -31,7 +31,6 @@ const ROUTES: Record<string, Meta> = {
   "/ipod-history": { title: "iPod History — Every iPod, 2001 to 2019", description: "The complete iPod story, from the original scroll-wheel iPod to the final iPod touch." },
   "/compare": { title: "Compare iPhones", description: "Side-by-side iPhone comparisons across chips, cameras, displays, battery and price." },
   "/apple-silicon": { title: "Apple Silicon — M-Series Chips", description: "Apple Silicon explained: the M-series chips powering Mac, iPad, and beyond." },
-  "/gallery": { title: "Photo Gallery", description: "Every iPhone, Apple Watch and iPod ever made, plus WWDC 2026, Siri AI and more — in one photo gallery." },
   "/sideloading": { title: "Sideloading Hub — Tools, Apps & Signing Status", description: "The hub for everything sideloading on iOS: AltStore, SideStore, LiveContainer, legit app downloads, live Apple signing status, and the latest releases." },
   "/jailbreak": { title: "Jailbreak Hub — What Works in 2026", description: "Current iOS jailbreak status and the tools that still work: palera1n, Dopamine, TrollStore, and how jailbreaking differs from sideloading." },
   "/parental-controls": { title: "Parental Controls Guide", description: "Set up Screen Time, Communication Safety, and family controls on iPhone and iPad." },
