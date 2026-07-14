@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { iphoneImage, ipodImage, watchImage } from "@/lib/deviceImages";
 import { useTheme } from "@/contexts/ThemeContext";
+import AppleTimeMachine from "@/components/AppleTimeMachine";
 
 // The uploaded Apple-1 photograph, background removed, shown as a crisp centered
 // museum piece floating on the stage (source is low-res, so it's contained).
@@ -307,6 +308,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <AppleTimeMachine />
       <BeyondTheAppStore />
       <LatestNewsTeaser />
       <ArchiveTeaser />
