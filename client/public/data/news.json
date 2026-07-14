@@ -1,14 +1,318 @@
 {
-  "updated": "2026-07-14T12:17:49.092Z",
+  "updated": "2026-07-14T17:29:31.488Z",
   "sources": [
+    "Apple",
+    "Apple Developer",
     "9to5Mac",
     "MacRumors",
     "The Verge",
+    "MacStories",
+    "AppleInsider",
     "r/sideloadly",
     "r/AltStore",
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "d9ff18ea",
+      "title": "Apple Watch among wearables exempted from EU user-replaceable battery rules",
+      "link": "https://9to5mac.com/2026/07/14/apple-watch-among-wearables-exempted-from-eu-user-replaceable-battery-rules/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T17:10:22.000Z",
+      "summary": "The European Commission has revised its battery regulations to exempt devices such as the Apple Watch from requirements that batteries be removable and replaceable by users. Here…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/Apple-Watch-Ultra.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "29ac329b",
+      "title": "iOS 27 compatibility: Does your iPhone support all the new features?",
+      "link": "https://9to5mac.com/2026/07/14/ios-27-new-features-compatibility/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T16:40:16.000Z",
+      "summary": "The iOS 27 public beta is now available, allowing iPhone users to try out the new features the update offers. Which iPhones are compatible with iOS 27? Here’s everything you need…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/ios-27.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d6ced433",
+      "title": "MacWhisper 14 launches with a new transcript editor, faster performance, more",
+      "link": "https://9to5mac.com/2026/07/14/macwhisper-14-launches-with-a-new-transcript-editor-faster-performance-more/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T16:32:56.000Z",
+      "summary": "One of the best AI-powered transcription apps for the Mac just got even better, with a major update that introduces a redesigned transcript editor and significant performance…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/macwhisper.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "64f22333",
+      "title": "Port-limited MacBook Neo gets color-matching hub & mouse",
+      "link": "https://appleinsider.com/articles/26/07/14/port-limited-macbook-neo-gets-color-matching-hub-mouse?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T16:01:34.000Z",
+      "summary": "Satechi is giving MacBook Neo owners a color-matching way to add the ports Apple left out with a new lineup of accessories built around the laptop's distinctive design. Satechi…",
+      "image": "https://photos5.appleinsider.com/gallery/68217-143872-IMG_8001-xl.jpg"
+    },
+    {
+      "id": "4afb08d3",
+      "title": "iPhone grows China market share as price hikes harm Android rivals",
+      "link": "https://appleinsider.com/articles/26/07/14/iphone-grows-china-market-share-as-price-hikes-harm-android-rivals?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T15:58:06.000Z",
+      "summary": "The iPhone is one of the bright points of China's contracting smartphone market, seeing massive growth thanks to not raising its prices. iPhone sales in China are doing better…",
+      "image": "https://photos5.appleinsider.com/gallery/68245-143873-64129-133513-64041-133293-62591-129824-62094-128638-iphoneaichina-xl-xl-xl-xl-xl.jpg"
+    },
+    {
+      "id": "13fa5a35",
+      "title": "Spotify now lets Premium users talk to a chatbot about music, podcasts, and books",
+      "link": "https://9to5mac.com/2026/07/14/spotify-now-lets-premium-users-chat-about-music-podcasts-and-books/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T15:54:06.000Z",
+      "summary": "Spotify will now let subscribers use natural language to ask questions about their listening history, make playback requests, and more. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/talk-to-spotify.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "577bad8d",
+      "title": "9to5Mac Daily: July 14, 2026 – M7 Ultra rumors, iPhone 18 costs",
+      "link": "https://9to5mac.com/2026/07/14/daily-july-14-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T15:42:27.000Z",
+      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "31ad587d",
+      "title": "Deals: AirPods Pro 3, Nomad 25W MagSafe stands, Find My cards, titanium/leather Apple Watch bands, more",
+      "link": "https://9to5mac.com/2026/07/14/deals-airpods-pro-3-nomad-25w-magsafe-find-my-card-bands/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T15:34:48.000Z",
+      "summary": "Alongside the ongoing $50 price drop on AirPods Pro 3, today’s 9to5Toys Lunch Break is headlined by the slate Titanium 46mm Apple Watch Series 11 at $184 off , $130 off the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-AirPods-Pro-3-Nomad-25W-Watch-band.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "b471e5e8",
+      "title": "Leaker says next iPad mini will stick with a 60Hz display despite OLED upgrade",
+      "link": "https://9to5mac.com/2026/07/14/leaker-says-next-ipad-mini-will-stick-with-a-60hz-display-despite-oled-upgrade/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T15:29:09.000Z",
+      "summary": "Apple’s next iPad mini might miss out on ProMotion despite switching to OLED, per leaker yeux1122. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/10/iPad-mini-6.webp?w=1200"
+    },
+    {
+      "id": "e609bc79",
+      "title": "Anthropic is giving teachers free access to premium Claude features, details here",
+      "link": "https://9to5mac.com/2026/07/14/anthropic-is-giving-teachers-free-access-to-premium-claude-features-details-here/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T15:27:43.000Z",
+      "summary": "Anthropic is providing free access to premium Claude AI features to K-12 teachers in the United States. The effort is part of a new Claude for Teachers initiative.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/claude.webp?w=1600"
+    },
+    {
+      "id": "2ec7058e",
+      "title": "Apple's 1TB M5 MacBook Pro falls to $1,849 in today's price war",
+      "link": "https://appleinsider.com/articles/26/07/14/apples-1tb-m5-macbook-pro-falls-to-1849-in-todays-price-war?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T15:27:36.000Z",
+      "summary": "A price war has erupted between Amazon and B&H, resulting in Apple's current M5 MacBook Pro 14-inch falling to $1,849. Plus save up to $500 on a multitude of models. Apple's M5…",
+      "image": "https://photos5.appleinsider.com/gallery/68244-143868-macbook-pro-1tb-1849-deal-xl.jpg"
+    },
+    {
+      "id": "fa905bee",
+      "title": "Madden NFL 27 Arcade Edition Coming to Apple Arcade",
+      "link": "https://www.macrumors.com/2026/07/14/madden-nfl-27-arcade-edition/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-14T14:57:28.000Z",
+      "summary": "Apple today announced that Madden NFL 27 Arcade Edition is coming to Apple Arcade on August 6, a new entry in the franchise built specifically for the service with a season-based…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Apple-Arcade-Madden-NFL-27-Arcade-Edition-1-scaled.jpg"
+    },
+    {
+      "id": "27c052e0",
+      "title": "These are the things you should do first after updating to iOS 27",
+      "link": "https://appleinsider.com/articles/26/07/14/these-are-the-things-you-should-do-first-after-updating-to-ios-27?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T14:56:59.000Z",
+      "summary": "Now that the public beta of iOS 27 is out, here are some of the best things you can do on your iPhone after updating. Welcome screen for iOS 27 This update is big, and there's a…",
+      "image": "https://photos5.appleinsider.com/gallery/68237-143863-Welcome-to-iOS-27-xl.jpg"
+    },
+    {
+      "id": "f1c4e97b",
+      "title": "Madden football returns to Mac for the first time in 19 years",
+      "link": "https://appleinsider.com/articles/26/07/14/madden-football-returns-to-mac-for-the-first-time-in-19-years?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T14:54:05.000Z",
+      "summary": "Madden finally returns to the Mac after a 19 year absence, making \"Madden NFL 27 Arcade Edition\" the biggest football release in Apple Arcade history. Madden NFL 27 Arcade Edition…",
+      "image": "https://photos5.appleinsider.com/gallery/68243-143865-IMG_7995-xl.jpg"
+    },
+    {
+      "id": "035bf40f",
+      "title": "IDC: Apple shipped nearly 1 in 5 smartphones in China in Q2 2026",
+      "link": "https://9to5mac.com/2026/07/14/idc-apple-shipped-nearly-1-in-5-smartphones-in-china-in-q2-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T14:47:03.000Z",
+      "summary": "In a report published today, IDC said Huawei and Apple were the only smartphone makers to record shipment growth in China during the second quarter of 2026. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/iphone-17-pro-cosmic-orange-cameras-angle.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "75f6964e",
+      "title": "Apple Arcade adding the ultimate NFL game just in time for football season",
+      "link": "https://9to5mac.com/2026/07/14/apple-arcade-adding-the-ultimate-nfl-game-just-in-time-for-football-season/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T14:29:11.000Z",
+      "summary": "Apple Arcade is scoring a major hit game in August. Apple announced today that the subscription game service will add Madden NFL 27 Arcade Edition on August 6. The new game will…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/madden27-1.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "0c7f02ee",
+      "title": "WhatsApp is building its own iCloud alternative for chat backups",
+      "link": "https://9to5mac.com/2026/07/14/whatsapp-is-building-its-own-icloud-alternative-for-chat-backups/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T14:25:34.000Z",
+      "summary": "References found in the latest TestFlight build of WhatsApp indicate that Meta is working on bringing an alternative to iCloud backups for iPhone users. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/whatsapp-macos.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "ef314130",
+      "title": "OLED iPad mini may still launch before the end of 2026",
+      "link": "https://appleinsider.com/articles/26/07/14/oled-ipad-mini-may-still-launch-before-the-end-of-2026?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T14:17:51.000Z",
+      "summary": "The OLED iPad mini rumors continue to flow, with a mass production claim pointing to a launch in late 2026 at the earliest. iPad mini, sans OLED The iPad Pro is the only iPad…",
+      "image": "https://photos5.appleinsider.com/gallery/68242-143856-66100-138522-65338-136668-IMG_1089-xl-xl-xl.jpg"
+    },
+    {
+      "id": "0084b64c",
+      "title": "Apple’s MacBook Pro overhaul is coming soon, with a big twist",
+      "link": "https://9to5mac.com/2026/07/14/apples-huge-macbook-pro-overhaul-is-coming-soon-heres-what-we-know/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T14:08:48.000Z",
+      "summary": "Apple just released a MacBook Pro update in March, but there’s more coming soon. Apple is expected to debut one of its biggest MacBook Pro updates ever as soon as later this year.…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/Apple-MacBook-Pro-14-in-front-251015.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "e46057f9",
+      "title": "Apple says Epic’s arguments against pausing the case are ‘wrong’",
+      "link": "https://9to5mac.com/2026/07/14/apple-says-epics-arguments-against-pausing-the-case-are-wrong/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T14:02:00.000Z",
+      "summary": "Apple has responded to Epic’s opposition to its request to pause lower-court proceedings over App Store commissions while the Supreme Court reviews part of the case. Here’s what…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/03/epic-app-store.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "34e6da8c",
+      "title": "Sam Altman didn’t need another lawsuit",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/965294/openai-apple-trade-secrets-lawsuit-sam-altman-ipo",
+      "source": "The Verge",
+      "category": "news",
+      "date": "2026-07-14T14:01:07.000Z",
+      "summary": "OpenAI has spent the better part of the year involved in lawsuit after lawsuit, including one from the world's richest man. But last Friday, the company was hit with one of the…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK201_SAM_ALTMAN_CVIRGINIA2D.jpg?quality=90&strip=all&crop=0,0,100,100"
+    },
+    {
+      "id": "2a891df3",
+      "title": "Madden NFL 27 Arcade Edition brings gridiron action to Apple Arcade on August 6",
+      "link": "https://www.apple.com/newsroom/2026/07/madden-nfl-27-arcade-edition-brings-gridiron-action-to-apple-arcade-on-august-6/",
+      "source": "Apple",
+      "category": "news",
+      "date": "2026-07-14T13:59:25.392Z",
+      "summary": "Apple Arcade grows its roster of hit sports games with the addition of EA SPORTS Madden NFL 27 and more coming in August.",
+      "image": ""
+    },
+    {
+      "id": "474e722f",
+      "title": "Glass production plans give the iPhone 20 redesign new credibility",
+      "link": "https://appleinsider.com/articles/26/07/14/glass-production-plans-give-the-iphone-20-redesign-new-credibility?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T13:57:18.000Z",
+      "summary": "Apple's iPhone 20 may be heading back toward a more glass-heavy design, with a Chinese leaker claiming that a production site has already been renovated for the expected 2027…",
+      "image": "https://photos5.appleinsider.com/gallery/68241-143854-iPhone-XX-xl.jpg"
+    },
+    {
+      "id": "f3fa3208",
+      "title": "Amazon Takes $30 Off AirPods 4 Models This Week",
+      "link": "https://www.macrumors.com/2026/07/14/amazon-30-off-airpods-4/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-14T13:53:56.000Z",
+      "summary": "Amazon today has the AirPods 4 available for $99.00 , down from $129.00. This is a second-best price on the AirPods 4, which is the base model without Active Noise Cancellation,…",
+      "image": "https://images.macrumors.com/article-new/2026/01/airpods-4-purple.jpeg"
+    },
+    {
+      "id": "f80f5fcc",
+      "title": "How the 20th anniversary iPhone will provide a ‘single slab of glass’ look",
+      "link": "https://9to5mac.com/2026/07/14/how-the-20th-anniversary-iphone-will-provide-a-single-slab-of-glass-look/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T13:39:34.000Z",
+      "summary": "Former Apple design chief Jony Ive always described his long-term vision for the iPhone design as “a single slab of glass.” Apple is believed to have retained that goal long after…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/05/iphone-20th-anniversary-color-wave.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "32bdba5f",
+      "title": "Apple TV’s next action-comedy starring Ryan Reynolds gets first trailer",
+      "link": "https://9to5mac.com/2026/07/14/apple-tvs-next-action-comedy-starring-ryan-reynolds-gets-first-trailer/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T13:19:14.000Z",
+      "summary": "Apple TV today released the first trailer for Mayday, an action comedy starring Ryan Reynolds ( Deadpool ) and Kenneth Branagh ( Oppenheimer ). Watch it below.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/mayday-ryan-reynolds-kenneth-branagh.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "de36ce8a",
+      "title": "Top watchOS 27 features that will enhance your Apple Watch",
+      "link": "https://9to5mac.com/2026/07/14/top-watchos-27-features-that-will-enhance-your-apple-watch/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T13:00:00.000Z",
+      "summary": "watchOS 27 packs some great new features. Here’s everything new coming to Apple Watch this fall so far.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/watchOS-27-lead.webp?w=1600"
+    },
+    {
+      "id": "b06fd842",
+      "title": "Factories Now Ready for iPhone 20's Glass Redesign, Leaker Claims",
+      "link": "https://www.macrumors.com/2026/07/14/factories-ready-for-iphone-20-glass-redesign/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-14T12:47:03.000Z",
+      "summary": "Facilities in Apple's supply chain have finished renovations ahead of \"iPhone 20\" production, according to a Weibo leaker who says Apple's 20th-anniversary iPhone will move to an…",
+      "image": "https://images.macrumors.com/article-new/2025/02/iphone-air-camera.jpg"
+    },
+    {
+      "id": "82a0a79a",
+      "title": "Upcoming OLED iPad Mini Allegedly Uses 60Hz 8.4-Inch Display Panel",
+      "link": "https://www.macrumors.com/2026/07/14/oled-ipad-mini-has-60hz-display/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-14T12:36:48.000Z",
+      "summary": "Apple is allegedly using a 60Hz 8.4-inch display panel in the upcoming OLED iPad mini, which is expected to be released later this year. The information comes courtesy of a…",
+      "image": "https://images.macrumors.com/article-new/2026/06/OLED-iPad-mini-Feature.jpg"
+    },
+    {
+      "id": "56a5bc1a",
+      "title": "Owning an Apple Home: The broken promise of Matter",
+      "link": "https://appleinsider.com/articles/26/07/14/owning-an-apple-home-the-broken-promise-of-matter?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T12:20:22.000Z",
+      "summary": "Matter has been a unifying standard for the smart home, but it hasn't saved users from the complexity it promised to fix. Here's where it falls short in some of our Apple Homes .…",
+      "image": "https://photos5.appleinsider.com/gallery/68204-143795-IMG_4768-xl.jpg"
+    },
     {
       "id": "de9dd27c",
       "title": "Your X feed might now work, as platform finally does what everyone wanted",
@@ -80,6 +384,16 @@
       "image": "https://images.macrumors.com/article-new/2022/06/Chrome-Feature-22.jpg"
     },
     {
+      "id": "a5c48820",
+      "title": "How to use Playlist Playground to build Apple Music playlists in seconds",
+      "link": "https://appleinsider.com/inside/apple-music/tips/how-to-use-playlist-playground-to-build-apple-music-playlists-in-seconds?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T03:01:08.000Z",
+      "summary": "Apple Music's Playlist Playground feature is a prompt-driven playlist builder that's fast and surprisingly useful, even if it won't replace a carefully curated mix. Here's how to…",
+      "image": "https://photos5.appleinsider.com/gallery/67145-141166-IMG_6374-xl.jpg"
+    },
+    {
       "id": "161d5b89",
       "title": "iOS 27 public beta: Should you install it on your iPhone?",
       "link": "https://9to5mac.com/2026/07/13/ios-27-public-beta-should-you-install-it-on-your-iphone/",
@@ -130,6 +444,46 @@
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/Two-reasons-helped-Apple-hit-record-iPhone-sales-and-theyre-both-orange.jpg?quality=82&strip=all&w=1600"
     },
     {
+      "id": "61635929",
+      "title": "visionOS 27: The MacStories Beta Preview",
+      "link": "https://www.macstories.net/stories/visionos-27-the-macstories-beta-preview/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-13T21:45:03.000Z",
+      "summary": "Summer beta season is in full swing, with a new wave of testers coming aboard via the just-released public OS 27 betas. While visionOS hasn’t ever been included in the public beta…",
+      "image": "https://cdn.macstories.net/images/uploads/2026/07/06/img-0641-1783361878556-9d3d7b6def.jpg"
+    },
+    {
+      "id": "a4514260",
+      "title": "watchOS 27: The MacStories Public Beta Preview",
+      "link": "https://www.macstories.net/stories/watchos-27-the-macstories-public-beta-preview/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-13T21:26:21.000Z",
+      "summary": "Last year was a quiet year for watchOS. While Apple took a couple of swings with Workout Buddy, Smart Stack hints, and a redesign of the Workout app, watchOS 26 was a scaled-back…",
+      "image": "https://cdn.macstories.net/images/uploads/2026/07/13/header-1783958753084-e88a0ba338.png"
+    },
+    {
+      "id": "069679c9",
+      "title": "iPadOS 27 & macOS 27 beta 3 get a version 2 update as public betas drop",
+      "link": "https://appleinsider.com/articles/26/07/13/ipados-27-macos-27-beta-3-get-a-version-2-update-as-public-betas-drop?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-13T21:07:42.000Z",
+      "summary": "It's OS 27 public beta day, but developer beta testers are getting a little treat with version 2 updates of the iPadOS 27 and macOS 27 beta 3 release. iPadOS 27 beta 3 got a…",
+      "image": "https://photos5.appleinsider.com/gallery/68240-143846-iPadOS-27-Siri-AI-search-Spotlight-xl.jpg"
+    },
+    {
+      "id": "c50c36ce",
+      "title": "macOS 27 Golden Gate: The MacStories Public Beta Preview",
+      "link": "https://www.macstories.net/stories/macos-27-golden-gate-the-macstories-public-beta-preview/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-13T21:05:46.000Z",
+      "summary": "The public beta of macOS 27 Golden Gate is out today, and I’m sure many of you are wondering whether to take the plunge and give it a try in advance of its official fall release.…",
+      "image": "https://cdn.macstories.net/images/uploads/2026/07/13/shortcut-upload-1783877279024-de3510b035-1783938718821-5986e03224.png"
+    },
+    {
       "id": "952ed3d9",
       "title": "9to5Mac Daily: July 13, 2026 – Apple sues OpenAI",
       "link": "https://9to5mac.com/2026/07/13/daily-july-13-2026/",
@@ -150,6 +504,16 @@
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-tv-homepod-mini-siri-ai.jpg?quality=82&strip=all&w=1600"
     },
     {
+      "id": "13d31078",
+      "title": "First iOS 27, macOS 27 public betas are out, but you should still be careful",
+      "link": "https://appleinsider.com/articles/26/07/13/first-ios-27-macos-27-public-betas-are-out-but-you-should-still-be-careful?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-13T20:53:56.000Z",
+      "summary": "Apple has finally introduced its first public betas of iOS 27 , iPadOS 27, macOS 27 Golden Gate, watchOS 27, visionOS 27, and tvOS 27. iOS 27's public beta is here Since the…",
+      "image": "https://photos5.appleinsider.com/gallery/68169-143845-iOS-27-public-beta-xl.jpg"
+    },
+    {
       "id": "fefb3848",
       "title": "Apple rolls out revised beta 3 builds for iPadOS 27 and macOS 27 Golden Gate",
       "link": "https://9to5mac.com/2026/07/13/apple-rolls-out-revised-beta-3-builds-for-ipados-27-and-macos-27-golden-gate/",
@@ -158,6 +522,26 @@
       "date": "2026-07-13T20:53:31.000Z",
       "summary": "In addition to releasing the first wave of public betas for iPadOS 27 and macOS 27 Golden Gate , Apple also rolled out revised versions of these developer betas with new build…",
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/macOS-27-b3.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "a29979fb",
+      "title": "Siri AI and Apple’s Trickle-Up Strategy",
+      "link": "https://www.macstories.net/stories/siri-ai-and-apples-trickle-up-strategy/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-13T20:47:28.000Z",
+      "summary": "The new Siri AI in iOS 27. In the month that I’ve been using iOS 27 (launching in public beta today) and the new Siri AI, I’ve come to a few conclusions: Siri AI is a much better…",
+      "image": "https://cdn.macstories.net/images/uploads/2026/07/12/shortcut-upload-1783899093120-6300cd5704.png"
+    },
+    {
+      "id": "0c0a5000",
+      "title": "Product managers & engineering leads are the target for Apple's next WWDC26 session",
+      "link": "https://appleinsider.com/articles/26/07/13/product-managers-engineering-leads-are-the-target-for-apples-next-wwdc26-session?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-13T20:46:07.000Z",
+      "summary": "On July 23, 2026, Apple will hold an online session that is meant to cater to leadership roles and how they might implement Siri AI features, Liquid Glass, and more in their apps…",
+      "image": "https://photos5.appleinsider.com/gallery/68239-143844-Siri-AI-xl.jpg"
     },
     {
       "id": "6cd9ea67",
@@ -230,233 +614,243 @@
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-3.jpg?quality=90&strip=all&crop=0,0,100,100"
     },
     {
-      "id": "2cd1cb31",
-      "title": "The macOS 27 public beta is worth it just for the Liquid Glass tweaks",
-      "link": "https://www.theverge.com/tech/964701/apple-macos-27-golden-gate-public-beta-impressions-liquid-glass-siri-ai",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-13T20:43:15.000Z",
-      "summary": "The macOS 27 Golden Gate public beta is here, and anyone with an M-series Mac now has easier access to test-drive Apple's latest changes - including a more subdued Liquid Glass…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Screenshot-2026-07-13-at-11.41.37-AM.png?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "b06aa287",
-      "title": "First macOS Golden Gate Public Beta Now Available",
-      "link": "https://www.macrumors.com/2026/07/13/macos-golden-gate-public-beta/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-13T20:41:27.000Z",
-      "summary": "Apple today released the first public beta of macOS Golden Gate , expanding the macOS 27 beta test to non-developers. You can sign up to test the update on Apple's beta website ,…",
-      "image": "https://images.macrumors.com/article-new/2026/07/macOS-27-Public-Beta-Feature.jpg"
-    },
-    {
-      "id": "b38f781b",
-      "title": "iOS 27 and iPadOS 27 Now Available to Public Beta Testers",
-      "link": "https://www.macrumors.com/2026/07/13/apple-seeds-ios-27-public-beta-1/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-13T20:39:18.000Z",
-      "summary": "Apple today released the first public betas of iOS 27 and iPadOS 27 , allowing anyone with a compatible device to download and test the new software. Subscribe to the MacRumors…",
+      "id": "7aed3a48",
+      "title": "Sideloadly-daemon leaks hung processes until macOS can't spawn anything",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uvhw53/sideloadlydaemon_leaks_hung_processes_until_macos/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-13T17:20:04.000Z",
+      "summary": "-- Note, this is a overview that fable wrote for me, after it found why my mac blocks itself every few days -- Would be nice if this can be adressed? Environment: Sideloadly 0.60,…",
       "image": ""
     },
     {
-      "id": "1cb3747b",
-      "title": "tvOS 27 and watchOS 27 Now Available to Public Beta Testers",
-      "link": "https://www.macrumors.com/2026/07/13/watchos-27-public-beta/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-13T20:38:00.000Z",
-      "summary": "Apple today released the first public betas of tvOS 27 and watchOS 27 , giving Apple TV and Apple Watch users a chance to try the new software ahead of its fall launch. There's…",
-      "image": "https://images.macrumors.com/article-new/2026/06/watchos-27.jpg"
-    },
-    {
-      "id": "f638dc38",
-      "title": "MagSafe Monday: The Twelve South PowerBug clears your counters",
-      "link": "https://9to5mac.com/2026/07/13/twelve-south-powerbug/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T20:00:00.000Z",
-      "summary": "The only issue with MagSafe is that a cable is still required at home. Twelve South decided to tackle this problem by eliminating the cable entirely and taking cues from the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/PowerBug-2.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "c3756a1f",
-      "title": "Apple TV has a packed lineup of sports premieres coming soon",
-      "link": "https://9to5mac.com/2026/07/13/apple-tv-has-a-packed-lineup-of-sports-premieres-coming-soon/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T19:20:37.000Z",
-      "summary": "From pickleball and college basketball to the return of Ted Lasso, Apple TV has a packed sports lineup arriving over the next few weeks. Here’s everything coming up.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/appl-tv-icon-26.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "e409acd6",
-      "title": "macOS Sonoma 14.8.8 and macOS Sequoia 15.7.8 get a rare fifth RC [U: Public]",
-      "link": "https://9to5mac.com/2026/07/13/macos-sonoma-14-8-8-and-macos-sequoia-15-7-8-get-a-rare-fifth-rc/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T18:01:13.000Z",
-      "summary": "Update, 5:38 p.m. ET: Apple has also rolled the public RCs for macOS Sonoma 14.8.8 and macOS Sequoia 15.7.8. Continuing a lengthy list of release candidates for macOS Sonoma…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/09/macOS-Sequoia-hero.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "04bd59d5",
-      "title": "Apple rolls beta 5 for iPadOS 26.6, tvOS 26.6, watchOS 26.6, more [U: Public betas]",
-      "link": "https://9to5mac.com/2026/07/13/apple-rolls-beta-5-for-ipados-26-6-tvos-26-6-watchos-26-6-more/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T17:37:30.000Z",
-      "summary": "Update, 5:36 p.m. ET: Apple has also rolled out iPadOS 26.6 public beta 5 (23G5065a), and tvOS 26.6 public beta 5 (23L5766a). Developers can now install the fifth beta for several…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iPadOS-26.6-b5.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "027b29e2",
-      "title": "AltServer.ServerError 2013",
-      "link": "https://old.reddit.com/r/AltStore/comments/1uw4w35/altserverservererror_2013/",
-      "source": "r/AltStore",
+      "id": "68df824d",
+      "title": "Sideloadly v0.60 (Windows 11) silently fails to sideload anything on any IPA, every time.",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uuae4g/sideloadly_v060_windows_11_silently_fails_to/",
+      "source": "r/sideloadly",
       "category": "sideloading",
-      "date": "2026-07-14T10:32:38.000Z",
-      "summary": "Using the iCloud app from the Microsoft Store, I encounter this error, whereas if I download it from the web, the issue does not occur. How can I fix this? &#32; submitted by…",
-      "image": "https://preview.redd.it/v8lkm2nqa6dh1.jpeg?width=640&crop=smart&auto=webp&s=21b98e2299d6caa97ac5d115a2a46a544b00a2ef"
-    },
-    {
-      "id": "364ec666",
-      "title": "A bit help with the set up i guess.",
-      "link": "https://old.reddit.com/r/AltStore/comments/1uvnlul/a_bit_help_with_the_set_up_i_guess/",
-      "source": "r/AltStore",
-      "category": "sideloading",
-      "date": "2026-07-13T20:41:42.000Z",
-      "summary": "After entering my apple ID and password, I get this error message with error code ( -22411 ). Looked into the AltStore page at their error codes but couldn’t find the one I got.…",
-      "image": "https://preview.redd.it/cz1t0mmh62dh1.jpeg?width=640&crop=smart&auto=webp&s=34666111b4b71f18483982fd561c3caf757ca144"
-    },
-    {
-      "id": "8aea141b",
-      "title": "Does someone knows if there’s a way to install IPA or other apps on Altstore PAL without all that certificate stuff?",
-      "link": "https://old.reddit.com/r/AltStore/comments/1uv0qwy/does_someone_knows_if_theres_a_way_to_install_ipa/",
-      "source": "r/AltStore",
-      "category": "sideloading",
-      "date": "2026-07-13T03:58:54.000Z",
-      "summary": "can someone help me with that pls &#32; submitted by &#32; /u/Vivi14072012 [link] &#32; [comments]",
+      "date": "2026-07-12T09:09:58.000Z",
+      "summary": "Hey everybody, I&#39;m in despair due to sideloadly for the first time in years failing miserably : I load .ipa, it authenticates fine (real traffic to Apple&#39;s servers,…",
       "image": ""
     },
     {
-      "id": "7d50ea0b",
-      "title": "Can’t Install the AppDB app",
-      "link": "https://old.reddit.com/r/AltStore/comments/1uutpbt/cant_install_the_appdb_app/",
-      "source": "r/AltStore",
+      "id": "088e96f1",
+      "title": "Install failed Guru meditation",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1utk4pl/install_failed_guru_meditation/",
+      "source": "r/sideloadly",
       "category": "sideloading",
-      "date": "2026-07-12T22:34:26.000Z",
-      "summary": "I don’t know what I’m doing wrong, I clicked the install app button and put in a @bellsouth.net, and 2 @gmail.com emails but nothing shows up except a download for a text file…",
+      "date": "2026-07-11T13:27:44.000Z",
+      "summary": "I keep getting the same pop up no matter what. Ive redownloaded the file on different browsers and then I&#39;m not getting further help outside of it. https://imgur.com/a/k4ufdLT…",
       "image": ""
     },
     {
-      "id": "48a3dcc0",
-      "title": "Expire or not expire, that is the question",
-      "link": "https://old.reddit.com/r/AltStore/comments/1uua1i5/expire_or_not_expire_that_is_the_question/",
-      "source": "r/AltStore",
+      "id": "e033fa94",
+      "title": "Sideloadly not opening at startup",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1ut4w7a/sideloadly_not_opening_at_startup/",
+      "source": "r/sideloadly",
       "category": "sideloading",
-      "date": "2026-07-12T08:49:19.000Z",
-      "summary": "&#32; submitted by &#32; /u/Pristine-Magazine642 [link] &#32; [comments]",
-      "image": "https://preview.redd.it/xjqhp174irch1.png?width=640&crop=smart&auto=webp&s=ccef10d1eca962a63232747897ca71fae7b49a14"
-    },
-    {
-      "id": "caad75c2",
-      "title": "Java minecraft ios 27",
-      "link": "https://old.reddit.com/r/AltStore/comments/1usrqrd/java_minecraft_ios_27/",
-      "source": "r/AltStore",
-      "category": "sideloading",
-      "date": "2026-07-10T15:58:51.000Z",
-      "summary": "&#32; submitted by &#32; /u/Street-Remove-321 [link] &#32; [comments]",
+      "date": "2026-07-11T00:16:40.000Z",
+      "summary": "Anyone know a fix for this? It used to launch at startup a long while ago- but doesn’t do it anymore. On Windows 11 btw. &#32; submitted by &#32; /u/Cl1ckk_ [link] &#32; [comments]",
       "image": ""
     },
     {
-      "id": "e3e0893c",
-      "title": "What the hell happened",
-      "link": "https://old.reddit.com/r/AltStore/comments/1us9lln/what_the_hell_happened/",
-      "source": "r/AltStore",
+      "id": "81276cc1",
+      "title": "Why is this happening to my friend?",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1usvorp/why_is_this_happening_to_my_friend/",
+      "source": "r/sideloadly",
       "category": "sideloading",
-      "date": "2026-07-10T01:31:42.000Z",
-      "summary": "I switched to sidestore some time ago and wanted to checkout altstore again, because of the new no pc requirement. But then I saw this... Just want to know how Edit: Just did some…",
-      "image": "https://preview.redd.it/83htf50l2bch1.jpeg?width=640&crop=smart&auto=webp&s=e0686ac870aeeaab658b0f0befdc2b3ebab409b0"
-    },
-    {
-      "id": "446b85bc",
-      "title": "AltStore Classic 2.3b2: Even More Automatic On-Device Sideloading",
-      "link": "https://old.reddit.com/r/AltStore/comments/1urv004/altstore_classic_23b2_even_more_automatic/",
-      "source": "r/AltStore",
-      "category": "sideloading",
-      "date": "2026-07-09T16:19:09.000Z",
-      "summary": "Howdy, y’all! We’re excited to bring you AltStore Classic 2.3 beta 2, featuring major improvements to your on-device sideloading experience! This release introduces automatic…",
-      "image": "https://preview.redd.it/pza2utoob8ch1.jpeg?width=640&crop=smart&auto=webp&s=b913bc5d2232816d5a6a9055ca90d638f26eebe0"
-    },
-    {
-      "id": "ed021ecb",
-      "title": "Altstore Classic or Pal",
-      "link": "https://old.reddit.com/r/AltStore/comments/1urtlci/altstore_classic_or_pal/",
-      "source": "r/AltStore",
-      "category": "sideloading",
-      "date": "2026-07-09T15:29:20.000Z",
-      "summary": "Hey Friends! im using altstore for some years now. Im from Europe and I think I used the Pal version auf the app all the time. Then I noticed that you can&#39;t enable JIT on the…",
+      "date": "2026-07-10T18:19:19.000Z",
+      "summary": "Recently my friend has been trying to get a game (forsaken AR on gamejolt) by using sideloadly, and it keeps saying “&lt;no devices detected&gt;” even though it’s connected to his…",
       "image": ""
     },
     {
-      "id": "bccac354",
-      "title": "Quais IPAS vcs instalam no seu iPhone?",
-      "link": "https://old.reddit.com/r/AltStore/comments/1upzftx/quais_ipas_vcs_instalam_no_seu_iphone/",
-      "source": "r/AltStore",
+      "id": "c178303e",
+      "title": "HELP - One week limit still appearing with paid Apple developer account",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1urzc7d/help_one_week_limit_still_appearing_with_paid/",
+      "source": "r/sideloadly",
       "category": "sideloading",
-      "date": "2026-07-07T16:03:08.000Z",
-      "summary": "Já to usando Spotify, YouTube e Lightromm. Me recomendam algum? Não conheço sites ou fontes confiáveis &#32; submitted by &#32; /u/Any_Worth_7880 [link] &#32; [comments]",
+      "date": "2026-07-09T18:50:12.000Z",
+      "summary": "Hi guys. I have a paid apple developer account and I have received the &quot;Welcome to the Apple Developer Program&quot; -email as well. I have signed in Sideloadly using that…",
       "image": ""
     },
     {
-      "id": "c0d5d269",
-      "title": "Movie Night - Updated v1.1 (Altstore classic)",
-      "link": "https://old.reddit.com/r/AltStore/comments/1upkeno/movie_night_updated_v11_altstore_classic/",
-      "source": "r/AltStore",
+      "id": "f2b2a448",
+      "title": "Help-I was using sideloadly and I have problem on downloading,",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1urrqrb/helpi_was_using_sideloadly_and_i_have_problem_on/",
+      "source": "r/sideloadly",
       "category": "sideloading",
-      "date": "2026-07-07T04:20:02.000Z",
-      "summary": "Good day all! I recently updated Movie Night to v1.1. Currently the JSON below only supports Altstore Classic. I submitted Movie Night for Apple notarization 6 days ago and am…",
-      "image": "https://preview.redd.it/dgctuksvhqbh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=4644c95fe8df5b67f28185a35a985a377c5d8f8d"
-    },
-    {
-      "id": "a59e055d",
-      "title": "Installing altitude in the UK",
-      "link": "https://old.reddit.com/r/AltStore/comments/1upcttu/installing_altitude_in_the_uk/",
-      "source": "r/AltStore",
-      "category": "sideloading",
-      "date": "2026-07-06T22:44:56.000Z",
-      "summary": "Hi all, Im seeing 2 methods of installing alt store Using windows or mac os to do so and use shortcuts to resign apps every 7 days Change region on my app store to Europe to…",
+      "date": "2026-07-09T14:22:34.000Z",
+      "summary": "It says: DLL load failed while importing pyexpat: 參數錯誤。 Failed to init layer 2: Guru Meditation What should I do? &#32; submitted by &#32; /u/S_Avatar [link] &#32; [comments]",
       "image": ""
     },
     {
-      "id": "c0128b11",
-      "title": "AltStore on iPadOS 27",
-      "link": "https://old.reddit.com/r/AltStore/comments/1up703x/altstore_on_ipados_27/",
-      "source": "r/AltStore",
+      "id": "962c3d5c",
+      "title": "Any Way To Sideload Onto an Apple TV 4K With No USB From A Windows Laptop?",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1urlkit/any_way_to_sideload_onto_an_apple_tv_4k_with_no/",
+      "source": "r/sideloadly",
       "category": "sideloading",
-      "date": "2026-07-06T19:08:21.000Z",
-      "summary": "I’m trying to install AltStore on an iPad Pro M4 running iPadOS 27, but I can’t get it to work. It shows the error below. What could be going wrong? Unable to install the app. You…",
-      "image": "https://preview.redd.it/aieh5ujcrnbh1.jpeg?width=640&crop=smart&auto=webp&s=4c676f67e00163f026c92b7eb3de3273c74dc686"
-    },
-    {
-      "id": "0b99201c",
-      "title": "Altstore could not be installed onto iPad iOS 18.5 10th gen. Altserver could not retrieve anisette data value “machineID”.",
-      "link": "https://old.reddit.com/r/AltStore/comments/1up5ys9/altstore_could_not_be_installed_onto_ipad_ios_185/",
-      "source": "r/AltStore",
-      "category": "sideloading",
-      "date": "2026-07-06T18:32:56.000Z",
-      "summary": "I’m installing from a Macintosh m4 I have attempted reboot which failed I don’t know why I’m failing to install to the iPad it’s had altstore before so I can’t fathom why it’s not…",
+      "date": "2026-07-09T09:46:58.000Z",
+      "summary": "I have a windows laptop and have installed all of the correct files: Sideloady Itunes via Sideloady site Icloud via Sideloady site Sideloady does not revognise any of my Apple…",
       "image": ""
     },
     {
-      "id": "9253102d",
-      "title": "AltStore iOS Beta 3",
-      "link": "https://old.reddit.com/r/AltStore/comments/1up4e9v/altstore_ios_beta_3/",
-      "source": "r/AltStore",
+      "id": "06f4b651",
+      "title": "[iOS] Fixed video playback (black screen / freeze) + sideload build available",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uqw92g/ios_fixed_video_playback_black_screen_freeze/",
+      "source": "r/sideloadly",
       "category": "sideloading",
-      "date": "2026-07-06T17:39:38.000Z",
-      "summary": "Can anyone confirm if AltStore is still working on IOS 27 Beta 3? If you could confirm if you are able to open/refresh apps and what platform you’re using (e.g., Windows, MacOS),…",
+      "date": "2026-07-08T15:37:50.000Z",
+      "summary": "Been running into the iOS video playback bug (audio plays, video is black — or on the latest builds, it just hangs on load). Traced it down to two bugs in the mpv/MoltenVK…",
+      "image": ""
+    },
+    {
+      "id": "82b7cc35",
+      "title": "Sideloadly guru meditation when i download ipogo",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1upnqyi/sideloadly_guru_meditation_when_i_download_ipogo/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-07T07:19:40.000Z",
+      "summary": "Whenever I try to download the iPoGo IPA, I keep getting this message in Sideloadly. I’ve tried using different browsers, but I still get the same error. Do you have a solution? I…",
+      "image": ""
+    },
+    {
+      "id": "dfc62484",
+      "title": "Where do you guys get your IPAs from?",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1up4y2y/where_do_you_guys_get_your_ipas_from/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-06T17:58:27.000Z",
+      "summary": "&#32; submitted by &#32; /u/Jonasbru3m [link] &#32; [comments]",
+      "image": ""
+    },
+    {
+      "id": "610202e0",
+      "title": "Sideloading Crashes (not just through sideloadly)",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uotmhe/sideloading_crashes_not_just_through_sideloadly/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-06T10:37:11.000Z",
+      "summary": "Hey so i got this app and it tends to crash if i sideload a decrypted ipa.. if the ipa is encrypted it works fine without issues but if its decrypted it crashes even with a dev…",
+      "image": ""
+    },
+    {
+      "id": "c08c7d9f",
+      "title": "HELPP Sideloading Game Please",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uol60e/helpp_sideloading_game_please/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-06T02:49:59.000Z",
+      "summary": "I&#39;m using SideStore on my iPhone, and everything works perfect. I&#39;ve even used an ipa file to install a few apps on there and it works perfect. But I wanna get Minecraft,…",
+      "image": ""
+    },
+    {
+      "id": "ee9bdbe2",
+      "title": "Unable to install apps - persistent errors",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1unx7vk/unable_to_install_apps_persistent_errors/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-05T08:53:17.000Z",
+      "summary": "Sideloading failed! Install failed: Guru Meditation Odb732@1065:3aea77 Failed: (7252) There is no &#39;ios&#39; certificate with serial number &#39;[INSERT SERIAL NUMBER…",
+      "image": ""
+    },
+    {
+      "id": "7af71cf4",
+      "title": "In needs of help during installation (application Verification Failed error)",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uncxem/in_needs_of_help_during_installation_application/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-04T16:09:48.000Z",
+      "summary": "This has been issues for few weeks now. What happened was I reset my Window laptop and trying to reinstall everything including sideloadly. Unable to do anything afterwards. There…",
+      "image": ""
+    },
+    {
+      "id": "d3fce9ba",
+      "title": "iDevice keeps getting undetected?",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1umxg8g/idevice_keeps_getting_undetected/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-04T02:46:07.000Z",
+      "summary": "Every time, it&#39;s not a PC issue cuz my pc reads the USB, charges my phone, and gives me the option to look at phone files, yet Sideloadly can&#39;t detect my device after 3…",
+      "image": ""
+    },
+    {
+      "id": "b0efed36",
+      "title": "Unable to click start on iMac ?",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1umivyc/unable_to_click_start_on_imac/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-03T16:20:46.000Z",
+      "summary": "Hi! I’ll preface this by saying that this is my first time using sideloadly and this could very well be a dumb question, but maybe someone could help me I’ve moved it to the…",
+      "image": ""
+    },
+    {
+      "id": "a5ef0706",
+      "title": "Sideloading toji motion on khoivdn",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1ukx4ft/sideloading_toji_motion_on_khoivdn/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-01T20:30:04.000Z",
+      "summary": "Yall I sideloaded an apo called toji motion I granted access to all photos so I can edit Do they now have access to my photos??I deleted it obv but yeah &#32; submitted by &#32;…",
+      "image": ""
+    },
+    {
+      "id": "3106140d",
+      "title": "A tiny question (Apple Account)",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1ukvcvy/a_tiny_question_apple_account/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-01T19:24:29.000Z",
+      "summary": "Hello guys, I just wanted some help. Do you use a burner Apple account or your regular one ? Any help would be greatly appreciated. &#32; submitted by &#32; /u/harperant95 [link]…",
+      "image": ""
+    },
+    {
+      "id": "5ec5f263",
+      "title": "Youtube IPA not playing videos",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uklp1i/youtube_ipa_not_playing_videos/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-01T13:26:54.000Z",
+      "summary": "I&#39;ve been looking for a new yt ipa to replace ytlite and tried youtubeplus. I don&#39;t know if this is a bug in whatever, but whenever I click on a video it just loads…",
+      "image": ""
+    },
+    {
+      "id": "5af7e696",
+      "title": "Is this a safe ipa file, please help",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uk146x/is_this_a_safe_ipa_file_please_help/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-06-30T20:46:39.000Z",
+      "summary": "&#32; submitted by &#32; /u/_xekie [link] &#32; [comments]",
+      "image": "https://external-preview.redd.it/3SGOap9Qx3j366Pq6Ulf4xLn5CHPBZj_flIJOfsZguE.jpeg?width=320&crop=smart&auto=webp&s=134740f973ee9c81620da427dda1d8b1aac13cc4"
+    },
+    {
+      "id": "1ede581e",
+      "title": "Alternative to sideloadly for Mac!",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uk082a/alternative_to_sideloadly_for_mac/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-06-30T20:13:59.000Z",
+      "summary": "Yes, it is Atvloadly but in Mac. Just use the VM(Orbstack) to install the IPAs in Apple tv 4k 3rd GEN TV OS 27 developer beta 1 After reading the past posts related to Apple Tv…",
+      "image": ""
+    },
+    {
+      "id": "3c3dd366",
+      "title": "sideloadly saying no devices dectected",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1ujw2rg/sideloadly_saying_no_devices_dectected/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-06-30T17:43:30.000Z",
+      "summary": "ive used sideloadly before with no issue but now im trying to use it again and it is displaying &quot;no device detected&quot; i have itunes downloaded and my pc is recognizing my…",
+      "image": ""
+    },
+    {
+      "id": "805c5bf0",
+      "title": "Sideloadly v0.60 Update! Advanced Data Protection Support, Better Logins & More!",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1mf7eul/sideloadly_v060_update_advanced_data_protection/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2025-08-01T20:31:22.000Z",
+      "summary": "Greetings! It&#39;s been a while since we last released a Sideloadly update, but we&#39;re excited to bring you some great changes and improvements! Please note that while…",
       "image": ""
     },
     {

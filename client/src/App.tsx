@@ -62,6 +62,7 @@ const SmartHome = lazy(() => import("./pages/SmartHome"));
 const RepairDIY = lazy(() => import("./pages/RepairDIY"));
 const Accessibility = lazy(() => import("./pages/Accessibility"));
 const Blog = lazy(() => import("./pages/Blog"));
+const NewsArticle = lazy(() => import("./pages/NewsArticle"));
 const Devices = lazy(() => import("./pages/Devices"));
 const AppleGraveyard = lazy(() => import("./pages/AppleGraveyard"));
 
@@ -79,6 +80,7 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/blog" component={Blog} />
+      <Route path="/news/:id" component={NewsArticle} />
       <Route path="/news" component={Blog} />
       <Route path="/devices" component={Devices} />
       <Route path="/apple-graveyard" component={AppleGraveyard} />

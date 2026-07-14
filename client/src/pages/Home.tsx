@@ -7,9 +7,11 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import { iphoneImage, ipodImage, watchImage } from "@/lib/deviceImages";
+import { ipodImage } from "@/lib/deviceImages";
 import { useTheme } from "@/contexts/ThemeContext";
 import AppleTimeMachine from "@/components/AppleTimeMachine";
+import PhoneRender from "@/components/PhoneRender";
+import WatchRender from "@/components/WatchRender";
 
 // The uploaded Apple-1 photograph, background removed, shown as a crisp centered
 // museum piece floating on the stage (source is low-res, so it's contained).
@@ -224,9 +226,9 @@ function LatestNewsTeaser() {
 // ─── Device archive teaser ────────────────────────────────────────────────────
 function ArchiveTeaser() {
   const icons = [
-    { img: iphoneImage("iphone-2g"), label: "iPhone", year: "2007" },
+    { art: <PhoneRender modelId="iphone-17-pro" size={160} />, label: "iPhone", year: "2007" },
     { img: ipodImage("ipod-classic-1"), label: "iPod", year: "2001" },
-    { img: watchImage("watch-series-0"), label: "Apple Watch", year: "2015" },
+    { art: <WatchRender modelId="watch-series-11" size={160} />, label: "Apple Watch", year: "2015" },
   ];
   return (
     <section className="section-snow section-pad">
@@ -249,7 +251,7 @@ function ArchiveTeaser() {
             {icons.map((ic) => (
               <div key={ic.label} className="card-fog" style={{ padding: "20px", textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
                 <div style={{ height: "160px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  {ic.img && <img src={ic.img} alt={ic.label} loading="lazy" style={{ maxHeight: "160px", maxWidth: "100%", objectFit: "contain" }} />}
+                  {ic.art ?? (ic.img && <img src={ic.img} alt={ic.label} loading="lazy" style={{ maxHeight: "160px", maxWidth: "100%", objectFit: "contain" }} />)}
                 </div>
                 <div>
                   <div style={{ fontSize: "15px", fontWeight: 700, color: "var(--foreground, #1d1d1f)" }}>{ic.label}</div>

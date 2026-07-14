@@ -88,6 +88,7 @@ export const sideloadTools: Tool[] = [
     tagline: "Discontinued — use Feather instead",
     desc: "Once-popular on-device signer, discontinued in April 2025. Listed here because old guides still reference it; Feather and KSign are the modern replacements.",
     computer: "On-device", ios: "iOS 13 – 18", status: "Discontinued", url: "https://github.com/khcrysalis/Feather",
+    icon: "https://esign-ios.app/wp-content/uploads/2025/06/cropped-Esign-180x180.webp", accent: "#2779f6",
   },
 ];
 
@@ -98,24 +99,28 @@ export const jailbreakTools: Tool[] = [
     tagline: "checkm8 jailbreak for older devices",
     desc: "Semi-tethered jailbreak built on the unpatchable checkm8 bootrom exploit. Covers A8–A11 devices (iPhone 5s–X) on iOS/iPadOS 15 and later.",
     computer: "Needs a PC/Mac", ios: "iOS 15+ (A8–A11)", status: "Active", url: "https://palera.in", open: true,
+    icon: "https://raw.githubusercontent.com/palera1n/loader/main/Loader/Resources/Assets.xcassets/AppIcon.appiconset/palera1nnightly.png", accent: "#ff6b4a",
   },
   {
     name: "Dopamine",
     tagline: "Rootless jailbreak",
     desc: "A modern rootless jailbreak by opa334 for arm64e devices. Supports up to iOS 16.x — it does not support iOS 17, 18, or 26.",
     computer: "On-device", ios: "iOS 15.0 – 16.6.1", status: "Active", url: "https://github.com/opa334/Dopamine", open: true,
+    icon: "https://raw.githubusercontent.com/opa334/Dopamine/2.x/Application/Dopamine/Assets.xcassets/AppIcon.appiconset/Icon-64%403x.png", accent: "#19b59b",
   },
   {
     name: "unc0ver",
     tagline: "Classic semi-untethered jailbreak",
     desc: "Long-running jailbreak covering iOS 11 through 14.8. Largely historical now but still used on older firmware.",
     computer: "On-device", ios: "iOS 11 – 14.8", status: "Legacy", url: "https://unc0ver.dev", open: true,
+    icon: "https://raw.githubusercontent.com/pwn20wndstuff/Undecimus/master/Undecimus/Assets.xcassets/AppIcon.appiconset/ItunesArtwork%402x.png", accent: "#4bc48a",
   },
   {
     name: "checkra1n",
     tagline: "The original checkm8 jailbreak",
     desc: "Hardware-exploit jailbreak for A7–A11 devices up to iOS 14.x. Superseded by palera1n for newer iOS versions.",
     computer: "Needs a PC/Mac", ios: "iOS 12 – 14.x", status: "Legacy", url: "https://checkra.in",
+    icon: "https://www.theiphonewiki.com/w/images/f/f4/Checkra1n-logo.png", accent: "#ffffff",
   },
 ];
 

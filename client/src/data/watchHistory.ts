@@ -166,6 +166,41 @@ export const watchModels: DeviceModel[] = [
       { label: "Battery", value: "Up to 18 hours (fast charge)" },
     ],
     tags: ["Thinnest ever", "Wide-angle OLED", "Depth & water temp"],
+  },
+  {
+    id: "watch-series-11", name: "Apple Watch Series 11", year: 2025, priceLabel: "$399",
+    highlight: "A full 24-hour battery, Sleep Score, and a tougher Ion-X display in the Series 10 design.",
+    specs: [
+      { label: "Chip", value: "Apple S10 SiP" },
+      { label: "Case Sizes", value: "42mm / 46mm" },
+      { label: "Display", value: "Wide-angle OLED, 2× scratch resistance" },
+      { label: "Battery", value: "Up to 24 hours" },
+    ],
+    tags: ["Sleep Score", "24-hour battery", "5G cellular"],
+    isNew: true,
+  },
+  {
+    id: "watch-se-3", name: "Apple Watch SE 3", year: 2025, priceLabel: "$249",
+    highlight: "The value Watch gains an Always-On display, fast charging, temperature sensing, and 5G.",
+    specs: [
+      { label: "Chip", value: "Apple S10 SiP" },
+      { label: "Case Sizes", value: "40mm / 44mm" },
+      { label: "Display", value: "Always-On Retina" },
+      { label: "Battery", value: "Up to 18 hours, fast charge" },
+    ],
+    tags: ["Always-On", "Fast charging", "5G cellular"],
+    isNew: true,
+  },
+  {
+    id: "watch-ultra-3", name: "Apple Watch Ultra 3", year: 2025, priceLabel: "$799",
+    highlight: "Satellite communication, Apple Watch’s largest display, and 42-hour battery life for the backcountry.",
+    specs: [
+      { label: "Chip", value: "Apple S10 SiP" },
+      { label: "Case Size", value: "49mm titanium" },
+      { label: "Display", value: "LTPO3 wide-angle OLED" },
+      { label: "Battery", value: "Up to 42 / 72 hours" },
+    ],
+    tags: ["Emergency SOS via satellite", "5G cellular", "Dual-frequency GPS"],
     isNew: true,
   },
 ];

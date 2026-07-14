@@ -20,9 +20,10 @@ export interface CarouselItem {
 interface Props {
   items: CarouselItem[];
   accent?: string;
+  renderVisual?: (item: CarouselItem, size: number) => React.ReactNode;
 }
 
-export default function DeviceCarousel({ items, accent = "var(--brand)" }: Props) {
+export default function DeviceCarousel({ items, accent = "var(--brand)", renderVisual }: Props) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
 
@@ -130,7 +131,7 @@ export default function DeviceCarousel({ items, accent = "var(--brand)" }: Props
             >
               {/* Image */}
               <div style={{ height: "220px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "14px" }}>
-                {it.image ? (
+                {renderVisual ? renderVisual(it, 220) : it.image ? (
                   <img
                     src={it.image}
                     alt={it.name}

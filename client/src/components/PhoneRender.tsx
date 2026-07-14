@@ -31,7 +31,21 @@ const CONFIG: Record<string, RenderConfig> = {
   "iphone-17-pro":  { body: "#c8a3a0", frame: "#dcc0bd", camera: "triple" },
 };
 
-const FALLBACK: RenderConfig = { body: "#2a2a2c", frame: "#5a5a5e", camera: "triple" };
+const FALLBACK: RenderConfig = { body: "#d8d8d2", frame: "#8b8b88", camera: "dual-square" };
+
+function configFor(modelId: string): RenderConfig {
+  if (CONFIG[modelId]) return CONFIG[modelId];
+  const family = Object.keys(CONFIG).sort((a, b) => b.length - a.length).find((id) => modelId.startsWith(`${id}-`));
+  if (family) return CONFIG[family];
+  if (/iphone-(2g|3g|3gs)/.test(modelId)) return { body: "#18191b", frame: "#aeb0b3", camera: "dual-square" };
+  if (/iphone-(4|4s)/.test(modelId)) return { body: "#f4f4f2", frame: "#aeb0b3", camera: "dual-square" };
+  if (/iphone-(5|5s|se-1)/.test(modelId)) return { body: "#d9d3c8", frame: "#b8b2a7", camera: "dual-square" };
+  if (modelId === "iphone-5c") return { body: "#63cfe3", frame: "#85e4f2", camera: "dual-square" };
+  if (/iphone-(6|6s|7|8|se-2|se-3)/.test(modelId)) return { body: "#d6b4a7", frame: "#c7a89d", camera: "dual-square" };
+  if (/iphone-(x|xs|xs-max)/.test(modelId)) return { body: "#ddd8cf", frame: "#aaa39a", camera: "dual-pill" };
+  if (modelId === "iphone-xr") return { body: "#ef4b4f", frame: "#f37475", camera: "dual-square" };
+  return FALLBACK;
+}
 
 /* Rough luminance so the Apple logo + lenses contrast the finish */
 function isLight(hex: string): boolean {
@@ -62,7 +76,7 @@ function Lens({ cx, cy, r = 15 }: { cx: number; cy: number; r?: number }) {
 }
 
 export default function PhoneRender({ modelId, size = 360, style, className }: PhoneRenderProps) {
-  const cfg = CONFIG[modelId] || FALLBACK;
+  const cfg = configFor(modelId);
   const logoColor = isLight(cfg.body) ? "rgba(0,0,0,0.55)" : "rgba(255,255,255,0.9)";
   const uid = modelId.replace(/[^a-z0-9]/gi, "");
   const width = (size * 220) / 440;

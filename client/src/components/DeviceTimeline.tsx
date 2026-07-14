@@ -7,6 +7,7 @@
 import { useState, useRef, useEffect } from "react";
 import type { DeviceModel } from "../data/deviceTypes";
 import DeviceSwitcher from "./DeviceSwitcher";
+import DeviceStageCarousel from "./DeviceStageCarousel";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -44,9 +45,10 @@ interface Props {
   blurb: string;
   models: DeviceModel[];
   imageFor: (id: string) => string | null;
+  renderVisual?: (model: DeviceModel, size: number) => React.ReactNode;
 }
 
-export default function DeviceTimeline({ eyebrow, lineTop, lineBottom, blurb, models, imageFor }: Props) {
+export default function DeviceTimeline({ eyebrow, lineTop, lineBottom, blurb, models, imageFor, renderVisual }: Props) {
   const [selected, setSelected] = useState<DeviceModel>(models[models.length - 1]);
   const [yearFilter, setYearFilter] = useState<string>("All");
 
@@ -89,36 +91,17 @@ export default function DeviceTimeline({ eyebrow, lineTop, lineBottom, blurb, mo
         </div>
       </section>
 
-      {/* Strip */}
-      <section style={{ background: "#000", paddingBottom: "48px" }}>
-        <div style={{ display: "flex", gap: "16px", overflowX: "auto", padding: "0 22px 24px", scrollbarWidth: "none", msOverflowStyle: "none", WebkitOverflowScrolling: "touch" }}>
-          {filtered.map((m, i) => {
-            const img = imageFor(m.id);
-            return (
-              <FadeIn key={m.id} delay={i * 30}>
-                <button onClick={() => setSelected(m)} style={{
-                  flexShrink: 0, width: "160px",
-                  background: selected.id === m.id ? "rgba(255,255,255,0.1)" : "rgba(255,255,255,0.04)",
-                  border: selected.id === m.id ? "1px solid rgba(255,255,255,0.3)" : "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: "18px", padding: "20px 16px", cursor: "pointer", transition: "all 0.25s ease",
-                  textAlign: "center", position: "relative",
-                }}
-                  onMouseEnter={(e) => { if (selected.id !== m.id) (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.07)"; }}
-                  onMouseLeave={(e) => { if (selected.id !== m.id) (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.04)"; }}
-                >
-                  {m.isNew && (
-                    <span style={{ position: "absolute", top: "10px", right: "10px", fontSize: "9px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--brand)", background: "rgba(var(--brand-rgb),0.15)", padding: "2px 6px", borderRadius: "4px" }}>NEW</span>
-                  )}
-                  <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "120px", marginBottom: "12px" }}>
-                    {img && <img src={img} alt={`${m.name} — ${m.year}`} loading="lazy" decoding="async" style={{ height: "118px", width: "auto", maxWidth: "100%", objectFit: "contain" }} />}
-                  </div>
-                  <div style={{ fontSize: "13px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.015em", marginBottom: "4px" }}>{m.name}</div>
-                  <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.4)" }}>{m.year}</div>
-                </button>
-              </FadeIn>
-            );
-          })}
-        </div>
+      {/* Floating 3D device stage — intentionally no card backgrounds. */}
+      <section style={{ background: "#000", padding: "0 16px 48px" }}>
+        <DeviceStageCarousel
+          items={filtered}
+          activeId={selected.id}
+          onSelect={setSelected}
+          ariaLabel={`${eyebrow} models`}
+          renderVisual={(model, size) => renderVisual?.(model, size) ?? (
+            imageFor(model.id) ? <img src={imageFor(model.id) as string} alt="" loading="lazy" decoding="async" style={{ height: size, width: "auto", maxWidth: "100%", objectFit: "contain" }} /> : null
+          )}
+        />
       </section>
 
       {/* Detail */}
@@ -128,7 +111,7 @@ export default function DeviceTimeline({ eyebrow, lineTop, lineBottom, blurb, mo
             <FadeIn>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center" }} className="device-detail-grid">
                 <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "380px" }}>
-                  {imageFor(selected.id) && <img src={imageFor(selected.id) as string} alt={`${selected.name} — ${selected.year}`} loading="lazy" decoding="async" style={{ height: "380px", width: "auto", maxWidth: "100%", objectFit: "contain" }} />}
+                  {renderVisual?.(selected, 380) ?? (imageFor(selected.id) && <img src={imageFor(selected.id) as string} alt={`${selected.name} — ${selected.year}`} loading="lazy" decoding="async" style={{ height: "380px", width: "auto", maxWidth: "100%", objectFit: "contain" }} />)}
                 </div>
                 <div>
                   <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "8px" }}>

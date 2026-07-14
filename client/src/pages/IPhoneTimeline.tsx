@@ -1,14 +1,13 @@
 /* =============================================================
    iPhone History Timeline — every iPhone from 2007 to today
-   Interactive horizontal timeline with real product photos + full specs.
-   Photos: /devices/iphones/*. Falls back to a vector render if a
-   model has no photo yet (e.g. newest models).
+   Interactive 3D timeline with transparent vector product art + full specs.
+   The renders stay sharp at every size and never carry baked image backgrounds.
    ============================================================= */
 
 import { useState, useRef, useEffect } from "react";
 import PhoneRender from "../components/PhoneRender";
 import DeviceSwitcher from "../components/DeviceSwitcher";
-import { iphoneImage } from "../lib/deviceImages";
+import DeviceStageCarousel from "../components/DeviceStageCarousel";
 import { iPhoneModels, type PhoneModel } from "../data/iphoneHistory";
 
 function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
@@ -40,31 +39,16 @@ function FadeIn({ children, delay = 0 }: { children: React.ReactNode; delay?: nu
   );
 }
 
-/** Real photo when available, otherwise a crisp vector render. */
+/** Transparent vector product art — no baked checkerboards or white image tiles. */
 function PhoneVisual({ model, size }: { model: PhoneModel; size: number }) {
-  const img = iphoneImage(model.id);
-  if (img) {
-    return (
-      <img
-        src={img}
-        alt={`${model.name} — ${model.year}`}
-        loading="lazy"
-        decoding="async"
-        style={{ height: `${size}px`, width: "auto", maxWidth: "100%", objectFit: "contain" }}
-      />
-    );
-  }
   return <PhoneRender modelId={model.id} size={size} />;
 }
 
-// Newest model that has a real photo — used as the default selection.
-const defaultModel =
-  [...iPhoneModels].reverse().find((m) => iphoneImage(m.id)) || iPhoneModels[iPhoneModels.length - 1];
+const defaultModel = iPhoneModels[iPhoneModels.length - 1];
 
 export default function IPhoneTimeline() {
   const [selectedPhone, setSelectedPhone] = useState<PhoneModel>(defaultModel);
   const [yearFilter, setYearFilter] = useState<string>("All");
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   const years = ["All", ...Array.from(new Set(iPhoneModels.map((m) => m.year.toString()))).sort((a, b) => Number(b) - Number(a))];
   const filteredModels = yearFilter === "All" ? iPhoneModels : iPhoneModels.filter((m) => m.year.toString() === yearFilter);
@@ -116,54 +100,15 @@ export default function IPhoneTimeline() {
         </div>
       </section>
 
-      {/* ── Timeline horizontal scroll ── */}
-      <section style={{ background: "#000", paddingBottom: "48px" }}>
-        <div
-          ref={scrollRef}
-          style={{
-            display: "flex",
-            gap: "16px",
-            overflowX: "auto",
-            padding: "0 22px 24px",
-            scrollbarWidth: "none",
-            msOverflowStyle: "none",
-            WebkitOverflowScrolling: "touch",
-          }}
-        >
-          {filteredModels.map((phone, i) => (
-            <FadeIn key={phone.id} delay={i * 30}>
-              <button
-                onClick={() => setSelectedPhone(phone)}
-                style={{
-                  flexShrink: 0,
-                  width: "160px",
-                  height: "100%",
-                  background: selectedPhone.id === phone.id ? "rgba(255,255,255,0.1)" : "rgba(255,255,255,0.04)",
-                  border: selectedPhone.id === phone.id ? "1px solid rgba(255,255,255,0.3)" : "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: "18px",
-                  padding: "20px 16px",
-                  cursor: "pointer",
-                  transition: "all 0.25s ease",
-                  textAlign: "center",
-                  position: "relative",
-                }}
-                onMouseEnter={(e) => { if (selectedPhone.id !== phone.id) (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.07)"; }}
-                onMouseLeave={(e) => { if (selectedPhone.id !== phone.id) (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.04)"; }}
-              >
-                {phone.isNew && (
-                  <span style={{ position: "absolute", top: "10px", right: "10px", fontSize: "9px", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", color: "var(--brand)", background: "rgba(var(--brand-rgb),0.15)", padding: "2px 6px", borderRadius: "4px" }}>
-                    NEW
-                  </span>
-                )}
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-end", height: "120px", marginBottom: "12px" }}>
-                  <PhoneVisual model={phone} size={120} />
-                </div>
-                <div style={{ fontSize: "13px", fontWeight: 600, color: "#f5f5f7", letterSpacing: "-0.015em", marginBottom: "4px" }}>{phone.name}</div>
-                <div style={{ fontSize: "11px", color: "rgba(255,255,255,0.4)" }}>{phone.year}</div>
-              </button>
-            </FadeIn>
-          ))}
-        </div>
+      {/* ── Floating 3D device stage ── */}
+      <section style={{ background: "#000", padding: "0 16px 48px" }}>
+        <DeviceStageCarousel
+          items={filteredModels}
+          activeId={selectedPhone.id}
+          onSelect={setSelectedPhone}
+          ariaLabel="Every iPhone model"
+          renderVisual={(phone, size) => <PhoneVisual model={phone} size={size} />}
+        />
       </section>
 
       {/* ── Selected phone detail ── */}

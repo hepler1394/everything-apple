@@ -19,17 +19,21 @@ const FETCH_TIMEOUT_MS = 20000;
 // Feed definitions. `category` is the default bucket; news items may be
 // re-bucketed by keyword below.
 const FEEDS = [
+  { url: 'https://www.apple.com/newsroom/rss-feed.rss', source: 'Apple', category: 'news' },
+  { url: 'https://developer.apple.com/news/rss/news.rss', source: 'Apple Developer', category: 'news' },
   { url: 'https://9to5mac.com/feed/', source: '9to5Mac', category: 'news' },
   { url: 'https://feeds.macrumors.com/MacRumors-All', source: 'MacRumors', category: 'news' },
   { url: 'https://www.theverge.com/rss/apple/index.xml', source: 'The Verge', category: 'news' },
+  { url: 'https://www.macstories.net/feed/', source: 'MacStories', category: 'news' },
+  { url: 'https://appleinsider.com/rss/news/', source: 'AppleInsider', category: 'news' },
   { url: 'https://old.reddit.com/r/sideloadly/.rss', source: 'r/sideloadly', category: 'sideloading' },
   { url: 'https://old.reddit.com/r/AltStore/.rss', source: 'r/AltStore', category: 'sideloading' },
   { url: 'https://old.reddit.com/r/jailbreak/.rss', source: 'r/jailbreak', category: 'jailbreak' },
 ];
 
-const SOURCES = ['9to5Mac', 'MacRumors', 'The Verge', 'r/sideloadly', 'r/AltStore', 'r/jailbreak'];
+const SOURCES = ['Apple', 'Apple Developer', '9to5Mac', 'MacRumors', 'The Verge', 'MacStories', 'AppleInsider', 'r/sideloadly', 'r/AltStore', 'r/jailbreak'];
 
-const CAPS = { news: 30, sideloading: 15, jailbreak: 15 };
+const CAPS = { news: 60, sideloading: 24, jailbreak: 24 };
 
 // Keyword => bucket. Applied only to items that start life in the "news" bucket.
 const JAILBREAK_KW = ['jailbreak', 'palera1n', 'dopamine', 'trollstore'];

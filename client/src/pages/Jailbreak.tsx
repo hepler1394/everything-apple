@@ -112,8 +112,11 @@ export default function Jailbreak() {
               onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.borderColor = "var(--brand)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = "var(--border)"; }}
             >
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px" }}>
-                <span style={{ fontSize: "18px", fontWeight: 700, color: "var(--foreground)", letterSpacing: "-0.02em" }}>{t.name}</span>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
+                <span style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0 }}>
+                  {t.icon && <img src={t.icon} alt="" loading="lazy" decoding="async" style={{ width: "52px", height: "52px", objectFit: "cover", borderRadius: "13px", boxShadow: `0 10px 24px color-mix(in srgb, ${t.accent || "var(--brand)"} 24%, transparent)`, flexShrink: 0 }} onError={(event) => { event.currentTarget.style.display = "none"; }} />}
+                  <span style={{ fontSize: "18px", fontWeight: 700, color: "var(--foreground)", letterSpacing: "-0.02em" }}>{t.name}</span>
+                </span>
                 <span style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", color: statusColor[t.status], background: "color-mix(in srgb, " + statusColor[t.status] + " 16%, transparent)", padding: "3px 8px", borderRadius: "6px", whiteSpace: "nowrap" }}>{t.status}</span>
               </div>
               <span style={{ fontSize: "13px", fontWeight: 600, color: "var(--brand)" }}>{t.tagline}</span>

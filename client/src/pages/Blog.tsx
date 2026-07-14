@@ -65,9 +65,13 @@ function timeAgo(dateStr: string): string {
 }
 
 const SOURCE_COLORS: Record<string, string> = {
+  Apple: "#5551ff",
+  "Apple Developer": "#6e6e73",
   "9to5Mac": "#1a6ee0",
   MacRumors: "#e8272a",
   "The Verge": "#ff3b30",
+  MacStories: "#e85d75",
+  AppleInsider: "#3848a8",
 };
 
 export default function Blog() {
@@ -114,8 +118,8 @@ export default function Blog() {
             <span className="apple-word">Apple</span> news, sideloading &amp; jailbreak.
           </h1>
           <p style={{ fontSize: "18px", lineHeight: 1.5, color: "var(--muted-foreground, #707070)", maxWidth: "640px", margin: 0 }}>
-            The headlines that matter for the Apple faithful — refreshed daily from 9to5Mac, MacRumors and the
-            sideloading &amp; jailbreak community. Plus our own deep dives.
+            A larger daily briefing from Apple Newsroom, Apple Developer, 9to5Mac, MacRumors, MacStories,
+            AppleInsider and the sideloading &amp; jailbreak community. Open every story here first, then continue to the original source.
             {data?.updated && (
               <span style={{ display: "block", marginTop: "8px", fontSize: "13px", color: "var(--muted-foreground, #8a8a8f)" }}>
                 Feed updated {timeAgo(data.updated)}
@@ -202,7 +206,7 @@ export default function Blog() {
           {status === "ready" && (
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "16px" }}>
               {items.map((it) => (
-                <a key={it.id} href={it.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                <Link key={it.id} href={`/news/${it.id}`}>
                   <article
                     className="card"
                     style={{ padding: 0, overflow: "hidden", height: "100%", display: "flex", flexDirection: "column", transition: "transform 0.2s ease" }}
@@ -228,7 +232,7 @@ export default function Blog() {
                       )}
                     </div>
                   </article>
-                </a>
+                </Link>
               ))}
             </div>
           )}

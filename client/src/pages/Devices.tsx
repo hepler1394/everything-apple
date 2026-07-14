@@ -7,6 +7,8 @@
 import { useMemo, useState } from "react";
 import { Link } from "wouter";
 import DeviceCarousel, { type CarouselItem } from "@/components/DeviceCarousel";
+import PhoneRender from "@/components/PhoneRender";
+import WatchRender from "@/components/WatchRender";
 import { iPhoneModels } from "@/data/iphoneHistory";
 import { watchModels } from "@/data/watchHistory";
 import { ipodModels } from "@/data/ipodHistory";
@@ -136,7 +138,14 @@ export default function Devices() {
             </span>
           </div>
 
-          <DeviceCarousel items={items} />
+          <DeviceCarousel
+            items={items}
+            renderVisual={family === "iphone"
+              ? (item, size) => <PhoneRender modelId={item.id} size={size} />
+              : family === "watch"
+                ? (item, size) => <WatchRender modelId={item.id} size={size} />
+                : undefined}
+          />
 
           {current.timeline && (
             <div style={{ marginTop: "24px", textAlign: "center" }}>
