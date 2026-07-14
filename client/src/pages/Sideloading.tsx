@@ -56,23 +56,29 @@ const chip: React.CSSProperties = {
 function ToolCard({ t }: { t: Tool }) {
   return (
     <a href={t.url} target="_blank" rel="noopener noreferrer"
+      className="sideload-card"
       style={{
         display: "flex", flexDirection: "column", gap: "10px",
-        background: "var(--card)", border: "1px solid var(--border)", borderRadius: "20px",
-        padding: "22px", textDecoration: "none", transition: "transform 0.15s ease, border-color 0.15s ease",
+        background: "color-mix(in srgb, var(--card) 78%, var(--background))", border: "1px solid var(--border)", borderRadius: "24px",
+        padding: "20px", textDecoration: "none", transition: "transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease",
+        position: "relative", overflow: "hidden", minHeight: "250px",
       }}
-      onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.borderColor = "var(--brand)"; }}
-      onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = "var(--border)"; }}
+      onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; e.currentTarget.style.borderColor = "color-mix(in srgb, var(--brand) 48%, var(--border))"; e.currentTarget.style.boxShadow = "0 18px 44px rgba(0,0,0,.12)"; }}
+      onMouseLeave={(e) => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.boxShadow = "none"; }}
     >
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px" }}>
-        <span style={{ fontSize: "18px", fontWeight: 700, color: "var(--foreground)", letterSpacing: "-0.02em" }}>{t.name}</span>
+      <div aria-hidden style={{ position: "absolute", width: 150, height: 150, right: -55, top: -65, borderRadius: "50%", background: t.accent || "var(--brand)", opacity: .13, filter: "blur(8px)" }} />
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px", position: "relative" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "12px", minWidth: 0 }}>
+          {t.icon && <img src={t.icon} alt="" loading="lazy" style={{ width: 52, height: 52, borderRadius: "13px", objectFit: "cover", flexShrink: 0, boxShadow: "0 7px 18px rgba(0,0,0,.18)", background: "rgba(127,127,127,.12)" }} />}
+          <span style={{ fontSize: "19px", fontWeight: 700, color: "var(--foreground)", letterSpacing: "-0.02em" }}>{t.name}</span>
+        </div>
         <span style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "0.05em", textTransform: "uppercase", color: statusColor[t.status], background: "color-mix(in srgb, " + statusColor[t.status] + " 16%, transparent)", padding: "3px 8px", borderRadius: "6px", whiteSpace: "nowrap" }}>
           {t.status}
         </span>
       </div>
-      <span style={{ fontSize: "13px", fontWeight: 600, color: "var(--brand)" }}>{t.tagline}</span>
-      <span style={{ fontSize: "14px", color: "var(--muted-foreground)", lineHeight: 1.5 }}>{t.desc}</span>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginTop: "4px" }}>
+      <span style={{ fontSize: "14px", fontWeight: 650, color: "var(--brand)", position: "relative" }}>{t.tagline}</span>
+      <span style={{ fontSize: "15px", color: "var(--muted-foreground)", lineHeight: 1.55, position: "relative" }}>{t.desc}</span>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginTop: "auto", paddingTop: "4px", position: "relative" }}>
         <span style={chip}>{t.computer}</span>
         <span style={chip}>{t.ios}</span>
         {t.open && <span style={chip}>Open source</span>}
@@ -184,13 +190,16 @@ export default function Sideloading() {
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
           {apps.map((a) => (
-            <div key={a.name} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "20px", padding: "22px", display: "flex", flexDirection: "column", gap: "8px" }}>
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-                <span style={{ fontSize: "18px", fontWeight: 700, color: "var(--foreground)", letterSpacing: "-0.02em" }}>{a.name}</span>
+            <div key={a.name} className="sideload-card" style={{ background: "color-mix(in srgb, var(--card) 78%, var(--background))", border: "1px solid var(--border)", borderRadius: "24px", padding: "20px", display: "flex", flexDirection: "column", gap: "9px", minHeight: "270px" }}>
+              <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, minWidth: 0 }}>
+                  {a.icon && <img src={a.icon} alt="" loading="lazy" style={{ width: 56, height: 56, borderRadius: 14, objectFit: "cover", flexShrink: 0, boxShadow: "0 7px 18px rgba(0,0,0,.18)", background: "rgba(127,127,127,.12)" }} />}
+                  <span style={{ fontSize: "19px", fontWeight: 700, color: "var(--foreground)", letterSpacing: "-0.02em" }}>{a.name}</span>
+                </div>
                 <span style={chip}>{a.category}</span>
               </div>
-              <span style={{ fontSize: "12px", color: "var(--muted-foreground)" }}>by {a.dev}</span>
-              <span style={{ fontSize: "14px", color: "var(--muted-foreground)", lineHeight: 1.5, flex: 1 }}>{a.desc}</span>
+              <span style={{ fontSize: "13px", color: "var(--muted-foreground)" }}>by {a.dev}</span>
+              <span style={{ fontSize: "15px", color: "var(--muted-foreground)", lineHeight: 1.55, flex: 1 }}>{a.desc}</span>
               <a href={a.url} target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ ...btnPrimary, textAlign: "center", marginTop: "6px" }}>Get IPA</a>
             </div>
           ))}

@@ -8,10 +8,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import IMGS from "@/lib/imageManifest";
-import { iPhoneModels } from "@/data/iphoneHistory";
-import { watchModels } from "@/data/watchHistory";
-import { ipodModels } from "@/data/ipodHistory";
-import { iphoneImage, watchImage, ipodImage } from "@/lib/deviceImages";
+import { graveyardMedia } from "@/data/graveyardMedia";
 
 interface GalleryImage {
   id: number;
@@ -164,34 +161,29 @@ const BASE_IMAGES: GalleryImage[] = [
   { id: 175, src: IMGS.places.appleStore4, cat: "Apple", title: "Apple Store Design" },
 ];
 
-// ── Device catalog photos (transparent product shots) from the history datasets ──
-function deviceEntries(
-  models: { id: string; name: string; year: number }[],
-  resolve: (id: string) => string | null,
-  cat: string,
-  startId: number,
-): GalleryImage[] {
-  return models
-    .map((m, i): GalleryImage | null => {
-      const src = resolve(m.id);
-      return src ? { id: startId + i, src, cat, title: `${m.name} (${m.year})`, contain: true } : null;
-    })
-    .filter((e): e is GalleryImage => e !== null);
-}
-
-const DEVICE_IMAGES: GalleryImage[] = [
-  ...deviceEntries(iPhoneModels, iphoneImage, "iPhone History", 1000),
-  ...deviceEntries(watchModels, watchImage, "Apple Watch", 1100),
-  ...deviceEntries(ipodModels, ipodImage, "iPod", 1200),
+// The original device cutouts had checkerboard pixels baked into the files.
+// Use real archival photography here instead of disguising damaged assets.
+const ARCHIVE_IMAGES: GalleryImage[] = [
+  { id: 2000, src: graveyardMedia["newton-messagepad"].images[0], cat: "Apple Archive", title: "Newton MessagePad" },
+  { id: 2001, src: graveyardMedia["emate-300"].images[0], cat: "Apple Archive", title: "eMate 300" },
+  { id: 2002, src: graveyardMedia.pippin.images[0], cat: "Apple Archive", title: "Bandai Apple Pippin" },
+  { id: 2003, src: graveyardMedia["twentieth-anniversary-mac"].images[0], cat: "Apple Archive", title: "20th Anniversary Macintosh" },
+  { id: 2004, src: graveyardMedia["imac-g3"].images[1], cat: "Apple Archive", title: "iMac G3 running Mac OS" },
+  { id: 2005, src: graveyardMedia["power-mac-g4-cube"].images[1], cat: "Apple Archive", title: "Power Mac G4 Cube" },
+  { id: 2006, src: graveyardMedia.xserve.images[1], cat: "Apple Archive", title: "Xserve" },
+  { id: 2010, src: graveyardMedia["ipod-classic"].images[0], cat: "iPod Archive", title: "iPod Classic" },
+  { id: 2011, src: graveyardMedia["ipod-hifi"].images[0], cat: "iPod Archive", title: "iPod Hi-Fi" },
+  { id: 2012, src: graveyardMedia["ipod-socks"].images[0], cat: "iPod Archive", title: "iPod Socks" },
+  { id: 2020, src: graveyardMedia.isight.images[0], cat: "Apple Archive", title: "iSight camera" },
+  { id: 2021, src: graveyardMedia.airport.images[0], cat: "Apple Archive", title: "AirPort base station" },
 ];
 
-const ALL_IMAGES: GalleryImage[] = [...DEVICE_IMAGES, ...BASE_IMAGES];
+const ALL_IMAGES: GalleryImage[] = [...ARCHIVE_IMAGES, ...BASE_IMAGES];
 
 const CATEGORIES = [
   "All",
-  "iPhone History",
-  "Apple Watch",
-  "iPod",
+  "Apple Archive",
+  "iPod Archive",
   "WWDC 2026",
   "Siri AI",
   "Apple Intelligence",
@@ -238,6 +230,8 @@ function navBtn(side: "left" | "right"): React.CSSProperties {
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [viewMode, setViewMode] = useState<"fit" | "detail" | "tilt">("fit");
+  const [tilt, setTilt] = useState({ x: 0, y: 0 });
 
   const filtered = activeCategory === "All"
     ? ALL_IMAGES
@@ -245,6 +239,8 @@ export default function Gallery() {
 
   const openLightbox = useCallback((index: number) => {
     setLightboxIndex(index);
+    setViewMode("fit");
+    setTilt({ x: 0, y: 0 });
     document.body.style.overflow = "hidden";
   }, []);
 
@@ -254,6 +250,9 @@ export default function Gallery() {
   }, []);
 
   const lightboxImg = lightboxIndex === null ? null : filtered[lightboxIndex] ?? null;
+  const related = lightboxImg ? filtered.filter((image) => image.cat === lightboxImg.cat).slice(0, 14) : [];
+
+  useEffect(() => () => { document.body.style.overflow = ""; }, []);
 
   // Keyboard controls for the lightbox: Esc to close, arrows to navigate
   useEffect(() => {
@@ -310,7 +309,7 @@ export default function Gallery() {
               margin: "0 auto",
             }}
           >
-            {ALL_IMAGES.length} photos — every iPhone, Apple Watch and iPod ever made, plus WWDC 2026, Siri AI, Apple Intelligence, and more.
+            {ALL_IMAGES.length} curated images — clean product photography, Apple history, WWDC, Siri, Apple Intelligence, and more. No damaged checkerboard cutouts.
           </p>
         </div>
       </section>
@@ -329,6 +328,7 @@ export default function Gallery() {
         }}
       >
         <div
+          className="gallery-grid"
           style={{
             maxWidth: "1400px",
             margin: "0 auto",
@@ -388,7 +388,9 @@ export default function Gallery() {
                 aspectRatio: "4/3",
                 overflow: "hidden",
                 cursor: "pointer",
-                background: "rgba(29,29,31,0.85)",
+                background: img.contain
+                  ? "radial-gradient(circle at 50% 44%, rgba(92,112,255,.24), transparent 48%), linear-gradient(145deg, #151820, #08090d)"
+                  : "rgba(29,29,31,0.85)",
                 backdropFilter: "blur(12px)",
                 WebkitBackdropFilter: "blur(12px)",
                 borderRadius: "14px",
@@ -450,9 +452,14 @@ export default function Gallery() {
                 }}
                 onError={(e) => {
                   const el = e.currentTarget as HTMLImageElement;
-                  el.style.opacity = "0.3";
+                  el.style.display = "none";
+                  const fallback = el.nextElementSibling as HTMLElement;
+                  if (fallback) fallback.style.display = "flex";
                 }}
               />
+              <div className="gallery-image-fallback" style={{ display: "none", position: "absolute", inset: 0, zIndex: 1, alignItems: "center", justifyContent: "center", padding: 24, textAlign: "center", color: "rgba(255,255,255,.62)", fontSize: 13 }}>
+                Image temporarily unavailable<br />Open for the rest of this collection
+              </div>
               {/* Glassmorphism hover overlay */}
               <div
                 className="gallery-overlay"
@@ -532,6 +539,7 @@ export default function Gallery() {
       {/* ── Lightbox ── */}
       {lightboxImg && (
         <div
+          className="gallery-lightbox"
           role="dialog"
           aria-modal="true"
           aria-label={lightboxImg.title}
@@ -539,8 +547,9 @@ export default function Gallery() {
           style={{
             position: "fixed",
             inset: 0,
-            zIndex: 1000,
-            background: "rgba(0,0,0,0.95)",
+            zIndex: 20050,
+            background: "rgba(2,3,7,0.88)",
+            backdropFilter: "blur(24px) saturate(120%)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -553,7 +562,7 @@ export default function Gallery() {
             aria-label="Close"
             style={{
               position: "absolute", top: "20px", right: "20px",
-              background: "rgba(255,255,255,0.1)", border: "none", color: "#f5f5f7",
+              zIndex: 3, background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,.14)", color: "#f5f5f7",
               width: "44px", height: "44px", borderRadius: "50%", fontSize: "20px",
               cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center",
               fontFamily: "inherit", lineHeight: 1,
@@ -578,21 +587,63 @@ export default function Gallery() {
             </>
           )}
 
-          <div
+          <div className="gallery-lightbox-panel"
             onClick={(e) => e.stopPropagation()}
-            style={{ maxWidth: "90vw", maxHeight: "90vh", cursor: "default" }}
+            style={{ width: "min(1120px, 92vw)", maxHeight: "92vh", overflowY: "auto", cursor: "default", border: "1px solid rgba(255,255,255,.13)", borderRadius: 28, background: "rgba(17,18,24,.82)", boxShadow: "0 40px 120px rgba(0,0,0,.55)" }}
           >
-            <img
-              src={lightboxImg.src}
-              alt={lightboxImg.title}
-              style={{ maxWidth: "100%", maxHeight: "80vh", objectFit: "contain", borderRadius: "8px", display: "block" }}
-            />
-            <div style={{ marginTop: "16px", textAlign: "center", fontSize: "15px", fontWeight: 500, color: "rgba(255,255,255,0.7)", letterSpacing: "-0.015em" }}>
-              {lightboxImg.title}
-              {lightboxIndex !== null && (
-                <span style={{ color: "rgba(255,255,255,0.4)", marginLeft: "8px" }}>
-                  {lightboxIndex + 1} / {filtered.length}
-                </span>
+            <div
+              className="gallery-lightbox-stage"
+              onPointerMove={(event) => {
+                if (viewMode !== "tilt") return;
+                const rect = event.currentTarget.getBoundingClientRect();
+                setTilt({
+                  x: -(((event.clientY - rect.top) / rect.height) - .5) * 12,
+                  y: (((event.clientX - rect.left) / rect.width) - .5) * 16,
+                });
+              }}
+              onPointerLeave={() => setTilt({ x: 0, y: 0 })}
+              style={{ position: "relative", height: "min(62vh, 620px)", overflow: "hidden", display: "grid", placeItems: "center", background: "radial-gradient(circle at 50% 45%, rgba(92,112,255,.22), transparent 42%), radial-gradient(circle at 70% 35%, rgba(255,63,170,.12), transparent 34%), #07080c", borderRadius: "28px 28px 0 0" }}
+            >
+              <img
+                src={lightboxImg.src}
+                alt={lightboxImg.title}
+                style={{
+                  width: "100%", height: "100%", objectFit: "contain", display: "block",
+                  padding: lightboxImg.contain ? "clamp(26px, 5vw, 62px)" : "12px",
+                  transform: viewMode === "detail" ? "scale(1.55)" : viewMode === "tilt" ? `perspective(1100px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg) scale(.92)` : "scale(1)",
+                  filter: lightboxImg.contain ? "drop-shadow(0 28px 32px rgba(0,0,0,.48))" : "none",
+                  transition: viewMode === "tilt" ? "transform .08s linear" : "transform .35s cubic-bezier(.2,.8,.2,1)",
+                }}
+              />
+              <div className="gallery-view-modes" style={{ position: "absolute", left: "50%", bottom: 16, transform: "translateX(-50%)", display: "flex", gap: 4, padding: 4, border: "1px solid rgba(255,255,255,.14)", borderRadius: 999, background: "rgba(0,0,0,.46)", backdropFilter: "blur(18px)" }}>
+                {(["fit", "detail", "tilt"] as const).map((mode) => (
+                  <button key={mode} type="button" onClick={() => setViewMode(mode)} style={{ border: 0, borderRadius: 999, padding: "7px 12px", background: viewMode === mode ? "#fff" : "transparent", color: viewMode === mode ? "#050507" : "rgba(255,255,255,.72)", fontSize: 12, fontWeight: 650, cursor: "pointer", textTransform: "capitalize" }}>
+                    {mode === "tilt" ? "Tilt view" : mode}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ padding: "20px 22px 22px" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 16, flexWrap: "wrap" }}>
+                <div>
+                  <div style={{ color: "rgba(255,255,255,.45)", fontSize: 10, fontWeight: 700, letterSpacing: ".12em", textTransform: "uppercase", marginBottom: 5 }}>{lightboxImg.cat}</div>
+                  <div style={{ fontSize: "clamp(19px, 3vw, 28px)", fontWeight: 700, color: "#fff", letterSpacing: "-.025em" }}>{lightboxImg.title}</div>
+                </div>
+                <span style={{ color: "rgba(255,255,255,0.42)", fontSize: 12 }}>{lightboxIndex !== null ? `${lightboxIndex + 1} / ${filtered.length}` : ""}</span>
+              </div>
+
+              {related.length > 1 && (
+                <div className="gallery-related" style={{ display: "flex", gap: 8, overflowX: "auto", marginTop: 18, paddingBottom: 4 }}>
+                  {related.map((image) => {
+                    const index = filtered.findIndex((item) => item.id === image.id);
+                    return (
+                      <button key={image.id} type="button" onClick={() => { setLightboxIndex(index); setViewMode("fit"); }} aria-label={`View ${image.title}`} style={{ width: 86, height: 62, flex: "0 0 auto", padding: 0, overflow: "hidden", borderRadius: 10, border: image.id === lightboxImg.id ? "2px solid #fff" : "1px solid rgba(255,255,255,.14)", background: "#08090d", opacity: image.id === lightboxImg.id ? 1 : .62, cursor: "pointer" }}>
+                        <img src={image.src} alt="" loading="lazy" style={{ width: "100%", height: "100%", objectFit: image.contain ? "contain" : "cover", padding: image.contain ? 6 : 0 }} />
+                      </button>
+                    );
+                  })}
+                </div>
               )}
             </div>
           </div>
@@ -602,11 +653,20 @@ export default function Gallery() {
 
       <style>{`
         @media (max-width: 600px) {
-          div[style*="minmax(280px"] {
+          .gallery-grid {
             grid-template-columns: repeat(2, 1fr) !important;
+            gap: 8px !important;
           }
+          .gallery-lightbox { padding: 0 !important; align-items: flex-end !important; }
+          .gallery-lightbox-panel { width: 100vw !important; max-height: 94vh !important; border-radius: 26px 26px 0 0 !important; }
+          .gallery-lightbox-stage { height: 54vh !important; border-radius: 26px 26px 0 0 !important; }
+          .gallery-view-modes button { padding: 7px 10px !important; }
+          .gallery-overlay { opacity: .82 !important; background: linear-gradient(to top, rgba(0,0,0,.8), transparent 58%) !important; }
         }
-        div::-webkit-scrollbar { display: none; }
+        .gallery-related::-webkit-scrollbar { display: none; }
+        @media (prefers-reduced-motion: reduce) {
+          .gallery-grid > div, .gallery-grid img { animation: none !important; transition: none !important; }
+        }
       `}</style>
     </div>
   );

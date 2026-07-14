@@ -368,7 +368,7 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
           50% { opacity: 0.6; transform: scale(0.8); }
         }
 
-        /* Rainbow "Apple" — thin neon glow that hugs the letters (no pill border) */
+        /* Rainbow "Apple" — full-spectrum type with a very thin Siri pulse */
         .rainbow-border-word {
           position: relative;
           background: linear-gradient(90deg, #ff2d55, #ff9500, #ffcc00, #34c759, #00d4ff, #5856d6, #af52de, #ff2d55);
@@ -383,6 +383,20 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
             drop-shadow(0 0 3px rgba(120,200,255,0.45))
             drop-shadow(0 0 6px rgba(180,90,230,0.30));
         }
+        .rainbow-border-word::after {
+          content: "";
+          position: absolute;
+          inset: -3px -5px;
+          border-radius: 8px;
+          padding: 1px;
+          background: linear-gradient(105deg, #ff375f, #ff9f0a, #ffd60a, #30d158, #64d2ff, #5e5ce6, #bf5af2, #ff375f);
+          background-size: 220% 100%;
+          -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          -webkit-mask-composite: xor;
+          mask-composite: exclude;
+          pointer-events: none;
+          animation: siriOutlinePulse 3.2s ease-in-out infinite, rainbowTextShift 4s linear infinite;
+        }
         /* Legacy ring element neutralized — glow now lives on the text itself */
         .rainbow-border-inner,
         .rainbow-border-inner::before,
@@ -393,6 +407,13 @@ export default function Navbar({ onSearchOpen }: NavbarProps) {
         @keyframes rainbowTextShift {
           0% { background-position: 0% 50%; }
           100% { background-position: 200% 50%; }
+        }
+        @keyframes siriOutlinePulse {
+          0%, 100% { opacity: .42; filter: blur(0) drop-shadow(0 0 2px rgba(100,210,255,.28)); }
+          50% { opacity: .95; filter: blur(.15px) drop-shadow(0 0 5px rgba(205,110,255,.48)); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .rainbow-border-word, .rainbow-border-word::after { animation: none; }
         }
       `}</style>
     </>

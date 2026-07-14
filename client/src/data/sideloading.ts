@@ -14,6 +14,8 @@ export interface Tool {
   status: "Active" | "Discontinued" | "Legacy";
   url: string;
   open?: boolean; // open-source
+  icon?: string; // official project artwork
+  accent?: string;
 }
 
 /* Core sideloading installers / signers */
@@ -23,54 +25,63 @@ export const sideloadTools: Tool[] = [
     tagline: "The original no-jailbreak app store",
     desc: "Installs and auto-refreshes IPAs using your free Apple ID. Needs AltServer running on a computer on the same network to refresh every 7 days.",
     computer: "Needs a PC/Mac", ios: "iOS 14 – 26", status: "Active", url: "https://altstore.io", open: true,
+    icon: "https://altstore.io/images/webclip.png", accent: "#4c7dff",
   },
   {
     name: "AltStore PAL",
     tagline: "Apple-approved alternative marketplace (EU)",
     desc: "The first Apple-sanctioned third-party app marketplace, available to users in the EU. No 7-day refresh and no computer required.",
     computer: "EU only", ios: "iOS 17.4 – 26", status: "Active", url: "https://altstore.io", open: true,
+    icon: "https://altstore.io/images/webclip.png", accent: "#4c7dff",
   },
   {
     name: "SideStore",
     tagline: "AltStore without an always-on computer",
     desc: "A fork of AltStore that refreshes apps on-device over a local VPN, so you only need a computer for the one-time setup.",
     computer: "On-device", ios: "iOS 15 – 26", status: "Active", url: "https://sidestore.io", open: true,
+    icon: "https://sidestore.io/apple-touch-icon.0a9d800f.png", accent: "#7a5cff",
   },
   {
     name: "LiveContainer",
     tagline: "Run unlimited apps in a container",
     desc: "Loads IPAs inside a single host app instead of installing them, sidestepping the 3-app free-certificate limit. The standout sideloading tool of 2025–26.",
     computer: "On-device", ios: "iOS 15 – 26+", status: "Active", url: "https://github.com/khanhduytran0/LiveContainer", open: true,
+    icon: "https://raw.githubusercontent.com/LiveContainer/LiveContainer/HEAD/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon1024.png", accent: "#ff9f0a",
   },
   {
     name: "Sideloadly",
     tagline: "Simple desktop IPA installer",
     desc: "A free Windows/Mac app that installs IPAs over USB with your Apple ID. Great for first-time setup of AltStore, SideStore, or LiveContainer.",
     computer: "Needs a PC/Mac", ios: "iOS 7 – 26", status: "Active", url: "https://sideloadly.io",
+    icon: "https://sideloadly.io/favicon.ico", accent: "#1f8fff",
   },
   {
     name: "Feather",
     tagline: "Modern on-device signer",
     desc: "Open-source IPA signer built for iOS 18+ with strong iOS 26 support. Manages certificates and installs apps directly from your phone.",
     computer: "On-device", ios: "iOS 16 – 26", status: "Active", url: "https://github.com/khcrysalis/Feather", open: true,
+    icon: "https://raw.githubusercontent.com/khcrysalis/Feather/HEAD/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather.png", accent: "#8e7cff",
   },
   {
     name: "Scarlet",
     tagline: "On-device store, no computer",
     desc: "Installs IPAs entirely on-device after a one-time certificate setup. Note: its catalog includes tweaked apps — stick to apps you're licensed to use.",
     computer: "On-device", ios: "iOS 15 – 26", status: "Active", url: "https://usescarletapp.com",
+    icon: "https://usescarletapp.com/wp-content/uploads/2023/05/cropped-icon-192x192.png", accent: "#ff375f",
   },
   {
     name: "FlekStore",
     tagline: "Web-based store + IPA signer",
     desc: "A third-party app store that also signs your own IPAs with a personal developer certificate, no PC required. Catalog includes tweaked apps — use responsibly.",
     computer: "On-device", ios: "iOS 14 – 26", status: "Active", url: "https://flekstore.com",
+    icon: "https://flekstore.com/indexPage/favicon.ico", accent: "#34c759",
   },
   {
     name: "TrollStore",
     tagline: "Permanent installs, no refresh — legacy only",
     desc: "Exploited CoreTrust to install IPAs permanently with no signing. Apple patched the bug in iOS 17.0.1, so it only works on iOS 14.0 – 17.0.",
     computer: "On-device", ios: "iOS 14.0 – 17.0", status: "Legacy", url: "https://github.com/opa334/TrollStore", open: true,
+    icon: "https://github.com/opa334.png", accent: "#ff9f0a",
   },
   {
     name: "eSign",
@@ -114,22 +125,23 @@ export interface AppEntry {
   desc: string;
   category: "Emulator" | "Utility" | "Tools" | "Media";
   url: string;       // official site or GitHub releases (downloadable IPA)
+  icon?: string;
 }
 
 /* Legitimate, open-source apps you can sideload — official releases only.
    No pirated or cracked software. */
 export const legitApps: AppEntry[] = [
-  { name: "Delta", dev: "Riley Testut", category: "Emulator", desc: "All-in-one retro emulator: NES, SNES, N64, GBA, GBC, DS and more. The flagship AltStore app.", url: "https://github.com/rileytestut/Delta/releases" },
-  { name: "DolphiniOS", dev: "OatmealDome", category: "Emulator", desc: "GameCube and Wii emulator for iPhone and iPad. Bring your own legally-dumped games.", url: "https://dolphinios.oatmealdome.me" },
-  { name: "PPSSPP", dev: "Henrik Rydgård", category: "Emulator", desc: "The leading PSP emulator, open-source with official iOS IPA builds.", url: "https://github.com/hrydgard/ppsspp/releases" },
-  { name: "Provenance", dev: "Provenance Team", category: "Emulator", desc: "Multi-system emulator front-end covering dozens of retro consoles.", url: "https://provenance-emu.com" },
-  { name: "UTM", dev: "utmapp", category: "Utility", desc: "Run full virtual machines — Windows, Linux, even classic macOS — on your iPhone or iPad.", url: "https://github.com/utmapp/UTM/releases" },
-  { name: "PojavLauncher", dev: "PojavLauncherTeam", category: "Utility", desc: "Launch Minecraft: Java Edition on iOS with your own Mojang/Microsoft account.", url: "https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases" },
-  { name: "iTorrent", dev: "XITRIX", category: "Utility", desc: "A native, open-source torrent client for iOS with background downloading.", url: "https://github.com/XITRIX/iTorrent/releases" },
-  { name: "Aidoku", dev: "Aidoku", category: "Media", desc: "A free, open-source manga reader with a clean, ad-free interface.", url: "https://aidoku.app" },
-  { name: "LiveContainer", dev: "khanhduytran0", category: "Tools", desc: "The container app itself — run other sideloaded apps inside it without the 3-app limit.", url: "https://github.com/khanhduytran0/LiveContainer/releases" },
-  { name: "Feather", dev: "khcrysalis", category: "Tools", desc: "On-device IPA signer and app manager — sideload other apps straight from your phone.", url: "https://github.com/khcrysalis/Feather/releases" },
-  { name: "SideStore", dev: "SideStore Team", category: "Tools", desc: "The no-computer AltStore fork; install it once and refresh apps on-device.", url: "https://github.com/SideStore/SideStore/releases" },
+  { name: "Delta", dev: "Riley Testut", category: "Emulator", desc: "All-in-one retro emulator: NES, SNES, N64, GBA, GBC, DS and more. The flagship AltStore app.", url: "https://github.com/rileytestut/Delta/releases", icon: "https://raw.githubusercontent.com/rileytestut/Delta/HEAD/Resources/Icons.xcassets/Modern/ModernIcon.appiconset/Icon1024.png" },
+  { name: "DolphiniOS", dev: "OatmealDome", category: "Emulator", desc: "GameCube and Wii emulator for iPhone and iPad. Bring your own legally-dumped games.", url: "https://dolphinios.oatmealdome.me", icon: "https://github.com/OatmealDome.png" },
+  { name: "PPSSPP", dev: "Henrik Rydgård", category: "Emulator", desc: "The leading PSP emulator, open-source with official iOS IPA builds.", url: "https://github.com/hrydgard/ppsspp/releases", icon: "https://raw.githubusercontent.com/hrydgard/ppsspp/HEAD/ios/assets.xcassets/AppIcon.appiconset/icon_backfill_1024.png" },
+  { name: "Provenance", dev: "Provenance Team", category: "Emulator", desc: "Multi-system emulator front-end covering dozens of retro consoles.", url: "https://provenance-emu.com", icon: "https://github.com/Provenance-Emu.png" },
+  { name: "UTM", dev: "utmapp", category: "Utility", desc: "Run full virtual machines — Windows, Linux, even classic macOS — on your iPhone or iPad.", url: "https://github.com/utmapp/UTM/releases", icon: "https://raw.githubusercontent.com/utmapp/UTM/HEAD/Platform/Assets.xcassets/AppIcon.appiconset/icon_512pt%402x.png" },
+  { name: "PojavLauncher", dev: "PojavLauncherTeam", category: "Utility", desc: "Launch Minecraft: Java Edition on iOS with your own Mojang/Microsoft account.", url: "https://github.com/PojavLauncherTeam/PojavLauncher_iOS/releases", icon: "https://raw.githubusercontent.com/PojavLauncherTeam/PojavLauncher_iOS/HEAD/Natives/Assets.xcassets/AppIcon-Light.appiconset/AppIcon-Light_1024x1024.png" },
+  { name: "iTorrent", dev: "XITRIX", category: "Utility", desc: "A native, open-source torrent client for iOS with background downloading.", url: "https://github.com/XITRIX/iTorrent/releases", icon: "https://github.com/XITRIX.png" },
+  { name: "Aidoku", dev: "Aidoku", category: "Media", desc: "A free, open-source manga reader with a clean, ad-free interface.", url: "https://aidoku.app", icon: "https://raw.githubusercontent.com/Aidoku/Aidoku/HEAD/Shared/Assets.xcassets/AppIcon.appiconset/180.png" },
+  { name: "LiveContainer", dev: "khanhduytran0", category: "Tools", desc: "The container app itself — run other sideloaded apps inside it without the 3-app limit.", url: "https://github.com/khanhduytran0/LiveContainer/releases", icon: "https://raw.githubusercontent.com/LiveContainer/LiveContainer/HEAD/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon1024.png" },
+  { name: "Feather", dev: "khcrysalis", category: "Tools", desc: "On-device IPA signer and app manager — sideload other apps straight from your phone.", url: "https://github.com/khcrysalis/Feather/releases", icon: "https://raw.githubusercontent.com/khcrysalis/Feather/HEAD/Feather/Resources/Assets.xcassets/AppIcon.appiconset/feather.png" },
+  { name: "SideStore", dev: "SideStore Team", category: "Tools", desc: "The no-computer AltStore fork; install it once and refresh apps on-device.", url: "https://github.com/SideStore/SideStore/releases", icon: "https://sidestore.io/apple-touch-icon.0a9d800f.png" },
 ];
 
 export interface SourceEntry {
