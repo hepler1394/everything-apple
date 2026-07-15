@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T17:29:31.488Z",
+  "updated": "2026-07-15T12:19:22.745Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -14,6 +14,266 @@
   ],
   "items": [
     {
+      "id": "1d96b019",
+      "title": "Apple Intelligence finally on the road to release in China",
+      "link": "https://appleinsider.com/articles/26/07/15/apple-intelligence-finally-on-the-road-to-release-in-china?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-15T11:48:21.000Z",
+      "summary": "A new official filing marks the conclusion of another regulatory hurdle that has been preventing Apple Intelligence from launching in Apple's crucial Chinese market. Apple…",
+      "image": "https://photos5.appleinsider.com/gallery/68253-143882-000-lede-China-AI-xl.jpg"
+    },
+    {
+      "id": "9f857aa3",
+      "title": "PSA: Beware of fake Mac crash reports out to steal your passwords, crypto wallets, more",
+      "link": "https://9to5mac.com/2026/07/15/psa-beware-of-fake-mac-crash-reports-out-to-steal-your-passwords-crypto-wallets-more/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-15T11:43:11.000Z",
+      "summary": "While macOS is generally very stable, there are times when an app will crash and your Mac will offer to send a diagnostic report to Apple. A new form of Mac malware has been…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Beware-of-fake-Mac-crash-reports.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "fdbb74d8",
+      "title": "Apple Intelligence Finally Cleared to Launch in China",
+      "link": "https://www.macrumors.com/2026/07/15/apple-intelligence-cleared-to-launch-in-china/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-15T11:25:57.000Z",
+      "summary": "Apple Intelligence has been approved by Chinese regulators, opening the door for the AI system to reach iPhones in the country for the first time. Reuters reports that China's…",
+      "image": "https://images.macrumors.com/article-new/2024/09/apple-intelligence-black.jpeg"
+    },
+    {
+      "id": "ed1a88e2",
+      "title": "Apple reaches agreement with Chinese government on Apple Intelligence rollout",
+      "link": "https://9to5mac.com/2026/07/15/apple-reaches-agreement-with-chinese-government-on-apple-intelligence-rollout/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-15T11:19:15.000Z",
+      "summary": "The new Siri and other Apple Intelligence features are currently only supported in the iOS 27 beta in English in a small number of countries, but Apple has promised that they will…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-reaches-agreement-with-Chinese-government-on-Apple-Intelligence-rollout.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "3a0c7258",
+      "title": "A sneak peek at nine new(ish) emoji on the way",
+      "link": "https://9to5mac.com/2026/07/15/a-sneak-peek-at-nine-newish-emoji-on-the-way/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-15T10:57:56.000Z",
+      "summary": "Unicode’s emoji tsar Jennifer Daniel has given us a sneak peek at nine emoji set for release next year – though not all of them are entirely new. She says the committee…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/A-sneak-peek-at-nine-new-emoji-on-the-way.webp?w=1600"
+    },
+    {
+      "id": "3a370d2d",
+      "title": "LaserPecker LX2 review: Leveling up your laser game, for a price",
+      "link": "https://appleinsider.com/articles/26/07/15/laserpecker-lx2-review-leveling-up-your-laser-game-for-a-price?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-15T01:20:32.000Z",
+      "summary": "The LaserPecker LX2 is an enclosed desktop laser cutter with swappable modules that bridges hobbyist and small-business laser work. Its sticker price is intimidating, but it's a…",
+      "image": "https://photos5.appleinsider.com/gallery/68238-143847-LaserPeckerLX2review1-xl.jpg"
+    },
+    {
+      "id": "99cc8f56",
+      "title": "Limited series ‘Lucky’, starring Anya Taylor-Joy, premieres on Apple TV",
+      "link": "https://9to5mac.com/2026/07/14/limited-series-lucky-starring-anya-taylor-joy-premieres-on-apple-tv/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-15T01:01:17.000Z",
+      "summary": "The first episodes of Lucky , Apple TV’s new limited series starring Anya Taylor-Joy ( The Menu ), are now streaming. Watch the trailer below.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/lucky-apple-tv.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "b1227436",
+      "title": "iOS 27: My favorite new iPhone features (other than AI)",
+      "link": "https://9to5mac.com/2026/07/14/ios-27-my-favorite-new-iphone-features-other-than-ai/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-15T00:41:31.000Z",
+      "summary": "The iOS 27 public beta is here , and the headlining changes are Siri AI and the array of new Apple Intelligence features. However, the update also includes plenty of non-AI…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/ios-27-lock-screen-clock-small.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "3a003970",
+      "title": "LEGO Considering Bondi Blue iMac G3 Set",
+      "link": "https://www.macrumors.com/2026/07/14/lego-imac-g3-set/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-15T00:12:27.000Z",
+      "summary": "LEGO today said the iMac G3 project submitted for consideration on its \"Ideas\" site has been moved to Parking Lot status, which means it hasn't been ruled out and could still…",
+      "image": "https://images.macrumors.com/article-new/2025/08/LEGO-imac-g31.jpeg"
+    },
+    {
+      "id": "5b6b98f4",
+      "title": "Opera gains ground among iPhone users in the US and UK",
+      "link": "https://9to5mac.com/2026/07/14/opera-gains-ground-among-iphone-users-in-the-us-and-uk/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T23:40:54.000Z",
+      "summary": "Opera says its iOS browser saw monthly active users grow 93% in the UK and 50% in the US during Q2 2026 compared with the same period last year. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/opera-iphone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "63258c1a",
+      "title": "OpenAI's first hardware device will be a HomePod, but don't tell them that",
+      "link": "https://appleinsider.com/articles/26/07/14/openais-first-hardware-device-will-be-a-homepod-but-dont-tell-them-that?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T21:41:48.000Z",
+      "summary": "The description for OpenAI's first hardware device suggests it will be a speaker that can wiggle around a bit while it reads your email, so a HomePod , but more annoying and…",
+      "image": "https://photos5.appleinsider.com/gallery/68250-143880-HomePod-mini-portable-battery-outside-xl.jpg"
+    },
+    {
+      "id": "fc3854bd",
+      "title": "OpenAI's First AI Device Will Be a Portable Smart Speaker",
+      "link": "https://www.macrumors.com/2026/07/14/openai-ai-hardware-device-speaker/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-14T21:38:08.000Z",
+      "summary": "OpenAI's first AI hardware product is a mobile smart speaker without a display, reports Bloomberg . The device is at the heart of a new legal dispute with Apple , with Apple…",
+      "image": "https://images.macrumors.com/article-new/2025/11/openai-chatgpt-logo.jpg"
+    },
+    {
+      "id": "aa22ab95",
+      "title": "Report: OpenAI’s first device will be a portable speaker with a camera and other sensors",
+      "link": "https://9to5mac.com/2026/07/14/report-openais-first-device-will-be-a-portable-speaker-with-a-camera-and-other-sensors/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T21:14:13.000Z",
+      "summary": "According to Bloomberg , OpenAI’s anticipated entry into the hardware market is slated to begin with a portable, screenless smart speaker. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/ive-altman-powell-jobs.webp?w=1600"
+    },
+    {
+      "id": "c9e02b9d",
+      "title": "OpenAI shrugs, denies responsibility for trade secret theft with vague statements",
+      "link": "https://appleinsider.com/articles/26/07/14/openai-shrugs-denies-responsibility-for-trade-secret-theft-with-vague-statements?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T21:06:36.000Z",
+      "summary": "OpenAI's second official statement concerning Apple's trade secret lawsuit says nothing and is so generic that only an AI could have generated a statement so bland and empty.…",
+      "image": "https://photos5.appleinsider.com/gallery/68249-143877-Apple-Intelligence-pin-iPhone-Air-xl.jpg"
+    },
+    {
+      "id": "8451bb8b",
+      "title": "OpenAI: No Evidence Apple's Trade Secret Complaint Has Merit",
+      "link": "https://www.macrumors.com/2026/07/14/openai-apple-lawsuit-response/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-14T20:45:17.000Z",
+      "summary": "OpenAI says it is \"not aware\" of any evidence that Apple's allegations of trade secret theft have merit in a statement provided to Bloomberg . While we take these allegations…",
+      "image": "https://images.macrumors.com/article-new/2026/05/OpenAI-vs-Apple-Feature-scaled.jpg"
+    },
+    {
+      "id": "cb0b2c2e",
+      "title": "OpenAI says it has seen no evidence supporting Apple’s trade secret theft claims",
+      "link": "https://9to5mac.com/2026/07/14/openai-says-it-has-seen-no-evidence-supporting-apples-trade-secret-theft-claims/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T20:11:05.000Z",
+      "summary": "OpenAI has issued a new statement in reaction to Apple’s lawsuit accusing the company of trade secret theft. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-vs-openai.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "f82d85a3",
+      "title": "iCloud $32.8B CSAM lawsuit dismissed, Apple protected under Section 230 laws",
+      "link": "https://appleinsider.com/articles/26/07/14/icloud-328b-csam-lawsuit-dismissed-apple-protected-under-section-230-laws?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T19:42:59.000Z",
+      "summary": "A judge has dismissed an attempted class action lawsuit against Apple, which accused the tech giant of failing to stop the storage of child sexual abuse material on iCloud .…",
+      "image": "https://photos5.appleinsider.com/gallery/68248-143876-66485-139414-IMG_5547-xl-xl.jpg"
+    },
+    {
+      "id": "2197e19f",
+      "title": "Judge dismisses lawsuit accusing Apple of failing to stop CSAM on iCloud",
+      "link": "https://9to5mac.com/2026/07/14/judge-dismisses-lawsuit-accusing-apple-of-failing-to-stop-csam-on-icloud/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T19:19:36.000Z",
+      "summary": "Reuters reports that Apple has defeated a proposed class-action lawsuit accusing it of failing to stop child sexual abuse material from being stored and shared through iCloud.…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/06/icloud-storage-lawsuit-gavel.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "519f554d",
+      "title": "Apple Watch, Meta Glasses, AirPods get reprieve from EU replaceable battery law",
+      "link": "https://appleinsider.com/articles/26/07/14/apple-watch-meta-glasses-airpods-get-reprieve-from-eu-replaceable-battery-law?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T18:49:08.000Z",
+      "summary": "The EU has walked back its rules that would require certain devices to have \"easily removable and replaceable\" batteries. Amongst those exceptions are the Apple Watch, and…",
+      "image": "https://photos5.appleinsider.com/gallery/68247-143875-Apple-Watch-Ultra-lede-xl.jpg"
+    },
+    {
+      "id": "b6056b38",
+      "title": "Canva Code 2.0 adds visual editing, HTML imports, and real-time collaboration",
+      "link": "https://9to5mac.com/2026/07/14/canva-code-2-0-adds-visual-editing-html-imports-and-real-time-collaboration/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T18:37:21.000Z",
+      "summary": "Canva today unveiled Canva Code 2.0, an AI-powered vibe coding platform that lets users build and visually edit websites, apps, and interactive experiences. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/canva-code.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "c7470681",
+      "title": "Amazon Hosts Rare Nintendo Switch 2 Deal, Get $49 Off Game Bundle [Sold Out]",
+      "link": "https://www.macrumors.com/2026/07/14/amazon-switch-2-deal/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-14T18:32:08.000Z",
+      "summary": "Amazon has introduced a big discount on the Nintendo Switch 2: Choose Your Game Bundle, now available for $449.99 when you add the product to your cart, down from $499.00. As the…",
+      "image": "https://images.macrumors.com/article-new/2026/07/switch-2-blue-scaled.jpg"
+    },
+    {
+      "id": "0d9eeab3",
+      "title": "Apple Releases New iOS 27 AirPods Firmware For Public Beta Testers",
+      "link": "https://www.macrumors.com/2026/07/14/airpods-public-beta-firmware/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-14T18:29:56.000Z",
+      "summary": "Apple today released new AirPods beta firmware available for public testers. The firmware has a build number of 9A5314b, and it is available for the AirPods Pro 2, AirPods Pro 3 ,…",
+      "image": "https://images.macrumors.com/article-new/2021/06/AirPods-Pro-Beta-Firmware.jpg"
+    },
+    {
+      "id": "778efd8e",
+      "title": "AirPods public betas arrive one day after iOS 27 public beta, here’s how to enroll",
+      "link": "https://9to5mac.com/2026/07/14/airpods-public-betas-arrive-one-day-after-ios-27-public-beta-heres-how-to-enroll/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T18:25:21.000Z",
+      "summary": "Following yesterday’s release of the AirPods Pro 3, AirPods Pro 2, and AirPods (4th gen). Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/airpods-pro-3-ios-27-FI-dark.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "4cf8d631",
+      "title": "macOS Golden Gate Public Beta: 10 Features to Try First",
+      "link": "https://www.macrumors.com/guide/macos-golden-gate-10-features/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-14T18:11:10.000Z",
+      "summary": "macOS 27 Golden Gate is available to public beta testers as of this week, which means you can try out Siri AI and the other changes coming in the update before it launches this…",
+      "image": ""
+    },
+    {
+      "id": "a55a1238",
+      "title": "PrismML confirms it is in talks with Apple about AI model-shrinking tech",
+      "link": "https://appleinsider.com/articles/26/07/14/prismml-confirms-it-is-in-talks-with-apple-about-ai-model-shrinking-tech?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-14T18:08:37.000Z",
+      "summary": "Five days after initial reports that there was an AI-model shrinking technology by PrismML suitable for iPhones , the company has confirmed it is talking to Apple over the use of…",
+      "image": "https://photos5.appleinsider.com/gallery/68246-143874-67944-143237-000-lead-Siri-AI-subscription-xl-xl.jpg"
+    },
+    {
+      "id": "84dcedb8",
+      "title": "PrismML releases Bonsai 27B, claiming first major AI model of its size fit for iPhone",
+      "link": "https://9to5mac.com/2026/07/14/prismml-releases-bonsai-27b-claiming-first-major-ai-model-of-its-size-fit-for-iphone/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-14T18:02:52.000Z",
+      "summary": "PrismML is back in the news today after the AI startup’s CEO told CNBC that Apple is looking at the company’s technology. The company has also released its Bonsai 27B model that…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/cosmic-orange-17-pro.webp?w=1600"
+    },
+    {
       "id": "d9ff18ea",
       "title": "Apple Watch among wearables exempted from EU user-replaceable battery rules",
       "link": "https://9to5mac.com/2026/07/14/apple-watch-among-wearables-exempted-from-eu-user-replaceable-battery-rules/",
@@ -25,7 +285,7 @@
     },
     {
       "id": "29ac329b",
-      "title": "iOS 27 compatibility: Does your iPhone support all the new features?",
+      "title": "Your iPhone might miss out on these iOS 27 features",
       "link": "https://9to5mac.com/2026/07/14/ios-27-new-features-compatibility/",
       "source": "9to5Mac",
       "category": "news",
@@ -354,264 +614,14 @@
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Safety-regulator-says-Apple-needs-to-do-more-to-combat-sextortion.jpg?quality=82&strip=all&w=1600"
     },
     {
-      "id": "21131245",
-      "title": "WhatsApp Beta Reveals iCloud Backup Alternative for iPhone",
-      "link": "https://www.macrumors.com/2026/07/14/whatsapp-backup-cloud-provider-for-ios/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-14T10:06:46.000Z",
-      "summary": "WhatsApp is developing a first-party cloud storage option for chat backups on iPhone, providing users with an alternative to iCloud for the first time, according to app tinkerer…",
-      "image": "https://images.macrumors.com/article-new/2026/05/Whatsapp-Feature.jpg"
-    },
-    {
-      "id": "888745d5",
-      "title": "Apple @ Work Podcast: Breaking down the recent IDC PC shipment report",
-      "link": "https://9to5mac.com/2026/07/14/apple-work-podcast-breaking-down-the-recent-idc-pc-shipment-report/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-14T10:00:00.000Z",
-      "summary": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional-grade platform all the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-at-work-27.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "d255d392",
-      "title": "Google Chrome's Gemini AI Features Roll Out to UK Users",
-      "link": "https://www.macrumors.com/2026/07/14/google-chrome-gemini-ai-features-uk/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-14T09:32:37.000Z",
-      "summary": "Google has announced the rollout of Chrome's latest AI features to Mac and PC users in the U.K., indicated by a new \"Ask Gemini\" button with a sparkle icon in the upper right side…",
-      "image": "https://images.macrumors.com/article-new/2022/06/Chrome-Feature-22.jpg"
-    },
-    {
-      "id": "a5c48820",
-      "title": "How to use Playlist Playground to build Apple Music playlists in seconds",
-      "link": "https://appleinsider.com/inside/apple-music/tips/how-to-use-playlist-playground-to-build-apple-music-playlists-in-seconds?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-14T03:01:08.000Z",
-      "summary": "Apple Music's Playlist Playground feature is a prompt-driven playlist builder that's fast and surprisingly useful, even if it won't replace a carefully curated mix. Here's how to…",
-      "image": "https://photos5.appleinsider.com/gallery/67145-141166-IMG_6374-xl.jpg"
-    },
-    {
-      "id": "161d5b89",
-      "title": "iOS 27 public beta: Should you install it on your iPhone?",
-      "link": "https://9to5mac.com/2026/07/13/ios-27-public-beta-should-you-install-it-on-your-iphone/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-14T00:28:57.000Z",
-      "summary": "The iOS 27 public beta is now available , and it’s full of major new features. Should you install it on your iPhone? Here’s everything you need to know.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/ios-27.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "7e862e97",
-      "title": "OpenAI could force Apple into an awkward fight with Jony Ive",
-      "link": "https://9to5mac.com/2026/07/13/openai-could-force-apple-into-an-awkward-fight-with-jony-ive/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T23:52:44.000Z",
-      "summary": "While Apple did its best to insulate Jony Ive in its lawsuit against OpenAI, the company may not be able to keep its former design chief out of the fight. Here’s why.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2022/07/Jony-Ive-Apple-consultant.jpg?quality=82&strip=all&w=1500"
-    },
-    {
-      "id": "97b68e02",
-      "title": "iOS 27 Public Beta Is Here: 10 New Features Worth Testing",
-      "link": "https://www.macrumors.com/guide/ios-27-public-beta-features/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-13T23:07:18.000Z",
-      "summary": "Apple released the iOS 27 public beta today, and if you've been curious about the new software, now's the time to try it out. &zwnj;iOS 27&zwnj; brings Siri AI, performance…",
-      "image": "https://images.macrumors.com/article-new/2026/07/iOS-27-Public-Beta-Feature.jpg"
-    },
-    {
-      "id": "6f17415e",
-      "title": "iOS 26.6 Will Warn You About Malicious iMessages",
-      "link": "https://www.macrumors.com/2026/07/13/ios-26-6-malicious-message-warning/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-13T23:02:48.000Z",
-      "summary": "Apple is adding a new warning about malicious iMessages in iOS 26.6, according to X user @limpless_skelly , who shared a mockup of the notification. The pop-up will warn users…",
-      "image": "https://images.macrumors.com/article-new/2025/01/General-Apps-Messages-Redux.jpg"
-    },
-    {
-      "id": "dcfe4a71",
-      "title": "Second report says Apple posted its strongest-ever Q2 for iPhone shipments amid market downturn",
-      "link": "https://9to5mac.com/2026/07/13/second-report-says-apple-posted-its-strongest-ever-q2-for-iphone-shipments-amid-market-downturn/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T22:56:21.000Z",
-      "summary": "Adding to an earlier report from Counterpoint Research that showed Apple posting its strongest-ever second quarter for iPhone shipments, Omdia has now published its own figures…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/Two-reasons-helped-Apple-hit-record-iPhone-sales-and-theyre-both-orange.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "61635929",
-      "title": "visionOS 27: The MacStories Beta Preview",
-      "link": "https://www.macstories.net/stories/visionos-27-the-macstories-beta-preview/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-13T21:45:03.000Z",
-      "summary": "Summer beta season is in full swing, with a new wave of testers coming aboard via the just-released public OS 27 betas. While visionOS hasn’t ever been included in the public beta…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/07/06/img-0641-1783361878556-9d3d7b6def.jpg"
-    },
-    {
-      "id": "a4514260",
-      "title": "watchOS 27: The MacStories Public Beta Preview",
-      "link": "https://www.macstories.net/stories/watchos-27-the-macstories-public-beta-preview/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-13T21:26:21.000Z",
-      "summary": "Last year was a quiet year for watchOS. While Apple took a couple of swings with Workout Buddy, Smart Stack hints, and a redesign of the Workout app, watchOS 26 was a scaled-back…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/07/13/header-1783958753084-e88a0ba338.png"
-    },
-    {
-      "id": "069679c9",
-      "title": "iPadOS 27 & macOS 27 beta 3 get a version 2 update as public betas drop",
-      "link": "https://appleinsider.com/articles/26/07/13/ipados-27-macos-27-beta-3-get-a-version-2-update-as-public-betas-drop?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-13T21:07:42.000Z",
-      "summary": "It's OS 27 public beta day, but developer beta testers are getting a little treat with version 2 updates of the iPadOS 27 and macOS 27 beta 3 release. iPadOS 27 beta 3 got a…",
-      "image": "https://photos5.appleinsider.com/gallery/68240-143846-iPadOS-27-Siri-AI-search-Spotlight-xl.jpg"
-    },
-    {
-      "id": "c50c36ce",
-      "title": "macOS 27 Golden Gate: The MacStories Public Beta Preview",
-      "link": "https://www.macstories.net/stories/macos-27-golden-gate-the-macstories-public-beta-preview/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-13T21:05:46.000Z",
-      "summary": "The public beta of macOS 27 Golden Gate is out today, and I’m sure many of you are wondering whether to take the plunge and give it a try in advance of its official fall release.…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/07/13/shortcut-upload-1783877279024-de3510b035-1783938718821-5986e03224.png"
-    },
-    {
-      "id": "952ed3d9",
-      "title": "9to5Mac Daily: July 13, 2026 – Apple sues OpenAI",
-      "link": "https://9to5mac.com/2026/07/13/daily-july-13-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T20:59:45.000Z",
-      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "f609acf2",
-      "title": "tvOS 27 and HomePod 27 public betas now available, here’s what’s new",
-      "link": "https://9to5mac.com/2026/07/13/tvos-27-and-homepod-27-public-betas-now-available-heres-whats-new/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T20:59:32.000Z",
-      "summary": "Apple has just released tvOS 27 in public beta, so any Apple TV 4K user can install the software in advance of its fall launch. HomePod 27 is available in public beta too. Here’s…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-tv-homepod-mini-siri-ai.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "13d31078",
-      "title": "First iOS 27, macOS 27 public betas are out, but you should still be careful",
-      "link": "https://appleinsider.com/articles/26/07/13/first-ios-27-macos-27-public-betas-are-out-but-you-should-still-be-careful?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-13T20:53:56.000Z",
-      "summary": "Apple has finally introduced its first public betas of iOS 27 , iPadOS 27, macOS 27 Golden Gate, watchOS 27, visionOS 27, and tvOS 27. iOS 27's public beta is here Since the…",
-      "image": "https://photos5.appleinsider.com/gallery/68169-143845-iOS-27-public-beta-xl.jpg"
-    },
-    {
-      "id": "fefb3848",
-      "title": "Apple rolls out revised beta 3 builds for iPadOS 27 and macOS 27 Golden Gate",
-      "link": "https://9to5mac.com/2026/07/13/apple-rolls-out-revised-beta-3-builds-for-ipados-27-and-macos-27-golden-gate/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T20:53:31.000Z",
-      "summary": "In addition to releasing the first wave of public betas for iPadOS 27 and macOS 27 Golden Gate , Apple also rolled out revised versions of these developer betas with new build…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/macOS-27-b3.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "a29979fb",
-      "title": "Siri AI and Apple’s Trickle-Up Strategy",
-      "link": "https://www.macstories.net/stories/siri-ai-and-apples-trickle-up-strategy/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-13T20:47:28.000Z",
-      "summary": "The new Siri AI in iOS 27. In the month that I’ve been using iOS 27 (launching in public beta today) and the new Siri AI, I’ve come to a few conclusions: Siri AI is a much better…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/07/12/shortcut-upload-1783899093120-6300cd5704.png"
-    },
-    {
-      "id": "0c0a5000",
-      "title": "Product managers & engineering leads are the target for Apple's next WWDC26 session",
-      "link": "https://appleinsider.com/articles/26/07/13/product-managers-engineering-leads-are-the-target-for-apples-next-wwdc26-session?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-13T20:46:07.000Z",
-      "summary": "On July 23, 2026, Apple will hold an online session that is meant to cater to leadership roles and how they might implement Siri AI features, Liquid Glass, and more in their apps…",
-      "image": "https://photos5.appleinsider.com/gallery/68239-143844-Siri-AI-xl.jpg"
-    },
-    {
-      "id": "6cd9ea67",
-      "title": "Apple’s public betas for iOS 27 and more are out now",
-      "link": "https://www.theverge.com/tech/964307/apple-public-betas-ios-27-siri-ai",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-13T20:45:40.000Z",
-      "summary": "Apple has just released public betas for iOS 27 and other major OS updates that are set to publicly launch this fall. The big new feature this year is Siri AI, the delayed…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-5.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "c311c0ff",
-      "title": "macOS 27 public beta now available, here’s how to install it",
-      "link": "https://9to5mac.com/2026/07/13/macos-27-public-beta-now-available-heres-how-to-install-it/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T20:45:39.000Z",
-      "summary": "After three rounds of developer betas, Apple is now rolling out the first public beta of macOS 27. Here’s how to install it.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/macOS-27-public.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "abe1c403",
-      "title": "watchOS 27 public beta is here with Siri AI and smarter Apple Watch features",
-      "link": "https://9to5mac.com/2026/07/13/watchos-27-public-beta/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T20:45:12.000Z",
-      "summary": "The watchOS 27 public beta is now available for Apple Watch. It gives users an early look at the software update coming to everyone this fall. watchOS 27 includes one potentially…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/watchOS-27-public.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "efdf9afb",
-      "title": "iOS 27 public beta is here with Siri AI, iPhone speed upgrades, and more",
-      "link": "https://9to5mac.com/2026/07/13/ios-27-public-beta/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T20:45:07.000Z",
-      "summary": "The first iOS 27 public beta is now available for iPhone. It gives users an early chance to try Apple’s biggest software update of the year. Siri AI is the headline feature. The…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/iOS-27-public.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "047fc6cd",
-      "title": "Apple releases iPadOS 27 public beta, here’s what’s new",
-      "link": "https://9to5mac.com/2026/07/13/apple-releases-ipados-27-public-beta-heres-whats-new/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-13T20:44:47.000Z",
-      "summary": "Apple has just launched iPadOS 27 in public beta, so anyone can try the new software in advance of its fall release. Here’s what’s new in iPadOS 27, and how to get the public beta.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/iPadOS-27-public.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "689aee04",
-      "title": "Siri AI makes the Apple Watch finally feel like a wrist computer",
-      "link": "https://www.theverge.com/tech/964800/watchos-27-preview-siri-ai-apple-watch-gestures-smartwatch",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-13T20:44:20.000Z",
-      "summary": "Siri has been on the Apple Watch since day one, though I'm usually hard-pressed to find people who actually make good use of it. It's kind of just… been there - mostly as a way to…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/268635_Siri_AI_AKrales_0004.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "ec09dd63",
-      "title": "Siri AI is already changing how I use my iPhone",
-      "link": "https://www.theverge.com/tech/964714/siri-ai-public-beta-preview-ios-27-hands-on",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-13T20:43:20.000Z",
-      "summary": "iOS 27 escaped the developer world today with the launch of the first public beta. I've been testing the new operating system since early June, looking for quirks and seeing if it…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Siri-AI-Being-invoked-3.jpg?quality=90&strip=all&crop=0,0,100,100"
+      "id": "81dc05df",
+      "title": "The app is here, but not the widget.",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1ux12fz/the_app_is_here_but_not_the_widget/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-15T09:39:27.000Z",
+      "summary": "Hi, I&#39;ve used Sideloadly 0.60 to install an app I&#39;ve build myself using Xcode on my iPhone be cause I didn&#39;t want to pay for an Apple Developper Account. The app…",
+      "image": ""
     },
     {
       "id": "7aed3a48",
@@ -812,16 +822,6 @@
       "date": "2026-07-01T13:26:54.000Z",
       "summary": "I&#39;ve been looking for a new yt ipa to replace ytlite and tried youtubeplus. I don&#39;t know if this is a bug in whatever, but whenever I click on a video it just loads…",
       "image": ""
-    },
-    {
-      "id": "5af7e696",
-      "title": "Is this a safe ipa file, please help",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1uk146x/is_this_a_safe_ipa_file_please_help/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-06-30T20:46:39.000Z",
-      "summary": "&#32; submitted by &#32; /u/_xekie [link] &#32; [comments]",
-      "image": "https://external-preview.redd.it/3SGOap9Qx3j366Pq6Ulf4xLn5CHPBZj_flIJOfsZguE.jpeg?width=320&crop=smart&auto=webp&s=134740f973ee9c81620da427dda1d8b1aac13cc4"
     },
     {
       "id": "1ede581e",
