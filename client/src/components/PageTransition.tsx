@@ -51,7 +51,11 @@ export default function PageTransition({ children }: PageTransitionProps) {
     },
     entered: {
       opacity: 1,
-      transform: "translateY(0)",
+      // "none", not translateY(0): any non-none transform makes this wrapper
+      // the containing block for position:fixed children, which pins modal
+      // backdrops (e.g. the Graveyard story dialog) to the page instead of
+      // the viewport — the modal renders thousands of px below the fold.
+      transform: "none",
       transition: "opacity 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
     },
     exiting: {
@@ -62,7 +66,15 @@ export default function PageTransition({ children }: PageTransitionProps) {
   };
 
   return (
-    <div style={{ ...styles[transitionState], willChange: "opacity, transform" }}>
+    <div
+      style={{
+        ...styles[transitionState],
+        // will-change: transform creates a containing block for fixed
+        // descendants just like a real transform — only hint it while a
+        // transition is actually running, never in the settled state.
+        willChange: transitionState === "entered" ? "auto" : "opacity, transform",
+      }}
+    >
       {children}
     </div>
   );
