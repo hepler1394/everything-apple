@@ -104,6 +104,8 @@ export default function Footer() {
                           color: linkColor,
                           textDecoration: "none",
                           lineHeight: 1.5,
+                          display: "inline-block",
+                          padding: "8px 0",
                           transition: "color 0.15s ease",
                         }}
                         onMouseEnter={(e) => (e.currentTarget.style.color = accentHover)}
@@ -119,6 +121,8 @@ export default function Footer() {
                             color: linkColor,
                             textDecoration: "none",
                             lineHeight: 1.5,
+                            display: "inline-block",
+                            padding: "8px 0",
                             cursor: "pointer",
                             transition: "color 0.15s ease",
                           }}

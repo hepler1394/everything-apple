@@ -2201,3 +2201,32 @@ html { scroll-behavior: smooth; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* 2026-07 mobile audit: hint that the Aqua tab strip scrolls on phones */
+@media (max-width: 760px) {
+  .aqua-metalbar {
+    position: relative;
+  }
+  .aqua-metalbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 34px;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(230, 231, 235, 0), rgba(220, 221, 226, 0.95));
+  }
+}
+
+/* 2026-07 mobile audit: every footer link gets a finger-sized hit area */
+@media (max-width: 760px) {
+  .aqua-tab { padding: 10px 14px; }
+
+  footer a,
+  footer span[style*="cursor: pointer"] {
+    display: inline-block !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
