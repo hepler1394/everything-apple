@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17T12:13:18.570Z",
+  "updated": "2026-07-18T11:55:43.845Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -13,6 +13,516 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "84318d91",
+      "title": "Apple Raises iPhone Prices in Japan",
+      "link": "https://www.macrumors.com/2026/07/17/apple-raises-iphone-prices-in-japan/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "After raising prices on all Macs and iPads worldwide last month, Apple has now increased the price of iPhone models in Japan. As spotted by the Spanish blog iPhoneros , the iPhone…",
+      "image": "https://images.macrumors.com/article-new/2026/07/iPhone-17-17-Pro-and-Air-Feature.jpg"
+    },
+    {
+      "id": "1f740d89",
+      "title": "Apple Passed Nvidia to Become World's Most Valuable Company Again",
+      "link": "https://www.macrumors.com/2026/07/17/apple-passed-nvidia-most-valuable-company/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Apple momentarily became the world's most valuable publicly traded company again today after its market valuation surpassed that of Nvidia, according to CNBC . However, the two…",
+      "image": "https://images.macrumors.com/article-new/2025/04/Stocks-App-Icon-and-Apple-Logo-Feature.jpg"
+    },
+    {
+      "id": "0c665258",
+      "title": "Apple Raises iCloud+ Prices in 8 Countries",
+      "link": "https://www.macrumors.com/2026/07/17/apple-icloud-plus-price-increase/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Apple has increased the price of iCloud + in Nigeria, Türkiye, Vietnam, Japan, Egypt, New Zealand, the Philippines, and Indonesia, according to an updated version of its iCloud…",
+      "image": "https://images.macrumors.com/article-new/2024/12/iCloud-General-Feature-Redux.jpg"
+    },
+    {
+      "id": "ecd74024",
+      "title": "Apple Music Now Costs $11.99 as Apple Increases Subscription Prices",
+      "link": "https://www.macrumors.com/2026/07/17/apple-music-price-increase/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Apple today increased the price of Apple Music and some Apple One subscription bundles. An individual &zwnj;Apple Music&zwnj; subscription is now $1 more expensive in the United…",
+      "image": "https://images.macrumors.com/article-new/2024/08/apple-music.jpg"
+    },
+    {
+      "id": "38512424",
+      "title": "Apple and DOJ Hold Early Settlement Talks in iPhone Antitrust Case",
+      "link": "https://www.macrumors.com/2026/07/17/apple-doj-antitrust-settlement/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Apple is working to settle an antitrust lawsuit with the U.S. Department of Justice, reports Bloomberg . Apple has proposed several offers and is now in early settlement talks…",
+      "image": "https://images.macrumors.com/article-new/2024/03/Apple-vs-DOJ-Feature.jpg"
+    },
+    {
+      "id": "c24fe9a8",
+      "title": "MacRumors Giveaway: Win a MacBook Neo Plus Color-Matched Satechi Accessories",
+      "link": "https://www.macrumors.com/2026/07/17/macrumors-giveaway-satechi-macbook-neo/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "For this week's giveaway, we've teamed up with Satechi to offer MacRumors readers a chance to win a MacBook Neo and a set of color-matched MacBook Neo accessories to go along with…",
+      "image": "https://images.macrumors.com/article-new/2026/07/satechi_macbook_neo_collection_lifestyle_4_16x9.jpg"
+    },
+    {
+      "id": "7527f53f",
+      "title": "iPhone 18 Pro Launching in Two Months With These 12 New Features",
+      "link": "https://www.macrumors.com/2026/07/17/iphone-18-pro-12-rumored-features/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "It is now mid-July, and that means the iPhone 18 Pro and iPhone 18 Pro Max are now just two months away. The devices are expected to look similar to the iPhone 17 Pro and iPhone…",
+      "image": "https://images.macrumors.com/article-new/2026/02/iPhone-18-Pro-Deep-Red-Feature.jpg"
+    },
+    {
+      "id": "1948535b",
+      "title": "iPhone Loyalty Rate Climbs to 87% as Switching to Android Slows",
+      "link": "https://www.macrumors.com/2026/07/17/iphone-loyalty-rate-climbs-to-87/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "iPhone owners are sticking with the platform at a higher rate than a year ago, with new research firm CIRP putting iPhone loyalty at 87% for the first quarter of 2026. CIRP's…",
+      "image": "https://images.macrumors.com/article-new/2025/09/iphone-17-pro-silver.jpg"
+    },
+    {
+      "id": "c82865f5",
+      "title": "The MacRumors Show: iPhone XX? Next Year's Major Upgrades Will Change Everything",
+      "link": "https://www.macrumors.com/2026/07/17/the-macrumors-show-iphone-xx/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "This week's episode of The MacRumors Show looks ahead to the 20th anniversary iPhone, the radically redesigned model that Apple is expected to launch in 2027. Subscribe to The…",
+      "image": ""
+    },
+    {
+      "id": "46f63c55",
+      "title": "Apple and Google Hit With Demand to Pull AI 'Nudify' Apps",
+      "link": "https://www.macrumors.com/2026/07/17/demand-to-pull-nudify-apps/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "A San Francisco City Attorney has sent cease-and-desist letters to Apple and Google demanding the removal of 13 AI \"face-swap\" apps that can generate nonconsensual nude images,…",
+      "image": "https://images.macrumors.com/article-new/2022/01/iOS-App-Store-General-Feature-Desaturated.jpg"
+    },
+    {
+      "id": "eba168ab",
+      "title": "Apple Watch Series 11 Drops to $299, MacBook Pro Up to $500 Off in Latest Apple Deals",
+      "link": "https://www.macrumors.com/2026/07/17/best-apple-deals-of-the-week-7-17-26/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Some of the best Apple-related discounts this week include $100 off the Apple Watch Series 11, $150 off the M5 MacBook Air, and up to $500 off the 2026 MacBook Pro. You'll also…",
+      "image": "https://images.macrumors.com/article-new/2025/03/Best-Apple-Deals-Feature-Shelf-Orange.jpg"
+    },
+    {
+      "id": "de598cbe",
+      "title": "iOS 27: Access the New iPhone Recovery Screen",
+      "link": "https://www.macrumors.com/how-to/ios-27-access-the-new-iphone-recovery-screen/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Since iOS 26, a malfunctioning iPhone has been able to boot itself into Recovery Assistant , with no Mac or PC required. However, you could only get there if your device failed to…",
+      "image": "https://images.macrumors.com/article-new/2026/07/recovery-screen@2x-scaled.jpg"
+    },
+    {
+      "id": "a902ae29",
+      "title": "Apple Car Key Support Coming to Future GWM Tank SUVs",
+      "link": "https://www.macrumors.com/2026/07/17/apple-car-key-support-gwm-tank-suvs/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Apple's Car Keys feature appears to be coming to TANK vehicles made by Chinese maker Great Wall Motor (GWM), based on code changes discovered by MacRumors in Apple's Wallet app…",
+      "image": "https://images.macrumors.com/article-new/2025/07/digital-car-key-iphone.jpg"
+    },
+    {
+      "id": "0f4edc73",
+      "title": "WhatsApp Begins Rolling Out New Username Feature",
+      "link": "https://www.macrumors.com/2026/07/17/whatsapp-rolling-out-new-username-feature/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "WhatsApp has started rolling out its new username feature, reports WABetaInfo . Some users who reserved their username have started receiving a notification that their username is…",
+      "image": "https://images.macrumors.com/article-new/2026/05/Whatsapp-Feature.jpg"
+    },
+    {
+      "id": "3517abae",
+      "title": "Report: Apple Sends Legal Letters to Dozens of OpenAI Employees",
+      "link": "https://www.macrumors.com/2026/07/17/apple-sends-legal-letters-openai/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Apple has reportedly sent legal letters to dozens of former Apple employees now working at OpenAI, telling them to preserve potentially relevant documents and communications as it…",
+      "image": "https://images.macrumors.com/article-new/2026/05/OpenAI-vs-Apple-Feature-scaled.jpg"
+    },
+    {
+      "id": "b71dcf93",
+      "title": "EU Orders Google to Give Rival AI Apps the Same Android Access as Gemini",
+      "link": "https://www.macrumors.com/2026/07/16/eu-google-ai-apps-android-access/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "The European Commission today formally ordered Google to give third-party AI services the same access to Android device features that Gemini has. Europe's Digital Markets Act…",
+      "image": "https://images.macrumors.com/article-new/2026/04/gemini-for-mac-app-google.jpg"
+    },
+    {
+      "id": "d11276c5",
+      "title": "Google Search Now Connects to Instacart, Canva and YouTube Music",
+      "link": "https://www.macrumors.com/2026/07/16/google-search-app-connectors/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Google is expanding AI Mode in Search, allowing users to connect apps to improve search results and \"get more done.\" Instacart, YouTube Music, and Canva can be connected, and…",
+      "image": "https://images.macrumors.com/article-new/2026/07/google-search-connected-apps.jpg"
+    },
+    {
+      "id": "61002498",
+      "title": "Roblox is Adding AI Game Creation to iPhone and iPad",
+      "link": "https://www.macrumors.com/2026/07/16/roblox-ai-game-creation/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Online game platform Roblox today said it is adding a new Build tool that will let iPhone and iPad users create games using AI. With the mobile-first Build option, Roblox users…",
+      "image": "https://images.macrumors.com/article-new/2026/07/roblox-ai-game.jpg"
+    },
+    {
+      "id": "f77c6fdc",
+      "title": "1Password for Claude Lets AI Log In Without Seeing Your Passwords",
+      "link": "https://www.macrumors.com/2026/07/16/1password-claude-integration/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Popular password management app 1Password today added Claude support , which means AI service Claude can access credentials stored in 1Password for completing browser tasks. With…",
+      "image": "https://images.macrumors.com/article-new/2026/07/1password-anthropic-integration.jpg"
+    },
+    {
+      "id": "77680c15",
+      "title": "Apple Sued Over Reported 'Hide My Email' Flaw",
+      "link": "https://www.macrumors.com/2026/07/16/apple-sued-over-reported-hide-my-email-flaw/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-18T08:55:07.000Z",
+      "summary": "Apple this week was sued over a reported \"Hide My Email\" flaw that could expose a user's real email address. The proposed class action lawsuit alleges that Apple violated…",
+      "image": "https://images.macrumors.com/article-new/2023/06/General-macOS-Mail-Feature.jpg"
+    },
+    {
+      "id": "669a7a8f",
+      "title": "Apple raises iCloud+ subscription prices in several countries",
+      "link": "https://9to5mac.com/2026/07/17/apple-raises-icloud-subscription-prices-in-several-countries/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-18T04:35:08.000Z",
+      "summary": "Following recent hardware price increases, along with subscription hikes in the US and other markets, Apple has now raised iCloud+ prices in several countries. Here are the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/03/icloud-icon-ios-26.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "9ecc0902",
+      "title": "Apple cites paused securities fraud case in bid to halt Epic proceedings",
+      "link": "https://9to5mac.com/2026/07/17/apple-cites-paused-securities-fraud-case-in-bid-to-halt-epic-proceedings/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-18T01:36:37.000Z",
+      "summary": "Apple is citing a newly paused securities fraud lawsuit to support its request to pause further lower-court proceedings in its legal battle with Epic Games while the Supreme Court…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/03/epic-app-store.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "4928699e",
+      "title": "Investigation reveals dozens of disguised gambling apps on the App Store in Brazil",
+      "link": "https://9to5mac.com/2026/07/17/investigation-reveals-dozens-of-disguised-gambling-apps-on-the-app-store-in-brazil/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T21:43:08.000Z",
+      "summary": "An investigation by 9to5Mac reveals dozens of apps that disguise gambling platforms as simple games and utilities. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/12/brazil-app-store.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "1d4a798a",
+      "title": "Apple increases iPhone prices in Japan by up to 11%",
+      "link": "https://9to5mac.com/2026/07/17/apple-increases-iphone-prices-in-japan-by-up-to-11/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T20:37:43.000Z",
+      "summary": "Apple has raised iPhone prices in Japan by up to 11% today. The changes affect the iPhone 17 lineup, iPhone Air, and iPhone 16e. Here are the exact increases and the likely…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/iphone-air-17-pro.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d0880465",
+      "title": "AAPL capitalization squeaks past NVDA, Apple becomes world's most valuable company",
+      "link": "https://appleinsider.com/articles/26/07/17/aapl-capitalization-squeaks-past-nvda-apple-becomes-worlds-most-valuable-company?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-17T20:12:23.000Z",
+      "summary": "Apple stock ended trading on Friday as the world's most valuable publicly traded company, overtaking Nvidia for the first time since April 2025 after a sustained recovery for the…",
+      "image": "https://photos5.appleinsider.com/gallery/68275-143925-Stock-high-xl.jpg"
+    },
+    {
+      "id": "f05ed58a",
+      "title": "Apple ordered to remove 8 AI nonconsensual undressing apps from the App Store [U]",
+      "link": "https://9to5mac.com/2026/07/17/apple-ordered-to-remove-8-ai-nonconsensual-undressing-apps-from-the-app-store/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T19:13:07.000Z",
+      "summary": "Update, 4:29 p.m. ET : Apple reached out to 9to5Mac with more information, which you can find below the original post. San Francisco city attorney David Chiu has sent…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/05/App-Store-fraud.webp?w=1500"
+    },
+    {
+      "id": "5907239f",
+      "title": "Is Apple One worth it in summer 2026 after the latest price increases?",
+      "link": "https://appleinsider.com/articles/26/07/17/is-apple-one-worth-it-in-summer-2026-after-the-latest-price-increases?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-17T18:58:05.000Z",
+      "summary": "Following price increases for Apple Music and two Apple One tiers, Apple One still offers substantial savings for people who regularly use its included services, but the value…",
+      "image": "https://photos5.appleinsider.com/gallery/68281-143929-Apple-One-xl.jpg"
+    },
+    {
+      "id": "c4898e28",
+      "title": "Apple Music gets first U.S. price hike in four years",
+      "link": "https://appleinsider.com/articles/26/07/17/apple-music-gets-first-us-price-hike-in-four-years?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-17T18:28:07.000Z",
+      "summary": "Apple Music is raising U.S. subscription prices for the first time since 2022, increasing every paid tier and hitting family subscribers with the largest jump. Apple Music raises…",
+      "image": "https://photos5.appleinsider.com/gallery/68280-143928-Apple-Music-playlists-xl.jpg"
+    },
+    {
+      "id": "207f24a9",
+      "title": "9to5Mac Overtime 073: iOS 27 Public Beta",
+      "link": "https://9to5mac.com/2026/07/17/9to5mac-overtime-073-ios-27-public-beta/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T18:21:38.000Z",
+      "summary": "Jeff and Fernando discuss the iOS 27 Public Beta, some of their favorite new iOS 27 new features, and whether or not people should consider installing it on their main device. The…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/9to5Mac-Overtime-073.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "fa79d3c7",
+      "title": "MacStories Weekly: Issue 522",
+      "link": "https://www.macstories.net/club/macstories-weekly-issue-522/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-17T18:17:35.000Z",
+      "summary": "",
+      "image": ""
+    },
+    {
+      "id": "6067781f",
+      "title": "Apple Music is getting a price hike",
+      "link": "https://www.theverge.com/tech/967379/apple-music-price-increase",
+      "source": "The Verge",
+      "category": "news",
+      "date": "2026-07-17T18:14:26.000Z",
+      "summary": "Apple Music is more expensive now. In the US, an individual plan now costs $11.99 per month, a $1 bump up from the previous $10.99 price. A family plan now costs $19.99 per month,…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23925978/acastro_STK046_02.jpg?quality=90&strip=all&crop=0,0,100,100"
+    },
+    {
+      "id": "5c617430",
+      "title": "Apple raises prices for Apple Music and Apple One subscriptions",
+      "link": "https://9to5mac.com/2026/07/17/apple-raises-prices-for-apple-music-and-apple-one-subscriptions/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T18:07:18.000Z",
+      "summary": "Apple has raised the price of Apple Music today in the United States and other countries. Starting today, Apple Music’s Individual plan now costs $11.99 per month, up from $10.99.…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/apple-one-premier-blue.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "96363e43",
+      "title": "OpenAI tweaks chat access in the ChatGPT app for Mac",
+      "link": "https://9to5mac.com/2026/07/17/openai-fixes-chat-access-in-the-chatgpt-app-for-mac/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T18:01:27.000Z",
+      "summary": "OpenAI has updated its recently redesigned ChatGPT app for Mac to make chats easier to access once again. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/chatgpt-insta.webp?w=1600"
+    },
+    {
+      "id": "b3e6cfba",
+      "title": "Podcast Rewind: Fable, SteamOS on Android, and Voice-Created Shortcuts",
+      "link": "https://www.macstories.net/news/podcast-rewind-fable-steamos-on-android-and-voice-created-shortcuts/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-17T17:55:48.000Z",
+      "summary": "Enjoy the latest episodes from MacStories’ family of podcasts: AppStories This week, Federico and John look at their experiences with Claude Fable 5 and how it differs from other…",
+      "image": "https://cdn.macstories.net/img_1734-2-1774559453738.png"
+    },
+    {
+      "id": "4a0b0570",
+      "title": "Apple's long-running DOJ antitrust case may not make it to trial",
+      "link": "https://appleinsider.com/articles/26/07/17/apples-long-running-doj-antitrust-case-may-not-make-it-to-trial?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-17T17:42:30.000Z",
+      "summary": "Apple and the US Justice Department are reportedly in early discussions over the potential for an early settlement of a 2024 iPhone antitrust suit brought about by the Biden…",
+      "image": "https://photos5.appleinsider.com/gallery/64546-134448-Apple-Park-night-xl.jpg"
+    },
+    {
+      "id": "01299e0b",
+      "title": "Apple’s plot to crush OpenAI",
+      "link": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
+      "source": "The Verge",
+      "category": "news",
+      "date": "2026-07-17T17:41:32.000Z",
+      "summary": "Apple is suing OpenAI. The complaint is readable and intense, as these things often are, though many experts seem to think many of the allegations are just the ways things are…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/VRG_VST_071626_Site.jpg?quality=90&strip=all&crop=0,0,100,100"
+    },
+    {
+      "id": "863957e5",
+      "title": "Apple in talks to settle DOJ antitrust lawsuit, per report",
+      "link": "https://9to5mac.com/2026/07/17/apple-in-talks-to-settle-doj-antitrust-lawsuit-per-report/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T17:17:50.000Z",
+      "summary": "Back in 2024, the US Department of Justice filed a lawsuit against Apple, accusing the company of a “smartphone monopoly.” Apple has voiced its opposition to the case many times…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/09/tim-cook-apple-park-sep25.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "52868004",
+      "title": "Google is making no progress on switching iPhone users to Android",
+      "link": "https://appleinsider.com/articles/26/07/17/google-is-making-no-progress-on-switching-iphone-users-to-android?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-17T17:08:04.000Z",
+      "summary": "Existing iPhone owners continue to account for nearly nine in 10 surveyed U.S. purchases, showing how Apple's enormous customer base isn't dwindling under pressure from Google and…",
+      "image": "https://photos5.appleinsider.com/gallery/68278-143927-iPhone-17-back-xl.jpg"
+    },
+    {
+      "id": "c577d986",
+      "title": "Car Keys in Apple Wallet reportedly coming to major Chinese automaker",
+      "link": "https://9to5mac.com/2026/07/17/car-keys-in-apple-wallet-reportedly-coming-to-major-chinese-automaker/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T16:56:43.000Z",
+      "summary": "As Apple continues expanding Car Keys support across the auto industry, the feature now appears to be headed to select vehicles from a major Chinese automaker. Here are the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/06/apple-wallet-app-ios-26.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "4b92503a",
+      "title": "Apple TV drops first trailer for ‘The Dynasty: UConn Huskies’",
+      "link": "https://9to5mac.com/2026/07/17/apple-tv-drops-first-trailer-for-the-dynasty-uconn-huskies/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T16:27:41.000Z",
+      "summary": "After announcing ‘ The Dynasty: UConn Huskies ’ last May, Apple TV today released the first trailer for the docuseries, ahead of its debut next month. Watch it below.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/dynasty-huskies.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "9b8d7817",
+      "title": "WhatsApp starts activating reserved usernames for select iPhone users",
+      "link": "https://9to5mac.com/2026/07/17/whatsapp-starts-activating-reserved-usernames-for-select-iphone-users/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T16:11:56.000Z",
+      "summary": "After rolling out a username reservation system a few days ago, WhatsApp is now beginning to activate the full feature for a limited number of users. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/whatsapp-02.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "5ee213ce",
+      "title": "What will you do if Apple’s higher pricing turns out to be permanent? [Poll]",
+      "link": "https://9to5mac.com/2026/07/17/what-will-you-do-if-apples-higher-pricing-turns-out-to-be-permanent-poll/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T16:00:00.000Z",
+      "summary": "When Apple finally responded to the dramatically increased costs of memory and other components, the company didn’t hold back. Some of the price hikes exceeded 50%, while memory…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apples-higher-pricing-Apple-store-in-Macao.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "e12740f2",
+      "title": "Apple ordered to remove 8 'nudify' AI apps from the iPhone's App Store",
+      "link": "https://appleinsider.com/articles/26/07/17/apple-ordered-to-remove-8-nudify-ai-apps-from-the-iphones-app-store?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-17T15:42:23.000Z",
+      "summary": "Apple has been accused of \"aiding and abetting\" the use of \"nudify\" AI apps on the iPhone, with San Francisco City Attorney David Chiu demanding they be removed from the App Store…",
+      "image": "https://photos5.appleinsider.com/gallery/66513-139521-censoredappstore-xl.jpg"
+    },
+    {
+      "id": "87a9a35b",
+      "title": "Deals: AirPods Pro 3, Magic Keyboard all-time low, iPhone 17 Pro Max up to $449 off, ChargeKey tool, more",
+      "link": "https://9to5mac.com/2026/07/17/deals-airpods-pro-3-magic-keyboard-iphone-17-pro-max/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T15:29:33.000Z",
+      "summary": "We are kicking of Friday’s deals with the ongoing $50 price drop on AirPods Pro 3, the best price in months on AirPods 4 with ANC, and a chance to score them from $119 , but we…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-iPhone-17-Pro-Max-AirPOds-Pro-3-Apple-Watch.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d29a2099",
+      "title": "Amazon slashes $200 off 512GB M4 iPad Air 13-inch with weekend deal",
+      "link": "https://appleinsider.com/articles/26/07/17/amazon-slashes-200-off-512gb-m4-ipad-air-13-inch-with-weekend-deal?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-17T15:19:15.000Z",
+      "summary": "Apple's latest iPad Air is $200 off when you opt for the M4 model with 512GB of storage during Amazon's weekend sale. Save $200 on Apple's latest M4 iPad Air with 512GB of…",
+      "image": "https://photos5.appleinsider.com/gallery/68276-143921-ipad-air-m4-sale-xl.jpg"
+    },
+    {
+      "id": "13ecc127",
+      "title": "The best CarPlay upgrades to try in the iOS 27 public beta",
+      "link": "https://9to5mac.com/2026/07/17/the-best-carplay-upgrades-to-try-in-the-ios-27-public-beta/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T13:57:15.000Z",
+      "summary": "The iOS 27 public beta is now available, and it includes several CarPlay changes worth checking out. Here’s what you should try after updating.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/carplay27-1.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "ec13069e",
+      "title": "Apple overtakes Nvidia as world’s most valuable company as it barrels toward $5T",
+      "link": "https://9to5mac.com/2026/07/17/apple-reclaims-most-valuable-company-title-from-nvidia-as-it-barrels-toward-5t/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T13:46:19.000Z",
+      "summary": "Apple has officially reclaimed the world’s most valuable company title based on market cap. The company overtook Nvidia during intraday trading on Friday with its stock up 17…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/tim-cook-wwdc26-keynote-wave.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "12dff4b4",
+      "title": "It's easy to find a real email address behind Hide My Email, but it doesn't really matter",
+      "link": "https://appleinsider.com/articles/26/07/17/its-easy-to-find-a-real-email-address-behind-hide-my-email-but-it-doesnt-really-matter?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-17T13:42:13.000Z",
+      "summary": "AppleInsider can confirm that it's pretty easy to get somebody's real email from Hide My Email, but it's also not much of a concern. If you're using the feature as intended as a…",
+      "image": "https://photos5.appleinsider.com/gallery/68128-143603-67976-143301-Hide-my-email-xl-xl.jpg"
+    },
+    {
+      "id": "64a63bb5",
+      "title": "Apple sues OpenAI, public betas, & super apps on the AppleInsider Podcast",
+      "link": "https://appleinsider.com/articles/26/07/17/apple-sues-openai-public-betas-super-apps-on-the-appleinsider-podcast?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-17T13:17:43.000Z",
+      "summary": "The already tense relationship between Apple and OpenAI reaches a breaking point as trade secret accusations emerge, plus your hosts discuss EU regulations, the future of gaming,…",
+      "image": "https://photos5.appleinsider.com/gallery/68263-143896-Apple-Park-night-Rainbow-Stage-xl.jpg"
+    },
+    {
+      "id": "963db159",
+      "title": "9to5Mac Daily: July 17, 2026 – Apple’s Back to School promo, AirPods public beta",
+      "link": "https://9to5mac.com/2026/07/17/daily-july-17-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T13:05:44.000Z",
+      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "b02128c7",
+      "title": "Apple sends legal letters to former employees now at OpenAI",
+      "link": "https://9to5mac.com/2026/07/17/apple-sends-legal-letters-to-former-employees-now-at-openai/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-17T12:30:36.000Z",
+      "summary": "Last week, Apple filed a lawsuit against OpenAI in which it alleged that its former employees have stolen trade secrets “for the benefit of OpenAI.” As part of this process, Apple…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/apple-openai.jpg?quality=82&strip=all&w=1600"
+    },
     {
       "id": "a0054e1f",
       "title": "How to make Apple Journal part of a mindful daily routine",
@@ -32,206 +542,6 @@
       "date": "2026-07-17T11:54:21.000Z",
       "summary": "Apple has reportedly sent legal letters to former staffers now working at OpenAI, warning them against deleting data that could be used in the brewing legal battle over OpenAI's…",
       "image": "https://photos5.appleinsider.com/gallery/68224-143841-openaialtman-xl.jpg"
-    },
-    {
-      "id": "b71dcf93",
-      "title": "EU Orders Google to Give Rival AI Apps the Same Android Access as Gemini",
-      "link": "https://www.macrumors.com/2026/07/16/eu-google-ai-apps-android-access/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "The European Commission today formally ordered Google to give third-party AI services the same access to Android device features that Gemini has. Europe's Digital Markets Act…",
-      "image": "https://images.macrumors.com/article-new/2026/04/gemini-for-mac-app-google.jpg"
-    },
-    {
-      "id": "d11276c5",
-      "title": "Google Search Now Connects to Instacart, Canva and YouTube Music",
-      "link": "https://www.macrumors.com/2026/07/16/google-search-app-connectors/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Google is expanding AI Mode in Search, allowing users to connect apps to improve search results and \"get more done.\" Instacart, YouTube Music, and Canva can be connected, and…",
-      "image": "https://images.macrumors.com/article-new/2026/07/google-search-connected-apps.jpg"
-    },
-    {
-      "id": "61002498",
-      "title": "Roblox is Adding AI Game Creation to iPhone and iPad",
-      "link": "https://www.macrumors.com/2026/07/16/roblox-ai-game-creation/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Online game platform Roblox today said it is adding a new Build tool that will let iPhone and iPad users create games using AI. With the mobile-first Build option, Roblox users…",
-      "image": "https://images.macrumors.com/article-new/2026/07/roblox-ai-game.jpg"
-    },
-    {
-      "id": "f77c6fdc",
-      "title": "1Password for Claude Lets AI Log In Without Seeing Your Passwords",
-      "link": "https://www.macrumors.com/2026/07/16/1password-claude-integration/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Popular password management app 1Password today added Claude support , which means AI service Claude can access credentials stored in 1Password for completing browser tasks. With…",
-      "image": "https://images.macrumors.com/article-new/2026/07/1password-anthropic-integration.jpg"
-    },
-    {
-      "id": "77680c15",
-      "title": "Apple Sued Over Reported 'Hide My Email' Flaw",
-      "link": "https://www.macrumors.com/2026/07/16/apple-sued-over-reported-hide-my-email-flaw/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple this week was sued over a reported \"Hide My Email\" flaw that could expose a user's real email address. The proposed class action lawsuit alleges that Apple violated…",
-      "image": "https://images.macrumors.com/article-new/2023/06/General-macOS-Mail-Feature.jpg"
-    },
-    {
-      "id": "bd45cfa2",
-      "title": "Apple's Chipmaker Pledges $100 Billion More for US Plants",
-      "link": "https://www.macrumors.com/2026/07/16/tsmc-pledges-100-billion-for-us-plants/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple chip supplier TSMC has announced a $100 billion increase to its U.S. chip investment, bringing its total commitment to $265 billion. The increase was confirmed by the White…",
-      "image": "https://images.macrumors.com/article-new/2024/04/apple-silicon-feature-joeblue.jpg"
-    },
-    {
-      "id": "d455ee89",
-      "title": "Apple Begins Selling Refurbished iPad Mini With A17 Pro Chip at a Discount",
-      "link": "https://www.macrumors.com/2026/07/16/apple-refurbished-ipad-mini-a17-pro/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple today added the iPad mini with the A17 Pro chip to its refurbished store in the U.S. and Canada for the first time since the device was released in October 2024. Other key…",
-      "image": "https://images.macrumors.com/article-new/2026/07/iPad-mini-7-Review-Thumb-1-sans-text.jpg"
-    },
-    {
-      "id": "c4dc1235",
-      "title": "Here's When to Expect the iPad 12 to Launch",
-      "link": "https://www.macrumors.com/2026/07/16/ipad-12-release-date/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "In March, Bloomberg 's Mark Gurman said a new entry-level iPad was \" still coming this year ,\" but apparently this is no longer the case. Today, he reported that the device is…",
-      "image": "https://images.macrumors.com/article-new/2025/03/iPad-A16-Colors.jpg"
-    },
-    {
-      "id": "0c925834",
-      "title": "Missed Pre-Hike MacBook Pro Prices? Amazon's New Deals Still Save Up to $500",
-      "link": "https://www.macrumors.com/2026/07/16/macbook-pro-save-up-to-500/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Amazon's prices on the 2026 MacBook Pro have now joined in on Apple's recent price hikes, meaning we're no longer tracking pre-hike markdowns on these devices. However, there are…",
-      "image": "https://images.macrumors.com/article-new/2026/04/macbook-pro-2026-pink.jpeg"
-    },
-    {
-      "id": "a056a5b5",
-      "title": "New iPad Mini With Four Upgrades Reportedly Launching by October",
-      "link": "https://www.macrumors.com/2026/07/16/oled-ipad-mini-by-october-report/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple is planning to release a new iPad mini model with an OLED display by October this year, according to Bloomberg 's Mark Gurman . Apple already updated the iPad Pro with an…",
-      "image": "https://images.macrumors.com/article-new/2024/10/ipad-mini-7-feature-red-and-blue.jpg"
-    },
-    {
-      "id": "79f1603c",
-      "title": "Apple Reportedly Ramps Up Vapor Chamber Orders for Foldable iPhone",
-      "link": "https://www.macrumors.com/2026/07/16/apple-vapor-chamber-orders-foldable-iphone/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple has ramped up orders for vapor chamber cooling components said to be destined for its upcoming foldable iPhone and 20th-anniversary iPhone models, according to a Chinese…",
-      "image": "https://images.macrumors.com/article-new/2026/06/Vapor-Chamber-Plate.jpg"
-    },
-    {
-      "id": "5556ba9b",
-      "title": "How to Install macOS 27 Golden Gate Public Beta",
-      "link": "https://www.macrumors.com/how-to/how-to-install-macos-27-golden-gate-public-beta/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple has made the first macOS 27 Golden Gate public beta available for testing before the new Mac operating system's official release in the fall. Keep reading to learn whether…",
-      "image": "https://images.macrumors.com/article-new/2026/07/How-to-Install-macOS-27-Golden-Gate-Public-Beta-Feature.jpg"
-    },
-    {
-      "id": "5a43300e",
-      "title": "Apple's 2026 Back to School Offer Goes Live in the US: Up to $150 Gift Card With Mac or iPad",
-      "link": "https://www.macrumors.com/2026/07/16/apple-2026-back-to-school-offer-goes-live-us/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple's annual Back to School promotion is now live in the United States , Canada , and Mexico , following earlier rollouts in Asia . This year's promotion offers a free Apple…",
-      "image": "https://images.macrumors.com/article-new/2026/07/Apple-2026-Back-to-School-Graphic.jpg"
-    },
-    {
-      "id": "5415553e",
-      "title": "Google and Epic Abandon Injunction Modification Request, Clearing the Way for Rival Android App Stores",
-      "link": "https://www.macrumors.com/2026/07/15/google-third-party-app-stores/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Google and Epic Games this week withdrew their joint motion to modify an injunction requiring Google to support third-party app stores in Google Play. The two companies abandoned…",
-      "image": "https://images.macrumors.com/article-new/2022/02/Google-Logo-Feature-Slack.jpg"
-    },
-    {
-      "id": "b1f27ab2",
-      "title": "CrashStealer Malware Impersonates Apple Tool to Steal Mac Passwords and Crypto",
-      "link": "https://www.macrumors.com/2026/07/15/crashstealer-mac-malware/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Mac users should watch out for macOS malware called CrashStealer, according to Jamf Threat Labs . The malware impersonates Apple's crash reporting framework, and it's meant to…",
-      "image": "https://images.macrumors.com/article-new/2023/05/bug-security-vulnerability-issue-fix-larry.jpg"
-    },
-    {
-      "id": "36278d96",
-      "title": "Apple Closes Unlocked iPhone Loophole for T-Mobile and Verizon Financing",
-      "link": "https://www.macrumors.com/2026/07/15/apple-carrier-iphone-financing/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Carrier-financed iPhones purchased from Apple will soon be locked to the carrier, ending a workaround customers used to purchase an unlocked iPhone on a payment plan. Until the…",
-      "image": "https://images.macrumors.com/article-new/2025/11/iphone-17-cyber.jpg"
-    },
-    {
-      "id": "43acc6c4",
-      "title": "AppleCare+ for Macs and iPads Just Got More Expensive",
-      "link": "https://www.macrumors.com/2026/07/15/applecare-plus-price-increase/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple is increasing the price of some AppleCare + subscription plans, reports Bloomberg . Monthly &zwnj;AppleCare&zwnj;+ subscription plans for Macs and iPads are now $0.50 more…",
-      "image": "https://images.macrumors.com/article-new/2021/12/applecare-apple-care-banner.jpg"
-    },
-    {
-      "id": "63359254",
-      "title": "Apple Won't Allow These Ad Categories in the Maps App",
-      "link": "https://www.macrumors.com/2026/07/15/apple-maps-ad-prohibitied-categories/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple this week shared a new Advertising Services policy outlining the kinds of ads that won't be allowed in the Maps app. As noted by TechCrunch , Apple has a list of ad…",
-      "image": "https://images.macrumors.com/article-new/2026/03/Ads-Are-Coming-to-Apple-Maps-Feature.jpg"
-    },
-    {
-      "id": "83e0606b",
-      "title": "Apple Lists Products Eligible for Tax-Free Holidays in 10 U.S. States",
-      "link": "https://www.macrumors.com/2026/07/15/apple-2026-sales-tax-holidays/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:39.000Z",
-      "summary": "Apple recently updated its website with a list of products eligible for upcoming 2026 sales tax holidays in select U.S. states, including Alabama, Arkansas, Florida,…",
-      "image": "https://images.macrumors.com/article-new/2026/01/Apple-Event-Logo.jpeg"
-    },
-    {
-      "id": "3517abae",
-      "title": "Report: Apple Sends Legal Letters to Dozens of OpenAI Employees",
-      "link": "https://www.macrumors.com/2026/07/17/apple-sends-legal-letters-openai/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-17T09:12:38.000Z",
-      "summary": "Apple has reportedly sent legal letters to dozens of former Apple employees now working at OpenAI, telling them to preserve potentially relevant documents and communications as it…",
-      "image": "https://images.macrumors.com/article-new/2026/05/OpenAI-vs-Apple-Feature-scaled.jpg"
     },
     {
       "id": "0e40b458",
@@ -304,314 +614,24 @@
       "image": "https://photos5.appleinsider.com/gallery/68270-143903-IMG_8041-xl.jpg"
     },
     {
-      "id": "a2a99040",
-      "title": "Hide My Email class action lawsuit seeks payout without evidence of any attacks",
-      "link": "https://appleinsider.com/articles/26/07/16/hide-my-email-class-action-lawsuit-seeks-payout-without-evidence-of-any-attacks?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-16T18:29:08.000Z",
-      "summary": "A proposed class action is trying to turn Apple's unresolved Hide My Email flaw into a nationwide payout without alleging that the vulnerability was used in an attack or that the…",
-      "image": "https://photos5.appleinsider.com/gallery/68269-143900-967A61C1-FA5C-4CF0-9182-D26130A192AD-xl.jpg"
+      "id": "c6da5ba5",
+      "title": "Please help me, I keep getting this error even though I've followed every tutorial imaginable, and it still doesn't work",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uzhuzi/please_help_me_i_keep_getting_this_error_even/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-18T01:07:40.000Z",
+      "summary": "I&#39;m trying to install Wibble Wobble Reloaded and it&#39;s not working. I have an iPhone 14 Pro, it&#39;s in developer mode, the Apple account is correct, the password is…",
+      "image": ""
     },
     {
-      "id": "683d232f",
-      "title": "Class action accuses Apple of misleading users about Hide My Email’s privacy protections",
-      "link": "https://9to5mac.com/2026/07/16/class-action-accuses-apple-of-misleading-users-about-hide-my-emails-privacy-protections/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T18:06:37.000Z",
-      "summary": "A California Apple user has filed a proposed class action accusing the company of misleading customers about Hide My Email’s privacy protections. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/apple-mail-app-icon-ios-26.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "2091c111",
-      "title": "iOS 27 makes one of my favorite Apple Music features even better",
-      "link": "https://9to5mac.com/2026/07/16/ios-27-makes-one-of-my-favorite-apple-music-features-even-better/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T17:58:02.000Z",
-      "summary": "Last year, Apple debuted a new feature called AutoMix in Apple Music. With this year’s iOS 27, the feature is getting a big upgrade with much better transitions than before.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/06/automix-ios-26.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "1e69b8c9",
-      "title": "Roblox adding game creation feature to iPhone and iPad app",
-      "link": "https://9to5mac.com/2026/07/16/roblox-adding-game-creation-feature-to-iphone-and-ipad-app/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T17:47:00.000Z",
-      "summary": "Roblox says it will soon bring game creation to mobile for the first time. This will allow users to create new playable experiences directly inside the iPhone and iPad app.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/roblox.webp?w=1600"
-    },
-    {
-      "id": "8b90a338",
-      "title": "Google is better than Apple at playing the AI regulations game",
-      "link": "https://www.theverge.com/policy/966588/eu-dma-ai-android-siri-ai",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-16T16:55:54.000Z",
-      "summary": "Today, the European Union ordered Google to give its AI rivals greater access to Android, the open-source operating system that powers billions of devices worldwide. The demand is…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2276602257.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "e035a3c6",
-      "title": "NotebookLM is now Gemini Notebook, with 3.5 + Antigravity upgrade coming to AI Pro",
-      "link": "https://9to5google.com/2026/07/16/notebooklm-gemini-notebook/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T16:04:18.000Z",
-      "summary": "Google announced today that NotebookLM is now called “Gemini Notebook” and previewed upcoming features that users can soon expect.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Gemini-Notebook-cover.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "76c20785",
-      "title": "Apple TV sets release date for Stillwater’s fifth season",
-      "link": "https://9to5mac.com/2026/07/16/apple-tv-sets-release-date-for-stillwaters-fifth-season/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T15:55:20.000Z",
-      "summary": "Apple TV announced today that its Peabody and Emmy Award-winning mindfulness series Stillwater will return next month for a new season. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/stilwater-s5.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "dbfc51de",
-      "title": "Deals: AirPods with ANC from $119, AirPods Pro 3, MacBook Pro up to $400 off, Thunderbolt 5 Dock, more",
-      "link": "https://9to5mac.com/2026/07/16/deals-airpods-with-anc-airpods-pro-3-macbook-pro/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T15:25:24.000Z",
-      "summary": "Today’s 9to5Toys Lunch Break is headlined by the ongoing $50 price drop on AirPods Pro 3, but we also have AirPods 4 with ANC hitting best price in months at Amazon today, as well…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-AirPods-4-Pro-MacBook-Thunderbolt-5.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "a9ae4c8f",
-      "title": "AppleCare One warranty bundle just became an even better value for customers",
-      "link": "https://9to5mac.com/2026/07/16/applecare-one-warranty-bundle-just-became-an-even-better-value-for-customers/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T15:05:12.000Z",
-      "summary": "While Apple’s latest AppleCare+ price increase for Mac and iPad is small in isolation, it makes AppleCare One an even better value. Apple increasing the price of Mac and iPad…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/07/applecare-one.webp?w=1600"
-    },
-    {
-      "id": "d7427e93",
-      "title": "Apple’s OLED iPad Mini upgrade is on the way as prices continue to rise",
-      "link": "https://www.theverge.com/tech/966535/apple-oled-ipad-mini-rumor",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-16T15:04:12.000Z",
-      "summary": "The iPad Mini could get an OLED display upgrade as soon as October, according to Bloomberg's Mark Gurman. It would be the most significant refresh for the Mini since its 2021…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25691621/iPad_Mini_1.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "8fbf3218",
-      "title": "Hands-on: Satechi’s new color-matched MacBook Neo accessories add ports and extra functionality",
-      "link": "https://9to5mac.com/2026/07/16/hands-on-satechis-new-color-matched-macbook-neo-accessories-add-ports-and-extra-functionality/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T15:00:00.000Z",
-      "summary": "A few months back, the MacBook Neo took the tech world by storm, delivering the best-value laptop of 2026. Even after the recent price increase, it remains the most recommended…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/fernando-1.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "276dceb4",
-      "title": "Rumor: Apple increases orders for key component ahead of foldable iPhone launch",
-      "link": "https://9to5mac.com/2026/07/16/rumor-apple-increases-orders-for-key-component-ahead-of-foldable-iphone-launch/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T14:52:57.000Z",
-      "summary": "Apple has reportedly ramped up orders for vapor chambers, signaling that the cooling technology could play a bigger role across its future hardware lineup. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iphone-ultra-concept-blue.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "c0b37f2f",
-      "title": "iPad & iPad Air refreshes are coming, but not until 2027",
-      "link": "https://appleinsider.com/articles/26/07/16/ipad-ipad-air-refreshes-are-coming-but-not-until-2027?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-16T14:28:44.000Z",
-      "summary": "While a new iPad mini is expected before the end of 2026, a new report says you'll need to wait longer for updates to the entry-level iPad, iPad Air, and iPad Pro. The whole iPad…",
-      "image": "https://photos5.appleinsider.com/gallery/59616-121726-ipadaappheader-xl.jpg"
-    },
-    {
-      "id": "2d71fd3b",
-      "title": "Four more chip plants promised as TSMC teases a further $100 billion US expansion",
-      "link": "https://appleinsider.com/articles/26/07/16/four-more-chip-plants-promised-as-tsmc-plans-a-further-100-billion-to-the-us?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-16T14:22:21.000Z",
-      "summary": "Apple's main processor supplier TSMC has announced another increase in US investment, saying its new plants will include ones making its most advanced chips. TSMC plant in Arizona…",
-      "image": "https://photos5.appleinsider.com/gallery/68265-143898-000-lead-TSMC-Arizona-xl.jpg"
-    },
-    {
-      "id": "597efa93",
-      "title": "iPad mini with OLED release imminent, pricing unclear",
-      "link": "https://appleinsider.com/articles/26/07/16/ipad-mini-with-oled-release-imminent-pricing-unclear?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-16T14:04:53.000Z",
-      "summary": "While the rumor that the next iPad mini would have an expensive OLED screen is not new, what is, is that in all likelihood it will ship very shortly after the iPhone 18 Pro…",
-      "image": "https://photos5.appleinsider.com/gallery/61653-127590-iPad-mini-7-3-xl.jpg"
-    },
-    {
-      "id": "7e00f3ca",
-      "title": "Report: Apple targets October launch for OLED iPad mini, kicking off next wave of iPad updates",
-      "link": "https://9to5mac.com/2026/07/16/report-apple-targets-october-launch-for-oled-ipad-mini-kicking-off-next-wave-of-ipad-updates/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T14:02:28.000Z",
-      "summary": "entry-level iPad, the iPad Air, and the iPad Pro. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/10/ipad-mini-7.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "7808da01",
-      "title": "WhatsApp adds in-call controls for Voice Isolation and Wide Spectrum on iPhone",
-      "link": "https://9to5mac.com/2026/07/16/whatsapp-adds-in-call-controls-for-voice-isolation-and-wide-spectrum-on-iphone/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T13:26:05.000Z",
-      "summary": "WhatsApp is rolling out in-call settings that allow users to switch between the iPhone’s different Mic Modes. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/whatsapp-ios-26.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "a55cce66",
-      "title": "Meta AI can now alert parents when their teens discuss self-harm",
-      "link": "https://9to5mac.com/2026/07/16/meta-ai-can-now-alert-parents-when-their-teens-discuss-self-harm/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T13:19:23.000Z",
-      "summary": "Meta has announced that parents can receive alerts when their teens discuss suicide or other forms of self-harm with its AI on Instagram , Facebook , or Meta Horizons. You’ll need…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Meta-AI-teen-self-harm-alerts.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "6b0c1086",
-      "title": "1Password now lets Claude sign in to websites without seeing your passwords",
-      "link": "https://9to5mac.com/2026/07/16/1password-now-lets-claude-sign-in-to-websites-without-seeing-your-passwords/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T13:00:00.000Z",
-      "summary": "1Password is launching a new Claude integration for Mac users today. It’s designed to let Anthropic’s AI agent sign in to websites without seeing your password or two-factor…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/claude-1password.webp?w=1600"
-    },
-    {
-      "id": "a0ade147",
-      "title": "Signal Ring gives blood pressure readings, not just alerts like Apple Watch",
-      "link": "https://9to5mac.com/2026/07/16/signal-ring-gives-blood-pressure-readings-not-just-alerts-like-apple-watch/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T12:21:50.000Z",
-      "summary": "Five Apple Watch models are able to measure your blood pressure in order to generate alerts for possible hypertension. However, they do not provide your actual blood pressure…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Signal-Ring-gives-blood-pressure-readings.webp?w=1600"
-    },
-    {
-      "id": "060be3bd",
-      "title": "Mass production of folding iPhone vapor cooling system has begun",
-      "link": "https://appleinsider.com/articles/26/07/16/mass-production-of-folding-iphone-vapor-cooling-system-has-begun?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-16T11:46:58.000Z",
-      "summary": "Apple has reportedly increased the number of vapor chamber coolers it has ordered from its suppliers, with the company likely to use them in its first foldable iPhone as well as…",
-      "image": "https://photos5.appleinsider.com/gallery/65215-136280-ifixitiphone17pro1-xl.jpg"
-    },
-    {
-      "id": "1ffc7613",
-      "title": "Windows games run better than ever on Macs, officially or unofficially",
-      "link": "https://9to5mac.com/2026/07/16/windows-games-run-better-than-ever-on-macs-officially-or-unofficially/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T11:31:31.000Z",
-      "summary": "There are few software limitations on anyone considering a switch from Windows to Mac . Not only do all the biggest PC apps run on the platform, but there are countless examples…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Grand-Theft-Auto-V-on-Mac.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "ed7427bc",
-      "title": "TSMC says it may build 12 Arizona chip plants in total, but be skeptical",
-      "link": "https://9to5mac.com/2026/07/16/tsmc-says-it-may-build-12-arizona-chip-plants-in-total-but-be-skeptical/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T11:03:15.000Z",
-      "summary": "Apple chipmaker TSMC had already said that it would build a total of eight plants in Arizona, and has now announced an investment boost that could see that number increased to 12.…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/TSMC-Arizona-chip-plants-Photo-shows-Monument-Valley.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "e4a8d565",
-      "title": "9to5Mac Daily: July 16, 2026 – OpenAI responds to Apple, more",
-      "link": "https://9to5mac.com/2026/07/16/daily-july-16-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T11:00:00.000Z",
-      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "82246ad2",
-      "title": "Apple's Back to School offers have started, but you can do much better",
-      "link": "https://appleinsider.com/articles/26/07/16/apples-back-to-school-offers-have-started-but-you-can-do-much-better?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-16T09:46:12.000Z",
-      "summary": "Apple has launched an unusually limited Back to School series of deals and they are not to be dismissed, but there are far greater discounts to be had from other resellers.…",
-      "image": "https://photos5.appleinsider.com/gallery/67772-143897-000-lead-Back-to-School-xl.jpg"
-    },
-    {
-      "id": "b4be52f5",
-      "title": "Security Bite Podcast: Apple is watching your taps",
-      "link": "https://9to5mac.com/2026/07/16/security-bite-podcast-apple-is-watching-your-taps/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T09:30:00.000Z",
-      "summary": "9to5Mac Security Bite is exclusively brought to you by Mosyle, the only Apple Unified Platform . Making Apple devices work-ready and enterprise-safe is all we do. Our unique…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/sb-lg-27-dark.webp?w=1500"
-    },
-    {
-      "id": "e803c4fc",
-      "title": "Apple Store launches 2026 Back to School offer: get up to $150 gift card with Mac or iPad purchase",
-      "link": "https://9to5mac.com/2026/07/16/apple-store-back-to-school-gift-card-deal-promo/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T07:22:56.000Z",
-      "summary": "Apple today launched its Back to School deal for 2026. Students can get a gift card worth up to $150 with the purchase of a MacBook Pro. $100 gift cards are available with the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-store-back-to-school-2026.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "8d93ce76",
-      "title": "AirPods just got a long-requested feature in new public beta",
-      "link": "https://9to5mac.com/2026/07/15/airpods-just-got-a-long-requested-feature-in-new-public-beta/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-16T00:19:11.000Z",
-      "summary": "While it was overshadowed by the iOS 27 public beta , Apple also released a new public beta firmware for AirPods this week. The update brings a long-requested feature to supported…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/10-AirPods-EQ-iOS-27-Beta.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "60f39e76",
-      "title": "Apple’s reportedly raising the price for AppleCare Plus on Macs and iPads",
-      "link": "https://www.theverge.com/tech/966219/apple-care-plus-price-increase",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-15T22:39:40.000Z",
-      "summary": "An AppleCare Plus subscription for a Mac or iPad will cost more soon, with prices going up by $0.50 per month or $5 per year for new sign-ups while remaining the same for existing…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268387_Apple_MacBook_Neo_AKrales_0720.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "c52588b1",
-      "title": "I can’t work on my Mac without this little keypad anymore",
-      "link": "https://9to5mac.com/2026/07/15/macro-keypad-productivity-on-macos/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-15T20:59:37.000Z",
-      "summary": "Offloading keyboard shortcuts to a programmable macro keypad is the best productivity hack I’ve ever done.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/macro-keyboard-watermark.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "66f787d0",
-      "title": "Apple Maps ads exclude home services, political ads, and more",
-      "link": "https://appleinsider.com/articles/26/07/15/apple-maps-ads-exclude-home-services-political-ads-and-more?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-15T19:29:14.000Z",
-      "summary": "Apple has now announced who can advertise on Apple Maps , barring entire business categories while still giving itself the right to final say over any advertisements on the…",
-      "image": "https://photos5.appleinsider.com/gallery/67129-141128-000-lead-Apple-Maps-ads-xl.jpg"
+      "id": "a39fa620",
+      "title": "Finally fixed iPhone not showing up in iTunes on Windows 10/11 (The \"No Universal Serial Bus Controller found\" error)",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1uzcspy/finally_fixed_iphone_not_showing_up_in_itunes_on/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-17T21:29:06.000Z",
+      "summary": "Hey guys, I just spent hours pulling my hair out over this and finally figured it out, so I&#39;m posting this here in case anyone else gets stuck in this stupid loop. Basically,…",
+      "image": ""
     },
     {
       "id": "0db36f82",
@@ -821,26 +841,6 @@
       "category": "sideloading",
       "date": "2026-07-03T16:20:46.000Z",
       "summary": "Hi! I’ll preface this by saying that this is my first time using sideloadly and this could very well be a dumb question, but maybe someone could help me I’ve moved it to the…",
-      "image": ""
-    },
-    {
-      "id": "a5ef0706",
-      "title": "Sideloading toji motion on khoivdn",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1ukx4ft/sideloading_toji_motion_on_khoivdn/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-01T20:30:04.000Z",
-      "summary": "Yall I sideloaded an apo called toji motion I granted access to all photos so I can edit Do they now have access to my photos??I deleted it obv but yeah &#32; submitted by &#32;…",
-      "image": ""
-    },
-    {
-      "id": "3106140d",
-      "title": "A tiny question (Apple Account)",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1ukvcvy/a_tiny_question_apple_account/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-01T19:24:29.000Z",
-      "summary": "Hello guys, I just wanted some help. Do you use a burner Apple account or your regular one ? Any help would be greatly appreciated. &#32; submitted by &#32; /u/harperant95 [link]…",
       "image": ""
     },
     {
