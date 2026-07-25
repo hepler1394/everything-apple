@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T12:22:45.534Z",
+  "updated": "2026-07-25T12:04:30.781Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -13,6 +13,436 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "32ea2814",
+      "title": "Apple @ Work: Apple TV proves to be more reliable than Android in new digital signage report",
+      "link": "https://9to5mac.com/2026/07/25/apple-tv-proves-to-be-more-reliable-than-android-in-new-digital-signage-report/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-25T10:00:00.000Z",
+      "summary": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/07/apple-tv-4k-tvos-26.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "5059e74f",
+      "title": "Report: Apple and Micron clash before Trump over Chinese memory chips",
+      "link": "https://9to5mac.com/2026/07/24/report-apple-and-micron-clash-before-trump-over-chinese-memory-chips/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-25T02:03:00.000Z",
+      "summary": "The Wall Street Journal reports that Micron is pressing the Trump administration to block Apple’s push to use memory chips from Chinese suppliers. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2023/12/Apple-Park.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "6881ff6d",
+      "title": "'MacBook Ultra' Coming Soon With These 12 New Features",
+      "link": "https://www.macrumors.com/2026/07/24/macbook-ultra-12-new-features/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-25T01:00:12.000Z",
+      "summary": "Apple's first high-end MacBook redesign in five years is expected to arrive in the near future, bringing a run of firsts to the Mac. Bloomberg 's Mark Gurman expects the laptop to…",
+      "image": "https://images.macrumors.com/article-new/2026/07/macbook-ultra.jpg"
+    },
+    {
+      "id": "cd181826",
+      "title": "New lawsuit alleges unpatchable Apple chip exploit was developed using stolen trade secrets",
+      "link": "https://9to5mac.com/2026/07/24/new-lawsuit-alleges-unpatchable-apple-chip-exploit-was-developed-using-stolen-trade-secrets/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-25T00:53:03.000Z",
+      "summary": "Magnet Forensics is suing Paradigm Shift Technology over its publication of usbliter8, alleging that the unpatchable exploit affecting several Apple SoCs was developed using trade…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2023/09/Apple-Silicon-chips.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d082a0e8",
+      "title": "iOS 27: All the New iCloud Features",
+      "link": "https://www.macrumors.com/guide/ios-27-icloud/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-24T22:54:55.000Z",
+      "summary": "iOS 27 includes new iCloud capabilities across several apps like Apple Home, Siri , Photos , and more. There are some direct &zwnj;iCloud&zwnj; improvements like upgrades to photo…",
+      "image": "https://images.macrumors.com/article-new/2026/07/iOS-27-All-the-New-iCloud-Features.jpg"
+    },
+    {
+      "id": "d79b9dc5",
+      "title": "Tapbots launches Pastebot 3 with improved organization and automation tools",
+      "link": "https://9to5mac.com/2026/07/24/tapbots-launches-pastebot-3-with-improved-organization-and-automation-tools/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T22:18:26.000Z",
+      "summary": "Pastebot, one of the most popular clipboard managers for Mac, was updated today, nearly ten years after the release of Pastebot 2. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/pastebot-3.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "4918066b",
+      "title": "Apple Pay is getting even better with four new features",
+      "link": "https://9to5mac.com/2026/07/24/apple-pay-is-getting-even-better-with-four-new-features/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T21:24:36.000Z",
+      "summary": "Apple Pay is a go-to feature for iPhone users when shopping in stores, online, and in apps. Apple recently announced four new features that make Apple Pay even better. Here’s how…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/10/apple-pay-header.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "fe9dea9b",
+      "title": "Trump vows retaliation over EU fines against Apple and other ‘GREAT’ US tech giants",
+      "link": "https://9to5mac.com/2026/07/24/trump-vows-retaliation-over-eu-fines-against-apple-and-other-great-us-tech-giants/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T21:20:17.000Z",
+      "summary": "President Trump has pledged to retaliate against the European Union over what he claims are unfair fines targeting Apple and other American tech giants. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/04/tim-cook-trump.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "63d50f6b",
+      "title": "WhatsApp testing new message bubbles on iOS",
+      "link": "https://9to5mac.com/2026/07/24/whatsapp-testing-new-message-bubbles-on-ios/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T20:25:32.000Z",
+      "summary": "Following the official rollout of its Liquid Glass redesign to most WhatsApp users on iOS, the messaging platform is now testing another visual change, this time focused on the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/whatsapp-ios-26.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "4f4532df",
+      "title": "iPhone Ultra is coming: Six new features in Apple’s top-tier model",
+      "link": "https://9to5mac.com/2026/07/24/iphone-ultra-is-coming-six-new-features-in-apples-top-tier-model/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T20:25:12.000Z",
+      "summary": "Apple’s first foldable iPhone is coming this fall , and rumors say it will be called iPhone Ultra. Here are six features to expect from Apple’s new high-end iPhone Ultra.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/iphone-ultra-fold-mockup.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "6d9f651f",
+      "title": "Trump promises investigation into EU fines on US big tech",
+      "link": "https://appleinsider.com/articles/26/07/24/trump-promises-investigation-into-eu-fines-on-us-big-tech?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-24T19:46:33.000Z",
+      "summary": "President Donald Trump is escalating the fight over European Union antitrust penalties against Apple, Google, and other U.S. tech companies by opening a trade investigation that…",
+      "image": "https://photos5.appleinsider.com/gallery/64642-134691-Cook-Trump-shake-o.jpg"
+    },
+    {
+      "id": "fd7d8a7c",
+      "title": "Trump Vows to Reverse EU Fines Against Apple and Other Tech Companies, Threatens Tariffs",
+      "link": "https://www.macrumors.com/2026/07/24/trump-eu-fine-investigation/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-24T19:37:08.000Z",
+      "summary": "U.S. President Donald Trump today said on Truth Social that his administration plans to launch an investigation into fines the European Union has levied against tech companies…",
+      "image": "https://images.macrumors.com/article-new/2025/12/european-union-eu.jpg"
+    },
+    {
+      "id": "be5c7725",
+      "title": "Podcast Rewind: Siri AI, the Game Boy Advance Returns, and Smart Ceiling Fans",
+      "link": "https://www.macstories.net/news/podcast-rewind-siri-ai-the-game-boy-advance-returns-and-smart-ceiling-fans/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-24T19:35:38.000Z",
+      "summary": "Enjoy the latest episodes from MacStories’ family of podcasts: AppStories This week, Federico and John look at what Siri AI is good at, where it needs improvement, and where it…",
+      "image": "https://cdn.macstories.net/img_1734-2-1774559453738.png"
+    },
+    {
+      "id": "2522fd15",
+      "title": "Apple releases seventh RCs for macOS Sonoma 14.8.8 and macOS Sequoia 15.7.8",
+      "link": "https://9to5mac.com/2026/07/24/apple-releases-seventh-rcs-for-macos-sonoma-14-8-8-and-macos-sequoia-15-7-8/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T19:20:55.000Z",
+      "summary": "Continuing Apple’s extended test period for macOS Sonoma 14.8.8 and macOS Sequoia 15.7.8, the company is now rolling out the seventh Release Candidate for both systems. Here are…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/09/macOS-Sequoia-hero.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "c31f95a2",
+      "title": "iOS 27 adds new Phone app feature that’s an instant favorite",
+      "link": "https://9to5mac.com/2026/07/24/ios-27-adds-new-phone-app-feature-thats-an-instant-favorite/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T18:53:53.000Z",
+      "summary": "iOS 27 is packed with new features for apps like Notes , Wallet , Maps , Messages , and more. But one iOS 27 addition that’s especially impressed me is a new Phone feature : Call…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/phone-app-icon-fi-ios-27.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "9553f039",
+      "title": "This Apple-1 auction expected to cost the winner as much as 275 iPhone 17 Pros",
+      "link": "https://appleinsider.com/articles/26/07/24/this-apple-1-auction-expected-to-cost-the-winner-as-much-as-275-iphone-17-pros?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-24T18:44:17.000Z",
+      "summary": "A working 1977 Apple-1 expected to garner at least $300,000 leads RR Auction's sprawling sale of rare hardware, prototypes, and Steve Jobs memorabilia from Apple's earliest years.…",
+      "image": "https://photos5.appleinsider.com/gallery/68357-144067-1039C832-5BB1-46DA-9996-DF1ACC1FE9B1-xl.jpg"
+    },
+    {
+      "id": "da7bdffe",
+      "title": "MacStories Weekly: Issue 523",
+      "link": "https://www.macstories.net/club/macstories-weekly-issue-523/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-24T18:24:32.000Z",
+      "summary": "",
+      "image": ""
+    },
+    {
+      "id": "716ad843",
+      "title": "Anthropic's New Claude Opus 5 Nearly Matches Flagship Fable 5 at Half the Cost",
+      "link": "https://www.macrumors.com/2026/07/24/anthropic-opus-5/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-24T17:43:35.000Z",
+      "summary": "Anthropic today introduced Claude Opus 5, an upgrade to Opus 4.8. Anthropic says Opus 5 was built for daily use, and it offers near Fable 5 performance at half the price. Fable 5…",
+      "image": "https://images.macrumors.com/article-new/2026/07/claude-opus-5.jpg"
+    },
+    {
+      "id": "f1090ebc",
+      "title": "Anthropic upgrades Claude with new Opus 5 model, details here",
+      "link": "https://9to5mac.com/2026/07/24/anthropic-upgrades-claude-with-new-opus-5-model-details-here/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T17:16:56.000Z",
+      "summary": "Anthropic has released its latest AI model with Claude Opus 5. The new version arrives about two months after the previous Opus model upgrade, matching Anthropic’s previous…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/claude.webp?w=1600"
+    },
+    {
+      "id": "14d4d366",
+      "title": "watchOS 27 adds new feature to improve your Apple Watch battery life",
+      "link": "https://9to5mac.com/2026/07/24/watchos-27-adds-new-feature-to-improve-your-apple-watch-battery-life/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T17:02:45.000Z",
+      "summary": "watchOS 27 launches this fall as the next major Apple Watch update, and it includes a handy new feature that can improve your Apple Watch battery life: ‘proactive battery…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/watchos-27-watch-face-red.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "c74bf615",
+      "title": "iPhone exploit legal fight is really about who owns security research",
+      "link": "https://appleinsider.com/articles/26/07/24/iphone-exploit-legal-fight-is-really-about-who-owns-security-research?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-24T16:40:13.000Z",
+      "summary": "A federal judge has ordered a public iPhone exploit taken offline after Magnet Forensics argued it wasn't independent security research at all, but instead a stolen trade secret.…",
+      "image": "https://photos5.appleinsider.com/gallery/68354-144061-iPhone-X-Home-Screen-xl.jpg"
+    },
+    {
+      "id": "086cdb43",
+      "title": "Judge approves Apple's $250 million settlement offer over Siri lawsuit",
+      "link": "https://appleinsider.com/articles/26/07/24/judge-approves-apples-250-million-settlement-offer-over-siri-lawsuit?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-24T16:32:03.000Z",
+      "summary": "A lawsuit over Apple's failure to deliver Apple Intelligence and Siri features is moving closer to a conclusion as a judge has provisionally approved the company's settlement…",
+      "image": "https://photos5.appleinsider.com/gallery/67552-142286-66856-140246-Apple-Intelligence-lawsuit-gavel-xl.jpg"
+    },
+    {
+      "id": "553188c9",
+      "title": "The MacRumors Show: Can OpenAI Really Beat the iPhone?",
+      "link": "https://www.macrumors.com/2026/07/24/the-macrumors-show-can-openai-beat-the-iphone/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-24T16:17:27.000Z",
+      "summary": "This week's episode of The MacRumors Show covers OpenAI's move into hardware and the trade secret lawsuit Apple filed against the company earlier this month. Subscribe to The…",
+      "image": ""
+    },
+    {
+      "id": "47fe14cb",
+      "title": "Apple’s $250 million Siri settlement just got approved, here’s who gets paid",
+      "link": "https://9to5mac.com/2026/07/24/apples-250-million-siri-settlement-just-got-approved-heres-who-gets-paid/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T16:14:43.000Z",
+      "summary": "Apple’s $250 million class action lawsuit settlement over Siri and Apple Intelligence delays is moving through the court system. Here’s the latest news on how the $250 million…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/08/apple-intelligence-when.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "9755ab87",
+      "title": "macOS 27 Beta Reworks Mail's Compose Window Around Siri AI",
+      "link": "https://www.macrumors.com/2026/07/24/macos-27-beta-siri-mail-compose-window/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-24T15:57:06.000Z",
+      "summary": "For macOS 27 Golden Gate, coming this fall, Apple appears to be testing a new formatting bar for the Mail app's compose window that promotes Apple Intelligence's Writing Tools and…",
+      "image": "https://images.macrumors.com/article-new/2026/07/apple-working-on-redesigned-formatting-bar-for-mail-2.jpg"
+    },
+    {
+      "id": "1948f75c",
+      "title": "Deals: M5 Pro MacBook Pro $500 off, Apple Watch Series 11 $150 off, AirPods, AirTag 2, MagSafe Battery, more",
+      "link": "https://9to5mac.com/2026/07/24/deals-m5-pro-macbook-pro-apple-watch-airpods-airtag-2/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T15:21:46.000Z",
+      "summary": "Joining the Black Friday in July price drops on AirPods Pro 3, AirPods Max at $100 off , and AirTag 2 back at all-time lows, today’s 9to5Toys Lunch Break is headlined by a massive…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-Black-Friday-July-MacBook-Pro-AirPods.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "5313637b",
+      "title": "iOS 26.6 is coming next week for iPhone, here’s what’s new",
+      "link": "https://9to5mac.com/2026/07/24/ios-26-6-is-coming-next-week-for-iphone-heres-whats-new/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T15:15:02.000Z",
+      "summary": "iOS 26.6 is coming next week for iPhone users, and Apple’s release notes tell us exactly what to expect from the new software update.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-26-6-lg-iphone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d469f6cc",
+      "title": "Siri Settlement Approved: Apple to Pay Owners of Some iPhone Models",
+      "link": "https://www.macrumors.com/2026/07/24/apple-to-pay-owners-of-these-iphone-models/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-24T15:10:00.000Z",
+      "summary": "In May, Apple agreed to pay $250 million to settle a U.S. class action lawsuit over Siri AI's delayed launch, and eligible iPhone users could receive up to a $95 payout. Apple's…",
+      "image": "https://images.macrumors.com/article-new/2024/09/iphone-16-teal.jpg"
+    },
+    {
+      "id": "0214a449",
+      "title": "Lawsuit Filed After Apple's A12 and A13 Chips Hit With New Unpatchable Exploit",
+      "link": "https://www.macrumors.com/2026/07/24/unpatchable-iphone-11-exploit-sparks-legal-battle/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-24T14:58:55.000Z",
+      "summary": "Last month, cybersecurity research firm Paradigm Shift published details about a boot ROM vulnerability affecting Apple's A12 and A13 chips , but it has since removed the blog…",
+      "image": "https://images.macrumors.com/article-new/2023/06/iPhone-11-Pro-Feature-Green.jpg"
+    },
+    {
+      "id": "bbc6e4b9",
+      "title": "9to5Mac Daily: July 24, 2026 – Apple and Ford partnership, more",
+      "link": "https://9to5mac.com/2026/07/24/daily-july-24-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T14:55:34.000Z",
+      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "69338d41",
+      "title": "Facebook Verified is here, so you can tell if your new friend is really an AI",
+      "link": "https://appleinsider.com/articles/26/07/24/facebook-verified-is-here-so-you-can-tell-if-your-new-friend-is-really-an-ai?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-24T14:53:58.000Z",
+      "summary": "Meta has announced Facebook Verified, a free badge that will be visible on a user's profile and is designed to confirm whether that user is a real person or an AI without actually…",
+      "image": "https://photos5.appleinsider.com/gallery/68353-144059-Untitled-5-xl.jpg"
+    },
+    {
+      "id": "05102052",
+      "title": "Trusted Mac apps could possibly be swapped out for malware",
+      "link": "https://appleinsider.com/articles/26/07/24/trusted-mac-apps-could-possibly-be-swapped-out-for-malware?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-24T14:43:14.000Z",
+      "summary": "It takes a very specific series of steps and even then it cannot affect every Mac app, but researchers have found a way to bypass Apple's macOS security and run malware. There is…",
+      "image": "https://photos5.appleinsider.com/gallery/68349-144056-000-lead-malware-Mac-xl.jpg"
+    },
+    {
+      "id": "a27ed5c0",
+      "title": "Best ‘Black Friday in July’ Apple deals: $500 off MacBook Pro, $100 off AirPods, more",
+      "link": "https://9to5mac.com/2026/07/24/best-black-friday-in-july-apple-deals-50-off-airpods-pro-400-off-macbook-pro-more/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T14:38:18.000Z",
+      "summary": "Update 6/24 : Amazon is now offering a giant $500 price drop on the 14-inch M5 Pro MacBook Pro with 24GB of RAM and the 2TB storage capacity down at $2,499 shipped . We are…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-Black-Friday-in-July-deals-AirPods-MacBook-AirTag.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "59531e71",
+      "title": "New U.S. tariffs hit Apple's supply chain, with no clear exemptions",
+      "link": "https://appleinsider.com/articles/26/07/24/new-us-tariffs-hit-apples-supply-chain-with-no-clear-exemptions?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-24T14:37:38.000Z",
+      "summary": "The United States has chosen to apply new 10% tariffs to goods imported from a total of 60 countries, including the countries where nearly every iPhone and Mac are assembled.…",
+      "image": "https://photos5.appleinsider.com/gallery/68223-143803-65917-138146-Intel-chip-worker-xl-xl.jpg"
+    },
+    {
+      "id": "e9389916",
+      "title": "Dispatch records cut claims of major Apple Park fire damage down to size",
+      "link": "https://appleinsider.com/articles/26/07/24/dispatch-records-cut-claims-of-major-apple-park-fire-damage-down-to-size?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-24T14:29:27.000Z",
+      "summary": "Santa Clara County firefighters responded to an outside fire at an Apple property in Cupertino on July 23, but public evidence available and fire department reports refute major…",
+      "image": "https://photos5.appleinsider.com/gallery/68351-144058-Apple-Park-miniature-xl.jpg"
+    },
+    {
+      "id": "8c5066c4",
+      "title": "Facebook announces face scanning to confirm you’re a human",
+      "link": "https://9to5mac.com/2026/07/24/facebook-announces-face-scanning-to-confirm-youre-a-human/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T14:09:17.000Z",
+      "summary": "Meta has just announced ‘Facebook Verified,’ a new way for Facebook users to confirm they’re human by submitting a face scan to the service. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/facebook-verified-setup.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "b7a007ad",
+      "title": "Meta Launches Free 'Facebook Verified' Badge to Confirm Real Users",
+      "link": "https://www.macrumors.com/2026/07/24/meta-launches-free-facebook-verified-badge/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-24T13:55:12.000Z",
+      "summary": "Meta today announced Facebook Verified, a free badge designed to confirm that a Facebook profile belongs to a real person rather than an AI-generated fake. The feature uses a…",
+      "image": "https://images.macrumors.com/article-new/2021/03/Facebook-Feature.jpg"
+    },
+    {
+      "id": "d2f124ed",
+      "title": "Here’s everything new Apple TV has coming in August",
+      "link": "https://9to5mac.com/2026/07/24/heres-everything-new-apple-tv-has-coming-in-august-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T13:44:51.000Z",
+      "summary": "Apple TV subscribers will get to enjoy the long-awaited return of Ted Lasso in August, alongside a new season of sci-fi series Dark Matter , more episodes of Silo , and several…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/apple-tv-sunset-mountains.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "58efe9c4",
+      "title": "Fire Reported Near Apple Park",
+      "link": "https://www.macrumors.com/2026/07/24/fire-reported-near-apple-park/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-24T13:30:29.000Z",
+      "summary": "According to the Santa Clara County Fire Department, firefighters responded at approximately 5:30 p.m. local time on Thursday to a report of an outdoor fire at an Apple-leased…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Apple-Forge-1.jpg"
+    },
+    {
+      "id": "02ae7779",
+      "title": "Meta just released a brand-new Facebook Seller app for iPhone",
+      "link": "https://9to5mac.com/2026/07/24/meta-just-released-a-brand-new-facebook-seller-app-for-iphone/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T13:28:51.000Z",
+      "summary": "Meta has launched a brand-new iPhone app officially called Seller, a Facebook app. The new Meta app is specifically for Facebook users managing listings on Marketplace, the social…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/sell-facebook-app.webp?w=1600"
+    },
+    {
+      "id": "811f824d",
+      "title": "Apple Wallet driver’s licenses coming to two more states soon: report",
+      "link": "https://9to5mac.com/2026/07/24/apple-wallet-drivers-licenses-coming-to-two-more-states-soon-report/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T13:27:09.000Z",
+      "summary": "Apple Wallet offers digital IDs and driver’s licenses in a variety of US states , and according to findings by MacRumors ’ Aaron Perris, there are two new states that could add…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/06/apple-wallet-ios-26.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d209e388",
+      "title": "New Macs are coming soon, here’s everything we know",
+      "link": "https://9to5mac.com/2026/07/24/new-macs-are-coming-soon-heres-everything-we-know/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-24T13:19:36.000Z",
+      "summary": "Apple has a lineup of multiple new Macs launching later this year. This includes the first-ever touchscreen MacBook, the first M6 machines, and more. Here’s everything we know so…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/macbook-pro-m5-14-inch.webp?w=1600"
+    },
+    {
+      "id": "36068bd9",
+      "title": "Hide My Email, Apple Upgrade, and mass iPhone 18 Pro production, on the AppleInsider Podcast",
+      "link": "https://appleinsider.com/articles/26/07/24/hide-my-email-apple-upgrade-and-mass-iphone-18-pro-production-on-the-appleinsider-podcast?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-24T13:03:59.000Z",
+      "summary": "The Hide My Email failure is real but nowhere near as significant to users as it's being portrayed, Apple is hiking so many prices yet looking at ways to make that palatable, plus…",
+      "image": "https://photos5.appleinsider.com/gallery/68350-144057-648-art-article-poster-xl.jpg"
+    },
     {
       "id": "258d698a",
       "title": "Claude Voice Mode Gains Opus and Sonnet Model Support",
@@ -42,16 +472,6 @@
       "date": "2026-07-24T12:00:21.000Z",
       "summary": "The Keychron Q6 HE 8K is a solid mechanical keyboard with magnetic switches. While it's not cheap, it's got more than enough to give a great typing experience on Mac . Keychron Q6…",
       "image": "https://photos5.appleinsider.com/gallery/68283-143936-KeychronQ6HE8KReview5-xl.jpg"
-    },
-    {
-      "id": "05102052",
-      "title": "Trusted Mac apps could possibly be swapped out for malware",
-      "link": "https://appleinsider.com/articles/26/07/24/trusted-mac-apps-could-possibly-be-swapped-out-for-malware?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-24T11:58:02.000Z",
-      "summary": "It takes a very specific series of steps and even then it cannot affect every Mac app, but researchers have found a way to bypass Apple's macOS security and run malware. There is…",
-      "image": "https://photos5.appleinsider.com/gallery/68349-144056-000-lead-malware-Mac-xl.jpg"
     },
     {
       "id": "28b57990",
@@ -95,12 +515,12 @@
     },
     {
       "id": "9ca39381",
-      "title": "Apple art director shares early sketches and prototype of Lil’ Finder Guy",
+      "title": "Apple art director shares early sketches and prototype of Lil’ Finder Guy [U]",
       "link": "https://9to5mac.com/2026/07/23/apple-art-director-shares-early-sketches-and-prototype-of-lil-finder-guy/",
       "source": "9to5Mac",
       "category": "news",
       "date": "2026-07-24T02:36:03.000Z",
-      "summary": "Sofia Coelho, the art director who led the visual design and concept for Lil’ Finder Guy, has shared a rare behind-the-scenes look at how the MacBook Neo campaign’s mascot came to…",
+      "summary": "Update, July 24: The LinkedIn post has since been deleted. The original story follows below. Sofia Coelho, the art director who led the visual design and concept for Lil’ Finder…",
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/03/Apple-creates-adorable-little-Finder-guy-to-promote-its-adorable-little-Mac.jpg?quality=82&strip=all&w=1500"
     },
     {
@@ -192,426 +612,6 @@
       "date": "2026-07-23T20:22:10.000Z",
       "summary": "iPhone 18 Pro is just a couple months away , and while most iPhone 17 Pro owners won’t upgrade so soon, for those considering a new iPhone there are three main features likely to…",
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/iPhone-18-Pro-reportedly-enters-test-production.jpg?quality=82&strip=all&w=1500"
-    },
-    {
-      "id": "2f193d6a",
-      "title": "ChatGPT and Codex are currently down for some users",
-      "link": "https://9to5mac.com/2026/07/23/chatgpt-and-codex-are-currently-down-for-some-users/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T20:05:08.000Z",
-      "summary": "OpenAI’s system status page confirms that some users are encountering elevated error rates when trying to use ChatGPT and Codex. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/chatgpt-red.webp?w=1600"
-    },
-    {
-      "id": "6f30c654",
-      "title": "iPhone leasing, Apple Music price increase, iOS 27 beta 4",
-      "link": "https://9to5mac.com/2026/07/23/happy-hour-600/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T20:00:00.000Z",
-      "summary": "Benjamin and Chance talk about the last week in Apple News, including the rumored new ‘Apple Upgrade’ leasing program, Apple Music price hike, iOS 27 beta 4 changes, an OLED…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/02/9to5mac-happy-hour-lead1.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "ceebf7b5",
-      "title": "Report: iPhone Ultra set to account for 25% of foldable smartphone shipments in 2026",
-      "link": "https://9to5mac.com/2026/07/23/report-iphone-ultra-set-to-account-for-25-of-foldable-smartphone-shipments-in-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T19:49:23.000Z",
-      "summary": "Counterpoint Research is out with a new report forecasting 21% year-over-year growth in global foldable smartphone shipments in 2026, with Apple expected to capture a 25% share…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iphone-ultra-concept-orange.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "b8e47f57",
-      "title": "OpenAI updating ChatGPT desktop app with GPT Voice for talking through work",
-      "link": "https://9to5mac.com/2026/07/23/openai-updating-chatgpt-desktop-app-with-gpt-voice-for-talking-through-work/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T19:36:11.000Z",
-      "summary": "OpenAI is releasing a big update to the ChatGPT desktop app today that introduces GPT Voice mode for talking through work to complete tasks. The new feature is powered by GPT-Live…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/chatgpt-codex.webp?w=1600"
-    },
-    {
-      "id": "ca8cc1ef",
-      "title": "OpenAI sued after ChatGPT used religious faith to convince a man to not talk to a doctor",
-      "link": "https://appleinsider.com/articles/26/07/23/openai-sued-after-chatgpt-used-religious-faith-to-convince-a-man-to-not-talk-to-a-doctor?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T19:19:56.000Z",
-      "summary": "ChatGPT leveraged faith to convince a man with a cardiac issue to stay home instead of seeking medical help. Now, facing years of recovery and profound financial damage, the man…",
-      "image": "https://photos5.appleinsider.com/gallery/68343-144049-Untitled-5-xl.jpg"
-    },
-    {
-      "id": "5ee4df01",
-      "title": "Anthropic upgrades Claude voice mode with more powerful models",
-      "link": "https://9to5mac.com/2026/07/23/anthropic-upgrades-claude-voice-mode-with-more-powerful-models/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T19:16:12.000Z",
-      "summary": "Anthropic is bringing a long-overdue upgrade to voice mode in Claude today. The upgraded Claude voice mode has new capabilities and works with Opus and Sonnet models for the first…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/claude-voice-mode.webp?w=1600"
-    },
-    {
-      "id": "ab046425",
-      "title": "Connecting Apple Health to ChatGPT creates privacy risks Siri AI can avoid",
-      "link": "https://appleinsider.com/articles/26/07/23/connecting-apple-health-to-chatgpt-creates-privacy-risks-siri-ai-can-avoid?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T18:32:58.000Z",
-      "summary": "OpenAI's new Health feature gives ChatGPT access to Apple Health data and medical records, adding useful analysis at the cost of sharing sensitive information with another…",
-      "image": "https://photos5.appleinsider.com/gallery/68345-144055-IMG_8179-xl.jpg"
-    },
-    {
-      "id": "6847a762",
-      "title": "iOS 27’s new Siri delivers in every single way I’d hoped for",
-      "link": "https://9to5mac.com/2026/07/23/ios-27s-new-siri-delivers-in-every-single-way-id-hoped-for/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T18:19:10.000Z",
-      "summary": "Siri AI launches this fall in iOS 27, and after more than a month using the beta, I can happily say the new Siri delivers in every way I’d hoped for.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/siri-app-ios-27-fi.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "c76b296c",
-      "title": "ChatGPT's Apple Health Integration Now Rolling Out to U.S. Users",
-      "link": "https://www.macrumors.com/2026/07/23/chatgpt-apple-health-integration/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T17:54:05.000Z",
-      "summary": "The Health in ChatGPT feature that integrates medical records and Apple Health data is rolling out to ChatGPT users in the United States as of today. OpenAI announced plans for a…",
-      "image": "https://images.macrumors.com/article-new/2026/07/chatgpt-health.jpg"
-    },
-    {
-      "id": "91e98976",
-      "title": "Emergency SOS via Satellite Expands to Two More Countries",
-      "link": "https://www.macrumors.com/2026/07/23/emergency-sos-via-satellite-two-more-countries/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T17:50:00.000Z",
-      "summary": "Emergency SOS via satellite is now available in Andorra and Iceland, according to an updated Apple support document . Available on the iPhone 14 and newer and the Apple Watch…",
-      "image": "https://images.macrumors.com/article-new/2022/11/Emergency-SOS-via-Satellite-iPhone-YT.jpg"
-    },
-    {
-      "id": "a0896677",
-      "title": "'The Morning Show' will bring Apple TV's first prestige drama to an end in 2027",
-      "link": "https://appleinsider.com/articles/26/07/23/the-morning-show-will-bring-apple-tvs-first-prestige-drama-to-an-end-in-2027?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T17:29:59.000Z",
-      "summary": "Jennifer Aniston and Reese Witherspoon helped bolster fledging Apple TV with \"The Morning Show\" in 2019. The final season of the award-winning drama has been announced, bringing…",
-      "image": "https://photos5.appleinsider.com/gallery/68344-144052-000-lead-Morning-Show-xl.jpg"
-    },
-    {
-      "id": "4ef5fe1a",
-      "title": "OpenAI relaunches Apple Health-connected ChatGPT feature with expanded access",
-      "link": "https://9to5mac.com/2026/07/23/openai-relaunches-apple-health-connected-chatgpt-feature-with-expanded-access/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T17:28:30.000Z",
-      "summary": "OpenAI is relaunching Health in ChatGPT, the AI-powered feature that connects to Apple Health on iPhone. The relaunch comes with expanded access and a big step forward in results.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/chatgpt-healthwebp.webp?w=1600"
-    },
-    {
-      "id": "268f32b4",
-      "title": "New Geekbench 7 benchmark adds AI workloads, better reflects 2026 computer use cases",
-      "link": "https://appleinsider.com/articles/26/07/23/new-geekbench-7-benchmark-adds-ai-workloads-better-reflects-2026-computer-use-cases?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T17:05:22.000Z",
-      "summary": "Primate Labs released Geekbench 7 for macOS , iOS, Android, Windows, and Linux, redesigning its cross-platform benchmark to better reflect how current software uses CPUs and GPUs.…",
-      "image": "https://photos5.appleinsider.com/gallery/68338-144040-Geekbench-7-Banner-xl.jpg"
-    },
-    {
-      "id": "ed92882e",
-      "title": "Geekbench 7 Launches With Redesigned Multi-Core and GPU Benchmarks",
-      "link": "https://www.macrumors.com/2026/07/23/geekbench-7-launch/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T17:00:00.000Z",
-      "summary": "Primate Labs today announced the launch of Geekbench 7 , the newest version of the popular benchmarking suite for CPU and GPU performance. There's a redesigned multi-core…",
-      "image": "https://images.macrumors.com/article-new/2026/07/geekbench-7.jpg"
-    },
-    {
-      "id": "85c85df7",
-      "title": "Apple's MacBook Pro with 48GB RAM drops to $2,699, saving you $400",
-      "link": "https://appleinsider.com/articles/26/07/23/apples-macbook-pro-with-48gb-ram-drops-to-2699-saving-you-400?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T16:51:53.000Z",
-      "summary": "Apple's current 14-inch MacBook Pro with an M5 Pro chip and upgrade to 48GB of RAM is $400 off during B&H's month-end sale, but supply is limited at the reduced price. Save $400…",
-      "image": "https://photos5.appleinsider.com/gallery/68342-144047-macbook-pro-48gb-ram-deal-xl.jpg"
-    },
-    {
-      "id": "abe90d48",
-      "title": "Apple Pay Promo Offers Discount on Columbia Gear",
-      "link": "https://www.macrumors.com/2026/07/23/apple-pay-columbia-promo/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T16:38:05.000Z",
-      "summary": "Apple today sent out emails letting Apple Pay users know about the latest promotion, which offers $20 off purchases of $120 or more from sportswear company Columbia. The $20…",
-      "image": "https://images.macrumors.com/article-new/2026/07/columbia-apple-pay.jpg"
-    },
-    {
-      "id": "1ddb2d2b",
-      "title": "'The Morning Show' Returning to Apple TV for a Final Season Next Year",
-      "link": "https://www.macrumors.com/2026/07/23/apple-tv-the-morning-show-final-season/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T16:32:19.000Z",
-      "summary": "Apple today announced that \"The Morning Show\" will return to Apple TV for a fifth and final season at some point in 2027. \"The Morning Show\" was one of the first shows available…",
-      "image": "https://images.macrumors.com/article-new/2026/07/The-Morning-Show-Hero.jpg"
-    },
-    {
-      "id": "ee8745f8",
-      "title": "Apple announces The Morning Show is ending after season 5",
-      "link": "https://9to5mac.com/2026/07/23/apple-announces-the-morning-show-is-ending-after-season-5/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T16:16:15.000Z",
-      "summary": "Apple just announced that one of Apple TV’s first ever original series, The Morning Show , will be ending after season 5. Here are the details on the final season of The Morning…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/the-morning-show-s4-key-art-zoom.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "34471194",
-      "title": "iOS 27 gives Apple Photos a very useful feature I’ve wanted for years",
-      "link": "https://9to5mac.com/2026/07/23/ios-27-gives-apple-photos-a-very-useful-feature-ive-wanted-for-years/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T16:03:14.000Z",
-      "summary": "Apple Photos gets a variety of exciting upgrades in iOS 27 , including a new feature that’s long been on my wishlist: the ability to save a video frame as a photo.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-photos-app-icon-ios-27.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "818aad00",
-      "title": "Apple TV is branching out with a self-help eight-part dating docuseries",
-      "link": "https://appleinsider.com/articles/26/07/23/apple-tv-is-branching-out-with-a-self-help-eight-part-dating-docuseries?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T15:59:42.000Z",
-      "summary": "Apple TV has announced an upcoming documentary series, featuring New York Times bestselling author and renowned relationship expert Esther Perel, that sets out to help couples…",
-      "image": "https://photos5.appleinsider.com/gallery/66745-139965-apple-t-shows-xl.jpg"
-    },
-    {
-      "id": "9a8af578",
-      "title": "Opera One Browser Adds Vertical Tabs - Should Safari Follow?",
-      "link": "https://www.macrumors.com/2026/07/23/opera-one-adds-vertical-tabs-chrome-firefox/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T15:52:03.000Z",
-      "summary": "Opera One browser just pushed an update adding a Vertical Tabs option that moves the tab bar from the top of the window to a resizable panel down the left-hand side. The feature…",
-      "image": "https://images.macrumors.com/article-new/2026/07/opera-one-vertical-Tabs-HERO-1.jpg"
-    },
-    {
-      "id": "d001830e",
-      "title": "US Mint's limited edition Steve Jobs coin is no longer quite so limited",
-      "link": "https://appleinsider.com/articles/26/07/23/us-mints-limited-edition-steve-jobs-coin-is-no-longer-quite-so-limited?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T15:34:25.000Z",
-      "summary": "After selling out the entire stock in 11 minutes in March, the US Mint's commemorative Steve Jobs coin was briefly back on sale on Thursday. Image Credit: United States Mint It…",
-      "image": "https://photos5.appleinsider.com/gallery/67613-142454-chorbs-xl.jpg"
-    },
-    {
-      "id": "9bc7d77d",
-      "title": "5 Reasons to Buy the iPhone 17 Now Instead of Waiting for iPhone 18",
-      "link": "https://www.macrumors.com/2026/07/23/5-reasons-buy-iphone-17-not-waiting-iphone-18/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T15:26:53.000Z",
-      "summary": "Apple's iPhone 18 Pro models and its first foldable are less than two months from being unveiled. That may sound like a reason to sit tight if you're looking to upgrade from an…",
-      "image": "https://images.macrumors.com/article-new/2026/07/5-Reasons-to-Buy-the-iPhone-17-Now-Feature.jpg"
-    },
-    {
-      "id": "75f05c6e",
-      "title": "Deals: M5 Pro MacBook Pro $320 off, Series 11 from $299, AirPods Pro 3, Satechi 25W MagSafe stand 40% off, more",
-      "link": "https://9to5mac.com/2026/07/23/deals-macbook-pro-series-11-airpods-25w-magsafe/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T15:25:42.000Z",
-      "summary": "The Black Friday in July Apple deals roll on with discounts on AirPods Pro 3 and $100 off AirPods Max 2, as well as the lowest price to date on the new AirTag 2 – we have…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-MacBook-Pro-25W-MagSafe-AirTag-AirPods.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "061e751e",
-      "title": "Google introduces new ‘selfie video’ sign-in method",
-      "link": "https://9to5google.com/2026/07/23/google-account-selfie-video/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T15:15:00.000Z",
-      "summary": "Google Accounts are gaining a new “selfie video” sign-in method that can be handy if you lose your phone or passkeys.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Google-video-selfie-cover.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "264b7dc9",
-      "title": "9to5Mac Daily: July 23, 2026 – ‘Apple Upgrade’ program coming soon",
-      "link": "https://9to5mac.com/2026/07/23/daily-july-23-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T15:11:59.000Z",
-      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "07dca884",
-      "title": "Apple TV announces new dating series: ‘The Last Person on Earth’",
-      "link": "https://9to5mac.com/2026/07/23/apple-tv-announces-its-first-dating-series-the-last-person-on-earth/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T14:46:04.000Z",
-      "summary": "Dating reality shows are a popular genre Apple TV has entirely avoided. And while its newly announced series , The Last Person on Earth, is being billed as a “documentary series”…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/apple-tv-tvos26-screensaver-07.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "3ff59d97",
-      "title": "Two new Macs might skip M5 chips and go straight to M6",
-      "link": "https://9to5mac.com/2026/07/23/two-new-macs-might-skip-m5-chips-and-go-straight-to-m6/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T14:13:05.000Z",
-      "summary": "Yesterday Bloomberg’s Mark Gurman detailed a years-long roadmap for upcoming Macs, and per his report, it sounds like two new models might skip the base M5 chip and go straight to…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/m6_regular.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "55b835d2",
-      "title": "Apple’s OpenAI lawsuit is about who gets to define the post-smartphone era",
-      "link": "https://www.theverge.com/podcast/968787/apple-openai-trade-secrets-lawsuit-ai-hardware-smartphone-jony-ive",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-23T14:00:00.000Z",
-      "summary": "Today on Decoder, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the major trade secrets lawsuit between Apple and OpenAI and what this tells us about…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/DCD_0724_OpenAI_suit.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "c6084199",
-      "title": "Apple Watch Series 11 GPS Models Now $100 Off on Amazon",
-      "link": "https://www.macrumors.com/2026/07/23/apple-watch-100-off-amazon/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T13:51:42.000Z",
-      "summary": "Amazon this week has low prices on the Apple Watch Series 11 , with $100 discounts across numerous models of the smartwatch. This sale includes a handful of 42mm and 46mm GPS…",
-      "image": "https://images.macrumors.com/article-new/2026/06/apple-watch-series-11-dark.jpeg"
-    },
-    {
-      "id": "2049d63d",
-      "title": "Ford picks Apple Maps for its next EV platform and updated BlueCruise",
-      "link": "https://www.theverge.com/transportation/969919/ford-apple-maps-bluecruise-driver-assist",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-23T13:49:51.000Z",
-      "summary": "Ford plans to embed Apple Maps directly into its Universal Electric Vehicle Platform, which will start with a $30,000 midsize pickup truck set for release in 2027. In an…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/acastro_STK056_02.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "1062b307",
-      "title": "An AirPod-powered Frisbee tracker makes backyard throws scientific",
-      "link": "https://appleinsider.com/articles/26/07/23/an-airpod-powered-frisbee-tracker-makes-backyard-throws-scientific?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T13:48:42.000Z",
-      "summary": "A developer and Frisbee fan turned AirPods into a flying-disc stat tracker, using motion sensors to measure throws in a clever demonstration of what Apple's earbuds can do beyond…",
-      "image": "https://photos5.appleinsider.com/gallery/68335-144037-AirPods-4-case-xl.jpg"
-    },
-    {
-      "id": "b8fc4f87",
-      "title": "Apple Maps will be at the core of Ford's electric vehicles in 2027",
-      "link": "https://appleinsider.com/articles/26/07/23/apple-maps-will-be-at-the-core-of-fords-electric-vehicles-in-2027?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T13:35:15.000Z",
-      "summary": "Apple and Ford have announced a new partnership that will see cars built on the latter's Universal Electric Vehicle platform use Apple Maps for advanced routing and future…",
-      "image": "https://photos5.appleinsider.com/gallery/64001-133198-Phone-Call-in-CarPlay-xl.jpg"
-    },
-    {
-      "id": "fbad74ce",
-      "title": "Apple Maps to Help Power Autonomous Driving in Ford's 2027 EV",
-      "link": "https://www.macrumors.com/2026/07/23/apple-maps-power-driving-in-ford-ev/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T13:27:55.000Z",
-      "summary": "Apple and Ford today announced announced that Apple Maps will power the navigation system in Ford's upcoming Universal Electric Vehicle (UEV) Platform, launching in 2027 at a…",
-      "image": "https://images.macrumors.com/article-new/2026/04/Apple-Maps-General.jpg"
-    },
-    {
-      "id": "79236727",
-      "title": "iPhone Ultra timing remains unclear as ‘final production adjustments’ made",
-      "link": "https://9to5mac.com/2026/07/23/iphone-ultra-timing-remains-unclear-as-final-production-adjustments-made/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T13:21:42.000Z",
-      "summary": "The exact launch timings of the iPhone Ultra remain unclear as a new supply chain report says that Foxconn is making “final adjustments” to the manufacturing process. It follows…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iphone-ultra-concept-blue.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "2c1bedfe",
-      "title": "Apple Maps is becoming Ford’s new navigation mode for select vehicles",
-      "link": "https://9to5mac.com/2026/07/23/apple-maps-is-becoming-fords-new-navigation-mode-for-select-vehicles/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T13:19:13.000Z",
-      "summary": "Today Apple announced a unique partnership with automaker Ford, which will bake Apple Maps into its upcoming Universal Electric Vehicle (UEV) Platform for navigation. Here are the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-maps-icon-ios-27.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "b45a6cb4",
-      "title": "Famed technology journalist John C. Dvorak dies aged 80",
-      "link": "https://appleinsider.com/articles/26/07/23/famed-technology-journalist-john-c-dvorak-dies-aged-80?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T13:09:30.000Z",
-      "summary": "Legendary technology columnist, pundit, author and podcast host John C. Dvorak has died, age 80. He is survived by his wife Mimi Dvorak. John C. Dvorak - image credit: No Agenda…",
-      "image": "https://photos5.appleinsider.com/gallery/68333-144035-000-lead-Dvorak-xl.jpg"
-    },
-    {
-      "id": "aa527419",
-      "title": "Apple's foldable iPhone launch in question amid production hiccups",
-      "link": "https://appleinsider.com/articles/26/07/23/apples-foldable-iphone-launch-in-question-amid-production-hiccups?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-23T13:00:13.000Z",
-      "summary": "As the expected launch of Apple's first foldable iPhone nears, the shipment dates are still up in the air, with supply chain sources saying some plans need to be finalized before…",
-      "image": "https://photos5.appleinsider.com/gallery/68045-143446-67320-141847-iphonefoldrenderapril20262-xl-xl.jpg"
-    },
-    {
-      "id": "ac043714",
-      "title": "SmartGym update makes it easier to manually adjust and log exercises on the go",
-      "link": "https://9to5mac.com/2026/07/23/smartgym-update-makes-it-easier-to-manually-adjust-and-log-exercises-on-the-go/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T13:00:07.000Z",
-      "summary": "With the version rolling out today, users who rely on SmartGym’s iPhone app will find it easier to adjust and log their sets during workouts. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/smart-gym-update-july.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "c5cad253",
-      "title": "Apple Maps to power navigation experience for Ford UEV Platform",
-      "link": "https://www.apple.com/newsroom/2026/07/apple-maps-to-power-navigation-experience-for-ford-uev-platform/",
-      "source": "Apple",
-      "category": "news",
-      "date": "2026-07-23T13:00:06.211Z",
-      "summary": "Apple and Ford announced Apple Maps will be integrated directly into Ford’s UEV Platform through the MapKit for Automotive SDK.",
-      "image": ""
-    },
-    {
-      "id": "b8579179",
-      "title": "Google Fined $1 Billion by EU for Search Bias and App Store Restrictions",
-      "link": "https://www.macrumors.com/2026/07/23/google-fined-1-billion-by-eu/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-23T12:39:17.000Z",
-      "summary": "Google was today fined €890 million ($1 billion) by the European Union for breaching antitrust rules with regard to its search and Google Play store services. The European…",
-      "image": "https://images.macrumors.com/article-new/2025/03/european-commission.jpg"
-    },
-    {
-      "id": "964658c5",
-      "title": "ChatGPT told user to ignore lethal condition, but people keep treating it as a doctor",
-      "link": "https://9to5mac.com/2026/07/23/chatgpt-told-user-to-ignore-lethal-condition-but-people-keep-treating-it-as-a-doctor/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-23T12:38:25.000Z",
-      "summary": "You’d think that it would be obvious that it’s a terrible idea to ask an AI chatbot for a medical consultation, but hundreds of millions of people do it every week. In one…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ChatGPT-told-user-to-ignore-life-threatening-condition-but-people-keep-treating-it-as-a-doctor.jpg?quality=82&strip=all&w=1600"
     },
     {
       "id": "4eea22a9",
