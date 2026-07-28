@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27T13:41:01.009Z",
+  "updated": "2026-07-28T12:56:57.684Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -14,604 +14,604 @@
   ],
   "items": [
     {
-      "id": "02e32031",
-      "title": "Lock Launcher Introduces “No Redirect” Launchers, XL Widgets for iOS 27",
-      "link": "https://www.macstories.net/ios/lock-launcher-introduces-no-redirect-launchers-xl-widgets-for-ios-27/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-27T13:23:03.000Z",
-      "summary": "My Home Screen setup with Liquid Glass widgets powered by Lock Launcher. I don’t think I ever mentioned it on MacStories (although I probably did at some point on AppStories or…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/07/27/shortcut-upload-1785146269572-1e96d48dde.png"
-    },
-    {
-      "id": "10016753",
-      "title": "Apple Responds to Lawsuit Over Fake Bitcoin Wallet Scam in App Store",
-      "link": "https://www.macrumors.com/2026/07/27/apple-app-store-fake-bitcoin-wallet-lawsuit/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-27T13:00:00.000Z",
-      "summary": "Apple is facing a new lawsuit from three customers who allegedly lost a combined $1.8 million after falling victim to a fake Bitcoin wallet app in the App Store, according to a…",
-      "image": "https://images.macrumors.com/article-new/2021/03/apple-bitcoin-app-scam.jpg"
-    },
-    {
-      "id": "2d86fca2",
-      "title": "Inoreader: Build Your Own Newsfeed and Cut Through the Noise [Sponsor]",
-      "link": "https://www.macstories.net/sponsored/inoreader-build-your-own-newsfeed-and-cut-through-the-noise-sponsor/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-27T12:46:59.000Z",
-      "summary": "Staying up to date has never felt more overwhelming. Between websites, newsletters, podcasts, social media feeds, and specialized publications, valuable information is scattered…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/07/27/inoreader-hero-1400x600-1785154404560-a754f39087.png"
-    },
-    {
-      "id": "48221a74",
-      "title": "Accessibility paywall on Meta Glasses ‘paused’ after condemnation [U]",
-      "link": "https://9to5mac.com/2026/07/27/an-accessibility-paywall-on-meta-glasses-could-be-good-news-for-apple-glasses/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-27T12:27:42.000Z",
-      "summary": "Ray-Ban Meta Glasses and the latest cheaper non-designer option are sold on the basis of the built-in AI features, but in early July the company announced a “ridiculous” limit on…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/The-ridiculous-paywall-on-Meta-Glasses-could-be-good-news-for-Apple-Glasses.jpeg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "112e3d39",
-      "title": "Claude Cowork escaped sandbox on Mac, gain full access to all files",
-      "link": "https://9to5mac.com/2026/07/27/claude-cowork-escaped-sandbox-on-mac-gain-full-access-to-all-files/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-27T12:16:29.000Z",
-      "summary": "Security researchers demonstrated that Claude Cowork could escape the sandbox intended to control the access it gets to your Mac. The exploit, dubbed ShareRoot, could allow an…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Claude-Cowork-escaped-sandbox-on-Mac-had-full-access-to-all-files.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "d44e6a8e",
-      "title": "Daughters overjoyed as Apple Watch gift saves their father's life",
-      "link": "https://appleinsider.com/articles/26/07/27/daughters-overjoyed-as-apple-watch-gift-saves-their-fathers-life?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-27T11:49:00.000Z",
-      "summary": "A Cincinnati man says that if the fall detection feature of Apple Watch hadn't called 911, he would have died from undiagnosed blood clotting. Mohammad Islam with the Apple Watch…",
-      "image": "https://media.appleinsider.com/gallery/68375-144090-000-lead-Watch-hospital-xl.jpg"
-    },
-    {
-      "id": "cdb93963",
-      "title": "Apple Glasses just won’t be useful without video recording",
-      "link": "https://9to5mac.com/2026/07/27/apple-glasses-just-wont-be-useful-without-video-recording/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-27T11:40:01.000Z",
-      "summary": "A Bloomberg report suggests that Apple Glasses might be launched without the capability to take photos or record video. Apple is said to be considering this option as a way to…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/05/apple-glasses-light.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "a6be0a3f",
-      "title": "AppleCare One expands to four more countries",
-      "link": "https://appleinsider.com/articles/26/07/27/applecare-one-expands-to-four-more-countries?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-27T11:25:41.000Z",
-      "summary": "Previously exclusively in the US, AppleCare One is now launching in the UK, France, Germany, and Australia, with Apple's best insurance deal for users with multiple devices — as…",
-      "image": "https://photos5.appleinsider.com/gallery/68356-144065-000-lede-AppleCare-One-xl.jpg"
-    },
-    {
-      "id": "c507b6b8",
-      "title": "Steve Wozniak gave Apple its soul before Steve Jobs made it a hit",
-      "link": "https://appleinsider.com/articles/26/07/24/steve-wozniak-gave-apple-its-soul-before-steve-jobs-made-it-a-hit?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-27T11:24:30.000Z",
-      "summary": "It's been over four decades since Steve Wozniak left Apple, but as co-founder and creator of the firm's first computers, Woz still fully enjoys his place in history. Steve Wozniak…",
-      "image": "https://photos5.appleinsider.com/gallery/66972-140659-wozcbssunday-xl.jpg"
-    },
-    {
-      "id": "af6d6f28",
-      "title": "AppleCare One launching in the UK as theft and loss coverage expands",
-      "link": "https://9to5mac.com/2026/07/26/applecare-one-launching-in-the-uk-as-theft-and-loss-coverage-expands/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-27T06:00:00.000Z",
-      "summary": "AppleCare One – a version of AppleCare+ that allows you to protect multiple products for a single monthly payment – is rolling out the the UK. Additionally, AppleCare+ with Theft…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-brings-AppleCare-One-to-the-UK.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "241c9c16",
-      "title": "Here's What the 'iPhone 20' is Expected to Look Like",
-      "link": "https://www.macrumors.com/2026/07/26/what-iphone-20-is-expected-to-look-like/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-27T01:00:12.000Z",
-      "summary": "Apple's 20th anniversary iPhone is expected to arrive in the fall of 2027 with the most significant design overhaul the device has seen since the iPhone X. In many ways, the…",
-      "image": "https://images.macrumors.com/article-new/2026/07/iphone-20-anniversary.jpg"
-    },
-    {
-      "id": "2e59694b",
-      "title": "PSA: Apple TV, Apple Music, and more are currently down for some users [Update: Fixed]",
-      "link": "https://9to5mac.com/2026/07/26/psa-apple-tv-apple-music-and-more-are-currently-down-for-some-users/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-27T00:52:24.000Z",
-      "summary": "Update, 6:15 p.m PT : Apple says all the problems previously listed on its Developer website have been resolved. All of the outages listed on its consumer System Status page have…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/apple-tv-logo-ocean-sunset.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "fd5ab212",
-      "title": "Apple Watch Series 12 and Ultra 4: What to expect",
-      "link": "https://9to5mac.com/2026/07/26/apple-watch-series-12-and-ultra-4-what-to-expect/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-26T23:43:04.000Z",
-      "summary": "Apple will announce its next-generation Apple Watch lineup in September, including the Apple Watch Series 12 and Apple Watch Ultra 4 . Here’s the latest on what to expect from…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/apple-watch-ultra-3-4-mountain.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "0eba1e5b",
-      "title": "Sunday Reboot: Apple TV dating, Matchbox, and Lasso hope",
-      "link": "https://appleinsider.com/articles/26/07/26/sunday-reboot-apple-tv-dating-matchbox-and-lasso-hope?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-26T20:02:54.000Z",
-      "summary": "In this week's Sunday Reboot , Apple TV's dating docuseries could lead to new content areas, an unexpected Mattel movie, and the hope of even more \"Ted Lasso.\" The cast of…",
-      "image": "https://media.appleinsider.com/gallery/68365-144088-matchboxappletv-xl.jpg"
-    },
-    {
-      "id": "e7bd854a",
-      "title": "Apple is banking on privacy to set its smart glasses apart",
-      "link": "https://www.theverge.com/tech/971101/apple-smart-glasses-privacy",
+      "id": "2b2ee59a",
+      "title": "Apple launches ‘Upgrade’ program to lease new devices",
+      "link": "https://www.theverge.com/tech/971220/apple-upgrade-program-iphone-mac-ipad-lease-launch",
       "source": "The Verge",
       "category": "news",
-      "date": "2026-07-26T19:36:38.000Z",
-      "summary": "According to Mark Gurman, Apple is planning to reveal its first smart glasses at WWDC next June, with an expectation that they'll launch by the end of 2027. Part of the hold-up…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/268640_RayBan_Meta_Gen2_AKrales_0011.jpg?quality=90&strip=all&crop=0,0,100,100"
+      "date": "2026-07-28T12:23:50.000Z",
+      "summary": "Apple has officially introduced \"Apple Upgrade,\" a new leasing program that aims to make it easier to get your hands on the latest iPhone, Mac, iPad, and Apple Watch models. The…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Apple-Upgrade-hero.jpg?quality=90&strip=all&crop=0,0,100,100"
     },
     {
-      "id": "796b5eb1",
-      "title": "Apple’s AI glasses to be unveiled at WWDC27: report",
-      "link": "https://9to5mac.com/2026/07/26/apples-ai-glasses-to-be-unveiled-at-wwdc27-report/",
+      "id": "725384e2",
+      "title": "Apple shuts down iPhone Upgrade Program, here’s what’s next",
+      "link": "https://9to5mac.com/2026/07/28/apple-shuts-down-iphone-upgrade-program-heres-whats-next/",
       "source": "9to5Mac",
       "category": "news",
-      "date": "2026-07-26T18:54:46.000Z",
-      "summary": "Apple’s long-awaited AI smart glasses, expected to launch late next year, finally have an expected reveal date.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/apple-glasses.jpg?quality=82&strip=all&w=1600"
+      "date": "2026-07-28T12:22:35.000Z",
+      "summary": "Apple today officially launched its new Apple Upgrade leasing program, covering iPhone, iPad, Apple Watch, and Mac. As part of this launch, Apple has also discontinued the iPhone…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iphone-upgrade-program.jpg.webp?w=1500"
     },
     {
-      "id": "c46b6e1b",
-      "title": "Game development diary: Launched, but far from finished",
-      "link": "https://appleinsider.com/articles/26/07/26/game-development-diary-launched-but-far-from-finished?utm_source=rss",
+      "id": "48238327",
+      "title": "Apple Upgrade goes live as a new installment plan for iPhone, iPad, Mac, & Apple Watch",
+      "link": "https://appleinsider.com/articles/26/07/28/apple-upgrade-goes-live-as-a-new-installment-plan-for-iphone-ipad-mac-apple-watch?utm_source=rss",
       "source": "AppleInsider",
       "category": "news",
-      "date": "2026-07-26T18:46:18.000Z",
-      "summary": "While the Steam launch of \"Character Limit\" isn't the end of Malcolm's game development journey, he still has to combat the oddities of promotions and scammers. That, and get the…",
-      "image": "https://media.appleinsider.com/gallery/68362-144084-steamreleasecharacterlimit-xl.jpg"
+      "date": "2026-07-28T12:20:53.000Z",
+      "summary": "Apple's new financing plan, Apple Upgrade, has launched, with consumers able to make a monthly lease payment for a higher-end iPhone, iPad, Mac, or Apple Watch. Apple Upgrade is…",
+      "image": "https://media.appleinsider.com/gallery/68322-144122-Apple-Upgrade-Program-xl.jpg"
     },
     {
-      "id": "d7bc53ab",
-      "title": "Apple Upgrade installment program set to go live on Tuesday",
-      "link": "https://appleinsider.com/articles/26/07/26/apple-upgrade-installment-program-set-to-go-live-on-tuesday?utm_source=rss",
-      "source": "AppleInsider",
+      "id": "7fbe371a",
+      "title": "Apple Upgrade launches in the United States",
+      "link": "https://www.apple.com/newsroom/2026/07/apple-upgrade-launches-in-the-united-states/",
+      "source": "Apple",
       "category": "news",
-      "date": "2026-07-26T16:44:40.000Z",
-      "summary": "Apple Upgrade, the company's new installment program, will be going live on July 28, coinciding with the ending of sign-ups for the iPhone Upgrade Program. Klarna on Apple Pay -…",
-      "image": "https://media.appleinsider.com/gallery/68368-144086-68312-144003-61425-126894-Klarnaoniphone-xl-xl-xl.jpg"
-    },
-    {
-      "id": "263ea26f",
-      "title": "Apple Planning to Unveil Privacy-Focused Smart Glasses at WWDC 2027",
-      "link": "https://www.macrumors.com/2026/07/26/apple-smart-glasses-wwdc-2027-report/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-26T16:26:47.000Z",
-      "summary": "Apple currently plans to unveil its first smart glasses at WWDC 2027 next June, and privacy will be a focus, according to Bloomberg 's Mark Gurman . For the glasses, Apple is…",
-      "image": "https://images.macrumors.com/article-new/2026/07/Meta-Ray-Ban-Lens.jpeg"
-    },
-    {
-      "id": "4f7c48f1",
-      "title": "'Apple Upgrade' Program Launching on Tuesday",
-      "link": "https://www.macrumors.com/2026/07/26/apple-upgrade-program-launching-tuesday/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-26T15:20:00.000Z",
-      "summary": "In his newsletter today , Bloomberg 's Mark Gurman reiterated that a new \"Apple Upgrade\" program is set to launch in the U.S. on Tuesday, July 28. Apple will stop accepting iPhone…",
-      "image": "https://images.macrumors.com/article-new/2026/07/iPhone-18-Pro-and-Pro-Max-Feature.jpg"
-    },
-    {
-      "id": "baa448ac",
-      "title": "Public distrust in smart glasses will be a challenge for Apple Glass",
-      "link": "https://appleinsider.com/articles/26/07/26/public-distrust-in-smart-glasses-will-be-a-a-challenge-for-apple-glass?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-26T15:15:26.000Z",
-      "summary": "The eventual launch of Apple Glass is still expected in 2027, but based on how people distrust Meta's smart glasses, Apple may have a challenge ahead of it. Apple Glass will…",
-      "image": "https://media.appleinsider.com/gallery/68366-144085-67825-142941-Apple-Glass-smart-glasses-iPad-display-xl-xl.jpg"
-    },
-    {
-      "id": "31c36422",
-      "title": "What to Expect From Apple Watch Series 12 and Apple Watch Ultra 4",
-      "link": "https://www.macrumors.com/2026/07/26/apple-watch-series-12-ultra-4-features-rumors/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-26T15:07:27.000Z",
-      "summary": "Bloomberg 's Mark Gurman today outlined what to expect from the Apple Watch Series 12 and Apple Watch Ultra 4 this year. Spoiler: not very much. While it was rumored that Touch ID…",
-      "image": "https://images.macrumors.com/article-new/2026/05/Apple-Watch-Ultra-2-Black-Titanium.jpg"
-    },
-    {
-      "id": "614696e9",
-      "title": "Apple TV shares new trailers for 'Matchbox,' 'Neuromancer,' 'Dark Matter'",
-      "link": "https://appleinsider.com/articles/26/07/26/apple-tv-teases-new-trailers-for-matchbox-neuromancer-dark-matter?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-26T14:54:47.000Z",
-      "summary": "Apple TV paid a visit to San Diego Comic-Con, hosting a two-hour panel and revealing new trailers for \"Dark Matter,\" \"Neuromancer,\" and the loosely toy-based \"Matchbox The Movie.\"…",
-      "image": "https://media.appleinsider.com/gallery/68364-144083-matchboxmovie-xl.jpg"
-    },
-    {
-      "id": "326758fa",
-      "title": "Apple Watch redesign is coming, but not for years",
-      "link": "https://appleinsider.com/articles/26/07/26/apple-watch-redesign-is-coming-but-not-for-years?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-26T14:32:26.000Z",
-      "summary": "Apple is reportedly testing its September 2026 Apple Watch lineup, but the new models are expected to be minor updates while more substantial changes are much further off. The…",
-      "image": "https://photos5.appleinsider.com/gallery/67673-142636-000-lede-Apple-Watch-Ultra-sesnors-xl.jpg"
-    },
-    {
-      "id": "52c11e61",
-      "title": "Crime blotter: A second arrest in the 2025 FedEx robbery",
-      "link": "https://appleinsider.com/articles/26/07/26/crime-blotter-a-second-arrest-in-the-2025-fedex-robbery?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-26T11:08:40.000Z",
-      "summary": "A woman who stole from a Wendy's returned for her AirPods , a shooting followed an argument about an Apple Watch, and another FedEx robbery in Memphis, all in this week's Apple…",
-      "image": "https://photos5.appleinsider.com/gallery/68335-144037-AirPods-4-case-xl.jpg"
-    },
-    {
-      "id": "de5b7251",
-      "title": "B&H launches steeper M5 MacBook Air discounts, saving you up to $200",
-      "link": "https://appleinsider.com/articles/26/07/26/bh-launches-steeper-m5-macbook-air-discounts-saving-you-up-to-200?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-26T05:59:07.000Z",
-      "summary": "Both 13-inch and 15-inch MacBook Air laptops are on sale at B&H this week, with new markdowns slashing up to $200 off a variety of configurations and color options. Save up to…",
-      "image": "https://media.appleinsider.com/gallery/68363-144082-m5-macbook-air-up-to-200-off-xl.jpg"
-    },
-    {
-      "id": "81d1f9b4",
-      "title": "Here are the best MacBook deals right now: July 2026 Buyer’s Guide",
-      "link": "https://9to5mac.com/2026/07/25/best-macbook-deals-currently-july-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-26T02:13:31.000Z",
-      "summary": "In recent years, Macs had been getting more and more affordable. Cheaper starting points, more memory and storage per dollar, and the introduction of MacBook Neo. For the first…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/macbook-pro-side-angle-ports.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "81050541",
-      "title": "Apple's First Water-Resistant iPad to Launch Later This Year",
-      "link": "https://www.macrumors.com/2026/07/25/first-water-resistant-ipad/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-26T01:00:11.000Z",
-      "summary": "Apple's next iPad mini will apparently be the first iPad with a water-resistant design, and the tablet is now expected to arrive by October. Bloomberg 's Mark Gurman reported last…",
-      "image": "https://images.macrumors.com/article-new/2026/07/ipad-mini-water-resistance.jpg"
-    },
-    {
-      "id": "d2b976ba",
-      "title": "Apple TV announces streaming date for its epic Neuromancer adaptation, new Dark Matter and Matchbox trailers",
-      "link": "https://9to5mac.com/2026/07/25/apple-tv-neuromancer-adaptation-trailers/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T22:33:47.000Z",
-      "summary": "Apple TV prepared a slew of announcements for its main stage Hall H appearance at San Diego Comic Con this weekend. Leading the charge, its new sci-fi epic Neuromancer (based on…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-tv-neuromancer.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "26d46200",
-      "title": "Indie App Spotlight: ‘NeoCam’ brings a retro video game style look to your iPhone photos",
-      "link": "https://9to5mac.com/2026/07/25/indie-app-spotlight-neocam-brings-a-retro-video-game-style-look-to-your-iphone-photos/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T19:30:00.000Z",
-      "summary": "Welcome to Indie App Spotlight . This is a weekly 9to5Mac series where we showcase the latest apps in the indie app world. If you’re a developer and would like your app featured,…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/NeoCam-app.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "7d2ddb3a",
-      "title": "9to5Mac Overtime 074: Apple’s foldable iPhone",
-      "link": "https://9to5mac.com/2026/07/25/9to5mac-overtime-074-apples-foldable-iphone/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T19:13:44.000Z",
-      "summary": "Fernando and Jeff discuss Samsung’s Galaxy Z Fold8 event in depth, including hands-on experience with Samsung’s newest foldable form factor, the pros and cons of the new 4:3…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/9to5Mac-Overtime-074.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "07dac176",
-      "title": "HomeKit Weekly: The Amazon Basics Matter plug delivers Apple Home support for under $10",
-      "link": "https://9to5mac.com/2026/07/25/the-amazon-basics-matter-plug-delivers-apple-home-control-for-under-10/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T18:57:00.000Z",
-      "summary": "The price increase in technology is exhausting. With the recent price increases across the Apple lineup , seeing items go down in price is becoming rare. The Amazon Basics smart…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Amazon-plug-2.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "b79b3a50",
-      "title": "Weekend deals deliver $299 Apple Watch Series 11, $89 AirTag 4-pack, $399 iPad",
-      "link": "https://appleinsider.com/articles/26/07/25/weekend-deals-deliver-299-apple-watch-series-11-89-airtag-4-pack-399-ipad?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-25T18:38:27.000Z",
-      "summary": "Amazon's weekend Apple sale is going strong, with price drops of up to $150 off Apple Watch, AirTag, and iPad devices. Apple Watch, AirTags, and iPads are all on sale this…",
-      "image": "https://media.appleinsider.com/gallery/68361-144076-amazon-weekend-apple-sale-2026-xl.jpg"
-    },
-    {
-      "id": "f90cfde1",
-      "title": "iPhone 18 won’t debut this fall, here’s why",
-      "link": "https://9to5mac.com/2026/07/25/heres-why-iphone-18-wont-launch-in-september/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T17:35:51.000Z",
-      "summary": "We’re about two months away from Apple’s annual iPhone debut in September. This year, though, will be a bit different. Instead of the entire iPhone lineup debuting at once, only…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/iphone-18-pro-mockup.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "b02a3597",
-      "title": "AirPods, AirTag 2, and iPads Hit Low Prices This Week",
-      "link": "https://www.macrumors.com/2026/07/25/best-apple-deals-of-the-week-7-25-26/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-25T14:52:52.000Z",
-      "summary": "We tracked a few solid deals on Apple devices this week, including savings across the entire AirPods lineup, a record low price on AirTag 2, and the best prices on Apple's A16…",
-      "image": "https://images.macrumors.com/article-new/2025/03/Best-Apple-Deals-Feature-Shelf-Orange.jpg"
-    },
-    {
-      "id": "d1d98cea",
-      "title": "Hands-on: The Meirro Pro 6K might be the best Apple Studio Display alternative yet [Video]",
-      "link": "https://9to5mac.com/2026/07/25/hands-on-the-meirro-pro-6k-might-be-the-best-apple-studio-display-alternative-yet-video/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T14:00:00.000Z",
-      "summary": "Earlier this year, Apple decided to completely discontinue its Pro Display XDR, which was an amazing piece of hardware but hadn’t been updated in years and was still $6,000+.…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/display.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "27bace1e",
-      "title": "Top Stories: 'Apple Upgrade' Program, Apple Music Price Hike, and More",
-      "link": "https://www.macrumors.com/2026/07/25/top-stories-apple-upgrade-program/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-25T13:00:11.000Z",
-      "summary": "It's been another busy week in the Apple world, led by word that the company is preparing to launch a new device leasing and financing program as it has raised some more prices…",
-      "image": "https://images.macrumors.com/article-new/2026/07/top-stories-2026-07-25.jpg"
-    },
-    {
-      "id": "82f9e849",
-      "title": "Micron urges White House to reject Apple's blacklist memory plan",
-      "link": "https://appleinsider.com/articles/26/07/25/micron-urges-white-house-to-reject-apples-blacklist-memory-plan?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-25T12:48:35.000Z",
-      "summary": "Apple's plan to buy memory from a blacklisted supplier is receiving some pushback from Micron, which claims it will destabilize the U.S. tech industry. Micron memory chips - Image…",
-      "image": "https://media.appleinsider.com/gallery/68360-144075-micron-xl.jpg"
-    },
-    {
-      "id": "1400ca38",
-      "title": "Apple weekend deals: MacBook Pro $500 off, AirPods Pro 3, AirTag 2, iPhone Air, Series 11, more",
-      "link": "https://9to5mac.com/2026/07/25/apple-weekend-deals-macbook-pro-airpods-airtag-2/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T12:10:03.000Z",
-      "summary": "It’s time for your weekend edition of 9to5Toys Lunch Break , and this week it’s a Black Friday in July edition as sale events at Amazon, Best Buy , and elsewhere carry through…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-AirPods-iPhone-AirTag-MacBook.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "32ea2814",
-      "title": "Apple @ Work: Apple TV proves to be more reliable than Android in new digital signage report",
-      "link": "https://9to5mac.com/2026/07/25/apple-tv-proves-to-be-more-reliable-than-android-in-new-digital-signage-report/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T10:00:00.000Z",
-      "summary": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/07/apple-tv-4k-tvos-26.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "5059e74f",
-      "title": "Report: Apple and Micron clash before Trump over Chinese memory chips",
-      "link": "https://9to5mac.com/2026/07/24/report-apple-and-micron-clash-before-trump-over-chinese-memory-chips/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T02:03:00.000Z",
-      "summary": "The Wall Street Journal reports that Micron is pressing the Trump administration to block Apple’s push to use memory chips from Chinese suppliers. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2023/12/Apple-Park.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "6881ff6d",
-      "title": "'MacBook Ultra' Coming Soon With These 12 New Features",
-      "link": "https://www.macrumors.com/2026/07/24/macbook-ultra-12-new-features/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-25T01:00:12.000Z",
-      "summary": "Apple's first high-end MacBook redesign in five years is expected to arrive in the near future, bringing a run of firsts to the Mac. Bloomberg 's Mark Gurman expects the laptop to…",
-      "image": "https://images.macrumors.com/article-new/2026/07/macbook-ultra.jpg"
-    },
-    {
-      "id": "cd181826",
-      "title": "New lawsuit alleges unpatchable Apple chip exploit was developed using stolen trade secrets",
-      "link": "https://9to5mac.com/2026/07/24/new-lawsuit-alleges-unpatchable-apple-chip-exploit-was-developed-using-stolen-trade-secrets/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-25T00:53:03.000Z",
-      "summary": "Magnet Forensics is suing Paradigm Shift Technology over its publication of usbliter8, alleging that the unpatchable exploit affecting several Apple SoCs was developed using trade…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2023/09/Apple-Silicon-chips.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "d082a0e8",
-      "title": "iOS 27: All the New iCloud Features",
-      "link": "https://www.macrumors.com/guide/ios-27-icloud/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-24T22:54:55.000Z",
-      "summary": "iOS 27 includes new iCloud capabilities across several apps like Apple Home, Siri , Photos , and more. There are some direct &zwnj;iCloud&zwnj; improvements like upgrades to photo…",
-      "image": "https://images.macrumors.com/article-new/2026/07/iOS-27-All-the-New-iCloud-Features.jpg"
-    },
-    {
-      "id": "d79b9dc5",
-      "title": "Tapbots launches Pastebot 3 with improved organization and automation tools",
-      "link": "https://9to5mac.com/2026/07/24/tapbots-launches-pastebot-3-with-improved-organization-and-automation-tools/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-24T22:18:26.000Z",
-      "summary": "Pastebot, one of the most popular clipboard managers for Mac, was updated today, nearly ten years after the release of Pastebot 2. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/pastebot-3.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "4918066b",
-      "title": "Apple Pay is getting even better with four new features",
-      "link": "https://9to5mac.com/2026/07/24/apple-pay-is-getting-even-better-with-four-new-features/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-24T21:24:36.000Z",
-      "summary": "Apple Pay is a go-to feature for iPhone users when shopping in stores, online, and in apps. Apple recently announced four new features that make Apple Pay even better. Here’s how…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/10/apple-pay-header.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "fe9dea9b",
-      "title": "Trump vows retaliation over EU fines against Apple and other ‘GREAT’ US tech giants",
-      "link": "https://9to5mac.com/2026/07/24/trump-vows-retaliation-over-eu-fines-against-apple-and-other-great-us-tech-giants/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-24T21:20:17.000Z",
-      "summary": "President Trump has pledged to retaliate against the European Union over what he claims are unfair fines targeting Apple and other American tech giants. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/04/tim-cook-trump.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "63d50f6b",
-      "title": "WhatsApp testing new message bubbles on iOS",
-      "link": "https://9to5mac.com/2026/07/24/whatsapp-testing-new-message-bubbles-on-ios/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-24T20:25:32.000Z",
-      "summary": "Following the official rollout of its Liquid Glass redesign to most WhatsApp users on iOS, the messaging platform is now testing another visual change, this time focused on the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/whatsapp-ios-26.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "4f4532df",
-      "title": "iPhone Ultra is coming: Six new features in Apple’s top-tier model",
-      "link": "https://9to5mac.com/2026/07/24/iphone-ultra-is-coming-six-new-features-in-apples-top-tier-model/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-24T20:25:12.000Z",
-      "summary": "Apple’s first foldable iPhone is coming this fall , and rumors say it will be called iPhone Ultra. Here are six features to expect from Apple’s new high-end iPhone Ultra.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/iphone-ultra-fold-mockup.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "6d9f651f",
-      "title": "Trump promises investigation into EU fines on US big tech",
-      "link": "https://appleinsider.com/articles/26/07/24/trump-promises-investigation-into-eu-fines-on-us-big-tech?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-24T19:46:33.000Z",
-      "summary": "President Donald Trump is escalating the fight over European Union antitrust penalties against Apple, Google, and other U.S. tech companies by opening a trade investigation that…",
-      "image": "https://photos5.appleinsider.com/gallery/64642-134691-Cook-Trump-shake-o.jpg"
-    },
-    {
-      "id": "fd7d8a7c",
-      "title": "Trump Vows to Reverse EU Fines Against Apple and Other Tech Companies, Threatens Tariffs",
-      "link": "https://www.macrumors.com/2026/07/24/trump-eu-fine-investigation/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-24T19:37:08.000Z",
-      "summary": "U.S. President Donald Trump today said on Truth Social that his administration plans to launch an investigation into fines the European Union has levied against tech companies…",
-      "image": "https://images.macrumors.com/article-new/2025/12/european-union-eu.jpg"
-    },
-    {
-      "id": "be5c7725",
-      "title": "Podcast Rewind: Siri AI, the Game Boy Advance Returns, and Smart Ceiling Fans",
-      "link": "https://www.macstories.net/news/podcast-rewind-siri-ai-the-game-boy-advance-returns-and-smart-ceiling-fans/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-24T19:35:38.000Z",
-      "summary": "Enjoy the latest episodes from MacStories’ family of podcasts: AppStories This week, Federico and John look at what Siri AI is good at, where it needs improvement, and where it…",
-      "image": "https://cdn.macstories.net/img_1734-2-1774559453738.png"
-    },
-    {
-      "id": "2522fd15",
-      "title": "Apple releases seventh RCs for macOS Sonoma 14.8.8 and macOS Sequoia 15.7.8",
-      "link": "https://9to5mac.com/2026/07/24/apple-releases-seventh-rcs-for-macos-sonoma-14-8-8-and-macos-sequoia-15-7-8/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-24T19:20:55.000Z",
-      "summary": "Continuing Apple’s extended test period for macOS Sonoma 14.8.8 and macOS Sequoia 15.7.8, the company is now rolling out the seventh Release Candidate for both systems. Here are…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/09/macOS-Sequoia-hero.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "c31f95a2",
-      "title": "iOS 27 adds new Phone app feature that’s an instant favorite",
-      "link": "https://9to5mac.com/2026/07/24/ios-27-adds-new-phone-app-feature-thats-an-instant-favorite/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-24T18:53:53.000Z",
-      "summary": "iOS 27 is packed with new features for apps like Notes , Wallet , Maps , Messages , and more. But one iOS 27 addition that’s especially impressed me is a new Phone feature : Call…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/phone-app-icon-fi-ios-27.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "9553f039",
-      "title": "This Apple-1 auction expected to cost the winner as much as 275 iPhone 17 Pros",
-      "link": "https://appleinsider.com/articles/26/07/24/this-apple-1-auction-expected-to-cost-the-winner-as-much-as-275-iphone-17-pros?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-24T18:44:17.000Z",
-      "summary": "A working 1977 Apple-1 expected to garner at least $300,000 leads RR Auction's sprawling sale of rare hardware, prototypes, and Steve Jobs memorabilia from Apple's earliest years.…",
-      "image": "https://photos5.appleinsider.com/gallery/68357-144067-1039C832-5BB1-46DA-9996-DF1ACC1FE9B1-xl.jpg"
-    },
-    {
-      "id": "da7bdffe",
-      "title": "MacStories Weekly: Issue 523",
-      "link": "https://www.macstories.net/club/macstories-weekly-issue-523/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-24T18:24:32.000Z",
-      "summary": "",
+      "date": "2026-07-28T12:20:23.616Z",
+      "summary": "Apple Upgrade — a new hardware leasing program — is now available on the Apple Store online, in the Apple Store app, and at Apple Store locations in the United States.",
       "image": ""
     },
     {
-      "id": "716ad843",
-      "title": "Anthropic's New Claude Opus 5 Nearly Matches Flagship Fable 5 at Half the Cost",
-      "link": "https://www.macrumors.com/2026/07/24/anthropic-opus-5/",
+      "id": "29ca2177",
+      "title": "Apple Retires iPhone Upgrade Program for Klarna-Backed Leases",
+      "link": "https://www.macrumors.com/2026/07/28/apple-upgrade-program-klarna/",
       "source": "MacRumors",
       "category": "news",
-      "date": "2026-07-24T17:43:35.000Z",
-      "summary": "Anthropic today introduced Claude Opus 5, an upgrade to Opus 4.8. Anthropic says Opus 5 was built for daily use, and it offers near Fable 5 performance at half the price. Fable 5…",
-      "image": "https://images.macrumors.com/article-new/2026/07/claude-opus-5.jpg"
+      "date": "2026-07-28T12:20:10.000Z",
+      "summary": "Apple today launched Apple Upgrade , a new U.S. leasing program for iPhone, iPad , Mac, and Apple Watch. Apple partnered with Klarna for Apple Upgrade, and it replaces the current…",
+      "image": "https://images.macrumors.com/article-new/2026/07/apple-upgrade-program.jpg"
     },
     {
-      "id": "f1090ebc",
-      "title": "Anthropic upgrades Claude with new Opus 5 model, details here",
-      "link": "https://9to5mac.com/2026/07/24/anthropic-upgrades-claude-with-new-opus-5-model-details-here/",
+      "id": "b3bfc4d9",
+      "title": "Apple Upgrade leasing program launches for iPhone, Mac, iPad, and Apple Watch",
+      "link": "https://9to5mac.com/2026/07/28/apple-upgrade-leasing-program-debuts-how-it-works/",
       "source": "9to5Mac",
       "category": "news",
-      "date": "2026-07-24T17:16:56.000Z",
-      "summary": "Anthropic has released its latest AI model with Claude Opus 5. The new version arrives about two months after the previous Opus model upgrade, matching Anthropic’s previous…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/claude.webp?w=1600"
+      "date": "2026-07-28T12:20:00.000Z",
+      "summary": "Apple has officially announced Apple Upgrade , a new product leasing program available starting today in the United States. Apple Upgrade, which is backed by Klarna, lets users…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-Upgrade-hero.jpg?quality=82&strip=all&w=1600"
     },
     {
-      "id": "14d4d366",
-      "title": "watchOS 27 adds new feature to improve your Apple Watch battery life",
-      "link": "https://9to5mac.com/2026/07/24/watchos-27-adds-new-feature-to-improve-your-apple-watch-battery-life/",
+      "id": "975d900e",
+      "title": "Claude chats exposed in Google searches – another endorsement of Apple’s privacy approach",
+      "link": "https://9to5mac.com/2026/07/28/claude-chats-exposed-in-google-searches-another-endorsement-of-apples-privacy-approach/",
       "source": "9to5Mac",
       "category": "news",
-      "date": "2026-07-24T17:02:45.000Z",
-      "summary": "watchOS 27 launches this fall as the next major Apple Watch update, and it includes a handy new feature that can improve your Apple Watch battery life: ‘proactive battery…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/watchos-27-watch-face-red.jpg?quality=82&strip=all&w=1600"
+      "date": "2026-07-28T12:16:16.000Z",
+      "summary": "We’ve long cautioned against disclosing sensitive personal data in AI chatbot sessions, given that most companies use these as training data, but there’s now an even bigger…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Claude-chats-exposed-in-Google-searches-–-another-endorsement-of-Apples-privacy-approach.jpg?quality=82&strip=all&w=1600"
     },
     {
-      "id": "c74bf615",
-      "title": "iPhone exploit legal fight is really about who owns security research",
-      "link": "https://appleinsider.com/articles/26/07/24/iphone-exploit-legal-fight-is-really-about-who-owns-security-research?utm_source=rss",
+      "id": "5a95f93d",
+      "title": "OLED MacBook Pro will get displays exclusively from Samsung",
+      "link": "https://appleinsider.com/articles/26/07/28/oled-macbook-pro-will-get-displays-exclusively-from-samsung?utm_source=rss",
       "source": "AppleInsider",
       "category": "news",
-      "date": "2026-07-24T16:40:13.000Z",
-      "summary": "A federal judge has ordered a public iPhone exploit taken offline after Magnet Forensics argued it wasn't independent security research at all, but instead a stolen trade secret.…",
-      "image": "https://photos5.appleinsider.com/gallery/68354-144061-iPhone-X-Home-Screen-xl.jpg"
+      "date": "2026-07-28T12:05:15.000Z",
+      "summary": "The touch-enabled MacBook Pro will get its OLED screens only from Samsung Display, as Apple seemingly freezes out other suppliers for the inbound model. The current M5 MacBook…",
+      "image": "https://media.appleinsider.com/gallery/68386-144121-66579-139653-M5-MacBook-Pro-display-xl-xl.jpg"
+    },
+    {
+      "id": "8ceb23bb",
+      "title": "Touchscreen decision may push MacBook Ultra price even higher",
+      "link": "https://9to5mac.com/2026/07/28/touchscreen-decision-may-push-macbook-ultra-price-even-higher/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-28T11:16:08.000Z",
+      "summary": "The upcoming MacBook Ultra was never going to be cheap, with an all-new sleeker design, OLED , and touchscreen – even before the price increases driven by higher memory costs. A…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/macbook-ultra-mockup-FI.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "437c6c80",
+      "title": "Ternus says he plans to build on the success of Apple TV",
+      "link": "https://appleinsider.com/articles/26/07/28/ternus-says-he-plans-to-build-on-the-success-of-apple-tv?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-28T11:10:16.000Z",
+      "summary": "It's not as if John Ternus was likely to shut down Apple TV, but he has now affirmed that it will continue to develop when he becomes Apple CEO. John Ternus at the \"Ted Lasso\"…",
+      "image": "https://media.appleinsider.com/gallery/68385-144120-000-lead-John-Ternus-xl.jpg"
+    },
+    {
+      "id": "2ea7f4cd",
+      "title": "Apple @ Work Podcast: Remember Postini?",
+      "link": "https://9to5mac.com/2026/07/28/apple-work-podcast-remember-postini/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-28T10:00:00.000Z",
+      "summary": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional-grade platform all the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-at-work-27.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "b71e7417",
+      "title": "MacBook Ultra OLED Touch Panel to Be Exclusively Supplied by Samsung",
+      "link": "https://www.macrumors.com/2026/07/28/macbook-ultra-oled-touch-panel-samsung/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-28T09:16:08.000Z",
+      "summary": "Apple will exclusively rely on Samsung Display for the production of OLED touch panels for its redesigned upcoming MacBook Pro models, according to a new report from Korea-based…",
+      "image": "https://images.macrumors.com/article-new/2026/07/macbook-ultra.jpg"
+    },
+    {
+      "id": "79be130c",
+      "title": "Security Bite Podcast: Data brokers are the biggest threat to privacy",
+      "link": "https://9to5mac.com/2026/07/28/security-bite-podcast-data-brokers-are-breaking-the-internet/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-28T09:00:00.000Z",
+      "summary": "9to5Mac Security Bite is exclusively brought to you by Mosyle, the only Apple Unified Platform . Making Apple devices work-ready and enterprise-safe is all we do. Our unique…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/sb-lg-27-dark.webp?w=1500"
+    },
+    {
+      "id": "7c31aab7",
+      "title": "Everything We Know About MacBook Ultra's All-New Design",
+      "link": "https://www.macrumors.com/2026/07/27/macbook-ultra-all-new-design/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-28T01:00:12.000Z",
+      "summary": "Apple's next high-end laptop is expected to bring the most substantial external changes to the MacBook Pro line since 2021. No renders, case leaks, or dimensions have emerged, but…",
+      "image": "https://images.macrumors.com/article-new/2025/10/M5-MacBook-Pro.jpg"
+    },
+    {
+      "id": "acba7b54",
+      "title": "LM Studio Bionic adds support for Moonshot AI’s Kimi K3 model",
+      "link": "https://9to5mac.com/2026/07/27/lm-studio-bionic-adds-support-for-moonshot-ais-kimi-k3-model/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-28T00:21:34.000Z",
+      "summary": "LM Studio’s agentic workflow platform now lets users run tasks with Kimi K3, Moonshot AI’s 2.8-trillion-parameter model with a 1-million-context window. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/lm-studio-bionic.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "91bcfdb0",
+      "title": "T-Mobile ‘actively working’ to fix ongoing outage, iPhone SOS mode",
+      "link": "https://9to5mac.com/2026/07/27/psa-t-mobile-is-down-iphones-forced-into-sos-mode/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T23:17:44.000Z",
+      "summary": "Update #2, 4:15 p.m. PT : In a statement to 9to5Mac, a T-Mobile spokesperson said: “Our teams are actively working the reports of technical challenges impacting some customers.…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2023/02/tmo-sos.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "af5aae85",
+      "title": "Apple's 2026 and 2027 Mac Roadmap: Every Model and When It Ships",
+      "link": "https://www.macrumors.com/2026/07/27/mac-roadmap-2026/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T22:48:41.000Z",
+      "summary": "A shortage of memory chips has impacted the entire computer market, affecting Macs and PCs alike. Apple and other companies have raised prices, but Apple is better positioned than…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Apples-2026-andd-2027-Roadmap-Feature.jpg"
+    },
+    {
+      "id": "18d83352",
+      "title": "Three customers sue Apple after fake wallet app wipes out their Bitcoin",
+      "link": "https://9to5mac.com/2026/07/27/three-customers-sue-apple-after-fake-wallet-app-wipes-out-their-bitcoin/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T21:34:30.000Z",
+      "summary": "Apple is once again being sued over a scam cryptocurrency app that allegedly slipped through App Store review and cost users nearly $2 million. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2022/12/apple-app-store-fined.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "3ca7e355",
+      "title": "Claude, Codex, and other AI tools credited in today’s Apple security releases",
+      "link": "https://9to5mac.com/2026/07/27/claude-codex-and-other-ai-tools-credited-in-todays-apple-security-releases/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T20:29:58.000Z",
+      "summary": "Apple’s technical details on the many security fixes included in today’s operating system updates show how quickly AI tools are becoming part of vulnerability research. Here are…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/iOS-26.6-security.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "76dc08c3",
+      "title": "Don't wait to update: iOS 26.6 includes more than 75 security fixes",
+      "link": "https://appleinsider.com/articles/26/07/27/dont-wait-to-update-ios-266-includes-more-than-75-security-fixes?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T20:15:03.000Z",
+      "summary": "Apple's iOS 26.6 update stops attackers from using iPhone Mirroring, Siri, and more to gain user data. Here's what you need to know. iOS 26.6 stops attackers from using iPhone…",
+      "image": "https://media.appleinsider.com/gallery/68383-144116-images-3-xl.jpg"
+    },
+    {
+      "id": "ff82f90f",
+      "title": "Apple on Verge of Becoming $5 Trillion Company",
+      "link": "https://www.macrumors.com/2026/07/27/apple-nearly-5-trillion-dollar-company/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T20:10:17.000Z",
+      "summary": "Apple is on the verge of becoming a $5 trillion company based on market capitalization, which is the total value of all of the company's outstanding shares. Apple's stock closed…",
+      "image": "https://images.macrumors.com/article-new/2025/04/Stocks-App-Icon-and-Apple-Logo-Feature.jpg"
+    },
+    {
+      "id": "8e8bea03",
+      "title": "Ted Lasso season 4: Here’s who’s new and everyone not returning",
+      "link": "https://9to5mac.com/2026/07/27/ted-lasso-season-4-heres-whos-new-and-everyone-not-returning/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T19:19:42.000Z",
+      "summary": "Ted Lasso season 4 premieres next week ( watch here ) and centers around a women’s team, here’s a rundown of the new players along with notable cast members who won’t be returning.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/ted-lasso-s4-coaches.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "2a14e18f",
+      "title": "MagSafe Monday: ESR FlickLock solved my biggest complaints with the AirPods Pro 3",
+      "link": "https://9to5mac.com/2026/07/27/esr-flicklock/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T18:57:00.000Z",
+      "summary": "I drop my AirPods Pro all the time. In fact, I dropped them at the lake yesterday. The worst part is always watching the earbuds bounce across the pavement and hoping they do not…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ESR-FlickLock-2.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "95b39188",
+      "title": "Update Now: iOS 26.6 and macOS Tahoe 26.6 Patch Hundreds of Security Flaws",
+      "link": "https://www.macrumors.com/2026/07/27/ios-26-6-security-fixes/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T18:55:46.000Z",
+      "summary": "Apple today released iOS 26.6, iPadOS 26.6, and macOS Tahoe 26.6, all of which have a long list of security fixes. iOS 26.6 and iPadOS 26.6 address almost 90 security…",
+      "image": "https://images.macrumors.com/article-new/2026/03/apple-lock-security-bug-vulnerability-fix-privacy.jpg"
+    },
+    {
+      "id": "33534082",
+      "title": "X Money officially launches in the US with Apple Wallet support after invite-only beta",
+      "link": "https://9to5mac.com/2026/07/27/x-money-apple-wallet/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T18:51:47.000Z",
+      "summary": "X has officially launched X Money, which includes Apple Wallet support, moving the service beyond its invite-only beta and beginning a rollout today.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/xmoney.webp?w=1600"
+    },
+    {
+      "id": "66dfecff",
+      "title": "Older Macs get fresh security fixes with new macOS Sequoia & Sonoma update",
+      "link": "https://appleinsider.com/articles/26/07/27/older-macs-get-fresh-security-fixes-with-new-macos-sequoia-sonoma-update?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T18:42:34.000Z",
+      "summary": "Apple released new updates for macOS Sequoia and macOS Sonoma, extending security and maintenance support to Macs that haven't moved to macOS Tahoe. MacBook Air The updates are…",
+      "image": "https://media.appleinsider.com/gallery/68382-144115-MacBook-Air-M5-chessboard-back-xl.jpg"
+    },
+    {
+      "id": "60a0318a",
+      "title": "Apple teases Severance season 3 in new update",
+      "link": "https://9to5mac.com/2026/07/27/apple-teases-severance-season-3-in-new-update/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T18:23:45.000Z",
+      "summary": "The wait between Severance’s first two seasons was long, and season 3 has demanded a lot of patience too, but Apple TV just teased a noteworthy update on the show’s progress.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/07/severance-s2-finale.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "9336d137",
+      "title": "Apple fixes over 75 security issues with your iPhone and 150+ for Mac, update now",
+      "link": "https://9to5mac.com/2026/07/27/ios-26-6-fixes-over-75-security-issues-with-your-iphone-update-now/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T18:12:48.000Z",
+      "summary": "Following the release of iOS 26.6 , iPadOS 26.6 , and related software updates, Apple has detailed a huge number of security fixes included in today’s new OS versions.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-26-6-lg-iphone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "6174bced",
+      "title": "Amazon Files for 5,105-Satellite Network That Will Power iPhone Satellite Features",
+      "link": "https://www.macrumors.com/2026/07/27/amazon-iphone-satellite-network/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T18:12:03.000Z",
+      "summary": "Amazon is planning to deploy up to 5,105 low Earth orbit satellites that will use Globalstar spectrum to provide voice, data, messaging, and emergency services to devices like the…",
+      "image": "https://images.macrumors.com/article-new/2024/11/iPhone-Satellite-Feature.jpg"
+    },
+    {
+      "id": "a0d15df1",
+      "title": "macOS 26.6 is out, but expect minimal feature changes with macOS 27 looming",
+      "link": "https://appleinsider.com/articles/26/07/27/macos-266-is-out-but-expect-minimal-feature-changes-with-macos-27-looming?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T18:02:15.000Z",
+      "summary": "Apple has released macOS 26.6 to the public, but don't expect much in the way of big changes to features this time around. A selection of MacBooks that can run macOS 26.6 Apple…",
+      "image": "https://photos5.appleinsider.com/gallery/68310-144032-67511-142175-MacBook-stack-2026-side-xl-xl.jpg"
+    },
+    {
+      "id": "dae19386",
+      "title": "Prep for Siri AI on Apple Vision Pro with visionOS 26.6",
+      "link": "https://appleinsider.com/articles/26/07/27/prep-for-siri-ai-on-apple-vision-pro-with-visionos-266?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T18:00:57.000Z",
+      "summary": "The end-of-cycle updates are often devoid of anything user-facing, but that doesn't mean you should delay updating to visionOS 26.6 . Security patches and preparation for Siri AI…",
+      "image": "https://photos5.appleinsider.com/gallery/68305-144016-Apple-Vision-Pro-M5-stand-cameras-xl.jpg"
+    },
+    {
+      "id": "219fe3ad",
+      "title": "macOS 26.6 now available, here’s what’s new",
+      "link": "https://9to5mac.com/2026/07/27/macos-26-6-now-available-heres-whats-new/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T17:51:11.000Z",
+      "summary": "Following an extended developer and public beta period, Apple is now rolling out macOS 26.6 to all users with compatible Macs . Here’s what’s new.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/macOS-26.6-hero.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "a55fef9f",
+      "title": "Apple rolls out watchOS 26.6 update for Apple Watch",
+      "link": "https://appleinsider.com/articles/26/07/27/apple-rolls-out-watchos-266-update-for-apple-watch?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T17:50:32.000Z",
+      "summary": "It's time to update your Apple Watch , but don't get too excited; watchOS 26.6 doesn't appear to have any significant new features. watchOS 26.6 now available Apple has just…",
+      "image": "https://photos5.appleinsider.com/gallery/68300-143962-Apple-Watch-Series-11-edge-xl.jpg"
+    },
+    {
+      "id": "9a6ce3be",
+      "title": "macOS Sonoma 14.8.8 and macOS Sequoia 15.7.8 now available",
+      "link": "https://9to5mac.com/2026/07/27/macos-sonoma-14-8-8-and-macos-sequoia-15-7-8-now-available/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T17:49:08.000Z",
+      "summary": "In addition to macOS 26.6, Apple is also rolling out macOS Sonoma 14.8.8 and macOS Sequoia 15.7.8 with important bug fixes. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/09/macOS-Sequoia-hero.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "a3ebed6f",
+      "title": "Apple Releases macOS Tahoe 26.6",
+      "link": "https://www.macrumors.com/2026/07/27/apple-releases-macos-tahoe-26-6/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T17:48:57.000Z",
+      "summary": "Apple today released macOS Tahoe 26.6, a small update to the &zwnj;macOS Tahoe&zwnj; operating system that came out last year. &zwnj;macOS Tahoe&zwnj; 26.6 comes a month after…",
+      "image": "https://images.macrumors.com/article-new/2025/06/macOS-Tahoe-26-Feature.jpg"
+    },
+    {
+      "id": "42fa7237",
+      "title": "Apple rolls out another behind-the-scenes update with tvOS 26.6",
+      "link": "https://appleinsider.com/articles/26/07/27/apple-rolls-out-another-behind-the-scenes-update-with-tvos-266?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T17:42:34.000Z",
+      "summary": "Apple TV and HomePod owners can now update their devices to tvOS 26.6. Apple rolls out tvOS 26.6 On [day], Apple released an update for its Apple TV and HomePod devices. The…",
+      "image": "https://photos5.appleinsider.com/gallery/68301-143963-Apple-TV-4K-box-top-xl.jpg"
+    },
+    {
+      "id": "45e00ca6",
+      "title": "Early Siri indexing gives iPadOS 26.6 a bigger job than it looks",
+      "link": "https://appleinsider.com/articles/26/07/27/early-siri-indexing-gives-ipados-266-a-bigger-job-than-it-looks?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T17:40:31.000Z",
+      "summary": "iPadOS 26.6 is now available for iPad, beginning under-the-hood preparation for Siri AI while delivering security patches, bug fixes, and reliability improvements. iPadOS 26.6 is…",
+      "image": "https://photos5.appleinsider.com/gallery/68341-144046-iPadOS-26-xl.jpg"
+    },
+    {
+      "id": "7d5e6aea",
+      "title": "Better protection for Apple Maps leads a modest iOS 26.6 update",
+      "link": "https://appleinsider.com/articles/26/07/27/better-protection-for-apple-maps-leads-a-modest-ios-266-update?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T17:38:55.000Z",
+      "summary": "iOS 26.6 is now available for iPhone, adding stronger protections for Apple Maps, a warning for users who reach the blocked-contact limit, and the usual collection of security and…",
+      "image": "https://photos5.appleinsider.com/gallery/68340-144043-iOS-26-xl.jpg"
+    },
+    {
+      "id": "44ff9cce",
+      "title": "watchOS 26.6 available now for Apple Watch, here’s what’s new",
+      "link": "https://9to5mac.com/2026/07/27/watchos-26-6-available-now-for-apple-watch-heres-whats-new/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T17:29:56.000Z",
+      "summary": "Apple has just released a new wave of software updates, including watchOS 26.6 for Apple Watch. The update brings the latest security fixes and performance improvements to watchOS.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/08/apple-watch-series-10-gold.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "64aa2b8f",
+      "title": "Apple Releases iOS 26.6 and iPadOS 26.6 With iOS 27 Optimizations",
+      "link": "https://www.macrumors.com/2026/07/27/apple-releases-ios-26-6/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T17:27:12.000Z",
+      "summary": "Apple today released iOS 26.6 and iPadOS 26.6, updates to the iOS and iPadOS 26 operating systems that came out in September. iOS 26.6 comes a month after the launch of iOS 26.5.2…",
+      "image": "https://images.macrumors.com/article-new/2026/05/iOS-26.6-Glass-Feature.jpg"
+    },
+    {
+      "id": "d1bccdf9",
+      "title": "Apple releases tvOS 26.6 and HomePod 26.6",
+      "link": "https://9to5mac.com/2026/07/27/apple-releases-tvos-26-6-and-homepod-26-6/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T17:26:36.000Z",
+      "summary": "New Apple software updates are rolling out today, including tvOS 26.6, HomePod 26.6, visionOS 26.6, and more.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/12/apple-tv-homepod-mini.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d4d62883",
+      "title": "iOS 26.6 now available for iPhone with these changes",
+      "link": "https://9to5mac.com/2026/07/27/ios-26-6-now-available-whats-new/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T17:26:20.000Z",
+      "summary": "Apple has officially released iOS 26.6 for iPhone users. The update is lighter on new features than iOS 26.4 and iOS 26.5 , but it includes important bug fixes, security updates,…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/iOS-26.6-hero.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "921adcc7",
+      "title": "Apple releases iPadOS 26.6, here’s what’s new",
+      "link": "https://9to5mac.com/2026/07/27/apple-releases-ipados-26-6-heres-whats-new/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T17:26:11.000Z",
+      "summary": "Apple has just released iPadOS 26.6, the latest software update for iPad. It includes security and bug fixes and prepares your iPad for the forthcoming iPadOS 27 update.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/iPadOS-26.6-hero.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "aa001592",
+      "title": "Apple Releases watchOS 26.6 With Security Updates",
+      "link": "https://www.macrumors.com/2026/07/27/apple-releases-watchos-26-6-with-security-updates/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T17:25:25.000Z",
+      "summary": "Apple today released watchOS 26.6, the sixth update to the watchOS 26 operating system that came out in September. watchOS 26.6 comes over two months after Apple released watchOS…",
+      "image": "https://images.macrumors.com/article-new/2025/06/watchos-26-gradient-light.jpg"
+    },
+    {
+      "id": "ee1820f0",
+      "title": "Apple Upgrade will be great for Apple, might not be good for the buyer",
+      "link": "https://appleinsider.com/articles/26/07/27/apple-upgrade-will-be-great-for-apple-might-not-be-good-for-the-buyer?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T17:25:10.000Z",
+      "summary": "The newly announced Apple Upgrade program brings car-like lease-to-buy options to iPhones , Macs, and more. There's no question, it's great for Apple, but whether it's good for…",
+      "image": "https://media.appleinsider.com/gallery/68381-144108-000-lead-Apple-Upgrade-op-ed-xl.jpg"
+    },
+    {
+      "id": "87d9fec0",
+      "title": "Apple Releases tvOS 26.6",
+      "link": "https://www.macrumors.com/2026/07/27/apple-releases-tvos-26-6/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T17:24:20.000Z",
+      "summary": "Apple today released tvOS 26.6, the sixth update to the tvOS operating system that came out last fall. tvOS 26.6 is available for the Apple TV 4K, and it comes two months after…",
+      "image": "https://images.macrumors.com/article-new/2025/05/tvOS-26-Feature.jpg"
+    },
+    {
+      "id": "43ee0bba",
+      "title": "Apple Releases visionOS 26.6",
+      "link": "https://www.macrumors.com/2026/07/27/apple-releases-visionos-26-6/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T17:23:02.000Z",
+      "summary": "Apple today released visionOS 26.6, the sixth update to the visionOS 26 operating system that launched in September. visionOS 26.6 comes over two months after Apple released…",
+      "image": "https://images.macrumors.com/article-new/2025/05/visionOS-26-Feature.jpg"
+    },
+    {
+      "id": "b2a4d5ff",
+      "title": "Pocket Casts just released a brand-new Apple TV app",
+      "link": "https://9to5mac.com/2026/07/27/pocket-casts-just-released-a-brand-new-apple-tv-app/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T16:45:24.000Z",
+      "summary": "Pocket Casts is making the jump to the biggest screen in the house. The podcast player launched an Apple TV app today, giving listeners a native way to keep their queue going from…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/pocket-casts.webp?w=1600"
+    },
+    {
+      "id": "1d32eb69",
+      "title": "9to5Mac Daily: July 27, 2026 – Apple Glasses rumors, more",
+      "link": "https://9to5mac.com/2026/07/27/daily-july-27-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T16:40:55.000Z",
+      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "45147f75",
+      "title": "Threads adds private Meta AI chats without cluttering your feed",
+      "link": "https://9to5mac.com/2026/07/27/threads-adds-private-meta-ai-chats-without-cluttering-your-feed/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T16:20:51.000Z",
+      "summary": "Meta AI is coming to Threads DMs, giving users a private place to chat with the assistant without placing its responses in the public feed.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/meta-ai-threads-dms.webp?w=1600"
+    },
+    {
+      "id": "38823a4b",
+      "title": "What Wall Street expects from Apple's Q3 2026 earnings on July 30",
+      "link": "https://appleinsider.com/articles/26/07/27/what-wall-street-expects-from-apples-q3-2026-earnings-on-july-30?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T16:07:53.000Z",
+      "summary": "Apple will report its third-quarter financial results on July 30. Here's what happened in the quarter, and what analysts believe will be the highlights of Tim Cook's last earnings…",
+      "image": "https://photos5.appleinsider.com/gallery/68158-143672-66754-139985-IMG_2928-xl-xl.jpg"
+    },
+    {
+      "id": "1eb660ff",
+      "title": "Pocket Casts Now Available on Apple TV",
+      "link": "https://www.macrumors.com/2026/07/27/pocket-casts-apple-tv/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-27T15:58:54.000Z",
+      "summary": "Starting today, the popular podcast platform Pocket Casts is available on all Apple TV 4K and Apple TV HD models. The app was already available on the iPhone, iPad, and Apple…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Pocket-Casts-Apple-TV.jpeg"
+    },
+    {
+      "id": "7eea1d77",
+      "title": "iOS 27 gives Apple’s Calendar app new feature I’ve wanted for years",
+      "link": "https://9to5mac.com/2026/07/27/ios-27-gives-apples-calendar-app-new-feature-ive-wanted-for-years/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T15:50:05.000Z",
+      "summary": "iOS 27 is launching this fall , and it adds a new Apple Calendar feature I’ve wanted for years: natural language support when creating events.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-calendar-app-icon-ios-27.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "42bf53ee",
+      "title": "Pastebot 3 Doubles Down on Mac Clipboard Automation and Introduces Two New Business Models",
+      "link": "https://www.macstories.net/reviews/pastebot-3-doubles-down-on-mac-clipboard-automation-and-introduces-two-new-business-models/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-27T15:39:21.000Z",
+      "summary": "Pastebot’s Quick Menu. Tapbots has released Pastebot 3, a ground-up rewrite of the Mac clipboard manager that includes several powerful automation and customization options, along…",
+      "image": "https://cdn.macstories.net/images/uploads/2026/07/21/screenshot-2026-07-21-at-90334-am-1784639080079-67ecd36fe5.png"
+    },
+    {
+      "id": "1dba39a9",
+      "title": "Deals: M5 Pro MacBook Pro 24GB $500 off, 48GB $400 off, Find My charger $40, AirPods, more",
+      "link": "https://9to5mac.com/2026/07/27/deals-macbook-pro-find-my-charger-airpods/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T15:37:12.000Z",
+      "summary": "Black Friday in July deal pricing is still live on AirPods Pro 3 and AirPods Max 2 at $100 off if you didn’t get a chance to land a set last week, as well as the all-time low on…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-MacBok-Pro-AirPods-Find-My-charger.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "589bd6d4",
+      "title": "Big Sonos app update, & the state of smart home cameras on Smart Home Insider",
+      "link": "https://appleinsider.com/articles/26/07/27/big-sonos-app-update-the-state-of-smart-home-cameras-on-smart-home-insider?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T15:23:03.000Z",
+      "summary": "On this week's Smart Home Insider podcast, we talk about a unique product from Nanoleaf, what's going on with smart home cameras, and the Sonos app update that is better, but…",
+      "image": "https://photos5.appleinsider.com/gallery/67039-140859-Smart-Home-Insider-Header-xl.jpg"
+    },
+    {
+      "id": "8ee2321a",
+      "title": "Cellular Apple Watch Series 11 plunges to $349, save $150",
+      "link": "https://appleinsider.com/articles/26/07/27/cellular-apple-watch-series-11-plunges-to-349-save-150?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T15:13:57.000Z",
+      "summary": "A staggering $150 discount is in effect on multiple Apple Watch Series 11 styles with GPS + Cellular functionality, bringing the price down to a record-low $349.97. Save $150 on…",
+      "image": "https://media.appleinsider.com/gallery/68380-144096-apple-watch-series-11-cellular-349-xl.jpg"
+    },
+    {
+      "id": "69c09b70",
+      "title": "Snapchat’s newest feature turns Snap Map into a live Spotify listening feed",
+      "link": "https://9to5mac.com/2026/07/27/snapchats-newest-feature-turns-snap-map-into-a-live-spotify-listening-feed/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T15:10:18.000Z",
+      "summary": "Snapchat is giving Snap Map a musical upgrade through a new integration with Spotify. The new feature, simply called Now Playing, lets Snapchat users display what they’re…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/snapchat-now-playing.webp?w=1600"
+    },
+    {
+      "id": "f66cd68c",
+      "title": "Weak App Store protections at core of $1.8M crypto app fraud lawsuit",
+      "link": "https://appleinsider.com/articles/26/07/27/weak-app-store-protections-at-core-of-18m-crypto-app-fraud-lawsuit?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-27T15:00:09.000Z",
+      "summary": "Users got robbed of $1.8 million by a bitcoin wallet app hosted on the App Store impersonating a legit crypto exchange. The victims are suing Apple. Apple tries to keep the App…",
+      "image": "https://media.appleinsider.com/gallery/68377-144095-67974-143299-63613-132271-000-lede-red-App-Store-xl-xl-xl.jpg"
+    },
+    {
+      "id": "d9cf82e6",
+      "title": "iPhone 18 launch could be repeat of unusual 2020 release",
+      "link": "https://9to5mac.com/2026/07/27/iphone-18-launch-could-be-repeat-of-unusual-2020-release/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-27T14:44:45.000Z",
+      "summary": "Apple’s unveiling of iPhone 18 models this fall is expected in September, as usual, but there are several ways this year’s launches will reflect the anomaly of COVID-era 2020’s…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/iphone-18-pro-dummy-colors.jpg?quality=82&strip=all&w=1600"
     },
     {
       "id": "4eea22a9",
