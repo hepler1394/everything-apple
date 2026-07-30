@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T13:03:23.469Z",
+  "updated": "2026-07-30T12:48:10.580Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -13,6 +13,516 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "0484db33",
+      "title": "iPhone 18 Pro and iPhone Ultra: When is the Next Apple Event?",
+      "link": "https://www.macrumors.com/2026/07/30/when-will-apple-announce-iphone-18-pro-event/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-30T11:59:18.000Z",
+      "summary": "July is nearly over, meaning that Apple's annual iPhone event is fast approaching. Below, we look back at when Apple typically announces iPhone events. This September, Apple is…",
+      "image": "https://images.macrumors.com/article-new/2026/04/Four-iPhone-18-Pro-Colors-Mock-Feature.jpg"
+    },
+    {
+      "id": "c37ea3e7",
+      "title": "AI chatbots are now better than humans at romance scams – and that’s scary",
+      "link": "https://9to5mac.com/2026/07/30/ai-chatbots-are-now-better-than-humans-at-romance-scams-and-thats-scary/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-30T11:59:14.000Z",
+      "summary": "Romance scams are one of the oldest cons in the online world, but they continue to pull in new victims all of the time. Joint research by four universities suggests that AI…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/AI-chatbots-are-now-better-than-humans-at-romance-scams-–-and-thats-scary.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "b2e2fb8a",
+      "title": "iOS 27: Tone Down Liquid Glass Transparency",
+      "link": "https://www.macrumors.com/how-to/ios-27-tone-down-liquid-glass-transparency/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-30T11:27:14.000Z",
+      "summary": "If you've never been a fan of Liquid Glass – Apple's glass-like interface effect introduced in iOS 26 – then there's some good news in iOS 27. Apple has added a setting that lets…",
+      "image": "https://images.macrumors.com/article-new/2026/06/liquid-glass-slider.jpg"
+    },
+    {
+      "id": "abe81091",
+      "title": "Jony Ive’s first OpenAI hardware device sounds rather like … a HomePad",
+      "link": "https://9to5mac.com/2026/07/30/jony-ives-first-openai-hardware-device-sounds-rather-like-a-homepad/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-30T11:13:47.000Z",
+      "summary": "Jony Ive and Sam Altman have been teasing an AI hardware device for a long time now, and it’s increasingly looking like that tease was premature. We’re still not expecting to see…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/homepod-with-screen-mockup-03.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "8b3901f7",
+      "title": "iPhone 18 Pro: Twelve Changes Coming to Apple's Next Flagship",
+      "link": "https://www.macrumors.com/2026/07/30/reasons-to-wait-iphone-18-pro/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-30T10:43:11.000Z",
+      "summary": "We're less than two months out from the launch of Apple's premium next-generation smartphone lineup, and while we're not expecting a dramatic change in terms of functionality,…",
+      "image": "https://images.macrumors.com/article-new/2026/02/iPhone-18-Pro-Deep-Red-Feature.jpg"
+    },
+    {
+      "id": "19919855",
+      "title": "How to change your Home address in Maps on iPhone",
+      "link": "https://appleinsider.com/articles/26/07/30/how-to-change-your-home-address-in-maps-on-iphone?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-30T03:04:43.000Z",
+      "summary": "Changing your home's address on Apple Maps can be almost as stressful as moving home in real life, but there's one sure-fire way to get the job done without pulling your hair out.…",
+      "image": "https://photos5.appleinsider.com/gallery/61508-127051-Apple-Maps-library-xl.jpg"
+    },
+    {
+      "id": "9d9ea6e3",
+      "title": "PSA: App Store, iTunes Store and other Apple services are currently down for some users [U: Fixed]",
+      "link": "https://9to5mac.com/2026/07/29/psa-app-store-itunes-store-and-other-apple-services-are-currently-down-for-some-users/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-30T02:29:50.000Z",
+      "summary": "Update, 11:00 p.m ET : Apple’s System Status pages say all the issues have now been resolved. The original story follows below. For the second time in a week , Apple is facing a…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/06/apple-hacked.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "c25ba965",
+      "title": "US senators urge Apple to abandon plans for Chinese-made chips",
+      "link": "https://appleinsider.com/articles/26/07/30/us-senators-urge-apple-to-abandon-plans-for-chinese-made-chips?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-30T02:18:51.000Z",
+      "summary": "Apple wants to use China-sourced chips for products sold in China during the AI-driven memory shortage, but a letter from US senators hopes to persuade Apple otherwise. US…",
+      "image": "https://media.appleinsider.com/gallery/68406-144158-iPhone-17-Pro-Max-on-book-xl.jpg"
+    },
+    {
+      "id": "13dacf78",
+      "title": "Apple pledges support for communities affected by southern Europe wildfires",
+      "link": "https://9to5mac.com/2026/07/29/apple-pledges-support-for-communities-affected-by-southern-europe-wildfires/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-30T02:14:39.000Z",
+      "summary": "Tim Cook took to X tonight to announce that Apple will donate to relief efforts supporting those affected by the wildfires affecting southern Europe. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2023/10/apple-park-dusk.jpeg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "aac20b29",
+      "title": "20th Anniversary iPhone Coming Next Year With These 10 Features",
+      "link": "https://www.macrumors.com/2026/07/29/20th-anniversary-iphone-10-features/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-30T01:00:11.000Z",
+      "summary": "Apple's 20th anniversary iPhone is expected to arrive in the fall of 2027 with the most significant redesign the device has seen since the iPhone X. The first iPhone was announced…",
+      "image": "https://images.macrumors.com/article-new/2026/01/Mostly-Screen-iPhone-Purple-Feature-2027.jpg"
+    },
+    {
+      "id": "f19329b1",
+      "title": "Apple faces bipartisan Senate pushback over plans to buy Chinese memory chips",
+      "link": "https://9to5mac.com/2026/07/29/apple-faces-bipartisan-senate-pushback-over-plans-to-buy-chinese-memory-chips/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-30T00:41:49.000Z",
+      "summary": "Bloomberg reports that US senators from both sides of the aisle are urging Apple CEO Tim Cook to commit by August 21 to not using memory chips from Chinese suppliers CXMT and…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/Mac-hardware-is-great-but-macOS-26-is-a-disaster-say-pundits.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "10a9b756",
+      "title": "Qualcomm Expects Apple Modem Revenue to Drop Faster Than Expected",
+      "link": "https://www.macrumors.com/2026/07/29/qualcomm-apple-modem-revenue-dropping/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-30T00:13:43.000Z",
+      "summary": "Qualcomm expects its Apple revenue to decline faster than it previously anticipated, Qualcomm CEO Cristiano Amon told Reuters in an interview following the company's earnings call…",
+      "image": "https://images.macrumors.com/article-new/2021/03/Apple-5G-Modem-Feature-16x9.jpg"
+    },
+    {
+      "id": "f641fec7",
+      "title": "Studio Display XDR hits Apple’s refurb store, saving you up to $540",
+      "link": "https://9to5mac.com/2026/07/29/studio-display-xdr-hits-apples-refurb-store-saving-you-up-to-540/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-30T00:09:03.000Z",
+      "summary": "There’s a new addition to Apple’s popular Certified Refurbished store . Apple has started selling the Studio Display XDR in refurbished condition, offering 15% off the mini-LED…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/03/studio-display-2026.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "ef692610",
+      "title": "Apple's reliance on Qualcomm could decline faster than expected after Q4 2026",
+      "link": "https://appleinsider.com/articles/26/07/29/apples-reliance-on-qualcomm-could-decline-faster-than-expected-after-q4-2026?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-29T23:31:12.000Z",
+      "summary": "The 2026 iPhone lineup could divest further from Qualcomm as Apple increases use of its in-house C-series modem, though Qualcomm blames supply constraints on a…",
+      "image": "https://media.appleinsider.com/gallery/68405-144157-iPhone-17e-pink-back-held-xl.jpg"
+    },
+    {
+      "id": "c638aec5",
+      "title": "9to5Mac Daily: July 29, 2026 – iOS 26.6, Apple’s smart home plans",
+      "link": "https://9to5mac.com/2026/07/29/daily-july-29-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T23:27:51.000Z",
+      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "838aff10",
+      "title": "Apple Says UK App Store Steering Rules Would Be 'Highly Intrusive'",
+      "link": "https://www.macrumors.com/2026/07/29/app-store-uk-rules-highly-intrusive/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T22:43:12.000Z",
+      "summary": "Apple said new UK App Store rules would give regulators a \"highly intrusive\" role dictating how it runs its business, reports Reuters . Apple submitted feedback to the UK's…",
+      "image": "https://images.macrumors.com/article-new/2021/06/app-store-blue-banner-uk-fixed.jpg"
+    },
+    {
+      "id": "18a6a3a8",
+      "title": "Qualcomm says supply constraints are shrinking its Apple business faster than expected",
+      "link": "https://9to5mac.com/2026/07/29/qualcomm-says-supply-constraints-are-shrinking-its-apple-business-faster-than-expected/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T22:30:08.000Z",
+      "summary": "After Qualcomm released its quarterly report and projected weaker-than-expected profit for the current quarter, the company’s CEO told Reuters that supply constraints would cause…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/Heres-how-Apple-kind-of-shot-an-MLS-game-entirely-with-iPhones.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "0d9a52ec",
+      "title": "Pastebot 3 for Mac Adds Rule-Based Organization, Powerful Paste Filters",
+      "link": "https://www.macrumors.com/2026/07/29/tapbots-pastebot-3/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T22:14:30.000Z",
+      "summary": "Tapbots recently launched Pastebot 3 , the newest version of its popular clipboard management software. Like prior versions of Pastebot, Pastebot 3 records everything you copy so…",
+      "image": "https://images.macrumors.com/article-new/2026/07/pastebot-3.jpg"
+    },
+    {
+      "id": "d8682592",
+      "title": "Apple Releases Safari Technology Preview 249 With Bug Fixes and Performance Improvements",
+      "link": "https://www.macrumors.com/2026/07/29/apple-releases-safari-technology-preview-249/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T22:03:29.000Z",
+      "summary": "Apple today released a new update for Safari Technology Preview , the experimental browser that was first introduced in March 2016. Apple designed &zwnj;Safari Technology…",
+      "image": "https://images.macrumors.com/article-new/2024/07/Safari-Technology-Preview-Updated-Feature-1.jpg"
+    },
+    {
+      "id": "ae690fdb",
+      "title": "Apple pushes back against UK proposal to loosen App Store payment rules",
+      "link": "https://9to5mac.com/2026/07/29/apple-pushes-back-against-uk-proposal-to-loosen-app-store-payment-rules/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T21:43:45.000Z",
+      "summary": "Apple today alleged that a new UK proposal targeting App Store fees amounts to price regulation, warning that it could undermine innovation and investment. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/01/Apple-faces-1.8B-lawsuit-claiming-UK-App-Store-users-were-overcharged.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "71afd761",
+      "title": "Almost all future robot vacuums were just banned by the US government",
+      "link": "https://9to5mac.com/2026/07/29/almost-all-future-robot-vacuums-were-just-banned-by-the-us-government/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T21:01:01.000Z",
+      "summary": "Yesterday the US government announced its was updating its list of banned foreign-made products to include “advanced robotic devices,” and today an FCC spokesperson confirmed that…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/robot-vacuum-unsplash-image.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "c71cf42f",
+      "title": "DOJ fights Apple’s bid for records from 14 federal agencies in antitrust case",
+      "link": "https://9to5mac.com/2026/07/29/doj-fights-apples-bid-for-records-from-14-federal-agencies-in-antitrust-case/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T21:00:33.000Z",
+      "summary": "The US Department of Justice has asked the court to reconsider a recent ruling that would allow Apple to pursue records from 14 federal agencies in its antitrust case. Here are…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/09/sjt-tim-cook.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "37b3a0cc",
+      "title": "OpenAI President on Apple Lawsuit: We Don't Need Your Secrets",
+      "link": "https://www.macrumors.com/2026/07/29/openai-president-apple-lawsuit/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T20:45:58.000Z",
+      "summary": "OpenAI president Greg Brockman recently did an interview with Joanna Stern, where he commented on the lawsuit OpenAI is facing from Apple and talked about OpenAI's product plans.…",
+      "image": ""
+    },
+    {
+      "id": "7db120bb",
+      "title": "Apple Maps in iOS 27 makes my favorite recent feature even better",
+      "link": "https://9to5mac.com/2026/07/29/apple-maps-in-ios-27-makes-my-favorite-recent-feature-even-better/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T20:33:44.000Z",
+      "summary": "Apple Maps recently added a new ‘Suggested Places’ feature in iOS 26.5, but it’s getting even better in iOS 27. Here’s how.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-maps-ios-27-app-icon-colors.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "5dc97397",
+      "title": "OpenAI president admits new ChatGPT desktop app is ‘kind of a mess,’ teases tab-free design",
+      "link": "https://9to5mac.com/2026/07/29/openai-president-admits-new-chatgpt-desktop-app-is-kind-of-a-mess-teases-tab-free-design/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T20:28:24.000Z",
+      "summary": "In a wide-ranging interview with Joanna Stern , OpenAI president Greg Brockman addressed the company’s recent changes to the ChatGPT desktop app and discussed its plans for a…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/chatgpt-orange.webp?w=1600"
+    },
+    {
+      "id": "c7f2d815",
+      "title": "Apple Begins Selling Refurbished Studio Display XDR",
+      "link": "https://www.macrumors.com/2026/07/29/apple-refurbished-studio-display-xdr/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T20:14:49.000Z",
+      "summary": "Apple this month began selling certified refurbished Studio Display XDR models in the U.S. for the first time since the display was released in March. Availability extends to…",
+      "image": "https://images.macrumors.com/article-new/2026/03/Studio-Display-XDR-Dark.jpg"
+    },
+    {
+      "id": "16551b99",
+      "title": "All the Changes to AppleCare+ This Month",
+      "link": "https://www.macrumors.com/2026/07/29/applecare-changes-made-this-month/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T19:32:38.000Z",
+      "summary": "July has been a busy month for AppleCare+ news. We have recapped all the changes to AppleCare+ and the AppleCare One bundle below. In the U.S., Apple raised the prices on monthly…",
+      "image": "https://images.macrumors.com/article-new/2026/07/AppleCare-Bright-Red.jpg"
+    },
+    {
+      "id": "cd2fe84a",
+      "title": "Runna now automatically adapts training paces based on heat and humidity",
+      "link": "https://9to5mac.com/2026/07/29/runna-now-automatically-adapts-training-paces-based-on-heat-and-humidity/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T19:28:46.000Z",
+      "summary": "Starting today, Runna subscribers can use the new Adapt for Heat feature, which automatically adjusts pace targets based on local heat and humidity. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/runna-heat.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "38823a4b",
+      "title": "What Wall Street expects from Apple's Q3 2026 earnings on July 30",
+      "link": "https://appleinsider.com/articles/26/07/27/what-wall-street-expects-from-apples-q3-2026-earnings-on-july-30?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-29T19:27:50.000Z",
+      "summary": "Apple will report its third-quarter financial results on July 30. Here's what happened in the quarter, and what analysts believe will be the highlights of Tim Cook's last earnings…",
+      "image": "https://photos5.appleinsider.com/gallery/68158-143672-66754-139985-IMG_2928-xl-xl.jpg"
+    },
+    {
+      "id": "101adfde",
+      "title": "Galaxy Z Fold8 Review: What Samsung's New Foldable Tells Us About the iPhone Ultra",
+      "link": "https://www.macrumors.com/2026/07/29/galaxy-z-fold8-review/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T19:13:46.000Z",
+      "summary": "Samsung announced its latest foldable smartphones last week, and the lineup included the Galaxy Z Fold8, a device that's close to what we're expecting Apple's foldable \" iPhone…",
+      "image": ""
+    },
+    {
+      "id": "47890f02",
+      "title": "Support for school cellphone bans reaches new high, where do you stand?",
+      "link": "https://9to5mac.com/2026/07/29/school-phone-ban-survey/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T18:59:24.000Z",
+      "summary": "As back-to-school season gets underway, more Americans now say they support keeping students away from their phones throughout the entire school day.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/03/iPhone-17e-8.jpg?quality=82&strip=all&w=1501"
+    },
+    {
+      "id": "ba6ae660",
+      "title": "What’s the catch with the Apple Upgrade program?",
+      "link": "https://www.theverge.com/tech/972583/apple-upgrade-program-deal",
+      "source": "The Verge",
+      "category": "news",
+      "date": "2026-07-29T18:40:06.000Z",
+      "summary": "Apple's new Upgrade program is here, allowing you to lease select models of iPhones, iPads, Macs, and Watches with a relatively low monthly payment. The company promises you won't…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/apple-upgrade.png?quality=90&strip=all&crop=0,0,100,60.988602528446"
+    },
+    {
+      "id": "5eedee58",
+      "title": "macOS 27 adds five new Mac features I’ve been loving",
+      "link": "https://9to5mac.com/2026/07/29/macos-27-adds-five-new-mac-features-ive-been-loving/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T18:30:24.000Z",
+      "summary": "macOS 27, also known as Golden Gate, is coming this fall with a variety of improvements for the Mac. Here are five new macOS Golden Gate features I’ve been loving so far.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/macos-27-macbook-generic-fi.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "deab50ac",
+      "title": "Amazon slashes AirPods Max 2 to $449 with a month-end $100 discount",
+      "link": "https://appleinsider.com/articles/26/07/29/amazon-slashes-airpods-max-2-to-449-with-a-month-end-100-discount?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-29T18:06:17.000Z",
+      "summary": "We covered Amazon's $99 AirPods 4 deal yesterday, and today AirPods Max 2 are $100 off, bringing the over-ear headphones down to $449. Save $100 on AirPods Max 2 with Amazon's…",
+      "image": "https://media.appleinsider.com/gallery/68401-144150-airpods-max-2-price-drop-xl.jpg"
+    },
+    {
+      "id": "888c4392",
+      "title": "AirPods Pro 3 Still Available for Best Price Since Prime Day at $199.99",
+      "link": "https://www.macrumors.com/2026/07/29/airpods-pro-3-prime-day-199-99/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T17:24:01.000Z",
+      "summary": "Amazon still has the AirPods Pro 3 available for $199.99 , down from $249.00. This is the best price we've seen on the AirPods Pro 3 since Prime Day ended last month, coming in…",
+      "image": "https://images.macrumors.com/article-new/2025/09/airpods-pro-3-tips.jpg"
+    },
+    {
+      "id": "ff420830",
+      "title": "UK is asking for 'highly intrusive' controls over App Store, says Apple",
+      "link": "https://appleinsider.com/articles/26/07/29/uk-is-asking-for-highly-intrusive-controls-over-app-store-says-apple?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-29T17:18:26.000Z",
+      "summary": "Apple has told UK regulators that the plans to adopt more EU-like measures over the App Store are too restrictive, go beyond promoting competition, and amount to illegal…",
+      "image": "https://photos5.appleinsider.com/gallery/54139-109079-48836-95405-000-lead-UK-xl-xl.jpg"
+    },
+    {
+      "id": "c7f709ff",
+      "title": "Review: This Asus ProArt 4K display has several features that separate it from the pack [Video]",
+      "link": "https://9to5mac.com/2026/07/29/asus-pa27ucge-review-160hz-colorimeter-monitor-hood-display/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T17:00:45.000Z",
+      "summary": "The Asus ProArt PA27UCGE is a 27-inch 4K display with a few tricks up its sleeve that set it apart from a crowded monitor market. It begins with its high frame rate support, up to…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Asus-ProArt-4K-160Hz-PA27UCGE-1.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "e7267d0b",
+      "title": "Gemini for Mac Adds System-Wide Voice Dictation and Screen-Aware Commands",
+      "link": "https://www.macrumors.com/2026/07/29/gemini-for-mac-dictation/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T16:46:53.000Z",
+      "summary": "Google today updated Gemini for Mac to add a new quick keyboard shortcut that activates voice mode. By long-pressing the Fn key, users can speak naturally to Gemini from any…",
+      "image": "https://images.macrumors.com/article-new/2026/04/gemini-for-mac-app-google.jpg"
+    },
+    {
+      "id": "e09d25d6",
+      "title": "Apple One’s high-end tier is getting harder to resist in iOS 27",
+      "link": "https://9to5mac.com/2026/07/29/apple-ones-high-end-tier-is-getting-harder-to-resist-in-ios-27/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T16:34:52.000Z",
+      "summary": "Apple One offers a bundle of popular Apple services at a discount, and in iOS 27 the high-end Premier plan gains new advantages.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/Apple-One-ios-27-fi.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "541fdf32",
+      "title": "iOS 27 Lets You Hide the Messages Button Everyone Hits by Mistake",
+      "link": "https://www.macrumors.com/how-to/ios-hide-dictation-messages-button/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T16:10:46.000Z",
+      "summary": "If you accidentally press the dictation or voice icon after sending a text in Messages, your music may pause while your iPhone starts listening. It's a small annoyance, but a…",
+      "image": "https://images.macrumors.com/article-new/2026/07/messages-dictation-ios.jpeg"
+    },
+    {
+      "id": "13cbb74e",
+      "title": "Gemini for macOS rolling out voice control and Gboard Rambler-level transcription",
+      "link": "https://9to5google.com/2026/07/29/gemini-mac-voice-control/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T15:36:30.000Z",
+      "summary": "After the preview at I/O 2026 in May , Gemini for macOS is now rolling out advanced voice control capabilities.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Gemini-Mac-voice-upgrade.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "9e4bdffe",
+      "title": "Deals: M5 MacBook Pro $320 off, base MacBook Air $170 off, AirPods Pro 3, TechWoven case 32% off, Apple cables, more",
+      "link": "https://9to5mac.com/2026/07/29/deals-m5-macbook-pro-macbook-air-airpods-techwoven/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T15:26:54.000Z",
+      "summary": "While summer sale pricing continues on AirPods Pro 3 at $50 off , AirPods Max 2 at $100 off , and Apple’s AirTag 2 down at $22 each , today’s 9to5Toys Lunch Break is headlined by…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-MacBook-Pro-AirPods-TechWoven.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "b8ac2e0b",
+      "title": "Best Buy's Back to School Sale Brings Big Savings on AirPods, MacBooks, Headphones, and More",
+      "link": "https://www.macrumors.com/2026/07/29/best-buys-school-sale/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T15:24:22.000Z",
+      "summary": "Best Buy this week is hosting a pair of sales kicking off Back to School season , as well as its annual Black Friday in July event, with notable markdowns on Apple devices, TVs,…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Back-To-School-Deals-Feature.jpg"
+    },
+    {
+      "id": "619ab16f",
+      "title": "Apple Wallet Support Coming to Manchester's Bee Card",
+      "link": "https://www.macrumors.com/2026/07/29/bee-card-apple-wallet-support-in-works/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T15:20:18.000Z",
+      "summary": "Apple is preparing to allow the Bee Card to be added to the Wallet app, according to code seen by MacRumors . When this functionality goes live, you will be able to add the Bee…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Bee-Card.jpg"
+    },
+    {
+      "id": "bf519e55",
+      "title": "iPhone 18 Pro vs iPhone Ultra: Here are the biggest differences",
+      "link": "https://9to5mac.com/2026/07/29/iphone-18-pro-vs-iphone-ultra-here-are-biggest-differences/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T15:18:29.000Z",
+      "summary": "Apple’s fall iPhone lineup this year is rumored to revolve around iPhone 18 Pro and iPhone Ultra . Here are the three biggest feature differences—not counting price—that may…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/iphone-17-pro-blue-angle-two.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "24af8f21",
+      "title": "AI leaves the chat window behind with Gemini's new Mac voice mode",
+      "link": "https://appleinsider.com/articles/26/07/29/ai-leaves-the-chat-window-behind-with-geminis-new-mac-voice-mode?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-29T15:10:33.000Z",
+      "summary": "Google is bringing voice-first AI assistance to the Mac , letting Gemini turn spoken requests into finished text without pulling users out of the app they're already using. Macs…",
+      "image": "https://photos5.appleinsider.com/gallery/67088-141003-IMG_4159-xl.jpg"
+    },
+    {
+      "id": "0e4b145d",
+      "title": "Apple Upgrade is a really great deal for one reason",
+      "link": "https://9to5mac.com/2026/07/29/apple-upgrade-is-a-really-great-deal-for-one-reason/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T14:49:55.000Z",
+      "summary": "Apple Upgrade launched yesterday , a new leasing program for iPhone, iPad, Mac, and Apple Watch ( pricing here ). The program has garnered some skepticism, but there’s one key…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/mac-apple-upgrade-colors.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "3c40b346",
+      "title": "Apple's New Upgrade Program: Is It Worth It?",
+      "link": "https://www.macrumors.com/2026/07/29/is-apple-upgrade-program-worth-it/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T14:29:29.000Z",
+      "summary": "With the new Apple Upgrade program in the U.S., you can now lease an iPhone, but is it worth it? The answer is more complicated than a simple yes or no. We'll use the iPhone 17…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Apple-Upgrade-Is-It-Worth-It.jpg"
+    },
+    {
+      "id": "bfac15aa",
+      "title": "iOS 27 adds three new iPhone features you’ll use all the time",
+      "link": "https://9to5mac.com/2026/07/29/ios-27-adds-three-new-iphone-features-youll-use-all-the-time/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T14:07:55.000Z",
+      "summary": "iOS 27 launches this fall as the next major iPhone update, here are three new features that could be among the most-used for many users.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-27-iphone-side-angle-fi.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "2c74a6da",
+      "title": "iPhone driver’s license looks set to roll out to a 15th US state",
+      "link": "https://9to5mac.com/2026/07/29/iphone-drivers-license-looks-set-to-roll-out-to-a-15th-us-state/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-29T13:52:57.000Z",
+      "summary": "The ability to add a digital version of your driver’s license to your iPhone looks like it will be rolling out to a 15th US state before too long. Apple currently lists 14 states…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iPhone-driving-license-looks-set-to-roll-out-to-a-15th-US-state.webp?w=1500"
+    },
+    {
+      "id": "cb70935b",
+      "title": "iPhone Driver's Licenses May Soon Expand to Another US State",
+      "link": "https://www.macrumors.com/2026/07/29/iphone-drivers-license-another-state-soon/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-29T13:15:09.000Z",
+      "summary": "Driver's licenses and IDs may soon be available in Apple Wallet for iPhone and Apple Watch users living in Oklahoma. MacRumors discovered signs of an Oklahoma ID in Apple's…",
+      "image": "https://images.macrumors.com/article-new/2024/04/apple-wallet-drivers-license-feature-iPhone-15-pro.jpg"
+    },
     {
       "id": "5760a1ac",
       "title": "Online scams cost Americans almost $150B last year – 7x more than reported",
@@ -84,16 +594,6 @@
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/the-outsiders.jpg?quality=82&strip=all&w=1600"
     },
     {
-      "id": "ebadb910",
-      "title": "OpenAI's First Devices: Speaker, Smartphone, and More",
-      "link": "https://www.macrumors.com/2026/07/28/openai-first-devices/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-29T01:00:10.000Z",
-      "summary": "OpenAI's hardware roadmap has sharpened considerably in recent months, with its first device now identified, a smartphone said to be arriving as soon as next year, and a wider…",
-      "image": "https://images.macrumors.com/article-new/2026/05/OpenAI-Smartphone-Feature.jpg"
-    },
-    {
       "id": "4dca000a",
       "title": "Twelve South Valet mini review: A luxe MagSafe catch-all with new, faster speeds",
       "link": "https://appleinsider.com/articles/26/07/28/twelve-south-valet-mini-review-a-luxe-magsafe-catch-all-with-new-faster-speeds?utm_source=rss",
@@ -112,506 +612,6 @@
       "date": "2026-07-28T23:37:15.000Z",
       "summary": "iOS 26.6 is now available for iPhone users. Here’s everything you need to know about the update, and why it’s more important than you may think.",
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-26.6-guide.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "367fdc45",
-      "title": "iOS 27: All the New Phone and FaceTime Features",
-      "link": "https://www.macrumors.com/guide/ios-27-phone-facetime/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T22:36:25.000Z",
-      "summary": "The Phone and FaceTime apps didn't get as many new features as some of Apple's other apps, but there are a handful of capabilities that add utility and convenience. Phone App The…",
-      "image": "https://images.macrumors.com/article-new/2026/07/iOS-27-All-the-New-Phone-and-FaceTime-Features.jpg"
-    },
-    {
-      "id": "dd931b1c",
-      "title": "iyO’s trademark lawsuit against OpenAI and Jony Ive paused over settlement talks [U]",
-      "link": "https://9to5mac.com/2026/07/28/iyos-trademark-lawsuit-against-openai-and-jony-ive-paused-over-settlement-talks/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T21:43:08.000Z",
-      "summary": "Update, 7:51 p.m. ET: The joint notice of settlement is now publicly available and has been added below the original post. Judge Trina L. Thompson has granted a seven-day pause in…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/ive-altman-powell-jobs.webp?w=1600"
-    },
-    {
-      "id": "92ff0734",
-      "title": "Instapaper update adds Liquid Glass, Home Screen widgets, new fonts, more",
-      "link": "https://9to5mac.com/2026/07/28/instapaper-update-adds-liquid-glass-home-screen-widgets-new-fonts-more/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T20:44:12.000Z",
-      "summary": "Today, Instapaper launched version 10 of its iPhone and iPad app with several improvements, along with a major redesign of the web-based platform. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/instapaper.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "85bf7ee1",
-      "title": "Apple Upgrade: 20 Things to Know Before Leasing an iPhone, iPad, or Mac",
-      "link": "https://www.macrumors.com/2026/07/28/apple-upgrade-program-tidbits/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T20:19:48.000Z",
-      "summary": "Apple retired the iPhone Upgrade Program in favor of a new Apple Upgrade leasing option made available in partnership with Klarna. Apple Upgrade gives customers an option to get…",
-      "image": "https://images.macrumors.com/article-new/2026/07/apple-upgrade-program-1.jpg"
-    },
-    {
-      "id": "882a8d98",
-      "title": "Apple says iOS 27 ‘Restricted Mode’ isn’t for new Upgrade program leases",
-      "link": "https://9to5mac.com/2026/07/28/apple-says-ios-27-restricted-mode-isnt-for-new-upgrade-program-leases/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T20:08:13.000Z",
-      "summary": "Apple has told The Verge that missed lease payments will not activate the “Restricted Mode” system currently under development in iOS 27. What the new system is meant for remains…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/restricted-locked-iphone.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "273eaf3a",
-      "title": "'Granola' Launches on Apple Watch",
-      "link": "https://www.macrumors.com/2026/07/28/granola-launches-on-apple-watch/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T20:07:18.000Z",
-      "summary": "Granola , an app that can transcribe Zoom meetings and then create AI-generated notes with key points, is now available on Apple Watch models running watchOS 11 and later. The app…",
-      "image": "https://images.macrumors.com/article-new/2026/07/Granola-Apple-Watch.jpg"
-    },
-    {
-      "id": "4d8d1726",
-      "title": "No major reset is coming as John Ternus prepares to take over Apple",
-      "link": "https://appleinsider.com/articles/26/07/28/no-major-reset-is-coming-as-john-ternus-prepares-to-take-over-apple?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T19:51:46.000Z",
-      "summary": "Apple is presenting John Ternus as the steady continuation of Tim Cook 's leadership, with the incoming CEO praising the company's momentum while declining to reveal how he…",
-      "image": "https://photos5.appleinsider.com/gallery/66473-139434-johnternusheader-xl.jpg"
-    },
-    {
-      "id": "ac12cca2",
-      "title": "Twelve South debuts smaller Valet tray with 25W MagSafe charging",
-      "link": "https://9to5mac.com/2026/07/28/twelve-south-debuts-smaller-valet-tray-with-25w-magsafe-charging/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T19:49:42.000Z",
-      "summary": "Earlier this year, Twelve South debuted the new Valet accessory, which it described as a “wireless charging station and personal essentials tray.” Now, Twelve South has expanded…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/TS_Valet_4.25in_TaupeEcru_LS2_WebRes.jpeg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "0191a1b9",
-      "title": "AppleCare+ Changes Introduced in Canada",
-      "link": "https://www.macrumors.com/2026/07/28/applecare-changes-in-canada/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T19:33:17.000Z",
-      "summary": "As noted by MobileSyrup , monthly and annual AppleCare+ subscriptions are now available for a wider range of products in Canada, including the iPhone, iPad, Mac, Apple Watch,…",
-      "image": "https://images.macrumors.com/article-new/2026/07/AppleCare-Bright-Red.jpg"
-    },
-    {
-      "id": "b623ea60",
-      "title": "There's still time to grab AirPods 4 for $99, AirPods Pro 3 for $199 at Amazon",
-      "link": "https://appleinsider.com/articles/26/07/28/theres-still-time-to-grab-airpods-4-for-99-airpods-pro-3-for-199-at-amazon?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T19:00:26.000Z",
-      "summary": "Month-end Apple deals are in full effect at Amazon, with AirPods 4, AirPods Pro 3, and AirPods Max 2 discounted by up to $100. Grab AirPods for as low as $99 at Amazon today -…",
-      "image": "https://media.appleinsider.com/gallery/68395-144144-airpods-4-earbuds-sale-xl.jpg"
-    },
-    {
-      "id": "dc89df4c",
-      "title": "Here’s everything new for Apple Wallet in iOS 27",
-      "link": "https://9to5mac.com/2026/07/28/heres-everything-new-for-apple-wallet-in-ios-27/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T18:58:29.000Z",
-      "summary": "iOS 27 will launch this fall for all users, here’s what’s new for the Apple Wallet app in the next major iPhone update.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-wallet-ios-27-blue.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "32507bf6",
-      "title": "iOS 27 includes smarter Find My location sharing for Apple Watch users",
-      "link": "https://9to5mac.com/2026/07/28/ios-27-smarter-find-my-location-sharing-apple-watch/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T18:53:02.000Z",
-      "summary": "The Find My app is used by millions of people to find their misplaced devices in a pinch, and millions more use it to share their current location with close friends and family.…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/find-my-27.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "e29c7b8b",
-      "title": "Man credits Apple Watch with saving his life after collapsing at home",
-      "link": "https://9to5mac.com/2026/07/28/man-credits-apple-watch-with-saving-his-life-after-collapsing-at-home/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T18:49:59.000Z",
-      "summary": "A Cincinnati, Ohio man is crediting his Apple Watch with saving his life. As reported by local news outlet WKRC , Mohammad Islam says his Apple Watch’s fall detection feature…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-watch-fall-detection.jpeg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "1ce35304",
-      "title": "Apple won’t turn on any ‘restricted mode’ for missed lease payments",
-      "link": "https://www.theverge.com/tech/972063/apple-upgrade-program-no-restricted-mode",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-28T18:43:57.000Z",
-      "summary": "Apple says it won't limit the capabilities of devices leased through its new Upgrade program if you miss a payment. In an emailed statement to The Verge, Apple spokesperson Brian…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/DSC02947_processed.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "b72dc9a5",
-      "title": "Tim Cook, John Ternus talk Apple CEO transition and more in new interview",
-      "link": "https://9to5mac.com/2026/07/28/tim-cook-john-ternus-talk-apple-ceo-transition-and-more-in-new-interview/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T18:38:49.000Z",
-      "summary": "Apple’s current CEO Tim Cook and incoming CEO John Ternus were interviewed by Deadline about the executive transition, Apple TV, and more. Here’s what they said.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/tim-cook-john-ternus.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "38823a4b",
-      "title": "What Wall Street expects from Apple's Q3 2026 earnings on July 30",
-      "link": "https://appleinsider.com/articles/26/07/27/what-wall-street-expects-from-apples-q3-2026-earnings-on-july-30?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T17:23:26.000Z",
-      "summary": "Apple will report its third-quarter financial results on July 30. Here's what happened in the quarter, and what analysts believe will be the highlights of Tim Cook's last earnings…",
-      "image": "https://photos5.appleinsider.com/gallery/68158-143672-66754-139985-IMG_2928-xl-xl.jpg"
-    },
-    {
-      "id": "f93d085a",
-      "title": "Apple Shares 'Ted Lasso' Season 4 Trailer",
-      "link": "https://www.macrumors.com/2026/07/28/ted-lasso-season-four-trailer/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T17:20:11.000Z",
-      "summary": "Apple today shared the full-length trailer for season four of its hit series Ted Lasso , ahead of the season premiere on Wednesday, August 5. Following the premiere, one new…",
-      "image": "https://images.macrumors.com/article-new/2026/01/Ted-Lasso-16x9.jpg"
-    },
-    {
-      "id": "b65a5d89",
-      "title": "9to5Mac Daily: July 28, 2026 – Apple Upgrade is here",
-      "link": "https://9to5mac.com/2026/07/28/daily-july-28-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T17:17:58.000Z",
-      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "2a68e374",
-      "title": "Apple Announces 'Silo' Season 4 is Coming Summer 2027",
-      "link": "https://www.macrumors.com/2026/07/28/apple-tv-silo-season-4-release-date/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T17:15:18.000Z",
-      "summary": "Apple recently announced that its hit sci-fi series Silo will be returning for a fourth and final season in \"summer 2027.\" Silo follows the lives of 10,000 people living in an…",
-      "image": "https://images.macrumors.com/article-new/2026/04/Apple-TV-Silo.jpg"
-    },
-    {
-      "id": "285902d8",
-      "title": "Apple Upgrade: Here’s the monthly subscription cost for every product",
-      "link": "https://9to5mac.com/2026/07/28/apple-upgrade-heres-the-monthly-subscription-cost-for-every-product/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T17:11:33.000Z",
-      "summary": "Apple Upgrade is a new leasing program announced today that enables you to get Apple products via a low-cost monthly subscription. Here’s what every eligible product costs with…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-upgrade-iphone.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "ed96ff78",
-      "title": "All-New Apple Home Hub Reportedly Launching as Soon as October",
-      "link": "https://www.macrumors.com/2026/07/28/apple-home-hub-as-soon-as-october/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T17:06:24.000Z",
-      "summary": "Apple plans to release an all-new smart home hub at some point between October and early next year, according to Bloomberg 's Mark Gurman . Apple Home Hub (Concept) Siri AI is…",
-      "image": "https://images.macrumors.com/article-new/2025/08/Home-Hub-Command-Center-with-Dome-Base-Feature.jpg"
-    },
-    {
-      "id": "f0b45fe5",
-      "title": "Got a lot of Apple hardware? Here's how an Apple Ring can bind them all",
-      "link": "https://appleinsider.com/articles/26/07/28/got-a-lot-of-apple-hardware-heres-how-an-apple-ring-can-bind-them-all?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T17:00:52.000Z",
-      "summary": "Apple has had countless patents granted over the smart ring technology it still won't tell anyone about, but a new one shows just how an Apple Ring might control all of your…",
-      "image": "https://media.appleinsider.com/gallery/68393-144131-000-lede-Apple-Ring-xl.jpg"
-    },
-    {
-      "id": "f7c1a3c6",
-      "title": "Ahead of earnings, Goldman Sachs hikes AAPL target to $370",
-      "link": "https://appleinsider.com/articles/26/07/28/ahead-of-earnings-goldman-sachs-hikes-aapl-target-to-370?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T16:25:32.000Z",
-      "summary": "Goldman Sachs has increased its AAPL price target to $370, with the firm expecting good third-quarter results, and a faithful audience keeping purchase volumes up even after…",
-      "image": "https://media.appleinsider.com/gallery/68374-144130-65499-137063-64957-135472-64572-134509-Apple-Stock-xl-xl-xl-xl.jpg"
-    },
-    {
-      "id": "574de720",
-      "title": "Amazon slashes $500 off 14-inch M5 Pro MacBook Pro with 2TB SSD",
-      "link": "https://appleinsider.com/articles/26/07/28/amazon-slashes-500-off-14-inch-m5-pro-macbook-pro-with-2tb-ssd?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T16:00:22.000Z",
-      "summary": "Amazon's $500 discount on Apple's latest 14-inch MacBook Pro with an upgrade to 2TB of storage brings the laptop down to $2,499. Save $500 on Apple's 14-inch MacBook Pro with 2TB…",
-      "image": "https://media.appleinsider.com/gallery/68392-144126-macbook-pro-2tb-500-off-xl.jpg"
-    },
-    {
-      "id": "89f8ad35",
-      "title": "iPhone 18 Pro could be a no-brainer upgrade for lots of users",
-      "link": "https://9to5mac.com/2026/07/28/iphone-18-pro-could-be-a-no-brainer-upgrade-for-lots-of-users/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T15:58:12.000Z",
-      "summary": "iPhone 18 Pro is coming soon , and there are several reasons why it could prove an especially popular upgrade choice this year.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iphone-18-pro-black-mockup.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "1f4f7b93",
-      "title": "Apple Upgrade: What you're going to pay per month for iPhone, Mac, or iPad",
-      "link": "https://appleinsider.com/articles/26/07/28/apple-upgrade-what-youre-going-to-pay-per-month-for-iphone-mac-or-ipad?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T15:45:07.000Z",
-      "summary": "The Apple Upgrade program is here, giving consumers ways to lease even more products. Here's how much you'll pay to lease your hardware, and what happens when the lease term has…",
-      "image": "https://media.appleinsider.com/gallery/68391-144127-iPhone-17-wall-xl.jpg"
-    },
-    {
-      "id": "41060f75",
-      "title": "Your iPhone could stop you getting into the wrong Uber ever again",
-      "link": "https://appleinsider.com/articles/23/08/08/apple-wants-to-use-ar-to-guide-you-to-your-ride-sharing-apple-car?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T15:40:47.000Z",
-      "summary": "A newly-granted Apple patent proposes using iPhone AR to identify an oncoming vehicle, to be certain that it's the ride you booked. Detail from the patent showing how an iPhone…",
-      "image": "https://media.appleinsider.com/gallery/55791-144129-000-lead-Patent-xl.jpg"
-    },
-    {
-      "id": "ba0fdee3",
-      "title": "Deals: 24GB M5 MacBook Air $200 off, MacBook Pro $500 off, AirTag 2, AirPods, Beats cable $18, more",
-      "link": "https://9to5mac.com/2026/07/28/deals-macbook-air-airtag-2-airpods-beats-cable/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T15:26:11.000Z",
-      "summary": "Alongside ongoing discounts on AirPods Pro 3 at $50 off, AirPods Max 2 at $100 off, and AirTag 2 still at all-time lows , today’s 9to5Toys Lunch Break is headlined by the most…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-MacBook-Air-iPhone-17-Pro-AirPods.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "526dd852",
-      "title": "Indie App Sales Event Begins Today with Over 200 Apps",
-      "link": "https://www.macstories.net/news/indie-app-sales-event-begins-today-with-over-200-apps/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-28T15:12:35.000Z",
-      "summary": "Matt Corey, the maker of Bills to Budget and Signals, has organized indie developers for a big sale that runs from July 28 - 30. The sale includes over 200 apps that will be…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/07/27/app-banner-event-1785196168983-5792598484.jpg"
-    },
-    {
-      "id": "f414db84",
-      "title": "Best Back to School Accessory Deals on Anker, Sony, Samsung and More This Week",
-      "link": "https://www.macrumors.com/2026/07/28/sonos-sony-anker-more-school-deals/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T14:58:01.000Z",
-      "summary": "There's a big accessory sale happening on Amazon this week, with the year's best prices on Anker chargers, Samsung monitors, Sonos audio products, and much more. Note: MacRumors…",
-      "image": "https://images.macrumors.com/article-new/2026/07/samsung-sony-amazon-sale.jpeg"
-    },
-    {
-      "id": "61b80172",
-      "title": "5 Reasons to Buy a MacBook Air Now Instead of Waiting",
-      "link": "https://www.macrumors.com/2026/07/28/5-reasons-buy-macbook-air-now-no-waiting/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T14:53:23.000Z",
-      "summary": "Apple's next MacBook Air is several months away, but if you've been holding off on an upgrade, here's why now could actually be a good time to buy. The Current Air is the Best…",
-      "image": "https://images.macrumors.com/article-new/2026/03/m5-macbook-air-orange.jpeg"
-    },
-    {
-      "id": "f78aa434",
-      "title": "'Apple Upgrade' Pricing: You Can Lease an iPhone Starting at $18/Month",
-      "link": "https://www.macrumors.com/2026/07/28/apple-upgrade-program-pricing/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T14:41:02.000Z",
-      "summary": "As expected, the Apple Upgrade program launched today , allowing customers in the U.S. to lease most iPhone, Apple Watch, iPad, and Mac models. While the program is offered by…",
-      "image": "https://images.macrumors.com/article-new/2026/07/Apple-Upgrade-iPhone.jpg"
-    },
-    {
-      "id": "b398fcce",
-      "title": "Apple's smart home hardware refresh draws closer with Siri AI smarts",
-      "link": "https://appleinsider.com/articles/26/07/28/apples-smart-home-hardware-refresh-draws-closer-with-siri-ai-smarts?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T14:40:12.000Z",
-      "summary": "Apple is going to make a bigger play for the smart home using Siri AI, with updates to the HomePod mini , a new Apple TV, and the rumored Home Hub arriving between October and…",
-      "image": "https://media.appleinsider.com/gallery/68388-144125-66960-140625-66929-140539-Apple-HomeHub-xl-xl-xl.jpg"
-    },
-    {
-      "id": "d5505b7d",
-      "title": "Apple’s reported ‘HomePad’ may launch as early as October",
-      "link": "https://www.theverge.com/tech/971790/apple-homepad-rumor-launch",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-28T14:39:42.000Z",
-      "summary": "For years, we've heard rumors of a new home hub device from Apple, meant to take on smart home devices like the Google Nest Hub Mini and Amazon's Echo Show. Besides \"HomePod with…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/22025415/dseifert_201107_4281_0004.0.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "33dea322",
-      "title": "iOS 27’s Siri gets one thing very right that other AI assistants get wrong",
-      "link": "https://9to5mac.com/2026/07/28/ios-27s-siri-gets-one-thing-very-right-that-other-ai-assistants-get-wrong/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T14:24:24.000Z",
-      "summary": "Siri AI is a major upgrade to Apple’s assistant that’s coming in iOS 27. And there’s one standout area I’ve noticed where it differs greatly from other AI assistants—for the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/siri-ai.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "12e0d319",
-      "title": "Here’s how to avoid being trapped in never-ending Apple Upgrade leases",
-      "link": "https://9to5mac.com/2026/07/28/heres-how-to-avoid-being-trapped-in-never-ending-apple-upgrade-leases/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T14:21:20.000Z",
-      "summary": "Apple today officially announced its Apple Upgrade leasing program , and it works in the way we expected. While it does make products more affordable on a monthly basis, it leaves…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Heres-how-to-avoid-being-trapped-in-never-ending-Apple-Upgrade-leases.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "af79d7b8",
-      "title": "Back to Richmond in season 4, 'Ted Lasso' changes the playbook",
-      "link": "https://appleinsider.com/articles/26/07/28/back-to-richmond-in-season-4-ted-lasso-changes-the-playbook?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T14:16:56.000Z",
-      "summary": "Apple's first full \"Ted Lasso\" season 4 trailer brings Jason Sudeikis back to Richmond with a new team and a clear reason to reopen the show's story. Early image of the new season…",
-      "image": "https://photos5.appleinsider.com/gallery/67483-142054-s4-xl.jpg"
-    },
-    {
-      "id": "8cde2ff7",
-      "title": "Apple Upgrade Trades Ownership for Lower Monthly Payments",
-      "link": "https://www.macstories.net/news/apple-upgrade-trades-ownership-for-lower-monthly-payments/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-28T14:16:40.000Z",
-      "summary": "Apple has revealed its new hardware leasing program called Apple Upgrade, which is being offered in collaboration with Klarna. This is Apple’s pitch: Introducing Apple Upgrade, a…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/07/28/apple-upgrade-hero-1785246176966-e51904e722.jpg"
-    },
-    {
-      "id": "7633c8d8",
-      "title": "New Apple TV and HomePod Mini Reportedly 'Nearly Ready to Launch'",
-      "link": "https://www.macrumors.com/2026/07/28/new-apple-tv-homepod-mini-nearly-ready/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T14:14:45.000Z",
-      "summary": "New models of the Apple TV and HomePod mini are \"nearly ready to launch,\" with Apple planning to release them \"this fall,\" according to Bloomberg 's Mark Gurman . In other words,…",
-      "image": "https://images.macrumors.com/article-new/2026/06/homepod-apple-tv-nearly-ready.jpg"
-    },
-    {
-      "id": "87f948dd",
-      "title": "Privacy is dead, personal AI prompts indexed by Google search",
-      "link": "https://appleinsider.com/articles/26/07/28/privacy-is-dead-personal-ai-prompts-indexed-by-google-search?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T14:00:23.000Z",
-      "summary": "Hundreds of private, personal, and sometimes slightly disturbing prompts and chats made with Claude.AI surfaced online through nothing more than a search. Maybe it was a novelist…",
-      "image": "https://media.appleinsider.com/gallery/68387-144123-000-lead-Claude-xl.jpg"
-    },
-    {
-      "id": "d633bb4c",
-      "title": "WhatsApp Web rolls out audio and video calling, with call transfer support",
-      "link": "https://9to5mac.com/2026/07/28/whatsapp-web-rolls-out-audio-and-video-calling-with-call-transfer-support/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T14:00:00.000Z",
-      "summary": "WhatsApp is rolling out one-on-one and group voice and video calls on the web today, along with support for transferring calls between devices and more. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/whatsapp-web-calls.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "6acce082",
-      "title": "Granola meeting notepad comes to watchOS as Apple Watch becomes an AI device",
-      "link": "https://9to5mac.com/2026/07/28/granola-meeting-notepad-comes-to-watchos-as-apple-watch-becomes-an-ai-device/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T14:00:00.000Z",
-      "summary": "Granola, the AI-powered meeting notepad best known for its Mac app, is expanding to Apple Watch today.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Granola-Apple-Watch.webp?w=1600"
-    },
-    {
-      "id": "ca335d03",
-      "title": "Strong iPhone demand turns Apple's rebound into a $5 trillion run",
-      "link": "https://appleinsider.com/articles/26/07/28/strong-iphone-demand-turns-apples-rebound-into-a-5-trillion-run?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T13:53:06.000Z",
-      "summary": "At the start of trading on Tuesday, Apple touched $5 trillion in valuation, extending a historic run built on record iPhone revenue, a rebound in China, and continued growth from…",
-      "image": "https://media.appleinsider.com/gallery/68379-144097-Stocks-xl.jpg"
-    },
-    {
-      "id": "aa0b9ad6",
-      "title": "Apple has three new smart home products ‘nearly ready to launch,’ per report",
-      "link": "https://9to5mac.com/2026/07/28/apple-has-three-new-smart-home-products-nearly-ready-to-launch-per-report/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T13:46:59.000Z",
-      "summary": "Apple is about to kick off its major new smart home push. A new report from Bloomberg today reveals that Apple has three new smart home devices that are “nearly ready to launch.”…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/homepod-siri-ai-1.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "980259ea",
-      "title": "Apple Just Became a $5 Trillion Company",
-      "link": "https://www.macrumors.com/2026/07/28/apple-just-became-a-5-trillion-company/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-28T13:39:52.000Z",
-      "summary": "At least briefly, Apple became a $5 trillion company today based on market capitalization, which is the total value of all of the company's outstanding shares. Apple's stock…",
-      "image": "https://images.macrumors.com/article-new/2025/04/Stocks-App-Icon-and-Apple-Logo-Feature.jpg"
-    },
-    {
-      "id": "46d487cf",
-      "title": "Beyond Preview: How UPDF brings PDF editing, conversion, OCR, and AI to Mac and iPad",
-      "link": "https://appleinsider.com/articles/26/07/28/beyond-preview-how-updf-brings-pdf-editing-conversion-ocr-and-ai-to-mac-and-ipad?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-28T13:39:37.000Z",
-      "summary": "While Preview can do a lot to a PDF, sometimes you need more. UPDF can help with more advanced PDF capabilities, as a cheaper alternative to Adobe Acrobat. UPDF 2.5 is a…",
-      "image": "https://media.appleinsider.com/gallery/68371-144098-cover-image-appleinsider-updf-xl.jpg"
-    },
-    {
-      "id": "530f0391",
-      "title": "Apple just hit $5 trillion market cap for first time",
-      "link": "https://9to5mac.com/2026/07/28/apple-just-hit-5-trillion-market-cap-for-first-time/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T13:37:45.000Z",
-      "summary": "Apple crossed a market capitalization of $5 trillion for the first time ever during intraday trading on Tuesday. Apple is only the second publicly traded company ever to cross the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/tim-cook-apple-park-rainbow-night-2.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "ee078e25",
-      "title": "Apple unveils Ted Lasso season 4 trailer, series returns next week",
-      "link": "https://9to5mac.com/2026/07/28/apple-unveils-ted-lasso-season-4-trailer-series-returns-next-week/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T13:35:40.000Z",
-      "summary": "Ted Lasso’s long-awaited return is almost here, with season 4 premiering next week on Apple TV ( watch here ). And Apple has just unveiled the official trailer.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ted-lasso-s4-key-art-3.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "56c0a9df",
-      "title": "Indie App Sales promotion now live, featuring hundreds of exclusive discounts",
-      "link": "https://9to5mac.com/2026/07/28/indie-app-sales-promotion-now-live-featuring-hundreds-of-exclusive-discounts/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T13:34:30.000Z",
-      "summary": "The Indie App Sales promotion is back, with exclusive discounts for hundreds of iOS, iPadOS, visionOS, macOS, and watchOS apps running through July 30. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/indie-apps-july-26.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "1e52b160",
-      "title": "Apple TV may be losing $1B a year but its future is safe under Ternus",
-      "link": "https://9to5mac.com/2026/07/28/apple-tv-may-be-losing-1b-a-year-but-its-future-is-safe-under-ternus/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-28T13:06:20.000Z",
-      "summary": "Incoming Apple CEO John Ternus is likely to make a number of changes when he takes over in September, but it’s clear that the company’s loss-making Apple TV streaming service will…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-TV-may-be-losing-1B-a-year-but-its-future-is-safe-under-Ternus.jpg?quality=82&strip=all&w=1600"
     },
     {
       "id": "4eea22a9",
