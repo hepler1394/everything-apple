@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31T12:59:13.394Z",
+  "updated": "2026-08-01T12:04:26.525Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -13,6 +13,406 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "311494a1",
+      "title": "Another iPhone 17 Pro plummets from plane, and found intact",
+      "link": "https://appleinsider.com/articles/26/07/31/another-iphone-17-pro-plummets-from-plane-and-found-intact?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-01T11:42:51.000Z",
+      "summary": "A Canadian artist dropped her iPhone 17 Pro from a plane at 3,600 feet, then found it sitting face-up and virtually untouched in a canola field. Here's why this is more common…",
+      "image": "https://media.appleinsider.com/gallery/68427-144193-iPhone-17-Pro-cameras-xl.jpg"
+    },
+    {
+      "id": "8cb7a391",
+      "title": "iPad Air Could Finally Be Redesigned Next Year",
+      "link": "https://www.macrumors.com/2026/07/31/ipad-air-could-be-redesigned-next-year/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-01T01:00:11.000Z",
+      "summary": "The iPad Air has looked the same since 2020, making it the longest-running design in Apple's tablet lineup. There is a reasonable case that 2027 could be when that comes to an…",
+      "image": "https://images.macrumors.com/article-new/2025/03/M3-iPad-Air.jpg"
+    },
+    {
+      "id": "8e17677f",
+      "title": "9to5Mac Overtime 075: Thoughts on Apple Upgrade",
+      "link": "https://9to5mac.com/2026/07/31/9to5mac-overtime-075-thoughts-on-apple-upgrade/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T20:37:46.000Z",
+      "summary": "Fernando and Jeff discuss Apple Upgrade in depth, including Apple’s motivation, the major players involved, how it may affect the used and refurbished market, and how it might…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-Upgrade-9to5Mac-Overtime-075.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "f3f3b14d",
+      "title": "How Apple Changed Under Tim Cook: 15 Years in Numbers",
+      "link": "https://www.macrumors.com/2026/07/31/tim-cook-apple-15-years/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-31T20:29:26.000Z",
+      "summary": "Apple CEO Tim Cook participated in his final Apple earnings call yesterday, with incoming CEO John Ternus set to take over on September 1. With Cook's tenure coming to an end, we…",
+      "image": "https://images.macrumors.com/article-new/2026/03/Tim-Cook-Apple-Park.jpeg"
+    },
+    {
+      "id": "02dc0738",
+      "title": "Apple TV drops full San Diego Comic-Con panels for Silo, Dark Matter, Widow’s Bay, more",
+      "link": "https://9to5mac.com/2026/07/31/apple-tv-drops-full-san-diego-comic-con-panels-for-silo-dark-matter-widows-bay-more/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T20:04:18.000Z",
+      "summary": "Apple TV’s YouTube channel has shared the full panels for Matchbox The Movie , Widow’s Bay , Dark Matter, Mayday , and Silo , from its first-ever Hall H takeover at San Diego…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/sdcc-panels.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "af782999",
+      "title": "Podcast Rewind: Open Minis, the RG SP Announcement, Too Much Wi-Fi, and the MessagePad with D. Griffin Jones",
+      "link": "https://www.macstories.net/news/podcast-rewind-open-minis-the-rg-sp-announcement-too-much-wi-fi-and-the-messagepad-with-d-griffin-jones/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-31T19:57:38.000Z",
+      "summary": "Enjoy the latest episodes from MacStories’ family of podcasts: AppStories This week, John and Federico discuss the changing face of the AI-fueled App Store and questionable…",
+      "image": "https://cdn.macstories.net/img_1734-2-1774559453738.png"
+    },
+    {
+      "id": "061a9a26",
+      "title": "Nearly half of smartphone revenue goes to Apple despite 23% shipment share",
+      "link": "https://appleinsider.com/articles/26/07/31/nearly-half-of-smartphone-revenue-goes-to-apple-despite-23-shipment-share?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-31T19:51:54.000Z",
+      "summary": "Apple captured 49% of global smartphone revenue in the second quarter despite accounting for only 23% of shipments, showing how much more money the iPhone generates per device…",
+      "image": "https://media.appleinsider.com/gallery/68428-144195-iPhone-17-Pro-Max-blue-table-facedown-xl.jpg"
+    },
+    {
+      "id": "21220ddc",
+      "title": "Apple’s new AirTags are back down to their best price",
+      "link": "https://www.theverge.com/gadgets/973973/apple-airtag-second-generation-deal-sale",
+      "source": "The Verge",
+      "category": "news",
+      "date": "2026-07-31T19:35:45.000Z",
+      "summary": "We spotted a great deal on Tile trackers earlier this week that’s still live, but if you’re an iPhone owner, we ultimately recommend Apple’s latest AirTag. Right now, you can pick…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/268280_AirTags_2_AKrales_0003.jpg?w=300"
+    },
+    {
+      "id": "c41faf6d",
+      "title": "Inside Beats lab: Outside Apple, because AirPods can't do everything well",
+      "link": "https://appleinsider.com/articles/26/07/31/inside-beats-lab-outside-apple-because-airpods-cant-do-everything-well?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-31T18:36:06.000Z",
+      "summary": "Apple has spent 12 years strengthening Beats without folding it into AirPods, preserving a separate brand that can reach Android users, compete at lower prices, and sell products…",
+      "image": "https://media.appleinsider.com/gallery/68426-144192-Beats-Solo3-xl.jpg"
+    },
+    {
+      "id": "1c0ccbe9",
+      "title": "Report: Apple hit a record 49% share of global smartphone revenue for Q2",
+      "link": "https://9to5mac.com/2026/07/31/report-apple-hit-a-record-49-share-of-global-smartphone-revenue-for-q2/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T18:19:52.000Z",
+      "summary": "According to Counterpoint Research , Apple captured nearly half of global smartphone revenue during the second quarter, despite a market-wide decline in shipments. Here are the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/iphone-17-pro-blue-rear-hold.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "aeb044c2",
+      "title": "Shazam Releases Exclusive Ariana Grande Messages Sticker Pack",
+      "link": "https://www.macstories.net/news/shazam-releases-exclusive-ariana-grande-messages-sticker-pack/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-31T18:05:47.000Z",
+      "summary": "Long-time readers may recall that I used to regularly cover Messages sticker packs. As sticker popularity “settled,” I retired from that beat, but I thought I should come back for…",
+      "image": "https://cdn.macstories.net/images/uploads/2026/07/31/shortcut-upload-1785519773662-ba902b1614.png"
+    },
+    {
+      "id": "d9881db4",
+      "title": "iPhone 17 Pro found ‘pristine’ after surviving fall from airplane",
+      "link": "https://9to5mac.com/2026/07/31/iphone-17-pro-found-pristine-after-surviving-fall-from-airplane/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T18:04:13.000Z",
+      "summary": "When iPhone 17 Pro launched, Apple touted the device’s improved durability. One user just put that claim to the test—unintentionally—and came away shocked after her iPhone 17 Pro…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/iphone-17-pro-cosmic-orange-fernando.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "c6915a37",
+      "title": "Following Apple’s Q4 2026 guidance, JP Morgan cuts its target for the company’s stock [U]",
+      "link": "https://9to5mac.com/2026/07/31/following-apples-q4-2026-guidance-jp-morgan-cuts-its-target-for-the-companys-stock/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T17:30:36.000Z",
+      "summary": "A few weeks ago, JP Morgan set a $345 price target for Apple’s stock through December 2027. Following yesterday’s quarterly results , the investment bank has slightly lowered its…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/01/EU-antitrust-head-is-meeting-Tim-Cook.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "f788ec24",
+      "title": "Unimpressed Goldman Sachs trims AAPL target by $10 after earnings call",
+      "link": "https://appleinsider.com/articles/26/07/31/unimpressed-goldman-sachs-trims-aapl-target-by-10-after-earnings-call?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-31T17:16:11.000Z",
+      "summary": "Despite raising its Apple price target just days before earnings, investment bank Goldman Sachs has recalibrated its forecasts and while still mostly positive, has now pulled the…",
+      "image": "https://media.appleinsider.com/gallery/68374-144130-65499-137063-64957-135472-64572-134509-Apple-Stock-xl-xl-xl-xl.jpg"
+    },
+    {
+      "id": "6e2a8cbb",
+      "title": "Ted Lasso returns next week with two major changes in season 4",
+      "link": "https://9to5mac.com/2026/07/31/ted-lasso-returns-next-week-with-two-major-changes-in-season-4/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T17:15:45.000Z",
+      "summary": "Ted Lasso is almost back ( watch on Apple TV ), with season 4 premiering this Tuesday, August 4 at 9:00 p.m. ET / 6:00 p.m. PT. Here are two major changes to expect from the new…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ted-lasso-win-blue.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "da6a96dd",
+      "title": "MacStories Weekly: Issue 524",
+      "link": "https://www.macstories.net/club/macstories-weekly-issue-524/",
+      "source": "MacStories",
+      "category": "news",
+      "date": "2026-07-31T17:11:32.000Z",
+      "summary": "",
+      "image": ""
+    },
+    {
+      "id": "2f46dd65",
+      "title": "iPhone Air 2 to feature smaller Dynamic Island, more: report",
+      "link": "https://9to5mac.com/2026/07/31/iphone-air-2-to-feature-smaller-dynamic-island-more-report/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T17:08:30.000Z",
+      "summary": "Apple is expected to release the iPhone Air 2 in early 2027 , with several key improvements over the first model. In a new investor note seen today by 9to5Mac , analyst Jeff Pu…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/iphone-air-sky-blue.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "6d81ef11",
+      "title": "Spotify’s new ‘User Notes’ lets you add personal captions to playlist tracks",
+      "link": "https://9to5mac.com/2026/07/31/spotifys-new-user-notes-lets-you-add-personal-captions-to-playlist-tracks/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T17:02:47.000Z",
+      "summary": "Spotify is rolling out a new feature that lets users add short notes to individual tracks on their playlists. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/Spotify.webp?w=1600"
+    },
+    {
+      "id": "a074bcb7",
+      "title": "2027 iPhone 18 rumors: Smaller Dynamic Island, 12GB or 9GB RAM, 2nm A20 chip",
+      "link": "https://appleinsider.com/articles/26/07/31/2027-iphone-18-rumors-smaller-dynamic-island-12gb-or-9gb-ram-2nm-a20-chip?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-31T16:53:46.000Z",
+      "summary": "Apple's base model iPhone 18 is probably not going to arrive until spring 2027, but the rumor mill already has a lot to say about the device. Here's what you need to know. The…",
+      "image": "https://media.appleinsider.com/gallery/68394-144151-65152-136111-iPhone-17-Side-xl-xl.jpg"
+    },
+    {
+      "id": "321acc66",
+      "title": "Services slowdown pushes Morgan Stanley's AAPL target down to $360",
+      "link": "https://appleinsider.com/articles/26/07/31/services-slowdown-pushes-morgan-stanleys-aapl-target-down-to-360?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-31T16:48:42.000Z",
+      "summary": "Morgan Stanley has pared its Apple price target from $364 to $360 after slowing Services growth and higher memory costs weakened its earnings outlook, despite strong demand for…",
+      "image": "https://media.appleinsider.com/gallery/68424-144186-Ternus-Cook-walk-xl.jpg"
+    },
+    {
+      "id": "1f0a98c1",
+      "title": "9to5Mac Daily: July 31, 2026 – iOS 27 features, Apple lawsuit",
+      "link": "https://9to5mac.com/2026/07/31/daily-july-31-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T16:13:51.000Z",
+      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "644b6505",
+      "title": "The MacRumors Show: Revisiting iOS 27 Ahead of iPhone 18 Pro",
+      "link": "https://www.macrumors.com/2026/07/31/the-macrumors-show-revisiting-ios-27/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-31T16:10:59.000Z",
+      "summary": "After over a month of testing iOS 27 , on this week's episode of The MacRumors Show we circle back to the beta and talk through our experiences with Siri AI, Liquid Glass…",
+      "image": ""
+    },
+    {
+      "id": "4cc7ef66",
+      "title": "Set a Custom EQ for Your AirPods in iOS 27",
+      "link": "https://www.macrumors.com/how-to/set-custom-eq-airpods-ios/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-31T16:05:28.000Z",
+      "summary": "Sony, Bose, and Sennheiser owners have been able to adjust the audio frequency spectrum of their headphones for years, whereas AirPods owners have had to make do with Apple's…",
+      "image": "https://images.macrumors.com/article-new/2026/06/airpods-eq.jpg"
+    },
+    {
+      "id": "cf17dc17",
+      "title": "iPhone 18e Rumored to Feature Increased RAM",
+      "link": "https://www.macrumors.com/2026/07/31/iphone-18e-increased-ram-rumor/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-31T15:55:27.000Z",
+      "summary": "The lower-end iPhone 18e that Apple is expected to release by March 2027 will be equipped with 9GB of RAM, up from 8GB in the iPhone 17e, according to analyst Jeff Pu. 9GB of RAM…",
+      "image": "https://images.macrumors.com/article-new/2026/03/iphone-17e-notch.jpg"
+    },
+    {
+      "id": "3dd7415f",
+      "title": "First Apple Silicon-native CrossOver build in testing as Rosetta's end nears",
+      "link": "https://appleinsider.com/articles/26/07/31/first-apple-silicon-native-crossover-build-in-testing-as-rosettas-end-nears?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-31T15:44:26.000Z",
+      "summary": "The writing is on the wall, so CodeWeavers is removing its reliance on Rosetta 2. A very early test version of Apple Silicon-native Crossover is now available for testing.…",
+      "image": "https://photos5.appleinsider.com/gallery/67931-143209-IMG_4654-xl.jpg"
+    },
+    {
+      "id": "d6c5de5a",
+      "title": "Shazam launches its first ever sticker pack to celebrate Ariana Grande’s new album",
+      "link": "https://9to5mac.com/2026/07/31/shazam-ariana-grande-sticker-pack/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T15:43:57.000Z",
+      "summary": "The Apple-owned Shazam app today announced its first ever Artist Sticker Pack, available for free as part of the latest update to the Shazam app. The sticker pack is celebrating…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/shazam-sticker-page.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "88b416d5",
+      "title": "Apple has five products launching this fall that we’ve waited a long time for",
+      "link": "https://9to5mac.com/2026/07/31/apple-has-five-products-launching-this-fall-that-weve-waited-a-long-time-for/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T15:34:52.000Z",
+      "summary": "Apple has a lot of new products launching this fall, including five that have been many years in the making. Here’s what’s coming.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/07/apple-tim-cook-iphone-15-launch.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "e4f99e57",
+      "title": "Deals: M5 MacBook Air $240 off straight from Apple, AirPods Pro 3, AirTag 2, transparent metal power bank, more",
+      "link": "https://9to5mac.com/2026/07/31/deals-m5-macbook-air-airpods-pro-3-airtag-2-power-bank/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T15:30:33.000Z",
+      "summary": "The July AirPods Pro 3 deal at $50 off, AirPods Max 2 at $100 off , and the ongoing all-time low on AirTag 2 are still rolling, but today’s 9to5Toys Lunch Break is headlined…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-MacBook-Air-M5-AirTag-charger-AirPods.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "0ac6521b",
+      "title": "‘Antizuck’ iOS app that claims to detect nearby smart glasses tops App Store chart",
+      "link": "https://9to5mac.com/2026/07/31/antizuck-ios-app-that-claims-to-detect-nearby-smart-glasses-tops-app-store-chart/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T15:28:16.000Z",
+      "summary": "Vibes around Meta’s AI glasses are off lately. So much so that one of the top three paid iPhone apps today is dedicated to detecting when someone nearby may be using smart glasses.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/05/ray-ban-glasses-meta.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "45bcc5a1",
+      "title": "iPhone Air 2 Expected to Launch Early Next Year With Five New Features",
+      "link": "https://www.macrumors.com/2026/07/31/iphone-air-2-five-new-features-rumored/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-31T15:25:35.000Z",
+      "summary": "Apple plans to release a second-generation iPhone Air in the first quarter of 2027, according to Jeff Pu, an investment analyst who covers Apple. In a research note with GF…",
+      "image": "https://images.macrumors.com/article-new/2025/09/iphone-air-all-colors.jpg"
+    },
+    {
+      "id": "b356a191",
+      "title": "Apple's M4 Pro Mac mini is back in stock & $30 off, but supply is limited",
+      "link": "https://appleinsider.com/articles/26/07/31/apples-m4-pro-mac-mini-is-back-in-stock-30-off-but-supply-is-limited?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-31T14:58:34.000Z",
+      "summary": "A top seller that's priced at a 30-day low, Amazon's M4 Pro Mac mini deal is both on sale and available to ship in 1-2 days. Apple's M4 Pro Mac mini is available at Amazon a month…",
+      "image": "https://media.appleinsider.com/gallery/68421-144185-mac-mini-m4-deal-xl.jpg"
+    },
+    {
+      "id": "42ce896d",
+      "title": "iOS 27 adds new reason to upgrade your iPhone screen size",
+      "link": "https://9to5mac.com/2026/07/31/ios-27-adds-new-reason-to-upgrade-your-iphone-screen-size/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T14:42:48.000Z",
+      "summary": "iOS 27 includes lots of hints that the iPhone Ultra is coming, and one such hint—expanded landscape support—offers a new reason to upgrade your iPhone screen size, even if you’re…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-27-music-landscape-iphone-17-pro-orange.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "f203d1dc",
+      "title": "iPhone leasing, the new China problem, & Apple's future on the AppleInsider Podcast",
+      "link": "https://appleinsider.com/articles/26/07/31/iphone-leasing-the-new-china-problem-apples-future-on-the-appleinsider-podcast?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-31T14:42:33.000Z",
+      "summary": "The Apple Upgrade program has been revealed, so it's time to discuss what leasing your Apple products actually means. Plus, your hosts discuss Apple's plan to combat the chip…",
+      "image": "https://media.appleinsider.com/gallery/68402-144184-Apple-Glass-smart-glasses-Vision-Pro-xl.jpg"
+    },
+    {
+      "id": "f4e46551",
+      "title": "How do you plan on buying your next iPhone? [Poll]",
+      "link": "https://9to5mac.com/2026/07/31/buy-your-next-iphone-poll/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T14:31:29.000Z",
+      "summary": "Apple made a big change to iPhone purchasing options this week. Not only did it launch the Apple Upgrade leasing program, but it also killed the iPhone Upgrade Program. With the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-upgrade-iphone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "04d370d3",
+      "title": "Best Back to School Apple Bargains: MacBook Pro, AirPods, Apple Watch, and AirTag 2",
+      "link": "https://www.macrumors.com/2026/07/31/best-apple-deals-of-the-week-7-31-26/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-31T14:10:09.000Z",
+      "summary": "Back to school deals kicked off this week, with Best Buy's annual sitewide event including some great discounts on Apple products like AirPods Max 2 and MacBook Pro. Below you'll…",
+      "image": "https://images.macrumors.com/article-new/2025/04/Best-Apple-Deals-Feature-Shelf-Green.jpg"
+    },
+    {
+      "id": "1a247b04",
+      "title": "iOS 27 gives Apple Mail my most wished for feature upgrade",
+      "link": "https://9to5mac.com/2026/07/31/ios-27-gives-apple-mail-my-most-wished-for-feature-upgrade/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T13:54:14.000Z",
+      "summary": "Apple’s Mail app in iOS 27 promises to offer the feature upgrade that’s been at the top of my wishlist for years: search that “just works.”",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-mail-app-icon-ios-27.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "423e1c3f",
+      "title": "iPhone 18 Pro may launch at $1,399 starting price, per report",
+      "link": "https://9to5mac.com/2026/07/31/iphone-18-pro-may-launch-at-1399-starting-price-per-report/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T13:49:02.000Z",
+      "summary": "iPhone 18 Pro is coming very soon , and it might cost much more than its predecessor, with a second report now predicting a starting price around $1,399.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/01/iphone-18-mockup-red.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "abe44e50",
+      "title": "Huge $300 iPhone 18 Pro price hike rumored as chip shortage bites",
+      "link": "https://appleinsider.com/articles/26/07/31/huge-300-iphone-18-pro-price-hike-rumored-as-chip-shortage-bites?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-07-31T13:38:18.000Z",
+      "summary": "Following price hikes across the rest of Apple's product lineup, one analyst believes that the upcoming iPhone 18 Pro could be hit with a massive $300 increase, a bump that might…",
+      "image": "https://photos5.appleinsider.com/gallery/67438-141939-iPhone-17-Pro-techwoven-case-xl.jpg"
+    },
+    {
+      "id": "56e2860d",
+      "title": "Apple stock opens down roughly 10% following mixed Q3 2026 results",
+      "link": "https://9to5mac.com/2026/07/31/apple-stock-opens-down-roughly-10-following-mixed-q3-2026-results/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-07-31T13:34:50.000Z",
+      "summary": "Wall Street is reacting poorly to Apple’s fiscal Q3 2026 results and its outlook for the September quarter. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/AAPL-stock-slides-but-is-it-a-reaction-to-AI-announcements.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "dec7f5da",
+      "title": "Shazam Updated With iMessage Stickers Inspired by Ariana Grande's New Album",
+      "link": "https://www.macrumors.com/2026/07/31/shazam-updated-with-imessage-stickers/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-07-31T13:15:47.000Z",
+      "summary": "Apple today updated the Shazam app with stickers, starting with an exclusive collection inspired by Ariana Grande's new \"petal\" album . To send stickers in the Messages app, tap…",
+      "image": "https://images.macrumors.com/article-new/2026/07/Shazam-Updated-With-iMessage-Stickers-is-locked-Joe-Rossignol-is-currently-editing-Shazam-Updated-With-iMessage-Stickers-Feature.jpg"
+    },
     {
       "id": "ee271fc5",
       "title": "iPhone 18 Pro Models Could Be Up to $300 More Expensive, Says Analyst",
@@ -212,406 +612,6 @@
       "date": "2026-07-30T22:26:36.000Z",
       "summary": "Apple CEO Tim Cook today confirmed that today's call was his last as CEO, with John Ternus set to become Apple's new CEO on September 1. Cook will transition to a new role as…",
       "image": "https://images.macrumors.com/article-new/2021/10/tim-cook-macbook-pro.jpeg"
-    },
-    {
-      "id": "0ed0a301",
-      "title": "Apple warns supply constraints will increase ‘significantly’ next quarter",
-      "link": "https://9to5mac.com/2026/07/30/apple-warns-supply-constraints-will-increase-significantly-next-quarter/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T22:19:59.000Z",
-      "summary": "During today’s earnings call discussing its Q3 2026 results , Apple said it is bracing for a tougher September quarter, with growing supply pressures affecting its most important…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/12/apple-logo-store.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "b7cb4268",
-      "title": "Apple Warns of Growing Supply Constraints for iPhone, iPad, and Mac",
-      "link": "https://www.macrumors.com/2026/07/30/apple-iphone-mac-ipad-supply-constraints/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T22:02:15.000Z",
-      "summary": "Apple is expecting supply constraints to have a much bigger impact on revenue during the September quarter, Apple CEO Tim Cook said today during Apple's earnings call for the…",
-      "image": "https://images.macrumors.com/article-new/2026/07/iPhone-18-Pro-and-Pro-Max-Feature.jpg"
-    },
-    {
-      "id": "b752fa57",
-      "title": "Ternus's MacBook Neo pushes Mac sales to unexpected Q3 heights",
-      "link": "https://appleinsider.com/articles/26/07/30/ternuss-macbook-neo-pushes-mac-sales-to-unexpected-q3-heights?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T21:42:28.000Z",
-      "summary": "Apple's Mac sales rose by more than 25% in the last quarter, compared to the same time period in 2025, solely on the back of the MacBook Neo that incoming CEO John Ternus…",
-      "image": "https://photos5.appleinsider.com/gallery/67586-142451-IMG_0968-xl.jpg"
-    },
-    {
-      "id": "c4ed797a",
-      "title": "Tim Cook says goodbye to analysts & shareholders on his final Apple earnings call",
-      "link": "https://appleinsider.com/articles/26/07/30/tim-cook-says-goodbye-to-analysts-shareholders-on-his-final-apple-earnings-call?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T21:40:14.000Z",
-      "summary": "Outgoing Apple CEO Tim Cook has presented his final earnings call, the quarterly financial phone meeting the company has with analysts, and just as at WWDC, he made a relatively…",
-      "image": "https://photos5.appleinsider.com/gallery/67861-143025-000-lead-Cook-WWDC-xl.jpg"
-    },
-    {
-      "id": "966a744a",
-      "title": "Tim Cook marks final earnings call as Apple CEO, confirms Ternus will take over calls",
-      "link": "https://9to5mac.com/2026/07/30/tim-cook-marks-final-earnings-call-as-apple-ceo-confirms-ternus-will-take-over-calls/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T21:39:59.000Z",
-      "summary": "During today’s call discussing Apple’s Q3 2026 results, CEO Tim Cook took a moment to mark his final earnings call at the helm of the company, and to confirm that incoming CEO…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/tim-cook-john-ternus.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "d711f09c",
-      "title": "Apple hits 1.5 billion subscription milestone, still falls short of Wall Street wants",
-      "link": "https://appleinsider.com/articles/26/07/30/apple-hits-15-billion-subscription-milestone-still-falls-short-of-wall-street-wants?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T21:32:30.000Z",
-      "summary": "Apple has reached 1.5 billion paid subscriptions across its platform, adding another milestone to an Apple Services business that generated record June-quarter revenue of more…",
-      "image": "https://media.appleinsider.com/gallery/68415-144173-Apple-app-icons-swirl-xl.jpg"
-    },
-    {
-      "id": "3743aad5",
-      "title": "Apple blows away Wall Street guess-work again with record-breaking earnings",
-      "link": "https://appleinsider.com/articles/26/07/30/apple-blows-away-wall-street-guess-work-again-with-record-breaking-earnings?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T21:28:27.000Z",
-      "summary": "Apple has reported its third-quarter financials for 2026, posting revenue of $109.4 billion, in what is the last full quarter under the control of current CEO Tim Cook . Current…",
-      "image": "https://photos5.appleinsider.com/gallery/67489-142085-62439-129446-cookparekh-xl-xl.jpg"
-    },
-    {
-      "id": "bdd2e9c6",
-      "title": "Apple Reports Q3 2026 Earnings",
-      "link": "https://www.macstories.net/news/apple-reports-q3-2026-earnings/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-30T21:06:08.000Z",
-      "summary": "Source: Apple. Today, Apple reported its 2026 Q3 earnings, posting quarterly revenue of $109.4 billion. Here are the highlights: Revenue was $109.4B, up 16.4% from Q3 FY25. iPhone…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/07/30/apple-sainte-catherine-montreal-canada-opening-day-hero-1785443366562-7198b0adaf.jpg"
-    },
-    {
-      "id": "80d80fed",
-      "title": "Tariff refunds bolster Apple's record-breaking June quarter",
-      "link": "https://appleinsider.com/articles/26/07/30/tariff-refunds-bolster-apples-record-breaking-june-quarter?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T21:05:16.000Z",
-      "summary": "Apple's gross margins and earnings per share were boosted by the tariff refunds the company received so far. Another $1 billion in tariff refunds are still unaccounted for. Tariff…",
-      "image": "https://media.appleinsider.com/gallery/68414-144171-iPhone-17-Pro-Max-camera-2-xl.jpg"
-    },
-    {
-      "id": "b09fbe44",
-      "title": "Apple spent a record $11.73 billion in R&D during Q3 2026",
-      "link": "https://9to5mac.com/2026/07/30/apple-spent-a-record-11-73-billion-in-rd-during-q3-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T21:01:19.000Z",
-      "summary": "In its quarterly results, Apple reported that research and development expenses climbed to a record $11.73 billion, continuing the sharp acceleration in spending seen throughout…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/apple-logo-aluminum-shadow-fi.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "17766f08",
-      "title": "A $0.27 dividend follows Apple's strongest June quarter yet",
-      "link": "https://appleinsider.com/articles/26/07/30/a-027-dividend-follows-apples-strongest-june-quarter-yet?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T21:00:43.000Z",
-      "summary": "Apple will pay shareholders a quarterly cash dividend of $0.27 per share on August 13, maintaining the rate it introduced earlier in 2026 after reporting its strongest June…",
-      "image": "https://media.appleinsider.com/gallery/68413-144170-Apple-Park-overhead-xl.jpg"
-    },
-    {
-      "id": "48fe1713",
-      "title": "Apple just hit 1.5 billion paid subscriptions from its user base",
-      "link": "https://9to5mac.com/2026/07/30/apple-just-hit-1-5-billion-paid-subscriptions-from-its-user-base/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T20:57:06.000Z",
-      "summary": "Apple reported its quarterly earnings today , which set a Q3 record and beat Wall Street expectations. And alongside the earnings report, the company shared that it now has over…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/apple-one-premier-blue.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "4ac4cd45",
-      "title": "Apple’s iPhone and Mac sales keep growing despite RAM shortages",
-      "link": "https://www.theverge.com/tech/973430/apple-q3-2026-earnings",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-30T20:49:32.000Z",
-      "summary": "Apple's iPhone and Mac sales are on the rise even as a global memory shortage squeezes device makers. In its third-quarter earnings report released on Thursday, Apple revealed…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/DSC01498.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "6bbfd8f4",
-      "title": "Apple Reports 3Q 2026 Results: $29.8B Profit on $109.4B Revenue",
-      "link": "https://www.macrumors.com/2026/07/30/apple-3q-2026-earnings/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T20:38:04.000Z",
-      "summary": "Apple today announced financial results for its third fiscal quarter of 2026, which corresponds to the second calendar quarter of the year. For the quarter, Apple posted revenue…",
-      "image": "https://images.macrumors.com/article-new/2026/07/aapl-3q26-line.jpg"
-    },
-    {
-      "id": "a0e72d2d",
-      "title": "Apple reports Q3 2026 earnings: $109.4 billion in revenue, up 16% [Charts]",
-      "link": "https://9to5mac.com/2026/07/30/apple-reports-q3-2026-earnings-109-4-billion-in-revenue-up-16/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T20:36:13.000Z",
-      "summary": "Apple just released its earnings report for the third fiscal quarter of 2026. The company reported $109.4 billion in revenue, $29.8 billion in net profit, and $2.02 in earnings…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/06/slack-imgs.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "c6af8d9c",
-      "title": "Apple reports third quarter results",
-      "link": "https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/",
-      "source": "Apple",
-      "category": "news",
-      "date": "2026-07-30T20:30:21.672Z",
-      "summary": "Apple today announced financial results for its fiscal 2026 third quarter ended June 27, 2026.",
-      "image": ""
-    },
-    {
-      "id": "376285c9",
-      "title": "Apple Upgrade program launches, foldable iPhone hype, Apple smart glasses release date",
-      "link": "https://9to5mac.com/2026/07/30/happy-hour-601/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T20:15:00.000Z",
-      "summary": "Benjamin and Chance break down all the details about Apple’s newly-launched Upgrade Program, while Chance gets frustrated with some of the edge-cases of Siri AI. The Apple smart…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2018/04/9to5mac-happy-hour-lead1.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "78fbac2c",
-      "title": "Fortnite Returns to iPhone in Brazil as Epic Games Store Launches",
-      "link": "https://www.macrumors.com/2026/07/30/brazil-epic-games-store/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T20:11:20.000Z",
-      "summary": "Epic Games today said that the &zwnj;Epic Games&zwnj; Store can now be downloaded on iPhones in Brazil through the &zwnj;Epic Games&zwnj; website. In its announcement, &zwnj;Epic…",
-      "image": "https://images.macrumors.com/article-new/2026/07/fortnite-brazil.jpg"
-    },
-    {
-      "id": "750ba8ee",
-      "title": "Apple pledges support for earthquake relief efforts in Japan",
-      "link": "https://9to5mac.com/2026/07/30/apple-pledges-support-for-earthquake-relief-efforts-in-japan/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T19:58:50.000Z",
-      "summary": "Just hours after announcing Apple’s support for communities affected by wildfires in southern Europe, Tim Cook said the company will also donate to relief efforts following the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/Apple-generates-2.4-million-per-employee-but-is-only-third-in-the-ranking.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "1b484146",
-      "title": "Apple pledges on-ground wildfire relief for Europe, earthquakes in Japan",
-      "link": "https://appleinsider.com/articles/26/07/30/apple-pledges-aid-as-wildfires-devastate-southern-europe?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T19:44:35.000Z",
-      "summary": "Apple is backing relief efforts in both Japan and Europe, with donations announced by CEO Tim Cook . Apple donates to European wildfire relief North America isn't the only region…",
-      "image": "https://media.appleinsider.com/gallery/68409-144166-tcook-xl.jpg"
-    },
-    {
-      "id": "4117835c",
-      "title": "Here’s how to listen live to Tim Cook’s last earnings call as Apple CEO",
-      "link": "https://9to5mac.com/2026/07/30/heres-how-to-listen-live-to-tim-cooks-last-earnings-call-as-apple-ceo/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T19:34:47.000Z",
-      "summary": "Apple will soon report its fiscal third-quarter 2026 earnings, followed by Tim Cook’s final earnings call as the company’s CEO. Here’s how to listen live.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-financial-q3-call.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "74dd1de2",
-      "title": "Senators Demand Apple Commit to Not Buying Chinese Memory Chips",
-      "link": "https://www.macrumors.com/2026/07/30/apple-chinese-chips-senator-letter/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T19:29:00.000Z",
-      "summary": "U.S. Senator Chuck Schumer has teamed up with several of his Senate colleagues to demand Apple commit to not purchasing chips from Chinese companies ChangXin Memory Technologies…",
-      "image": "https://images.macrumors.com/article-new/2024/04/apple-silicon-feature-joeblue.jpg"
-    },
-    {
-      "id": "6516e4ee",
-      "title": "iPhone 18 Pro could introduce new Apple solution for cellular, hints report",
-      "link": "https://9to5mac.com/2026/07/30/iphone-18-pro-could-introduce-new-apple-solution-for-cellular-hints-report/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T19:13:16.000Z",
-      "summary": "iPhone 18 Pro could make a major transition away from Qualcomm modems in favor of an Apple-designed C2. Here’s the latest update on what to expect.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/iphone-17-pro-silver-centered-dark.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "be0e73f3",
-      "title": "Monthly Log: July 2026",
-      "link": "https://www.macstories.net/club/monthly-log-july-2026/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-07-30T19:00:12.000Z",
-      "summary": "",
-      "image": ""
-    },
-    {
-      "id": "d77f7eaa",
-      "title": "FCC Bans New Foreign-Made Robot Vacuums, Threatening Future Matter and HomeKit Models",
-      "link": "https://www.macrumors.com/2026/07/30/foreign-made-robot-vacuums-ban/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T18:55:53.000Z",
-      "summary": "The FCC this week banned all new \"foreign-produced advanced robotic devices\" because of an \"unacceptable risk to the national security of the United States.\" The government says…",
-      "image": "https://images.macrumors.com/article-new/2025/11/ecovacs-black-friday.jpeg"
-    },
-    {
-      "id": "3529fdac",
-      "title": "This MacBook Pro just fell below its pre-price-hike MSRP (Save $500)",
-      "link": "https://9to5mac.com/2026/07/30/this-macbook-pro-just-fell-below-its-pre-price-hike-msrp-save-500/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T18:45:23.000Z",
-      "summary": "Yes, we did get some sizable (and unfortunate) price hikes on the MacBook lineup recently. But, alongside the summer sale price on AirPods Pro 3 at $50 off and AirPods Max 2 at…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/MacBook-Pro-M5-Pro.webp?w=1600"
-    },
-    {
-      "id": "a38a23c1",
-      "title": "9to5Mac Daily: July 30, 2026 – iOS 26.6, Apple’s smart home plans",
-      "link": "https://9to5mac.com/2026/07/30/daily-july-30-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T18:35:08.000Z",
-      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "f3da33cb",
-      "title": "Fortnite returns to iPhone in Brazil with Epic Games Store launch",
-      "link": "https://9to5mac.com/2026/07/30/fortnite-returns-to-iphone-in-brazil-with-epic-games-store-launch/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T17:47:31.000Z",
-      "summary": "Fortnite is back on the iPhone in Brazil today with the launch of the Epic Games Store. However, Epic Games is calling foul on the nine-step process required for access.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/epic-store-brazil-iphone.webp?w=1600"
-    },
-    {
-      "id": "e0ed2c3e",
-      "title": "Apple is about to launch Home product overhaul I’ve wanted for years",
-      "link": "https://9to5mac.com/2026/07/30/apple-is-about-to-launch-home-product-overhaul-ive-wanted-for-years/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T17:29:44.000Z",
-      "summary": "A new Bloomberg report earlier this week confirmed what’s long been expected: Apple’s major new push into Home products will kick off soon. And I’m thrilled by what rumors say is…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-tv-homepod-mini-siri-ai.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "edffccdc",
-      "title": "Apple Donating to Japan Earthquake Relief Efforts",
-      "link": "https://www.macrumors.com/2026/07/30/apple-japan-earthquake-donation/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T17:26:39.000Z",
-      "summary": "Apple CEO Tim Cook today said Apple would be making a donation to support earthquake relief efforts in Japan. A magnitude 6.8 earthquake (per the USGS) hit the Kumamoto prefecture…",
-      "image": "https://images.macrumors.com/article-new/2025/03/Apple-Logo-Red.jpg"
-    },
-    {
-      "id": "081e0987",
-      "title": "OpenAI makes two GPT-5.6 models cheaper, expanding usage in ChatGPT",
-      "link": "https://9to5mac.com/2026/07/30/openai-makes-two-gpt-5-6-models-cheaper-expanding-usage-in-chatgpt/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T17:25:37.000Z",
-      "summary": "OpenAI is making two of its GPT-5.6 models more affordable today, and the benefits extend beyond API customers.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/chatgpt-green.webp?w=1600"
-    },
-    {
-      "id": "fdfec0e1",
-      "title": "G4 meets M4: This project fuses an iconic iMac with a Mac mini",
-      "link": "https://appleinsider.com/articles/26/07/30/g4-meets-m4-this-project-fuses-an-iconic-imac-with-a-mac-mini?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T17:21:24.000Z",
-      "summary": "The iMac G4 is instantly recognizable, but it's even better when you swap out its aged internals for a full-on Mac mini powered by Apple's M4 chip to create the perfect mix of…",
-      "image": "https://media.appleinsider.com/gallery/68407-144160-Untitled-9-xl.jpg"
-    },
-    {
-      "id": "eecb7933",
-      "title": "Amazon launches $399 Samsung 32\" M80F monitor deal, now $300 off",
-      "link": "https://appleinsider.com/articles/26/07/30/amazon-launches-399-samsung-32-m80f-monitor-deal-now-300-off?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T16:05:47.000Z",
-      "summary": "Save $300 on Samsung's 32-inch M80F smart monitor at Amazon today, matching the all-time low price of $399.99. Amazon's limited-time monitor deal drives M80F down to $399.99 -…",
-      "image": "https://media.appleinsider.com/gallery/68411-144169-samsung-m80f-399-deal-xl.jpg"
-    },
-    {
-      "id": "cdc23617",
-      "title": "Yahoo Weather iOS app overhauled with new features and enhanced radar and maps",
-      "link": "https://9to5mac.com/2026/07/30/yahoo-weather-ios-update/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T15:59:20.000Z",
-      "summary": "Yahoo Weather for iPhone and iPad was recently updated with a major overhaul that focuses on new features and an overall redesign.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/yahoo-weather-iOS-app.webp?w=1600"
-    },
-    {
-      "id": "ccdac555",
-      "title": "Here’s everything new for Apple Notes in iOS 27",
-      "link": "https://9to5mac.com/2026/07/30/heres-everything-new-for-apple-notes-in-ios-27/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T15:55:10.000Z",
-      "summary": "iOS 27 adds new features for CarPlay , the Messages app , and a lot more , including a handful of Apple Notes upgrades. Here’s what’s new for Apple Notes in iOS 27.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/notes-app-icon-ios-27.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "d7f4d08b",
-      "title": "Spotify Adds Running Mode to iOS App With Tempo-Matched Music",
-      "link": "https://www.macrumors.com/2026/07/30/spotify-adds-running-mode-iphone/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T15:49:15.000Z",
-      "summary": "Spotify today announced a new Running Mode that turns playlists into structured running sessions built around workout type, tempo, and listening habits. It's launching on iOS…",
-      "image": "https://images.macrumors.com/article-new/2026/07/spotify-running-mode@2x-scaled.jpg"
-    },
-    {
-      "id": "2606ff53",
-      "title": "Deals: MacBook Pro $500 off, rare MacBook Air discounts, AirTag 2, charging gear, MagSage Battery, more",
-      "link": "https://9to5mac.com/2026/07/30/deals-macbook-pro-macbook-air-airtag-2-airpods/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T15:38:48.000Z",
-      "summary": "Today’s 9to5Toys Lunch Break is headlined by the ongoing price drops on AirPods Pro 3 at $50 off and AirPods Max 2 at $100 off , as well as the best price ever on Apple’s AirTag…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-deals-MacBook-Pro-Air-AirTag-AirPods.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "be8b93de",
-      "title": "It's not just humanoid robots, new robot vacuums face a US blockade",
-      "link": "https://appleinsider.com/articles/26/07/30/its-not-just-humanoid-robots-new-robot-vacuums-face-a-us-blockade?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T15:25:52.000Z",
-      "summary": "A new Federal Communications Commission order goes far, far beyond banning just humanoid robots, and will leave Apple Home users with fewer new autonomous robot vacuums to choose…",
-      "image": "https://media.appleinsider.com/gallery/68410-144168-IMG_8270-xl.jpg"
-    },
-    {
-      "id": "fba525d2",
-      "title": "Apple Upgrade vs iPhone Upgrade Program: Here are the key differences",
-      "link": "https://9to5mac.com/2026/07/30/apple-upgrade-vs-iphone-upgrade-program-here-are-the-key-differences/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T15:08:26.000Z",
-      "summary": "Apple Upgrade launched this week, and the iPhone Upgrade Program is being discontinued as a result. But despite some similarities, the two offerings are not the same. Here are the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-upgrade-iphone.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "9acc32b9",
-      "title": "iOS 27 will bring five new features not yet announced, per rumors",
-      "link": "https://9to5mac.com/2026/07/30/ios-27-will-bring-five-new-features-not-yet-announced-per-rumors/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T14:35:24.000Z",
-      "summary": "iOS 27 is currently in beta, and launches to all users this fall . Here are five new features rumored for iOS 27 that haven’t yet appeared in the beta.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-27-lock-screen-jb.jpg?quality=82&strip=all&w=1600"
     },
     {
       "id": "ec9c22a3",
