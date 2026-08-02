@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T12:04:26.525Z",
+  "updated": "2026-08-02T12:05:50.110Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -13,6 +13,126 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "f368cb27",
+      "title": "Save $1,200 on Apple's 16-inch MacBook Pro M5 Max with 2TB SSD",
+      "link": "https://appleinsider.com/articles/26/08/02/save-1200-on-apples-16-inch-macbook-pro-m5-max-with-2tb-ssd?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-02T07:36:07.000Z",
+      "summary": "A staggering $1,200 discount is available exclusively to AppleInsider readers, delivering the lowest price on record for the M5 Max 16-inch MacBook Pro config. Grab an exclusive…",
+      "image": "https://media.appleinsider.com/gallery/68430-144205-16-inch-macbook-pro-m5-max-1200-off-xl.jpg"
+    },
+    {
+      "id": "cfde6e4e",
+      "title": "6 Things We Already Know About the 2028 iPhone",
+      "link": "https://www.macrumors.com/2026/08/01/things-we-know-about-2028-iphone/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-02T01:00:10.000Z",
+      "summary": "Rumors about Apple's 2028 iPhone are already starting to circulate, offering an early look at how the company plans to evolve the iPhone's design, display, and cameras. The 2028…",
+      "image": "https://images.macrumors.com/article-new/2026/07/iphone-2028-punch-hole-design.jpg"
+    },
+    {
+      "id": "4f970f7d",
+      "title": "Apple Upgrade might’ve provided our first hint for what could change with Apple Card",
+      "link": "https://9to5mac.com/2026/08/01/apple-upgrade-will-it-replace-apple-card-monhtly-installments/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-01T21:52:35.000Z",
+      "summary": "This week, Apple launched Apple Upgrade , its new leasing program for most Apple products. It replaces the iPhone Upgrade Program entirely, and for the most part, it’s an…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-upgrade-ipad.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "074f07da",
+      "title": "Apple @ Work: Apple says MacBook Neo is pulling schools away from Windows and Chromebooks",
+      "link": "https://9to5mac.com/2026/08/01/apple-says-macbook-neo-is-pulling-schools-away-from-windows-and-chromebooks/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-01T20:14:48.000Z",
+      "summary": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-at-work-27.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "bfcd0ef8",
+      "title": "Indie App Spotlight: ‘Overflight’ lets you glance at what planes are flying above you",
+      "link": "https://9to5mac.com/2026/08/01/indie-app-spotlight-overflight-lets-you-glance-at-what-planes-are-flying-above-you/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-01T19:30:00.000Z",
+      "summary": "Welcome to Indie App Spotlight . This is a weekly 9to5Mac series where we showcase the latest apps in the indie app world. If you’re a developer and would like your app featured,…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Overflight-iPhone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "49d23091",
+      "title": "I’m not convinced the 20th anniversary iPhone will be what we think, here’s why",
+      "link": "https://9to5mac.com/2026/08/01/heres-why-iphone-20-could-actually-be-iphone-air-3/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-01T18:01:00.000Z",
+      "summary": "Next year, the iPhone will be turning 20 – and Apple is heavily rumored to be working on a radical new design to celebrate. Many have expected this to come in the form of iPhone…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/06/iPhone-20th-anniversary-mockup-ios26-03.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "8ee4c185",
+      "title": "Mac Studio: Here’s what Apple has in store for this fall and beyond",
+      "link": "https://9to5mac.com/2026/08/01/heres-what-to-come-with-the-next-apple-mac-studio-refresh/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-01T15:18:00.000Z",
+      "summary": "Later this fall, Apple will be updating the Mac Studio for the first time since early 2025. That may be just over a year ago, but it’s significant for one main reason: the highest…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/01/mac-studio-monitors-display.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "02be58fa",
+      "title": "Apple Watch Series 11 GPS Models Available From $299.99 on Amazon",
+      "link": "https://www.macrumors.com/2026/08/01/apple-watch-series-11-299-2/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-01T14:40:01.000Z",
+      "summary": "Amazon this weekend has low prices on the Apple Watch Series 11 , with $99 discounts across numerous models of the smartwatch. This sale includes a handful of 42mm and 46mm GPS…",
+      "image": "https://images.macrumors.com/article-new/2026/06/apple-watch-series-11-dark.jpeg"
+    },
+    {
+      "id": "0c109fe9",
+      "title": "You could be taking way better photos on your phone",
+      "link": "https://www.theverge.com/tech/973055/how-to-take-better-smartphone-photos",
+      "source": "The Verge",
+      "category": "news",
+      "date": "2026-08-01T13:30:00.000Z",
+      "summary": "Your smartphone photos can look way better. If you're willing to put in a little extra work, use third party apps and spend a bit of time editing, it's possible to take photos…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/iPhone-17-Pro-taking-a-photo-4.jpg?quality=90&strip=all&crop=0,0,100,100"
+    },
+    {
+      "id": "c93c1f24",
+      "title": "Top Stories: 'Apple Upgrade' Launches, iOS 26.6 Released, and More",
+      "link": "https://www.macrumors.com/2026/08/01/top-stories-apple-upgrade-launches/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-01T13:00:11.000Z",
+      "summary": "We're a little more than a month away from the September iPhone debut season, but there's still lots to talk about in the Apple universe, led this week by the launch of the new…",
+      "image": "https://images.macrumors.com/article-new/2026/08/top-stories-2026-08-01.jpg"
+    },
+    {
+      "id": "a2d1131a",
+      "title": "iOS 27 breaks 15 years of muscle memory on iPhone and iPad",
+      "link": "https://9to5mac.com/2026/08/01/ios-27-just-broke-15-years-of-muscle-memory-on-iphone-and-ipad/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-01T13:00:00.000Z",
+      "summary": "Since iOS 5 in 2011, the iPhone and iPad have included Notification Center, a central place to find alerts from various apps in chronological order. Starting with iOS 27, Apple is…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/siri-ipad-ios-27-notification-siri.webp?w=1600"
+    },
+    {
+      "id": "3df6e20e",
+      "title": "Apple weekend deals: AirPods Pro 3, Apple Studio Display $540 off, M5 MacBook Air $240 off, AirTag 2, more",
+      "link": "https://9to5mac.com/2026/08/01/apple-weekend-deals-airpods-air-m5/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-01T12:05:03.000Z",
+      "summary": "Your weekend edition of 9to5Toys Lunch Break is here with ongoing deals on AirPods Pro 3, AirPods Max 2 at $100 off, AirTag 2 , and a bunch more. This weekend we are highlighting…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Apple-best-discounts-summer-August.jpg?quality=82&strip=all&w=1600"
+    },
     {
       "id": "311494a1",
       "title": "Another iPhone 17 Pro plummets from plane, and found intact",
@@ -492,126 +612,6 @@
       "date": "2026-07-31T01:57:34.000Z",
       "summary": "Monetizing AI is a tricky business and it seems Apple's only plans so far are tying daily usage limits to users' iCloud+ subscription tier, but whether or not that'll be enough…",
       "image": "https://media.appleinsider.com/gallery/68417-144180-iPadOS-27-Siri-AI-search-Spotlight-xl.jpg"
-    },
-    {
-      "id": "c7d90d00",
-      "title": "Yet another major Chinese car brand is preparing to support Car Keys in Apple Wallet",
-      "link": "https://9to5mac.com/2026/07/30/yet-another-major-chinese-car-brand-is-preparing-to-support-apple-car-keys/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-31T01:57:22.000Z",
-      "summary": "Following recent backend code changes pointing to Car Keys support for GWM’s Tank vehicles, Apple now appears to be preparing to expand the feature to another of the automaker’s…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/apple-wallet-dark-purple.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "865622d3",
-      "title": "‘There’s No Place Like Home, Snoopy’ now available on Apple TV",
-      "link": "https://9to5mac.com/2026/07/30/theres-no-place-like-home-snoopy-now-available-on-apple-tv/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-31T01:16:52.000Z",
-      "summary": "Continuing Apple’s long-running partnership with Peanuts, the newest Snoopy Presents special is now available to Apple TV subscribers. Watch the trailer below.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/snoopy-home.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "ca90d7cc",
-      "title": "MacBook Ultra's New Design Won't Stay Exclusive for Long",
-      "link": "https://www.macrumors.com/2026/07/30/macbook-ultra-design-wont-stay-exclusive/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-31T01:00:13.000Z",
-      "summary": "The touchscreen and the OLED panel have dominated discussion about Apple's next high-end laptop, but the redesign wrapped around them may prove to be an equally consequential…",
-      "image": "https://images.macrumors.com/article-new/2026/07/macbook-ultra.jpg"
-    },
-    {
-      "id": "f45dacd0",
-      "title": "Apple says App Store regulatory changes are beginning to affect Services growth",
-      "link": "https://9to5mac.com/2026/07/30/apple-says-app-store-regulatory-changes-are-beginning-to-affect-services-growth/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T23:50:35.000Z",
-      "summary": "During today’s earnings call, Apple CFO Kevan Parekh said the company is beginning to feel the impact of regulatory changes to the App Store business model in the US and abroad.…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/06/app-store-senate.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "a61ee84a",
-      "title": "Apple Says App Store Changes and Mobile Gaming Softness Affected Services Revenue",
-      "link": "https://www.macrumors.com/2026/07/30/app-store-services-revenue-impact/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T23:40:47.000Z",
-      "summary": "Softness in mobile gaming and Apple's changes to the App Store business model in some countries impacted the performance of the &zwnj;App Store&zwnj;, Apple CFO Kevan Parekh said…",
-      "image": "https://images.macrumors.com/article-new/2025/12/Liquid-Glass-App-Store-Feature.jpg"
-    },
-    {
-      "id": "b3c01d4b",
-      "title": "Apple Plans Paid iCloud+ Upgrades for Heavy AI Users",
-      "link": "https://www.macrumors.com/2026/07/30/apple-icloud-upgrade-ai/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T23:11:10.000Z",
-      "summary": "Apple is planning to let users pay to increase their AI limits, with upgrade possibilities available through iCloud +. During today's earnings call for the third fiscal quarter of…",
-      "image": "https://images.macrumors.com/article-new/2026/07/General-iCloud-App-Feature.jpg"
-    },
-    {
-      "id": "06603f6c",
-      "title": "High iPhone demand won't be met by supply during September quarter",
-      "link": "https://appleinsider.com/articles/26/07/30/high-iphone-demand-wont-be-met-by-supply-during-september-quarter?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-07-30T23:09:19.000Z",
-      "summary": "As it has been almost all of 2026, Apple's September-quarter growth is expected to be slowed by a lack of supply-side availability that won't be able to meet \"incredibly strong…",
-      "image": "https://media.appleinsider.com/gallery/68416-144179-iPhone-17e-pink-MacBook-Neo-citrus-xl.jpg"
-    },
-    {
-      "id": "c9e1fc40",
-      "title": "Tim Cook says more memory suppliers may not necessarily mean lower product prices",
-      "link": "https://9to5mac.com/2026/07/30/tim-cook-says-more-memory-suppliers-may-not-necessarily-mean-lower-product-prices/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T23:07:21.000Z",
-      "summary": "During today’s conference call, Tim Cook addressed Apple’s mounting memory supply and pricing challenges, but suggested that adding more suppliers may not actually bring product…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/tim-cook-apple-park-rainbow-3.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "71cd1df4",
-      "title": "Siri AI may require a paid subscription for heavy users",
-      "link": "https://9to5mac.com/2026/07/30/siri-ai-may-require-a-paid-subscription-for-heavy-users/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-07-30T22:51:43.000Z",
-      "summary": "On Tim Cook’s final earnings call before formally resigning as Apple’s CEO, artificial intelligence was a hot topic of conversation. The investor community is interested in Siri…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/Seeing-Siri-AI-in-action-has-me-excited-for-the-future.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "e26a6bba",
-      "title": "Tim Cook: Apple 'Reluctantly Raised Prices' Due to '100-Year Flood on Memory Pricing'",
-      "link": "https://www.macrumors.com/2026/07/30/tim-cook-on-apple-price-increases/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T22:48:13.000Z",
-      "summary": "Apple didn't want to raise its prices but was forced to do so because of exponential increases in memory costs, Apple CEO Tim Cook said today during the company's Q3 2026 earnings…",
-      "image": "https://images.macrumors.com/article-new/2026/06/MacBook-Neo-on-Yellow-Feature.jpg"
-    },
-    {
-      "id": "0847496d",
-      "title": "Tim Cook hints at iCloud Plus tier for AI power users",
-      "link": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-07-30T22:29:45.000Z",
-      "summary": "Apple may allow users to pay to increase their AI usage limits. During an earnings call on Thursday, Apple CEO Tim Cook said that he believes people will want to use Apple…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gettyimages-2280563832.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "99718eef",
-      "title": "Tim Cook Thanks Shareholders on His Final Apple Earnings Call",
-      "link": "https://www.macrumors.com/2026/07/30/tim-cook-thanks-apple-shareholders/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-07-30T22:26:36.000Z",
-      "summary": "Apple CEO Tim Cook today confirmed that today's call was his last as CEO, with John Ternus set to become Apple's new CEO on September 1. Cook will transition to a new role as…",
-      "image": "https://images.macrumors.com/article-new/2021/10/tim-cook-macbook-pro.jpeg"
     },
     {
       "id": "ec9c22a3",
