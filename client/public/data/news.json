@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T11:49:30.432Z",
+  "updated": "2026-08-08T11:32:40.150Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -14,6 +14,386 @@
   ],
   "items": [
     {
+      "id": "216c5266",
+      "title": "Claude Code Adds Cross-Session Messaging on macOS",
+      "link": "https://www.macrumors.com/2026/08/08/claude-code-adds-cross-session-messaging/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-08T10:22:46.000Z",
+      "summary": "Anthropic has updated Claude Code so that separate coding sessions can message each other directly, removing the need to manually copy context between Terminal windows. The…",
+      "image": "https://images.macrumors.com/article-new/2025/09/anthopic-claude.jpg"
+    },
+    {
+      "id": "6d793fac",
+      "title": "iPhone 17 Prices Could Rise as Soon as Monday, Rumor Claims",
+      "link": "https://www.macrumors.com/2026/08/08/iphone-17-prices-could-rise-as-soon-as-monday/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-08T09:54:27.000Z",
+      "summary": "Apple could raise iPhone 17 prices as soon as Monday, August 10, according to a new rumor, well before the wider round of increases expected with next month's iPhone 18 Pro…",
+      "image": "https://images.macrumors.com/article-new/2025/09/iphone-17-models.jpg"
+    },
+    {
+      "id": "345fd17c",
+      "title": "WhatsApp makes parent-managed accounts easier to set up on iPhone",
+      "link": "https://9to5mac.com/2026/08/07/whatsapp-makes-parent-managed-accounts-easier-to-set-up-on-iphone/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-08T02:58:27.000Z",
+      "summary": "WhatsApp is bringing its dedicated parental controls section to the iPhone, making the feature easier for parents to find and set up. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/11/whatsapp-ios-26.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "be05f99c",
+      "title": "Apple adds nearly 45 hearing devices to its Made for iPhone compatibility list",
+      "link": "https://9to5mac.com/2026/08/07/apple-adds-nearly-45-hearing-devices-to-its-made-for-iphone-compatibility-list/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-08T02:18:32.000Z",
+      "summary": "Apple updated its list of Made for iPhone (MFi) hearing devices today, with 43 models across 22 brands. Here’s what’s new.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/hearing-devices-setup.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "65229373",
+      "title": "CarPlay connection issues? This might explain why",
+      "link": "https://9to5mac.com/2026/08/07/carplay-connection-issues/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-08T00:51:06.000Z",
+      "summary": "If your Apple CarPlay connection randomly drops out while driving, the cause might not be your iPhone, cable, or car.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/06/carplay-tapbacks-ios-26.jpeg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "af4904b1",
+      "title": "Claude Code now lets sessions talk to each other on macOS",
+      "link": "https://9to5mac.com/2026/08/07/claude-code-now-lets-sessions-talk-to-each-other-on-macos/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T22:29:59.000Z",
+      "summary": "Users running the latest version of Claude Code on macOS and Linux can now have their sessions message each other to share findings, ask questions, and coordinate work. Here are…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/claude-code-message.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "33a2a328",
+      "title": "9to5Mac Overtime 076: Native retro games on iPhone",
+      "link": "https://9to5mac.com/2026/08/07/9to5mac-overtime-076-native-retro-games-on-iphone/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T21:31:16.000Z",
+      "summary": "Fernando discusses his Pokémon 3D Mod on Mac, and Jeff shares his experience running a native port of Mario Kart 64 on iPhone. The guys also discuss why tech can feel less…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/9to5Mac-Overtime-076-Native-retro-games-on-iPhone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "76054c0f",
+      "title": "OpenAI Delays Next Major AI Model 'Astra' Over Critical Hacking Concerns",
+      "link": "https://www.macrumors.com/2026/08/07/openai-astra-model-hacking-concerns/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-07T21:27:43.000Z",
+      "summary": "OpenAI today said it is \"pausing\" activities involving its upcoming AI model Astra, because its cyber capabilities are potentially too dangerous. OpenAI says its newest internal…",
+      "image": "https://images.macrumors.com/article-new/2025/12/openai-logo-word-mark.jpg"
+    },
+    {
+      "id": "05bdf210",
+      "title": "‘Your Friends & Neighbors’ star confirmed for his third Apple TV project",
+      "link": "https://9to5mac.com/2026/08/07/your-friends-neighbors-star-confirmed-for-his-third-apple-tv-project/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T21:17:21.000Z",
+      "summary": "Actor James Marsden, who recently played billionaire Owen Ashe in the second season of Your Friends & Neighbors , was confirmed this week for his Apple TV third production. Here…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/01/apple-tv-logo-black.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "4b798def",
+      "title": "iPhone 17 might get price increase next week, per new rumor",
+      "link": "https://9to5mac.com/2026/08/07/iphone-17-might-get-price-increase-next-week-per-new-rumor/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T20:27:50.000Z",
+      "summary": "Apple is widely expected to raise iPhone prices when the iPhone 18 Pro launches next month. But a new rumor suggests the iPhone 17 might get a price increase as early as next week.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/09/iphone-17-lineup-air.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "6b0f4e8b",
+      "title": "iOS 27 has long-awaited fix for common iPhone wireless issue",
+      "link": "https://9to5mac.com/2026/08/07/ios-27-has-long-awaited-fix-for-common-iphone-wireless-issue/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T20:14:05.000Z",
+      "summary": "In iOS 27, Apple says it took extra care to make its software “more responsive, reliable, and delightful.” There are a variety of fixes that should make your iPhone faster ,…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/ios-27-iphone-home-screen-official.jpg?quality=82&strip=all&w=1536"
+    },
+    {
+      "id": "f137f679",
+      "title": "You may soon be able to create and export custom WhatsApp stickers straight from ChatGPT",
+      "link": "https://9to5mac.com/2026/08/07/you-may-soon-be-able-to-create-and-export-custom-whatsapp-stickers-straight-from-chatgpt/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T20:10:30.000Z",
+      "summary": "OpenAI is working on a feature that allows users to export custom stickers created on ChatGPT straight into WhatsApp. Here are the details.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/chatgpt-green.webp?w=1600"
+    },
+    {
+      "id": "584bad80",
+      "title": "These automakers still don’t support CarPlay, here’s why",
+      "link": "https://9to5mac.com/2026/08/07/these-automakers-still-dont-support-carplay-heres-why/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T19:14:14.000Z",
+      "summary": "CarPlay is a must-have for the majority of car buyers, but three major automakers don’t support the platform. Here’s the latest on why Tesla, Rivian, and GM continue to resist…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/carplay27-1.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "2433df2a",
+      "title": "Apple Rumored to Launch Three New 'Ultra' Products by Early Next Year",
+      "link": "https://www.macrumors.com/2026/08/07/three-new-apple-ultra-products-rumored/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-07T19:06:12.000Z",
+      "summary": "According to various reports from sources such as Bloomberg 's Mark Gurman and Macworld 's Filipe Espósito , Apple is planning to release up to three new products with \"Ultra\"…",
+      "image": "https://images.macrumors.com/article-new/2025/08/Apple-Foldable-Thumb.jpg"
+    },
+    {
+      "id": "b4f77c49",
+      "title": "New AirPods could launch next month, and one feature sounds very exciting",
+      "link": "https://9to5mac.com/2026/08/07/new-airpods-could-launch-next-month-and-one-feature-sounds-very-exciting/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T19:01:31.000Z",
+      "summary": "Apple’s iPhone 18 Pro unveiling next month might also bring the launch of new AirPods with cameras. Here’s why the addition of cameras could prove especially compelling.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/airpods-pro-3-upside-down.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "fe5b53b3",
+      "title": "PSA: Claude Code enabling auto mode as default next week, Anthropic says",
+      "link": "https://9to5mac.com/2026/08/07/psa-claude-code-enabling-auto-mode-as-default-next-week-anthropic-says/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T18:48:17.000Z",
+      "summary": "Claude Code auto mode will become the default permission setting for users next week. Starting August 14, sessions for Pro, Max, and Team users will use it unless a user or…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/claude.webp?w=1600"
+    },
+    {
+      "id": "f2e756b5",
+      "title": "Apple RAM supplier makes $38B bet on AI boom lasting until 2029",
+      "link": "https://appleinsider.com/articles/26/08/07/apple-memory-supplier-bets-on-ai-boom-lasting-till-2029-with-38b-investment?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-07T17:32:41.000Z",
+      "summary": "One of Apple's memory suppliers is making a massive investment to expand chip production amid global shortages, but it won't make your next iPhone any cheaper. Apple supplier SK…",
+      "image": "https://photos5.appleinsider.com/gallery/66858-140268-Untitled-4-xl.jpg"
+    },
+    {
+      "id": "c06d3f68",
+      "title": "When will Apple have its iPhone 18 Pro release event?",
+      "link": "https://appleinsider.com/articles/26/08/07/when-to-expect-apples-iphone-18-pro-launch?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-07T17:18:00.000Z",
+      "summary": "Apple obviously knows, and perhaps some of its retail staff have at least a clue, but for the rest of us, here's the best estimate of when the iPhone 18 Pro will be announced.…",
+      "image": "https://media.appleinsider.com/gallery/68503-144338-Dark-Cherry-iPhone-18-Pro-Max-xl.jpg"
+    },
+    {
+      "id": "be485b11",
+      "title": "iPhone 18 Pro rumor roundup: 2nm A20 chip, C2 modem, under-display Face ID",
+      "link": "https://appleinsider.com/articles/26/08/07/iphone-18-pro-rumor-roundup-2nm-a20-chip-c2-modem-under-display-face-id?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-07T17:16:16.000Z",
+      "summary": "Apple's iPhone 18 Pro is right around the corner, and the rumor mill started earlier than normal. Here's what you need to know. Apple's iPhone 18 Pro will feature numerous…",
+      "image": "https://media.appleinsider.com/gallery/68445-144289-68124-143594-67400-141876-iphone18procolorarray-xl-xl-(1)-xl.jpg"
+    },
+    {
+      "id": "f0aa37c7",
+      "title": "B&H's $1,349 M5 MacBook Air deal with 24GB RAM ends this weekend",
+      "link": "https://appleinsider.com/articles/26/08/07/bhs-1349-m5-macbook-air-deal-with-24gb-ram-ends-this-weekend?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-07T17:11:05.000Z",
+      "summary": "The upgraded M5 MacBook Air has 24GB of memory to boost performance, and it's $150 off this weekend only. Apple's M5 MacBook Air with 24GB of RAM is on sale at B&H - Image credit:…",
+      "image": "https://media.appleinsider.com/gallery/68506-144340-m5-macbook-air-24gb-ram-deal-xl.jpg"
+    },
+    {
+      "id": "44ad95c6",
+      "title": "The MacRumors Show: iPhone Air 2 - What Changes After a Difficult First Year",
+      "link": "https://www.macrumors.com/2026/08/07/the-macrumors-show-iphone-air-2/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-07T16:23:39.000Z",
+      "summary": "The iPhone Air reaches one year on sale next month, and Apple is now closer to launching its successor than it is to the original's debut. On this week's episode of The MacRumors…",
+      "image": ""
+    },
+    {
+      "id": "e0154c2b",
+      "title": "9to5Mac Daily: August 7, 2026 – iPhone Fold hype, macOS updates",
+      "link": "https://9to5mac.com/2026/08/07/daily-august-7-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T16:15:59.000Z",
+      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "6c928a5b",
+      "title": "MacBook Pro users will soon have two compelling new upgrade options",
+      "link": "https://9to5mac.com/2026/08/07/macbook-pro-users-will-soon-have-two-compelling-new-upgrade-options/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T16:13:21.000Z",
+      "summary": "Apple is rumored to give MacBook Pro users two very different new models to choose from this fall: an M6 MacBook Pro and an all-new MacBook Ultra. Here’s what’s coming.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/macbook-pro-m6.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "fa3d44e4",
+      "title": "Apple Flags Discovery Delays in Its Lawsuit Against Jon Prosser",
+      "link": "https://www.macrumors.com/2026/08/07/apple-flags-delays-in-its-prosser-lawsuit/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-07T16:07:57.000Z",
+      "summary": "Apple has told a federal court that it hasn't heard from Jon Prosser 's legal team in a month, as discovery drags on in its trade secret lawsuit against the leaker. In a joint…",
+      "image": "https://images.macrumors.com/article-new/2025/10/Jon-Prosser-Rainbow.jpg"
+    },
+    {
+      "id": "7c0a1e2d",
+      "title": "Apple seems to have abandoned Cinematic mode, and that’s a mistake",
+      "link": "https://9to5mac.com/2026/08/07/apple-seems-to-have-abandoned-cinematic-mode-and-thats-a-mistake/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T16:00:00.000Z",
+      "summary": "When Apple unveiled the iPhone 13 back in 2021, it made a huge deal over a headline new feature, Cinematic mode . This is the video equivalent of Portrait mode, allowing you to…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/Apple-seems-to-have-abandoned-Cinematic-mode-and-thats-a-mistake.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "8de33ec6",
+      "title": "Apple expands refurb store with rare M5 MacBook Pro configs, Apple TV 4K, more",
+      "link": "https://9to5mac.com/2026/08/07/apple-expands-refurb-store-with-rare-m5-macbook-pro-configs-apple-tv-4k-more/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T15:56:51.000Z",
+      "summary": "Apple has added a host of new products to its official Certified Refurbished Store this week. New M5 MacBook Pro models, the Studio Display XDR, high-end M5 MacBook Air…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/macbook-pro-m5-14-inch.webp?w=1600"
+    },
+    {
+      "id": "4a489f05",
+      "title": "Deals: Apple Watch Series 11 $172 off, Nike Watch bands, AirPods Pro 3, MacBook Neo discounts, more",
+      "link": "https://9to5mac.com/2026/08/07/deals-apple-watch-nike-bands-airpods-pro-macbook-neo/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T15:32:58.000Z",
+      "summary": "Today’s 9to5Toys Lunch Break is ready to usher in the end of the work week with ongoing and now even lower price on AirPods Pro 3 at 25% off, but we are also tracking the return…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/Apple-deals-MacBook-Neo-Apple-Watch-AirPods.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "508d9a57",
+      "title": "watchOS 27 could make Apple Watch’s important new health feature even better",
+      "link": "https://9to5mac.com/2026/08/07/watchos-27-could-make-apple-watchs-important-new-health-feature-even-better/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T14:51:06.000Z",
+      "summary": "Apple Watch added hypertension notifications last year, an important and potentially life-saving new feature. And per a recent report, it sounds like watchOS 27 might make them…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/apple-watch-health.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "1204e068",
+      "title": "Apple Captures 65% of Global Premium Smartphone Market",
+      "link": "https://www.macrumors.com/2026/08/07/apple-captures-65-percent-of-global-premium-market/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-07T14:32:54.000Z",
+      "summary": "Apple captured 65% of the global premium smartphone market in the first half of 2026, as the wider premium segment's share of overall smartphone sales climbed to a record 29%.…",
+      "image": "https://images.macrumors.com/article-new/2025/09/iPhone-17-Pro-and-Air-Feature.jpg"
+    },
+    {
+      "id": "2321506b",
+      "title": "iOS 26.6.1 likely coming soon as Apple speeds up iPhone updates",
+      "link": "https://9to5mac.com/2026/08/07/ios-26-6-1-likely-coming-soon-as-apple-speeds-up-iphone-updates/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T14:31:32.000Z",
+      "summary": "Apple appears to be testing a forthcoming iOS 26.6.1 update for iPhone users. This comes nearly two weeks after iOS 26.6 was released to the public.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-26-6-lg-iphone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "3b64b6c2",
+      "title": "Which do you plan to buy: iPhone 18 Pro or foldable iPhone Ultra? [Poll]",
+      "link": "https://9to5mac.com/2026/08/07/which-do-you-plan-to-buy-iphone-18-pro-or-foldable-iphone-ultra-poll/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T14:26:07.000Z",
+      "summary": "Apple’s fall iPhone event is expected to look different this year. Rather than unveiling four closely related models, rumors point to a flagship-only September lineup consisting…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/iphone-18-pro-mockup.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "14a56b3e",
+      "title": "Apple Testing iOS 26.6.1 Update for iPhones",
+      "link": "https://www.macrumors.com/2026/08/07/apple-testing-ios-26-6-1/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-07T14:17:20.000Z",
+      "summary": "Apple's software engineers are internally testing iOS 26.6.1, according to the MacRumors visitor logs. Apple already released macOS 26.6.1 yesterday with a fix for a security…",
+      "image": "https://images.macrumors.com/article-new/2026/08/iOS-26-6-1-iPhone.jpg"
+    },
+    {
+      "id": "0de7f457",
+      "title": "AirPods Pro 3 for $189.99, $25 Best Buy Gift Card With MacBook Neo, and More Apple Deals This Week",
+      "link": "https://www.macrumors.com/2026/08/07/best-apple-deals-of-the-week-8-7-26/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-07T14:06:10.000Z",
+      "summary": "Some of the best Apple deals of the summer arrived this week, including the AirPods Pro 3 for $189.99, up to $500 off select MacBook Pro models, and the lowest iPad Air prices…",
+      "image": "https://images.macrumors.com/article-new/2025/03/Best-Apple-Deals-Feature-Shelf-Blue.jpg"
+    },
+    {
+      "id": "c56cbfea",
+      "title": "Apple Account Card Expands Again: What It Is and What It Isn't",
+      "link": "https://www.macrumors.com/2026/08/07/apple-account-card-what-it-is-what-it-isnt/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-07T13:54:05.000Z",
+      "summary": "Apple this week expanded support for its Apple Account Card in the Wallet app to Estonia, Latvia, Lithuania, and Malta. The Apple Account Card option for Wallet started rolling…",
+      "image": "https://images.macrumors.com/article-new/2026/08/apple-account-card.jpeg"
+    },
+    {
+      "id": "d6ade11e",
+      "title": "iPhone 18 Pro is getting even more ‘Pro’ this year in three ways",
+      "link": "https://9to5mac.com/2026/08/07/iphone-18-pro-is-getting-even-more-pro-this-year-in-three-ways/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T13:47:53.000Z",
+      "summary": "iPhone 18 Pro and Pro Max will be unveiled soon , and rumors point to at least three ways the new models will be even more ‘Pro’ this year.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/iphone-18-pro-mockup-fi-new-color.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "3df03563",
+      "title": "Apple's Mac Pro 'cheese grater' is 20 years old, and is the best Mac ever made",
+      "link": "https://appleinsider.com/articles/18/08/07/apples-mac-pro-cheese-grater-is-12-years-old-and-is-the-best-mac-ever-made?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-07T13:41:59.000Z",
+      "summary": "The original Mac Pro is 20 years old today and even though the whole range is now gone, people are still celebrating this old, favorite workhorse from a time when it was the clear…",
+      "image": "https://photos5.appleinsider.com/gallery/27038-134568-000-lead-Mac-Pro-2006-xl.jpg"
+    },
+    {
+      "id": "f46195eb",
+      "title": "Apple Wallet in iOS 27 adds feature that’s been on my wishlist for years",
+      "link": "https://9to5mac.com/2026/08/07/apple-wallet-in-ios-27-adds-feature-thats-been-on-my-wishlist-for-years/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-07T13:21:07.000Z",
+      "summary": "iOS 27 adds a variety of new features and changes for Apple Wallet, including one that’s been on my wishlist for years: the ability to import physical passes.",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-wallet-ios-27-red-bg.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "af68e146",
+      "title": "Mac Pro Turns 20 Today, Five Months After Apple Killed It",
+      "link": "https://www.macrumors.com/2026/08/07/mac-pro-turns-20-today/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-07T12:39:00.000Z",
+      "summary": "Apple announced the original Mac Pro 20 years ago today, with the anniversary landing five months after the company discontinued the machine for good. On August 7, 2006, Apple…",
+      "image": "https://images.macrumors.com/article-new/2026/03/Classic-Mac-Pro-Feature.jpg"
+    },
+    {
       "id": "d354d4cb",
       "title": "Paying for AI, freezing iPhones, & avoiding scams on the AppleInsider Podcast",
       "link": "https://appleinsider.com/articles/26/08/07/paying-for-ai-freezing-iphones-avoiding-scams-on-the-appleinsider-podcast?utm_source=rss",
@@ -24,14 +404,24 @@
       "image": "https://media.appleinsider.com/gallery/68479-144334-650-art-article-posterl-xl.jpg"
     },
     {
+      "id": "e892c054",
+      "title": "Why does Apple keep banning Telegram, but never X?",
+      "link": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations",
+      "source": "The Verge",
+      "category": "news",
+      "date": "2026-08-07T11:00:00.000Z",
+      "summary": "For roughly an hour this week, Telegram vanished from Apple's App Store. Even during that blip, it was a stunning absence for such a major app: an avenue of communication for more…",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2217854935.jpg?quality=90&strip=all&crop=0,0,100,100"
+    },
+    {
       "id": "7b20a733",
       "title": "iOS 27's New Compact Clock Gives Your Wallpaper Room to Breathe",
       "link": "https://www.macrumors.com/how-to/ios-use-compact-lock-screen-clock/",
       "source": "MacRumors",
       "category": "news",
-      "date": "2026-08-07T10:53:08.000Z",
+      "date": "2026-08-07T10:52:58.000Z",
       "summary": "In iOS 26, Apple let you stretch the Lock Screen clock down your iPhone's display until it dwarfed everything else. In iOS 27, Apple has a new clock option that does the opposite,…",
-      "image": "https://images.macrumors.com/article-new/2026/08/ios-lock-screen-compact-clock.jpeg"
+      "image": "https://images.macrumors.com/article-new/2026/08/cat-couch-lock-screen-clock-compact-mode.jpeg"
     },
     {
       "id": "8d68f12f",
@@ -139,7 +529,7 @@
       "link": "https://www.macrumors.com/2026/08/06/madden-nfl-27-apple-arcade/",
       "source": "MacRumors",
       "category": "news",
-      "date": "2026-08-06T22:26:48.000Z",
+      "date": "2026-08-06T22:26:38.000Z",
       "summary": "Madden NFL 27 Arcade Edition is available on Apple Arcade starting today. It's a full Madden NFL game that does not include ads or in-app purchases, and it is available…",
       "image": "https://images.macrumors.com/article-new/2026/08/madden-apple-arcade.jpg"
     },
@@ -224,394 +614,104 @@
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/257943_Airpods_Pro3_AKrales_0133.jpg?quality=90&strip=all&crop=0,0,100,100"
     },
     {
-      "id": "7a50c046",
-      "title": "In new court filing, Apple flags delays in Jon Prosser’s response to leak lawsuit",
-      "link": "https://9to5mac.com/2026/08/06/in-new-court-filing-apple-flags-delays-in-jon-prossers-response-to-leak-lawsuit/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T19:59:33.000Z",
-      "summary": "In a joint status report filing, Apple said it hadn’t heard from Jon Prosser’s lawyer in a month, which his counsel attributed to Prosser caring for his newborn child. Here are…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/07/joe-prosser.jpg?quality=82&strip=all&w=1600"
+      "id": "a87220df",
+      "title": "Plz help keep getting error locked on iOS",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vhtdx5/plz_help_keep_getting_error_locked_on_ios/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-08-07T07:02:08.000Z",
+      "summary": "I’ve tried two different Apple ID accounts on the sideloadly app one brand new and another that I’ve had for years and neither one of them worked. It has the locked error and told…",
+      "image": ""
     },
     {
-      "id": "89da5c36",
-      "title": "iOS 27 basically turns your iPhone and AirPods into an Apple Watch at the gym",
-      "link": "https://9to5mac.com/2026/08/06/ios-27-basically-turns-your-iphone-and-airpods-into-an-apple-watch-at-the-gym/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T19:51:07.000Z",
-      "summary": "GymKit has been one of Apple Watch’s smartest fitness features since it launched in 2017. Tap your watch to compatible gym equipment, and Apple Watch shares your heart rate while…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/iOS-27-GymKit-iPhone.webp?w=1600"
+      "id": "b0c3c406",
+      "title": "Refreshing problem maybe????",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vhbp8e/refreshing_problem_maybe/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-08-06T18:00:03.000Z",
+      "summary": "Casual user here. I&#39;m having trouble refreshing an app on my iPhone and every time I connect my phone and sideloadly gets to the &quot;Prefetching Anisette...&quot;, it just…",
+      "image": ""
     },
     {
-      "id": "c259c9cf",
-      "title": "X Money FAQ: Account suspensions, 6% APY, physical cards, and more",
-      "link": "https://9to5mac.com/2026/08/06/x-money-faq-account-suspensions-6-apy-physical-cards-and-more/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T19:37:23.000Z",
-      "summary": "Following X Money’s launch last month , one question has repeatedly surfaced: What happens to your money if X suspends or closes your social media account?",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/xmoney.webp?w=1600"
+      "id": "649c56dd",
+      "title": "Help with eevee spotify i cant create an account OR log in",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vh9sf0/help_with_eevee_spotify_i_cant_create_an_account/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-08-06T16:51:47.000Z",
+      "summary": "I dont understand is it like a Time trial or something? Do i need a vpn a dns? I have a video of the error code thing i cant put it here for some reason anyone know how to fix?…",
+      "image": ""
     },
     {
-      "id": "4c53def0",
-      "title": "Free ChatGPT Users Get Unlimited Text Chats and GPT-5.6 Luna",
-      "link": "https://www.macrumors.com/2026/08/06/chatgpt-free-unlimited-text-chats/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-06T19:27:11.000Z",
-      "summary": "OpenAI today said it is making GPT–5.6 Luna the default model for Free and Go ChatGPT users, giving them access to a newer, more capable model to replace GPT–5.5 Instant. The…",
-      "image": "https://images.macrumors.com/article-new/2026/03/ChatGPT-Feature.jpg"
+      "id": "bcf2ab54",
+      "title": "I can download osu and i dont know what to do",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vgkvjy/i_can_download_osu_and_i_dont_know_what_to_do/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-08-05T21:38:33.000Z",
+      "summary": "Im trying to download osu through sideloading. It tried many things but it keeps saying revoked or smth like that. And now, idk what to do. I dont have access to a pc right now.…",
+      "image": ""
     },
     {
-      "id": "9a3b4e0d",
-      "title": "Apple TV brings free 'Widow's Bay' screenings to AMC theaters",
-      "link": "https://appleinsider.com/articles/26/08/06/apple-tv-brings-free-widows-bay-screenings-to-amc-theaters?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-06T19:14:22.000Z",
-      "summary": "Fans of \"Widow's Bay\" in Atlanta, Boston, Chicago, Los Angeles, New York, and San Francisco can catch a free screening of the series' final three episodes of the first season at…",
-      "image": "https://photos5.appleinsider.com/gallery/67237-141378-Widows-Bay——Official-Teaser-Trailer-_-Apple-TV-0-53-screenshot-xl.jpg"
+      "id": "18847707",
+      "title": "IM stuck here for so long i updated the app too",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vfqgno/im_stuck_here_for_so_long_i_updated_the_app_too/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-08-04T23:24:02.000Z",
+      "summary": "IM stuck here for so long i updated the itunes from apple and same exact errors why is that i try to login my acc and it says wrong pass even tho its right in the sideloadly app…",
+      "image": ""
     },
     {
-      "id": "5a58dccd",
-      "title": "Apple TV’s fall lineup reveals every new show and movie coming soon",
-      "link": "https://9to5mac.com/2026/08/06/apple-tvs-fall-lineup-reveals-every-new-show-and-movie-coming-soon/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T18:58:25.000Z",
-      "summary": "Apple TV is now airing Ted Lasso season 4 , and more high-profile shows and movies are coming to the streamer soon. Here’s everything in Apple TV’s fall lineup so far, which will…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/apple-tv-sunset-mountains.jpg?quality=82&strip=all&w=1600"
+      "id": "583c2eec",
+      "title": "can anyone send me work minecraft and geometry dash? or i have problem at sideloadly",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vdi5ti/can_anyone_send_me_work_minecraft_and_geometry/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-08-02T13:30:24.000Z",
+      "summary": "when i try to dowloand minecraft, my sideloadly crash when dowloand can starts, and i havent minecraft on my iphone, can anyone help me? &#32; submitted by &#32; /u/WillowNew2378…",
+      "image": ""
     },
     {
-      "id": "99d13d1f",
-      "title": "AirPods Pro 3 keep getting better, here’s what’s new in iOS 27",
-      "link": "https://9to5mac.com/2026/08/06/airpods-pro-3-keep-getting-better-heres-whats-new-ios-27/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T18:44:16.000Z",
-      "summary": "AirPods are getting a variety of new features in iOS 27, two of which are exclusive to AirPods Pro 3. Here’s everything new.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/09/airpods-pro-3-in-case.jpg?quality=82&strip=all&w=1600"
+      "id": "41f6560a",
+      "title": "Data Device Transfer Queston",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vddhua/data_device_transfer_queston/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-08-02T09:24:32.000Z",
+      "summary": "So I am still pretty new at this whole thing, and any advice is appreciated. So I have something downloaded for my current device, iPhone, but I am planning to get a new phone…",
+      "image": ""
     },
     {
-      "id": "711f0b0c",
-      "title": "Apple TV’s surprise hit series is making the jump to theaters for one night only",
-      "link": "https://9to5mac.com/2026/08/06/apple-tvs-surprise-hit-series-is-making-the-jump-to-theaters-for-one-night-only/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T18:34:58.000Z",
-      "summary": "While Apple TV has found success at the box office, Apple usually reserves theaters for its movies, not its series. However, one hit show from Apple this year is coming to the…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/widows-bay-s1-finale-rhys-couch.jpg?quality=82&strip=all&w=1600"
+      "id": "8455b758",
+      "title": "Are sideloaded apps on iOS sandboxed",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vcrvkx/are_sideloaded_apps_on_ios_sandboxed/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-08-01T16:31:20.000Z",
+      "summary": "just curious about security issues, are sideloaded apps on iOS sandboxed? these apps are sideloaded using sideloadly &#32; submitted by &#32; /u/RYANDANUGGET [link] &#32;…",
+      "image": ""
     },
     {
-      "id": "b3514604",
-      "title": "Apple issues another round of macOS security updates as patch frequency increases",
-      "link": "https://appleinsider.com/articles/26/08/06/apple-issues-another-round-of-macos-security-updates-as-patch-frequency-increases?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-06T18:34:53.000Z",
-      "summary": "Apple has rolled out another round of security updates for macOS Tahoe , macOS Sequoia, and macOS Sonoma. Apple releases security updates for Mac operating system lineup…",
-      "image": "https://media.appleinsider.com/gallery/68496-144324-MacBook-Pro-M5-Max-display-clock-xl.jpg"
+      "id": "214e369e",
+      "title": "My iphone doesn’t show up on Idevice",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vbzecq/my_iphone_doesnt_show_up_on_idevice/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-31T18:38:21.000Z",
+      "summary": "trying to sideload the ipogo spoofer on to my iphone But it says no devices detected even though i have plugged my iphone into my laptop via usb and set up link to windows.has…",
+      "image": ""
     },
     {
-      "id": "cfcfc815",
-      "title": "Apple’s latest macOS updates address a serious Screen Sharing vulnerability",
-      "link": "https://9to5mac.com/2026/08/06/apples-latest-macos-updates-address-a-serious-screen-sharing-vulnerability/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T18:21:56.000Z",
-      "summary": "Apple has now published the security details for today’s macOS Tahoe, Sequoia, and Sonoma updates , revealing that all three address a serious Screen Sharing vulnerability. Here…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/06/apple-hacked.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "56dd0f58",
-      "title": "EA Sports Tailors Madden NFL 27 for Apple Arcade",
-      "link": "https://www.macstories.net/reviews/ea-sports-tailors-madden-nfl-27-for-apple-arcade/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-08-06T18:00:51.000Z",
-      "summary": "EA Sports has released Madden NFL 27 Arcade Edition, a version of the popular football simulation franchise that Apple Arcade subscribers can play on the iPhone, iPad, Mac, and…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/08/06/shortcut-upload-1786030302254-13bf1f9b76.png"
-    },
-    {
-      "id": "e0855c21",
-      "title": "Apple releases security updates to macOS Tahoe, Sequoia, and Sonoma [U]",
-      "link": "https://9to5mac.com/2026/08/06/apple-releases-security-updates-to-macos-tahoe-sequoia-and-sonoma/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T17:45:36.000Z",
-      "summary": "Update, 2:24 p.m. ET: Apple has now revealed that the updates address a Screen Sharing vulnerability. You can learn more about it here . The original story follows below. Apple…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/update.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "7c3378fb",
-      "title": "Apple Releases macOS Tahoe 26.6.1 With Security Fixes",
-      "link": "https://www.macrumors.com/2026/08/06/apple-releases-macos-tahoe-26-6-1/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-06T17:34:39.000Z",
-      "summary": "Apple today released macOS Tahoe 26.6.1, an update to the &zwnj;macOS Tahoe&zwnj; operating system that came out last year. &zwnj;macOS Tahoe&zwnj; 26.6.1 comes a little over a…",
-      "image": "https://images.macrumors.com/article-new/2025/06/macOS-Tahoe-26-Feature.jpg"
-    },
-    {
-      "id": "695d6bbc",
-      "title": "Apple earnings, universal clipboard interoperability, iPhone event chatter",
-      "link": "https://9to5mac.com/2026/08/06/happy-hour-602/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T17:32:29.000Z",
-      "summary": "Benjamin and Chance return for another episode recapping the week in Apple news, including the interesting details of Apple’s most recent earnings calls, the last of the Tim Cook…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/02/9to5mac-happy-hour-lead1.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "7de617d8",
-      "title": "OpenAI updating ChatGPT with a smarter GPT-5.6 Sol and unlimited free chats",
-      "link": "https://9to5mac.com/2026/08/06/openai-updating-chatgpt-with-a-smarter-gpt-5-6-sol-and-unlimited-free-chats/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T17:16:04.000Z",
-      "summary": "ChatGPT has become so much more than just chat over the last year. To that end, OpenAI is removing limits on text chat. ChatGPT will also improve with a smarter version of GPT-5.6…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/chatgpt-blue.webp?w=1600"
-    },
-    {
-      "id": "5f6a2aef",
-      "title": "MacBook Ultra is coming, here’s the latest on release timing",
-      "link": "https://9to5mac.com/2026/08/06/macbook-ultra-is-coming-heres-the-latest-on-release-timing/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T16:54:59.000Z",
-      "summary": "MacBook Ultra is the rumored name for Apple’s exciting MacBook Pro overhaul with OLED, a touchscreen, Dynamic Island, and more. Here’s the latest on when to expect MacBook Ultra’s…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/macbook-ultra-pro-mockup.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "de1e1c19",
-      "title": "GPT-5 turning one as OpenAI shares new Agent Plugins standard",
-      "link": "https://9to5mac.com/2026/08/06/gpt-5-turning-one-as-openai-shares-new-agent-plugins-standard/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T16:30:28.000Z",
-      "summary": "OpenAI’s GPT-5 turns one tomorrow, and the company is marking the week by looking beyond individual models. Today, OpenAI introduced Agent Plugins, an open standard meant to let…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/08/openai.webp?w=1600"
-    },
-    {
-      "id": "490eeacc",
-      "title": "Security Bite: Apple’s baffling bug bounty changes finally make sense",
-      "link": "https://9to5mac.com/2026/08/06/security-bite-apples-baffling-bug-bounty-changes-finally-make-sense/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T16:24:08.000Z",
-      "summary": "9to5Mac Security Bite is exclusively brought to you by Mosyle, the only Apple Unified Platform . Making Apple devices work-ready and enterprise-safe is all we do. Our unique…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/sb-lg-27-dark.webp?w=1500"
-    },
-    {
-      "id": "1818251e",
-      "title": "Last call to save up to $200 on M5 MacBook Air laptops",
-      "link": "https://appleinsider.com/articles/26/08/06/last-call-to-save-up-to-200-on-m5-macbook-air-laptops?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-06T16:19:50.000Z",
-      "summary": "Time is running out to grab limited-time deals on Apple's latest MacBook Air laptops, with M5 models now up to $200 off. Many deals end this weekend. Save up to $200 on Apple's M5…",
-      "image": "https://media.appleinsider.com/gallery/68493-144314-macbook-air-up-to-200-off-xl.jpg"
-    },
-    {
-      "id": "47605084",
-      "title": "Lutron Caseta expands hands-free smart home controls through Sonos",
-      "link": "https://9to5mac.com/2026/08/06/lutron-caseta-expands-hands-free-smart-home-controls-through-sonos/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T16:06:46.000Z",
-      "summary": "Lutron is expanding its existing Caseta integration with Sonos, adding the ability to control smart-home devices using Sonos Voice Control.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/lutron-sonos.webp?w=1600"
-    },
-    {
-      "id": "24b42c7b",
-      "title": "Adobe is hell-bent on becoming the creative engine behind AI",
-      "link": "https://appleinsider.com/articles/26/08/06/adobe-is-hell-bent-on-becoming-the-creative-engine-behind-ai?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-06T15:56:41.000Z",
-      "summary": "Adobe's newest AI ChatGPT plugin shows that the company doesn't care where people create, but more on ensuring they create with Adobe. Image generated with Adobe and ChatGPT On…",
-      "image": "https://media.appleinsider.com/gallery/68488-144311-adobe-ai-art-header-xl.jpg"
-    },
-    {
-      "id": "896dd689",
-      "title": "Apple increases trade-in offers and adds new Android devices",
-      "link": "https://www.theverge.com/tech/976210/apple-trade-in-values-increased",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-08-06T15:47:15.000Z",
-      "summary": "Apple bumped up its trade-in offers for iPhones, iPads, Macs, Apple Watches, and certain Android phones, with some devices now worth over $100 more, 9to5Mac reports. The Mac…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/257946_iPhone_17_AKrales_0028.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "dfe09fc5",
-      "title": "OpenAI fires back, says Apple is suing because it can't compete",
-      "link": "https://appleinsider.com/articles/26/08/06/openai-fires-back-says-apple-is-suing-because-it-cant-compete?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-06T15:38:32.000Z",
-      "summary": "ChatGPT maker OpenAI wants Apple's lawsuit dismissed, calling it \"rotten to the core\" and a pretext for how the firm is failing in AI and at keeping its staff. ChatGPT is in the…",
-      "image": "https://photos5.appleinsider.com/gallery/54487-110037-openAI-xl.jpg"
-    },
-    {
-      "id": "4294a8c8",
-      "title": "Podcast Rewind: Summer Experiments, Game Recomps, and Tier Listing Euro Banknotes",
-      "link": "https://www.macstories.net/news/podcast-rewind-summer-experiments-game-recomps-and-tier-listing-euro-banknotes/",
-      "source": "MacStories",
-      "category": "news",
-      "date": "2026-08-06T15:36:21.000Z",
-      "summary": "Enjoy the latest episodes from MacStories’ family of podcasts: AppStories This week, Federico and John cover the app and agent experiments they’re both running. On AppStories+,…",
-      "image": "https://cdn.macstories.net/images/uploads/2026/06/04/shortcut-upload-1780602749728-972a90278b.png"
-    },
-    {
-      "id": "00f0ca01",
-      "title": "CarPlay in iOS 27 adds two new features for popular Apple apps",
-      "link": "https://9to5mac.com/2026/08/06/carplay-in-ios-27-adds-two-new-features-for-popular-apple-apps/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T15:25:29.000Z",
-      "summary": "CarPlay in iOS 27 has a handful of new features and improvements , including two additions for some of Apple’s most popular apps, like Apple Music and Apple Podcasts.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/04/carplay-apple-music-ios-26-now-playing.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "bd2fa2ba",
-      "title": "Deals: AirPods Pro 3 now even lower at 25% off, M5 MacBook Air $190 off, iPhone Air $150+ off, more",
-      "link": "https://9to5mac.com/2026/08/06/deals-airpods-pro-3-m5-macbook-air-iphone-air/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T15:16:17.000Z",
-      "summary": "Today’s 9to5Toys Lunch Break is headlined by AirPods Pro 3 dropping in price again for one of the best deals of the year at nearly 25% off, alongside the ongoing AirPods Max 2…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/Apple-deals-AirPods-Pro-3-iPhone-Air-MacBook-Neo.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "521e29b3",
-      "title": "One pasted Terminal command opens the door to Mac crypto wallet theft",
-      "link": "https://appleinsider.com/articles/26/08/06/one-pasted-terminal-command-opens-the-door-to-mac-crypto-wallet-theft?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-06T15:10:29.000Z",
-      "summary": "Researchers have uncovered Mac malware that can steal credentials and drain all or a selected percentage of a cryptocurrency wallet, in yet another reminder not to paste random…",
-      "image": "https://media.appleinsider.com/gallery/68491-144300-0913CA19-2542-4C9E-AC5A-17B59323EFD9-xl.jpg"
-    },
-    {
-      "id": "a72104b4",
-      "title": "Apple prepares for iPhone 18 Pro and Ultra launch by expanding its reach",
-      "link": "https://9to5mac.com/2026/08/06/apple-prepares-for-iphone-18-pro-and-ultra-launch-by-expanding-its-reach/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T15:04:11.000Z",
-      "summary": "Apple is gearing up for a more focused and potentially much more expensive iPhone launch this fall. For starters, the cheaper base iPhone 18 is being saved for spring. That leaves…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/iphone-18-pro-mockup-fi-new-color.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "cc3425e5",
-      "title": "Apple sweetens its trade-in deals, but you can still do better",
-      "link": "https://appleinsider.com/articles/26/08/06/apple-sweetens-its-trade-in-deals-but-you-can-still-do-better?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-06T15:03:06.000Z",
-      "summary": "Apple has significantly increased how much it pays you to trade in most devices, but you should compare carrier offerings, other trade-in vendors, and private sale values to get…",
-      "image": "https://media.appleinsider.com/gallery/68489-144306-000-lead-ttade-in-d3-xl.jpg"
-    },
-    {
-      "id": "b420c6e9",
-      "title": "Last Day for Up to $350 Amazon Gift Card With Samsung Galaxy Pre-Orders",
-      "link": "https://www.macrumors.com/2026/08/06/last-day-samsung-galaxy-pre-orders/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-06T14:50:48.000Z",
-      "summary": "Samsung's newest line of smartphones and smartwatches launches tomorrow, making today your last chance to get pre-order discounts on these devices. While you can find some offers…",
-      "image": "https://images.macrumors.com/article-new/2026/08/samsung-galaxy-26-phones.jpeg"
-    },
-    {
-      "id": "42e0be67",
-      "title": "iOS 27 hints at all-new Home product launching soon",
-      "link": "https://9to5mac.com/2026/08/06/ios-27-hints-at-all-new-home-product-launching-soon/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T14:33:31.000Z",
-      "summary": "iOS 27 includes hints about the new iPhone Ultra , but it also points to an all-new Apple Home product likely launching soon: a security camera.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-home-app-icon-ios-27.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "eb9fd06a",
-      "title": "Apple Raises Trade-In Values for iPhone, Mac, and More",
-      "link": "https://www.macrumors.com/2026/08/06/apple-raises-trade-in-values/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-06T14:17:59.000Z",
-      "summary": "Apple today updated its U.S. trade-in estimates , raising values for most iPhone, iPad , Mac, and Apple Watch models and adding several Android phones to the list for the first…",
-      "image": "https://images.macrumors.com/article-new/2024/05/apple-trade-in-2024.jpg"
-    },
-    {
-      "id": "91af05e6",
-      "title": "iPhone 18 Pro Launching Next Month With These 12 New Features",
-      "link": "https://www.macrumors.com/2026/08/06/iphone-18-pro-next-month-12-features/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-06T14:03:48.000Z",
-      "summary": "It is now August, and that means the iPhone 18 Pro and iPhone 18 Pro Max are just a month away. The devices are expected to look similar to the iPhone 17 Pro and iPhone 17 Pro…",
-      "image": "https://images.macrumors.com/article-new/2026/04/Four-iPhone-18-Pro-Colors-Mock-Feature.jpg"
-    },
-    {
-      "id": "1f1ad4d0",
-      "title": "iPhone 18 Pro could have limited availability right after launch: report",
-      "link": "https://9to5mac.com/2026/08/06/iphone-18-pro-could-have-limited-availability-right-after-launch-report/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T13:47:22.000Z",
-      "summary": "iPhone 18 Pro is only weeks away from launching, and a new report from Culpium indicates it could have limited availability due to a DRAM shortage holding up production.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/iphone-17-pro-silver-centered-dark.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "2f6e09c7",
-      "title": "Apple raises trade-in values for most iPhone, iPad, Mac, and Apple Watch models",
-      "link": "https://9to5mac.com/2026/08/06/apple-raises-trade-in-values-for-most-iphone-ipad-mac-and-apple-watch-models/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T13:35:15.000Z",
-      "summary": "Apple has adjusted its trade-in values across several iPhone, iPad, Mac, and Apple Watch models, as well as for select Android phones. Here are the new values.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/12/apple-logo-store.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "92adf887",
-      "title": "Apple Scrambling to Secure Memory Ahead of iPhone 18 Pro Launch",
-      "link": "https://www.macrumors.com/2026/08/06/apple-scrambling-to-secure-memory/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-06T13:23:02.000Z",
-      "summary": "Apple and its manufacturing partners are racing to secure enough mobile DRAM to complete production of the iPhone 18 Pro and its first foldable iPhone, with around $1 billion…",
-      "image": "https://images.macrumors.com/article-new/2026/02/iPhone-18-Pro-Deep-Red-Feature.jpg"
-    },
-    {
-      "id": "b0328b2a",
-      "title": "Apple Arcade just added all-new Madden NFL 27, the ultimate football game",
-      "link": "https://9to5mac.com/2026/08/06/apple-arcade-adding-the-ultimate-nfl-game-just-in-time-for-football-season/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T13:22:27.000Z",
-      "summary": "Apple Arcade just scored a major hit game today. The subscription game service has added Madden NFL 27 Arcade Edition, including on the Mac and Apple TV. The new game arrives just…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/madden27-1.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "03931581",
-      "title": "RAM supply holding up iPhone 18 Pro assembly is another bad sign",
-      "link": "https://appleinsider.com/articles/26/08/06/ram-supply-holding-up-iphone-18-pro-assembly-is-another-bad-sign?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-06T13:16:15.000Z",
-      "summary": "Apple's new A20 Pro processor isn't being cranked out as fast as it could be because of RAM shortages, and that is reportedly slowing assembly of the iPhone 18 Pro , and the…",
-      "image": "https://photos5.appleinsider.com/gallery/67555-142320-000-lead-iPHone-18-Pro-xl.jpg"
-    },
-    {
-      "id": "fc3242ae",
-      "title": "Biggest backdoor yet found in Chinese routers sold under multiple brand names",
-      "link": "https://9to5mac.com/2026/08/06/biggest-backdoor-yet-found-in-chinese-routers-sold-under-multiple-brand-names/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T13:14:28.000Z",
-      "summary": "The most blatant security backdoor yet seen in an internet router has been found in a range of models sold under multiple brand names. A firmware implant phones home to cloud…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/Biggest-backdoor-yet-found-in-Chinese-routers-sold-under-multiple-brand-names.jpeg?quality=82&strip=all&w=1400"
+      "id": "8d99adda",
+      "title": "Windows Icloud Issue \"Your Computer is missing Media Features",
+      "link": "https://old.reddit.com/r/sideloadly/comments/1vby0vj/windows_icloud_issue_your_computer_is_missing/",
+      "source": "r/sideloadly",
+      "category": "sideloading",
+      "date": "2026-07-31T17:48:02.000Z",
+      "summary": "I have tried everything to fix this issue but nothing worked did anyone have the same issue on windows 11? And found a way to fix it? &#32; submitted by &#32; /u/Tyroxtech [link]…",
+      "image": ""
     },
     {
       "id": "ec9c22a3",
@@ -744,106 +844,6 @@
       "image": ""
     },
     {
-      "id": "be2eb90d",
-      "title": "Anyone has Minecraft 26.3 ipa",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v5i187/anyone_has_minecraft_263_ipa/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-24T17:29:29.000Z",
-      "summary": "I&#39;m looking for the download link for MCPE 1.26.3 ipa. If anyone has it or can point me in the right direction, I’d be super grateful!❤️ &#32; submitted by &#32;…",
-      "image": ""
-    },
-    {
-      "id": "a4f96efe",
-      "title": "Anyways to play Ultimate Spider Man: Total Mayhem?",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v5dfej/anyways_to_play_ultimate_spider_man_total_mayhem/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-24T14:44:52.000Z",
-      "summary": "Does someone know a way to play ultimate spider man: total mayhem in ios? (Iphone 13 and 7) my brother used to play this game on his android many years ago, and since then im…",
-      "image": ""
-    },
-    {
-      "id": "15b52237",
-      "title": "Sideloadly Obtaining Team ID problem with another iPhone",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v5b4my/sideloadly_obtaining_team_id_problem_with_another/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-24T13:16:24.000Z",
-      "summary": "I successfully installed an IPA using Sideloadly on my own iPhone , but I can’t install anything on my sister’s iPhone . When I try to sign an IPA for her device, Sideloadly gets…",
-      "image": ""
-    },
-    {
-      "id": "a4688720",
-      "title": "How reliable is Sideloadly automatic Wi-Fi refresh?",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v4jj8z/how_reliable_is_sideloadly_automatic_wifi_refresh/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-23T16:51:37.000Z",
-      "summary": "I’m thinking of using Sideloadly for 3 sideloaded apps because I already have a MacBook. After everything is properly set up, does automatic Wi-Fi refresh work reliably enough…",
-      "image": ""
-    },
-    {
-      "id": "44861426",
-      "title": "Sideloadly doesnt show my phone for iDevice",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v4ieev/sideloadly_doesnt_show_my_phone_for_idevice/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-23T16:11:40.000Z",
-      "summary": "It was picking up my phone perfectly fine earlier but now it doesn&#39;t show up at all, it used to flicker for a second and now it doesn&#39;t even do that at all. I&#39;ve tried…",
-      "image": ""
-    },
-    {
-      "id": "4eea22a9",
-      "title": "Hey guys how do i start side loading?",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v3awp1/hey_guys_how_do_i_start_side_loading/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-22T09:18:08.000Z",
-      "summary": "Its my first time with an iOS devise, i need i tutorial or something. Anyone can help me? &#32; submitted by &#32; /u/oualidl [link] &#32; [comments]",
-      "image": ""
-    },
-    {
-      "id": "51f76d3c",
-      "title": "What are these symbols (*********) in my iPhone's name in Sideloadly?",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v2dh0x/what_are_these_symbols_in_my_iphones_name_in/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-21T09:30:01.000Z",
-      "summary": "Hi, I wanted to ask if it&#39;s normal that when I connect my iPhone to my laptop and open Sideloadly, it shows *******. The first time I connected it, it was fine and displayed…",
-      "image": ""
-    },
-    {
-      "id": "b29dcd82",
-      "title": "Is it possible to request IPA files here? If not where?",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v24n7t/is_it_possible_to_request_ipa_files_here_if_not/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-21T01:45:51.000Z",
-      "summary": "I’d love to play Sailor Moon Drops again, but I have no clue how to even search for such files needed to do so. What can I do? &#32; submitted by &#32; /u/SoniMari7270 [link]…",
-      "image": ""
-    },
-    {
-      "id": "34fff021",
-      "title": "Will sideloadly have or does it have a version Native to Apple Silicon?",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v21scc/will_sideloadly_have_or_does_it_have_a_version/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-20T23:38:16.000Z",
-      "summary": "I just switched from an Intel Mac to a M series Mac and I noticed that sideloadly is marked as an Intel app, which means it runs through Rosetta. However Apple has announced that…",
-      "image": ""
-    },
-    {
-      "id": "14dd990f",
-      "title": "incorrect password even though password is correct",
-      "link": "https://old.reddit.com/r/sideloadly/comments/1v21hh3/incorrect_password_even_though_password_is_correct/",
-      "source": "r/sideloadly",
-      "category": "sideloading",
-      "date": "2026-07-20T23:24:59.000Z",
-      "summary": "when i click start and then put the password for my account it says that i put the incorrect password, even though its the correct one &#32; submitted by &#32;…",
-      "image": ""
-    },
-    {
       "id": "805c5bf0",
       "title": "Sideloadly v0.60 Update! Advanced Data Protection Support, Better Logins & More!",
       "link": "https://old.reddit.com/r/sideloadly/comments/1mf7eul/sideloadly_v060_update_advanced_data_protection/",
@@ -852,6 +852,16 @@
       "date": "2025-08-01T20:31:22.000Z",
       "summary": "Greetings! It&#39;s been a while since we last released a Sideloadly update, but we&#39;re excited to bring you some great changes and improvements! Please note that while…",
       "image": ""
+    },
+    {
+      "id": "fb855a81",
+      "title": "iOS 26 Gets First Jailbreak Thanks to Dopamine",
+      "link": "https://www.macrumors.com/2026/08/07/ios-26-dopamine-jailbreak/",
+      "source": "MacRumors",
+      "category": "jailbreak",
+      "date": "2026-08-07T20:56:52.000Z",
+      "summary": "After 326 days, iOS 26 has received its first jailbreak, thanks to the developers behind the popular Dopamine jailbreak. Lars Fröder, better known as opa334, today released…",
+      "image": "https://images.macrumors.com/article-new/2026/08/dopamine.jpg"
     },
     {
       "id": "32ab3617",
