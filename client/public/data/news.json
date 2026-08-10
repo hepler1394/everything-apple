@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-09T11:33:38.061Z",
+  "updated": "2026-08-10T11:51:02.784Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -13,6 +13,266 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "7bf4aea3",
+      "title": "iPhone 18 Pro expected to be 40% more expensive to make than iPhone 17 Pro",
+      "link": "https://appleinsider.com/articles/26/08/10/iphone-18-pro-expected-to-be-40-more-expensive-to-make-than-iphone-17-pro?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-10T11:42:55.000Z",
+      "summary": "Here come the price hikes: the continuing memory crisis will make the iPhone 18 Pro even more expensive to manufacture, with it expected to cost Apple almost 40% more to make than…",
+      "image": "https://media.appleinsider.com/gallery/68518-144379-Dark-Cherry-iPhone-18-Pro-Max-xl.jpg"
+    },
+    {
+      "id": "190c7c77",
+      "title": "OLED iMac Panel Could Include Extra Layer to Fight Screen Burn-In",
+      "link": "https://www.macrumors.com/2026/08/10/oled-imac-panel-extra-layer-screen/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-10T11:35:00.000Z",
+      "summary": "LG Display is developing a five-layer OLED panel structure that could end up in a future iMac, with an extra layer added to prevent screen burn-in and increase brightness, reports…",
+      "image": "https://images.macrumors.com/article-new/2013/09/m4-imac-side-view.jpg"
+    },
+    {
+      "id": "d5afa358",
+      "title": "The iPhone 18 Pro will cost Apple 38% more in parts – but there’s some good news",
+      "link": "https://9to5mac.com/2026/08/10/the-iphone-18-pro-will-cost-apple-38-more-in-parts-but-theres-some-good-news/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-10T11:16:51.000Z",
+      "summary": "A new TrendForce analysis estimates that Apple will pay 38% more for iPhone 18 Pro components than it did for its predecessor. Unsurprisingly, the biggest hike is in the cost of…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iphone-18-pro-concept.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "e2819e25",
+      "title": "Guide to Apple Intelligence using Qwen briefly appears for Apple users in China",
+      "link": "https://appleinsider.com/articles/26/08/10/guide-to-apple-intelligence-using-qwen-briefly-appears-for-apple-users-in-china?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-10T11:13:59.000Z",
+      "summary": "Apple Support in China has published detailed instructions on how local Mac users can utilize Alibaba's Qwen AI with Siri , but the guide was quickly removed. Mac users in…",
+      "image": "https://media.appleinsider.com/gallery/68517-144377-000-lead-Siri-AI-on-Mac-xl.jpg"
+    },
+    {
+      "id": "6ee25ccb",
+      "title": "iPhone 18 Pro Costing Apple 38% More to Make, TrendForce Estimates",
+      "link": "https://www.macrumors.com/2026/08/10/iphone-18-pro-build-cost-rise/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-10T10:29:52.000Z",
+      "summary": "Apple's iPhone 18 Pro will cost nearly 40 percent more to build than its predecessor because of soaring memory prices, according to new data analyzed TrendForce . The research…",
+      "image": "https://images.macrumors.com/article-new/2026/02/iPhone-18-Pro-Deep-Red-Feature.jpg"
+    },
+    {
+      "id": "8101c085",
+      "title": "Apple Dropped Plan to Ship Leased iPhones Already Set Up for Users",
+      "link": "https://www.macrumors.com/2026/08/10/apple-scrapped-plan-ship-iphones-set-up-for-you/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-10T09:30:40.000Z",
+      "summary": "Apple considered a so-called \"white-glove\" element for its Apple Upgrade leasing program that would have delivered each new replacement device already loaded with the customer's…",
+      "image": "https://images.macrumors.com/article-new/2026/07/apple-upgrade-program-1.jpg"
+    },
+    {
+      "id": "e7410891",
+      "title": "Still simple, still powerful, BBEdit is a Mac app legend",
+      "link": "https://appleinsider.com/articles/26/08/07/still-simple-still-powerful-bbedit-is-a-mac-app-legend?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-10T09:27:01.000Z",
+      "summary": "You may like Pages and you may tolerate Microsoft Word, but text editor BBEdit has been rightly earning devotees on the Mac for 34 years. Here's how. Software used to come in…",
+      "image": "https://media.appleinsider.com/gallery/68460-144241-000-lead-BBEdit-xl.jpg"
+    },
+    {
+      "id": "7af3b4b8",
+      "title": "New MacBook Pro and Refreshed iMacs Likely Coming in October",
+      "link": "https://www.macrumors.com/2026/08/10/new-macbook-pro-refreshed-imacs-october/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-10T08:51:40.000Z",
+      "summary": "Apple is likely to unveil a new M6 MacBook Pro and refreshed iMacs in October, based on its typical release schedule, according to Bloomberg 's Mark Gurman. Writing in the latest…",
+      "image": "https://images.macrumors.com/article-new/2025/01/imac-pink.jpeg"
+    },
+    {
+      "id": "081e4fb4",
+      "title": "Sunday Reboot: AI device worries and Ted Lasso cheapness",
+      "link": "https://appleinsider.com/articles/26/08/09/sunday-reboot-ai-device-worries-and-ted-lasso-cheapness?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-09T19:42:24.000Z",
+      "summary": "In this week's Sunday Reboot , the nightmare scenario of OpenAI's hardware leak and the astounding cheapness of promoting Ted Lasso . What's the collective term for a group of Ted…",
+      "image": "https://media.appleinsider.com/gallery/68516-144375-tedlassos-xl.jpg"
+    },
+    {
+      "id": "ff2c1eff",
+      "title": "HomeKit Weekly: Why the Eve Weather sensor is a must-have for Apple Home automations in 2026",
+      "link": "https://9to5mac.com/2026/08/09/why-the-eve-weather-sensor-is-a-must-have-for-apple-home-automations-in-2026/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-09T18:26:00.000Z",
+      "summary": "Local weather is one of the most underrated variables to use in your Apple Home automation setup. Over the past few years, I have used sensors for everything from knowing when to…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/07/Eve-Weather-1.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "8d1357d7",
+      "title": "Will price hikes force Apple to stop dragging its feet on certain product upgrades?",
+      "link": "https://9to5mac.com/2026/08/09/apple-price-hikes-better-value-and-more-features/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-09T18:26:00.000Z",
+      "summary": "Earlier this summer, Apple dramatically increased its prices as a result of the ongoing memory crisis around the globe. Things like iPad Air increased from $599 to $749, M5…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/apple-devices-lineup-liquid-glass.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "45828967",
+      "title": "iPhone 17 set to break a record no flagship has touched in 15 years",
+      "link": "https://9to5mac.com/2026/08/09/iphone-17-availability/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-09T17:48:00.000Z",
+      "summary": "When Apple released the iPhone 17 last September, the timer started for the new flagship model breaking a record set 15 years ago. The record takes more than a year to break, but…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2019/12/iPhone-4.png?w=1600"
+    },
+    {
+      "id": "31df47fc",
+      "title": "Ceramic Apple Watch may return as soon as September",
+      "link": "https://appleinsider.com/articles/26/08/09/ceramic-apple-watch-may-return-as-soon-as-september?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-09T17:39:10.000Z",
+      "summary": "While the design isn't changing one bit, one expensive and favorite material might return to Apple Watch after a seven-year absence. Apple Watch Series 5 , in ceramic It's been…",
+      "image": "https://media.appleinsider.com/gallery/68515-144372-40319-77624-49025330823_8f54e930d2_k(2)-xl-xl.jpg"
+    },
+    {
+      "id": "46256d95",
+      "title": "Of course, Apple's already planning a third-gen iPhone Fold",
+      "link": "https://appleinsider.com/articles/26/08/09/of-course-apples-already-planning-a-third-gen-iphone-fold?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-09T16:51:49.000Z",
+      "summary": "The iPhone Fold has yet to ship, but Apple's already working on a third-generation foldable it could release in 2028. It's something it's compelled to do. A render of what the…",
+      "image": "https://media.appleinsider.com/gallery/68514-144373-iPhone-Fold-back-fully-open-xl.jpg"
+    },
+    {
+      "id": "938878d8",
+      "title": "Ceramic Case Could Return With Apple Watch Series 12",
+      "link": "https://www.macrumors.com/2026/08/09/ceramic-could-return-with-apple-watch-series-12/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-09T16:21:48.000Z",
+      "summary": "Apple is planning to reintroduce its striking ceramic Apple Watch casing as soon as this year, Bloomberg 's Mark Gurman reports . The Apple Watch Series 2 's white ceramic case…",
+      "image": "https://images.macrumors.com/article-new/2019/08/Apple-Watch-series-2-ceramic.jpg"
+    },
+    {
+      "id": "ace1236f",
+      "title": "Foldable 'iPhone Ultra 3' Rumored to Feature Larger Displays",
+      "link": "https://www.macrumors.com/2026/08/09/iphone-ultra-3-rumored-to-feature-larger-displays/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-09T15:55:48.000Z",
+      "summary": "Apple is already making plans for its third-generation foldable iPhone, with launch expected as early as 2028, according to Bloomberg 's Mark Gurman . Writing in his latest \"Power…",
+      "image": "https://images.macrumors.com/article-new/2025/08/Apple-Foldable-Thumb.jpg"
+    },
+    {
+      "id": "78cc0b97",
+      "title": "Apple Watch Rethink Could See Debut of Round Model, Screenless Fitness Tracker, and More",
+      "link": "https://www.macrumors.com/2026/08/09/apple-watch-rethink/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-09T15:37:23.000Z",
+      "summary": "Apple is re-evaluating the Apple Watch lineup and considering a host of radical new designs, according to Bloomberg 's Mark Gurman . In today's edition of his \"Power On\"…",
+      "image": "https://images.macrumors.com/article-new/2025/06/Apple-Watch-Ultra-2-Complications.jpg"
+    },
+    {
+      "id": "bda349fd",
+      "title": "2026 Apple Watch upgrade will be dull, but a big redesign is in progress",
+      "link": "https://appleinsider.com/articles/26/08/09/2026-apple-watch-upgrade-will-be-dull-but-a-big-redesign-is-in-progress?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-09T14:41:18.000Z",
+      "summary": "The Apple Watch will see a revamp in the coming years, as Apple is reportedly in the middle of a shake up its wearables formula to meet an ever-changing market. Apple Watch Ultra…",
+      "image": "https://media.appleinsider.com/gallery/68511-144371-Ultra-3-heart-xl.jpg"
+    },
+    {
+      "id": "a6fdb93a",
+      "title": "A new ceramic Apple Watch could go on sale soon",
+      "link": "https://9to5mac.com/2026/08/09/a-new-ceramic-apple-watch-could-go-on-sale-soon/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-09T14:34:41.000Z",
+      "summary": "Bloomberg’s Mark Gurman wrote today that Apple is planning a return of the much-beloved ceramic Apple Watch. In fact, Gurman says a new ceramic Watch could go on sale as soon as…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/08/Ceramic.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "9479a7c0",
+      "title": "Apple Upgrade plan to preload your data nixed over privacy optics",
+      "link": "https://appleinsider.com/articles/26/08/09/apple-upgrade-plan-to-preload-your-data-nixed-over-privacy-optics?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-09T14:24:36.000Z",
+      "summary": "Apple reportedly evaluated giving Apple Upgrade buyers with iPhones that came with all their previous iPhone's data preloaded, but that didn't make the final cut. Apple Upgrade…",
+      "image": "https://media.appleinsider.com/gallery/68322-144122-Apple-Upgrade-Program-xl.jpg"
+    },
+    {
+      "id": "d1a5f30b",
+      "title": "Apple considers round screens and more radical designs for future Apple Watch revamp",
+      "link": "https://9to5mac.com/2026/08/09/apple-watch-revamp-redesign-round-screen/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-09T14:20:19.000Z",
+      "summary": "Bloomberg’s Mark Gurman goes into some detail today about the future for the Apple Watch product line . He suggests Apple is going back to the drawing board as the Watch faces…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/apple-watch-lineup.jpg?quality=82&strip=all&w=1456"
+    },
+    {
+      "id": "b3e2e3d0",
+      "title": "This scrapped Apple Upgrade feature would’ve made setup much more seamless",
+      "link": "https://9to5mac.com/2026/08/09/this-scrapped-apple-upgrade-feature-wouldve-made-setup-much-more-seamless/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-09T14:19:23.000Z",
+      "summary": "According to the latest edition of the Power On newsletter , Apple had reportedly been considering a feature for Apple Upgrade that would’ve made setting up your iPhone nearly…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/apple-upgrade-iphone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "e31b77c0",
+      "title": "RAM shortages now affecting MacBook Air availability",
+      "link": "https://appleinsider.com/articles/26/08/09/ram-shortages-now-affecting-macbook-air-availability?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-09T14:16:11.000Z",
+      "summary": "Apple's Mac lineup has seen dwindling supply in recent months due to more expensive and hard-to-get RAM, and now even the MacBook Air is seeing available stock dwindle. It's…",
+      "image": "https://media.appleinsider.com/gallery/68513-144370-MacBook-Air-M5-closed-xl.jpg"
+    },
+    {
+      "id": "6997a85a",
+      "title": "Hands-on: This modular controller slides open to transform your iPhone into a mobile game console [Video]",
+      "link": "https://9to5mac.com/2026/08/09/hands-on-this-modular-controller-slides-open-to-transform-your-iphone-into-a-mobile-game-console-video/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-09T14:00:00.000Z",
+      "summary": "I first saw the Ohsnap MCON controller at CES last year, and I immediately fell in love with the concept. The idea was simple: give people a full-featured mobile controller that…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/controller.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d3417bb8",
+      "title": "iPhone Fold may ship in a choice of Silver or Dark Blue",
+      "link": "https://appleinsider.com/articles/26/08/09/iphone-fold-may-ship-in-a-choice-of-silver-or-dark-blue?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-09T12:16:33.000Z",
+      "summary": "The iPhone Fold's two colorways may have been revealed, with the foldable smartphone potentially shipping in dark blue and silver colorways. A pair of third-party camera bump…",
+      "image": "https://media.appleinsider.com/gallery/68510-144369-sonnydicksoniphonefoldprotectors-xl.jpg"
+    },
+    {
+      "id": "eb173211",
+      "title": "Foldable 'iPhone Ultra' Rumored to Come in These Two Colors",
+      "link": "https://www.macrumors.com/2026/08/09/iphone-ultra-rumored-to-come-in-these-two-colors/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-09T11:53:44.000Z",
+      "summary": "New images of camera protector accessories for the \" iPhone Ultra \" suggest Apple's first foldable iPhone will launch in silver and dark blue finishes. Leaker Sonny Dickson…",
+      "image": "https://images.macrumors.com/article-new/2025/03/Foldable-iPhone-2023-Feature-1.jpg"
+    },
     {
       "id": "53d058b4",
       "title": "Crime blotter: Thieves try using stolen credit cards at a Miami Apple Store",
@@ -354,266 +614,6 @@
       "image": ""
     },
     {
-      "id": "e0154c2b",
-      "title": "9to5Mac Daily: August 7, 2026 – iPhone Fold hype, macOS updates",
-      "link": "https://9to5mac.com/2026/08/07/daily-august-7-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T16:15:59.000Z",
-      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "6c928a5b",
-      "title": "MacBook Pro users will soon have two compelling new upgrade options",
-      "link": "https://9to5mac.com/2026/08/07/macbook-pro-users-will-soon-have-two-compelling-new-upgrade-options/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T16:13:21.000Z",
-      "summary": "Apple is rumored to give MacBook Pro users two very different new models to choose from this fall: an M6 MacBook Pro and an all-new MacBook Ultra. Here’s what’s coming.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/macbook-pro-m6.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "fa3d44e4",
-      "title": "Apple Flags Discovery Delays in Its Lawsuit Against Jon Prosser",
-      "link": "https://www.macrumors.com/2026/08/07/apple-flags-delays-in-its-prosser-lawsuit/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-07T16:07:57.000Z",
-      "summary": "Apple has told a federal court that it hasn't heard from Jon Prosser 's legal team in a month, as discovery drags on in its trade secret lawsuit against the leaker. In a joint…",
-      "image": "https://images.macrumors.com/article-new/2025/10/Jon-Prosser-Rainbow.jpg"
-    },
-    {
-      "id": "7c0a1e2d",
-      "title": "Apple seems to have abandoned Cinematic mode, and that’s a mistake",
-      "link": "https://9to5mac.com/2026/08/07/apple-seems-to-have-abandoned-cinematic-mode-and-thats-a-mistake/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T16:00:00.000Z",
-      "summary": "When Apple unveiled the iPhone 13 back in 2021, it made a huge deal over a headline new feature, Cinematic mode . This is the video equivalent of Portrait mode, allowing you to…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/Apple-seems-to-have-abandoned-Cinematic-mode-and-thats-a-mistake.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "8de33ec6",
-      "title": "Apple expands refurb store with rare M5 MacBook Pro configs, Apple TV 4K, more",
-      "link": "https://9to5mac.com/2026/08/07/apple-expands-refurb-store-with-rare-m5-macbook-pro-configs-apple-tv-4k-more/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T15:56:51.000Z",
-      "summary": "Apple has added a host of new products to its official Certified Refurbished Store this week. New M5 MacBook Pro models, the Studio Display XDR, high-end M5 MacBook Air…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/macbook-pro-m5-14-inch.webp?w=1600"
-    },
-    {
-      "id": "4a489f05",
-      "title": "Deals: Apple Watch Series 11 $172 off, Nike Watch bands, AirPods Pro 3, MacBook Neo discounts, more",
-      "link": "https://9to5mac.com/2026/08/07/deals-apple-watch-nike-bands-airpods-pro-macbook-neo/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T15:32:58.000Z",
-      "summary": "Today’s 9to5Toys Lunch Break is ready to usher in the end of the work week with ongoing and now even lower price on AirPods Pro 3 at 25% off, but we are also tracking the return…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/Apple-deals-MacBook-Neo-Apple-Watch-AirPods.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "508d9a57",
-      "title": "watchOS 27 could make Apple Watch’s important new health feature even better",
-      "link": "https://9to5mac.com/2026/08/07/watchos-27-could-make-apple-watchs-important-new-health-feature-even-better/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T14:51:06.000Z",
-      "summary": "Apple Watch added hypertension notifications last year, an important and potentially life-saving new feature. And per a recent report, it sounds like watchOS 27 might make them…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/10/apple-watch-health.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "1204e068",
-      "title": "Apple Captures 65% of Global Premium Smartphone Market",
-      "link": "https://www.macrumors.com/2026/08/07/apple-captures-65-percent-of-global-premium-market/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-07T14:32:54.000Z",
-      "summary": "Apple captured 65% of the global premium smartphone market in the first half of 2026, as the wider premium segment's share of overall smartphone sales climbed to a record 29%.…",
-      "image": "https://images.macrumors.com/article-new/2025/09/iPhone-17-Pro-and-Air-Feature.jpg"
-    },
-    {
-      "id": "2321506b",
-      "title": "iOS 26.6.1 likely coming soon as Apple speeds up iPhone updates",
-      "link": "https://9to5mac.com/2026/08/07/ios-26-6-1-likely-coming-soon-as-apple-speeds-up-iphone-updates/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T14:31:32.000Z",
-      "summary": "Apple appears to be testing a forthcoming iOS 26.6.1 update for iPhone users. This comes nearly two weeks after iOS 26.6 was released to the public.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/ios-26-6-lg-iphone.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "3b64b6c2",
-      "title": "Which do you plan to buy: iPhone 18 Pro or foldable iPhone Ultra? [Poll]",
-      "link": "https://9to5mac.com/2026/08/07/which-do-you-plan-to-buy-iphone-18-pro-or-foldable-iphone-ultra-poll/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T14:26:07.000Z",
-      "summary": "Apple’s fall iPhone event is expected to look different this year. Rather than unveiling four closely related models, rumors point to a flagship-only September lineup consisting…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/02/iphone-18-pro-mockup.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "14a56b3e",
-      "title": "Apple Testing iOS 26.6.1 Update for iPhones",
-      "link": "https://www.macrumors.com/2026/08/07/apple-testing-ios-26-6-1/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-07T14:17:20.000Z",
-      "summary": "Apple's software engineers are internally testing iOS 26.6.1, according to the MacRumors visitor logs. Apple already released macOS 26.6.1 yesterday with a fix for a security…",
-      "image": "https://images.macrumors.com/article-new/2026/08/iOS-26-6-1-iPhone.jpg"
-    },
-    {
-      "id": "0de7f457",
-      "title": "AirPods Pro 3 for $189.99, $25 Best Buy Gift Card With MacBook Neo, and More Apple Deals This Week",
-      "link": "https://www.macrumors.com/2026/08/07/best-apple-deals-of-the-week-8-7-26/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-07T14:06:10.000Z",
-      "summary": "Some of the best Apple deals of the summer arrived this week, including the AirPods Pro 3 for $189.99, up to $500 off select MacBook Pro models, and the lowest iPad Air prices…",
-      "image": "https://images.macrumors.com/article-new/2025/03/Best-Apple-Deals-Feature-Shelf-Blue.jpg"
-    },
-    {
-      "id": "c56cbfea",
-      "title": "Apple Account Card Expands Again: What It Is and What It Isn't",
-      "link": "https://www.macrumors.com/2026/08/07/apple-account-card-what-it-is-what-it-isnt/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-07T13:54:05.000Z",
-      "summary": "Apple this week expanded support for its Apple Account Card in the Wallet app to Estonia, Latvia, Lithuania, and Malta. The Apple Account Card option for Wallet started rolling…",
-      "image": "https://images.macrumors.com/article-new/2026/08/apple-account-card.jpeg"
-    },
-    {
-      "id": "d6ade11e",
-      "title": "iPhone 18 Pro is getting even more ‘Pro’ this year in three ways",
-      "link": "https://9to5mac.com/2026/08/07/iphone-18-pro-is-getting-even-more-pro-this-year-in-three-ways/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T13:47:53.000Z",
-      "summary": "iPhone 18 Pro and Pro Max will be unveiled soon , and rumors point to at least three ways the new models will be even more ‘Pro’ this year.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/iphone-18-pro-mockup-fi-new-color.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "3df03563",
-      "title": "Apple's Mac Pro 'cheese grater' is 20 years old, and is the best Mac ever made",
-      "link": "https://appleinsider.com/articles/18/08/07/apples-mac-pro-cheese-grater-is-12-years-old-and-is-the-best-mac-ever-made?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-07T13:41:59.000Z",
-      "summary": "The original Mac Pro is 20 years old today and even though the whole range is now gone, people are still celebrating this old, favorite workhorse from a time when it was the clear…",
-      "image": "https://photos5.appleinsider.com/gallery/27038-134568-000-lead-Mac-Pro-2006-xl.jpg"
-    },
-    {
-      "id": "f46195eb",
-      "title": "Apple Wallet in iOS 27 adds feature that’s been on my wishlist for years",
-      "link": "https://9to5mac.com/2026/08/07/apple-wallet-in-ios-27-adds-feature-thats-been-on-my-wishlist-for-years/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T13:21:07.000Z",
-      "summary": "iOS 27 adds a variety of new features and changes for Apple Wallet, including one that’s been on my wishlist for years: the ability to import physical passes.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-wallet-ios-27-red-bg.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "af68e146",
-      "title": "Mac Pro Turns 20 Today, Five Months After Apple Killed It",
-      "link": "https://www.macrumors.com/2026/08/07/mac-pro-turns-20-today/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-07T12:39:00.000Z",
-      "summary": "Apple announced the original Mac Pro 20 years ago today, with the anniversary landing five months after the company discontinued the machine for good. On August 7, 2006, Apple…",
-      "image": "https://images.macrumors.com/article-new/2026/03/Classic-Mac-Pro-Feature.jpg"
-    },
-    {
-      "id": "d354d4cb",
-      "title": "Paying for AI, freezing iPhones, & avoiding scams on the AppleInsider Podcast",
-      "link": "https://appleinsider.com/articles/26/08/07/paying-for-ai-freezing-iphones-avoiding-scams-on-the-appleinsider-podcast?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-07T11:01:18.000Z",
-      "summary": "Someone has to pay for all this AI, nothing is foolproof, and Apple's lawsuit with OpenAI is only just beginning, all on the AppleInsider Podcast. The cost of iPhone components is…",
-      "image": "https://media.appleinsider.com/gallery/68479-144334-650-art-article-posterl-xl.jpg"
-    },
-    {
-      "id": "e892c054",
-      "title": "Why does Apple keep banning Telegram, but never X?",
-      "link": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-08-07T11:00:00.000Z",
-      "summary": "For roughly an hour this week, Telegram vanished from Apple's App Store. Even during that blip, it was a stunning absence for such a major app: an avenue of communication for more…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2217854935.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "7b20a733",
-      "title": "iOS 27's New Compact Clock Gives Your Wallpaper Room to Breathe",
-      "link": "https://www.macrumors.com/how-to/ios-use-compact-lock-screen-clock/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-07T10:52:58.000Z",
-      "summary": "In iOS 26, Apple let you stretch the Lock Screen clock down your iPhone's display until it dwarfed everything else. In iOS 27, Apple has a new clock option that does the opposite,…",
-      "image": "https://images.macrumors.com/article-new/2026/08/cat-couch-lock-screen-clock-compact-mode.jpeg"
-    },
-    {
-      "id": "8d68f12f",
-      "title": "Security Bite Podcast: Why scammers love FaceTime now",
-      "link": "https://9to5mac.com/2026/08/07/security-bite-podcast-why-scammers-love-facetime-now/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T10:00:00.000Z",
-      "summary": "9to5Mac Security Bite is exclusively brought to you by Mosyle, the only Apple Unified Platform . Making Apple devices work-ready and enterprise-safe is all we do. Our unique…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/sb-lg-27-dark.webp?w=1500"
-    },
-    {
-      "id": "e7410891",
-      "title": "Still simple, still powerful, BBEdit is a Mac app legend",
-      "link": "https://appleinsider.com/articles/26/08/07/still-simple-still-powerful-bbedit-is-a-mac-app-legend?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-07T09:26:56.000Z",
-      "summary": "You may like Pages and you may tolerate Microsoft Word, but text editor BBEdit has been rightly earning devotees on the Mac for 34 years. Here's how. Software used to come in…",
-      "image": "https://media.appleinsider.com/gallery/68460-144241-000-lead-BBEdit-xl.jpg"
-    },
-    {
-      "id": "c4f6d535",
-      "title": "9to5Mac Daily: August 6, 2026 – Potential iPhone 18 Pro shortages, more",
-      "link": "https://9to5mac.com/2026/08/06/daily-august-6-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T00:21:01.000Z",
-      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "e0d3f3b8",
-      "title": "Apple Health is more powerful than you think; here are my top tips",
-      "link": "https://9to5mac.com/2026/08/06/apple-health-best-features/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-07T00:15:48.000Z",
-      "summary": "The Apple Health app on iPhone is a powerful way to track all facets of your health. Whether it’s recording data from your Apple Watch, importing records straight from your…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2025/04/apple-health-features.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "1710f288",
-      "title": "iPhone 18 Pro and Foldable iPhone Could Sell Out Fast Due to Memory Shortage",
-      "link": "https://www.macrumors.com/2026/08/06/iphone-18-pro-possible-shortages/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-07T00:10:27.000Z",
-      "summary": "The iPhone 18 Pro , &zwnj;iPhone 18 Pro&zwnj; Max, and foldable \" iPhone Ultra \" could be in short supply this year, leading to long wait times and an initial sellout during…",
-      "image": "https://images.macrumors.com/article-new/2026/02/iPhone-18-Pro-Deep-Red-Feature.jpg"
-    },
-    {
-      "id": "bf4ecb3a",
-      "title": "iPhone 18 Pro price: Here’s how much more it could cost",
-      "link": "https://9to5mac.com/2026/08/06/iphone-18-pro-price-heres-how-much-more-it-could-cost/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-06T23:33:05.000Z",
-      "summary": "The iPhone 18 Pro lineup is expected to be announced in a month, with new features including an upgraded camera system, the A20 Pro chip, and more. How much will the iPhone 18 Pro…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/iphone-18-pro-black-mockup.jpg?quality=82&strip=all&w=1600"
-    },
-    {
       "id": "a2d75629",
       "title": "\"Identity used to sign the executable is no longer valid\" [iOS 27 Beta]",
       "link": "https://old.reddit.com/r/AltStore/comments/1vjex14/identity_used_to_sign_the_executable_is_no_longer/",
@@ -854,6 +854,236 @@
       "image": "https://preview.redd.it/mm4zqkvsmc2h1.png?width=640&crop=smart&auto=webp&s=1d5a9b4cfca0b372dff3ff5524708bec680d1048"
     },
     {
+      "id": "3727ae00",
+      "title": "Should I trade my 16 PM (iOS 18.7.7) for the same phone but on iOS <18.7.1, just for future jailbreak potential?",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkihp4/should_i_trade_my_16_pm_ios_1877_for_the_same/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T11:44:42.000Z",
+      "summary": "hellooo. I have an iPhone 16 Pro Max 256GB on iOS 18.7.7. Pretty troubled out that Apple patched all the recent exploits on ios 18.7.2+, like lara. I found a way to swap it for a…",
+      "image": ""
+    },
+    {
+      "id": "534db033",
+      "title": "Можно ли откатится на iOS",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vki1ic/можно_ли_откатится_на_ios/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T11:21:52.000Z",
+      "summary": "Можно ли откатится с 27 бета, на иос 17 &#32; submitted by &#32; /u/nefarmall [link] &#32; [comments]",
+      "image": ""
+    },
+    {
+      "id": "aad83326",
+      "title": "Error keeps showing up when ever I jailbreak (iPhone 12 arm64e dopamine)",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkfshk/error_keeps_showing_up_when_ever_i_jailbreak/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T09:15:09.000Z",
+      "summary": "what now?? &#32; submitted by &#32; /u/Loud-Abroad-4258 [link] &#32; [comments]",
+      "image": "https://preview.redd.it/b3q5zvueliih1.jpeg?width=640&crop=smart&auto=webp&s=e6350de6ad015835c1c1ead1a0ecc975b576a230"
+    },
+    {
+      "id": "f77e8cdb",
+      "title": "Is there a tweak that lets you switch between headphone audio and speakers easily?",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkfkyg/is_there_a_tweak_that_lets_you_switch_between/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T09:02:43.000Z",
+      "summary": "For example a button in the control centre that lets you change audio output easily. I’m on iOS 13. &#32; submitted by &#32; /u/Inevitable-Theory901 [link] &#32; [comments]",
+      "image": "https://preview.redd.it/a8la5t1bjiih1.jpeg?width=640&crop=smart&auto=webp&s=6920d19f271541473c098e1d6048d4c50492721f"
+    },
+    {
+      "id": "9f94b62b",
+      "title": "Dopamine auto refresh for iOS 17?",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkexpy/dopamine_auto_refresh_for_ios_17/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T08:22:50.000Z",
+      "summary": "My iPad is currently jailbroken with Dopamine on iOS 17.1, I want to setup a Shortcuts automation to refresh my apps every night like I have done on my iOS 26 phone with…",
+      "image": ""
+    },
+    {
+      "id": "cc1f4f46",
+      "title": "Any reason to convert Serotonin to Dopamine?",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkeugc/any_reason_to_convert_serotonin_to_dopamine/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T08:17:13.000Z",
+      "summary": "iPhone 14 Pro on 16.6.1 - main issue is apps starting to not work on iOS 16, and I can’t upgrade to 17 (I don’t think), so any real benefit to converting the jailbreak? &#32;…",
+      "image": ""
+    },
+    {
+      "id": "aa4cbb5a",
+      "title": "Trollstore Helper quits upon opening iphone X 16.7.15",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkejyx/trollstore_helper_quits_upon_opening_iphone_x/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T07:59:37.000Z",
+      "summary": "I need some info why its quiting upon ooening ? i install it from Sileo and Dopamine, but cant install original Trollstore, instead i use Trollstore Lite version. &#32; submitted…",
+      "image": ""
+    },
+    {
+      "id": "5ed72fba",
+      "title": "Dopamine jailbreak",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkejib/dopamine_jailbreak/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T07:58:50.000Z",
+      "summary": "Now supports (IOS 18) &#32; submitted by &#32; /u/K395593969 [link] &#32; [comments]",
+      "image": "https://preview.redd.it/okzhy9tw7iih1.jpeg?width=640&crop=smart&auto=webp&s=4d43e218b782abd3cfab49cc60af318e0c19534d"
+    },
+    {
+      "id": "3b699e22",
+      "title": "Are there any JB-Tweaks for Ios 18.6.2 on Iphone 11 Pro",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vke43d/are_there_any_jbtweaks_for_ios_1862_on_iphone_11/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T07:32:34.000Z",
+      "summary": "Just jailbreaked my Iphone 11 Pro with the new Dopeamine from u/opa334 😘 Just wanna know if there are any tweaks thats currently working on ios 18.6.2. Thank you guys an u/opa334…",
+      "image": "https://preview.redd.it/pl2hmvt73iih1.jpeg?width=640&crop=smart&auto=webp&s=eb1cf2cda160d6a296e6121769e9ae6f9a7b4348"
+    },
+    {
+      "id": "6da66879",
+      "title": "Lets help theese guys from 2011 too",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkdlp5/lets_help_theese_guys_from_2011_too/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T07:02:13.000Z",
+      "summary": "Same subreddit different times. &#32; submitted by &#32; /u/SuspectNo8878 [link] &#32; [comments]",
+      "image": "https://preview.redd.it/zvkeo3tkxhih1.png?width=320&crop=smart&auto=webp&s=e6c9ccbcfc5169f30742a9d948b15080429dd73d"
+    },
+    {
+      "id": "0735228a",
+      "title": "Does anyone know this private gaming service community?",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkd8y7/does_anyone_know_this_private_gaming_service/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T06:41:51.000Z",
+      "summary": "I&#39;m trying to identify a private gaming community that someone I know uses. Apparently, you need a jailbroken iPhone to access it, and it&#39;s invite-only . From what I…",
+      "image": ""
+    },
+    {
+      "id": "96806ed5",
+      "title": "do you miss your iphone 11 pro on ios 13",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vkaz0m/do_you_miss_your_iphone_11_pro_on_ios_13/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T04:33:16.000Z",
+      "summary": "it’s ios 17.6.1 on ip 11 pro i’m trying to do they look like ios 13-15, what’s i need to change ? &#32; submitted by &#32; /u/Interesting-Prune352 [link] &#32; [comments]",
+      "image": "https://preview.redd.it/hbis6ki87hih1.jpeg?width=640&crop=smart&auto=webp&s=c78543db9ec9d1ca247963d4c70b73c8f7d3e74e"
+    },
+    {
+      "id": "462cf7c5",
+      "title": "Will ios 27 sep be compatible with older iOS on se 2?",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vk9hbk/will_ios_27_sep_be_compatible_with_older_ios_on/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-10T03:16:25.000Z",
+      "summary": "I want to do a usbliter8 downgrade in the future on my se 2 &#32; submitted by &#32; /u/Boring_Business4174 [link] &#32; [comments]",
+      "image": ""
+    },
+    {
+      "id": "6b3ca121",
+      "title": "iPhone 15 Pro Max 17.2.1 Jailbreak",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vk43xt/iphone_15_pro_max_1721_jailbreak/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T23:04:35.000Z",
+      "summary": "I have an iPhone 15 Pro Max, 1 TB, blue color, on iOS 17.2.1 While my first jailbreak was on an original iPhone, on iOS 1.0.1, my last jailbreak was iOS 15.0.2. I then moved to…",
+      "image": ""
+    },
+    {
+      "id": "c6a8f476",
+      "title": "Finally able to jailbreak",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vk2zcj/finally_able_to_jailbreak/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T22:16:16.000Z",
+      "summary": "I was waiting for a while to jailbreak my IPhone SE 2nd gen and it finally has support in iOS 17! &#32; submitted by &#32; /u/Ecstatic-Problem-330 [link] &#32; [comments]",
+      "image": "https://preview.redd.it/xhzjh03zbfih1.jpeg?width=640&crop=smart&auto=webp&s=4152a8458c54afa9344d2fbad348187ec65ccb5e"
+    },
+    {
+      "id": "b2a9e331",
+      "title": "Roll call! What device / IOS version are you currently running?",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vk0ew6/roll_call_what_device_ios_version_are_you/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T20:29:24.000Z",
+      "summary": "Waited a while for a jailbreak, finally it’s here! &#32; submitted by &#32; /u/Direct-Apple-5011 [link] &#32; [comments]",
+      "image": "https://preview.redd.it/bc5oaorwseih1.jpeg?width=640&crop=smart&auto=webp&s=3c2091ebb92f3b639a04f3193a1a71c4407d6c9d"
+    },
+    {
+      "id": "ccf47ec9",
+      "title": "How many of us on A15-A17 17.3.1?",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vjxly1/how_many_of_us_on_a15a17_1731/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T18:38:55.000Z",
+      "summary": "I held off on updating for so long, how many of us are there? &#32; submitted by &#32; /u/Rafael707 [link] &#32; [comments]",
+      "image": "https://preview.redd.it/8ie6tt379eih1.jpeg?width=640&crop=smart&auto=webp&s=d4ef81a0c0a62886afa33368698b4c7fc9858d70"
+    },
+    {
+      "id": "764d18d5",
+      "title": "How lucky am I to stop updating at EXACTLY 18.7.1",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vjwhqp/how_lucky_am_i_to_stop_updating_at_exactly_1871/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T17:56:17.000Z",
+      "summary": "Just found out about Dopamine’s 3.0 release, I looked further and now I am finally jailbroken. How convenient that I stopped updating at 18.7.1. &#32; submitted by &#32;…",
+      "image": "https://preview.redd.it/m47v1p7l1eih1.jpg?width=140&height=71&auto=webp&s=e2e6acf2b31f625641af13fb0628d9d8edece667"
+    },
+    {
+      "id": "a2a8bc7c",
+      "title": "Discussion for newbies or people out of the scene for awhile",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vjtklw/discussion_for_newbies_or_people_out_of_the_scene/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T16:00:45.000Z",
+      "summary": "Hello everyone, I wanted to make kinda a thread here to help people such as myself who has been out of the scene for around 8 years. Finding info used to be very easy back in the…",
+      "image": ""
+    },
+    {
+      "id": "3a4c0c17",
+      "title": "Thankyou to all the devs and community for making this happen!!",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vjsj20/thankyou_to_all_the_devs_and_community_for_making/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T15:18:54.000Z",
+      "summary": "So nice to be jailbroken again it’s been awhile! Anyone know any good tweaks to get started? Thanks everyone! &#32; submitted by &#32; /u/Jc4218 [link] &#32; [comments]",
+      "image": "https://preview.redd.it/jctyqxgi9dih1.jpeg?width=640&crop=smart&auto=webp&s=ed8dbe8c5c415559cfcabbe3423532a1569c7dc3"
+    },
+    {
+      "id": "faf6c11c",
+      "title": "[Free Release] LivingIcons: Your Home Screen but Alive (Fingal tweak from iOS 13-14, for iOS 17)",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vjo8tl/free_release_livingicons_your_home_screen_but/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T12:08:46.000Z",
+      "summary": "I will release it on havoc soon, but get it for free on my test repo for now, so I can test out any bugs! Animate your app icons easily on roothide, or rootless (share your themes…",
+      "image": "https://preview.redd.it/9xqvc19lbcih1.gif?width=640&crop=smart&s=d7f44690f575cb4a1e66cf9d76e97b453ca00106"
+    },
+    {
+      "id": "71960038",
+      "title": "[Free Release] RoadRunner Reborn — Keep “Now Playing” (or any!) apps alive through resprings/sbreload; updated for modern jailbreaks",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vjmz32/free_release_roadrunner_reborn_keep_now_playing/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T11:00:27.000Z",
+      "summary": "Supports iOS 15+ rootless &amp; roothide (arm64 &amp; arm64e) Hey! I’ve updated RoadRunner by the Henriksson Brothers for rootless/roothide. RoadRunner Reborn lets your Now…",
+      "image": "https://preview.redd.it/3aj1ltslwbih1.png?width=640&crop=smart&auto=webp&s=32d2f2ea1c5203b26b3af32d557631f58ca4a56c"
+    },
+    {
+      "id": "7c37785a",
+      "title": "we gotta thank opa334 for dopamine 3 🥹",
+      "link": "https://old.reddit.com/r/jailbreak/comments/1vjgrhw/we_gotta_thank_opa334_for_dopamine_3/",
+      "source": "r/jailbreak",
+      "category": "jailbreak",
+      "date": "2026-08-09T04:57:02.000Z",
+      "summary": "iphone 11, ios 17.4.1 A13 — i’ve been waiting for a jailbreak ever since the day ios 17.4.1 came cuz of some auto update 😭 &#32; submitted by &#32; /u/healthy-clock- [link] &#32;…",
+      "image": "https://preview.redd.it/xhfxl94k6aih1.jpeg?width=640&crop=smart&auto=webp&s=5c1e1cdf1d622fe92c8ec072c74bfda593e37ca9"
+    },
+    {
       "id": "fb855a81",
       "title": "iOS 26 Gets First Jailbreak Thanks to Dopamine",
       "link": "https://www.macrumors.com/2026/08/07/ios-26-dopamine-jailbreak/",
@@ -862,16 +1092,6 @@
       "date": "2026-08-07T20:56:52.000Z",
       "summary": "After 326 days, iOS 26 has received its first jailbreak, thanks to the developers behind the popular Dopamine jailbreak. Lars Fröder, better known as opa334, today released…",
       "image": "https://images.macrumors.com/article-new/2026/08/dopamine.jpg"
-    },
-    {
-      "id": "32ab3617",
-      "title": "If you have a very specific iPad & iPadOS combo, you can install macOS",
-      "link": "https://appleinsider.com/articles/26/08/05/if-sidecar-isnt-enough-get-real-macos-on-ipad-with-a-new-jailbreak-tool?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "jailbreak",
-      "date": "2026-08-05T10:43:18.000Z",
-      "summary": "If you've been dying to run macOS on iPad hardware natively, a jailbreak solution has emerged for M1 and M2 iPads still running iPadOS 16, though it is extremely experimental. Get…",
-      "image": "https://media.appleinsider.com/gallery/68465-144254-iPad-Air-M2-logo-xl.jpg"
     }
   ]
 }
