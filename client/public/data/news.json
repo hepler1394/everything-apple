@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15T11:23:57.206Z",
+  "updated": "2026-08-16T11:24:02.068Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -13,6 +13,96 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "9a303a31",
+      "title": "Indie App Spotlight: ‘Notepad.exe’ is an ultra-fast, lightweight code editor for your Mac",
+      "link": "https://9to5mac.com/2026/08/15/indie-app-spotlight-notepad-exe-is-an-ultra-fast-lightweight-code-editor-for-your-mac/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-15T19:30:00.000Z",
+      "summary": "Welcome to Indie App Spotlight . This is a weekly 9to5Mac series where we showcase the latest apps in the indie app world. If you’re a developer and would like your app featured,…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/IMG_0048.jpeg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "7c1c4c10",
+      "title": "Apple has a huge product roadmap for the smart home: Here’s what’s coming",
+      "link": "https://9to5mac.com/2026/08/15/apple-home-product-roadmap-tv-homepod-smart-display/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-15T16:08:09.000Z",
+      "summary": "Apple’s home products (primarily HomePod mini and Apple TV) have been the talk of the town for the past couple of years . The reasoning is quite simple: the current iterations are…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/06/ai-siri-homepod.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "d669d467",
+      "title": "Delete your family’s personal data from the internet with a 55% discount on Incogni",
+      "link": "https://9to5mac.com/2026/08/15/delete-your-familys-personal-data-from-internet-55-discount-incogni/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-15T16:00:00.000Z",
+      "summary": "It seems scarcely credible that it’s completely legal for a company to buy and sell our personal data without our consent, but that’s the reality in the US. In theory, you can…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/07/Incogni-discount-code.webp?w=1500"
+    },
+    {
+      "id": "3b9578fa",
+      "title": "Epic Games vs Apple -- The continuing six-year App Store saga",
+      "link": "https://appleinsider.com/articles/20/08/23/apple-versus-epic-games-fortnite-app-store-saga----the-story-so-far?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-15T14:55:34.000Z",
+      "summary": "The Epic Games \"Fortnite\" versus Apple's AppStore antitrust trial has completed its last week. Here's what you need to know about the saga, with closing arguments left to go.…",
+      "image": "https://photos5.appleinsider.com/gallery/37289-86123-37977-72326-201009-Fortnite-xl-xl.jpg"
+    },
+    {
+      "id": "3737c736",
+      "title": "Apple @ Work: Understanding Apple Business Manager roles and permissions",
+      "link": "https://9to5mac.com/2026/08/15/apple-work-understanding-apple-business-manager-roles-and-permissions/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-15T14:06:00.000Z",
+      "summary": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/apple-at-work-27.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "1ff1ec8d",
+      "title": "These are my favorite ultra-slim iPhone accessories for 2026 [Video]",
+      "link": "https://9to5mac.com/2026/08/15/these-are-my-favorite-ultra-slim-iphone-accessories-for-2026-video/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-15T14:00:00.000Z",
+      "summary": "I am always looking for ultra-slim accessories that complement my everyday carry, and I have usually been drawn to how slim tech companies and brands can make their products.…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/edc.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "76c188a4",
+      "title": "Top Stories: iOS 27 Beta 5, iPhone 18 Pro Rumors, and More",
+      "link": "https://www.macrumors.com/2026/08/15/top-stories-ios-27-beta-5/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-15T13:00:12.000Z",
+      "summary": "Apple is likely winding down work on the initial release of iOS 27 as it prepares to install the operating system on new iPhone models coming next month, but some changes are…",
+      "image": "https://images.macrumors.com/article-new/2026/08/top-stories-2026-08-15.jpg"
+    },
+    {
+      "id": "1a682613",
+      "title": "Apple weekend deals: MacBooks up to $540 off, AirPods up to $100 off, Apple Watch, more",
+      "link": "https://9to5mac.com/2026/08/15/apple-weekend-deals-macbooks-airpods/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-15T12:20:15.000Z",
+      "summary": "Your 9to5Toys Lunch Break weekend edition is here, and so are the deals. We are starting off with a series of solid headliners, including AirPods Pro 3 at 25% and AirPods Max 2 at…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/Weekend-apple-deals-august-14-2026.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "a109fa60",
+      "title": "U.S. Commerce Secretary warns Apple against buying Chinese memory",
+      "link": "https://appleinsider.com/articles/26/08/15/us-commerce-secretary-warns-apple-against-buying-chinese-memory?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-15T12:18:45.000Z",
+      "summary": "Apple's memory woes are continuing, as Commerce Secretary Howard Lutnick has urged Apple not to buy Mac memory chips from Chinese suppliers, despite the continuing supply crisis.…",
+      "image": "https://media.appleinsider.com/gallery/68590-144503-68523-144387-000-lead-CXMT-xl-xl.jpg"
+    },
     {
       "id": "d47fd857",
       "title": "Seven years later, the Apple Card is a huge but controversial success",
@@ -522,96 +612,6 @@
       "date": "2026-08-13T23:58:50.000Z",
       "summary": "We're getting close to the launch of new iPhone 18 Pro models that will replace the iPhone 17 Pro models, so MacRumors videographer Dan Barbera decided to take a look back at the…",
       "image": ""
-    },
-    {
-      "id": "043f9743",
-      "title": "What's Coming in September: New iPhones, Apple Watches and More",
-      "link": "https://www.macrumors.com/2026/08/13/apple-september-announcement-rumors/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-13T23:20:39.000Z",
-      "summary": "Apple will introduce at least five new devices at its iPhone-centric event next month, and it's also possible we'll get devices waiting on Siri AI like the Apple TV . iPhone 18…",
-      "image": "https://images.macrumors.com/article-new/2026/08/iPhone-18-Pro-Dark-Cherry-Feature.jpg"
-    },
-    {
-      "id": "4644d72a",
-      "title": "Apple and Epic argue over how much Apple should get from purchases made outside the App Store",
-      "link": "https://www.theverge.com/tech/979967/apple-epic-games-external-links-fees-filing",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-08-13T23:13:24.000Z",
-      "summary": "In a new filing in its long-running legal dispute with Epic Games, Apple has proposed a structure that would allow it to collect fees on digital purchases made via external links…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/STK468_APPLE_ANTITRUST_CVIRGINIA_F.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "abc4de82",
-      "title": "Ted Lasso Season 4 Premiere is Apple TV's Biggest Launch Ever",
-      "link": "https://www.macrumors.com/2026/08/13/ted-lasso-premiere-record/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-13T23:05:01.000Z",
-      "summary": "The Ted Lasso season 4 premiere was Apple's most popular TV show debut to date, according to Nielsen viewing data Apple sent to Deadline . The show racked up 296.6 million viewing…",
-      "image": "https://images.macrumors.com/article-new/2026/01/Ted-Lasso-16x9.jpg"
-    },
-    {
-      "id": "8a91ae91",
-      "title": "Apple's latest commission rates for external App Store purchases haven't satisfied Epic",
-      "link": "https://appleinsider.com/articles/26/08/13/apples-latest-commission-rates-for-external-app-store-purchases-havent-satisfied-epic?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-13T22:49:44.000Z",
-      "summary": "Apple's latest proposal in the Epic trial suggests it should be able to charge between 5% and 15% on external purchases. However, Epic will appeal any value above 0%. Epic's…",
-      "image": "https://media.appleinsider.com/gallery/68579-144486-Fortnite-iPod-ad-xl.jpg"
-    },
-    {
-      "id": "3c921d2b",
-      "title": "9to5Mac Daily: August 13, 2026 – MacBook Air shortages, iPhone Ultra launch rumors",
-      "link": "https://9to5mac.com/2026/08/13/daily-august-13-2026/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-13T22:42:23.000Z",
-      "summary": "Listen to a recap of the top stories of the day from 9to5Mac . 9to5Mac Daily is available on iTunes and Apple’s Podcasts app , Stitcher , TuneIn , Google Play , or through our…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2021/12/9to5Mac-Daily-art-lead.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "79c12183",
-      "title": "Apple Wants to Charge Developers Up to 15 Percent for Linking Outside the App Store",
-      "link": "https://www.macrumors.com/2026/08/13/app-store-fees-apple-link-outs/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-13T22:11:46.000Z",
-      "summary": "Apple today submitted a court-ordered proposal outlining the commission it believes is reasonable to collect from U.S. apps that link to purchase options outside of the App Store…",
-      "image": "https://images.macrumors.com/article-new/2025/12/Liquid-Glass-App-Store-Feature.jpg"
-    },
-    {
-      "id": "7e4858d0",
-      "title": "Supreme Court denies yet another stay in Apple vs Epic proceedings as deadlines loom",
-      "link": "https://appleinsider.com/articles/26/08/13/supreme-court-denies-yet-another-stay-in-apple-vs-epic-proceedings-as-deadlines-loom?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-13T22:10:01.000Z",
-      "summary": "Apple is expected to deliver its plan for how to charge App Store commissions under the single victory in the Epic lawsuit, and its last-ditch effort to avoid that has fallen…",
-      "image": "https://media.appleinsider.com/gallery/68578-144485-Apple-vs-Epic-xl.jpg"
-    },
-    {
-      "id": "5da6df24",
-      "title": "Apple proposes commissions of up to 15% for off-App Store purchases in the US [U]",
-      "link": "https://9to5mac.com/2026/08/13/apple-proposes-commissions-of-up-to-15-for-off-app-store-purchases-in-the-us/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-13T22:05:00.000Z",
-      "summary": "Apple has submitted its proposal for the fees it should be allowed to charge for purchases made outside of the App Store system in the Epic Games case . Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/app-store.webp?w=1600"
-    },
-    {
-      "id": "ce7fe988",
-      "title": "iPhone X & 2018 MacBook Pro are now on Apple's 'obsolete products' list",
-      "link": "https://appleinsider.com/articles/26/08/13/iphone-x-2018-macbook-pro-are-now-on-apples-obsolete-products-list?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-13T21:03:27.000Z",
-      "summary": "Apple has declared the iPhone X and 2018 15-inch MacBook Pro officially obsolete based on when they stopped being on sale, and repairs for the devices will no longer be offered.…",
-      "image": "https://media.appleinsider.com/gallery/68577-144484-iPhone-X-xl.jpg"
     },
     {
       "id": "3bf4ed01",
