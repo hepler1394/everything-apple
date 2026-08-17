@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-16T11:24:02.068Z",
+  "updated": "2026-08-17T11:30:13.212Z",
   "sources": [
     "Apple",
     "Apple Developer",
@@ -13,6 +13,106 @@
     "r/jailbreak"
   ],
   "items": [
+    {
+      "id": "e11a284d",
+      "title": "Cook teases revitalization of US manufacturing ghost towns",
+      "link": "https://appleinsider.com/articles/26/08/17/cook-teases-revitalization-of-us-manufacturing-ghost-towns?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-17T11:27:45.000Z",
+      "summary": "In one of his last interviews as Apple CEO Tim Cook points to the new Houston plant and accelerator as a triumph for US manufacturing and says that the company has plans to build…",
+      "image": "https://media.appleinsider.com/gallery/68602-144551-000-lead-Tim-Cook-xl.jpg"
+    },
+    {
+      "id": "79a40d47",
+      "title": "Apple Watch Series 11 vs Google Pixel Watch 5: Flagship smartwatches, compared",
+      "link": "https://appleinsider.com/inside/apple-watch-series-11/vs/apple-watch-series-11-vs-google-pixel-watch-5-flagship-smartwatches-compared?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-17T11:10:52.000Z",
+      "summary": "Google's new smartwatch is gunning for the Apple Watch , and it's closely matched on price. Here's how the Apple Watch Series 11 compares against the Pixel Watch 5. Apple Watch…",
+      "image": "https://media.appleinsider.com/gallery/68593-144528-aws11vsgpw5head-xl.jpg"
+    },
+    {
+      "id": "50a43c09",
+      "title": "Apple Fitness+ could be getting live sessions, but probably not",
+      "link": "https://9to5mac.com/2026/08/17/apple-fitness-could-be-getting-live-sessions-but-probably-not/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-17T11:10:11.000Z",
+      "summary": "An Apple job listing appears to be suggesting that the company might be planning some live Apple Fitness+ sessions. However, my strong suspicion is that all is not quite as it…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/01/apple-fitness-plus-multidevice.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "f27c9daf",
+      "title": "Job Listing Suggests Apple Fitness+ Could Get Live Content",
+      "link": "https://www.macrumors.com/2026/08/17/apple-fitness-could-get-live-content/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-17T08:02:07.000Z",
+      "summary": "Apple is hiring a Studio Producer for its Fitness+ service with a background in live production, in what could be a hint at the future of the service. The job listing was posted…",
+      "image": "https://images.macrumors.com/article-new/2022/05/apple-fitness-plus-feature-magenta.jpg"
+    },
+    {
+      "id": "ab2d2a1d",
+      "title": "Jony Ive-designed Ferrari Luce sells for $40M at auction",
+      "link": "https://appleinsider.com/articles/26/08/16/jony-ive-designed-ferrari-luce-sells-for-40m-at-auction?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-16T20:04:32.000Z",
+      "summary": "The first Ferrari Luce off the production line has sold for big money, with the Jony Ive -connected vehicle fetching a staggering $40 million at auction. The Ferrari Luce offers…",
+      "image": "https://media.appleinsider.com/gallery/68598-144536-67731-142756-Screenshot-2026-05-25-at-115729-PM-Cropped-xl-xl.jpg"
+    },
+    {
+      "id": "2a748e71",
+      "title": "Sunday Reboot: Failed delays, late homework, and Fortnite",
+      "link": "https://appleinsider.com/articles/26/08/16/sunday-reboot-failed-delays-late-homework-and-fortnite?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-16T19:51:07.000Z",
+      "summary": "In this week's Sunday Reboot, Apple employs weird delay tactics for its Epic lawsuit filing. Meanwhile, Epic still doesn't think Apple's proposals go far enough. A Fortnite parody…",
+      "image": "https://media.appleinsider.com/gallery/68596-144533-68545-144433-68120-143585-57668-117459-IMG_4389-xl-xl-xl-xl.jpg"
+    },
+    {
+      "id": "919fa8e0",
+      "title": "It’s time for iOS to have its own Material You",
+      "link": "https://9to5mac.com/2026/08/16/its-time-for-ios-to-have-its-own-material-you/",
+      "source": "9to5Mac",
+      "category": "news",
+      "date": "2026-08-16T17:33:48.000Z",
+      "summary": "Over the years, Apple has only added more and more customization to iOS. First, we got all of the lock screen personalization back with iOS 16 . That was followed up with icon…",
+      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/03/ios-26-app-icon-tint-iphone.jpg?quality=82&strip=all&w=1600"
+    },
+    {
+      "id": "c16afac6",
+      "title": "Deals: AirPods 4 with ANC plunge to $134, AirTag returns to $24.99",
+      "link": "https://appleinsider.com/articles/26/08/16/deals-airpods-4-with-anc-plunge-to-134-airtag-returns-to-2499?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-16T15:56:18.000Z",
+      "summary": "A 25% discount has hit AirPods 4 with ANC, delivering better-than-Prime Day pricing. Apple's AirTag 2 is also marked down to $24.99, a 30-day low price. Amazon has launched…",
+      "image": "https://media.appleinsider.com/gallery/68594-144526-airtag-deal-august-2026-xl.jpg"
+    },
+    {
+      "id": "93cb7293",
+      "title": "Mozilla gradually rolls out an ad-blocker built into Firefox for iOS",
+      "link": "https://appleinsider.com/articles/26/08/16/mozilla-gradually-rolls-out-an-ad-blocker-built-into-firefox-for-ios?utm_source=rss",
+      "source": "AppleInsider",
+      "category": "news",
+      "date": "2026-08-16T15:40:30.000Z",
+      "summary": "Mozilla is rolling out an ad blocker built into Firefox for iOS . It's a move that can help users protect their privacy more, except in some lucrative situations. Firefox for iOS…",
+      "image": "https://media.appleinsider.com/gallery/68595-144527-firefoxadblockios-xl.jpg"
+    },
+    {
+      "id": "1aa3c96c",
+      "title": "AirPods 4 ANC Hit $134.99 Low Price on Amazon, Plus Pro 3 for $189.99",
+      "link": "https://www.macrumors.com/2026/08/16/airpods-4-anc-hit-134/",
+      "source": "MacRumors",
+      "category": "news",
+      "date": "2026-08-16T14:18:36.000Z",
+      "summary": "Amazon this weekend has introduced a big discount on the AirPods 4 with Active Noise Cancellation, available for $134.99 , down from $179.00. This is one of the best prices we've…",
+      "image": "https://images.macrumors.com/article-new/2025/10/airpods-4-prime-day-fall.jpeg"
+    },
     {
       "id": "9a303a31",
       "title": "Indie App Spotlight: ‘Notepad.exe’ is an ultra-fast, lightweight code editor for your Mac",
@@ -90,7 +190,7 @@
       "source": "9to5Mac",
       "category": "news",
       "date": "2026-08-15T12:20:15.000Z",
-      "summary": "Your 9to5Toys Lunch Break weekend edition is here, and so are the deals. We are starting off with a series of solid headliners, including AirPods Pro 3 at 25% and AirPods Max 2 at…",
+      "summary": "Update: AirTag 2 has now dropped back down to some of the lowest prices to date: AirTag 2 $25 (Reg. $29) AirTag 2 4-pack $89 (Reg. $99) Your 9to5Toys Lunch Break weekend edition…",
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/Weekend-apple-deals-august-14-2026.jpg?quality=82&strip=all&w=1600"
     },
     {
@@ -512,106 +612,6 @@
       "date": "2026-08-14T12:12:30.000Z",
       "summary": "I fully acknowledge that my DIY iPhone camera mod looks exceedingly silly – but it’s actually made my iPhone photography more practical and more enjoyable. It was initially…",
       "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/My-DIY-iPhone-camera-mod-looks-absurd-but-is-great-to-use.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "ca8c519a",
-      "title": "iPhone Ultra, OpenAI's Alexa Dot, & AI costs on the AppleInsider Podcast",
-      "link": "https://appleinsider.com/articles/26/08/14/iphone-ultra-openais-alexa-dot-ai-costs-on-the-appleinsider-podcast?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-14T11:47:36.000Z",
-      "summary": "The iPhone 18 Pro will be a powerhouse for photography while the iPhone Ultra will focus on the novelty of folding, your hosts discuss this and the AI competition in the latest…",
-      "image": "https://media.appleinsider.com/gallery/68564-144489-000-lede-651-podcast-art-xl.jpg"
-    },
-    {
-      "id": "536fc84c",
-      "title": "Apple has trained its own AI for China rather than using Gemini",
-      "link": "https://appleinsider.com/articles/26/08/14/apple-has-trained-its-own-ai-for-china-rather-than-using-gemini?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-14T11:21:05.000Z",
-      "summary": "When Apple Intelligence launches in China, it will use a large language model made by Apple, instead of being based on either Google Gemini or the Chinese Qwen. Apple Intelligence…",
-      "image": "https://photos5.appleinsider.com/gallery/65006-135578-000-lead-China-AI-xl.jpg"
-    },
-    {
-      "id": "e28fb636",
-      "title": "How to use Continuity to make your Apple devices work better together",
-      "link": "https://appleinsider.com/inside/icloud/tips/how-to-use-continuity-to-make-your-apple-devices-work-better-together?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-14T11:18:26.000Z",
-      "summary": "Apple's OS 27 releases push Continuity beyond handoffs by carrying Siri conversations and live Mac content across supported devices. Here's where to find the new features and how…",
-      "image": "https://media.appleinsider.com/gallery/68473-144320-MacBook-Air-Apple-Watch-Ultra-iPad-mini-group-xl.jpg"
-    },
-    {
-      "id": "9c6bb201",
-      "title": "Apple Trained Own AI Model for China Market With Help From Alibaba",
-      "link": "https://www.macrumors.com/2026/08/14/apple-trained-own-ai-model-for-china/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-14T09:46:29.000Z",
-      "summary": "Reuters reports that Apple has trained its own large language model for the China market, rather than relying on a third-party model to power its Apple Intelligence features in…",
-      "image": "https://images.macrumors.com/article-new/2024/09/apple-intelligence-black.jpeg"
-    },
-    {
-      "id": "c8e15168",
-      "title": "Apple trained its own AI model for China with help from Alibaba",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/980160/apple-intelligence-china-custom-ai-model-alibaba",
-      "source": "The Verge",
-      "category": "news",
-      "date": "2026-08-14T09:21:17.000Z",
-      "summary": "Apple has reportedly trained a custom AI model for the China market alongside domestic tech giant Alibaba, a rare cross-border partnership that cuts across growing tensions…",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK071_APPLE_A-1.jpg?quality=90&strip=all&crop=0,0,100,100"
-    },
-    {
-      "id": "fa8b1be0",
-      "title": "Apple CEO Tim Cook: 'I hope that people say I was a good and decent man'",
-      "link": "https://appleinsider.com/articles/26/08/14/apple-ceo-tim-cook-i-hope-that-people-say-i-was-a-good-and-decent-man?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-14T03:09:26.000Z",
-      "summary": "Tim Cook will step down as Apple CEO on September 1, and he has shared that others will define his legacy, but he'd like to be viewed as a \"good and decent man.\" Apple CEO Tim…",
-      "image": "https://media.appleinsider.com/gallery/68581-144488-Tim-Cook-Apple-Park-Rainbow-xl.jpg"
-    },
-    {
-      "id": "43346005",
-      "title": "New wave of Apple threat notifications reach 110 countries to warn about targeted attacks",
-      "link": "https://appleinsider.com/articles/26/08/14/new-wave-of-apple-threat-notifications-reach-110-countries-to-warn-about-targeted-attacks?utm_source=rss",
-      "source": "AppleInsider",
-      "category": "news",
-      "date": "2026-08-14T01:55:52.000Z",
-      "summary": "Apple threat notifications are meant to help notify users when they may have been targeted by mercenary spyware attacks, and another notification has been sent to users across 110…",
-      "image": "https://media.appleinsider.com/gallery/68580-144487-IMG_4917-xl.jpg"
-    },
-    {
-      "id": "8af7b3ea",
-      "title": "Apple seeks settlement talks with Epic Games in new court filing",
-      "link": "https://9to5mac.com/2026/08/13/apple-seeks-settlement-talks-with-epic-games-in-new-court-filing/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-14T01:39:07.000Z",
-      "summary": "In addition to submitting its proposed commission structure for purchases made outside the App Store’s IAP system in the US, Apple filed a motion indicating it is willing to…",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2024/03/epic-app-store.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "1b619a9c",
-      "title": "Apple sends fresh wave of mercenary spyware warnings worldwide",
-      "link": "https://9to5mac.com/2026/08/13/apple-sends-fresh-wave-of-mercenary-spyware-warnings-worldwide/",
-      "source": "9to5Mac",
-      "category": "news",
-      "date": "2026-08-14T00:54:31.000Z",
-      "summary": "Apple has notified users in 110 countries who it suspects may have been targeted by spyware attacks. Here are the details.",
-      "image": "https://9to5mac.com/wp-content/uploads/sites/6/2026/08/apple-mercenary-notification.jpg?quality=82&strip=all&w=1600"
-    },
-    {
-      "id": "68393378",
-      "title": "iPhone 17 Pro One Year Later: What Held Up and What Didn't",
-      "link": "https://www.macrumors.com/2026/08/13/iphone-17-pro-one-year-later/",
-      "source": "MacRumors",
-      "category": "news",
-      "date": "2026-08-13T23:58:50.000Z",
-      "summary": "We're getting close to the launch of new iPhone 18 Pro models that will replace the iPhone 17 Pro models, so MacRumors videographer Dan Barbera decided to take a look back at the…",
-      "image": ""
     },
     {
       "id": "3bf4ed01",
